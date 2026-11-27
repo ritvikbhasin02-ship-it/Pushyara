@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Order your Life Report | Pushyara</title><meta name="description" content="Order your Pushyara Life Report: digital in English or Hindi, or printed as a spiral copy, keepsake book or hardbound gift edition shipped anywhere in India.">
+<title>Order Your Kundli Report — ₹499 Onwards | Pushyara</title><meta name="description" content="Order your Pushyara Life Report: digital in English or Hindi, or printed as a spiral copy, keepsake book or hardbound gift edition shipped anywhere in India.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://pushyara.com/order.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;600;700&family=Tiro+Devanagari+Hindi&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
@@ -82,9 +82,11 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
   var qs=new URLSearchParams(location.search),q=qs.get('edition');
   if(q){var r=document.querySelector('input[name=ed][value="'+q+'"]');if(r)r.checked=true;}
   if(qs.get('lang')==='hi')document.getElementById('lang').value='Hindi';
-  [['nm','nm'],['dob','dob'],['tob','tob'],['pob','pob']].forEach(function(k){var x=qs.get(k[0]);if(x&&/^[\w\s,.:'()-]{1,80}$/.test(x))document.getElementById(k[1]).value=x;});
+  [['nm','nm'],['dob','dob'],['tob','tob'],['pob','pob']].forEach(function(k){var x=qs.get(k[0]);if(x&&/^[\w\s,.:'()ऀ-ॿ਀-੿-]{1,80}$/.test(x))document.getElementById(k[1]).value=x;});
   /* Set your UPI ID here to switch on instant UPI payment. Empty = we send a payment link by email. */
   var FS='https://formsubmit.co/ajax/28cee976f24a2645d13462831bcfe48d';
+  var LEADS='https://script.google.com/macros/s/AKfycbxRUP2RIuxP-tFVECKsqF6St1zvxV0OkIHbwWDYPTJ_SpWs-vSks8jTCn-s_jbroNeVow/exec';
+  function sheet(o,keep){if(!LEADS)return;try{fetch(LEADS,{method:'POST',mode:'no-cors',keepalive:!!keep,headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)}).catch(function(){});}catch(e){}}
   var UPI_ID='ritviksuri3-3@okhdfcbank', UPI_NAME='Pushyara';
   var AMT={digital:499,printed:999,keepsake:1499,gift:2499};
   var P={digital:'Digital (₹499)',printed:'Printed, spiral (₹999)',keepsake:'Keepsake book (₹1,499)',gift:'Gift edition, hardbound (₹2,499)'};
@@ -115,10 +117,11 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
       document.getElementById('utrf').addEventListener('submit',function(ev){ev.preventDefault();var u=document.getElementById('utr').value.replace(/\s/g,''),ue=document.getElementById('uerr');
         if(!/^[A-Za-z0-9]{10,22}$/.test(u)){ue.textContent='Enter the transaction ID shown in your UPI app after paying.';return;}
         var b=this.querySelector('button');b.disabled=true;b.textContent='Sending…';
-        fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:'Payment for Pushyara order '+oid,_template:'table',_captcha:'false','Order ID':oid,Edition:P[ed()],Amount:'₹'+a,'UPI transaction ID':u,Name:v('nm'),Mobile:v('ph'),Email:v('em'),_replyto:v('em')})})
+        sheet({_type:'Payment',Status:'UTR submitted','Order ID':oid,Edition:P[ed()],Amount:'₹'+a,'UPI transaction ID':u,Name:v('nm'),Mobile:v('ph'),Email:v('em')});fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:'Payment for Pushyara order '+oid,_template:'table',_captcha:'false','Order ID':oid,Edition:P[ed()],Amount:'₹'+a,'UPI transaction ID':u,Name:v('nm'),Mobile:v('ph'),Email:v('em'),_replyto:v('em')})})
           .then(function(r){return r.json();}).then(function(j){if(String(j.success)!=='true')throw 0;document.getElementById('pay').hidden=true;document.getElementById('paid').hidden=false;})
           .catch(function(){b.disabled=false;b.textContent='I have paid';ue.innerHTML='Could not send. Email your transaction ID and order number '+oid+' to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a>.';});});
     }
+    sheet(Object.assign({_type:'Order',Status:'Order placed'},data));
     fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
       .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){if(String(j&&j.success)!=='true')throw 0;done();})
       .catch(function(){btn.disabled=false;btn.textContent='Place my order';
@@ -133,7 +136,7 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
     if(!/^[+\d][\d\s]{9,12}$/.test(ph)&&!/^\S+@\S+\.\S+$/.test(em))return;
     var key=[ph,em,val('nm'),ed(),val('dob'),val('tob'),val('pob')].join('|');if(key===sentKey)return;sentKey=key;
     var b=new URLSearchParams({_subject:'Unfinished order: '+(val('nm')||'no name')+' '+(ph||em),_template:'table',_captcha:'false',Status:'Left before placing the order ('+reason+')',Edition:P[ed()],Name:val('nm'),Mobile:ph,Email:em,'Date of birth':val('dob'),'Time of birth':val('tob'),'Place of birth':val('pob'),'WhatsApp offers':document.getElementById('optin').checked?'Yes':'No',Page:location.href});
-    try{fetch(FS,{method:'POST',body:b,keepalive:true,headers:{Accept:'application/json'}}).catch(function(){});}catch(e){}
+    sheet(Object.assign({_type:'Unfinished'},Object.fromEntries(b)),true);try{fetch(FS,{method:'POST',body:b,keepalive:true,headers:{Accept:'application/json'}}).catch(function(){});}catch(e){}
   }
   ['ph','em','nm','dob','tob','pob'].forEach(function(id){var e=document.getElementById(id);if(e)e.addEventListener('input',function(){clearTimeout(idle);idle=setTimeout(function(){lead('idle 2 min');},120000);});});
   document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')lead('closed or switched tab');});
