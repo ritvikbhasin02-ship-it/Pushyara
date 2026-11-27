@@ -57,7 +57,7 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
   <button class="btn" type="submit">Place my order</button>
   <p class="note">We reply within 24 hours with a secure payment link for UPI, cards or net banking. Your report is prepared after payment. Read our <a href="/refunds.html">refund policy</a>.</p>
 </form>
-<div id="done" class="done" hidden><h2>Your order is ready to send</h2><p class="lead">Your email app has opened with your order filled in. Press send, and we will reply with your payment link within 24 hours. If it did not open, write to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a> with your birth details and edition.</p></div>
+<div id="done" class="done" hidden><h2>Order placed</h2><p class="lead">Thank you. We have your order and will send a secure payment link to your email and mobile within 24 hours. For any change, write to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a>.</p></div>
 <nav class="foot" aria-label="Footer"><a href="/">Home</a><a href="/learn/index.html">Learn Jyotish</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refunds.html">Refunds</a><a href="/contact.html">Contact</a></nav>
 </div>
 <script>
@@ -80,8 +80,14 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
     if(ed()!=='digital'&&!/^\d{6}$/.test(v('pin'))){err.textContent='Enter a 6-digit PIN code.';document.getElementById('pin').focus();return;}
     var L=['Edition: '+P[ed()],'','Birth details','Name: '+v('nm'),'Date: '+v('dob'),'Time: '+v('tob')+' ('+v('conf')+')','Place: '+v('pob'),'Language: '+v('lang'),'','Contact','Mobile: '+v('ph'),'Email: '+v('em')];
     if(ed()!=='digital')L=L.concat(['','Ship to','Name: '+v('rn'),'Address: '+v('ad'),'City and state: '+v('cs'),'PIN: '+v('pin'),'Gift: '+(document.getElementById('gift').checked?'Yes, leave the price out':'No')]);
-    location.href='mailto:hello@pushyara.com?subject='+encodeURIComponent('Life Report order: '+P[ed()])+'&body='+encodeURIComponent(L.join('\n'));
-    f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);
+    var data={_subject:'New Pushyara order: '+P[ed()],_template:'table',_captcha:'false',Edition:P[ed()],Name:v('nm'),'Date of birth':v('dob'),'Time of birth':v('tob'),'Time accuracy':v('conf'),'Place of birth':v('pob'),Language:v('lang'),Mobile:v('ph'),Email:v('em'),_replyto:v('em')};
+    if(ed()!=='digital'){data['Ship to']=v('rn');data.Address=v('ad');data['City and state']=v('cs');data.PIN=v('pin');data.Gift=document.getElementById('gift').checked?'Yes, leave the price out':'No';}
+    var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Placing your order…';
+    function done(){f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);}
+    fetch('https://formsubmit.co/ajax/thetechgenius.in@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+      .then(function(r){if(!r.ok)throw 0;done();})
+      .catch(function(){btn.disabled=false;btn.textContent='Place my order';
+        err.innerHTML='Your order could not be sent. Check your internet connection and try again, or <a href="mailto:hello@pushyara.com?subject='+encodeURIComponent('Life Report order: '+P[ed()])+'&body='+encodeURIComponent(L.join('\n'))+'">email your order to us</a>.';});
   });
 })();
 </script></body></html>
