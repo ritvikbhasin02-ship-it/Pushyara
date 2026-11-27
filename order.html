@@ -84,7 +84,7 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
     if(ed()!=='digital'){data['Ship to']=v('rn');data.Address=v('ad');data['City and state']=v('cs');data.PIN=v('pin');data.Gift=document.getElementById('gift').checked?'Yes, leave the price out':'No';}
     var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Placing your order…';
     function done(){f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);}
-    fetch('https://formsubmit.co/ajax/thetechgenius.in@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+    fetch('https://formsubmit.co/ajax/28cee976f24a2645d13462831bcfe48d',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
       .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){if(String(j&&j.success)!=='true')throw 0;done();})
       .catch(function(){btn.disabled=false;btn.textContent='Place my order';
         err.innerHTML='Your order could not be sent. Check your internet connection and try again, or <a href="mailto:hello@pushyara.com?subject='+encodeURIComponent('Life Report order: '+P[ed()])+'&body='+encodeURIComponent(L.join('\n'))+'">email your order to us</a>.';});
