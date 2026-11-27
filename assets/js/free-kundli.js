@@ -75,7 +75,17 @@
       o += '</table>';
       o += '<div class="fk-tease"><h3>What ' + md.lord + '–' + ad.lord + ' means for you</h3><p>You are in the ' + md.lord + ' mahadasha, ' + ad.lord + ' antardasha, until ' + f(ad.end) + '.' + (nextAd ? ' Then ' + nextAd.lord + ' takes over until ' + f(nextAd.end) + '.' : '') + ' What this period brings for your work, money, home and relationships depends on where ' + md.lord + ' and ' + ad.lord + ' sit in your ' + lag + ' lagna chart.</p><p>Your Life Report reads that for you, and dates every chapter, this year month by month and each day of this week.</p><a class="btn" id="fk-cta" href="#">Read my full Life Report for ₹499</a> <a class="link" href="/learn/' + slug(md.lord) + '-mahadasha-' + slug(ad.lord) + '-antardasha.html">Or read the general guide to this period</a></div>';
     }
+    o += '<form class="fk-lead" id="fk-lead" novalidate><h3>Get your good days on WhatsApp</h3><p class="muted">Each week we send your A, B and C days and Rahu Kaal for your city. Free, stop any time.</p><div class="fk-row two"><label>WhatsApp number<input id="fl-ph" inputmode="tel" maxlength="13" autocomplete="tel"></label><label>Email (optional)<input id="fl-em" type="email" maxlength="80" autocomplete="email"></label></div><label class="chk"><input type="checkbox" id="fl-ok"> <span>Yes, send me weekly good days and occasional offers on WhatsApp.</span></label><p class="fk-err" id="fl-err" role="alert"></p><button class="btn quiet" type="submit">Send me my good days</button></form>';
     var out = $('fk-out'); out.innerHTML = o; out.hidden = false;
+    $('fk-lead').addEventListener('submit', function (ev) {
+      ev.preventDefault(); var ph = $('fl-ph').value.trim(), em = $('fl-em').value.trim(), e2 = $('fl-err'); e2.textContent = '';
+      if (!/^[+\d][\d\s]{9,12}$/.test(ph)) { e2.textContent = 'Enter a 10-digit WhatsApp number.'; return; }
+      if (!$('fl-ok').checked) { e2.textContent = 'Tick the box so we can message you on WhatsApp.'; return; }
+      var btn = this.querySelector('button'); btn.disabled = true; btn.textContent = 'Saving…';
+      fetch('https://formsubmit.co/ajax/28cee976f24a2645d13462831bcfe48d', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ _subject: 'Free kundli lead: ' + (nm || 'no name') + ' ' + ph, _template: 'table', _captcha: 'false', Source: 'Free kundli, WhatsApp good days', Name: nm, WhatsApp: ph, Email: em, 'Date of birth': d, 'Time of birth': t, Place: picked[0] + ', ' + picked[1], Lagna: lag, 'Moon sign': ms, Nakshatra: nk + ' ' + moon.pada, 'Running dasha': md && ad ? md.lord + '-' + ad.lord : '', 'WhatsApp consent': 'Yes' }) })
+        .then(function (r) { return r.json(); }).then(function (j) { if (String(j.success) !== 'true') throw 0; $('fk-lead').innerHTML = '<h3>Done</h3><p class="muted">Your first good-days message will reach you on WhatsApp this week.</p>'; })
+        .catch(function () { btn.disabled = false; btn.textContent = 'Send me my good days'; e2.textContent = 'Could not save right now. Please try again.'; });
+    });
     var qs = '?edition=digital&nm=' + encodeURIComponent(nm) + '&dob=' + d + '&tob=' + t + '&pob=' + encodeURIComponent(picked[0] + ', ' + picked[1]);
     var cta = $('fk-cta'); if (cta) cta.href = '/order.html' + qs; $('fk-buy').href = '/order.html' + qs;
     $('fk-res').scrollIntoView({ behavior: 'smooth', block: 'start' });

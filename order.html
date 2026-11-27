@@ -48,7 +48,9 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
   <label class="f">Report language<select id="lang"><option value="English">English</option><option value="Hindi">हिंदी (Hindi)</option></select></label></div>
   </fieldset>
   <fieldset><legend>Your contact</legend>
-  <div class="two"><label class="f">Mobile number<input id="ph" required inputmode="tel" maxlength="13" autocomplete="tel"></label><label class="f">Email<input id="em" type="email" required maxlength="80" autocomplete="email"></label></div>
+  <div class="two"><label class="f">Mobile number (WhatsApp)<input id="ph" required inputmode="tel" maxlength="13" autocomplete="tel"></label><label class="f">Email<input id="em" type="email" required maxlength="80" autocomplete="email"></label></div>
+    <p class="small muted" style="margin:10px 0 0">We use your number and email only to contact you about this order, by WhatsApp, call or email, including a reminder if you leave before finishing.</p>
+  <label class="chk"><input type="checkbox" id="optin"><span>Also send me occasional good-day reminders and offers on WhatsApp. I can stop them any time.</span></label>
   </fieldset>
   <fieldset id="ship" hidden><legend>Ship to</legend>
   <label class="f">Recipient’s name<input id="rn" maxlength="60"></label>
@@ -83,7 +85,7 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
   [['nm','nm'],['dob','dob'],['tob','tob'],['pob','pob']].forEach(function(k){var x=qs.get(k[0]);if(x&&/^[\w\s,.:'()-]{1,80}$/.test(x))document.getElementById(k[1]).value=x;});
   /* Set your UPI ID here to switch on instant UPI payment. Empty = we send a payment link by email. */
   var FS='https://formsubmit.co/ajax/28cee976f24a2645d13462831bcfe48d';
-  var UPI_ID='', UPI_NAME='Pushyara';
+  var UPI_ID='ritviksuri3-3@okhdfcbank', UPI_NAME='Pushyara';
   var AMT={digital:499,printed:999,keepsake:1499,gift:2499};
   var P={digital:'Digital (₹499)',printed:'Printed, spiral (₹999)',keepsake:'Keepsake book (₹1,499)',gift:'Gift edition, hardbound (₹2,499)'};
   var ship=document.getElementById('ship'),f=document.getElementById('of');
@@ -103,8 +105,8 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
     var data={_subject:'New Pushyara order: '+P[ed()],_template:'table',_captcha:'false',Edition:P[ed()],Name:v('nm'),'Date of birth':v('dob'),'Time of birth':v('tob'),'Time accuracy':v('conf'),'Place of birth':v('pob'),Language:v('lang'),Mobile:v('ph'),Email:v('em'),_replyto:v('em')};
     if(ed()!=='digital'){data['Ship to']=v('rn');data.Address=v('ad');data['City and state']=v('cs');data.PIN=v('pin');data.Gift=document.getElementById('gift').checked?'Yes, leave the price out':'No';}
     var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Placing your order…';
-    var oid='PY'+Date.now().toString(36).toUpperCase().slice(-6);data['Order ID']=oid;data._subject='New Pushyara order '+oid+': '+P[ed()];
-    function done(){f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);
+    var oid='PY'+Date.now().toString(36).toUpperCase().slice(-6);data['Order ID']=oid;data['WhatsApp offers']=document.getElementById('optin').checked?'Yes':'No';data._subject='New Pushyara order '+oid+': '+P[ed()];
+    function done(){placed=true;clearTimeout(idle);f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);
       if(!UPI_ID){document.getElementById('nopay').hidden=false;return;}
       var a=AMT[ed()],uri='upi://pay?pa='+encodeURIComponent(UPI_ID)+'&pn='+encodeURIComponent(UPI_NAME)+'&am='+a+'.00&cu=INR&tn='+encodeURIComponent('Pushyara '+oid);
       document.getElementById('pay').hidden=false;document.getElementById('amt').textContent='₹'+a.toLocaleString('en-IN');
@@ -122,5 +124,19 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
       .catch(function(){btn.disabled=false;btn.textContent='Place my order';
         err.innerHTML='Your order could not be sent. Check your internet connection and try again, or <a href="mailto:hello@pushyara.com?subject='+encodeURIComponent('Life Report order: '+P[ed()])+'&body='+encodeURIComponent(L.join('\n'))+'">email your order to us</a>.';});
   });
+
+  /* Unfinished-order capture: if someone gives a valid mobile or email and leaves without ordering, we keep it to follow up. */
+  var sentKey='',placed=false,idle=null;
+  function val(id){var e=document.getElementById(id);return e?e.value.trim():'';}
+  function lead(reason){
+    if(placed)return;var ph=val('ph'),em=val('em');
+    if(!/^[+\d][\d\s]{9,12}$/.test(ph)&&!/^\S+@\S+\.\S+$/.test(em))return;
+    var key=[ph,em,val('nm'),ed(),val('dob'),val('tob'),val('pob')].join('|');if(key===sentKey)return;sentKey=key;
+    var b=new URLSearchParams({_subject:'Unfinished order: '+(val('nm')||'no name')+' '+(ph||em),_template:'table',_captcha:'false',Status:'Left before placing the order ('+reason+')',Edition:P[ed()],Name:val('nm'),Mobile:ph,Email:em,'Date of birth':val('dob'),'Time of birth':val('tob'),'Place of birth':val('pob'),'WhatsApp offers':document.getElementById('optin').checked?'Yes':'No',Page:location.href});
+    try{fetch(FS,{method:'POST',body:b,keepalive:true,headers:{Accept:'application/json'}}).catch(function(){});}catch(e){}
+  }
+  ['ph','em','nm','dob','tob','pob'].forEach(function(id){var e=document.getElementById(id);if(e)e.addEventListener('input',function(){clearTimeout(idle);idle=setTimeout(function(){lead('idle 2 min');},120000);});});
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')lead('closed or switched tab');});
+  window.addEventListener('pagehide',function(){lead('left the page');});
 })();
 </script></body></html>
