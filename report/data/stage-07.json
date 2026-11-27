@@ -1,0 +1,550 @@
+{
+ "stage": 7,
+ "title": "Divisional charts (vargas)",
+ "level": "Intermediate",
+ "goal": "Done when you can compute D9 and D10 by hand for any planet, say which divisional chart answers which question, and name how far a birth-time error would change each reading for your own chart.",
+ "terms": {
+  "varga": [
+   "Varga · वर्ग",
+   "A divisional chart. A varga divides each 30° sign into equal or unequal parts and assigns each part to a sign. D9 means a division by nine, D10 by ten. The result is a second chart that zooms in on one area of life."
+  ],
+  "shodashavarga": [
+   "Shodasha varga · षोडशवर्ग",
+   "The sixteen divisional charts of the Parashari system: D1, 2, 3, 4, 7, 9, 10, 12, 16, 20, 24, 27, 30, 40, 45, 60."
+  ],
+  "navamsa": [
+   "Navamsa · नवांश",
+   "The D9 chart: each sign is split into nine parts of 3°20′. It is read for spouse, dharma and the real strength of planets, and is the most-used divisional chart."
+  ],
+  "dashamsa": [
+   "Dashamsa · दशांश",
+   "The D10 chart: each sign split into ten parts of 3°. Read for career, work and public action."
+  ],
+  "pushkara": [
+   "Pushkara navamsa · पुष्कर नवांश",
+   "Certain navamsa (and degree) segments said to “nourish” a planet placed in them. Tables of these segments differ between sources."
+  ],
+  "vimshopaka": [
+   "Vimshopaka bala · विंशोपक बल",
+   "A score out of twenty for a planet’s overall dignity across a chosen set of divisional charts (six, seven, ten or sixteen of them), with each chart weighted. Described in the Parashari texts; the engine does not compute it yet."
+  ],
+  "karakamsa": [
+   "Karakamsa · कारकांश",
+   "In Jaimini astrology, the navamsa sign of the Atmakaraka (the planet with the highest degree), read as a lagna for the soul’s purpose and vocation."
+  ],
+  "upapada": [
+   "Upapada lagna · उपपद लग्न",
+   "In Jaimini astrology, the arudha (image-house) of the 12th house. It is read for marriage and the partner’s role. The engine places it in Aries for your chart."
+  ],
+  "rectification": [
+   "Rectification",
+   "Adjusting an uncertain birth time until the chart’s timing methods match known life events. It needs reliable event dates and is itself a debated skill."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "7-1",
+   "title": "Why vargas, and the sixteen charts",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which two Mahapurusha yogas does your chart have, and which one has a navamsa sign in Leo for its planet?</p>\n<p>Your birth chart (D1, the rashi chart) places each planet in a 30° sign. That is a rough location. Two planets in the same sign may be 1° or 29° apart, and the chart cannot tell you. A {{term:varga|varga}} (divisional chart) zooms in: it cuts every sign into smaller parts and gives each part a sign of its own. Each resulting chart answers one set of questions better than the main chart can.</p>\n<p>Think of D1 as a map of a city and a varga as a street map of one district: same city, finer detail, narrower topic.</p>\n<h2>The {{term:shodashavarga|sixteen vargas}} and what each judges</h2>\n<div class=\"tbl\"><table><thead><tr><th>Chart</th><th>Name</th><th>Part size</th><th>Commonly read for</th></tr></thead><tbody><tr><td>D1</td><td>Rashi</td><td>30°</td><td>Body, the whole life; the base chart</td></tr><tr><td>D2</td><td>Hora</td><td>15°</td><td>Wealth and resources</td></tr><tr><td>D3</td><td>Drekkana</td><td>10°</td><td>Siblings, courage, effort</td></tr><tr><td>D4</td><td>Chaturthamsha</td><td>7°30′</td><td>Property, home, fixed assets, fortune</td></tr><tr><td>D7</td><td>Saptamsha</td><td>4°17′</td><td>Children and lineage</td></tr><tr><td>D9</td><td>{{term:navamsa|Navamsa}}</td><td>3°20′</td><td>Spouse, dharma, inner strength, true planetary strength</td></tr><tr><td>D10</td><td>{{term:dashamsa|Dashamsa}}</td><td>3°</td><td>Career and public action</td></tr><tr><td>D12</td><td>Dwadashamsha</td><td>2°30′</td><td>Parents and ancestry</td></tr><tr><td>D16</td><td>Shodashamsha</td><td>1°52′</td><td>Vehicles, comforts, happiness</td></tr><tr><td>D20</td><td>Vimshamsha</td><td>1°30′</td><td>Spiritual practice and devotion</td></tr><tr><td>D24</td><td>Chaturvimshamsha</td><td>1°15′</td><td>Education and learning</td></tr><tr><td>D27</td><td>Bhamsha (Nakshatramsha)</td><td>1°07′</td><td>Strengths and weaknesses of character</td></tr><tr><td>D30</td><td>Trimshamsha</td><td>Unequal</td><td>Troubles, flaws, misfortunes</td></tr><tr><td>D40</td><td>Khavedamsha</td><td>45′</td><td>Auspicious and inauspicious effects (BPHS); maternal-line legacy in some modern teaching</td></tr><tr><td>D45</td><td>Akshavedamsha</td><td>40′</td><td>All indications (BPHS); paternal-line legacy in some modern teaching</td></tr><tr><td>D60</td><td>Shashtiamsha</td><td>30′</td><td>All indications (BPHS); past-life karma in modern reading; the most time-sensitive</td></tr></tbody></table></div>\n<p>The BPHS list of uses is in its chapter on divisional considerations (ch. 7, verses 1–8, in R. Santhanam’s translation). The maternal and paternal readings of D40 and D45, and the past-life reading of D60, are modern additions, not BPHS.</p>\n<h2>How to use them</h2>\n<ol><li>Read D1 first. Vargas refine D1; they do not replace it.</li><li>For a life question, read the planet in D1, then in the matching varga.</li><li>Use D9 as the standard second opinion for any planet.</li><li>The smaller the part, the more the result depends on an exact birth time (lesson 7-6).</li></ol>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Compare D1 with D9, using the engine’s output:</p><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>D1 sign</th><th>D9 sign</th><th>Note</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini</td><td>Capricorn</td><td>Saturn’s sign: an enemy’s home</td></tr><tr><td>Moon</td><td>Cancer (own)</td><td>Virgo</td><td>Friend’s sign</td></tr><tr><td>Mars</td><td>Taurus</td><td>Virgo</td><td>Mercury’s sign: an enemy’s home</td></tr><tr><td>Mercury</td><td>Gemini (own)</td><td>Gemini</td><td>Vargottama: same sign twice</td></tr><tr><td>Jupiter</td><td>Pisces (own)</td><td>Leo</td><td>Friend’s sign</td></tr><tr><td>Venus</td><td>Taurus (own)</td><td>Pisces</td><td>Exalted</td></tr><tr><td>Saturn</td><td>Aries (debilitated)</td><td>Gemini</td><td>Friend’s sign: not debilitated</td></tr></tbody></table></div><p>Venus gains most in the navamsa (own sign to exalted). Saturn’s weakness in D1 is not repeated. Mercury is the only vargottama planet.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari:</strong> sixteen vargas (shodashavarga), the set the engine uses. Some texts and software add finer charts beyond D60. Authors differ on how far to trust them.</li>\n<li><strong>Jaimini:</strong> works chiefly with D1 and D9 (through karakamsa and navamsa), and uses a few more.</li>\n<li><strong>KP:</strong> does not use the divisional charts in the ordinary Parashari way; it works from cusps and sub-lords.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>If a planet looks strong in D1 and weak in D9, or the reverse, do not average them. Write both and ask which chart matches the area of life you are reading. Re-check any claim against your known life events (see the prediction ledger).</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>A varga divides each sign and re-maps the parts, producing a focused second chart.</li><li>D1 = life, D9 = spouse, dharma and strength, D10 = career: the three you will use most.</li><li>Finer charts need a more exact birth time.</li><li>D1 first; vargas refine and cross-check, they do not overrule.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Copy the D1–D9 table above onto paper, then add a column “stronger in” (D1 or D9) for each planet.</p>",
+   "listen": "A varga is a divisional chart. It splits each thirty-degree sign into smaller parts and gives each part a sign, producing a focused second chart. The Parashari system uses sixteen: D1 the rashi chart, D2 hora for wealth, D3 for siblings and courage, D4 for property, D7 for children, D9 the navamsa for spouse, dharma and true strength, D10 for career, D12 for parents, D16 for comforts, D20 for spiritual practice, D24 for education, D27 for strengths and weaknesses, D30 for troubles, D40 for auspicious and inauspicious effects, and D45 and D60 for all indications, with maternal, paternal and past-life readings added by modern teachers. Always read D1 first, then use the matching varga as a second opinion. The smaller the part, the more exact the birth time must be. In your chart Venus moves from its own sign Taurus to exalted Pisces in the navamsa. Saturn is debilitated in D1 but in a friend’s sign, Gemini, in D9. Mercury is vargottama.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on the divisional charts (shodasha varga); chapter numbers not verified here",
+    "Jaimini Sutras, for the contrasting emphasis on navamsa and karakamsa",
+    "Jyotish engine output: natal positions and divisional charts D1 to D60"
+   ],
+   "quiz": [
+    {
+     "q": "What does a varga do?",
+     "o": [
+      "Shifts every planet by the ayanamsa to the sidereal zodiac",
+      "Splits each sign into parts and re-maps them to signs",
+      "Counts the aspects each planet casts on the houses",
+      "Shortens the dasha periods to fit a smaller chart"
+     ],
+     "a": 1,
+     "w": "A varga divides each 30° sign and assigns each part a sign, producing a focused chart."
+    },
+    {
+     "q": "Which chart is the standard second opinion for any planet’s strength?",
+     "o": [
+      "D2",
+      "D9",
+      "D30",
+      "D45"
+     ],
+     "a": 1,
+     "w": "D9 (navamsa) is the standard cross-check of a planet’s true strength."
+    },
+    {
+     "q": "Which chart is read mainly for career?",
+     "o": [
+      "D4",
+      "D7",
+      "D10",
+      "D12"
+     ],
+     "a": 2,
+     "w": "D10 (dashamsa) is the career chart."
+    },
+    {
+     "q": "Which of your planets is vargottama?",
+     "o": [
+      "Venus",
+      "Mercury",
+      "Jupiter",
+      "Saturn"
+     ],
+     "a": 1,
+     "w": "Mercury is in Gemini in both D1 and D9."
+    },
+    {
+     "q": "Which planet gains most in your navamsa compared with D1?",
+     "o": [
+      "Venus (own sign to exalted)",
+      "Sun (own sign to exalted)",
+      "Mars (enemy sign to own sign)",
+      "Moon (own sign to exalted)"
+     ],
+     "a": 0,
+     "w": "Venus is in Taurus (own) in D1 and exalted in Pisces in D9."
+    }
+   ]
+  },
+  {
+   "id": "7-2",
+   "title": "How each varga is calculated",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the three charts you will use most, and one question each answers.</p>\n<p>Every varga follows the same recipe: find the planet’s sign and its degree inside that sign, find which part the degree falls in, and read the sign assigned to that part. What differs from chart to chart is the <strong>starting sign</strong>, which usually depends on the sign’s type: odd or even, movable, fixed or dual.</p>\n<p>The engine uses the standard Parashari rules below. Signs are numbered Aries = 1. Odd signs are Aries, Gemini, Leo, Libra, Sagittarius, Aquarius; even signs are the rest. Movable: Aries, Cancer, Libra, Capricorn. Fixed: Taurus, Leo, Scorpio, Aquarius. Dual: Gemini, Virgo, Sagittarius, Pisces.</p>\n<div class=\"tbl\"><table><thead><tr><th>Chart</th><th>Parts</th><th>Counting starts from</th></tr></thead><tbody><tr><td>D2</td><td>2 × 15°</td><td>Odd sign: first half Leo, second half Cancer. Even sign: first half Cancer, second half Leo</td></tr><tr><td>D3</td><td>3 × 10°</td><td>The sign itself, then the 5th and 9th from it</td></tr><tr><td>D4</td><td>4 × 7°30′</td><td>The sign itself, then the 4th, 7th and 10th from it</td></tr><tr><td>D7</td><td>7 parts</td><td>Odd sign: the sign itself. Even sign: the 7th from it</td></tr><tr><td>D9</td><td>9 × 3°20′</td><td>Movable: the sign itself. Fixed: the 9th from it. Dual: the 5th from it</td></tr><tr><td>D10</td><td>10 × 3°</td><td>Odd sign: the sign itself. Even sign: the 9th from it</td></tr><tr><td>D12</td><td>12 × 2°30′</td><td>The sign itself</td></tr><tr><td>D16</td><td>16 parts</td><td>Movable: Aries. Fixed: Leo. Dual: Sagittarius</td></tr><tr><td>D20</td><td>20 × 1°30′</td><td>Movable: Aries. Fixed: Sagittarius. Dual: Leo</td></tr><tr><td>D24</td><td>24 parts</td><td>Odd sign: Leo. Even sign: Cancer</td></tr><tr><td>D27</td><td>27 parts</td><td>Fire signs: Aries. Earth: Cancer. Air: Libra. Water: Capricorn</td></tr><tr><td>D30</td><td>Unequal</td><td>Odd sign: 0–5° Mars (Aries), 5–10° Saturn (Aquarius), 10–18° Jupiter (Sagittarius), 18–25° Mercury (Gemini), 25–30° Venus (Libra). Even sign: 0–5° Venus (Taurus), 5–12° Mercury (Virgo), 12–20° Jupiter (Pisces), 20–25° Saturn (Capricorn), 25–30° Mars (Scorpio)</td></tr><tr><td>D40</td><td>40 × 45′</td><td>Odd sign: Aries. Even sign: Libra</td></tr><tr><td>D45</td><td>45 × 40′</td><td>Movable: Aries. Fixed: Leo. Dual: Sagittarius</td></tr><tr><td>D60</td><td>60 × 30′</td><td>The sign itself, counting forward one sign per 30′ (engine; another reading starts from Aries, see below)</td></tr></tbody></table></div>\n<h2>A worked example: your Moon in D9</h2>\n<p>Moon is at 8°04′ of Cancer. Cancer is a movable sign, so D9 starts from Cancer itself. Each navamsa is 3°20′. 8°04′ divided by 3°20′ is 2.42, so the Moon is in the third navamsa (parts 0, 1, 2). Counting Cancer, Leo, Virgo: <strong>Virgo</strong>. The engine says the Moon is in Virgo in D9.</p>\n<h2>Where authors differ</h2>\n<p>D1, D9 and D12 are almost universal. Several others have alternate formulas: software offers more than one version of D2, D3 and D30, and the starting signs of D16 to D60 are not identical in all manuals. If your software shows a different sign, find out which rule it uses before calling either one wrong.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Do your lagna in D9 and D10 by hand. Lagna: Virgo 21°52′.</p><ul>\n<li><strong>D9:</strong> Virgo is dual, so counting starts from the 5th sign from Virgo, which is Capricorn. 21°52′ ÷ 3°20′ = 6.56, so the seventh navamsa (parts 0 to 6). Counting Capricorn, Aquarius, Pisces, Aries, Taurus, Gemini, Cancer: <strong>Cancer</strong>.</li>\n<li><strong>D10:</strong> Virgo is an even sign, so counting starts from the 9th from Virgo, which is Taurus. 21°52′ ÷ 3° = 7.29, so the eighth part (index 7). Taurus + 7 = <strong>Sagittarius</strong>.</li>\n</ul><p>Both agree with the engine (D9 lagna Cancer, D10 lagna Sagittarius).</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>D2:</strong> the Parashari “Sun hora and Moon hora” scheme (Leo and Cancer) is used here. Some regional or modern packages use a sign-based alternative.</li>\n<li><strong>D3:</strong> the classical drekkana is the one above. Some software offers other drekkana variants, for example the Parivritti, Somanatha or Jagannatha versions.</li>\n<li><strong>D30:</strong> classical unequal division. Some authors propose equal division. This is a real disagreement.</li>\n<li><strong>D60:</strong> the engine counts from the sign itself. This matches R. Santhanam’s BPHS translation (ch. 6 v. 33-41): ignore the sign, double the degrees, divide by 12, add 1 to the remainder and count that many signs from the planet’s own sign (his example puts Venus at Capricorn 13°25′ in Pisces). Your lagna at 21°52′ of Virgo gives 43 ÷ 12, remainder 7, plus 1 = the 8th sign from Virgo: Aries. A variant that counts from Aries instead would give Scorpio. Check which rule your software uses.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>The engine is tested across the whole zodiac: its general D9 formula is compared with an independent compact D9 formula. It does not do this for the other vargas. For any other varga, check two or three planets by hand and compare with a second program before trusting it.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Every varga: locate the part, then read the sign assigned to it.</li><li>The starting sign depends on odd or even, or movable, fixed or dual.</li><li>D9 and D10 are the two you should be able to compute by hand.</li><li>Where software differs from your calculation, find the rule it uses before deciding who is wrong.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Compute the D9 sign of your Sun (Gemini 10°41′, a dual sign) by hand and compare with the table in lesson 7-1. Then compute your Mars (Taurus 29°19′, a fixed sign).</p>",
+   "listen": "Every divisional chart works the same way. Find the planet’s sign and its degree, find which part that degree falls in, and read the sign assigned to that part. The starting sign depends on the sign type, odd or even, movable, fixed or dual. For D9, movable signs start from themselves, fixed signs from the ninth sign, dual signs from the fifth. For D10, odd signs start from themselves and even signs from the ninth. For D3 you count the sign itself, the fifth and the ninth. Your Moon at eight degrees of Cancer is in the third navamsa, which is Virgo. Your lagna at twenty-one fifty-two of Virgo gives a D9 lagna of Cancer and a D10 lagna of Sagittarius. Software sometimes uses different formulas for D2, D3, D30 and D60, so confirm the rule before calling any output wrong.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on divisional charts (shodasha varga); chapter numbers not verified here",
+    "Computed with the app's chart engine: D9 formula, tested against an independent compact formula"
+   ],
+   "quiz": [
+    {
+     "q": "For D9, a fixed sign starts counting from…",
+     "o": [
+      "The sign itself",
+      "The 5th from it",
+      "The 9th from it",
+      "The 7th from it"
+     ],
+     "a": 2,
+     "w": "Movable: itself; fixed: the 9th from it; dual: the 5th from it."
+    },
+    {
+     "q": "Your Moon is at 8°04′ Cancer. Which D9 sign?",
+     "o": [
+      "Cancer",
+      "Leo",
+      "Virgo",
+      "Libra"
+     ],
+     "a": 2,
+     "w": "Cancer is movable, so counting starts at Cancer; 8°04′ falls in the third navamsa: Cancer, Leo, Virgo."
+    },
+    {
+     "q": "D10 for an even sign starts from…",
+     "o": [
+      "The sign itself",
+      "The 9th from it",
+      "The 7th from it",
+      "The 5th from it"
+     ],
+     "a": 1,
+     "w": "Odd signs start from themselves, even signs from the 9th."
+    },
+    {
+     "q": "Your D10 lagna is…",
+     "o": [
+      "Capricorn",
+      "Scorpio",
+      "Sagittarius",
+      "Aquarius"
+     ],
+     "a": 2,
+     "w": "Virgo (even sign) starts from Taurus; the eighth 3° part gives Sagittarius."
+    },
+    {
+     "q": "Software shows a D3 sign different from the engine’s. What do you do?",
+     "o": [
+      "Assume the software is right and the engine wrong",
+      "Assume the engine is right and the software wrong",
+      "Find which D3 rule each uses before judging",
+      "Ignore D3 and use only the navamsa instead"
+     ],
+     "a": 2,
+     "w": "Some vargas have variant formulas; identify the rule first."
+    }
+   ]
+  },
+  {
+   "id": "7-3",
+   "title": "The navamsa (D9) in depth",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> How do you find the D9 sign of a planet in a fixed sign?</p>\n<p>The {{term:navamsa|navamsa}} is the second most important chart after D1. In a common teaching image, D1 is the tree and D9 is the fruit. It is used for three jobs: (1) judging a planet’s true strength, (2) reading marriage and the partner, and (3) reading dharma, the deeper purpose of the life.</p>\n<h2>Job 1: planetary strength</h2>\n<p>A planet that is strong in D1 but weak in D9 delivers less than its D1 position promises. A planet that is weak in D1 but strong in D9 delivers more than expected. Check each planet’s sign and dignity in D9. A planet in the same sign in D1 and D9 is {{term:vargottama|vargottama}}, traditionally read as strengthened.</p>\n<p>{{term:pushkara|Pushkara navamsa}} is a further idea: certain navamsa segments are said to nourish a planet placed there. Tables circulate in books and software, and the ones consulted disagree in places, so this course does not publish one. Check your software against a printed source before using it.</p>\n<h2>Job 2: spouse</h2>\n<p>Read, in this order: the D9 lagna and its lord; the 7th house of D9, its lord and occupants; Venus (karaka of the wife, for a male chart) and Jupiter (karaka of the husband, for a female chart); the D1 7th house and lord; and, in Jaimini work, the Darakaraka (the planet with the lowest degree) and the {{term:upapada|Upapada}}.</p>\n<h2>Job 3: dharma</h2>\n<p>The 9th house from the D9 lagna and its occupants, the D9 lagna lord, and the {{term:karakamsa|karakamsa}} (Jaimini) are read for the life’s deeper direction.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>D9 lagna: Cancer</strong>, lord Moon, which is in Virgo in D9 (3rd house). D9 positions counted from the Cancer lagna:</p><div class=\"tbl\"><table><thead><tr><th>D9 house</th><th>Sign</th><th>Planets</th></tr></thead><tbody><tr><td>1</td><td>Cancer</td><td>Rahu</td></tr><tr><td>2</td><td>Leo</td><td>Jupiter</td></tr><tr><td>3</td><td>Virgo</td><td>Moon, Mars</td></tr><tr><td>7</td><td>Capricorn</td><td>Sun, Ketu</td></tr><tr><td>9</td><td>Pisces</td><td>Venus (exalted)</td></tr><tr><td>12</td><td>Gemini</td><td>Mercury, Saturn</td></tr></tbody></table></div><ul>\n<li><strong>Strength:</strong> Venus is exalted, Mercury is vargottama and in its own sign. Sun (Capricorn) and Mars (Virgo) are in enemy signs. Moon, Jupiter and Saturn are in friends’ signs.</li>\n<li><strong>Spouse prompts (not verdicts):</strong> D9 7th house is Capricorn with the Sun and Ketu; its lord Saturn is in Gemini, the 12th from the D9 lagna, with Mercury. Venus, the karaka for a male chart, is exalted. Jupiter, your Darakaraka, is in Leo in D9. The Upapada (UL) in D1 is Aries per the engine. Classical keywords for the Sun in a partnership house are pride and a strong-willed partner, for Ketu detachment: treat these as questions to explore, not as facts.</li>\n<li><strong>Dharma:</strong> the 9th from the D9 lagna is Pisces, where Venus is exalted. Your karakamsa (the navamsa sign of Mars, your Atmakaraka) is Virgo.</li>\n</ul></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari:</strong> D9 for strength and spouse, with the D1 7th house and Venus or Jupiter as karakas.</li>\n<li><strong>Jaimini:</strong> reads the Darakaraka, the Upapada and the karakamsa. The 7-karaka and 8-karaka schemes (with or without Rahu) can change which planet is the Atmakaraka. Your Atmakaraka stays Mars in both here.</li>\n<li><strong>KP:</strong> reads marriage through the 7th cusp’s sub-lord and the 2nd, 7th and 11th houses, not through D9.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>The D9 lagna window is narrow: about 14.7 minutes in total. <strong>Birth time:</strong> if your true birth time is more than about 8 minutes earlier or 6½ minutes later than 12:59 (outside 12:50:44 to 13:05:27), the D9 lagna and every house reading from it changes. <strong>D1 against D9:</strong> a marriage reading that rests on D9 houses is only as good as the birth time. Venus exaltation in D9 (a planetary fact) does not depend on the lagna.</p></div><p class=\"note\">Marriage and partner readings are where a chart is most easily over-read. Log any prediction you derive in your prediction ledger with a date to check, and do not set marriage dates from D9 alone.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>D9 has three jobs: planetary strength, spouse, dharma.</li><li>Vargottama (same sign in D1 and D9) is read as strength.</li><li>Read D9 houses from the D9 lagna, not from the D1 lagna.</li><li>D9 houses depend on birth time; planet strengths in D9 do not.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your D9 chart in a South-Indian square from the table above, then mark each planet’s dignity (exalted, own, friend, neutral, enemy) next to it.</p>",
+   "listen": "The navamsa is the second most important chart after the rashi chart. A common teaching image calls D1 the tree and D9 the fruit. It has three jobs. First, it checks a planet’s true strength: a planet that is strong in both charts delivers, and one in the same sign in both, called vargottama, is strengthened. Second, it reads marriage, through the D9 lagna, the seventh house and its lord, and the karaka Venus for a man or Jupiter for a woman. Third, it reads dharma, through the ninth house from the D9 lagna. In your chart the D9 lagna is Cancer with its lord Moon in Virgo. Venus is exalted in Pisces, the ninth house of D9, and Mercury is vargottama. The Sun and Ketu are in the D9 seventh house. Treat spouse readings as questions to test, since the D9 houses depend on an exact birth time.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on the navamsa and on Vargottama (chapter numbers not verified here)",
+    "Jaimini Sutras, chapters on karakamsa, Darakaraka and Upapada",
+    "Phaladeepika, chapter on the navamsa",
+    "Jyotish engine output: D9, karakas, arudhas"
+   ],
+   "quiz": [
+    {
+     "q": "Vargottama means a planet is…",
+     "o": [
+      "In the same sign in D1 and D9",
+      "Exalted in the navamsa chart",
+      "In the 9th house of the D9 chart",
+      "Combust in the navamsa chart"
+     ],
+     "a": 0,
+     "w": "Same sign in the rashi chart and the navamsa."
+    },
+    {
+     "q": "Which planet is exalted in your D9?",
+     "o": [
+      "Jupiter",
+      "Mercury",
+      "Venus",
+      "Moon"
+     ],
+     "a": 2,
+     "w": "Venus is in Pisces in your D9, its sign of exaltation."
+    },
+    {
+     "q": "Your D9 lagna is…",
+     "o": [
+      "Virgo",
+      "Cancer",
+      "Leo",
+      "Capricorn"
+     ],
+     "a": 1,
+     "w": "D9 lagna is Cancer, lord Moon."
+    },
+    {
+     "q": "Why do D9 house readings need an exact birth time but D9 planet strengths do not?",
+     "o": [
+      "Planets move faster in D9, so their signs change within minutes",
+      "The D9 lagna changes in about 15 minutes, while planets’ D9 signs rarely change",
+      "D9 has no houses, so there is nothing for time to affect",
+      "Strengths are fixed at birth, but the houses are read from the Moon"
+     ],
+     "a": 1,
+     "w": "A planet’s D9 sign changes slowly (the Moon is the fastest, and moves into a new navamsa about every six hours); the D9 lagna changes every 3°20′ of the ascendant, about 14 to 15 minutes for your Virgo lagna."
+    },
+    {
+     "q": "In Jaimini work, the planet with the lowest degree among the seven is the…",
+     "o": [
+      "Atmakaraka",
+      "Darakaraka",
+      "Putrakaraka",
+      "Bhratrikaraka"
+     ],
+     "a": 1,
+     "w": "The lowest degree gives the Darakaraka (spouse karaka); in your chart it is Jupiter."
+    }
+   ]
+  },
+  {
+   "id": "7-4",
+   "title": "The dashamsa (D10) and career",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the D9 lagna of your chart, and what is its window in minutes?</p>\n<p>The {{term:dashamsa|dashamsa}} splits each sign into ten parts of 3°. It is read for career, work and public action. D10 is not a replacement for the 10th house of D1. It is a second view, sharper on <em>what kind of work</em> and <em>how it unfolds</em>.</p>\n<h2>A career reading in five steps</h2>\n<ol>\n<li>D1: the 10th house, its lord and occupants; the 10th from the Moon and from the Sun; the karakas (Sun, Mercury, Saturn, Jupiter).</li>\n<li>D10: the D10 lagna and its lord (the working self).</li>\n<li>D10: the 10th house, its lord and occupants (the public output).</li>\n<li>D10: the planets in kendras and trikonas, and any planet that is exalted, debilitated or cancelled.</li>\n<li>Time: the dasha lords’ positions in D10, since a dasha brings that planet’s D10 story forward.</li>\n</ol>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>D1 base:</strong> 10th house Gemini with the Sun and Mercury, lord Mercury (also lagna lord), Bhadra yoga.</p>\n<p><strong>D10:</strong> lagna Sagittarius (lord Jupiter). Positions from the D10 lagna:</p><div class=\"tbl\"><table><thead><tr><th>D10 house</th><th>Sign</th><th>Planets</th></tr></thead><tbody><tr><td>1</td><td>Sagittarius</td><td>Jupiter (own/moolatrikona sign)</td></tr><tr><td>4</td><td>Pisces</td><td>Mercury (debilitated), Venus (exalted)</td></tr><tr><td>6</td><td>Taurus</td><td>Moon (exalted), Ketu</td></tr><tr><td>7</td><td>Gemini</td><td>Saturn</td></tr><tr><td>10</td><td>Virgo</td><td>Sun</td></tr><tr><td>11</td><td>Libra</td><td>Mars</td></tr><tr><td>12</td><td>Scorpio</td><td>Rahu</td></tr></tbody></table></div><ul>\n<li><strong>Your D10 10th house</strong> is Virgo with the Sun; its lord Mercury is in Pisces (the 4th of D10), where Mercury is debilitated. In D1, Mercury was strong (Bhadra). D10 says the work Mercury does is where the complexity lives.</li>\n<li><strong>Cancellation in D10:</strong> Mercury’s dispositor Jupiter sits in the D10 lagna, a kendra (rule A from lesson 6-5), and Venus, the planet exalted in Pisces, is in the D10 4th house, also a kendra (rule C). Mercury also joins exalted Venus, but that is rule G, which has no named text. Two caveats: the neecha bhanga rules were written for the birth chart, and applying them inside a varga is a modern extension; and D10 houses rest on a 13-minute time window. Do not rank this against Saturn’s D1 cancellation.</li>\n<li><strong>D10 lagna lord:</strong> Jupiter in the lagna in its own sign. Whether a yoga such as Hamsa carries meaning when read in a varga is debated; treat it as a strength signal.</li>\n<li><strong>Moon</strong> is exalted in D10, in the 6th (service, daily work). The Moon is also your 11th lord (gains).</li>\n</ul></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari:</strong> career from D1’s 10th house and D10 together, with the dasha lords checked in D10.</li>\n<li><strong>Jaimini:</strong> career from the Amatyakaraka (the second-highest degree planet; your Mercury), the karakamsa and the arudha of the 10th house.</li>\n<li><strong>KP:</strong> career from the 10th cusp’s sub-lord and the 2nd, 6th, 10th and 11th houses; D10 is not used in the same way.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Your D10 lagna window is about 13.3 minutes: from 12:55:09 to 13:08:24 for a 12:59 chart. If the true time lies outside, the D10 lagna changes and the whole D10 house story changes with it. The planet positions in D10 stay the same, so first read the planet signs and dignities, then the houses.</p></div><p class=\"note\">Career timing is easy to rationalise afterwards. If you test D10 against a job change, write the prediction in the ledger before the event.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>D10 gives a second, sharper view of work. D1’s 10th house is still the base.</li><li>Read D10 lagna, D10 10th house and its lord, then the dasha lords in D10.</li><li>Planet dignity in D10 can differ sharply from D1. Check cancellations there too.</li><li>D10 houses depend on birth time (window of about 13 minutes for you).</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write the D10 house, sign and dignity for each of your seven planets, and note the one planet that is debilitated and the rules that cancel it.</p>",
+   "listen": "The dashamsa, D10, divides each sign into ten parts of three degrees and is read for career and public action. It does not replace the tenth house of D1. It is a second, sharper view. Read the D1 tenth house and its lord first, then the D10 lagna and its lord, then the D10 tenth house and lord, then the dasha lords in D10. In your chart the D10 lagna is Sagittarius with Jupiter in it in its own sign. The D10 tenth house is Virgo with the Sun. Its lord Mercury is in Pisces in the fourth house, where it is debilitated, but its dispositor Jupiter is in the D10 lagna and exalted Venus is in a D10 kendra, so two cancellation rules fit, if you accept using them inside a varga. The Moon is exalted in D10. The D10 lagna window is only about thirteen minutes, so confirm the birth time before relying on houses.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapter on the divisional charts, for the dashamsa and its use for career (chapter number not verified here)",
+    "Jaimini Sutras, for the Amatyakaraka-based career method",
+    "Jyotish engine output: D10, karakas"
+   ],
+   "quiz": [
+    {
+     "q": "D10 is mainly read for…",
+     "o": [
+      "Marriage and partnership",
+      "Children and creativity",
+      "Career and public action",
+      "Siblings and courage"
+     ],
+     "a": 2,
+     "w": "The dashamsa is the career varga."
+    },
+    {
+     "q": "Your D10 lagna is…",
+     "o": [
+      "Capricorn",
+      "Sagittarius",
+      "Aquarius",
+      "Scorpio"
+     ],
+     "a": 1,
+     "w": "Computed in lesson 7-2: Sagittarius."
+    },
+    {
+     "q": "Which planet is debilitated in your D10?",
+     "o": [
+      "Mercury",
+      "Venus",
+      "Jupiter",
+      "Moon"
+     ],
+     "a": 0,
+     "w": "Mercury is in Pisces in D10."
+    },
+    {
+     "q": "Which rule cancels Mercury’s debilitation in D10?",
+     "o": [
+      "It is retrograde, and a retrograde debilitated planet is always cancelled",
+      "Its dispositor Jupiter is in a D10 kendra, and exalted Venus is in a kendra too",
+      "It is in the 10th house of D10, which cancels any fall there",
+      "It is vargottama, and a vargottama planet is never debilitated in D10"
+     ],
+     "a": 1,
+     "w": "Rule A (dispositor Jupiter in the D10 lagna) and rule C (Venus, exalted in Pisces, in the D10 4th) both fit, if you accept applying these rules inside a varga."
+    },
+    {
+     "q": "If your birth time is 10 minutes late of the recorded time, what happens to D10?",
+     "o": [
+      "Nothing changes, because 10 minutes is far too small to affect any varga",
+      "Likely the D10 lagna changes, as the window ends 9.4 minutes after",
+      "Only the planets change, while the lagna stays as it is",
+      "D10 disappears and must be rebuilt from the D9 chart"
+     ],
+     "a": 1,
+     "w": "Your D10 window runs from 12:55:09 to 13:08:24, so 10 minutes later falls outside it."
+    }
+   ]
+  },
+  {
+   "id": "7-5",
+   "title": "D7, D4, D12 and D24",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which planet in your D10 is debilitated, and what cancels it?</p>\n<p>These four vargas answer specific questions. Treat each as a short checklist, and read it only after D1 and D9.</p>\n<div class=\"tbl\"><table><thead><tr><th>Chart</th><th>Reads</th><th>First look at</th><th>Karakas</th></tr></thead><tbody><tr><td>D7 Saptamsha</td><td>Children, lineage</td><td>D7 lagna, 5th house and lord; Jupiter in D7</td><td>Jupiter</td></tr><tr><td>D4 Chaturthamsha</td><td>Property, home, fixed assets, fortune</td><td>D4 lagna, 4th house and lord; Mars, Moon</td><td>Mars, Moon</td></tr><tr><td>D12 Dwadashamsha</td><td>Parents, ancestry</td><td>D12 lagna; Sun (father), Moon (mother); 4th and 9th houses</td><td>Sun, Moon</td></tr><tr><td>D24 Chaturvimshamsha</td><td>Education, learning</td><td>D24 lagna, 4th and 5th houses; Mercury and Jupiter</td><td>Mercury, Jupiter</td></tr></tbody></table></div>\n<p>A varga checklist: (1) which house in D1 normally carries this topic; (2) what its lord is doing in D1 and in the varga; (3) the karaka’s state in both; (4) the dasha lords involved. If D1 and the varga agree, you have a signal. If they disagree, say so.</p>\n<h2>A caution on Rahu and Ketu</h2>\n<p>In D1 the nodes are always opposite. In a varga the formula maps each node’s own longitude, so Rahu and Ketu can land in the same sign. In your D2, D16, D20, D24, D30, D40 and D45 they do. Some software redraws Ketu opposite Rahu in every varga. Check what yours does, and which approach the text you rely on expects.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><div class=\"tbl\"><table><thead><tr><th>Chart</th><th>Lagna</th><th>What stands out</th></tr></thead><tbody><tr><td>D7</td><td>Leo</td><td>Jupiter (karaka) in Virgo; Mercury and Venus together in Sagittarius, the D7 5th house</td></tr><tr><td>D4</td><td>Pisces</td><td>Mercury and Jupiter together in Pisces (the lagna); the D4 4th house, Gemini, is empty; Mercury, the 4th lord, is debilitated here, with its dispositor Jupiter beside it</td></tr><tr><td>D12</td><td>Taurus</td><td>Sun and Moon together in Libra, the 6th house of D12</td></tr><tr><td>D24</td><td>Sagittarius</td><td>Mercury in Gemini (7th house); Jupiter in Virgo (10th house); Sun, Rahu and Ketu together in Aries (5th house)</td></tr></tbody></table></div><p>Read these as prompts for your own questions, not as predictions. For children and parents especially, a chart cannot settle facts about people. Mercury is again in Pisces in D4, as in D10, each time near its dispositor or an exalted planet.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>D7:</strong> some use D7 for children, others use it mainly to confirm D1’s 5th house and the karaka Jupiter. The Jaimini reading uses the Putrakaraka and 5th house.</li>\n<li><strong>D4:</strong> read for property and fortune; some authors link it to the 4th house karakas Mars and Moon, others to wider “fortune”.</li>\n<li><strong>D12:</strong> parents and ancestry; some read D12 only for the longevity and condition of parents, others for family lineage and inheritance.</li>\n<li><strong>D24:</strong> education and learning; some authors treat it as confirming D1’s 4th and 5th houses with Mercury and Jupiter.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Window check from the engine for a 12:59 chart: D7 lagna holds from 12:57 to 13:16 (about 19 minutes); D12 from 12:50:44 to 13:01:46 (about 11 minutes); D24 from 12:56:15 to 13:01:46 (about 5.5 minutes). D24 is more sensitive than D7 or D12, so read D24 houses with extra caution.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Each of these four vargas answers one topic. Read them after D1 and D9.</li><li>Use the checklist: the D1 house, its lord, the karaka, the dasha lords.</li><li>Rahu and Ketu can share a sign in a varga. Know how your software draws them.</li><li>Smaller parts mean a narrower time window. D24 is the most sensitive of these four.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Pick one of the four vargas that matches a current question in your life. Write one sentence from D1 and one from the varga, and say whether they agree.</p>",
+   "listen": "Four vargas answer specific topics. D7, the saptamsha, is for children and lineage, with Jupiter as karaka. D4, the chaturthamsha, is for property, home and fortune. D12, the dwadashamsha, is for parents and ancestry, with the Sun for the father and the Moon for the mother. D24 is for education and learning, with Mercury and Jupiter. For each, ask which house of D1 normally carries the topic, what its lord is doing in D1 and in the varga, how the karaka stands, and which dasha lords are involved. Read these only after D1 and D9, and remember the narrower time windows: for your chart, D24 holds for only about five and a half minutes. In your chart Mercury is in Pisces in D4 and in D10, each time near its dispositor or an exalted planet. Rahu and Ketu can land in the same sign in a varga, as in your D2, D16, D20, D24, D30, D40 and D45.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on divisional charts (D7, D4, D12, D24 and their uses; chapter numbers not verified here)",
+    "Jaimini Sutras, for the Putrakaraka-based reading of children",
+    "Jyotish engine output: D4, D7, D12, D24"
+   ],
+   "quiz": [
+    {
+     "q": "D12 is read mainly for…",
+     "o": [
+      "Career and public life",
+      "Parents and ancestry",
+      "Education and learning",
+      "Children and progeny"
+     ],
+     "a": 1,
+     "w": "The dwadashamsha is the parents and ancestry chart."
+    },
+    {
+     "q": "Which karaka is central in D7?",
+     "o": [
+      "Venus",
+      "Jupiter",
+      "Saturn",
+      "Mercury"
+     ],
+     "a": 1,
+     "w": "Jupiter is the natural karaka of children."
+    },
+    {
+     "q": "Your D24 window for a 12:59 birth is about…",
+     "o": [
+      "5.5 minutes",
+      "30 minutes",
+      "2 hours",
+      "10 seconds"
+     ],
+     "a": 0,
+     "w": "D24 lagna holds from 12:56:15 to 13:01:46, about 5.5 minutes."
+    },
+    {
+     "q": "In a varga chart, Rahu and Ketu…",
+     "o": [
+      "Are always opposite",
+      "Can fall in the same sign",
+      "Are removed",
+      "Are always in the lagna"
+     ],
+     "a": 1,
+     "w": "Each node’s own longitude is mapped, so they can share a sign, as in your D2, D16, D20, D24, D30, D40 and D45."
+    },
+    {
+     "q": "Your D4 lagna is…",
+     "o": [
+      "Pisces",
+      "Virgo",
+      "Leo",
+      "Gemini"
+     ],
+     "a": 0,
+     "w": "The engine gives D4 lagna Pisces."
+    }
+   ]
+  },
+  {
+   "id": "7-6",
+   "title": "Vimshopaka bala and birth-time sensitivity",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which of the four vargas in the last lesson has the narrowest time window for your chart?</p>\n<h2>Vimshopaka bala: one planet across many charts</h2>\n<p>{{term:vimshopaka|Vimshopaka bala}} (“twenty-part strength”) is a score out of 20 that asks: across a chosen set of divisional charts, how comfortable is this planet? For each chart, the planet’s sign is rated by its relationship with the sign’s lord (own sign, great friend, friend, neutral, enemy, great enemy), the rating is turned into a fraction of that chart’s weight, and the weights are added. The Parashari texts describe four standard sets (six, seven, ten and sixteen vargas) with different weights. Each set has its own weights; in the sixteen-varga set the largest weights go to D60 (4), D1 (3.5) and D9 (3), as tabulated in Santhanam’s BPHS ch. 7 (check your edition).</p>\n<p>The engine does <strong>not</strong> compute Vimshopaka bala yet, so this course gives you no score for your planets. Here is only the raw material: the engine can tell you the sign of each planet in each varga, and you can see how often a planet is in a strong sign. The count below is a teaching device of this course, <em>not</em> Vimshopaka.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Number of the sixteen vargas in which each planet is in its own, exalted or moolatrikona sign (sign-level, from the engine’s positions):</p><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Count</th><th>Vargas</th><th>Debilitated in</th></tr></thead><tbody><tr><td>Sun</td><td>4</td><td>D2, D7, D24, D45</td><td>D3, D12</td></tr><tr><td>Moon</td><td>4</td><td>D1, D2, D3, D10</td><td>D60</td></tr><tr><td>Mars</td><td>5</td><td>D3, D12, D16, D30, D40</td><td>D20</td></tr><tr><td>Mercury</td><td>4</td><td>D1, D9, D24, D45</td><td>D4, D10, D16</td></tr><tr><td>Jupiter</td><td>5</td><td>D1, D2, D3, D4, D10</td><td>D16</td></tr><tr><td>Venus</td><td>5</td><td>D1, D3, D9, D10, D20</td><td>D30, D40, D60</td></tr><tr><td>Saturn</td><td>4</td><td>D24, D27, D30, D40</td><td>D1, D3</td></tr></tbody></table></div><p>Saturn, debilitated in D1 and D3, is in its own or exalted sign in four of the finer charts; but D24, D27, D30 and D40 are among the most time-sensitive, so do not lean on those four until your birth time is verified.</p></div>\n<h2>Birth-time sensitivity: the timescan idea</h2>\n<p>The engine has a “timescan” that moves the birth time in small steps and reports what changes. The idea matters because for your Virgo lagna at this latitude the lagna moves about 1° every 4.4 minutes (the daily average is 4 minutes, and it varies by sign), and every varga lagna changes each time that lagna crosses a boundary of its part. Smaller parts mean faster changes.</p>\n<p>Your recorded time is 12:59. Computed with the app's chart engine, the minute window in which each lagna stays the same:</p>\n<div class=\"tbl\"><table><thead><tr><th>Chart</th><th>Lagna</th><th>Same from</th><th>Same until</th><th>Window</th></tr></thead><tbody><tr><td>D1</td><td>Virgo</td><td>11:22:55</td><td>13:35:01</td><td>132 min</td></tr><tr><td>D7</td><td>Leo</td><td>12:57:02</td><td>13:15:59</td><td>18.9 min</td></tr><tr><td>D9</td><td>Cancer</td><td>12:50:44</td><td>13:05:27</td><td>14.7 min</td></tr><tr><td>D10</td><td>Sagittarius</td><td>12:55:09</td><td>13:08:24</td><td>13.3 min</td></tr><tr><td>D12</td><td>Taurus</td><td>12:50:44</td><td>13:01:46</td><td>11 min</td></tr><tr><td>D16</td><td>Scorpio</td><td>12:53:30</td><td>13:01:46</td><td>8.3 min</td></tr><tr><td>D24</td><td>Sagittarius</td><td>12:56:15</td><td>13:01:46</td><td>5.5 min</td></tr><tr><td>D60</td><td>Aries</td><td>12:57:21</td><td>12:59:34</td><td>2.2 min</td></tr></tbody></table></div>\n<p>Other effects of a small time error: the Moon’s degree changes by about 0.009° per minute, which shifts every Vimshottari date. For your chart, 5 minutes earlier moves the start of Ketu’s period from 29 Sep 2027 to about 23 Oct 2027, and 5 minutes later to about 5 Sep 2027, roughly 24 days either way. The Moon’s pada (Pushya 2) holds from about 10:27 to 16:29, so it is safe for at least 2.5 hours either way. The engine’s scan over the whole day also shows that your Atmakaraka (Mars) and karakamsa (Virgo) do not change at all through the day.</p>\n<h2>What to do with this</h2>\n<ul><li>D1 and D9 planet signs are safe for small errors. Use them freely.</li><li>D9 and D10 houses depend on the time being right to within about 5 minutes.</li><li>D24, D27, D30, D40, D45 and D60 positions or houses need a time that is verified, not merely recorded.</li><li>If your time was rounded or came from memory, assume an error window and give it to your software. {{term:rectification|Rectification}} is a method for narrowing it, using known life events.</li></ul>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Vimshopaka sets:</strong> the Parashari texts describe four sets (six, seven, ten and sixteen vargas). Authors differ on which set to use for which question and on the exact weights.</li>\n<li><strong>Dignity in vargas:</strong> some use only sign relationships (friend, enemy), some also count exaltation and debilitation in the finer charts. Moolatrikona degrees are not meaningful in a varga, so sign-level handling is used here.</li>\n<li><strong>How far to trust deep vargas:</strong> some astrologers use only D1, D9 and D10 in practice. Others use all sixteen. There is no consensus.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Another check:</strong> in the next stage you will meet Ashtakavarga, which scores planets by a different method that does not depend on vargas. If a planet looks strong in the varga count and weak in Ashtakavarga (or the reverse), note the mismatch rather than averaging them.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Vimshopaka bala scores a planet’s comfort across several vargas out of 20. The engine does not compute it yet.</li><li>The smaller the part, the narrower the birth-time window. Yours: D9 about 15 min, D10 about 13 min, D60 about 2 min.</li><li>A 5-minute error moves every dasha date by about 24 days for your chart.</li><li>Deep vargas (D24 to D60) need a verified birth time before use.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Ask your family where the 12:59 birth time came from (hospital record, memory, rounding). Write whether it could be off by 2, 5 or 10 minutes, and list which of the readings above would survive each.</p>",
+   "listen": "Vimshopaka bala is a score out of twenty for how comfortable a planet is across a set of divisional charts, weighted by the importance of each chart. The engine does not compute it yet, so this course gives no score. What it can give is each planet’s sign in each varga and a simple count of strong signs, which is a teaching device and not Vimshopaka. The more important lesson is birth-time sensitivity. On average the lagna moves one degree every four minutes (about 4.4 for your Virgo lagna), so smaller varga parts change faster. For your recorded time of twelve fifty-nine, the D1 lagna holds for over two hours, D9 for about fifteen minutes, D10 for about thirteen, D24 for about five and a half, and D60 for about two minutes. A five-minute error also shifts every dasha date by about twenty-four days. Use D1 and D9 planet signs freely, and treat deep vargas with caution until the time is verified.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapter on Vimshopaka bala and the divisional charts (chapter number not verified here)",
+    "Computed with the app's chart engine: birth-time windows for each divisional lagna"
+   ],
+   "quiz": [
+    {
+     "q": "Vimshopaka bala is a score out of…",
+     "o": [
+      "10",
+      "20",
+      "60",
+      "100"
+     ],
+     "a": 1,
+     "w": "It is a twenty-part strength."
+    },
+    {
+     "q": "Which of these needs the narrowest birth-time window in your chart?",
+     "o": [
+      "D1 lagna",
+      "D9 lagna",
+      "D10 lagna",
+      "D60 lagna"
+     ],
+     "a": 3,
+     "w": "D60 lagna holds for only about 2.2 minutes; D1 holds for over two hours."
+    },
+    {
+     "q": "A 5-minute birth-time error moves your Vimshottari dates by about…",
+     "o": [
+      "5 minutes",
+      "1 day",
+      "24 days",
+      "5 years"
+     ],
+     "a": 2,
+     "w": "The Moon moves about 0.046° in 5 minutes, shifting the dasha balance by about 24 days for your Moon in Pushya."
+    },
+    {
+     "q": "Which vargas should you trust least without a verified birth time?",
+     "o": [
+      "D1 and D9 planet signs",
+      "D24 to D60 lagnas and houses",
+      "D2 and D3 houses only",
+      "The Sun’s sign in D1"
+     ],
+     "a": 1,
+     "w": "The finest vargas change within a few minutes."
+    },
+    {
+     "q": "What does the engine NOT compute?",
+     "o": [
+      "Varga signs",
+      "Vimshopaka bala",
+      "Vimshottari dates",
+      "Ashtakavarga"
+     ],
+     "a": 1,
+     "w": "Vimshopaka and Shadbala are not computed yet."
+    }
+   ]
+  },
+  {
+   "id": "7-7",
+   "title": "Synthesis: your vargas side by side — and stage test",
+   "mins": 35,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name two vargas whose house readings you should not use until the birth time is verified.</p>\n<p>This lesson puts D1, D9 and D10 side by side for your chart, judges what survives a birth-time error, and ends with the stage test.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>D1</th><th>D9 (dignity)</th><th>D10 (dignity)</th><th>Pattern</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini</td><td>Capricorn (enemy)</td><td>Virgo (neutral)</td><td>Weaker in D9; neutral in D10</td></tr><tr><td>Moon</td><td>Cancer (own)</td><td>Virgo (friend)</td><td>Taurus (exalted)</td><td>Steady; best in D10</td></tr><tr><td>Mars</td><td>Taurus</td><td>Virgo (enemy)</td><td>Libra (neutral)</td><td>Combust in D1; no strong support</td></tr><tr><td>Mercury</td><td>Gemini (own)</td><td>Gemini (own, vargottama)</td><td>Pisces (debilitated; two cancellation rules fit)</td><td>Strong D1/D9; D10 complex</td></tr><tr><td>Jupiter</td><td>Pisces (own)</td><td>Leo (friend)</td><td>Sagittarius (own sign)</td><td>Steady, strong in D10</td></tr><tr><td>Venus</td><td>Taurus (own)</td><td>Pisces (exalted)</td><td>Pisces (exalted)</td><td>Strongest planet in D1, D9 and D10</td></tr><tr><td>Saturn</td><td>Aries (debilitated)</td><td>Gemini (friend)</td><td>Gemini (friend)</td><td>D1 weakness not repeated</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><ul>\n<li><strong>Strongest in D1, D9 and D10:</strong> Venus. Own sign in D1, exalted in both D9 and D10 (the finer vargas in lesson 7-6 are less kind to it). Yet Venus is in the 9th house, not a kendra, and gives no Mahapurusha yoga. The vargas say its strength is real; the yogas say its role is supporting, not headline.</li>\n<li><strong>Mercury is the story:</strong> your lagna lord and 10th lord is strong in D1 and D9 and debilitated in D10, where two cancellation rules fit (a modern extension of the birth-chart rules). That fits a career that is clearly Mercury’s (trade, communication, skill), but where the practical working-out is more complicated than D1 suggests. That is a reading prompt to test in the ledger, not a verdict.</li>\n<li><strong>Saturn:</strong> the weakness in D1 is not repeated in D9 or D10; Saturn’s partial cancellation from lesson 6-5 sits on firmer ground.</li>\n<li><strong>Sun and Mars:</strong> least supported across vargas.</li>\n</ul>\n<p><strong>What survives a 5-minute error:</strong> every planet’s sign in D1, D9, D10 (the planets move slowly), the D1 lagna, the D9 lagna only if the true time falls within 12:50:44 to 13:05:27, the D10 lagna only within 12:55:09 to 13:08:24. <strong>What does not:</strong> the D60 lagna beyond 12:57:21 to 12:59:34, and anything read from D24 and finer houses.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>A Jaimini reader would go straight to the karakamsa (Virgo) and the Darakaraka and Atmakaraka in the navamsa. A KP reader would not use these tables. Where those methods disagree with your reading from D9 and D10, write the disagreement down. The point of this stage is not agreement. It is knowing exactly which chart each claim came from.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Cross-check any claim here with three questions: (1) does it hold if the birth time moves by 5 minutes? (2) does D1 agree? (3) does the dasha running now bring that planet or house forward? Mercury’s major period runs to 29 Sep 2027, so the Mercury D10 story is the one to log in your ledger first.</p></div><p class=\"note\">Prediction ledger: write one dated, testable sentence from this table (for example, about the kind of work that has grown during Mercury’s period) and revisit it on 29 Sep 2027.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Compare planets across D1, D9 and D10 and write down where they agree and disagree.</li><li>Venus is your strongest planet across D1, D9 and D10; Mercury has the richest story.</li><li>Planet signs in D1, D9 and D10 survive small time errors; deep varga houses do not.</li><li>Log claims in the ledger with their source chart.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write a three-line summary of your chart from D1, D9 and D10 with the source chart named for each line, then take the seven-question stage test below (aim for at least six correct).</p>",
+   "listen": "This synthesis compares your planets across D1, D9 and D10. Venus is the strongest across D1, D9 and D10, in its own sign in D1 and exalted in both the navamsa and the dashamsa. Mercury, your lagna lord and tenth lord, is strong in D1 and D9, where it is vargottama, but debilitated in D10 with two cancellation rules fitting, so its story is the most interesting. Saturn’s debilitation in D1 is not repeated in D9 or D10, which supports its partial cancellation. The Sun and Mars have the least support across the charts. A five-minute error leaves every planet’s sign in these charts unchanged, but it can change the D9 lagna beyond about eight minutes early or six late, the D10 lagna beyond four minutes early or nine late, and the D60 lagna beyond about one and a half minutes early or half a minute late. The skill is naming which chart each claim comes from and keeping the claim inside what the birth time can support.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on divisional charts (chapter numbers not verified here)",
+    "Jaimini Sutras, for the contrasting karaka-based method",
+    "Jyotish engine output: natal chart, vargas D1 to D60, dasha table, timescan windows"
+   ],
+   "quiz": [
+    {
+     "q": "Which planet is exalted in both your D9 and your D10?",
+     "o": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Jupiter"
+     ],
+     "a": 2,
+     "w": "Venus is in Pisces in both charts."
+    },
+    {
+     "q": "Which planet is vargottama?",
+     "o": [
+      "Mercury",
+      "Jupiter",
+      "Mars",
+      "Sun"
+     ],
+     "a": 0,
+     "w": "Mercury is in Gemini in D1 and D9."
+    },
+    {
+     "q": "The D9 lagna of your chart is…",
+     "o": [
+      "Cancer",
+      "Virgo",
+      "Leo",
+      "Taurus"
+     ],
+     "a": 0,
+     "w": "Cancer."
+    },
+    {
+     "q": "D9 lagna stays the same for how long around 12:59?",
+     "o": [
+      "About 15 minutes",
+      "About 2 hours",
+      "About 1 minute",
+      "The whole day"
+     ],
+     "a": 0,
+     "w": "From 12:50:44 to 13:05:27, about 14.7 minutes."
+    },
+    {
+     "q": "A 5-minute birth-time error most threatens…",
+     "o": [
+      "The D1 planet signs of all seven",
+      "The D1 lagna sign and house cusps",
+      "The D60 lagna and fine varga houses",
+      "The Sun’s sign and the Moon’s sign"
+     ],
+     "a": 2,
+     "w": "D60 holds for about 2.2 minutes; D1 planet signs and the D1 lagna are far more stable."
+    },
+    {
+     "q": "Your D10 lagna is…",
+     "o": [
+      "Capricorn",
+      "Sagittarius",
+      "Scorpio",
+      "Aquarius"
+     ],
+     "a": 1,
+     "w": "Sagittarius, with Jupiter in it."
+    },
+    {
+     "q": "Mercury in your D10 is…",
+     "o": [
+      "Exalted in Virgo, strengthened by exalted Venus in a D10 kendra",
+      "Debilitated, with two cancellation rules fitting (exalted Venus and the dispositor in kendras)",
+      "Combust, with no cancellation from Jupiter or Venus in any kendra",
+      "Own sign, with Jupiter as dispositor in a kendra"
+     ],
+     "a": 1,
+     "w": "Mercury is in Pisces; Jupiter (Pisces’ lord) is in the D10 lagna and exalted Venus is in a D10 kendra."
+    }
+   ]
+  }
+ ]
+}

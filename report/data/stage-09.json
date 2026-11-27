@@ -1,0 +1,434 @@
+{
+ "stage": 9,
+ "title": "Jaimini",
+ "level": "Advanced",
+ "goal": "Done when you can compute the chara karakas under both schemes, Karakamsa and the four key arudhas for a chart by hand, and explain which convention each result depends on.",
+ "terms": {
+  "chara_karaka": [
+   "Chara karaka · चर कारक",
+   "A movable significator. Jaimini ranks the planets by degree within their sign and gives each rank a life role (soul, minister, sibling, and so on). The roles change from chart to chart."
+  ],
+  "atmakaraka": [
+   "Atmakaraka · आत्मकारक",
+   "The planet with the highest degree within its sign. Jaimini and BPHS call it the soul significator and the most important of the chara karakas."
+  ],
+  "karakamsa": [
+   "Karakamsa · कारकांश",
+   "The navamsa (D9) sign occupied by the Atmakaraka. Read as a lagna in its own right, it shows the soul’s purpose and livelihood theme."
+  ],
+  "rashi_drishti": [
+   "Rashi drishti · राशिदृष्टि",
+   "Sign aspect, Jaimini’s system. Signs aspect signs, and every planet in an aspecting sign aspects every planet in the aspected sign. It does not use planet-specific aspects."
+  ],
+  "argala": [
+   "Argala · अर्गला",
+   "“Bolt” or intervention. Planets in the 2nd, 4th and 11th from a house or planet (and secondarily the 5th) press on it and shape its results."
+  ],
+  "virodhargala": [
+   "Virodhargala · विरोधार्गला",
+   "Obstruction of an argala. Planets in the 12th, 10th and 3rd (and 9th for the 5th) from the reference point can block the argala from the 2nd, 4th and 11th (5th)."
+  ],
+  "arudha": [
+   "Arudha pada · आरूढ पद",
+   "The projected image of a house: how that house appears to the world, which can differ from what it really is. Each of the 12 houses has one."
+  ],
+  "upapada": [
+   "Upapada · उपपद",
+   "Arudha pada of the 12th house (the standard modern reading). Used for marriage: the partner’s role in your life and the durability of the bond."
+  ],
+  "chara_dasha": [
+   "Chara dasha · चर दशा",
+   "A Jaimini sign-based period system. Each sign rules a period whose length comes from counting to its lord’s sign."
+  ],
+  "narayana_dasha": [
+   "Narayana dasha · नारायण दशा",
+   "A sign-based dasha taught in Sanjay Rath’s tradition. It begins from the stronger of the lagna and 7th house signs. Rules differ from Chara dasha."
+  ],
+  "sav": [
+   "Sarvashtakavarga · सर्वाष्टकवर्ग",
+   "The total bindu score of each sign across all eight Ashtakavarga contributors. The 12 signs always add to 337."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "9-1",
+   "title": "Chara karakas: seven or eight?",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> The twelve {{term:sav|Sarvashtakavarga}} scores add to 337 in every chart. In your chart, which house scores highest and which lowest?</p><h2>Two kinds of significator</h2><p>You already know the fixed {{term:karaka|karakas}}: the Sun for the father, the Moon for the mother, Venus for the wife, Jupiter for children. They are the same for everyone. Jaimini adds a second layer, the {{term:chara_karaka|chara karakas}}. The planet that plays “father” or “spouse” changes from chart to chart.</p><h2>The method</h2><ol><li>Write each planet’s degree <em>within its sign</em> (0°–30°). Ignore the sign itself.</li><li>For Rahu, use 30° minus its degree. Rahu moves backward, so its progress through the sign is counted from the end. (BPHS ch. 32 states this.)</li><li>Sort from highest to lowest. If two degrees match, compare minutes, then seconds (BPHS does the same).</li><li>Assign the roles in order.</li></ol><div class=\"tbl\"><table><thead><tr><th>Rank</th><th>Role</th><th>Stands for</th></tr></thead><tbody><tr><td>1</td><td>Atmakaraka (AK)</td><td>Soul, the self’s central lesson</td></tr><tr><td>2</td><td>Amatyakaraka (AmK)</td><td>Minister: advisers, career help, intellect</td></tr><tr><td>3</td><td>Bhratrikaraka (BK)</td><td>Siblings, courage, effort</td></tr><tr><td>4</td><td>Matrikaraka (MK)</td><td>Mother, education, comfort</td></tr><tr><td>5</td><td>Putrakaraka (PK)</td><td>Children, creativity, mentors</td></tr><tr><td>6</td><td>Gnatikaraka (GK)</td><td>Relatives, rivals, disputes, illness</td></tr><tr><td>7</td><td>Darakaraka (DK)</td><td>Spouse and partners</td></tr></tbody></table></div><p>In the 8-planet scheme a separate <em>Pitrikaraka</em> (father) enters, and everything below it moves down one rank.</p><h2>Seven or eight?</h2><p>The Jaimini Sutras (the sutra number differs between editions) read <span class=\"skt\">सप्तानाम् अष्टानां वा</span>, “of seven or of eight.” It does not choose. So the schools split on whether Rahu takes part.</p><div class=\"tbl\"><table><thead><tr><th>Scheme</th><th>Who is ranked</th><th>Held by</th></tr></thead><tbody><tr><td>7 karakas</td><td>Sun to Saturn. Rahu and Ketu stay out.</td><td>K.N. Rao; also Iranganti Rangacharya (per AstroMedha’s summary)</td></tr><tr><td>8 karakas</td><td>Sun to Saturn plus Rahu (30° − degree). Ketu stays out.</td><td>Listed as an option in BPHS ch. 32 (Santhanam translation)</td></tr><tr><td>Conditional 8</td><td>Rahu joins only when a stated condition is met</td><td>P.V.R. Narasimha Rao, as summarised by AstroMedha: Rahu is added only when two of the seven planets share the same degree. A condition of this kind also appears in BPHS ch. 32 as rendered on one translation site (Rahu is considered when two planets have equal degrees); check your edition</td></tr></tbody></table></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Even the “seven” list differs.</strong> The list in the table above (AK, AmK, BK, MK, PK, GK, DK) is the one this app’s engine uses. BPHS ch. 32 (v. 16, as the view of “some” teachers) describes a different seven: it merges the mother and children karakas into one and keeps a father karaka. Check which list your software uses before comparing readings.</p><p><strong>How often does the choice matter?</strong> One website (AstroMedha) reports that choosing 7 or 8 changes the Atmakaraka in about 12% of charts and the Amatyakaraka in about 25%. It also reports that whether the conditional-8 rule fires depends on precision: 51.6% of charts at whole degrees but 0.9% at arcminutes. These are that site’s own calculations, not independently verified, so treat them as an order of magnitude only.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Degrees within sign, from the engine: Mars 29°19′, Mercury 28°10′, Sun 10°41′, Venus 8°18′, Moon 8°04′, Saturn 7°41′, Jupiter 3°28′. Rahu is at 10°33′ Leo, so it scores 30° − 10°33′ = 19°27′.</p><div class=\"tbl\"><table><thead><tr><th>Rank</th><th>7 karakas</th><th>8 karakas</th></tr></thead><tbody><tr><td>1</td><td>Mars (AK)</td><td>Mars (AK)</td></tr><tr><td>2</td><td>Mercury (AmK)</td><td>Mercury (AmK)</td></tr><tr><td>3</td><td>Sun (BK)</td><td>Rahu (BK)</td></tr><tr><td>4</td><td>Venus (MK)</td><td>Sun (MK)</td></tr><tr><td>5</td><td>Moon (PK)</td><td>Venus (Pitrikaraka)</td></tr><tr><td>6</td><td>Saturn (GK)</td><td>Moon (PK)</td></tr><tr><td>7</td><td>Jupiter (DK)</td><td>Saturn (GK)</td></tr><tr><td>8</td><td>—</td><td>Jupiter (DK)</td></tr></tbody></table></div><p>The Atmakaraka (Mars), Amatyakaraka (Mercury) and Darakaraka (Jupiter) are the same in both schemes. Only the middle ranks move. Your spouse significator does not depend on the scheme. Your Mars is also 1°09′ ahead of Mercury, so the AK is not a close call.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Birth time.</strong> Slide the birth time and watch the ranks. The order above holds from about 12:18 to 13:26 (your 12:59 minus 40 min to plus 27 min). Outside that, the Moon crosses Saturn or Venus and the PK/GK or MK/PK roles swap. Only the Moon moves fast enough to do this.</p><p><strong>Node type.</strong> With the true node (Lahiri), Rahu sits at 9°09′ Leo, so it scores 20°51′. It stays third in the 8-scheme, so the result does not change.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Chara karakas are ranked by degree within the sign, highest first.</li><li>Rahu counts as 30° − its degree; Ketu never takes part.</li><li>7 or 8 is a convention choice. Record which one you used.</li><li>A close pair (within a degree) is a boundary warning, as in your Moon–Venus pair.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Rank your planets again by hand using whole degrees only. Which two tie? Break the tie with minutes. Then recompute with Rahu from the true-node value (Leo 9°09′ with Lahiri).</p>",
+   "listen": "Jaimini adds a second set of significators called the chara karakas. They are movable: the role each planet plays depends on its degree inside its sign, not on the sign. You write down each planet’s degree from zero to thirty, take Rahu as thirty minus its degree, sort from highest to lowest, and hand out the roles. The highest is the Atmakaraka, the soul planet. Next come the minister, the sibling, the mother, the child, the relative and last the spouse planet. The sutra says seven or eight, so schools differ on whether Rahu takes part. In your chart Mars at twenty-nine degrees nineteen minutes is the Atmakaraka, Mercury is the minister and Jupiter at three degrees twenty-eight minutes is the spouse planet, in both the seven and the eight schemes. Only the middle ranks move. One website calculates that the choice changes the Atmakaraka in about twelve percent of charts. Treat that as that site’s own figure, not a verified one.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 32, verses 3–17: definition of Atmakaraka and the other karakas; Rahu counted as 30° minus its degree; seven- and eight-karaka lists",
+    "Jaimini Sutras 1.1.10, “saptanam astanam va”, as cited in the project research notes (verify the sutra number in your edition)",
+    "P.V.R. Narasimha Rao, Vedic Astrology: An Integrated Approach (conditional 8-karaka rule: Rahu added when two of the seven share a degree, per AstroMedha’s summary)",
+    "AstroMedha, “Atmakaraka: seven or eight karakas” (single website, own calculation, not independently verified)"
+   ],
+   "quiz": [
+    {
+     "q": "Which planet gets the Atmakaraka role?",
+     "o": [
+      "The strongest planet by Shadbala",
+      "The lord of the lagna",
+      "The planet with the highest degree within its sign",
+      "The planet with the most bindus"
+     ],
+     "a": 2,
+     "w": "Chara karakas are ranked by degree within the sign, highest first."
+    },
+    {
+     "q": "How is Rahu’s value found in the 8-karaka scheme?",
+     "o": [
+      "Its degree plus 30",
+      "Its degree as shown",
+      "30° minus its degree",
+      "Ketu’s degree"
+     ],
+     "a": 2,
+     "w": "Rahu moves backward, so BPHS ch. 32 counts its progress from the end of the sign."
+    },
+    {
+     "q": "In your chart, which role is the same in both the 7 and 8 schemes?",
+     "o": [
+      "Spouse karaka (Jupiter)",
+      "Mother karaka",
+      "Brother karaka",
+      "Father karaka"
+     ],
+     "a": 0,
+     "w": "Jupiter at 3°28′ is the lowest degree either way, so it is the Darakaraka in both."
+    },
+    {
+     "q": "How should you treat the “about 12% of charts” figure?",
+     "o": [
+      "As a proven result",
+      "As one website’s own calculation, unverified",
+      "As a rule in the Jaimini Sutras",
+      "As the result of a blind test"
+     ],
+     "a": 1,
+     "w": "It comes from a single website’s calculation. Use it as an order of magnitude only."
+    }
+   ]
+  },
+  {
+   "id": "9-2",
+   "title": "Atmakaraka and Karakamsa",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> In the 8-karaka scheme, how do you get Rahu’s degree for ranking? And which planet is your Darakaraka?</p><h2>Why the Atmakaraka matters</h2><p>BPHS (Santhanam translation, ch. 32, verses 7–12) compares the {{term:atmakaraka|Atmakaraka}} to a king among ministers. The other karakas cannot overrule it: if the AK is unfavourable, the others cannot give full results, and if it is favourable, the others’ harm is limited. Treat that as the classical claim, not a measured fact. Its practical use is as a lens: ask what this planet’s nature says about the lesson the chart keeps returning to.</p><h2>Karakamsa: the AK’s navamsa sign</h2><p>{{term:karakamsa|Karakamsa}} is the navamsa sign occupied by the Atmakaraka (BPHS ch. 33 defines it that way). Method:</p><ol><li>Find the AK. Find its sign in D9.</li><li>Treat that sign as a second lagna.</li><li>Count houses from it in the rashi chart and look at what sits in the 2nd, 5th, 7th, 9th, 10th and 12th from it.</li><li>Note benefics and malefics in its kendras and trikonas.</li></ol><div class=\"tbl\"><table><thead><tr><th>Reading</th><th>What to look at</th><th>BPHS ch. 33 (Santhanam) reference</th></tr></thead><tbody><tr><td>AK in each navamsa</td><td>Vocation and temperament imagery</td><td>Verses 2–8 (one line per sign)</td></tr><tr><td>Planets in Karakamsa</td><td>Livelihood themes by planet</td><td>Verses 13–18</td></tr><tr><td>Benefics only, in Karakamsa and lagna navamsa</td><td>Eminence and success</td><td>Verses 9–11</td></tr><tr><td>2nd, 3rd, 4th, 5th … 12th from Karakamsa</td><td>One life area per house</td><td>From verse 30 onward; 7th at 47–48, 9th at 50–56</td></tr></tbody></table></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Where do you read “planets in Karakamsa”?</strong> Some astrologers look at the D9 chart itself, where the Karakamsa sign holds particular planets. Others carry the sign over to the D1 rashi chart and look at which D1 planets fall in it. BPHS says only that Karakamsa is “the navamsa occupied by the AK.” Both readings are in use. Record which you used.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your Atmakaraka is Mars at Taurus 29°19′. Its D9 sign is Virgo, so your <strong>Karakamsa is Virgo</strong>, the same sign as your lagna. D9 Virgo holds the Moon and Mars. In the D1 chart Virgo itself is empty.</p><div class=\"tbl\"><table><thead><tr><th>From Karakamsa Virgo</th><th>Sign</th><th>D1 occupants</th></tr></thead><tbody><tr><td>7th</td><td>Pisces</td><td>Jupiter</td></tr><tr><td>9th</td><td>Taurus</td><td>Mars, Venus</td></tr><tr><td>10th</td><td>Gemini</td><td>Sun, Mercury</td></tr><tr><td>5th</td><td>Capricorn</td><td>none</td></tr><tr><td>12th</td><td>Leo</td><td>Rahu</td></tr></tbody></table></div><p>BPHS ch. 33, verses 2–8 say that an AK in Virgo navamsa brings “itch, corpulence, fire etc.” as troubles. It is old imagery. This course uses it only as a prompt to ask about skin, digestion and heat in the body and temper, never as a diagnosis. Verses 13–18 link a <em>strong</em> Mars in Karakamsa with weapons, fire and alchemy, and a <em>full</em> Moon with pleasure and scholarship. Under the D9 reading your Mars and Moon do sit in Virgo, but neither condition is met: your Moon is a thin crescent (Shukla tritiya at birth, engine panchang) and your Mars is combust. Also, under the D9 reading the AK occupies the Karakamsa in every chart by definition, so readers usually weigh the other planets there.</p><p>Verses 9–11 say benefics in the kendras and trikonas from Karakamsa, free of malefics, give wealth and learning, and a mixture gives mixed results. Your Pisces kendra holds Jupiter alone, which is clean. Gemini holds Mercury with the Sun, and Taurus holds Venus with Mars, so both are mixed.</p></div><p class=\"note\">For the 9th from Karakamsa (verses 50–56) BPHS lists outcomes by planet. Your Taurus holds Venus (a benefic, said to give devotion to elders and one’s own religion) and Mars (a malefic, said to give religious feeling in youth that may fade). The verses also include severe outcomes for some pairings. This course does not treat any of those as forecasts. Log the mild lines as hypotheses at most.</p><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Birth-time test.</strong> Mars sits about 2°39′ inside the Virgo navamsa (Taurus 26°40′–30°). The engine’s time scan keeps AK = Mars and Karakamsa = Virgo from 10:30 to 15:30 and beyond, so your Karakamsa is stable for any reasonable birth time.</p><p><strong>Compare with Parashari.</strong> Check that the 10th from Karakamsa (Gemini, Sun and Mercury) agrees with your Parashari 10th house: it is the same sign, which is why your chart reads consistently on career. That agreement is not independent, because both come from the same lagna.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Karakamsa = the AK’s D9 sign, used as a second lagna.</li><li>Count houses from it in the rashi chart.</li><li>State whether you read planets in Karakamsa in D9 or D1.</li><li>BPHS verses are classical hypotheses. Log them, do not announce them.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> List what sits in the 2nd, 3rd, 4th, 6th, 8th and 11th from your Karakamsa (Virgo), then pick the verse in BPHS ch. 33 that applies to each. Which houses are empty?</p>",
+   "listen": "The Atmakaraka is the planet with the highest degree in its sign, and BPHS compares it to a king among ministers. Karakamsa is the navamsa sign that the Atmakaraka occupies, and you read it as a second lagna. You count houses from it, look at who sits in the second, fifth, seventh, ninth, tenth and twelfth, and check benefics and malefics in its angles and trines. In your chart the Atmakaraka is Mars, its navamsa sign is Virgo, so your Karakamsa is Virgo, the same sign as your lagna. In D9, Virgo holds the Moon and Mars. In D1, the seventh from Karakamsa is Pisces with Jupiter, the ninth is Taurus with Mars and Venus, and the tenth is Gemini with the Sun and Mercury. BPHS chapter thirty-three gives short verse lines for each, and you should log them as hypotheses, not announce them. Your Karakamsa stays Virgo across any reasonable birth time.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 32, verses 9–12: importance of the Atmakaraka",
+    "BPHS (Santhanam), ch. 33: Karakamsa defined; verses 2–8 (AK in each navamsa), 9–11 (benefics), 13–18 (planets in Karakamsa), 50–56 (9th from Karakamsa)",
+    "Jaimini Sutras, chapters on Karakamsa and its houses (check the numbering in your edition)"
+   ],
+   "quiz": [
+    {
+     "q": "What is Karakamsa?",
+     "o": [
+      "The sign of the lagna lord",
+      "The navamsa sign occupied by the Atmakaraka",
+      "The 7th house from the AK",
+      "The sign of the Moon"
+     ],
+     "a": 1,
+     "w": "BPHS ch. 33 defines it as the navamsa occupied by the Atmakaraka."
+    },
+    {
+     "q": "Your Karakamsa is Virgo. Which planet occupies its 7th (Pisces) in D1?",
+     "o": [
+      "Mars",
+      "Moon",
+      "Saturn",
+      "Jupiter"
+     ],
+     "a": 3,
+     "w": "Jupiter sits in Pisces, 7th from Virgo."
+    },
+    {
+     "q": "Why can you not simply say “D9 is where Karakamsa planets live”?",
+     "o": [
+      "Some astrologers read the Karakamsa sign in D1 instead, so the school must be recorded",
+      "D9 has no houses",
+      "Karakamsa is only a D10 idea",
+      "BPHS forbids D9"
+     ],
+     "a": 0,
+     "w": "Both D9 and D1 readings are in use. Name the one you used."
+    },
+    {
+     "q": "How do you treat the BPHS verse for an AK in Virgo navamsa?",
+     "o": [
+      "As a medical diagnosis",
+      "As a certain forecast",
+      "As proof of weak health",
+      "As a classical hypothesis to log, with no diagnosis drawn"
+     ],
+     "a": 3,
+     "w": "The verse uses old imagery. Use it as a prompt for questions, never as a diagnosis."
+    }
+   ]
+  },
+  {
+   "id": "9-3",
+   "title": "Rashi drishti, argala and virodhargala",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is Karakamsa, and which sign is yours?</p><h2>Rashi drishti: signs aspect signs</h2><p>In the Parashari system a planet aspects the 7th house from itself, with special aspects for Mars, Jupiter and Saturn. Jaimini uses {{term:rashi_drishti|rashi drishti}} instead. It depends on the sign, not on the planet.</p><div class=\"tbl\"><table><thead><tr><th>Sign type</th><th>Aspects</th><th>Except</th></tr></thead><tbody><tr><td>Movable (Aries, Cancer, Libra, Capricorn)</td><td>All fixed signs</td><td>The fixed sign next to it</td></tr><tr><td>Fixed (Taurus, Leo, Scorpio, Aquarius)</td><td>All movable signs</td><td>The movable sign next to it</td></tr><tr><td>Dual (Gemini, Virgo, Sagittarius, Pisces)</td><td>The other three dual signs</td><td>None</td></tr></tbody></table></div><p>Every planet in an aspecting sign aspects every planet in the aspected sign, and Rahu and Ketu count like any other planet. Aspect here is mutual: if Aries aspects Leo, Leo aspects Aries.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your chart under rashi drishti, from the occupied signs:</p><div class=\"tbl\"><table><thead><tr><th>Occupied sign</th><th>Planets</th><th>Aspects (signs and their planets)</th></tr></thead><tbody><tr><td>Aries</td><td>Saturn</td><td>Leo (Rahu), Scorpio, Aquarius (Ketu)</td></tr><tr><td>Taurus</td><td>Mars, Venus</td><td>Cancer (Moon), Libra, Capricorn</td></tr><tr><td>Gemini</td><td>Sun, Mercury</td><td>Virgo (lagna), Sagittarius, Pisces (Jupiter)</td></tr><tr><td>Cancer</td><td>Moon</td><td>Taurus (Mars, Venus), Scorpio, Aquarius (Ketu)</td></tr><tr><td>Leo</td><td>Rahu</td><td>Aries (Saturn), Libra, Capricorn</td></tr><tr><td>Aquarius</td><td>Ketu</td><td>Aries (Saturn), Cancer (Moon), Libra</td></tr><tr><td>Pisces</td><td>Jupiter</td><td>Gemini (Sun, Mercury), Virgo (lagna), Sagittarius</td></tr></tbody></table></div><p>Compare Mars. Under Parashari aspects your Mars (in Taurus, 9th house) aspects Leo, Scorpio and Sagittarius (houses 12, 3, 4). Under rashi drishti the same planet aspects Cancer, Libra and Capricorn. Neither is wrong, and each answers a different question.</p></div><h2>Argala: planets that press on a house</h2><p>{{term:argala|Argala}} (“bolt”) describes the intervention of planets on a house or planet. BPHS ch. 31 (Santhanam, verses 2–9) sets out the rules:</p><div class=\"tbl\"><table><thead><tr><th>Argala from</th><th>Obstructed by ({{term:virodhargala|virodhargala}}) in</th></tr></thead><tbody><tr><td>2nd</td><td>12th</td></tr><tr><td>4th</td><td>10th</td></tr><tr><td>11th</td><td>3rd</td></tr><tr><td>5th (secondary)</td><td>9th</td></tr></tbody></table></div><ul><li>The stronger side wins: a stronger argala planet beats the obstructor, and more planets beat fewer.</li><li>A commonly taught grading: one planet gives a limited effect, two a medium effect, more than two an excellent one.</li><li>Three or more malefics in the 3rd give <em>vipareeta argala</em>: the obstruction fails and the effect is favourable.</li><li>Planets cause argala by occupation. When the argala is judged <em>on</em> Rahu or Ketu, count the houses from the node in reverse order, because the nodes move backward (BPHS ch. 31; the Santhanam note’s example counts the 2nd and 12th from Rahu in reverse). The worked examples below judge houses, not nodes, so they count forward.</li></ul><p><strong>Argala on your lagna (Virgo).</strong> The 11th is Cancer, with the Moon: one planet, a limited argala. The 3rd (Scorpio) is empty, so nothing obstructs it. The 2nd (Libra), 4th (Sagittarius) and 5th (Capricorn) are empty, so the Moon’s gains-and-network pressure is the only argala on your lagna.</p><p><strong>Argala on your 7th house (Pisces).</strong></p><div class=\"tbl\"><table><thead><tr><th>From Pisces</th><th>Sign</th><th>Occupants</th><th>Obstructor</th><th>Result</th></tr></thead><tbody><tr><td>2nd</td><td>Aries</td><td>Saturn</td><td>12th Aquarius: Ketu</td><td>1 vs 1: count is tied; strength must decide</td></tr><tr><td>4th</td><td>Gemini</td><td>Sun, Mercury</td><td>10th Sagittarius: none</td><td>Two planets, medium argala, unobstructed</td></tr><tr><td>11th</td><td>Capricorn</td><td>none</td><td>3rd Taurus: Mars, Venus</td><td>No argala to obstruct</td></tr><tr><td>5th</td><td>Cancer</td><td>Moon</td><td>9th Scorpio: none</td><td>Secondary argala stands</td></tr></tbody></table></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Where to count the obstruction from.</strong> The Santhanam translation notes that some authors count the obstructing houses from the argala house instead of from the original house, and rejects that reading. The counting above follows the translation. If your software gives a different result, this is the first thing to check.</p><p><strong>The tied case.</strong> BPHS settles only “stronger” and “more numerous.” For equal numbers it gives no count rule. Practitioners then compare dignity, which is why your Saturn-versus-Ketu case needs a judgement and not a count.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Cross-check argala with Ashtakavarga: a sign with a high SAV score usually carries its planets’ weight more readily. Your Aries (house 8) scores 28 and Pisces (house 7) scores 29, so neither is extreme, and the argala reading should not be pushed hard.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Rashi drishti depends on sign type: movable→fixed, fixed→movable, dual→dual.</li><li>Argala from 2, 4, 11 (and 5); obstruction from 12, 10, 3 (and 9).</li><li>Stronger or more numerous wins; ties need a strength judgement.</li><li>For argala on Rahu or Ketu, count from the node in reverse.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Work out argala on your 10th house (Gemini). List the planets in its 2nd, 4th, 5th and 11th, then the planets in the matching obstruction houses. Which argala stands, which is blocked, and which is tied?</p>",
+   "listen": "Jaimini uses sign aspect, called rashi drishti. Movable signs aspect all fixed signs except the one next to them, fixed signs aspect all movable signs except the one next to them, and dual signs aspect the other dual signs. Every planet in an aspecting sign aspects every planet in the aspected sign. So your Mars in Taurus aspects Cancer, Libra and Capricorn in this system, while in the Parashari system it aspects Leo, Scorpio and Sagittarius. Argala is a second idea. Planets in the second, fourth and eleventh from a house, and the fifth as a secondary, press on that house. Planets in the twelfth, tenth, third and ninth respectively can obstruct them. The stronger or more numerous side wins. In your chart the only argala on the lagna is from the Moon in the eleventh, unobstructed. On your seventh house, the Sun and Mercury in the fourth give a medium, unobstructed argala, and Saturn against Ketu is a tie.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 31, verses 2–9: formation of argala, obstruction rules, strength by number of planets, vipareeta argala",
+    "Jaimini Sutras, chapter 1: rashi drishti rules (check the sutra numbers in your edition)"
+   ],
+   "quiz": [
+    {
+     "q": "Which signs does a fixed sign aspect under rashi drishti?",
+     "o": [
+      "All dual signs",
+      "Only the 7th sign",
+      "All movable signs except the adjacent one",
+      "All fixed signs"
+     ],
+     "a": 2,
+     "w": "Fixed signs aspect the movable signs except the one next to them."
+    },
+    {
+     "q": "Your Mars (Taurus) aspects which signs by rashi drishti?",
+     "o": [
+      "Leo, Scorpio, Sagittarius",
+      "Gemini, Virgo, Pisces",
+      "Cancer, Libra, Capricorn",
+      "Aries, Leo, Aquarius"
+     ],
+     "a": 2,
+     "w": "Taurus is fixed. It aspects the movable signs except Aries, which is next to it."
+    },
+    {
+     "q": "Which house obstructs argala from the 4th?",
+     "o": [
+      "10th",
+      "9th",
+      "3rd",
+      "12th"
+     ],
+     "a": 0,
+     "w": "Argala from the 4th is obstructed by the 10th."
+    },
+    {
+     "q": "On your 7th house (Pisces), which argala is unobstructed?",
+     "o": [
+      "Saturn’s from Aries",
+      "Rahu’s from Leo",
+      "Mars and Venus’s from Taurus",
+      "Sun and Mercury’s from Gemini"
+     ],
+     "a": 3,
+     "w": "Gemini holds two planets and the obstruction house, Sagittarius, is empty."
+    }
+   ]
+  },
+  {
+   "id": "9-4",
+   "title": "Arudha padas: AL, A7, A10 and the exceptions rule",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which houses obstruct argala from the 2nd, the 4th and the 11th?</p><h2>What an arudha is</h2><p>The {{term:arudha|arudha pada}} (BPHS calls it simply <em>pada</em>) of a house is its image: how that house appears to others, as opposed to what it is. A business can be struggling and still look prosperous. A partnership can be warm in private and look cold in public. The arudha is that outer picture.</p><h2>The method (BPHS ch. 29, verses 1–3, Santhanam translation)</h2><ol><li>Take the house (say the 10th) and find its lord.</li><li>Count how many signs the lord is from the house.</li><li>Count the same number again from the lord. That sign is the arudha.</li></ol><h2>The exceptions rule (verses 4–5)</h2><p>If the arudha lands in the house itself, or in the 7th from it, take the 10th sign from that result instead. This happens when the lord sits in its own house or in the 7th (the result is the house itself) or in the 4th or 10th from it (the result is the 7th). The engine applies this rule.</p><div class=\"tbl\"><table><thead><tr><th>Arudha</th><th>House</th><th>Lord and place</th><th>Raw result</th><th>Rule</th><th>Final</th></tr></thead><tbody><tr><td>AL (A1)</td><td>Virgo</td><td>Mercury in Gemini (10th from Virgo)</td><td>Pisces</td><td>Pisces is 7th from Virgo: take 10th from it</td><td>Sagittarius</td></tr><tr><td>A7</td><td>Pisces</td><td>Jupiter in Pisces (own house)</td><td>Pisces</td><td>Same house: take 10th from it</td><td>Sagittarius</td></tr><tr><td>A10</td><td>Gemini</td><td>Mercury in Gemini (own house)</td><td>Gemini</td><td>Same house: take 10th from it</td><td>Pisces</td></tr><tr><td>UL (A12)</td><td>Leo</td><td>Sun in Gemini (11th from Leo)</td><td>Aries</td><td>No exception</td><td>Aries</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your four key arudhas, from the engine: <strong>AL Sagittarius, A7 Sagittarius, A10 Pisces, UL Aries.</strong> AL and A7 share a sign. Three of the four (AL, A7 and A10) needed the exceptions rule, and A10 and A7 both came from planets sitting in their own houses.</p><p>How to read them in the Jaimini way: compare the arudha to the house it belongs to. Your 10th house is Gemini (Sun and Mercury: you work, build and talk), while your A10 is Pisces (Jupiter’s sign, with Jupiter in it): the public picture of your work is advisory, ethical and “wise,” more than hands-on. Your AL (Sagittarius) is empty in D1 and ruled by Jupiter, again a teacher-adviser image. Sagittarius is also your A7, so your image and the image of your partnerships and deals are bound together. These are hypotheses about perception. Log them, and check them against what people say about you.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Dual lordship.</strong> For Scorpio and Aquarius some Jaimini teachers use the stronger of the two lords (Mars or Ketu; Saturn or Rahu). The engine uses Mars and Saturn only. In your chart this changes the A6 (Aquarius is your 6th): with Saturn as lord A6 is Gemini; with Rahu as lord it is Scorpio. The AL, A7, A10 and UL do not depend on this choice.</p><p><strong>Extra exception.</strong> The Santhanam notes list a third case, a lord in the 4th from the house, where the sign the lord occupies is itself the arudha. This is the same result the 10th-from-the-7th rule produces, so most software treats it as one rule.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check each arudha by hand once, then against software. Arudha calculations are exact sign counts, so a mismatch is almost always a different dual-lord choice or a software that skips the exceptions. Your lagna stays Virgo from about 11:20 to 13:35, so the AL, A7, A10 and UL do not move for a birth-time error of up to about 35 minutes later or 100 minutes earlier. Beyond that the lagna sign changes and everything is recounted.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Arudha = count from the house to its lord, then the same count again from the lord.</li><li>If the result is the house itself or its 7th, take the 10th from it.</li><li>Read each arudha against its house: image versus reality.</li><li>State your dual-lord choice for Scorpio and Aquarius.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Compute A5 for your chart by hand: the 5th house is Capricorn, its lord Saturn is in Aries. Then compute A9 (Taurus, lord Venus in Taurus). Check your answers against the engine list in lesson 9-6.</p>",
+   "listen": "An arudha pada is the image of a house, how it appears to the world, as opposed to what it really is. To find it, you count how many signs the house lord is from the house, then count the same number again from the lord. BPHS gives an exception. If the result is the house itself or the seventh from it, you take the tenth sign from the result. Your arudha lagna is Sagittarius. It needed the exception, because the raw result Pisces is the seventh from Virgo. Your A7 is also Sagittarius, because Jupiter sits in its own house in Pisces, and the exception moves it to the tenth from Pisces. Your A10 is Pisces, since Mercury sits in its own house in Gemini. Your Upapada is Aries and needed no exception. The way to read them is to compare image with reality. Your work house is Gemini, but its image is Pisces, an adviser with Jupiter in it.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 29, verses 1–7: method, exceptions, graha arudhas",
+    "Jaimini Sutras, chapters on padas (check numbering in your edition)"
+   ],
+   "quiz": [
+    {
+     "q": "If an arudha counts out to the house itself, what do you do?",
+     "o": [
+      "Take the 10th from it",
+      "Accept it",
+      "Take the 7th from it",
+      "Use the Navamsa lord"
+     ],
+     "a": 0,
+     "w": "BPHS ch. 29 says: take the 10th from the result."
+    },
+    {
+     "q": "Your AL is Sagittarius. Why?",
+     "o": [
+      "Mercury is in Sagittarius",
+      "The raw result Pisces is 7th from Virgo, so the 10th from Pisces is used",
+      "Jupiter is in Sagittarius",
+      "Sagittarius is your 4th house"
+     ],
+     "a": 1,
+     "w": "Mercury is 10 signs from Virgo. Counting 10 from Gemini gives Pisces, the 7th from Virgo, so you take the 10th from Pisces, which is Sagittarius."
+    },
+    {
+     "q": "Your 10th house is Gemini. Where is your A10?",
+     "o": [
+      "Gemini",
+      "Pisces",
+      "Sagittarius",
+      "Aries"
+     ],
+     "a": 1,
+     "w": "Mercury is in its own house, so the raw result is Gemini. Take the 10th from it: Pisces."
+    },
+    {
+     "q": "Which of your arudhas is NOT affected by the dual-lordship choice (Saturn/Rahu, Mars/Ketu)?",
+     "o": [
+      "A6",
+      "A3",
+      "A6 and A3 together",
+      "AL"
+     ],
+     "a": 3,
+     "w": "The AL comes from Mercury, which rules Virgo alone."
+    }
+   ]
+  },
+  {
+   "id": "9-5",
+   "title": "Upapada, marriage and the Chara dasha clock",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What do you do when an arudha lands in its own house? Where is your A7?</p><h2>Upapada: the marriage pada</h2><p>The {{term:upapada|Upapada}} (UL) is the arudha of the 12th house. It shows how the partner appears in your life and how the bond holds. BPHS ch. 30 (Santhanam) gives the checks:</p><div class=\"tbl\"><table><thead><tr><th>Check</th><th>Rule in BPHS ch. 30</th><th>Verses</th></tr></thead><tbody><tr><td>UL itself</td><td>Benefic on or aspecting it: contentment in spouse and children. In a malefic’s sign or with malefic influence: friction, unless a benefic also aspects</td><td>1–6</td></tr><tr><td>2nd from UL</td><td>A benefic or benefic aspect: good results. An own-sign lord in it, or its lord in his own house: the bond lasts into old age</td><td>7–12</td></tr><tr><td>Spouse karakas</td><td>Venus or the 7th lord in own sign: durable. UL lord exalted: well-placed family. Debilitated: the reverse</td><td>13–15</td></tr><tr><td>7th from Karakamsa</td><td>Moon with Jupiter: a beautiful spouse. Venus: sensuous. Mercury: skilled in arts. Sun: home-centred. Saturn: older, pious or frail. Rahu: a severe line about the spouse (see the note below)</td><td>BPHS ch. 33, 47–48</td></tr></tbody></table></div><p class=\"note\">BPHS attaches severe outcomes to some of these placements, including death of a spouse. This course treats those lines as historical rules to understand. They are never to be stated to anyone as forecasts.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><strong>UL: Aries.</strong> The 12th house is Leo, its lord the Sun sits in Gemini, 11 signs away. Counting 11 from Gemini gives Aries.<div class=\"tbl\"><table><thead><tr><th>Check</th><th>Your chart</th></tr></thead><tbody><tr><td>UL sign and occupant</td><td>Aries (Mars’s sign) with debilitated Saturn in it (engine: a neecha bhanga candidate, because the Sun, which exalts in Aries, sits in your 10th)</td></tr><tr><td>Aspects on UL</td><td>No benefic by graha drishti. Rahu (Leo) and Ketu (Aquarius) aspect Aries by rashi drishti</td></tr><tr><td>2nd from UL</td><td>Taurus: Venus in own sign, with Mars (the UL lord). Mixed: Venus at home is the verses 7–12 durability line, but the Santhanam note lists a benefic joined by a malefic in this house as an adverse mix</td></tr><tr><td>Spouse karakas</td><td>Venus in own sign. The 7th lord Jupiter is also in own sign in the 7th (Hamsa yoga)</td></tr><tr><td>7th from UL</td><td>Libra: empty. Its lord Venus is in Taurus</td></tr><tr><td>7th from Karakamsa</td><td>Pisces: Jupiter alone. The verse pairs Moon with Jupiter, so it is only a partial match</td></tr><tr><td>DK and A7</td><td>Darakaraka Jupiter (both schemes). A7 is Sagittarius, the same sign as the AL</td></tr></tbody></table></div><p>Pattern: the UL itself is stressed (Saturn, nodes, no benefic aspect), while the supports are mostly strong (Venus and Jupiter in own signs; the 2nd from UL has its lord at home but also holds Mars). The Jaimini reading is “commitment can be delayed or complicated, but durable once formed.” That is a hypothesis for your ledger, and it is not a statement about anyone’s actual life.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Which house does the UL come from?</strong> The modern practice (and the engine) takes the arudha of the 12th. Some translators’ notes and Jaimini commentaries give other readings of the BPHS verse: the 12th for odd-sign lagnas and the 2nd for even-sign lagnas. The base text itself does not say so, and most modern practice uses the 12th for every lagna. For your even-sign lagna (Virgo) the 2nd-house reading gives UL = Sagittarius instead of Aries. The two readings produce different spouse analyses, so record which one you use.</p></div><h2>The Chara dasha clock</h2><p>{{term:chara_dasha|Chara dasha}} runs through signs, not planets. BPHS ch. 46 (from about verse 155 in Santhanam’s numbering; numbers vary by edition) and the Jaimini tradition give these rules:</p><ul><li><strong>Duration:</strong> count from the sign to the sign holding its lord. Subtract 1 for the years. A lord in its own sign gives 12 years.</li><li><strong>Counting direction:</strong> forward for signs in the odd groups (Aries–Gemini, Libra–Sagittarius), backward for signs in the even groups (Cancer–Virgo, Capricorn–Pisces).</li><li><strong>Dual lords (Scorpio, Aquarius):</strong> use the lord in the stronger sign (more planets first; ties by sign type, dual over fixed over movable, as used here; some teachers use the higher degree instead).</li><li><strong>Dignity:</strong> add 1 year if the lord is exalted and subtract 1 if debilitated.</li><li><strong>Order of signs (K.N. Rao’s rule):</strong> forward from the lagna if the 9th sign from the lagna is in an odd group, backward if even. Your 9th (Taurus) is in an odd group, so your sequence runs forward.</li></ul><p>From this rule set your 12 periods are:</p><div class=\"tbl\"><table><thead><tr><th>Sign</th><th>Years</th><th>Working (count includes the starting sign; years = count − 1)</th></tr></thead><tbody><tr><td>Virgo</td><td>3</td><td>Lord Mercury in Gemini: count 4 backward</td></tr><tr><td>Libra</td><td>7</td><td>Venus in Taurus: count 8 forward</td></tr><tr><td>Scorpio</td><td>6</td><td>Mars (2 planets in Taurus) beats Ketu (1 in Aquarius): count 7 forward</td></tr><tr><td>Sagittarius</td><td>3</td><td>Jupiter in Pisces: count 4 forward</td></tr><tr><td>Capricorn</td><td>8</td><td>Saturn in Aries: count 10 backward gives 9, then minus 1 because Saturn is debilitated</td></tr><tr><td>Aquarius</td><td>6</td><td>Rahu in Leo beats Saturn in Aries (equal planets; fixed beats movable, and Rahu also has the higher degree): count 7 backward</td></tr><tr><td>Pisces, Taurus, Gemini, Cancer</td><td>12 each</td><td>Lord in its own sign</td></tr><tr><td>Leo</td><td>2</td><td>Sun in Gemini: count 3 backward</td></tr><tr><td>Aries</td><td>1</td><td>Mars in Taurus: count 2 forward</td></tr></tbody></table></div><p>Running from your birth: Virgo to 2001, Libra to 2008, Scorpio to 2014, Sagittarius to 2017, Capricorn to 2025, <strong>Aquarius from June 2025 to June 2031</strong>, then Pisces to 2043. This list was computed with a script from the BPHS rules, not with the engine, and has not been checked in JHora. It assumes the lagna sign’s period starts at birth with its full length and counts each year as one calendar year. Software may use another year length or a balance rule. Treat it as a draft to verify.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>{{term:narayana_dasha|Narayana dasha}}.</strong> Taught in Sanjay Rath’s tradition, it is also sign-based, but it starts from the stronger of the lagna and the 7th and follows its own sign order and counting rules. Chara and Narayana dashas can place you in different signs at the same date. The direction of the Chara sign sequence is also disputed: this lesson uses K.N. Rao’s 9th-from-lagna rule, while Sanjay Rath’s tradition decides it from the lagna sign itself, and the two can disagree. This lesson does not compute Narayana dasha. One forum thread reports JHora and Parashara’s Light disagreeing on Chara dasha with identical settings, so compare your output with at least one second program.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check Chara dasha against Vimshottari for the same year. Your Vimshottari is Mercury–Saturn until 29 Sep 2027, with Ketu next. Your Chara dasha is Aquarius, your 6th house with Ketu in it. Two clocks that both point at 6th-house themes (service, health routine, competition, debts) give a stronger prompt than either alone. They are not independent, since both use the same birth data.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>UL = arudha of the 12th. Check UL, 2nd from UL, spouse karakas and 7th from Karakamsa.</li><li>The UL’s own sign is one reading; some translators prefer the 2nd for even lagnas.</li><li>Chara dasha counts signs, with direction set by sign group and sequence set by the 9th from lagna.</li><li>Narayana and Chara can disagree. Compare programs.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write one falsifiable sentence about your Upapada pattern (what you would expect to see in how commitments form for you) and log it in the ledger with today’s date. Then list the Chara dasha sign now running and the 6th-house themes you would watch in 2027.</p>",
+   "listen": "The Upapada is the arudha of the twelfth house, and Jaimini uses it for marriage. You check the sign itself for benefic or malefic influence, the second from it, the spouse karakas Venus and the seventh lord, and the seventh from Karakamsa. In your chart the Upapada is Aries, with debilitated Saturn in it and nodal aspects, and no benefic aspect. The second from it, Taurus, holds Venus in its own sign, and Jupiter, your seventh lord and spouse karaka, is also in its own sign. The pattern reads as stressed at the Upapada but supported around it. Log it as a hypothesis, nothing more. Some translators of BPHS prefer the second house for even-sign lagnas, which would give Sagittarius instead of Aries. Chara dasha moves through signs. By BPHS rules your current Chara period is Aquarius, from June 2025 to June 2031, a draft calculation to verify in JHora. Narayana dasha is a related system that can disagree.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 30: Upapada calculation (verses 1–6), 2nd from Upapada (7–12), wife from the 2nd of Upapada (13–22)",
+    "BPHS (Santhanam), ch. 33, verses 47–48: 7th from Karakamsa",
+    "BPHS (Santhanam), ch. 46, verses 155–157 and following: Chara dasha years, direction, dual lords, exaltation and debilitation adjustments, sign order from the 9th house",
+    "Sanjay Rath, Narayana dasha teaching (secondary descriptions only; not verified here)"
+   ],
+   "quiz": [
+    {
+     "q": "The Upapada is the arudha of which house?",
+     "o": [
+      "The 12th (standard modern reading)",
+      "The 7th",
+      "The 2nd always",
+      "The 5th"
+     ],
+     "a": 0,
+     "w": "The standard modern practice uses the 12th. Some BPHS translators note a 2nd-house reading for even-sign lagnas."
+    },
+    {
+     "q": "Your UL is Aries. What does the 2nd from UL (Taurus) hold?",
+     "o": [
+      "Venus in own sign, with Mars",
+      "Nothing",
+      "Saturn",
+      "Jupiter"
+     ],
+     "a": 0,
+     "w": "Taurus holds Venus (own sign) and Mars."
+    },
+    {
+     "q": "In Chara dasha, how many years does a sign get if its lord sits in its own sign?",
+     "o": [
+      "1",
+      "6",
+      "12",
+      "0"
+     ],
+     "a": 2,
+     "w": "Counting gives 1 and subtracting 1 gives 0, so the rule gives 12."
+    },
+    {
+     "q": "Why is your Chara dasha list labelled a draft?",
+     "o": [
+      "The rules are secret",
+      "Chara dasha cannot be computed",
+      "It was computed by a script from the BPHS rules and not checked in JHora, and different programs can disagree",
+      "Because it uses planets"
+     ],
+     "a": 2,
+     "w": "The honesty rule is to label unverified calculations and to compare programs."
+    }
+   ]
+  },
+  {
+   "id": "9-6",
+   "title": "Your Jaimini reading and stage test",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is your Upapada, and what does the 2nd from it hold?</p><h2>Putting Jaimini together on one page</h2><p>A Jaimini reading answers four questions in order. Each uses the tools from this stage and comes with a convention you must record.</p><ol><li><strong>Who is the soul planet and what is its sign?</strong> (AK, Karakamsa; 7 or 8 scheme)</li><li><strong>How do signs influence each other?</strong> (rashi drishti, argala)</li><li><strong>How does it look from outside?</strong> (AL, A10, A7, UL; dual-lord choice)</li><li><strong>When does a sign wake up?</strong> (Chara or Narayana dasha, checked against Vimshottari)</li></ol><div class=\"you\"><div class=\"eyebrow\">In your chart</div><strong>Your Jaimini sheet.</strong><div class=\"tbl\"><table><thead><tr><th>Item</th><th>Result</th><th>Convention / confidence</th></tr></thead><tbody><tr><td>AK / Karakamsa</td><td>Mars / Virgo</td><td>Same under 7 and 8 karakas. Stable across birth times</td></tr><tr><td>AmK, DK</td><td>Mercury, Jupiter</td><td>Same under both schemes. Moon–Venus pair is time-sensitive</td></tr><tr><td>AL, A7, A10, UL</td><td>Sagittarius, Sagittarius, Pisces, Aries</td><td>Exceptions rule applied; dual-lord choice irrelevant to these four</td></tr><tr><td>A5, A9 (practice answers)</td><td>Aries, Aquarius</td><td>Engine list. A5 and the UL share Aries</td></tr><tr><td>Strong rashi aspects on the lagna</td><td>Sun, Mercury (Gemini) and Jupiter (Pisces)</td><td>Rashi drishti</td></tr><tr><td>Argala on lagna</td><td>Moon from the 11th, unobstructed</td><td>Limited (one planet)</td></tr><tr><td>Chara dasha now</td><td>Aquarius, June 2025 to June 2031</td><td>Draft, BPHS rules, not verified in JHora</td></tr><tr><td>Vimshottari now</td><td>Mercury–Saturn to 29 Sep 2027, then Ketu</td><td>Engine</td></tr></tbody></table></div><p><strong>Reading.</strong> The soul planet (Mars, combust) sits in your 9th house and carries heat, metal and technical imagery (BPHS ch. 33 verses 13–18: weapons, fire, alchemy) while your Karakamsa returns to your own lagna sign: the lesson of the chart and the self look the same. The public picture (AL and A7 in Sagittarius, A10 in Pisces) is of an adviser whose image and deals are tied together. Pressure on the commitment pada (UL in Aries with Saturn) is balanced by strong supports. Your current Chara period (Aquarius, 6th house, Ketu) and Vimshottari (Saturn period inside Mercury) both emphasise the 6th-house family of themes: routine, service, health habits, competition. All of this is hypothesis. Pick one line from it and log it.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Conflict to record.</strong> Your Jaimini reading rests on three convention choices that other astrologers make differently: 7 vs 8 karakas (no effect on your AK/AmK/DK), Upapada from the 12th vs the 2nd for an even lagna (Aries vs Sagittarius), and the Chara dasha sign order and counting rules. Write all three on your sheet.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run the whole sheet again with the true node and a birth time 10 minutes either side. The AK, Karakamsa and the four arudhas do not move. Only the Moon-based karaka ranks and any lagna-dependent houses can shift beyond about 25 minutes. That tells you which parts of the sheet are firm.</p></div><h2>Stage test</h2><p>Take the quiz below without looking back. It covers the whole stage.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Four Jaimini questions: soul, sign influences, outer image, sign timing.</li><li>Record 7/8, UL house and dasha rules on every reading.</li><li>Firm items: AK, Karakamsa, arudhas. Time-sensitive: Moon–Venus karaka pair.</li><li>Every line is a hypothesis for the ledger.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Choose one claim from your sheet (for example, “my public image is advisory” or “service and routine themes dominate until mid-2027”). Write it as a testable statement with a date window, then log it. Review in six months.</p>",
+   "listen": "A Jaimini reading answers four questions in order. First, who is the soul planet and its navamsa sign. Second, how signs influence each other through sign aspects and argala. Third, how things look from outside, through the arudhas. Fourth, when each sign wakes up, through Chara or Narayana dasha. In your chart the Atmakaraka is Mars and the Karakamsa is Virgo, the same as your lagna. Your arudha lagna and seventh arudha are both Sagittarius, your tenth arudha is Pisces and your Upapada is Aries. The lagna receives sign aspects from Gemini and Pisces, and argala from the Moon in the eleventh. By the BPHS rules the Chara dasha now running is Aquarius, from June 2025 to June 2031, a script calculation that still needs checking in JHora. Always record which conventions you used: seven or eight karakas, which house gives the Upapada, and the dasha rules. Then log one line as a hypothesis.",
+   "sources": [
+    "BPHS (R. Santhanam translation), chs. 29–33 and 46 (as cited in lessons 9-1 to 9-5)",
+    "Jaimini Sutras, chapters 1 and 2 (karakas, drishti, padas, dashas; check numbering in your edition)"
+   ],
+   "quiz": [
+    {
+     "q": "Which statement about your Atmakaraka is correct?",
+     "o": [
+      "It is Mercury under the 8-scheme",
+      "It is Mars under both the 7- and 8-karaka schemes",
+      "It is Rahu",
+      "It is the Moon"
+     ],
+     "a": 1,
+     "w": "Mars at 29°19′ leads both schemes."
+    },
+    {
+     "q": "Which D1 planet occupies the 7th from your Karakamsa?",
+     "o": [
+      "Venus",
+      "Mercury",
+      "Saturn",
+      "Jupiter"
+     ],
+     "a": 3,
+     "w": "Pisces is 7th from Virgo and holds Jupiter."
+    },
+    {
+     "q": "Your Mars by rashi drishti aspects:",
+     "o": [
+      "Leo, Scorpio, Sagittarius",
+      "Gemini, Virgo, Pisces",
+      "Aries, Leo, Aquarius",
+      "Cancer, Libra, Capricorn"
+     ],
+     "a": 3,
+     "w": "Taurus is fixed and aspects the movable signs except Aries."
+    },
+    {
+     "q": "Your AL and A7 are both in:",
+     "o": [
+      "Pisces",
+      "Aries",
+      "Gemini",
+      "Sagittarius"
+     ],
+     "a": 3,
+     "w": "Both land in Sagittarius after the exceptions rule."
+    },
+    {
+     "q": "What happens in argala when two sides are equal in number?",
+     "o": [
+      "The argala always wins",
+      "BPHS gives no count rule, so strength must be judged",
+      "The obstruction always wins",
+      "The house is destroyed"
+     ],
+     "a": 1,
+     "w": "BPHS gives “stronger” and “more numerous” only."
+    },
+    {
+     "q": "If you use the 2nd house for the Upapada of an even-sign lagna, your UL becomes:",
+     "o": [
+      "Aries",
+      "Libra",
+      "Sagittarius",
+      "Pisces"
+     ],
+     "a": 2,
+     "w": "The 2nd house is Libra, its lord Venus is in Taurus 8 signs on, and counting 8 from Taurus gives Sagittarius."
+    },
+    {
+     "q": "Which of these is firmest under birth-time error of ±45 minutes?",
+     "o": [
+      "The Karakamsa sign",
+      "The Moon’s karaka role",
+      "The Chara dasha start sign",
+      "The Moon–Venus karaka order"
+     ],
+     "a": 0,
+     "w": "The Karakamsa stays Virgo from 10:30 to 15:30. Within ±45 minutes the Moon passes Venus (+25 min) or Saturn (−42 min), and the lagna, which starts the Chara dasha, turns Libra at about +36 min."
+    }
+   ]
+  }
+ ]
+}

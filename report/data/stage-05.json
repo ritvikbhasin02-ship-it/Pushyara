@@ -1,0 +1,632 @@
+{
+ "stage": 5,
+ "title": "Timing: dashas and transits",
+ "level": "Core",
+ "goal": "Done when you can compute any Vimshottari MD–AD–PD by hand, say where Saturn and Jupiter are from your Moon and lagna on a given date, and write a three-layer timing claim with a window and a base rate.",
+ "terms": {
+  "vimshottari": [
+   "Vimshottari dasha · विंशोत्तरी दशा",
+   "The 120-year planetary period system used most in Parashari practice. The Moon’s nakshatra at birth decides which planet’s period you start in; the nine planets then follow in a fixed order."
+  ],
+  "mahadasha": [
+   "Mahadasha · महादशा (MD)",
+   "The major period of one planet, from 6 years (Sun) to 20 years (Venus)."
+  ],
+  "antardasha": [
+   "Antardasha · अन्तर्दशा (AD)",
+   "A sub-period inside a mahadasha. Its length is the MD years times the AD planet’s years, divided by 120."
+  ],
+  "pratyantar": [
+   "Pratyantardasha · प्रत्यन्तर दशा (PD)",
+   "A sub-sub-period inside an antardasha, a few weeks to a few months long."
+  ],
+  "dasasandhi": [
+   "Dasha sandhi · दशा सन्धि",
+   "The junction between two periods. Many astrologers treat the months around a mahadasha change as a transition zone. The idea is widely used; no classical source for it is cited in this course."
+  ],
+  "vedha": [
+   "Vedha · वेध (obstruction)",
+   "In gochar, a planet in a normally good house from the Moon gives less if another planet stands in its paired obstruction house."
+  ],
+  "sadesati": [
+   "Sade Sati · साढ़े साती",
+   "The roughly seven-and-a-half years when Saturn passes through the 12th, 1st and 2nd signs from the natal Moon sign. It is a popular tradition and is not found as such in BPHS."
+  ],
+  "dhaiya": [
+   "Dhaiya · ढैया",
+   "Saturn in the 4th or 8th sign from the natal Moon sign, about two and a half years each. Popular tradition, not found in BPHS."
+  ],
+  "dwigochar": [
+   "Double transit · द्वि-गोचर",
+   "Jupiter and Saturn both influencing the same house or sign by occupation or aspect at the same time. A timing filter, not an event by itself."
+  ],
+  "ashtakavarga": [
+   "Ashtakavarga · अष्टकवर्ग",
+   "A scoring system in which each planet (and the lagna) gives marks to the 12 signs. BPHS uses it for transit judgement; modern software counts benefic marks, called bindus."
+  ],
+  "bindu": [
+   "Bindu · बिन्दु",
+   "In modern usage, a benefic point in Ashtakavarga. BPHS (Santhanam’s translation) calls the benefic mark a rekha (line) and the malefic mark a bindu (dot), the reverse of modern use."
+  ],
+  "grahan": [
+   "Grahan · ग्रहण (eclipse)",
+   "A solar or lunar eclipse. Traditions look at which natal points the eclipse degree touches and over what orb, and many ignore penumbral lunar eclipses."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "5-1",
+   "title": "Vimshottari: the arithmetic",
+   "mins": 20,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Name one of your house lords that is strong and one that is strained, and say why.</p>\n<p>A chart shows what is promised. A {{term:dasha|dasha}} system says when the promise is most likely to be active. The commonest in Parashari practice is {{term:vimshottari|Vimshottari}}, whose name means “one hundred and twenty”. It is a sequence of nine planetary periods that add up to 120 years, and the Moon’s position at birth decides where in the sequence your life starts.</p>\n<h2>The rules (BPHS ch. 46, verses 12 to 15)</h2>\n<p>Santhanam’s translation of ch. 46 says: start counting from Krittika, and the lords of the periods run Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, Venus. Each lord rules three nakshatras, nine apart. Divide the number of the birth nakshatra (counting from Krittika) by nine and the remainder gives the planet whose period is running at birth. The years are 6, 10, 7, 18, 16, 19, 17, 7 and 20. The text calls Vimshottari the best of the systems for Kali Yuga, since the human lifespan there is taken as 120 years.</p>\n<div class=\"tbl\"><table><thead><tr><th>Dasha lord</th><th>Years</th><th>Nakshatras ruled</th></tr></thead><tbody><tr><td>Ketu</td><td>7</td><td>Ashwini, Magha, Mula</td></tr><tr><td>Venus</td><td>20</td><td>Bharani, Purva Phalguni, Purva Ashadha</td></tr><tr><td>Sun</td><td>6</td><td>Krittika, Uttara Phalguni, Uttara Ashadha</td></tr><tr><td>Moon</td><td>10</td><td>Rohini, Hasta, Shravana</td></tr><tr><td>Mars</td><td>7</td><td>Mrigashira, Chitra, Dhanishta</td></tr><tr><td>Rahu</td><td>18</td><td>Ardra, Swati, Shatabhisha</td></tr><tr><td>Jupiter</td><td>16</td><td>Punarvasu, Vishakha, Purva Bhadrapada</td></tr><tr><td>Saturn</td><td>19</td><td>Pushya, Anuradha, Uttara Bhadrapada</td></tr><tr><td>Mercury</td><td>17</td><td>Ashlesha, Jyeshtha, Revati</td></tr></tbody></table></div>\n<p>The table above starts at Ketu because Ashwini, the first nakshatra, belongs to Ketu. The cycle is the same as BPHS’s, only started at a different point.</p>\n<h2>Worked example: your starting point</h2>\n<ol><li>Take the Moon’s sidereal longitude at birth: 98°04′ (98.063°), from the engine.</li><li>Each nakshatra is 13°20′ (360° divided by 27). The Moon is in Pushya, which runs from 93°20′ to 106°40′. Its lord is Saturn.</li><li>The Moon has crossed 4°44′ of the 13°20′, which is 35.5%.</li><li>Saturn gets 19 years. The elapsed part is 0.3547 × 19 = 6.74 years. The balance at birth is 19 − 6.74 = 12.26 years.</li><li>So Saturn MD began 6.74 years before birth (1991-09-29) and ended 12.26 years after it (2010-09-29). Mercury follows for 17 years (2010-09-29 to 2027-09-29), then Ketu for 7 (2027-09-29 to 2034-09-29), then Venus for 20 (to 2054-09-29).</li></ol>\n<h2>Sub-periods</h2>\n<p>An antardasha (AD) starts with the mahadasha (MD) lord’s own planet and then runs in the same order. Its length is <strong>MD years × AD years ÷ 120</strong>, in years. A pratyantardasha (PD) is found the same way inside the AD: <strong>AD length × PD years ÷ 120</strong>. For example, Mercury MD with Saturn AD is 17 × 19 ÷ 120 = 2.69 years. Mercury–Saturn with Jupiter as PD is 2.69 × 16 ÷ 120 = 0.36 years, about 131 days.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your periods from the engine. You were born in Saturn–Ketu (the AD running at birth). Mercury MD runs 2010-09-29 to 2027-09-29. Inside it:</p>\n<div class=\"tbl\"><table><thead><tr><th>AD</th><th>Starts</th><th>Ends</th></tr></thead><tbody><tr><td>Mercury</td><td>2010-09-29</td><td>2013-02-25</td></tr><tr><td>Ketu</td><td>2013-02-25</td><td>2014-02-22</td></tr><tr><td>Venus</td><td>2014-02-22</td><td>2016-12-23</td></tr><tr><td>Sun</td><td>2016-12-23</td><td>2017-10-29</td></tr><tr><td>Moon</td><td>2017-10-29</td><td>2019-03-31</td></tr><tr><td>Mars</td><td>2019-03-31</td><td>2020-03-27</td></tr><tr><td>Rahu</td><td>2020-03-27</td><td>2022-10-14</td></tr><tr><td>Jupiter</td><td>2022-10-14</td><td>2025-01-19</td></tr><tr class=\"mine\"><td>Saturn</td><td>2025-01-19</td><td>2027-09-29</td></tr></tbody></table></div>\n<p>Today (27 November 2026) you are in Mercury–Saturn, which ends on 2027-09-29, and inside that in the Mars PD, which ends on 2026-12-25. By hand: 17 × 19 ÷ 120 = 2.69 years, about 983 days; the engine gives 2025-01-19 to 2027-09-29, which is 983 days.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Which dasha system:</strong> BPHS describes many (Vimshottari, Ashtottari, Shodasottari, Panchottari and others) and says the right one depends on conditions in the chart. Vimshottari is the default in most modern Parashari work. Jaimini’s Chara dasha, Yogini dasha and others give different timelines. KP uses Vimshottari, split into sub-lords.</li>\n<li><strong>Year length:</strong> the engine uses 365.25 days. Some use a 360-day year, which moves the end of your Mercury MD about five months earlier (see the table below).</li>\n<li><strong>Ayanamsa:</strong> the Moon moves by up to about 1.5° if you switch among the common ayanamsas (see the table below), which changes how much of the first period was already gone at birth. Every date in your table moves with it.</li></ul>\n<div class=\"tbl\"><table><thead><tr><th>Assumption</th><th>Mercury MD ends</th></tr></thead><tbody><tr><td>Lahiri (engine), 365.25-day year, birth 12:59</td><td>2027-09-29</td></tr><tr><td>Same, birth time 5 min later (13:04)</td><td>2027-09-05</td></tr><tr><td>Same, birth time 5 min earlier (12:54)</td><td>2027-10-23</td></tr><tr><td>360-day year</td><td>2027-04-29</td></tr><tr><td>Krishnamurti (KP) ayanamsa</td><td>2027-08-10</td></tr><tr><td>Raman ayanamsa</td><td>2025-09-07</td></tr><tr><td>Fagan-Bradley ayanamsa (Western sidereal)</td><td>2029-01-01</td></tr></tbody></table></div></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Recompute the end of your Mercury MD by hand from the Moon’s longitude, using the steps above. Your answer should match the engine to within a day or two. Then look at the table: a birth-time error of five minutes moves period ends by about three weeks, and the choice of ayanamsa can move it by months or years. Treat a date as a window, not a point.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Vimshottari: 120 years, nine planets, order Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury (a cycle of the BPHS order).</li><li>The Moon’s nakshatra at birth gives the first lord; its elapsed fraction gives the balance.</li><li>AD = MD years × AD years ÷ 120. PD = AD length × PD years ÷ 120.</li><li>Dates depend on the ayanamsa, the year length and the birth time. State which you use.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Compute your Mercury–Saturn–Jupiter PD length by hand, then check it against the engine dates 2027-05-21 to 2027-09-29. Write the difference in days.</p>\n",
+   "listen": "Vimshottari dasha is the planetary period system most used in Parashari work. Brihat Parashara chapter forty six, verses twelve to fifteen, gives the rule. Count from Krittika. The lords run Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, Venus, with years six, ten, seven, eighteen, sixteen, nineteen, seventeen, seven and twenty, a total of one hundred and twenty. The Moon’s nakshatra at birth gives the first lord, and how far the Moon has crossed that nakshatra gives the balance of that first period. Your Moon is in Pushya, ruled by Saturn, about thirty five percent through it. So you were born with about twelve years of Saturn period left, which ended in September 2010. Mercury follows for seventeen years and ends on twenty ninth September 2027. Then Ketu runs seven years. An antardasha is the major period years times the sub lord’s years divided by one hundred twenty. Dates move with the ayanamsa, the year length and the birth time, so treat each end date as a window.",
+   "sources": [
+    "BPHS ch. 46 (dasas of planets), verses 12 to 15, R. Santhanam’s translation: order, years and the Krittika count",
+    "BPHS ch. 46 note on other dasha systems (Ashtottari and others) in the chapter’s introduction",
+    "Engine output for all dates; ayanamsa variants computed with pyswisseph"
+   ],
+   "quiz": [
+    {
+     "q": "How long is the Mercury mahadasha in Vimshottari?",
+     "o": [
+      "7 years",
+      "16 years",
+      "17 years",
+      "19 years"
+     ],
+     "a": 2,
+     "w": "The years are Sun 6, Moon 10, Mars 7, Rahu 18, Jupiter 16, Saturn 19, Mercury 17, Ketu 7, Venus 20."
+    },
+    {
+     "q": "Your Moon is in Pushya, so your first dasha lord at birth was…",
+     "o": [
+      "Saturn",
+      "Jupiter",
+      "Mercury",
+      "Ketu"
+     ],
+     "a": 0,
+     "w": "Pushya, Anuradha and Uttara Bhadrapada belong to Saturn."
+    },
+    {
+     "q": "What is the length of the Mercury–Saturn antardasha?",
+     "o": [
+      "(17 + 19) ÷ 2 years",
+      "17 × 17 ÷ 120 years",
+      "19 × 19 ÷ 120 years",
+      "17 × 19 ÷ 120 years"
+     ],
+     "a": 3,
+     "w": "AD length = MD years × AD years ÷ 120, about 2.69 years."
+    },
+    {
+     "q": "Which change moves your Mercury MD end date by about three weeks?",
+     "o": [
+      "A birth-time change of five minutes",
+      "A different ayanamsa",
+      "Moving to another city",
+      "Using the Gregorian calendar"
+     ],
+     "a": 0,
+     "w": "Five minutes moves the Moon by about 0.05°, so about three weeks of dasha balance. An ayanamsa change moves it far more."
+    },
+    {
+     "q": "When does your Mercury mahadasha end, per the engine?",
+     "o": [
+      "2025-01-19",
+      "2027-09-29",
+      "2028-02-25",
+      "2034-09-29"
+     ],
+     "a": 1,
+     "w": "Mercury MD ends 2027-09-29 and Ketu MD follows to 2034-09-29."
+    }
+   ]
+  },
+  {
+   "id": "5-2",
+   "title": "Reading a dasha lord",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Using the AD formula, how long is the Ketu–Venus antardasha inside a Ketu mahadasha?</p>\n<p>A dasha lord does not bring “its own” events. It brings the matters of the houses it owns and sits in, coloured by its condition. Before you read any period, read the planet. BPHS ch. 47 verse 2 puts it plainly: there are two kinds of dasha effects, <strong>general</strong> (from the planet’s natural character) and <strong>distinctive</strong> (from its placement and house). Verses 3 and 4 add that the effects follow the planet’s strength.</p>\n<h2>A six-point reading of a dasha lord</h2>\n<ol><li><strong>Natural character</strong> (karaka): what the planet signifies in general. Mercury is speech, trade, skill and the mind; Saturn is work, delay and discipline; Ketu is detachment and research.</li><li><strong>Houses owned:</strong> these are the life areas the period delivers.</li><li><strong>House occupied:</strong> where those matters play out.</li><li><strong>Condition:</strong> dignity, friendship, combustion, vargottama, aspects (Stage 4). A strong lord delivers; a weak one delivers with effort.</li><li><strong>Nakshatra lord:</strong> the planet that rules its star, a second hand on the wheel.</li><li><strong>Timing inside the period:</strong> BPHS ch. 47, verses 3 and 4, say the result of a planet in the first drekkana (0° to 10° of its sign) comes at the start of its dasha, in the second at the middle, in the third at the end. For a retrograde planet the order is reversed. Santhanam’s annotation adds that the dasha effects of Rahu and Ketu, being always retrograde, are always realised in the reverse order; the verse itself speaks only of retrograde planets, so this is the translator’s extension.</li></ol>\n<p>Nodes have no sign of their own, so read them through their dispositor (the lord of the sign they stand in) and through the planets they join. Many teachers add the nakshatra lord. These are the first things to check.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The six lords that run your next fifteen years:</p>\n<div class=\"tbl\"><table><thead><tr><th>Lord</th><th>Rules</th><th>Position</th><th>Condition</th><th>Nakshatra</th><th>Drekkana</th></tr></thead><tbody><tr><td>Mercury</td><td>Lagna and 10th lord</td><td>Gemini 28°10′ (10th)</td><td>own sign</td><td>Punarvasu</td><td>3rd</td></tr><tr><td>Saturn</td><td>5th and 6th lord</td><td>Aries 7°41′ (8th)</td><td>debilitated</td><td>Ashwini</td><td>1st</td></tr><tr><td>Ketu</td><td>No lordship: acts through its dispositor Saturn</td><td>Aquarius 10°33′ (6th)</td><td>n/a (node)</td><td>Shatabhisha</td><td>2nd</td></tr><tr><td>Rahu</td><td>No lordship: acts through its dispositor the Sun</td><td>Leo 10°33′ (12th)</td><td>n/a (node)</td><td>Magha</td><td>2nd</td></tr><tr><td>Jupiter</td><td>4th and 7th lord</td><td>Pisces 3°28′ (7th)</td><td>own sign</td><td>Uttara Bhadrapada</td><td>1st</td></tr><tr><td>Venus</td><td>2nd and 9th lord</td><td>Taurus 8°18′ (9th)</td><td>own sign</td><td>Krittika</td><td>1st</td></tr></tbody></table></div>\n<ul>\n<li><strong>Mercury (now to 2027-09-29):</strong> your strongest planet. It is in the 3rd drekkana, so by BPHS ch. 47 verses 3 and 4 the main results of the Mercury dasha arrive late in the period, which is now. This is a reading to test in your ledger, not a certainty.</li>\n<li><strong>Saturn (the current AD):</strong> a mixed lord, debilitated in the 8th but with cancellation candidates and the Harsha yoga. In the 1st drekkana, so its own dasha would give early results; as an AD this is not a direct rule.</li>\n<li><strong>Ketu (2027-09-29 to 2034-09-29):</strong> in Aquarius in the 6th house, and it acts through Saturn. Mean-node Ketu is at 10°33′, which is just past the 10° line, so it sits in the 2nd drekkana, the middle. With the true node, Ketu would be at about 9°09′, in the 1st drekkana. Ketu is always treated as retrograde, so the order reverses: a 1st drekkana Ketu would show its results at the end of the dasha. The node type changes the reading, so treat the timing as open.</li>\n<li><strong>Venus (2034 to 2054):</strong> in own sign Taurus in the 9th, exalted in the D9, with Mars. A strong planet in a trikona and one of your two functional benefics.</li></ul></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Drekkana timing:</strong> BPHS ch. 47 verses 3 and 4. Many modern teachers do not use it, and the effect is rarely tested. Treat it as an optional filter.</li>\n<li><strong>Mean vs true node:</strong> the engine uses the mean node. The true node can differ by over a degree, which can change the drekkana and the nakshatra of Rahu and Ketu.</li>\n<li><strong>Nakshatra lord:</strong> KP gives the star lord and sub lord the main say. Parashari practice uses it as a secondary check.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>For each lord, ask the same six questions of the D9 and see whether the story holds. A lord that is strong in the D1 and weak in the D9 (or the reverse) gives a mixed dasha. Also check the dasha lord in the Ashtakavarga: how many bindus does it have in its own BAV in the sign where it sits?</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Read the planet first: character, houses owned, house occupied, condition, nakshatra lord, timing in the period.</li><li>BPHS ch. 47 verse 2: effects are general (nature) and distinctive (placement).</li><li>BPHS ch. 47 verses 3 and 4: the drekkana of the planet shifts the main results to the start, middle or end of its dasha.</li><li>Nodes act through their dispositor and companions; node type changes details.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Write a six-line card for Ketu in the format of the six points. Mark which points depend on the node type (mean or true).</p>\n",
+   "listen": "A dasha lord brings the matters of the houses it owns and sits in, coloured by its condition. Brihat Parashara chapter forty seven, verse two, says dasha effects are of two kinds, general from the planet’s nature and distinctive from its placement. Use a six point reading. First the planet’s natural character. Second the houses it owns. Third the house it occupies. Fourth its condition, meaning dignity, friendship, combustion and aspects. Fifth the lord of its nakshatra. Sixth the drekkana, which the same chapter says shifts the main results to the start, middle or end of the dasha, reversed for retrograde planets and for the nodes. Your Mercury is in the third drekkana, so its main results fall late in the Mercury period, which is now. Your Ketu is just past ten degrees of Aquarius on the mean node, but about nine degrees on the true node, so its drekkana depends on the node type. Read Ketu through Saturn, its dispositor. Treat these timings as hypotheses to log, not facts.",
+   "sources": [
+    "BPHS ch. 47 (effects of dasas), verse 2 on general and distinctive effects, verses 3 and 4 on drekkana timing and retrograde reversal, R. Santhanam’s translation",
+    "Nakshatra and drekkana positions from the engine; true node position computed with pyswisseph"
+   ],
+   "quiz": [
+    {
+     "q": "According to BPHS ch. 47 verses 3 and 4, a planet in its 3rd drekkana gives its main results…",
+     "o": [
+      "At the start of its dasha",
+      "In the middle",
+      "Only in its antardasha",
+      "At the end"
+     ],
+     "a": 3,
+     "w": "First drekkana at the commencement, second in the middle, third at the end; reversed for retrograde planets."
+    },
+    {
+     "q": "How should a node such as Ketu be read as a dasha lord?",
+     "o": [
+      "Through its dispositor and the planets it joins",
+      "Only by its own sign",
+      "Ignore it",
+      "Through the Moon only"
+     ],
+     "a": 0,
+     "w": "The nodes have no sign of their own, so they act through their sign lord and companions."
+    },
+    {
+     "q": "Which drekkana is your Mercury in?",
+     "o": [
+      "First",
+      "Second",
+      "None",
+      "Third"
+     ],
+     "a": 3,
+     "w": "Mercury is at 28°10′ of Gemini, which is in the 20° to 30° third drekkana."
+    },
+    {
+     "q": "Your mean-node Ketu is at 10°33′ Aquarius. Why is its drekkana unsettled?",
+     "o": [
+      "The true node is near 9°09′, in the first drekkana",
+      "It changes each year",
+      "Aquarius has no drekkanas",
+      "Ketu is combust"
+     ],
+     "a": 0,
+     "w": "Mean and true nodes differ by over a degree here, crossing the 10° line."
+    },
+    {
+     "q": "Which is true of your Venus as a future dasha lord?",
+     "o": [
+      "It is debilitated",
+      "It rules the 6th house",
+      "It is combust",
+      "It is in own sign Taurus in the 9th and exalted in the D9"
+     ],
+     "a": 3,
+     "w": "Venus is in Taurus at 8°18′, in the 9th, and in Pisces in the D9."
+    }
+   ]
+  },
+  {
+   "id": "5-3",
+   "title": "MD, AD and PD together",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> In which drekkana is your Mercury, and when in its dasha does BPHS ch. 47 say its main results arrive?</p>\n<p>Three layers run at once: the mahadasha (MD) sets the theme, the antardasha (AD) sets the sub-theme and the pratyantardasha (PD) sets the weeks. A reading that uses only one layer is thin. Use the rule of thumb below.</p>\n<h2>How the layers combine</h2>\n<ul><li><strong>MD lord</strong> sets the field: its houses are the stage.</li><li><strong>AD lord</strong> decides what is staged: read its own houses and condition, then ask how it relates to the MD lord.</li><li><strong>PD lord</strong> times the trigger: events tend to land when the PD lord is itself connected to the question.</li><li>The AD and PD lords must <em>both</em> agree with the natal promise. If the natal chart gives no support, a good-looking period will not manufacture the event.</li></ul>\n<h2>How the AD lord relates to the MD lord</h2>\n<p>Three checks, in this order:</p>\n<ol><li><strong>Natural and temporary friendship</strong> (Stage 4, lesson 4-2): does the MD lord see the AD lord as a friend or an enemy in this chart?</li><li><strong>Distance between their houses:</strong> count the AD lord’s house from the MD lord’s house. In common practice 1, 4, 5, 7, 9 and 10 are supportive or active; 6, 8 and 12 (and often 2) are strained. This is a working convention, not a classical verse.</li><li><strong>Own condition:</strong> a well-placed AD lord can carry a strained pairing, and a weak AD lord can undercut a friendly one.</li></ol>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>All nine ADs of your Mercury MD, and of the Ketu MD that follows. “From MD lord” counts the AD lord’s house from the MD lord’s house; flags mark 6/8 and 2/12 distances.</p>\n<h3>Mercury MD</h3>\n<div class=\"tbl\"><table><thead><tr><th>AD</th><th>Dates</th><th>Natal role of AD lord</th><th>Five-fold relation (MD→AD)</th><th>From MD lord</th></tr></thead><tbody><tr><td>Mercury</td><td>2010-09-29 to 2013-02-25</td><td>rules 1, 10; 10th house</td><td>itself</td><td>1st</td></tr><tr><td>Ketu</td><td>2013-02-25 to 2014-02-22</td><td>node; 6th house</td><td>node: through dispositor</td><td>9th</td></tr><tr><td>Venus</td><td>2014-02-22 to 2016-12-23</td><td>rules 2, 9; 9th house</td><td>great friend</td><td>12th (2/12)</td></tr><tr><td>Sun</td><td>2016-12-23 to 2017-10-29</td><td>rules 12; 10th house</td><td>neutral</td><td>1st</td></tr><tr><td>Moon</td><td>2017-10-29 to 2019-03-31</td><td>rules 11; 11th house</td><td>neutral</td><td>2nd (2/12)</td></tr><tr><td>Mars</td><td>2019-03-31 to 2020-03-27</td><td>rules 3, 8; 9th house</td><td>friend</td><td>12th (2/12)</td></tr><tr><td>Rahu</td><td>2020-03-27 to 2022-10-14</td><td>node; 12th house</td><td>node: through dispositor</td><td>3rd</td></tr><tr><td>Jupiter</td><td>2022-10-14 to 2025-01-19</td><td>rules 4, 7; 7th house</td><td>friend</td><td>10th</td></tr><tr class=\"mine\"><td>Saturn</td><td>2025-01-19 to 2027-09-29</td><td>rules 5, 6; 8th house</td><td>friend</td><td>11th</td></tr></tbody></table></div>\n<h3>Ketu MD</h3>\n<div class=\"tbl\"><table><thead><tr><th>AD</th><th>Dates</th><th>Natal role of AD lord</th><th>Five-fold relation (MD→AD)</th><th>From MD lord</th></tr></thead><tbody><tr><td>Ketu</td><td>2027-09-29 to 2028-02-25</td><td>node; 6th house</td><td>itself</td><td>1st</td></tr><tr><td>Venus</td><td>2028-02-25 to 2029-04-27</td><td>rules 2, 9; 9th house</td><td>node: through dispositor</td><td>4th</td></tr><tr><td>Sun</td><td>2029-04-27 to 2029-09-01</td><td>rules 12; 10th house</td><td>node: through dispositor</td><td>5th</td></tr><tr><td>Moon</td><td>2029-09-01 to 2030-04-02</td><td>rules 11; 11th house</td><td>node: through dispositor</td><td>6th (6/8)</td></tr><tr><td>Mars</td><td>2030-04-02 to 2030-08-30</td><td>rules 3, 8; 9th house</td><td>node: through dispositor</td><td>4th</td></tr><tr><td>Rahu</td><td>2030-08-30 to 2031-09-17</td><td>node; 12th house</td><td>node: through dispositor</td><td>7th</td></tr><tr><td>Jupiter</td><td>2031-09-17 to 2032-08-23</td><td>rules 4, 7; 7th house</td><td>node: through dispositor</td><td>2nd (2/12)</td></tr><tr><td>Saturn</td><td>2032-08-23 to 2033-10-02</td><td>rules 5, 6; 8th house</td><td>node: through dispositor</td><td>3rd</td></tr><tr><td>Mercury</td><td>2033-10-02 to 2034-09-29</td><td>rules 1, 10; 10th house</td><td>node: through dispositor</td><td>5th</td></tr></tbody></table></div>\n<p><strong>Your current AD, Saturn.</strong> Saturn counts Mercury a natural friend, Mercury counts Saturn neutral (natural friendship is not always mutual in BPHS), and in your chart Saturn stands 11th from Mercury, a temporary friend. Mercury’s five-fold view of Saturn is therefore friend, so the pairing is smooth. But Saturn’s own condition is mixed (5th and 6th lord, debilitated in the 8th, cancellation candidates, Harsha yoga). So the AD is a friendly partnership carrying a weak, hardworking planet: expect effort and delay on 5th and 6th house matters, with support from the MD lord.</p>\n<p><strong>The next change.</strong> On 2027-09-29 Ketu MD starts with Ketu’s own AD, 149 days long (7 × 7 ÷ 120 years), to 2028-02-25. A sub-period of the MD lord itself is read like a pure sample of the MD theme.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Relation of AD to MD:</strong> the friendship test is Parashari; the house-distance test is a modern working rule, and some teachers add a count from the lagna as well.</li>\n<li><strong>Dasha sandhi:</strong> many teachers treat the last months of an MD and the first months of the next as unsettled. The idea is common; no classical text for it is cited here.</li>\n<li><strong>KP:</strong> gives the MD lord, AD lord and PD lord the same weight as significators, and checks each lord’s star and sub lord for the event’s houses.</li>\n<li><strong>Jaimini:</strong> does not use Vimshottari for its main work; Chara dasha gives a different set of periods.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Choose one period in the past and read it before you recall what happened: write the MD, AD and PD, the natal roles of each lord and the likely themes. Then compare with your memory. If you cannot recall the dates of the real events within a month, your test is weak.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>MD sets the field, AD the sub-theme, PD the weeks.</li><li>Check the AD lord against the MD lord by friendship, then by house distance, then by its own condition.</li><li>Mercury–Saturn is a friendly pairing (in the five-fold sense) that carries a mixed lord.</li><li>A good-looking period cannot manufacture an event that the natal chart does not support.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> For the Ketu–Jupiter AD, work out the five-fold relation (the engine gives the AD lord Jupiter’s house, 7th) and the house distance from Ketu in the 6th. Write what you expect, with the dates, in your ledger.</p>\n",
+   "listen": "Three layers run together. The mahadasha sets the field, the antardasha sets the sub theme, and the pratyantardasha times the weeks. To read an antardasha, first ask how its lord relates to the mahadasha lord by natural and temporary friendship. Then count the house of the sub lord from the house of the main lord. Houses one, four, five, seven, nine and ten are supportive. Six, eight and twelve, and often two, are strained. This is a working rule and not a verse. Then judge the sub lord’s own condition. In your Mercury Saturn period, Saturn counts Mercury a natural friend, Mercury counts Saturn neutral, and Saturn stands eleventh from Mercury, a temporary friend, so the five fold view is friend and the pairing is smooth. But Saturn itself is debilitated in the eighth with cancellation candidates, so the period asks for effort on fifth and sixth house matters. On twenty ninth September 2027 your Ketu mahadasha starts with Ketu’s own antardasha, one hundred forty nine days long. Many teachers treat the months around a change of mahadasha as unsettled. A good looking period cannot create an event the chart does not promise.",
+   "sources": [
+    "BPHS ch. 46 (dasa calculation) and ch. 47 (dasa effects) for the structure of MD, AD and PD",
+    "Stage 4 lessons 4-2 and 4-4 for friendship and functional roles",
+    "The house-distance rule and dasha sandhi are common working conventions; no classical verse was verified"
+   ],
+   "quiz": [
+    {
+     "q": "Which period lord usually sets the theme of the whole period?",
+     "o": [
+      "Mahadasha lord",
+      "Antardasha lord",
+      "Pratyantardasha lord",
+      "The Moon always"
+     ],
+     "a": 0,
+     "w": "The MD lord sets the field; AD and PD refine it."
+    },
+    {
+     "q": "In common practice an AD lord 6th or 8th from the MD lord is read as…",
+     "o": [
+      "Smoothly supportive",
+      "Strained",
+      "Neutral",
+      "A yogakaraka"
+     ],
+     "a": 1,
+     "w": "Houses 6, 8 and 12 from the MD lord are the shadashtaka and dwirdwadasha positions, read as strain."
+    },
+    {
+     "q": "How long is the Ketu–Ketu antardasha?",
+     "o": [
+      "About 20 days",
+      "About 1.2 years",
+      "About 7 years",
+      "About 149 days"
+     ],
+     "a": 3,
+     "w": "7 × 7 ÷ 120 years ≈ 0.41 years ≈ 149 days; the engine gives 2027-09-29 to 2028-02-25."
+    },
+    {
+     "q": "Mercury and Saturn in your chart are…",
+     "o": [
+      "Friendly, with Saturn 11th from Mercury",
+      "Natural enemies",
+      "In shadashtaka",
+      "Conjunct"
+     ],
+     "a": 0,
+     "w": "Natural neutral plus a temporary friend (Saturn is 11th from Mercury) gives a five-fold friend."
+    },
+    {
+     "q": "If the natal chart gives no support for an event, a favourable period…",
+     "o": [
+      "Will create it",
+      "Cannot manufacture it",
+      "Cancels the chart",
+      "Doubles the effect"
+     ],
+     "a": 1,
+     "w": "Promise comes first, timing second."
+    }
+   ]
+  },
+  {
+   "id": "5-4",
+   "title": "Your Mercury and Ketu periods",
+   "mins": 23,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> When does your Ketu mahadasha start, and what is the length of its first antardasha?</p>\n<p>This lesson uses what you have learned on your own periods: the end of your Mercury MD and the start of your Ketu MD. It also teaches a habit that matters more than any single reading: log a prediction before the event, with a window and a way to score it.</p>\n<h2>Where you are</h2>\n<div class=\"tbl\"><table><thead><tr><th>Pratyantardasha (inside Mercury–Saturn)</th><th>Window</th><th>Length</th><th>Share</th></tr></thead><tbody><tr><td>Mars (running now)</td><td>2026-10-28 to 2026-12-25</td><td>57 days</td><td>0.9% of the Mercury MD</td></tr><tr><td>Rahu</td><td>2026-12-25 to 2027-05-21</td><td>147 days</td><td>2.4% of the Mercury MD</td></tr><tr><td>Jupiter</td><td>2027-05-21 to 2027-09-29</td><td>131 days</td><td>2.1% of the Mercury MD</td></tr></tbody></table></div>\n<p>The windows come from the engine. The Rahu and Jupiter PDs are the next ones. The full next AD sequence, the Ketu MD, runs from 2027-09-29 to 2034-09-29.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><h3>Mercury period: what the chart supports</h3>\n<p>Mercury is lagna lord and 10th lord, in its own sign, vargottama, in the 10th, in the 3rd drekkana. The natural themes: work, speech, skill, trade and your own body and mind. BPHS ch. 24 verse 10 and verse 118 (Stage 4) read lagna lord and 10th lord in the 10th as self-earned status. With the Sun, your 12th lord, in the same house, expect cost, time away or behind-the-scenes effort as part of the same picture. Saturn AD adds the 5th and 6th: skills, learning, service, debts or competition, and the 8th house position adds slow, hidden or research work.</p>\n<h3>Ketu period: what the chart supports</h3>\n<p>Ketu stands in Aquarius in the 6th and acts through Saturn, which is in the 8th, debilitated, with cancellation candidates and Harsha yoga. The 6th is the house of service, health habits, debts, litigation and competition, an upachaya house, where difficult things can improve with time. Ketu’s natural themes are detachment, research, endings and spiritual work. The Ketu MD will therefore read through Saturn’s lordships (5th and 6th) as much as through Ketu’s house.</p>\n<h3>Ketu antardashas</h3>\n<div class=\"tbl\"><table><thead><tr><th>AD</th><th>Window</th><th>Length</th><th>Share of Ketu MD</th></tr></thead><tbody><tr><td>Ketu</td><td>2027-09-29 to 2028-02-25</td><td>149 days</td><td>6%</td></tr><tr><td>Venus</td><td>2028-02-25 to 2029-04-27</td><td>426 days</td><td>17%</td></tr><tr><td>Sun</td><td>2029-04-27 to 2029-09-01</td><td>128 days</td><td>5%</td></tr><tr><td>Moon</td><td>2029-09-01 to 2030-04-02</td><td>213 days</td><td>8%</td></tr><tr><td>Mars</td><td>2030-04-02 to 2030-08-30</td><td>149 days</td><td>6%</td></tr><tr><td>Rahu</td><td>2030-08-30 to 2031-09-17</td><td>384 days</td><td>15%</td></tr><tr><td>Jupiter</td><td>2031-09-17 to 2032-08-23</td><td>341 days</td><td>13%</td></tr><tr><td>Saturn</td><td>2032-08-23 to 2033-10-02</td><td>405 days</td><td>16%</td></tr><tr><td>Mercury</td><td>2033-10-02 to 2034-09-29</td><td>362 days</td><td>14%</td></tr></tbody></table></div>\n<p>Each AD is a hypothesis to test, not a story to believe. If you list what you expect in each AD, you will see that the same claim can fit almost any window.</p></div>\n<h2>Why base rates matter</h2>\n<p>If you pick a random 149-day window out of the 7-year Ketu MD, it has about a 5.8% chance of holding any one dated event. Many people name a PD or AD <em>after</em> an event and say it “fits”. Of course it fits: some period will always be running. The test is the other direction: name the window first and see whether the event arrives. Controlled blind tests have not shown astrologers matching charts to people better than chance (Stage 0); your own ledger is the only evidence you can build for yourself.</p>\n<h2>The blind-logging protocol</h2>\n<ol><li><strong>Write the claim first:</strong> the date you write it, the window (start and end), the life area, and what would count as a hit. “Career change in 2027” is too vague; “a new formal role, title or employer between 2027-05-21 and 2027-09-29” is testable.</li><li><strong>State the reasoning:</strong> MD–AD–PD lords, their natal roles, and any transit support.</li><li><strong>State the base rate:</strong> roughly how often such an event happens to anyone in a window of that length.</li><li><strong>Do not edit it:</strong> write the outcome later, in a separate field, as hit, miss or unclear.</li><li><strong>Score it after at least ten entries,</strong> and compare the hit rate with the base rate.</li></ol>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Dasha systems:</strong> a Chara dasha, Yogini dasha or KP sub-lord reading would give different windows. A fair test logs the same claim in each system and compares.</li>\n<li><strong>Whether to use PDs:</strong> some astrologers stop at the AD, because PDs are short and a birth-time error moves them by weeks.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check the Mercury–Saturn–Jupiter window under a birth time five minutes earlier and later. A PD of 131 days moves by about three weeks, so a claim that depends on its exact start date is fragile. If your claim still holds across the shift, it is more robust.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Your Mercury MD ends on 2027-09-29; the Ketu MD runs to 2034-09-29.</li><li>A random 149-day window in the Ketu MD holds a given dated event about 5.8% of the time.</li><li>Name the window and the hit criteria before the event, not after.</li><li>Log claims in your prediction ledger with the base rate and the reasoning.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Write three ledger entries now, one for each PD still to run in the Mercury–Saturn AD (Mars is already running). Each needs a window, a hit criterion, reasoning and a base-rate guess. Do not change them.</p>\n",
+   "listen": "This lesson applies the arithmetic to your own periods and teaches the logging habit. You are in Mercury, Saturn, Mars. The next pratyantardashas are Rahu from the end of December 2026 and Jupiter from late May 2027, and the Mercury mahadasha ends on twenty ninth September 2027. Mercury is lagna and tenth lord, in its own sign in the tenth, vargottama, so the period supports work and self-built standing. The Sun, your twelfth lord, sits with it, adding cost or behind the scenes effort. Ketu follows for seven years. Ketu sits in the sixth house and acts through Saturn, so read the period through Saturn’s fifth and sixth lordships. A random one hundred forty nine day window holds any given dated event only about six percent of the time in the Ketu mahadasha, so the test is to name the window first. Write the claim, the window, the reasoning and a base rate before the event, never after, and score your hit rate only after about ten entries. Controlled blind tests are the reason for this discipline.",
+   "sources": [
+    "Engine output (dasha levels 2 and 3) for all dates",
+    "BPHS ch. 24 verses 10 and 118 (Stage 4) for lagna lord and 10th lord in the 10th",
+    "Prediction-ledger protocol: this course’s own method (see Stage 0 for the blind-test background)"
+   ],
+   "quiz": [
+    {
+     "q": "On which date does your Mercury mahadasha end?",
+     "o": [
+      "2026-12-25",
+      "2027-05-21",
+      "2027-09-29",
+      "2028-02-25"
+     ],
+     "a": 2,
+     "w": "2027-09-29 is the end of Mercury MD and the start of Ketu MD."
+    },
+    {
+     "q": "What is the best form of a ledger claim?",
+     "o": [
+      "A strong period for career in 2027",
+      "A claim written after the event",
+      "Anything that fits afterwards",
+      "A new formal role between two fixed dates, written before it happens"
+     ],
+     "a": 3,
+     "w": "A testable claim names the window, what counts as a hit and is written in advance."
+    },
+    {
+     "q": "The chance a random 149-day window in the Ketu MD holds a given dated event is about…",
+     "o": [
+      "0.6%",
+      "5.8%",
+      "25%",
+      "50%"
+     ],
+     "a": 1,
+     "w": "149 ÷ (7 × 365.25) ≈ 5.8%."
+    },
+    {
+     "q": "Ketu in your chart acts mainly through…",
+     "o": [
+      "Mercury",
+      "Venus",
+      "Saturn, its dispositor",
+      "The Moon"
+     ],
+     "a": 2,
+     "w": "Ketu is in Aquarius, ruled by Saturn."
+    },
+    {
+     "q": "Why log the base rate with each claim?",
+     "o": [
+      "To make the claim longer",
+      "It is a classical rule",
+      "To please a teacher",
+      "So a hit can be compared with how often it happens by chance"
+     ],
+     "a": 3,
+     "w": "Without a base rate, a hit cannot be separated from luck."
+    }
+   ]
+  },
+  {
+   "id": "5-5",
+   "title": "Gochar: transits from the Moon and the lagna",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Which planet is the dispositor of your Ketu, and which is the dispositor of your Rahu?</p>\n<p>The dasha says <em>whose</em> turn it is. {{term:gochar|Gochar}}, the transit of planets through the signs today, says what the sky is doing during that turn. Natal chart is the promise, dasha is the period, and gochar is the weather inside it.</p>\n<h2>Two reference points</h2>\n<ul><li><strong>From the natal Moon sign (Chandra lagna):</strong> the classical gochara scheme. You count the house of each transiting planet from your Moon sign, which for you is Cancer.</li><li><strong>From the lagna:</strong> a modern and Jaimini-friendly view. You count houses from Virgo, so a transit lights up an actual house of your chart.</li></ul>\n<p>BPHS does not give the favourable-house and vedha lists below. Santhanam’s ch. 66 (the introduction to Ashtakavarga) says transit judgement is done through the Ashtakavarga marks and gives transit rules in that frame (lesson 5-7). The favourable-house lists come from later texts, chiefly the gochara chapter of Phaladeepika; chapter and verse numbers are not cited here.</p>\n<h2>Favourable houses from the Moon, and the vedha</h2>\n<p>A planet gives its good result in a favourable house <em>unless</em> another planet stands in its paired {{term:vedha|vedha}} house (the obstruction). The pairs are in brackets.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Favourable houses from the Moon</th><th>Vedha house for each (in brackets)</th></tr></thead><tbody><tr><td>Sun</td><td>3, 6, 10, 11</td><td>3 (9), 6 (12), 10 (4), 11 (5)</td></tr><tr><td>Moon</td><td>1, 3, 6, 7, 10, 11</td><td>1 (5), 3 (9), 6 (12), 7 (2), 10 (4), 11 (8)</td></tr><tr><td>Mars</td><td>3, 6, 11</td><td>3 (12), 6 (9), 11 (5)</td></tr><tr><td>Mercury</td><td>2, 4, 6, 8, 10, 11</td><td>2 (5), 4 (3), 6 (9), 8 (1), 10 (8), 11 (12)</td></tr><tr><td>Jupiter</td><td>2, 5, 7, 9, 11</td><td>2 (12), 5 (4), 7 (3), 9 (10), 11 (8)</td></tr><tr><td>Venus</td><td>1, 2, 3, 4, 5, 8, 9, 11, 12</td><td>1 (8), 2 (7), 3 (1), 4 (10), 5 (9), 8 (5), 9 (11), 11 (6), 12 (3)</td></tr><tr><td>Saturn</td><td>3, 6, 11</td><td>3 (12), 6 (9), 11 (5)</td></tr></tbody></table></div>\n<p>Two common exceptions: Sun and Saturn do not obstruct each other, and neither do Moon and Mercury. Lists differ slightly between books, and some add a “vipareeta” rule where a planet in an unfavourable house is rescued by a planet in the opposite vedha house. Use the table as a first filter.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The sky on 2026-12-01, read from your natal Moon (Cancer):</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Sign</th><th>House from Moon</th><th>House from lagna</th><th>Gochara status</th></tr></thead><tbody><tr><td>Sun</td><td>Scorpio</td><td>5</td><td>3</td><td>Not a favourable house</td></tr><tr><td>Mars</td><td>Leo</td><td>2</td><td>12</td><td>Not a favourable house</td></tr><tr><td>Mercury</td><td>Libra</td><td>4</td><td>2</td><td>Favourable; vedha house 3 is empty</td></tr><tr><td>Jupiter</td><td>Leo</td><td>2</td><td>12</td><td>Favourable; vedha house 12 is empty</td></tr><tr><td>Venus</td><td>Libra</td><td>4</td><td>2</td><td>Favourable; vedha house 10 is empty</td></tr><tr><td>Saturn</td><td>Pisces</td><td>9</td><td>7</td><td>Not a favourable house</td></tr></tbody></table></div>\n<p><strong>Reading:</strong> Jupiter is in Leo, the 2nd from your Moon, a favourable house, and its vedha house (12th from the Moon, Gemini) is empty. Saturn is in Pisces, the 9th from your Moon, which is not on Saturn’s list of good houses. From your lagna Saturn is in the 7th (partnerships, contracts, the public) and Jupiter is in the 12th (loss, expense, retreat, foreign).</p>\n<p><strong>The next big shifts from the engine:</strong></p>\n<div class=\"tbl\"><table><thead><tr><th>Window</th><th>Jupiter</th><th>Saturn</th><th>Both influence</th></tr></thead><tbody><tr><td>2026-11-27 to 2027-01-25</td><td>Leo (12th house, 2nd from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>4th</td></tr><tr><td>2027-01-25 to 2027-06-03</td><td>Cancer (11th house, 1st from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>7th</td></tr><tr><td>2027-06-03 to 2027-06-26</td><td>Cancer (11th house, 1st from Moon)</td><td>Aries (8th house, 10th from Moon)</td><td>5th</td></tr><tr><td>2027-06-26 to 2027-10-20</td><td>Leo (12th house, 2nd from Moon)</td><td>Aries (8th house, 10th from Moon)</td><td>8th</td></tr><tr><td>2027-10-20 to 2027-11-26</td><td>Leo (12th house, 2nd from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>4th</td></tr><tr><td>2027-11-26 to 2028-02-23</td><td>Virgo (1st house, 3rd from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>1st, 7th, 9th</td></tr></tbody></table></div>\n<p>The last column anticipates lesson 5-7: it lists the houses that Jupiter and Saturn both occupy or aspect in that window.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Moon vs lagna:</strong> traditional gochara counts from the Moon; many modern teachers count from the lagna; some count from both and trust agreement.</li>\n<li><strong>Vedha lists:</strong> differ slightly between books. Whether the Sun–Saturn and Moon–Mercury exceptions apply is also a matter of the book.</li>\n<li><strong>Ashtakavarga:</strong> BPHS frames transit through bindu counts. That method gives a different answer from the vedha lists for the same planet.</li>\n<li><strong>Jaimini and KP:</strong> use transit through sign aspects (Jaimini) or the star and sub lords of the transiting planet (KP) rather than these lists.</li></ul></div>\n<p class=\"note\">Transit lists are filters for when to look. They do not say what happens. Write what you expect in your prediction ledger with the window.</p>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run the same date from the Moon and from the lagna and see whether the two readings agree. Where they split, note it. Then check the Ashtakavarga count of the transiting planet in that sign (lesson 5-7); a third source that agrees makes the call firmer.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Natal chart is the promise, dasha is the period, gochar is the weather inside it.</li><li>Count transits from the Moon sign (classical) and from the lagna (modern); note where they differ.</li><li>A good house can be spoiled by a planet in its vedha house; Sun–Saturn and Moon–Mercury are exceptions.</li><li>Saturn is in your 7th house from the lagna and the 9th from your Moon until 2027-06-03.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Choose a date three months ahead and list where Saturn, Jupiter and Mars are, from the Moon and from the lagna. For each, say whether it is on the favourable list and whether its vedha house is empty.</p>\n",
+   "listen": "Natal chart is the promise, dasha is the period, and gochar, the transit of planets through the signs, is the weather inside it. Count transits from the natal Moon sign, which is the classical gochara method, and from the lagna, which is the modern way. For you the Moon sign is Cancer and the lagna is Virgo. In the classical scheme each planet has favourable houses from the Moon. Saturn is good in the third, sixth and eleventh. Jupiter is good in the second, fifth, seventh, ninth and eleventh. A good house can be spoiled by a planet in its vedha house. Brihat Parashara itself routes transit judgement through Ashtakavarga, and the favourable house lists come from later texts. On first December 2026, Jupiter is in Leo, second from your Moon, with its vedha house empty. Saturn is in Pisces, ninth from your Moon, not a favourable house, and seventh from your lagna. These are filters for when to look, not predictions. Write what you expect in your ledger with a window.",
+   "sources": [
+    "BPHS ch. 66 (introduction to Ashtakavarga) on transit judgement through the Ashtakavarga marks, R. Santhanam’s translation",
+    "Phaladeepika and later texts for the favourable-house and vedha lists: chapter numbers not verified",
+    "Engine events output for planetary ingresses and the snapshot table"
+   ],
+   "quiz": [
+    {
+     "q": "From which point does classical gochara count houses?",
+     "o": [
+      "The natal Moon sign",
+      "The Sun",
+      "The 10th house",
+      "Saturn"
+     ],
+     "a": 0,
+     "w": "Classical gochara counts from the Moon sign; many modern teachers also count from the lagna."
+    },
+    {
+     "q": "Saturn’s favourable houses from the Moon are…",
+     "o": [
+      "1, 5, 9",
+      "3, 6, 11",
+      "2, 7, 10",
+      "4, 8, 12"
+     ],
+     "a": 1,
+     "w": "Saturn, like Mars, is good in 3, 6 and 11; the Sun adds the 10th."
+    },
+    {
+     "q": "Jupiter transits the 2nd from the Moon. Its vedha house is…",
+     "o": [
+      "The 4th",
+      "The 8th",
+      "The 12th",
+      "The 3rd"
+     ],
+     "a": 2,
+     "w": "For Jupiter the favourable 2nd is obstructed by a planet in the 12th."
+    },
+    {
+     "q": "From your Moon (Cancer), Saturn in Pisces is in which house?",
+     "o": [
+      "7th",
+      "8th",
+      "9th",
+      "10th"
+     ],
+     "a": 2,
+     "w": "Cancer to Pisces counts Cancer 1, Leo 2, Virgo 3, Libra 4, Scorpio 5, Sagittarius 6, Capricorn 7, Aquarius 8, Pisces 9."
+    },
+    {
+     "q": "Where does BPHS handle transit judgement?",
+     "o": [
+      "Through vedha lists",
+      "It does not mention transits",
+      "Through eclipses only",
+      "Through Ashtakavarga marks (ch. 66 onward)"
+     ],
+     "a": 3,
+     "w": "Ch. 66 asks for a method to judge by planets in transit and answers with Ashtakavarga."
+    }
+   ]
+  },
+  {
+   "id": "5-6",
+   "title": "Sade Sati, dhaiya, nodes and eclipses",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> From your Moon sign, which house is Saturn in on 2027-07-01, and is that house on its favourable list?</p>\n<p>Saturn moves about one sign every two and a half years, so its position relative to your Moon sign sorts your life into long chapters. Two popular groupings follow from it.</p>\n<h2>Sade Sati and dhaiya</h2>\n<p>{{term:sadesati|Sade Sati}} is Saturn’s passage through the 12th, 1st and 2nd signs from your natal Moon sign: roughly seven and a half years in three phases. {{term:dhaiya|Dhaiya}} is Saturn in the 4th or 8th sign from the Moon, about two and a half years each. Neither term is found as such in BPHS (Santhanam’s translation); they come from later popular tradition, and the strong claims often attached to them (disaster, ruin) are not supported by the classical transit texts. Read them as periods of heavier Saturn themes: duty, delay, restructure, solitude, long work.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your Moon is in Cancer. Saturn’s history and future against it, from the engine’s ingress dates:</p>\n<div class=\"tbl\"><table><thead><tr><th>Phase</th><th>Saturn in</th><th>Dates</th><th>Notes</th></tr></thead><tbody><tr><td>Sade Sati (12th, 1st, 2nd from Moon)</td><td>Gemini, Cancer, Leo</td><td>2002-07-23 to 2009-09-10</td><td>with short back-and-forth dips in 2003, 2005 and 2007; you were 4 to 11</td></tr><tr><td>Dhaiya (4th from Moon)</td><td>Libra</td><td>2011-11-15 to 2014-11-02</td><td>with a dip into Virgo from 2012-05-16 to 2012-08-04</td></tr><tr><td>Dhaiya (8th from Moon)</td><td>Aquarius</td><td>2022-04-29 to 2025-03-29</td><td>with a dip into Capricorn from 2022-07-12 to 2023-01-17</td></tr><tr><td>Now</td><td>Pisces (9th), then Aries (10th)</td><td>2025-03-29 to 2029-08-08</td><td>none of the above; Aries from 2027-06-03, back to Pisces 2027-10-20, into Aries again 2028-02-23; Taurus (11th) from 2029-08-08, with a dip back to Aries until 2030-04-17</td></tr><tr><td>Next Sade Sati</td><td>Gemini, Cancer, Leo</td><td>2032-05-31 to about 2038-10-22</td><td>Gemini from 2032-05-31, Cancer from 2034-07-13, Leo from 2036-08-27, Virgo from 2038-10-22; dips back to Leo until 2039-07-13</td></tr></tbody></table></div>\n<p>You are in no Sade Sati or dhaiya now. Your 8th-from-Moon dhaiya (Aquarius) ended on 2025-03-29, and the next Sade Sati begins in 2032, when you will be about 34. Saturn in Aries (10th from the Moon) is called kantaka (thorn) Shani in some traditions, which count Saturn in the 4th, 7th and 10th from the Moon; this is one more thing that differs by teacher.</p></div>\n<h2>Rahu and Ketu through your chart</h2>\n<p>The mean nodes move backward about one sign every 18 months. On <strong>2026-12-05</strong>, Rahu enters Capricorn (your 5th house, the 7th from your Moon) and Ketu enters Cancer (your 11th house, over your natal Moon sign). They stay until <strong>2028-06-24</strong>. Ketu reaches your natal Moon’s degree (8°04′ Cancer) on <strong>2028-01-23</strong>, with Rahu opposite it. Teachers differ widely about the nodes in gochar (many use Saturn’s 3, 6, 11), so no single favourable-house list is given here.</p>\n<h2>Eclipses on natal points</h2>\n<p>A solar or lunar eclipse falls on a degree. Many astrologers check whether it touches a natal planet or the lagna within an orb of about 3° (some use 1° to 5°) and treat the following weeks to months as a period of change for what that point stands for. Penumbral lunar eclipses are normally ignored. The 2027 eclipses, computed with Swiss Ephemeris (sidereal Lahiri):</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><div class=\"tbl\"><table><thead><tr><th>Date</th><th>Type</th><th>Degree (house)</th><th>Nearest natal point and orb</th></tr></thead><tbody><tr><td>2027-02-06</td><td>Solar, annular</td><td>Capricorn 23°23′ (5th house)</td><td>none within 8°</td></tr><tr><td>2027-02-21</td><td>Lunar, penumbral</td><td>Leo 7°44′ (12th house)</td><td>Rahu, 2.8°</td></tr><tr><td>2027-07-18</td><td>Lunar, penumbral</td><td>Capricorn 1°42′ (5th house)</td><td>none within 8°</td></tr><tr><td>2027-08-02</td><td>Solar, total</td><td>Cancer 15°40′ (11th house)</td><td>Moon, 7.6°</td></tr><tr><td>2027-08-17</td><td>Lunar, penumbral</td><td>Capricorn 29°49′ (5th house)</td><td>none within 8°</td></tr></tbody></table></div>\n<p>Neither of the two solar eclipses of 2027 lies within 3° of a natal planet or the lagna. The 2 August total eclipse is in the Moon’s sign (Cancer) 7°36′ from your natal Moon, which is the closest. A penumbral lunar eclipse on 21 February 2027 is 2.8° from natal Rahu, but penumbral eclipses are normally ignored. Visibility from Satna was not checked; traditions differ on whether visibility matters.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Sade Sati:</strong> counted by sign (as here) or by degree (Saturn within about 45° before to 45° after the natal Moon). The degree method moves each boundary by up to 15° compared with the sign method; for your Moon at 8°04′ Cancer both the start and the end come about 7° earlier than the sign dates.</li>\n<li><strong>Source:</strong> not found as such in BPHS (Santhanam). Later gochara texts give Saturn’s results house by house from the Moon; the grouping into one seven-and-a-half-year spell is popular tradition.</li>\n<li><strong>Eclipses:</strong> orb from 1° to 5°; some count only visible eclipses; some also count the eclipse’s effect on the house ruled. Some treat the sutak and traditional restrictions as a separate religious practice.</li>\n<li><strong>Nodes:</strong> mean vs true nodes differ by up to about 1.5°, which moves dates of ingress by weeks.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check Sade Sati both by sign and by degree for your dates, and note the difference. Check an eclipse against the D9 position of the natal planet it touches. And ask what the base rate is: a 3° orb either side is a 6° band, 1.7% of the zodiac per natal point; with ten natal points a random eclipse will touch one about one time in six.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Sade Sati: Saturn 12th, 1st, 2nd from the Moon sign; dhaiya: 4th and 8th. Later tradition, not BPHS.</li><li>Your next Sade Sati starts on 2032-05-31; your 8th dhaiya ended on 2025-03-29.</li><li>Ketu is over your natal Moon sign from 2026-12-05 and on its degree on 2028-01-23.</li><li>No natal point is within 3° of a 2027 solar eclipse.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Mark your Saturn dhaiya and Sade Sati windows on a timeline together with the Mercury and Ketu dashas. Write one line on what you remember of 2022 to 2025, and what you can check against records (not memory).</p>\n",
+   "listen": "Saturn changes sign about every two and a half years, so its position from your Moon sorts life into long chapters. Sade Sati is Saturn in the twelfth, first and second signs from your Moon sign. Dhaiya is Saturn in the fourth or eighth. These come from later tradition and are not found as such in Brihat Parashara, and the dire claims attached to them are not supported by the classical transit texts. Your Moon is in Cancer. Your eighth sign dhaiya, Saturn in Aquarius, ended on twenty ninth March 2025. You are in none now, and your next Sade Sati begins on thirty first May 2032. On fifth December 2026, Rahu enters Capricorn and Ketu enters Cancer, over your natal Moon sign. Ketu reaches your Moon’s degree on twenty third January 2028. A solar or lunar eclipse is usually checked against natal planets and the lagna within about three degrees. Neither of the two solar eclipses in 2027 is within three degrees of a natal point. Teachers differ on orbs, on penumbral eclipses and on visibility.",
+   "sources": [
+    "BPHS (R. Santhanam’s translation): searched for Sade Sati and dhaiya; not found as such",
+    "Saturn and node ingress dates from the engine; eclipse times and degrees computed with pyswisseph (sidereal Lahiri)",
+    "Eclipse orb conventions: common practice, no single verified source"
+   ],
+   "quiz": [
+    {
+     "q": "For a Cancer Moon, which signs make up Sade Sati?",
+     "o": [
+      "Gemini, Cancer, Leo",
+      "Taurus, Gemini, Cancer",
+      "Cancer, Leo, Virgo",
+      "Libra, Scorpio, Sagittarius"
+     ],
+     "a": 0,
+     "w": "The 12th (Gemini), 1st (Cancer) and 2nd (Leo) from the Moon sign."
+    },
+    {
+     "q": "When did your 8th-from-Moon dhaiya (Saturn in Aquarius) end?",
+     "o": [
+      "2022-04-29",
+      "2025-03-29",
+      "2027-06-03",
+      "2032-05-31"
+     ],
+     "a": 1,
+     "w": "Saturn entered Pisces on 2025-03-29."
+    },
+    {
+     "q": "When does your next Sade Sati start?",
+     "o": [
+      "2027-06-03",
+      "2028-02-23",
+      "2032-05-31",
+      "2038-10-22"
+     ],
+     "a": 2,
+     "w": "Saturn enters Gemini on 2032-05-31."
+    },
+    {
+     "q": "Where do Rahu and Ketu go on 2026-12-05?",
+     "o": [
+      "Rahu to Cancer, Ketu to Capricorn",
+      "Rahu to Capricorn, Ketu to Cancer",
+      "Both to Leo",
+      "Rahu to Aquarius, Ketu to Leo"
+     ],
+     "a": 1,
+     "w": "The mean nodes move backward; Rahu enters Capricorn and Ketu Cancer."
+    },
+    {
+     "q": "What is the standard caution about the strong claims made about Sade Sati?",
+     "o": [
+      "They come from BPHS ch. 1",
+      "They are proven by blind tests",
+      "They are not found in BPHS and come from later popular tradition",
+      "They apply only to Aries"
+     ],
+     "a": 2,
+     "w": "The term is later popular tradition; BPHS does not give it as such."
+    }
+   ]
+  },
+  {
+   "id": "5-7",
+   "title": "Double transit and Ashtakavarga bindus",
+   "mins": 23,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Which two eclipses of 2027 are solar, and does either fall within 3° of a natal point of yours?</p>\n<p>Jupiter expands and Saturn restricts and structures. The double transit ({{term:dwigochar|dwi-gochar}}) idea says a house comes “alive” in time when <em>both</em> Jupiter and Saturn influence it by occupation or aspect. It filters the sky: it does not say what will happen, only which houses are in play.</p>\n<h2>The rule</h2>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Influences these houses (counted from the house it is in)</th></tr></thead><tbody><tr><td>Jupiter</td><td>Its own house, the 5th, 7th and 9th from it</td></tr><tr><td>Saturn</td><td>Its own house, the 3rd, 7th and 10th from it</td></tr></tbody></table></div>\n<p>A house is “double-transited” when both planets influence it. Some teachers count from the lagna only; some also count from the Moon; some also count transits over the lord of the house.</p>\n<p><strong>Attribution.</strong> The technique is a twentieth-century method and is not in BPHS. In modern Indian teaching it is most often associated with K.N. Rao and his students (his career-timing work treats Jupiter and Saturn as a pair); some writers credit B.V. Raman. Who first stated it is unsettled.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your double-transit houses from the lagna (Virgo), using the engine’s ingress dates:</p>\n<div class=\"tbl\"><table><thead><tr><th>Window</th><th>Jupiter</th><th>Saturn</th><th>Houses influenced by both</th></tr></thead><tbody><tr><td>2026-11-27 to 2027-01-25</td><td>Leo (12th house, 2nd from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>4th</td></tr><tr><td>2027-01-25 to 2027-06-03</td><td>Cancer (11th house, 1st from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>7th</td></tr><tr><td>2027-06-03 to 2027-06-26</td><td>Cancer (11th house, 1st from Moon)</td><td>Aries (8th house, 10th from Moon)</td><td>5th</td></tr><tr><td>2027-06-26 to 2027-10-20</td><td>Leo (12th house, 2nd from Moon)</td><td>Aries (8th house, 10th from Moon)</td><td>8th</td></tr><tr><td>2027-10-20 to 2027-11-26</td><td>Leo (12th house, 2nd from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>4th</td></tr><tr><td>2027-11-26 to 2028-02-23</td><td>Virgo (1st house, 3rd from Moon)</td><td>Pisces (7th house, 9th from Moon)</td><td>1st, 7th, 9th</td></tr></tbody></table></div>\n<p>For example, from 2027-01-25 to 2027-06-03 Saturn stands in Pisces, your 7th house, while Jupiter in Cancer looks at Pisces by its 9th aspect. Both planets then bear on your 7th house (partners, contracts, open dealings). That tells you the 7th is “in play”, not that anything will happen there.</p></div>\n<h2>The base rate</h2>\n<p>Over the next ten years (2026-12-01 onward), counted day by day from the engine’s positions, each of your houses is double-transited this share of the time:</p>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Share of days double-transited</th></tr></thead><tbody><tr><td>1st house (Virgo)</td><td>13%</td></tr><tr><td>2nd house (Libra)</td><td>7%</td></tr><tr><td>3rd house (Scorpio)</td><td>8%</td></tr><tr><td>4th house (Sagittarius)</td><td>5%</td></tr><tr><td>5th house (Capricorn)</td><td>12%</td></tr><tr><td>6th house (Aquarius)</td><td>7%</td></tr><tr><td>7th house (Pisces)</td><td>9%</td></tr><tr><td>8th house (Aries)</td><td>23%</td></tr><tr><td>9th house (Taurus)</td><td>14%</td></tr><tr><td>10th house (Gemini)</td><td>18%</td></tr><tr><td>11th house (Cancer)</td><td>18%</td></tr><tr><td>12th house (Leo)</td><td>12%</td></tr></tbody></table></div>\n<p>On average 1.5 houses are doubled at any moment. Each house is doubled between about 5% and 23% of the time, so a doubled house is common, and a hit in a doubled window proves little unless the natal promise and the dasha agree too.</p>\n<h2>Ashtakavarga transit marks (introduction)</h2>\n<p>{{term:ashtakavarga|Ashtakavarga}} gives every sign a score from each planet. In the modern count each planet’s own table (BAV) runs 0 to 8 per sign, and the sum of all seven tables (SAV) is 337, an average of about 28 per sign. A rule of thumb: a planet in a sign where its BAV is 4 or more gives easier transit results, and a sign with SAV of 28 or more is supportive. BPHS ch. 66 verses 13 to 15 (Santhanam) uses the words the other way round: auspicious places are marked by lines (rekhas) and inauspicious ones by dots (bindus). Modern software calls the benefic mark a {{term:bindu|bindu}}. Check which word a source means before you compare numbers.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Sign it transits</th><th>Its own BAV in the sign</th><th>SAV of the sign</th><th>Reading</th></tr></thead><tbody><tr><td>Saturn</td><td>Pisces</td><td>4</td><td>29</td><td>supportive (4 or more)</td></tr><tr><td>Saturn</td><td>Aries</td><td>4</td><td>28</td><td>supportive (4 or more)</td></tr><tr><td>Jupiter</td><td>Cancer</td><td>3</td><td>26</td><td>weaker (3 or fewer)</td></tr><tr><td>Jupiter</td><td>Leo</td><td>4</td><td>27</td><td>supportive by BAV (4); SAV just under 28</td></tr><tr><td>Jupiter</td><td>Virgo</td><td>6</td><td>27</td><td>supportive by BAV (6); SAV just under 28</td></tr></tbody></table></div>\n<p>Saturn in Pisces and in Aries both have 4 points in Saturn’s own table. Jupiter has 3 in Cancer, 4 in Leo and 6 in Virgo; Jupiter reaches Virgo (your lagna) on 2027-11-26. All of this is from the engine’s Ashtakavarga tables.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Double transit:</strong> most often associated with K.N. Rao’s teaching; some writers credit B.V. Raman; the originator is unsettled. Some versions use the Moon as the reference, some add the house lord.</li>\n<li><strong>Ashtakavarga terms:</strong> in Santhanam’s translation of BPHS ch. 66 the benefic mark is a rekha and the malefic mark a bindu; modern software reverses this. Check the translation you are reading.</li>\n<li><strong>Thresholds:</strong> “4 or more in the BAV” and “28 or more in the SAV” are working rules of thumb, not BPHS verses.</li>\n<li><strong>Jaimini:</strong> uses sign aspects for the same idea; KP uses sub-lord signification.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>For any window you like, check three things: the double transit on the house, the BAV count of the transiting planet in the sign, and the dasha. When all three point to the same house, log the claim. When only the double transit does, treat it as background noise.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Double transit: Jupiter and Saturn both occupy or aspect the house (Jupiter 5/7/9, Saturn 3/7/10).</li><li>Credit: a modern method, most often linked to K.N. Rao (some say B.V. Raman); not in BPHS.</li><li>A house is doubled between about 5% and 23% of the time over ten years, so it is weak evidence alone.</li><li>In Santhanam’s BPHS, rekha is the benefic mark and bindu the malefic; modern usage is the reverse.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Pick one house you care about. Find the next window where it is double-transited, and note the dasha running then, the BAV of Saturn and Jupiter in the sign they occupy, and one claim you would log.</p>\n",
+   "listen": "The double transit idea says a house comes alive in time when both Jupiter and Saturn influence it by occupation or aspect. Jupiter influences its own house and the fifth, seventh and ninth from it. Saturn influences its own house and the third, seventh and tenth. It is a twentieth century method, most often linked to K N Rao’s teaching, with some writers crediting B V Raman. It is not in Brihat Parashara. Over the next ten years each of your houses is double transited between about five and twenty three percent of the days, so it is weak evidence on its own. From twenty fifth January to third June 2027, your seventh house is double transited. Ashtakavarga gives each planet a table of scores per sign, up to eight. The modern rule of thumb is that four or more in the planet’s own table gives an easier transit. Brihat Parashara uses the words the other way round. It calls the benefic mark a rekha, a line, and the malefic mark a bindu, a dot. Check which word a source means.",
+   "sources": [
+    "Double transit: modern method, most often associated with K.N. Rao’s teaching (e.g. his career-timing book, as cited by his students); some writers credit B.V. Raman; not in BPHS",
+    "BPHS ch. 66 (Ashtakavarga), verses 13 to 15 and Santhanam’s notes on rekha and bindu; transit-through-dotted-houses notes",
+    "Engine ashtakavarga tables (BAV, SAV) and ingress dates; base-rate counts computed over 3652 days from 2026-12-01"
+   ],
+   "quiz": [
+    {
+     "q": "Which houses does Jupiter influence in a double-transit count?",
+     "o": [
+      "Own house, 3rd, 7th, 10th from it",
+      "Only its own house",
+      "Own house, 4th, 7th, 8th from it",
+      "Own house, 5th, 7th, 9th from it"
+     ],
+     "a": 3,
+     "w": "Jupiter’s aspects are the 5th, 7th and 9th; Saturn’s are the 3rd, 7th and 10th."
+    },
+    {
+     "q": "From 2027-01-25 to 2027-06-03, which of your houses is double-transited?",
+     "o": [
+      "4th",
+      "5th",
+      "7th",
+      "8th"
+     ],
+     "a": 2,
+     "w": "Saturn is in Pisces (7th) and Jupiter in Cancer aspects Pisces by its 9th aspect."
+    },
+    {
+     "q": "In Santhanam’s translation of BPHS ch. 66, the benefic mark in Ashtakavarga is called…",
+     "o": [
+      "Rekha",
+      "Bindu",
+      "Karana",
+      "Dhaiya"
+     ],
+     "a": 0,
+     "w": "Santhanam: auspicious places are rekhas (lines), inauspicious ones bindus (dots), the reverse of modern use."
+    },
+    {
+     "q": "Over ten years a given house is double-transited about…",
+     "o": [
+      "0 to 2% of days",
+      "5 to 23% of days",
+      "50 to 70% of days",
+      "100% of days"
+     ],
+     "a": 1,
+     "w": "The count from the engine over 3652 days gives 5% to 23% across your 12 houses."
+    },
+    {
+     "q": "What is the honest attribution of the double-transit idea?",
+     "o": [
+      "It is in BPHS ch. 1",
+      "A modern method, most often linked to K.N. Rao; some credit B.V. Raman",
+      "Credited to Jaimini",
+      "It comes from the Surya Siddhanta"
+     ],
+     "a": 1,
+     "w": "Double transit is a twentieth-century technique, not a BPHS rule. It is most often associated with K.N. Rao’s teaching; some writers name B.V. Raman."
+    }
+   ]
+  },
+  {
+   "id": "5-8",
+   "title": "The event-timing protocol and stage test",
+   "mins": 25,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Which of your houses are double-transited between 2027-06-26 and 2027-10-20?</p>\n<p>Everything in this stage joins into one routine. It is slow on purpose. A prediction needs three agreeing layers and a base rate.</p>\n<h2>Promise, then dasha, then transit</h2>\n<ol><li><strong>Promise (natal chart).</strong> Does the chart support this event at all? Look at the house, its lord, the karaka, the D-chart for that area, and the strength of each. No promise means stop here.</li><li><strong>Dasha (the period).</strong> Is the MD, AD or PD lord connected to the house, its lord or its karaka by lordship, occupation, aspect or nakshatra? A period with no link rarely carries the event.</li><li><strong>Transit (the weather).</strong> Is the house double-transited? Are Saturn and Jupiter well placed from the Moon and the lagna? Do the Ashtakavarga counts support it? Is an eclipse or a node touching the relevant point?</li><li><strong>Window and base rate.</strong> Write the shortest window where all three layers agree, and estimate how often such an event happens by chance in a window of that length.</li><li><strong>Log it</strong> in the prediction ledger before the window opens, with a hit criterion.</li></ol>\n<p>The order matters. Starting from a transit and working backwards is how almost anything can be made to fit.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><h3>Your 2027 calendar from the engine</h3>\n<div class=\"tbl\"><table><thead><tr><th>Date</th><th>What happens</th></tr></thead><tbody><tr><td>2026-12-05</td><td>Rahu enters Capricorn (5th house), Ketu enters Cancer (11th house, your Moon sign)</td></tr><tr><td>2026-12-13</td><td>Jupiter turns retrograde at Leo 2°47′</td></tr><tr><td>2026-12-25</td><td>PD changes: Mercury–Saturn–Mars to Mercury–Saturn–Rahu</td></tr><tr><td>2027-01-25</td><td>Jupiter enters Cancer (11th house, your Moon sign)</td></tr><tr><td>2027-02-06</td><td>Annular solar eclipse, Capricorn 23°23′</td></tr><tr><td>2027-05-21</td><td>PD changes: to Mercury–Saturn–Jupiter</td></tr><tr><td>2027-06-03</td><td>Saturn enters Aries (your 8th house, your natal Saturn’s sign)</td></tr><tr><td>2027-06-26</td><td>Jupiter enters Leo (12th house)</td></tr><tr><td>2027-08-02</td><td>Total solar eclipse, Cancer 15°40′</td></tr><tr><td>2027-09-29</td><td>Mercury MD ends; Ketu MD starts with Ketu–Ketu</td></tr><tr><td>2027-10-20</td><td>Saturn returns to Pisces (retrograde, 7th house)</td></tr><tr><td>2027-11-26</td><td>Jupiter enters Virgo (your lagna)</td></tr></tbody></table></div>\n<h3>A worked example: the 10th house, 2027-05-21 to 2027-09-29</h3>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Finding</th></tr></thead><tbody><tr><td>Promise</td><td>Mercury, lagna and 10th lord, is in the 10th in its own sign, vargottama, with Bhadra yoga. The Sun joins it. Strong.</td></tr><tr><td>Dasha</td><td>MD Mercury is the 10th lord itself. AD Saturn, in the 8th, looks at the 10th by its 3rd aspect (Parashari). PD Jupiter (4th and 7th lord) does not hold the 10th by lordship or occupation; it looks at the 10th only in the Jaimini system. Partly connected.</td></tr><tr><td>Transit</td><td>From 2027-06-03 Saturn in Aries looks at Gemini (the 10th) by its 3rd aspect. Jupiter in Cancer and Leo does not look at the 10th by Parashari aspect. The 10th is not double-transited in this window. Partly supported.</td></tr><tr><td>Window</td><td>2027-05-21 to 2027-09-29 (131 days).</td></tr><tr><td>Base rate</td><td>The window is 131 days, about 2.1% of the Mercury MD. How often a formal role or status change happens in any four-month window is something you should estimate for yourself and record.</td></tr><tr><td>Verdict</td><td>Promise strong, dasha partly, transit partly. A claim here is a moderate-confidence hypothesis, not a forecast.</td></tr></tbody></table></div>\n<p>Log one claim from this table, with the window and a hit criterion, and mark its confidence as moderate.</p></div>\n<h2>The blind exercise</h2>\n<ol><li>Ask a friend or relative for their birth date, time and city, and for the date of one clear past event (marriage, new job, a move). Do <em>not</em> look at the event date yet.</li><li>Ask a third person to give you six windows of equal length (about three months each), one of which holds the event and five of which do not, in random order.</li><li>For each window, follow the three layers for that event type, using your chart engine. Score each window 0 to 3 (one point per layer that agrees).</li><li>Rank the windows. Then check where the real one fell.</li><li>By chance you will pick the right window one time in six. Repeat with five or six people before you read anything into the result.</li></ol>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Order of the layers:</strong> Parashari practice usually asks for the natal promise first. Some KP practitioners begin with the sub-lord of the house cusp. A fair comparison runs both on the same events.</li>\n<li><strong>Which transit counts:</strong> Moon-based, lagna-based, Jaimini sign aspects, Ashtakavarga and double transit all differ. Name the one you used in the ledger entry.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run the same claim under birth time ±5 minutes and an alternative ayanamsa, and note if the dasha layer collapses. A claim that depends on a boundary that moves under such changes is fragile and should carry a lower confidence.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Promise, then dasha, then transit; stop at the first layer that fails.</li><li>Always write a window, a hit criterion and a base rate before the event.</li><li>The 10th is strong in your promise, partly supported in dasha and transit for 2027-05-21 to 2027-09-29.</li><li>The blind exercise: a one-in-six chance is the bar your reading has to beat.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Choose a house, run the three layers for 2027, and write one ledger entry with a window, a hit criterion, the layers that agree and a confidence level. Then run the blind exercise with one person.</p>\n<h2>Stage test</h2>\n<p>The stage test below has seven questions on dasha calculation, gochar, double transit and the protocol. Use your notes and the engine, not guesses.</p>\n",
+   "listen": "This lesson joins the stage into one routine for timing an event. First the promise: does the natal chart support the event, through the house, its lord, its karaka and the divisional chart. If not, stop. Second the dasha: is the mahadasha, antardasha or pratyantardasha lord connected to the house, its lord or its karaka. Third the transit: is the house double transited, are Saturn and Jupiter placed well from the Moon and the lagna, does Ashtakavarga support it. Then write the shortest window where all three agree, estimate the base rate, and log the claim with a hit criterion before the window opens. For your tenth house from twenty first May to twenty ninth September 2027, the promise is strong, the dasha is partly connected, and the transit is partly supportive. That is a moderate confidence hypothesis, not a forecast. For the blind exercise, take a friend’s chart and six windows, one of them real, and score each window without knowing which. Chance gives one in six. Repeat with several people before you read anything into the result.",
+   "sources": [
+    "Engine events output for the 2027 calendar; dasha levels 2 and 3 for all period dates",
+    "BPHS ch. 46 and 47 (dasa structure and effects); ch. 66 (transit through Ashtakavarga)",
+    "Double transit: modern method most often associated with K.N. Rao; some writers credit B.V. Raman",
+    "The three-layer protocol and the blind exercise: this course’s own method, designed to make claims testable"
+   ],
+   "quiz": [
+    {
+     "q": "Which dasha is running on 2027-06-15?",
+     "o": [
+      "Mercury–Saturn–Mars",
+      "Mercury–Saturn–Rahu",
+      "Mercury–Saturn–Jupiter",
+      "Ketu–Ketu–Ketu"
+     ],
+     "a": 2,
+     "w": "The Jupiter PD of the Saturn AD runs from 2027-05-21 to 2027-09-29."
+    },
+    {
+     "q": "Which antardasha is running on 2029-01-01?",
+     "o": [
+      "Ketu–Ketu",
+      "Venus–Venus",
+      "Ketu–Sun",
+      "Ketu–Venus"
+     ],
+     "a": 3,
+     "w": "Ketu–Venus runs from 2028-02-25 to 2029-04-27."
+    },
+    {
+     "q": "On 2027-07-01 where is Saturn counted from your Moon?",
+     "o": [
+      "10th (Aries)",
+      "9th (Pisces)",
+      "11th (Taurus)",
+      "8th (Aquarius)"
+     ],
+     "a": 0,
+     "w": "Saturn is in Aries from 2027-06-03 to 2027-10-20; Aries is the 10th from Cancer."
+    },
+    {
+     "q": "Which house is double-transited from 2027-06-03 to 2027-06-26?",
+     "o": [
+      "The 4th",
+      "The 5th",
+      "The 7th",
+      "The 8th"
+     ],
+     "a": 1,
+     "w": "Saturn in Aries and Jupiter in Cancer both look at Capricorn, your 5th house."
+    },
+    {
+     "q": "In the event-timing protocol, what comes first?",
+     "o": [
+      "The transit",
+      "The eclipse",
+      "The natal promise",
+      "The base rate"
+     ],
+     "a": 2,
+     "w": "Without a natal promise, a good dasha and transit do not create the event."
+    },
+    {
+     "q": "In the blind exercise with six windows, the chance of picking the real one at random is…",
+     "o": [
+      "1 in 2",
+      "1 in 3",
+      "1 in 6",
+      "1 in 12"
+     ],
+     "a": 2,
+     "w": "One real window out of six equal windows."
+    },
+    {
+     "q": "Why write the base rate with a claim?",
+     "o": [
+      "It makes the entry longer",
+      "To change the dasha",
+      "Because BPHS requires it",
+      "To compare a hit with how often it happens by chance"
+     ],
+     "a": 3,
+     "w": "Without a base rate, a hit cannot be separated from luck."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,460 @@
+{
+ "stage": 10,
+ "title": "Applied Jyotish",
+ "level": "Advanced",
+ "goal": "Done when you can pick a muhurta by filters, show a matching result as a range with its flags, and write every applied reading as a dated, falsifiable ledger entry.",
+ "terms": {
+  "prashna": [
+   "Prashna · प्रश्न",
+   "“Question.” Horary astrology: a chart is cast for the moment a sincere question is asked, and read for that one question."
+  ],
+  "muhurta": [
+   "Muhurta · मुहूर्त",
+   "A chosen moment for starting something. It is selected by filtering the panchang, the Moon’s strength for the person, and the rising sign."
+  ],
+  "tara_bala": [
+   "Tara bala · तारा बल",
+   "The strength of the day’s Moon nakshatra, counted from your birth nakshatra in nine groups (taras). Five groups are good (Sampat, Kshema, Sadhana, Mitra, Param Mitra), three are bad (Vipat, Pratyak, Naidhana) and one, Janma, is mixed."
+  ],
+  "chandra_bala": [
+   "Chandra bala · चन्द्र बल",
+   "The strength of the day’s Moon sign, counted from your natal Moon sign. The 4th, 8th and 12th are avoided; the 8th (Chandrashtama) is the most avoided."
+  ],
+  "rahu_kaal": [
+   "Rahu Kaal · राहु काल",
+   "A daily period of about 90 minutes (one eighth of daylight) that tradition avoids for new starts. Its position depends on the weekday and on sunrise and sunset."
+  ],
+  "vishti": [
+   "Vishti karana · विष्टि",
+   "Also called Bhadra. The 7th movable karana, a half-tithi that occurs eight times a month. Traditionally avoided for auspicious beginnings."
+  ],
+  "lagna_shuddhi": [
+   "Lagna shuddhi · लग्न शुद्धि",
+   "Checking the rising sign at the chosen moment: the 8th house should be empty, the lagna lord strong, benefics in kendras and trikonas, malefics in the 3rd, 6th and 11th."
+  ],
+  "ashtakoota": [
+   "Ashtakoota · अष्टकूट",
+   "The 8-factor, 36-point compatibility score of the northern tradition, computed from the two Moons: Varna, Vashya, Tara, Yoni, Graha Maitri, Gana, Bhakoot, Nadi."
+  ],
+  "porutham": [
+   "Porutham · பொருத்தம்",
+   "The ten matching checks of the southern (Tamil, Kerala) tradition. Rajju is treated as the most important."
+  ],
+  "mangal_dosha": [
+   "Mangal dosha · मांगलिक दोष",
+   "Mars placed in certain houses (from lagna, and in some lists from the Moon or Venus). Said to strain marriage. Lists of houses and cancellations differ by region."
+  ],
+  "kalapurusha": [
+   "Kalapurusha · कालपुरुष",
+   "The zodiac as a body: Aries is the head, Taurus the face and neck, and so on down to Pisces, the feet."
+  ],
+  "ingress": [
+   "Ingress · संक्रान्ति",
+   "The moment a planet enters a sign. A mundane chart is cast for the Sun’s entry into Aries (Mesha Sankranti) to read the year for a country."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "10-1",
+   "title": "Prashna: reading the question’s moment",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the three convention choices on your Jaimini sheet from Stage 9.</p><h2>What Prashna is</h2><p>{{term:prashna|Prashna}} means “question.” You do not use the birth chart. You cast a chart for the moment a sincere, specific question is asked (or understood by the astrologer) and read that chart for that question alone. Prashna Marga is the best-known Sanskrit text. Tajika Neelakanthi and the KP system also have Prashna methods.</p><h2>The working steps</h2><ol><li><strong>Frame the question.</strong> One question, one chart, written down with the time. “Will X happen?” works. “What will my year be like?” does not.</li><li><strong>Is the chart readable?</strong> Many texts advise caution when the lagna is in its first or last degrees or the Moon is badly placed. Check your text.</li><li><strong>Assign roles.</strong> The lagna and its lord stand for the person asking. The house of the matter (10th for work, 7th for partnership, 5th for children) and its lord stand for the thing asked about. The Moon shows the mind of the asker.</li><li><strong>Look for the link.</strong> Does the lagna lord connect with the lord of the matter or the Moon? In Tajika terms, an applying aspect (ithasala) means “it will happen.” A separating one (ishrafa) means the chance has passed.</li><li><strong>Judge the answer and note the doubt.</strong> State yes, no or unclear, then say how sure you are.</li></ol><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Three ways to fix the chart.</strong> (1) The moment of the question, the usual Parashari approach. (2) A number chosen by the asker: Kerala methods map a number to a lagna, and KP horary uses a number from 1 to 249 that points to one of the 249 sub-divisions (Stage 11). (3) Omens at the time of the question (shakuna), used mainly in Prashna Marga. Prashna Marga is also commonly described as working with three key points: the arudha lagna, the udaya (rising) lagna and the chatra lagna. The methods can give different answers to the same question, so say which one you used.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Here is a chart cast for 23:00 IST on 27 Nov 2026 in Satna, the question “Will the 4 December launch go ahead without a delay?” (the launch is planned in the next lesson). Engine positions:</p><div class=\"tbl\"><table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Lagna</td><td>Cancer 29°45′ (lagna lord Moon)</td></tr><tr><td>Moon</td><td>Gemini 24°51′, 12th house, Punarvasu</td></tr><tr><td>10th house (the matter)</td><td>Aries; lord Mars in Leo 6°27′, 2nd house</td></tr><tr><td>Link</td><td>Gemini to Leo is a 3rd-sign (friendly) Tajika aspect. The Moon (24°51′) is already ahead of Mars (6°27′), so the aspect is separating on the simple test. The 18°24′ gap is also wider than the usual Tajika orb for this pair (half of Moon 12° plus Mars 8°, so 10°), so strictly there is no ithasala or ishrafa at all</td></tr><tr><td>Caution</td><td>The lagna is at 29°45′, the very end of the sign</td></tr></tbody></table></div><p>Reading for practice only: the simple Tajika test leans to “the chance has passed,” and the lagna sits at the very edge of its sign, which many texts treat as a warning against reading the chart at all. A fair log entry is “unclear, low confidence.” Do not use this chart to decide anything. Write the question and verdict down and check what happens on 5 December.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check the Prashna answer against the birth chart and the dasha. Your running period is Mercury–Saturn–Mars (to 25 Dec 2026). If the Prashna says “delay” and your natal chart under the same dasha says the same, you have two views that are not independent. Then run the muhurta filters of the next lesson. They test the same plan from the calendar side.</p></div><p class=\"note\">Prashna has no independent evidence base. It is a structured way to think about a question, not a way to obtain facts. Never use it for a medical, legal or financial decision.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>One sincere, specific question; write it with the time.</li><li>Lagna and lord = the asker. Matter’s house and lord = the thing asked about. Moon = the mind.</li><li>Applying aspect (ithasala) = it happens; separating (ishrafa) = it has passed.</li><li>Methods differ (moment, number, omens). Name yours.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Cast a chart for the next minute of your own sincere question. Write the lagna, Moon and the matter’s house lord from the engine. Judge yes, no or unclear, and log it with a review date.</p>",
+   "listen": "Prashna means question. You cast a chart for the moment a sincere, specific question is asked and read it for that question alone. The lagna and its lord stand for the person asking, the house and lord of the matter stand for the thing asked about, and the Moon shows the asker’s mind. You look for a link between them. In Tajika terms, an applying aspect, called ithasala, means it will happen, and a separating one, ishrafa, means the chance has passed. Methods differ. Some use the moment, some a number the asker picks, and KP horary uses a number from one to two hundred forty-nine. The chart cast for twenty-three hundred on twenty-seven November has Cancer rising at twenty-nine degrees forty-five minutes, the very edge of the sign, so the honest verdict is unclear with low confidence. Use Prashna as a structured way to think, never as a basis for medical, legal or financial decisions. Always write the question and verdict down and review later.",
+   "sources": [
+    "Prashna Marga (Harihara): moment, arudha-udaya-chatra method and omens; give chapter numbers only after checking your edition",
+    "Tajika Neelakanthi: Prashna methods and ithasala/ishrafa aspects",
+    "K.S. Krishnamurti, KP Readers: horary number 1–249 (see Stage 11)"
+   ],
+   "quiz": [
+    {
+     "q": "What is the first requirement for a Prashna chart?",
+     "o": [
+      "A sincere, specific question with its time written down",
+      "A birth time",
+      "A full dasha table",
+      "A navamsa chart"
+     ],
+     "a": 0,
+     "w": "Prashna reads the moment of one question."
+    },
+    {
+     "q": "In Prashna, which stands for the person asking?",
+     "o": [
+      "The lagna and its lord",
+      "The lord of the 7th",
+      "The Sun",
+      "Rahu"
+     ],
+     "a": 0,
+     "w": "Lagna and lagna lord are the asker."
+    },
+    {
+     "q": "An applying (ithasala) aspect between the two lords means:",
+     "o": [
+      "The matter has passed",
+      "No answer is possible",
+      "The matter will happen",
+      "The question is invalid"
+     ],
+     "a": 2,
+     "w": "Ithasala shows approach and completion; ishrafa shows separation."
+    },
+    {
+     "q": "Why was the 27 Nov chart read only as “unclear, low confidence”?",
+     "o": [
+      "The lagna was at 29°45′, the very end of its sign, and the simple test was separating",
+      "The Moon was in the 12th",
+      "Mars was combust",
+      "Saturn was retrograde"
+     ],
+     "a": 0,
+     "w": "An edge-of-sign lagna is a caution in many texts, and the separating test gave a weak lean at best."
+    }
+   ]
+  },
+  {
+   "id": "10-2",
+   "title": "Muhurta: the filters that choose a moment",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> In a Prashna, which aspect type shows that a matter will happen, and which that it has passed?</p><h2>Muhurta is a filter, not a magic hour</h2><p>{{term:muhurta|Muhurta}} picks a start time by removing bad candidates. Muhurta Chintamani is the standard later text. Think of five filters in this order:</p><div class=\"tbl\"><table><thead><tr><th>Filter</th><th>What you check</th><th>Avoid</th></tr></thead><tbody><tr><td>1. Panchang shuddhi</td><td>Tithi, weekday, nakshatra, yoga, karana at the moment</td><td>Rikta tithis (4, 9, 14), Amavasya; yogas such as Vyatipata, Vaidhriti, Ganda, Vishkumbha; Vishti karana</td></tr><tr><td>2. Moon for you</td><td>{{term:tara_bala|Tara bala}} and {{term:chandra_bala|Chandra bala}} from your natal Moon</td><td>Vipat, Pratyak, Naidhana taras; Moon in the 4th, 8th (Chandrashtama), 12th from your Moon</td></tr><tr><td>3. Rahu Kaal</td><td>About one eighth of the daylight, by weekday</td><td>The {{term:rahu_kaal|Rahu Kaal}} window (and in some regions Gulika and Yamaganda)</td></tr><tr><td>4. Vishti</td><td>The half-tithi {{term:vishti|Vishti (Bhadra)}} karana</td><td>Its whole duration</td></tr><tr><td>5. Lagna shuddhi</td><td>Rising sign and the {{term:lagna_shuddhi|chart of the moment}}</td><td>Occupied 8th house; weak lagna lord; Moon in 6, 8 or 12 from lagna</td></tr></tbody></table></div><h2>The tara and chandra bala tables</h2><p>Count from your birth nakshatra. The count repeats in nine groups. The three “bad” taras are Vipat, Pratyak and Naidhana.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your natal Moon is in Cancer in Pushya. These are your nine taras, from the engine’s day table:</p><div class=\"tbl\"><table><thead><tr><th>Tara</th><th>Quality</th><th>Your nakshatras</th></tr></thead><tbody><tr><td>Janma</td><td>Mixed</td><td>Pushya, Anuradha, Uttara Bhadrapada</td></tr><tr><td>Sampat</td><td>Good</td><td>Ashlesha, Jyeshtha, Revati</td></tr><tr><td>Vipat</td><td>Bad</td><td>Magha, Mula, Ashwini</td></tr><tr><td>Kshema</td><td>Good</td><td>Purva Phalguni, Purva Ashadha, Bharani</td></tr><tr><td>Pratyak</td><td>Bad</td><td>Uttara Phalguni, Uttara Ashadha, Krittika</td></tr><tr><td>Sadhana</td><td>Good</td><td>Hasta, Shravana, Rohini</td></tr><tr><td>Naidhana</td><td>Worst</td><td>Chitra, Dhanishta, Mrigashira</td></tr><tr><td>Mitra</td><td>Good</td><td>Swati, Shatabhisha, Ardra</td></tr><tr><td>Param Mitra</td><td>Best</td><td>Vishakha, Purva Bhadrapada, Punarvasu</td></tr></tbody></table></div><p>For chandra bala, the Moon in the 1st, 3rd, 6th, 7th, 10th and 11th from Cancer is favourable: Cancer, Virgo, Sagittarius, Capricorn, Aries, Taurus. The 4th (Libra), 8th (Aquarius) and 12th (Gemini) are avoided.</p></div><h2>Vishti timing</h2><p>Vishti falls in the second half of Shukla 4 and 11, the first half of Shukla 8 and Purnima, the second half of Krishna 3 and 10, and the first half of Krishna 7 and 14. The engine’s panchang shows the karana by name, so you can read off when it starts and ends.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>None of these filters is universal.</strong></p><ul><li><strong>Rahu Kaal</strong> is a traditional almanac practice from the later period, originating mainly in South Indian almanacs and now used widely. It is not part of BPHS. Some use fixed clock times, others divide sunrise to sunset into eight (the engine’s method).</li><li><strong>Chandra bala:</strong> the 2nd, 5th and 9th from the Moon are treated as mixed or favourable in different lists.</li><li><strong>Janma tara:</strong> some lists class it as inauspicious, others as mixed or acceptable. This course shows it as mixed and screens it out in lesson 10-3.</li><li><strong>Paksha:</strong> some traditions prefer waxing Moon for new starts and treat the waning half as weaker. Others accept it when the other filters are strong.</li><li><strong>Abhijit muhurta</strong> (the middle of the day) is said to override minor doshas by some and is excluded on certain weekdays by others.</li><li><strong>Kharmas</strong> (the Sun in Sagittarius or Pisces) is avoided for auspicious starts in North Indian practice; other regions do not observe it.</li></ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Verify any muhurta against a second source. Compare the engine’s tithi, nakshatra, yoga, karana and Rahu Kaal for Satna with a printed panchang or Drik Panchang for the same date. Disagreements near a boundary (a nakshatra ending within minutes) are normal and depend on ayanamsa and on how a source rounds.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Muhurta removes bad candidates in five filters.</li><li>Use tara bala and chandra bala from your own natal Moon.</li><li>Rahu Kaal and Kharmas are regional practices. Say which you applied.</li><li>Verify against a second panchang before acting.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Take next week’s engine `days` table for Satna. For each day mark the tara bala at 09:00 and 18:00, the chandra bala, and the Rahu Kaal. Which days pass all three at some time between 08:00 and 17:00?</p>",
+   "listen": "Muhurta picks a start time by removing bad candidates. First, the panchang at the moment: avoid rikta tithis, bad yogas and the Vishti karana. Second, your own Moon: count taras from your birth nakshatra, avoid Vipat, Pratyak and Naidhana, and avoid the Moon in the fourth, eighth and twelfth from your natal Moon sign. Third, Rahu Kaal, about one eighth of the daylight. Fourth, Vishti, which comes in specific half-tithis. Fifth, lagna shuddhi, meaning the chart of the moment: the eighth house empty, the lagna lord strong, benefics in angles and trines. For you, with the Moon in Cancer in Pushya, the good taras are Sampat, Kshema, Sadhana, Mitra and Param Mitra, and good Moon signs are Cancer, Virgo, Sagittarius, Capricorn, Aries and Taurus. Many of these filters are regional, such as Rahu Kaal and Kharmas, so say which ones you applied, and verify against a second panchang.",
+   "sources": [
+    "Muhurta Chintamani (Rama Daivajna): tithi, nakshatra, yoga, karana and lagna rules for starting work; give chapter numbers only after checking your edition",
+    "Brihat Samhita (Varahamihira): general timing and omen rules",
+    "Panchang practice for Rahu Kaal and Kharmas (traditional almanac usage; regional)"
+   ],
+   "quiz": [
+    {
+     "q": "Which tara group is “worst”?",
+     "o": [
+      "Vipat",
+      "Pratyak",
+      "Naidhana",
+      "Janma"
+     ],
+     "a": 2,
+     "w": "Naidhana is the worst tara."
+    },
+    {
+     "q": "With a Cancer natal Moon, which transit Moon sign is Chandrashtama?",
+     "o": [
+      "Aquarius",
+      "Libra",
+      "Gemini",
+      "Capricorn"
+     ],
+     "a": 0,
+     "w": "The 8th from Cancer is Aquarius."
+    },
+    {
+     "q": "Which of these is a regional practice and not a BPHS rule?",
+     "o": [
+      "The tithi",
+      "The weekday",
+      "Rahu Kaal",
+      "The lagna"
+     ],
+     "a": 2,
+     "w": "Rahu Kaal is a traditional almanac practice, not a BPHS rule."
+    },
+    {
+     "q": "Why check a second panchang?",
+     "o": [
+      "Because the sky changes",
+      "Because the engine is always wrong",
+      "Because muhurta needs two people",
+      "Because boundary times and rounding differ between sources"
+     ],
+     "a": 3,
+     "w": "Near a boundary, sources can differ by minutes."
+    },
+    {
+     "q": "Hasta nakshatra for you is which tara?",
+     "o": [
+      "Janma",
+      "Mitra",
+      "Vipat",
+      "Sadhana"
+     ],
+     "a": 3,
+     "w": "Hasta is the 6th from Pushya: Sadhana, a good tara."
+    }
+   ]
+  },
+  {
+   "id": "10-3",
+   "title": "Worked example: a business launch in Satna",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> List the five muhurta filters in order, and say which one the engine’s `days` table does not show.</p><h2>The task</h2><p>You want to launch a business step (a website go-live, a shop opening or a new product line) in Satna in the first half of December 2026, before the Sun enters Sagittarius. This example filters 30 November to 15 December with the filters from the last lesson. The engine’s `days` command gives Moon sign, nakshatra, tara and Rahu Kaal. A separate scan built from the same engine functions also checks karana, yoga, Mercury combustion and the rising sign every 10 minutes, 08:00 to 17:00. The screening rules are listed below, so you can change them.</p><ul><li>Tara not Vipat, Pratyak, Naidhana or Janma.</li><li>Moon not in the 4th, 8th or 12th from your natal Moon.</li><li>Not in Rahu Kaal, not in Vishti, no bad yoga (Vishkumbha, Atiganda, Shula, Ganda, Vyaghata, Vajra, Vyatipata, Parigha, Vaidhriti).</li><li>Not a Rikta tithi, and not Ashtami (either paksha), Purnima or Amavasya.</li><li>Mercury more than 14° from the Sun (it rules commerce).</li></ul><h2>The funnel</h2><div class=\"tbl\"><table><thead><tr><th>Date</th><th>Why most or all of the day fails</th></tr></thead><tbody><tr><td>Mon 30 Nov</td><td>Vipat tara most of the day; Vishti; Vaidhriti yoga</td></tr><tr><td>Tue 1 Dec</td><td>Krishna Ashtami (tithi 23); Vishkumbha and Vaidhriti yogas</td></tr><tr><td>Wed 2 Dec</td><td>Rikta tithi; Pratyak tara</td></tr><tr><td><strong>Thu 3 Dec</strong></td><td>Only one gap: 09:30 to 10:50. Hasta starts 09:25, Vishti starts about 10:55</td></tr><tr><td><strong>Fri 4 Dec</strong></td><td><strong>Passes from sunrise to 10:25</strong> (see below)</td></tr><tr><td>Sat 5 Dec, Sun 6 Dec</td><td>Moon in Libra (4th from your Moon); Naidhana tara; Atiganda yoga</td></tr><tr><td>Mon 7 Dec</td><td>Krishna 14 (Rikta); Vishti; Mercury inside 14° of the Sun</td></tr><tr><td>Tue 8 Dec</td><td>Amavasya; Janma tara; Mercury combust</td></tr><tr><td>Wed 9 Dec to Mon 14 Dec</td><td>Mercury combust throughout, plus Shula or Ganda yoga, Vipat, Pratyak or Naidhana taras, Rikta Shukla 4</td></tr><tr><td>Tue 15 Dec</td><td>Chandrashtama (Moon in Aquarius) and Mercury combust</td></tr><tr><td>16 Dec to 14 Jan</td><td>Sun in Sagittarius (Kharmas) from 16 Dec 10:25 to 14 Jan 21:10, if you observe it</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><strong>Friday 4 December 2026, Satna.</strong> Sunrise 06:36, sunset 17:16, Rahu Kaal 10:36 to 11:56. The Moon is in Virgo (3rd from your Cancer Moon: good chandra bala) in Hasta, which is Sadhana tara for you, until about 10:25, when Chitra (Naidhana) begins. Tithi 26 (Krishna 11), karana Bava, yoga Saubhagya from about 08:25 and Ayushman before it. Mercury is 15.2° from the Sun, just outside the 14° orb. Friday is Venus’s day, traditionally good for trade and the arts, and Hasta is a quick-acting (kshipra) nakshatra, also favoured for trade.<p><strong>Lagna shuddhi.</strong> From about 07:40 to 09:40 Sagittarius rises (Jupiter’s sign). At 08:45 the chart has lagna Sagittarius 16°11′, the 8th house (Cancer) empty, the lagna lord Jupiter in the 9th (Leo, 2°40′, not combust), the Moon in the 10th (Virgo), Venus in the 11th (Libra), the Sun and Mercury in the 12th (Scorpio). After about 09:40 Capricorn rises and the 8th (Leo) holds Mars, Jupiter and Ketu, so that part of the window fails the 8th-house check. Two other lagna-shuddhi points are weaker: retrograde Saturn sits in the 4th (Pisces), a malefic in a kendra, and Mars and Ketu sit in the 9th with Jupiter. The rule asks for malefics in the 3rd, 6th and 11th, and only Rahu (3rd) is placed that way. <strong>Candidate: Fri 4 Dec, 07:40 to 09:40 IST, ideally about 08:45.</strong></p></div><h2>What the events list adds</h2><div class=\"tbl\"><table><thead><tr><th>Engine event</th><th>When (IST)</th><th>Relevance</th></tr></thead><tbody><tr><td>Mercury enters Scorpio</td><td>2 Dec 17:27</td><td>Mercury is still more than 14° from the Sun on 4 Dec</td></tr><tr><td>Rahu enters Capricorn, Ketu enters Cancer</td><td>5 Dec 22:32</td><td>Nodes change sign the day after launch</td></tr><tr><td>New Moon</td><td>9 Dec 06:21</td><td>The Moon is waning on 4 Dec, five days before this New Moon</td></tr><tr><td>Saturn turns direct (Pisces 13°42′)</td><td>11 Dec 05:59</td><td>Saturn is retrograde on 4 Dec</td></tr><tr><td>Sun enters Sagittarius</td><td>16 Dec 10:25</td><td>Start of Kharmas</td></tr></tbody></table></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>The passes on 4 December are not unanimous.</strong></p><ul><li>A waning Moon (Krishna Ekadashi): some traditions would decline and wait for a waxing date after 14 Jan, others accept it with good tara, chandra bala and lagna.</li><li>Mercury at 15° is outside the 14° orb used here, but it is moving toward the Sun and some texts use a wider orb.</li><li>Saturn retrograde: no filter in the muhurta tradition rules it out, but some astrologers avoid new starts under a retrograde slow planet.</li><li>The Rahu–Ketu sign change a day later is a mean-node event. With the true node the change already happened on 25 Nov 2026, so on 4 Dec true Ketu is in Cancer (29°30′), the 8th from the Sagittarius lagna, and the 8th-house check fails. The window passes only under the mean-node convention.</li></ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Run it again.</strong> (1) Check the same date in a printed or online panchang for Satna. (2) Shift the clock 15 minutes either way: the Moon stays in Hasta and the lagna stays Sagittarius, so the pick is stable to that. (3) Repeat with a different natal reference, for example the business owner’s Moon or the company’s registration date, to see whether a better day exists. (4) Add a Prashna (lesson 10-1) as a second, weaker view. Agreement of filters that use the same panchang is not independent evidence.</p></div><p class=\"note\">A muhurta is traditional timing advice. It does not replace business checks: stock, payments, legal and regulatory readiness decide whether a launch works. Log the choice in the prediction ledger with the filters applied and review the outcome.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Filter in order: panchang, Moon for you, Rahu Kaal, Vishti, lagna.</li><li>Most days fail. Finding one clean window is normal and takes a scan.</li><li>Say which optional filters you applied (waning Moon, Kharmas, Mercury orb).</li><li>A day passing the filters is not a guarantee of anything.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Rerun the scan idea by hand for 14 Jan to 31 Jan 2027, after Kharmas, using the engine `days` command. List which dates pass tara and chandra bala at 09:00. Then check Mercury’s distance from the Sun on your best two dates.</p>",
+   "listen": "This worked example filters 30 November to 15 December 2026 for a business launch in Satna. For your Cancer Moon in Pushya, the screen removes days with bad taras, Chandrashtama, Rahu Kaal, Vishti, bad yogas, rikta tithis and a combust Mercury. Most days fail. Thursday 3 December has only a short gap. Friday 4 December passes from sunrise to about 10:25, when Chitra, a Naidhana tara, begins. The Moon is in Virgo, third from your Moon, in Hasta. Karana is Bava and the yoga is Saubhagya. Mercury is just over fourteen degrees from the Sun. For lagna shuddhi, Sagittarius rises about 07:40 to 09:40 with the eighth house empty and the lagna lord Jupiter in the ninth. After that Capricorn rises and the eighth holds Mars, Jupiter and Ketu. So the candidate is Friday 4 December, 07:40 to 09:40, ideally about 08:45. Schools differ on the waning Moon, Mercury’s orb and Kharmas from 16 December. A muhurta never replaces business checks.",
+   "sources": [
+    "Muhurta Chintamani (Rama Daivajna): tithi, nakshatra, yoga, karana, lagna rules; check chapter numbers in your edition",
+    "Engine `days` and `events` outputs for Satna (24.58 N, 80.83 E) and the screening scan in /home/claude/jyotish-path/work/calc7.py",
+    "Panchang practice for Rahu Kaal, Vishti and Kharmas (regional)"
+   ],
+   "quiz": [
+    {
+     "q": "Which date and window passes the filters in the worked example?",
+     "o": [
+      "Mon 30 Nov, all day",
+      "Fri 11 Dec, 10:40 to 12:00",
+      "Fri 4 Dec, about 07:40 to 09:40",
+      "Tue 15 Dec, 09:00"
+     ],
+     "a": 2,
+     "w": "4 December passes from sunrise to about 10:25, and the Sagittarius lagna window is 07:40 to 09:40."
+    },
+    {
+     "q": "Why does 11 December fail even though its tara and chandra bala are good?",
+     "o": [
+      "Moon is in Aquarius",
+      "It is Amavasya",
+      "Mercury is combust and Ganda yoga runs to about 10:20",
+      "It is a Tuesday"
+     ],
+     "a": 2,
+     "w": "Mercury is within 14° of the Sun and the yoga is Ganda until about 10:20."
+    },
+    {
+     "q": "What happens to lagna shuddhi after about 09:40 on 4 December?",
+     "o": [
+      "Nothing",
+      "Capricorn rises and the 8th house holds Mars, Jupiter and Ketu",
+      "Libra rises",
+      "The Moon changes sign"
+     ],
+     "a": 1,
+     "w": "An occupied 8th house fails the check."
+    },
+    {
+     "q": "Which filter in this lesson is a regional choice rather than universal?",
+     "o": [
+      "Kharmas",
+      "Tara bala",
+      "The weekday existing",
+      "The tithi existing"
+     ],
+     "a": 0,
+     "w": "Kharmas is observed in North Indian practice and not everywhere."
+    }
+   ]
+  },
+  {
+   "id": "10-4",
+   "title": "Marriage matching: Ashtakoota, poruthams and why scores are ranges",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Why did 4 December pass while 11 December failed in the launch example?</p><h2>Ashtakoota: eight checks, 36 points</h2><p>{{term:ashtakoota|Ashtakoota}} scores two Moons. It is built from the nakshatra and sign of each Moon only.</p><div class=\"tbl\"><table><thead><tr><th>Koota</th><th>Max</th><th>Checks</th></tr></thead><tbody><tr><td>Varna</td><td>1</td><td>Sign-based “class”</td></tr><tr><td>Vashya</td><td>2</td><td>Sign category (human, quadruped, water, and so on)</td></tr><tr><td>Tara</td><td>3</td><td>The nakshatra count in both directions</td></tr><tr><td>Yoni</td><td>4</td><td>Animal symbol of the nakshatra</td></tr><tr><td>Graha Maitri</td><td>5</td><td>Friendship of the two sign lords</td></tr><tr><td>Gana</td><td>6</td><td>Deva, Manushya, Rakshasa temperament</td></tr><tr><td>Bhakoot</td><td>7</td><td>Distance between the two Moon signs</td></tr><tr><td>Nadi</td><td>8</td><td>Three nadi groups; the same nadi is penalised</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The table below uses a <em>hypothetical</em> partner Moon (not a real person): Libra 24°, Vishakha. Your Moon is Cancer 8°04′, Pushya. You are treated as the groom and the partner as the bride, because the classical tables are written that way. Roles can be swapped, which changes some tables.</p><div class=\"tbl\"><table><thead><tr><th>Koota</th><th>Score (engine)</th></tr></thead><tbody><tr><td>Varna</td><td>1</td></tr><tr><td>Vashya</td><td>0.5</td></tr><tr><td>Tara</td><td>3</td></tr><tr><td>Yoni</td><td>1</td></tr><tr><td>Graha Maitri</td><td>0.5</td></tr><tr><td>Gana</td><td>1</td></tr><tr><td>Bhakoot</td><td>7</td></tr><tr><td>Nadi</td><td>8</td></tr><tr><td><strong>Total</strong></td><td><strong>22 / 36</strong></td></tr></tbody></table></div><p>If the Gana and Vashya tables are read the other way round (transposed, which the engine’s source notes flag as an ambiguity), Gana falls from 1 to 0 and the total becomes <strong>21</strong>. Another hypothetical Moon (Scorpio, Anuradha) scores 17 raw, with Bhakoot 0 <em>and</em> Nadi 0: Pushya and Anuradha are both Madhya nadi, and none of the engine’s Nadi cancellations applies (different signs, different nakshatras). The engine marks the Bhakoot as cancelled because the sign lords are friendly, but does not give the 7 points back. A program that restores them would print 24, with an uncancelled Nadi dosha still on the sheet.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Tables, cancellations and thresholds all vary.</strong></p><ul><li><strong>Table variants:</strong> Yoni, Vashya and Gana tables differ between almanacs. Two apps gave 22 and 23 points for the same couple in one reported case (a Hindutone comparison).</li><li><strong>Cancellations (parihara):</strong> Nadi dosha is often waived when the nakshatra is the same but the pada differs, or the signs are the same but the nakshatras differ. Bhakoot dosha is often waived when the two sign lords are the same or friendly. Lists vary, and programs differ on whether a waived koota returns its points.</li><li><strong>The “18 out of 36” pass mark</strong> is a widely quoted convention. The 36-point scheme and its pass mark are usually traced to muhurta and almanac practice (for example Muhurta Chintamani) rather than to a dedicated BPHS chapter; check your edition.</li></ul></div><h2>The South Indian ten poruthams</h2><p>The southern tradition uses ten checks ({{term:porutham|poruthams}}) and treats some as essential. They are Dina, Gana, Mahendra, Stree Deergha, Yoni, Rasi, Rasiyathipathi, Vasya, Rajju and Vedha.</p><div class=\"tbl\"><table><thead><tr><th>Porutham</th><th>What it checks</th><th>A rule (counted from the bride’s star to the groom’s)</th></tr></thead><tbody><tr><td>Dina</td><td>General well-being</td><td>Count mod 9 gives 2, 4, 6, 8 or 0</td></tr><tr><td>Mahendra</td><td>Children and prosperity</td><td>Count is 4, 7, 10, 13, 16, 19, 22 or 25</td></tr><tr><td>Stree Deergha</td><td>Wife’s welfare</td><td>Groom’s star far enough ahead; usually more than 13</td></tr><tr><td>Rajju</td><td>Longevity of the marriage</td><td>Same rajju group (body-part group of the nakshatra) is rejected</td></tr><tr><td>Vedha</td><td>Obstructing star pairs</td><td>Certain pairs conflict</td></tr></tbody></table></div><p>For the same hypothetical pair (bride Vishakha, groom Pushya): the count from Vishakha to Pushya is 20. <strong>Dina:</strong> 20 mod 9 = 2, so it passes. <strong>Mahendra:</strong> 20 is not on the list, so it fails. <strong>Stree Deergha:</strong> 20 is more than 13, so it passes. If you count the other way round (Pushya to Vishakha) you get 9: Dina gives remainder 0 and passes, Mahendra still fails, and Stree Deergha fails. The direction convention is itself a variant.</p><h2>Mangal dosha</h2><div class=\"tbl\"><table><thead><tr><th>List</th><th>Houses from the lagna</th><th>Other reference points</th></tr></thead><tbody><tr><td>Northern lists (commonly)</td><td>1, 4, 7, 8, 12</td><td>Some also count from the Moon</td></tr><tr><td>Southern lists (commonly)</td><td>1, 2, 4, 7, 8, 12</td><td>Some count from the Moon and from Venus</td></tr></tbody></table></div><p>For {{term:mangal_dosha|Mangal dosha}}: your Mars is in Taurus, the 9th house from lagna and the 11th from your Moon, so you have no Mangal dosha on either list from lagna or Moon. From Venus the reference is different: Mars is with Venus (1st from it), which the lists that count from Venus would flag if they include the 1st house. Lists of cancellations (Mars in its own or exalted sign, a Jupiter aspect, and so on) vary, and this lesson does not rank them.</p><h2>Why show a range</h2><p>Table choice moved the hypothetical total by 1 to 2 points. A cancellation policy can move it by 7. The pass mark, the role order and the direction of counting add further variation. A single number such as “22” hides all of that. Show <strong>“21 to 22 on the tables used, with these three flags”</strong> and list the choices.</p><p class=\"note\">A score is a conversation starter. Marriage decisions rest on the people involved and their circumstances. This course does not offer remedies for low scores, and a low score is no reason for anyone to feel afraid.</p><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check with the Jaimini view (Stage 9: Upapada, 2nd from UL, DK) and with D9 Venus/Jupiter, as independent views of the same relationship. The Moons-only Ashtakoota and the 7th-house techniques use different inputs, so agreement or disagreement is informative, and neither is a verdict.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Ashtakoota uses only the two Moons. 36 points: 1+2+3+4+5+6+7+8.</li><li>Tables, cancellations and pass marks differ. Report ranges.</li><li>Ten poruthams check different things (Rajju, Mahendra, Stree Deergha). Direction of counting matters.</li><li>Mangal dosha lists differ by region and reference point.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Compute Ashtakoota with the engine `match` command for any two real birth records you have consent to use, once as given and once with the roles swapped. Write the range and the flags.</p>",
+   "listen": "Ashtakoota scores two Moons on eight checks out of thirty-six points: Varna, Vashya, Tara, Yoni, Graha Maitri, Gana, Bhakoot and Nadi. Tables vary between almanacs, cancellations vary, and the pass mark of eighteen is a convention. For a hypothetical partner with the Moon in Vishakha, the engine gives twenty-two. Reading the Gana and Vashya tables the other way round gives twenty-one. For another hypothetical Moon in Anuradha the raw score is seventeen, with both Bhakoot and Nadi at zero; a program that returns the seven Bhakoot points on cancellation would show twenty-four, and the Nadi dosha would still stand. The South Indian system uses ten poruthams, including Dina, Mahendra, Stree Deergha and Rajju, and they depend on counting direction. Your Mars is in the ninth from lagna and the eleventh from your Moon, so you have no Mangal dosha on either of those, though from Venus it would be flagged by lists that use that reference. Show match scores as ranges with flags, never as one number, and never frighten anyone with a low score.",
+   "sources": [
+    "Ashtakoota and parihara rules as given in standard almanac compilations; tables vary (see research notes: Hindutone comparison of two apps giving 22 and 23)",
+    "Porutham rules from southern almanac practice (Tamil, Kerala); texts and rules vary by region",
+    "Engine `match` command (tables noted in the engine source as from onlinejyotish.com)"
+   ],
+   "quiz": [
+    {
+     "q": "How many points does Ashtakoota total?",
+     "o": [
+      "28",
+      "36",
+      "32",
+      "40"
+     ],
+     "a": 1,
+     "w": "1+2+3+4+5+6+7+8 = 36."
+    },
+    {
+     "q": "What does the example show about table variants?",
+     "o": [
+      "They never change the total",
+      "Reading Gana and Vashya tables the other way changed the hypothetical total from 22 to 21",
+      "They always add points",
+      "Only Nadi can vary"
+     ],
+     "a": 1,
+     "w": "Table orientation is a documented ambiguity."
+    },
+    {
+     "q": "Which porutham is usually treated as especially important in the southern tradition?",
+     "o": [
+      "Vedha",
+      "Rajju",
+      "Dina",
+      "Rasi"
+     ],
+     "a": 1,
+     "w": "Rajju is treated as most important in many southern lists."
+    },
+    {
+     "q": "Your Mars is in the 9th house from lagna. Is that a Mangal dosha placement from lagna?",
+     "o": [
+      "Yes, always",
+      "Only in the southern list",
+      "Only in the northern list",
+      "No, on both common lists"
+     ],
+     "a": 3,
+     "w": "The 9th is not on either list."
+    },
+    {
+     "q": "Why should a match score be shown as a range?",
+     "o": [
+      "Because astrologers like ranges",
+      "Because 36 is too high",
+      "Because the Moon moves",
+      "Because tables, cancellations, direction of counting and pass marks all vary"
+     ],
+     "a": 3,
+     "w": "The result depends on choices, so show them."
+    }
+   ]
+  },
+  {
+   "id": "10-5",
+   "title": "Medical Jyotish: wellness timing, not diagnosis",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name two reasons a match score can change between programs (the 22 that became 21, the 17 that became 24).</p><h2>What this lesson is and is not</h2><p class=\"note\">Medical Jyotish in the classical texts describes tendencies. It cannot diagnose, rule out or treat a condition. Anything about your health belongs with a qualified doctor. This lesson uses these ideas only to ask when it might be wise to book a check-up, reduce overwork or protect sleep.</p><h2>Body by sign: Kalapurusha</h2><p>BPHS treats the zodiac as a body ({{term:kalapurusha|Kalapurusha}}), with the signs as limbs. Sources vary in details such as which sign owns the heart.</p><div class=\"tbl\"><table><thead><tr><th>Sign</th><th>Region</th><th>Sign</th><th>Region</th></tr></thead><tbody><tr><td>Aries</td><td>Head</td><td>Libra</td><td>Space below the navel (lower abdomen); kidneys in later lists</td></tr><tr><td>Taurus</td><td>Face (neck, throat in later lists)</td><td>Scorpio</td><td>Private parts</td></tr><tr><td>Gemini</td><td>Arms (shoulders, lungs in later lists)</td><td>Sagittarius</td><td>Thighs</td></tr><tr><td>Cancer</td><td>Heart (chest in later lists)</td><td>Capricorn</td><td>Knees</td></tr><tr><td>Leo</td><td>Stomach, belly (heart in many modern lists)</td><td>Aquarius</td><td>Ankles, shanks</td></tr><tr><td>Virgo</td><td>Hip, waist (intestines in later lists)</td><td>Pisces</td><td>Feet</td></tr></tbody></table></div><h2>Houses and planets as health indicators</h2><div class=\"tbl\"><table><thead><tr><th>Point</th><th>Traditional meaning</th></tr></thead><tbody><tr><td>Lagna and lagna lord</td><td>Vitality, constitution</td></tr><tr><td>Moon</td><td>Mind, fluids, sleep</td></tr><tr><td>6th house</td><td>Disease, routine, service, debts</td></tr><tr><td>8th house</td><td>Chronic or sudden matters, surgery</td></tr><tr><td>12th house</td><td>Rest, hospitals, sleep</td></tr><tr><td>Sun / Mars / Saturn</td><td>Heart, bones, vitality / blood, muscle, inflammation / joints, chronic strain</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Virgo lagna: BPHS gives Virgo the hip and waist, and later lists add the intestines, so digestion and routine are the usual prompts. Your 6th house is Aquarius with Ketu in it (calves, ankles, circulation). The 6th lord Saturn sits in the 8th with a cancelled debilitation, which the engine also reads as Harsha yoga. Your 8th lord Mars is combust in the 9th. The Moon is in Cancer in the 11th (the heart in BPHS; chest and stomach in later lists). Sun and Mercury in Gemini in the 10th (arms in BPHS; shoulders, lungs and nervous energy in later lists). The 6th house has the highest Ashtakavarga score (35) and the 9th the lowest (23).</p><p>Timing: the engine shows Mercury–Saturn (the 6th lord’s period) until 29 Sep 2027, with a Mars pratyantar to 25 Dec 2026 (Mars is your 8th lord) and Rahu to 21 May 2027. Saturn turns direct in your 7th house on 11 Dec 2026 and enters Aries, your 8th house, on 3 Jun 2027. A hypothesis for the ledger: “workload strain shows up as fatigue or sleep disruption rather than as a named illness.” The practical response is ordinary: a routine check-up, steady sleep, and spaced-out heavy weeks. It requires no remedy.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Texts differ on <strong>which sign rules the heart</strong>. BPHS ch. 4 (Santhanam, verses 4–4½: “head, face, arms, heart, stomach, hip, space below navel, privities, thighs, knees, ankles and feet”) gives Cancer the heart and Leo the stomach. Many modern lists, influenced by Western astrology, give Leo the heart. Stage 1’s table (Cancer “chest, heart”) follows BPHS. Planet-organ lists also differ between BPHS-style lists and later compilations. Use the table as a vocabulary, not a rule.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Cross-check any health-timing hypothesis against the Ashtakavarga score of the 6th, 8th and 12th houses, against the D30 or D6 charts if you use them, and against a second dasha. Then check it against reality: a regular check-up result is the only real test.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Never diagnose; refer symptoms to a doctor.</li><li>Sign = body region (Kalapurusha). 6th, 8th, 12th, lagna lord and Moon = indicators.</li><li>Use dasha and transit windows as prompts for rest and check-ups.</li><li>Remedies are not part of this course. Practical habits are enough.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write one health-routine hypothesis for the next six months (for example, “I will feel more drained during the Rahu pratyantar, 25 Dec 2026 to 21 May 2027, than in the Jupiter pratyantar after it”). Define it in terms you can measure (hours slept, days unwell) and log it.</p>",
+   "listen": "Medical Jyotish describes tendencies and cannot diagnose anything. Symptoms belong with a doctor. This lesson uses these ideas only to decide when to schedule a check-up or ease off a heavy workload. BPHS treats the zodiac as a body. Aries is the head and Pisces the feet, and Virgo is the hip and waist. The sixth house shows disease and routine, the eighth chronic or sudden matters, the twelfth rest and sleep, and the Moon shows the mind and sleep. In your chart the sixth house is Aquarius with Ketu, its lord Saturn sits in the eighth with Harsha yoga, and your Mars, the eighth lord, is combust. You are in the Saturn period inside Mercury until September 2027. A reasonable hypothesis to log is that strain shows up as fatigue or disturbed sleep, and the practical response is ordinary: a routine check-up, steady sleep and spacing out heavy weeks.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 4, verses 4–4½: limbs of Kalapurusha (head, face, arms, heart, stomach, hip, space below navel, privities, thighs, knees, ankles, feet)",
+    "Phaladeepika and Jataka Parijata: chapters on disease and the 6th and 8th houses (check numbering in your edition)"
+   ],
+   "quiz": [
+    {
+     "q": "How should medical Jyotish be used here?",
+     "o": [
+      "As a prompt for rest and check-ups, never a diagnosis",
+      "To prescribe remedies",
+      "To diagnose illness",
+      "To predict the date of illness"
+     ],
+     "a": 0,
+     "w": "The course treats it as wellness timing only."
+    },
+    {
+     "q": "What does Virgo rule in the Kalapurusha?",
+     "o": [
+      "Head",
+      "Knees",
+      "Feet",
+      "Hip and waist (intestines in later lists)"
+     ],
+     "a": 3,
+     "w": "BPHS ch. 4 gives Virgo the hip (kati); later lists add the intestines."
+    },
+    {
+     "q": "Which house in your chart has the highest Ashtakavarga score?",
+     "o": [
+      "The 1st",
+      "The 6th",
+      "The 9th",
+      "The 10th"
+     ],
+     "a": 1,
+     "w": "The engine gives 35 in your 6th house."
+    },
+    {
+     "q": "The 6th lord Saturn sits in your 8th house. The engine calls this:",
+     "o": [
+      "Hamsa yoga",
+      "Harsha (Viparita Raja) yoga",
+      "Kemadruma",
+      "A guarantee of illness"
+     ],
+     "a": 1,
+     "w": "6th lord in the 8th forms Harsha yoga."
+    }
+   ]
+  },
+  {
+   "id": "10-6",
+   "title": "Mundane astrology, and your applied Jyotish sheet",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which sign does BPHS give the heart, and which house shows routine and disease?</p><h2>Mundane astrology: charts for countries and times</h2><p>Mundane (Samhita) astrology reads the sky for groups: countries, markets, weather and seasons. Varahamihira’s Brihat Samhita is the classical source. Its main tools are:</p><ul><li><strong>{{term:ingress|Ingress}} charts:</strong> the Sun’s entry into Aries (Mesha Sankranti) for the year, and into Cancer, Libra and Capricorn for the seasons.</li><li><strong>Eclipses</strong> and their visibility.</li><li><strong>Slow planets:</strong> Saturn and Jupiter sign changes, their conjunctions (about every 20 years), and the nodes.</li><li><strong>Charts of institutions:</strong> a country’s founding chart, if the moment is agreed.</li></ul><p>Mundane work is the area most exposed to hindsight bias, because events are so common that nearly any reading seems to fit. Treat every mundane statement as a ledger entry with a window and a measurable outcome.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><strong>2027 markers from the engine (IST).</strong><div class=\"tbl\"><table><thead><tr><th>Date</th><th>Event</th><th>Where it falls for you</th></tr></thead><tbody><tr><td>5 Dec 2026, 22:32</td><td>Rahu to Capricorn, Ketu to Cancer (mean node)</td><td>Your 5th and 11th houses</td></tr><tr><td>25 Jan 2027, 01:31</td><td>Jupiter enters Cancer (retrograde re-entry)</td><td>Your 11th, your Moon sign; Jupiter is exalted there until 26 Jun 2027</td></tr><tr><td>6 Feb 2027, 21:26</td><td>New Moon: annular solar eclipse, not visible from Satna</td><td>Sidereal Capricorn, your 5th house</td></tr><tr><td>14 Apr 2027, 15:28</td><td>Sun enters Aries: Aries ingress</td><td>Delhi chart: Leo rising 17°27′</td></tr><tr><td>3 Jun 2027, 05:28</td><td>Saturn enters Aries</td><td>Your natal Saturn’s sign and your 8th house</td></tr><tr><td>2 Aug 2027, 15:36</td><td>New Moon: total solar eclipse</td><td>Sidereal Cancer, your 11th house. Satna sees only a partial eclipse (magnitude about 0.19 at 16:37)</td></tr></tbody></table></div><p>At the Aries ingress the engine shows Jupiter in Cancer at 22°45′ with Ketu, Saturn in Pisces, Rahu in Capricorn and Mars at 27°38′ Cancer. Treat the list as a calendar of things to watch, not a forecast. Eclipse visibility and the Delhi lagna are from Swiss Ephemeris.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Mundane practitioners disagree on <strong>which place and zodiac to use for the ingress</strong> (Delhi, the capital, or a chart per region), on whether to use sidereal or tropical ingress, and on which founding chart represents India (independence day 1947 is common, but the moment is debated). The classical Brihat Samhita works from visible signs and omens more than from chart houses. Any reading should state the choices.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Mundane statements need base rates more than anything. Before logging “the year will see X,” ask how often X happens in a typical year. Then see whether a rival method, such as one from another school, makes the same call. Agreement among methods that all use the same ephemeris is not independent evidence.</p></div><h2>Your applied Jyotish sheet</h2><div class=\"tbl\"><table><thead><tr><th>Technique</th><th>Your result</th><th>Status</th></tr></thead><tbody><tr><td>Prashna</td><td>Chart for 27 Nov 23:00 read as unclear (lagna at 29°45′ of Cancer)</td><td>Logged for 5 Dec check</td></tr><tr><td>Muhurta</td><td>Fri 4 Dec 2026, 07:40–09:40 IST for a launch (filters applied in 10-3)</td><td>Disputed on waning Moon and Mercury orb; verify in a second panchang</td></tr><tr><td>Matching</td><td>Hypothetical pair: 22 or 21 of 36; no Mangal dosha from lagna or Moon</td><td>Range with flags</td></tr><tr><td>Medical</td><td>Saturn period inside Mercury to 29 Sep 2027 (6th lord); strain hypothesis</td><td>Wellness only</td></tr><tr><td>Mundane</td><td>Saturn into Aries on 3 Jun 2027 (your 8th); Jupiter in your 11th, 25 Jan–26 Jun 2027</td><td>Watch list</td></tr></tbody></table></div><h2>Stage test</h2><p>Take the quiz below without looking back. It covers the whole stage.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Mundane work needs written windows and base rates.</li><li>State the place, ingress type and founding chart you use.</li><li>Your sheet: five techniques, each with a status and a review date.</li><li>Applied techniques are decision aids, not guarantees.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Choose one item from your sheet. Write the prediction, the criterion for success, the date window and the base rate you can estimate. Log it, and set a review date.</p>",
+   "listen": "Mundane astrology reads the sky for groups such as countries and seasons. Varahamihira’s Brihat Samhita is the classical source. Its tools are ingress charts, mainly the Sun’s entry into Aries, eclipses, slow planet movements and the conjunctions of Jupiter and Saturn, and the chart of a country’s founding. Disagreements are common over which place to use for the ingress and which chart represents a country. Because big events are common, mundane work is the area most exposed to hindsight bias, so every statement should carry a window, a measurable outcome and a base rate. For you, the engine shows the nodes changing sign on the fifth of December, Jupiter exalted in Cancer from late January to late June 2027, and Saturn entering Aries, your eighth house, on the third of June 2027. Take it as a watch list, not a forecast. Your applied sheet now holds a Prashna, a launch muhurta, a matching range, a wellness note and these mundane markers.",
+   "sources": [
+    "Brihat Samhita (Varahamihira): eclipses, planetary movements and omens for mundane judgement; chapter numbers to be checked in your edition",
+    "Engine `events` output for Dec 2026–Dec 2027; Swiss Ephemeris eclipse search for visibility at Satna",
+    "Tajika Neelakanthi and later mundane texts on ingress charts (secondary descriptions only)"
+   ],
+   "quiz": [
+    {
+     "q": "Which text is the classical source for mundane astrology?",
+     "o": [
+      "Brihat Samhita",
+      "Brihat Parashara Hora Shastra",
+      "Jaimini Sutras",
+      "Prashna Marga"
+     ],
+     "a": 0,
+     "w": "Brihat Samhita (Varahamihira) is the classical mundane source."
+    },
+    {
+     "q": "Why is mundane astrology especially prone to hindsight bias?",
+     "o": [
+      "Planets move too fast",
+      "Events are common, so almost any reading seems to fit",
+      "No charts can be made",
+      "It uses only Rahu"
+     ],
+     "a": 1,
+     "w": "Common events make many statements look right afterwards."
+    },
+    {
+     "q": "On 3 June 2027 Saturn enters which sign, and which house of yours?",
+     "o": [
+      "Pisces, your 7th",
+      "Taurus, your 9th",
+      "Aries, your 8th",
+      "Aquarius, your 6th"
+     ],
+     "a": 2,
+     "w": "Saturn enters Aries, your 8th house."
+    },
+    {
+     "q": "Which techniques on your applied sheet use only the two Moons?",
+     "o": [
+      "Ashtakoota matching",
+      "Prashna",
+      "Muhurta lagna check",
+      "Mundane ingress"
+     ],
+     "a": 0,
+     "w": "Ashtakoota uses the two Moons only."
+    },
+    {
+     "q": "What should a launch muhurta not be treated as?",
+     "o": [
+      "A filter on timing",
+      "A logged hypothesis",
+      "A traditional method",
+      "A reason to skip business checks"
+     ],
+     "a": 3,
+     "w": "Business readiness decides outcomes."
+    },
+    {
+     "q": "What does a 14 Apr 2027 Aries ingress chart with Leo rising apply to?",
+     "o": [
+      "Your birth chart",
+      "Your Varsha chart",
+      "The Delhi chart for the year as a mundane example",
+      "Your Prashna"
+     ],
+     "a": 2,
+     "w": "It is the Aries ingress chart for Delhi in the example."
+    },
+    {
+     "q": "Which statement about the 27 Nov Prashna is correct?",
+     "o": [
+      "It predicted success",
+      "It confirmed the muhurta",
+      "It had Capricorn rising",
+      "The lagna was at 29°45′, so the answer was logged as unclear"
+     ],
+     "a": 3,
+     "w": "Edge-of-sign lagna meant a low-confidence “unclear.”"
+    }
+   ]
+  }
+ ]
+}

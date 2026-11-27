@@ -1,0 +1,1186 @@
+{
+  "frame": {
+    "short": "Arjuna is a capable warrior who freezes at the moment his responsibilities are greatest. His body gives way first, then his courage, and he sits down and says he will not act. Krishna does not shame him for feeling it. He tells him to rise, and Arjuna answers honestly: \"I am confused; teach me.\" By the end his fog has lifted and he says, \"I will act.\"",
+    "long": "The Gita opens at a battlefield. Arjuna, the finest archer of his army, looks across and sees teachers, cousins and elders on the other side. Fear arrives in his body before it arrives in words: his limbs shake, his mouth dries, his bow slips from his hand, his mind spins. He sits down in his chariot and says he will not act. Krishna, his guide, does not scold him for feeling. He asks where this collapse came from and tells him to stand up, then widens the view: pain and pleasure come and go, and what matters is steadiness. The turning point belongs to Arjuna, who stops arguing and admits his confusion: \"I am your student; tell me what is best.\" From there the teaching unfolds, about acting without clutching the result, bearing hard seasons, and trusting something larger. At the end Arjuna says the fog is gone and he is ready to act. The book does not remove his battlefield; it helps him see it clearly and choose."
+  },
+  "verses": [
+    {
+      "key": "2.3",
+      "devanagari": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते। / क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप",
+      "iast": "klaibyaṃ mā sma gamaḥ pārtha naitattvayyupapadyate | / kṣudraṃ hṛdayadaurbalyaṃ tyaktvottiṣṭha parantapa",
+      "plain": "Do not give in to this weakness, Pārtha; it does not suit you. Shake off this small-hearted faintness and stand up, scorcher of foes.",
+      "themes": [
+        "fear",
+        "hope"
+      ],
+      "use": "Open a difficult-period section by telling the reader to stand up and shake off the small weakness of heart.",
+      "caution": "Say \"faint-heartedness\", not the traditional gendered rendering of klaibya.",
+      "simple": "When you feel small and frozen, Krishna says: that is not who you really are. Get up and face what is in front of you.",
+      "words": [
+        {
+          "t": "Pārtha",
+          "m": "a name for Arjuna, \"son of Prithā\" (Prithā is another name for his mother, Kunti)"
+        },
+        {
+          "t": "Parantapa / scorcher of foes",
+          "m": "a title for Arjuna meaning one who burns away his enemies; here, someone strong enough to overcome what stands in front of him"
+        }
+      ],
+      "action": "Before a hard task tomorrow, say what scares you about it in one line, then do the first five minutes anyway."
+    },
+    {
+      "key": "2.7",
+      "devanagari": "कार्पण्यदोषोपहतस्वभावः / पृच्छामि त्वां धर्मसंमूढचेताः। / यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे / शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्",
+      "iast": "kārpaṇyadoṣopahatasvabhāvaḥ / pṛcchāmi tvāṃ dharmasaṃmūḍhacetāḥ | / yacchreyaḥ syānniścitaṃ brūhi tanme / śiṣyaste’haṃ śādhi māṃ tvāṃ prapannam",
+      "plain": "My very nature is clouded by helpless pity, and my mind is confused about what is right. I ask you: tell me clearly what is best for me. I am your student; teach me, I have come to you for refuge.",
+      "themes": [
+        "fear",
+        "surrender"
+      ],
+      "use": "Use as the pivot where a confused reader stops arguing and honestly asks for guidance.",
+      "simple": "Arjuna admits he is confused and cannot decide alone, so he asks Krishna to teach him. Saying \"I don't know, please help\" is where clear thinking starts.",
+      "words": [
+        {
+          "t": "dharma",
+          "m": "the right way to live and act; your duty and what is right in your situation"
+        },
+        {
+          "t": "kārpaṇya",
+          "m": "helpless pity; a shrunken, weak-hearted feeling"
+        },
+        {
+          "t": "śiṣya / student",
+          "m": "one who comes to learn and is ready to listen"
+        }
+      ],
+      "action": "Pick one problem you keep spinning on and ask one person you trust for their honest view."
+    },
+    {
+      "key": "2.14",
+      "devanagari": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। / आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत",
+      "iast": "mātrāsparśāstu kaunteya śītoṣṇasukhaduḥkhadāḥ | / āgamāpāyino’nityāstāṃstitikṣasva bhārata",
+      "plain": "The contacts of senses with their objects, son of Kuntī, give cold and heat, pleasure and pain; they come and go and do not last: bear them, Bhārata.",
+      "themes": [
+        "hardship",
+        "equanimity"
+      ],
+      "use": "Use for any hard phase, paired with the end date of the dasha or transit as the \"it passes\" evidence.",
+      "simple": "Heat and cold, joy and pain all come through our senses, and all of them pass. You can wait them out, like weather.",
+      "words": [
+        {
+          "t": "Kaunteya",
+          "m": "\"son of Kunti\", a name for Arjuna"
+        },
+        {
+          "t": "Bhārata",
+          "m": "\"descendant of King Bharata\", a family title for Arjuna"
+        },
+        {
+          "t": "titikṣā",
+          "m": "patient endurance; letting a hard feeling pass without being knocked over by it"
+        }
+      ],
+      "action": "Next time you feel a strong mood, tell yourself \"this will pass\" and carry on with what you were doing for ten minutes."
+    },
+    {
+      "key": "2.38",
+      "devanagari": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ। / ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि",
+      "iast": "sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | / tato yuddhāya yujyasva naivaṃ pāpamavāpsyasi",
+      "plain": "Treat pleasure and pain, gain and loss, victory and defeat as the same; then engage in the fight; thus you will not incur sin.",
+      "themes": [
+        "equanimity",
+        "action"
+      ],
+      "use": "Use in finance or status sections to state the stance for both gain and loss.",
+      "caution": "The \"fight\" context is metaphor for facing responsibility; do not use it to justify violence.",
+      "simple": "Win or lose, gain or loss, try to stay level inside. When you act from a calm place, you can do your best without being torn apart by the result.",
+      "words": [
+        {
+          "t": "yuddha / fight",
+          "m": "the battle; for us, any hard thing we must face"
+        },
+        {
+          "t": "pāpa / sin",
+          "m": "wrong or harm done by acting from confusion"
+        }
+      ],
+      "action": "Choose one task where the result is uncertain and do it well, then notice how you feel whether it goes well or not."
+    },
+    {
+      "key": "2.40",
+      "devanagari": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते। / स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्",
+      "iast": "nehābhikramanāśo’sti pratyavāyo na vidyate | / svalpamapyasya dharmasya trāyate mahato bhayāt",
+      "plain": "Here no effort is wasted and no harm arises; even a little of this practice protects from great fear.",
+      "themes": [
+        "hope",
+        "fear"
+      ],
+      "use": "Close a hard-period section: no sincere effort is wasted, and even a little practice protects from great fear.",
+      "caution": "Speaks of spiritual progress, not guaranteed worldly outcomes.",
+      "simple": "On this path, no effort is wasted. Even a small step in the right direction protects you from big fears.",
+      "words": [
+        {
+          "t": "dharma",
+          "m": "the right way to live and act; your duty and what is right in your situation"
+        },
+        {
+          "t": "bhaya / fear",
+          "m": "the dread that keeps people from beginning"
+        }
+      ],
+      "action": "Do one tiny helpful thing today, such as five minutes of a habit you have been putting off."
+    },
+    {
+      "key": "2.41",
+      "devanagari": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन। / बहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्",
+      "iast": "vyavasāyātmikā buddhirekeha kurunandana | / bahuśākhā hyanantāśca buddhayo’vyavasāyinām",
+      "plain": "The resolute understanding is single here, joy of the Kurus; the thoughts of the irresolute are many-branched and endless.",
+      "themes": [
+        "balance",
+        "control"
+      ],
+      "use": "Use for scattered, many-branched thinking: one resolute aim beats endless options.",
+      "simple": "When your mind has one clear aim, you move forward. When it chases a hundred wishes, you scatter and get tired.",
+      "words": [
+        {
+          "t": "buddhi",
+          "m": "your understanding and decision-making mind; the part that chooses"
+        },
+        {
+          "t": "Kurunandana",
+          "m": "\"joy of the Kurus\", a name for Arjuna (the Kurus are his family line)"
+        }
+      ],
+      "action": "Write down the three things you want this month, cross out two, and give your best time to the one that is left."
+    },
+    {
+      "key": "2.47",
+      "devanagari": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। / मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि",
+      "iast": "karmaṇyevādhikāraste mā phaleṣu kadācana | / mā karmaphalaheturbhūrmā te saṅgo’stvakarmaṇi",
+      "plain": "Your right is to the action alone, never to its fruits. Do not let the fruit be your motive, and do not be drawn toward inaction.",
+      "themes": [
+        "action",
+        "results",
+        "control"
+      ],
+      "use": "Anchor any career, business or effort-versus-result section; quote the whole four-part sense.",
+      "caution": "Do not reduce to \"don't care about results\"; it also warns against inaction.",
+      "simple": "You can choose your effort, but you cannot fully control how things turn out. So put your heart into the doing, and do not hide in doing nothing either.",
+      "words": [
+        {
+          "t": "karma",
+          "m": "action; the things you do"
+        },
+        {
+          "t": "phala / fruit",
+          "m": "the result or reward of your work"
+        }
+      ],
+      "action": "Pick one piece of work this week and judge it by whether you gave it full effort, not by how it was received."
+    },
+    {
+      "key": "2.48",
+      "devanagari": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय। / सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते",
+      "iast": "yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya | / siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate",
+      "plain": "Established in yoga, do your actions, giving up attachment, Dhanañjaya, even in success and failure; this evenness is what is called yoga.",
+      "themes": [
+        "equanimity",
+        "action"
+      ],
+      "use": "Use to define yoga as evenness in success and failure while still doing the work.",
+      "simple": "Stay steady inside while you work. Do the job, let go of gripping the outcome, and treat success and failure with the same even mind.",
+      "words": [
+        {
+          "t": "yoga",
+          "m": "a steady, balanced way of living and acting; being joined to something steadier than your moods"
+        },
+        {
+          "t": "Dhanañjaya",
+          "m": "\"winner of wealth\", a name for Arjuna"
+        },
+        {
+          "t": "samatva",
+          "m": "evenness of mind; staying balanced whatever happens"
+        }
+      ],
+      "action": "After one thing goes well and one goes badly this week, pause and take three slow breaths before reacting to either."
+    },
+    {
+      "key": "2.56",
+      "devanagari": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः। / वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते",
+      "iast": "duḥkheṣvanudvignamanāḥ sukheṣu vigataspṛhaḥ | / vītarāgabhayakrodhaḥ sthitadhīrmunirucyate",
+      "plain": "One whose mind is not shaken by sorrows, who has no craving in pleasures, free of attachment, fear and anger, is called a sage of steady mind.",
+      "themes": [
+        "equanimity",
+        "fear"
+      ],
+      "use": "Use to describe the steady-minded stance: not shaken by sorrow, no craving in pleasure.",
+      "caution": "Freedom from being shaken, not emotional numbness.",
+      "simple": "A steady person is not thrown by trouble, does not chase every pleasure, and is not ruled by fear or anger. Calm like this is something you can grow.",
+      "words": [
+        {
+          "t": "sthita-dhī",
+          "m": "a person of steady mind"
+        },
+        {
+          "t": "muni",
+          "m": "a sage, a thoughtful person who keeps still inside"
+        },
+        {
+          "t": "rāga",
+          "m": "strong attachment or craving"
+        }
+      ],
+      "action": "When anger or worry shows up today, name it quietly (\"this is anger\") before you answer anyone."
+    },
+    {
+      "key": "2.62-63",
+      "devanagari": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते। / सङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते / क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः। / स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति",
+      "iast": "dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate | / saṅgāt saṃjāyate kāmaḥ kāmātkrodho’bhijāyate / krodhādbhavati saṃmohaḥ saṃmohātsmṛtivibhramaḥ | / smṛtibhraṃśād buddhināśo buddhināśātpraṇaśyati",
+      "plain": "Dwelling on sense objects, a person builds attachment to them; from attachment desire is born; from desire, anger. From anger comes delusion; from delusion, loss of memory; from loss of memory, the ruin of discernment; and with discernment ruined, the person is lost.",
+      "themes": [
+        "detachment",
+        "control"
+      ],
+      "use": "Use as a diagnostic ladder for obsession or repeating mental loops, showing where the reader is on it.",
+      "caution": "Strong language (\"lost\"); frame as a pattern that can be interrupted.",
+      "simple": "When you keep thinking about something, you start wanting it. Wanting it too much can turn to anger, and anger clouds your thinking. Catching it early keeps you steady.",
+      "words": [
+        {
+          "t": "saṅga",
+          "m": "attachment; clinging to something"
+        },
+        {
+          "t": "kāma",
+          "m": "desire, craving"
+        },
+        {
+          "t": "krodha",
+          "m": "anger"
+        },
+        {
+          "t": "smṛti / memory",
+          "m": "remembering who you are and what matters"
+        }
+      ],
+      "action": "Notice one thing you keep scrolling or thinking about, and put it away for one hour today."
+    },
+    {
+      "key": "2.64",
+      "devanagari": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्। / आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति",
+      "iast": "rāgadveṣaviyuktaistu viṣayānindriyaiścaran | / ātmavaśyairvidheyātmā prasādamadhigacchati",
+      "plain": "But one who moves among sense objects with the senses under his own governance, free from craving and aversion, self-disciplined, attains clarity and calm (prasāda).",
+      "themes": [
+        "enjoyment",
+        "balance"
+      ],
+      "use": "Use for Venus, 2nd and 7th house sections: enjoy with the senses governed, free of craving and aversion.",
+      "simple": "You can enjoy the things of this world and still stay free if you are not pulled by \"I must have it\" or \"I can't stand it\". That freedom brings a clear, peaceful mind.",
+      "words": [
+        {
+          "t": "rāga-dveṣa",
+          "m": "liking and disliking; being pulled toward or pushed away from things"
+        },
+        {
+          "t": "prasāda",
+          "m": "calm clarity, like water that has settled and become clear"
+        }
+      ],
+      "action": "Enjoy one thing today, such as a meal or a song, fully and slowly, and then let it go without wanting more."
+    },
+    {
+      "key": "3.8",
+      "devanagari": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः। / शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः",
+      "iast": "niyataṃ kuru karma tvaṃ karma jyāyo hyakarmaṇaḥ | / śarīrayātrāpi ca te na prasiddhyedakarmaṇaḥ",
+      "plain": "Do the action that is yours to do; action is better than inaction, and even the upkeep of your body would not succeed through inaction.",
+      "themes": [
+        "action",
+        "hardship"
+      ],
+      "use": "Use to push toward doing the work that is yours, especially in Saturn or 10th house sections.",
+      "simple": "Do the work that is yours to do. Doing something is better than doing nothing, and even daily life needs effort.",
+      "words": [
+        {
+          "t": "karma",
+          "m": "action; the things you do"
+        },
+        {
+          "t": "niyata karma",
+          "m": "the work that belongs to you in your role and situation"
+        }
+      ],
+      "action": "Do the one job you have been avoiding for the shortest honest stretch, even ten minutes, today."
+    },
+    {
+      "key": "3.19",
+      "devanagari": "तस्मादसक्तः सततं कार्यं कर्म समाचर। / असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः",
+      "iast": "tasmādasaktaḥ satataṃ kāryaṃ karma samācara | / asakto hyācarankarma paramāpnoti pūruṣaḥ",
+      "plain": "So, without attachment, always carry out the work that needs doing; the person who works unattached reaches the highest.",
+      "themes": [
+        "action",
+        "detachment"
+      ],
+      "use": "Use to pair steady, unattached work with the reader's current responsibilities.",
+      "simple": "Do what needs doing without clinging to praise or reward. People who work this way find a deeper kind of success and peace.",
+      "words": [
+        {
+          "t": "asakta / unattached",
+          "m": "working fully but not gripping the reward"
+        },
+        {
+          "t": "param",
+          "m": "the highest; the best a person can reach"
+        }
+      ],
+      "action": "Do one helpful thing this week for someone and do not tell anyone about it."
+    },
+    {
+      "key": "3.27",
+      "devanagari": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः। / अहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते",
+      "iast": "prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | / ahaṅkāravimūḍhātmā kartā’hamiti manyate",
+      "plain": "All actions are done in every way by the workings (guṇas) of nature; the one whose mind is bewildered by ego thinks 'I am the doer'.",
+      "themes": [
+        "control",
+        "surrender"
+      ],
+      "use": "Use for people who over-carry responsibility: much of what happens is not driven by the ego-doer alone.",
+      "caution": "Do not turn into fatalism.",
+      "simple": "Much happens through forces bigger than you: your body, habits, the people and world around you. Thinking \"I alone do everything\" is a trap, because it makes you proud when things go well and crushed when they do not.",
+      "words": [
+        {
+          "t": "guṇa",
+          "m": "the three basic qualities of nature (calm, restless, heavy) that shape how we think and act"
+        },
+        {
+          "t": "prakṛti",
+          "m": "nature; the whole world of matter, body and mind"
+        },
+        {
+          "t": "ahaṅkāra",
+          "m": "ego; the sense of \"I am the one doing all this\""
+        }
+      ],
+      "action": "Thank one person or thing that helped you with something you were proud of this week."
+    },
+    {
+      "key": "3.34",
+      "devanagari": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ। / तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ",
+      "iast": "indriyasyendriyasyārthe rāgadveṣau vyavasthitau | / tayorna vaśamāgacchettau hyasya paripanthinau",
+      "plain": "Attraction and aversion are lodged in each sense toward its object; one should not come under their sway, for they are one's two roadside robbers.",
+      "themes": [
+        "enjoyment",
+        "control"
+      ],
+      "use": "Use to talk about both craving and avoidance as the two roadside robbers.",
+      "simple": "Every sense has its likes and dislikes, and they quietly steer you. Notice them, and do not hand them the steering wheel.",
+      "words": [
+        {
+          "t": "rāga",
+          "m": "pull; liking something strongly"
+        },
+        {
+          "t": "dveṣa",
+          "m": "push; disliking something strongly"
+        }
+      ],
+      "action": "Today, when you feel \"I want that\" or \"I hate that\", wait one minute before you act on it."
+    },
+    {
+      "key": "3.35",
+      "devanagari": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्। / स्वधर्मे निधनं श्रेयः परधर्मो भयावहः",
+      "iast": "śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | / svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ",
+      "plain": "Better one's own dharma, even imperfectly done, than another's dharma well done; death in one's own dharma is better; another's dharma brings fear.",
+      "themes": [
+        "svadharma",
+        "worth"
+      ],
+      "use": "Use for vocation and comparison with others: a clumsy version of your own path beats a polished copy of another's.",
+      "caution": "Present svadharma as your own nature and calling; do not assign caste or occupation.",
+      "simple": "Living your own life imperfectly is better than copying someone else's life perfectly. Comparing yourself to others is what brings fear.",
+      "words": [
+        {
+          "t": "svadharma",
+          "m": "your own path or duty, the work and role that truly fit you"
+        },
+        {
+          "t": "paradharma",
+          "m": "someone else's path or duty"
+        }
+      ],
+      "action": "Write down one thing you do in your own way and are proud of, and skip comparing it to anyone this week."
+    },
+    {
+      "key": "3.37",
+      "devanagari": "काम एष क्रोध एष रजोगुणसमुद्भवः। / महाशनो महापाप्मा विद्ध्येनमिह वैरिणम्",
+      "iast": "kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ | / mahāśano mahāpāpmā viddhyenamiha vairiṇam",
+      "plain": "It is desire, it is anger, born of rajas, a great devourer and very harmful; know it as the enemy here.",
+      "themes": [
+        "detachment",
+        "control"
+      ],
+      "use": "Use for craving and anger themes (Rahu): name desire and anger as the real adversary.",
+      "caution": "Modern Rahu link is interpretive, not scripture.",
+      "simple": "Strong craving and anger are like a hungry fire. They are never satisfied and they harm you most. Seeing them clearly is the first step to handling them.",
+      "words": [
+        {
+          "t": "kāma",
+          "m": "desire; wanting"
+        },
+        {
+          "t": "krodha",
+          "m": "anger"
+        },
+        {
+          "t": "rajas",
+          "m": "the restless, driving quality of nature that makes us want and act"
+        }
+      ],
+      "action": "When you feel a rush of wanting or anger, count to ten and ask yourself what you actually need underneath it."
+    },
+    {
+      "key": "4.34",
+      "devanagari": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया। / उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः",
+      "iast": "tadviddhi praṇipātena paripraśnena sevayā | / upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ",
+      "plain": "Learn it by humble approach, by questioning, and by service; the knowers who have seen the truth will instruct you in knowledge.",
+      "themes": [
+        "surrender",
+        "hope"
+      ],
+      "use": "Use where the chart suggests learning from a teacher: approach humbly, question, serve.",
+      "simple": "Learning works best when you are humble, ask real questions, and are willing to help. Wise people are happy to share what they have seen.",
+      "words": [
+        {
+          "t": "praṇipāta",
+          "m": "bowing; a humble, open attitude"
+        },
+        {
+          "t": "paripraśna",
+          "m": "asking sincere questions"
+        },
+        {
+          "t": "sevā",
+          "m": "service; helping in a practical way"
+        },
+        {
+          "t": "jñānī / tattva-darśī",
+          "m": "one who knows and has truly seen the truth"
+        }
+      ],
+      "action": "Find someone who is good at something you want to learn, and ask them one real question this week."
+    },
+    {
+      "key": "5.10",
+      "devanagari": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः। / लिप्यते न स पापेन पद्मपत्रमिवाम्भसा",
+      "iast": "brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ | / lipyate na sa pāpena padmapatramivāmbhasā",
+      "plain": "One who acts, offering actions to Brahman and giving up attachment, is not stained by evil, as a lotus leaf is not wetted by water.",
+      "themes": [
+        "detachment",
+        "action"
+      ],
+      "use": "Use as the positive picture of acting without being stained: the lotus leaf image.",
+      "caution": "Detachment here is paired with active duty, not coldness.",
+      "simple": "You can live and work in the world and not be dirtied by it, like a lotus leaf that stays dry in the water. Do your work as an offering and let go of clinging.",
+      "words": [
+        {
+          "t": "Brahman",
+          "m": "the one ultimate reality behind everything"
+        },
+        {
+          "t": "padma-patra / lotus leaf",
+          "m": "a leaf whose surface lets water roll off"
+        },
+        {
+          "t": "pāpa",
+          "m": "wrong, harm or stain"
+        }
+      ],
+      "action": "Before starting work tomorrow, say silently \"I offer this effort\", and then work without checking for praise."
+    },
+    {
+      "key": "6.5",
+      "devanagari": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्। / आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः",
+      "iast": "uddharedātmanā’’tmānaṃ nātmānamavasādayet | / ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ",
+      "plain": "Let one lift oneself by oneself; let one not sink oneself. For the self alone is the self's friend, and the self alone is the self's enemy.",
+      "themes": [
+        "hardship",
+        "worth",
+        "control"
+      ],
+      "use": "Use for self-criticism, procrastination or self-sabotage: be your own friend.",
+      "caution": "Do not turn into blame for the reader's suffering.",
+      "simple": "You have more power over your own mind than you think. You can be your own best friend or your own worst enemy, depending on how you treat yourself.",
+      "words": [
+        {
+          "t": "ātman",
+          "m": "the self; here, your own mind and inner being"
+        },
+        {
+          "t": "bandhu",
+          "m": "a friend or companion"
+        }
+      ],
+      "action": "Say one kind thing to yourself today, the way you would to a good friend who is struggling."
+    },
+    {
+      "key": "6.6",
+      "devanagari": "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः। / अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्",
+      "iast": "bandhurātmā’’tmanastasya yenātmaivātmanā jitaḥ | / anātmanastu śatrutve vartetātmaiva śatruvat",
+      "plain": "For one who has conquered the self by the self, the self is a friend; for one who has not mastered the self, the self behaves like an enemy.",
+      "themes": [
+        "hardship",
+        "control"
+      ],
+      "use": "Use with 6.5 to show that mastery of oneself turns the self into a friend.",
+      "simple": "When you learn to guide your own mind, it becomes your friend. When you do not, it can work against you.",
+      "words": [
+        {
+          "t": "ātman",
+          "m": "the self; here, your own mind and inner being"
+        },
+        {
+          "t": "anātman",
+          "m": "one who has not yet mastered his own mind"
+        }
+      ],
+      "action": "Notice one unhelpful thought loop today and gently redirect yourself to a small task."
+    },
+    {
+      "key": "6.16-17",
+      "devanagari": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः। / न चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन / युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु। / युक्तस्वप्नावबोधस्य योगो भवति दुःखहा",
+      "iast": "nātyaśnatastu yogo’sti na caikāntamanaśnataḥ | / na cātisvapnaśīlasya jāgrato naiva cārjuna / yuktāhāravihārasya yuktaceṣṭasya karmasu | / yuktasvapnāvabodhasya yogo bhavati duḥkhahā",
+      "plain": "Yoga is not for one who eats too much or fasts completely, nor for one who sleeps too much or stays awake too much. For one who is regulated in food and recreation, regulated in effort in actions, regulated in sleep and waking, yoga becomes the destroyer of sorrow.",
+      "themes": [
+        "balance",
+        "hardship"
+      ],
+      "use": "Use for health, 6th house and Moon sections: no extremes in food, sleep, effort or recreation.",
+      "caution": "Non-medical; speaks of balance in practice, not diagnosis or treatment.",
+      "simple": "Balance is the key. Not too much food or too little, not too much sleep or too little, not too much work or too little. A steady rhythm eases sorrow.",
+      "words": [
+        {
+          "t": "yoga",
+          "m": "a steady, balanced way of living and acting; being joined to something steadier than your moods"
+        },
+        {
+          "t": "yuktāhāra-vihāra",
+          "m": "regulated, balanced eating and recreation"
+        }
+      ],
+      "action": "Pick one habit that is too much or too little (sleep, screen time, rest) and nudge it halfway toward balance."
+    },
+    {
+      "key": "6.30",
+      "devanagari": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति। / तस्याहं न प्रणश्यामि स च मे न प्रणश्यति",
+      "iast": "yo māṃ paśyati sarvatra sarvaṃ ca mayi paśyati | / tasyāhaṃ na praṇaśyāmi sa ca me na praṇaśyati",
+      "plain": "One who sees Me everywhere and sees everything in Me, for him I am never lost, and he is never lost to Me.",
+      "themes": [
+        "worth",
+        "hope"
+      ],
+      "use": "Use in a closing section: no one who sees the divine everywhere is ever lost to it.",
+      "simple": "When you see the divine everywhere and in everyone, you are never alone, and you are never lost. It is a way of seeing others with respect and warmth.",
+      "words": [
+        {
+          "t": "Mām / Me",
+          "m": "Krishna speaking as the divine in all things"
+        },
+        {
+          "t": "sarvatra",
+          "m": "everywhere"
+        }
+      ],
+      "action": "Greet one person today, such as a shopkeeper or neighbour, with real attention, as if they matter deeply."
+    },
+    {
+      "key": "6.35",
+      "devanagari": "असंशयं महाबाहो मनो दुर्निग्रहं चलं। / अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते",
+      "iast": "asaṃśayaṃ mahābāho mano durnigrahaṃ calaṃ | / abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate",
+      "plain": "No doubt, mighty-armed, the mind is hard to restrain and restless; but by practice (abhyāsa) and detachment (vairāgya), son of Kuntī, it can be held.",
+      "themes": [
+        "hardship",
+        "control",
+        "detachment"
+      ],
+      "use": "Use as the how-to for a restless mind: small daily practice plus letting go.",
+      "simple": "Krishna agrees that the mind is restless and hard to hold still. The way is slow and steady: keep practising, and keep letting go of what pulls you away.",
+      "words": [
+        {
+          "t": "Mahābāho",
+          "m": "\"mighty-armed\", a name for Arjuna"
+        },
+        {
+          "t": "Kaunteya",
+          "m": "\"son of Kunti\", a name for Arjuna"
+        },
+        {
+          "t": "abhyāsa",
+          "m": "regular practice; doing something again and again"
+        },
+        {
+          "t": "vairāgya",
+          "m": "detachment; not being gripped by every pull"
+        }
+      ],
+      "action": "Sit quietly for three minutes today, and each time your mind wanders, gently bring it back."
+    },
+    {
+      "key": "6.40",
+      "devanagari": "पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते। / न हि कल्याणकृत्कश्चिद्दुर्गतिं तात गच्छति",
+      "iast": "pārtha naiveha nāmutra vināśastasya vidyate | / na hi kalyāṇakṛtkaściddurgatiṃ tāta gacchati",
+      "plain": "Pārtha, neither here nor hereafter is there destruction for him; no one who does good, dear one, comes to a bad end.",
+      "themes": [
+        "hope",
+        "worth"
+      ],
+      "use": "Use for readers who feel they started late or failed before: no one who does good comes to a bad end.",
+      "caution": "Do not promise worldly outcomes such as wealth or marriage.",
+      "simple": "No sincere effort at doing good is ever wasted, even if you stumble or stop halfway. Someone who walks a good path does not end up lost.",
+      "words": [
+        {
+          "t": "Pārtha",
+          "m": "a name for Arjuna, \"son of Prithā\" (Prithā is another name for his mother, Kunti)"
+        },
+        {
+          "t": "kalyāṇa-kṛt",
+          "m": "one who does good, who walks a good path"
+        }
+      ],
+      "action": "Think of a good habit you dropped, and restart it today in the smallest possible way."
+    },
+    {
+      "key": "7.11",
+      "devanagari": "बलं बलवतां चाहं कामरागविवर्जितम्। / धर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ",
+      "iast": "balaṃ balavatāṃ cāhaṃ kāmarāgavivarjitam | / dharmāviruddho bhūteṣu kāmo’smi bharatarṣabha",
+      "plain": "Of the strong I am the strength free of craving and attachment; in beings I am desire that is not against dharma (dharmāviruddha kāma).",
+      "themes": [
+        "enjoyment",
+        "balance"
+      ],
+      "use": "Use to show that desire in line with one's values is not condemned.",
+      "simple": "Real strength is calm and free from greed. Even natural wants, like for food, love or a good life, are fine when they stay within what is right.",
+      "words": [
+        {
+          "t": "dharmāviruddha kāma",
+          "m": "desire that does not go against what is right"
+        },
+        {
+          "t": "bharatarṣabha",
+          "m": "\"best of the Bharatas\", a name for Arjuna"
+        }
+      ],
+      "action": "Enjoy one thing you want today, and check that it harms no one, including you."
+    },
+    {
+      "key": "9.22",
+      "devanagari": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते। / तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्",
+      "iast": "ananyāścintayanto māṃ ye janāḥ paryupāsate | / teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmyaham",
+      "plain": "To those who think of Me with undivided mind and worship Me, ever devoted, I carry what they lack and keep safe what they have (yoga-kṣema).",
+      "themes": [
+        "surrender",
+        "hope"
+      ],
+      "use": "Use near the end of a report so the reader feels held after the practical guidance.",
+      "caution": "Schools read yoga-kshema differently; keep to \"provision and safekeeping\".",
+      "simple": "Krishna says that if you stay close to him with a steady heart, he looks after you and brings what you need and keeps what you have. It is about trust: you are not carrying everything alone.",
+      "words": [
+        {
+          "t": "yoga-kṣema",
+          "m": "bringing what you lack (yoga) and protecting what you have (kṣema)"
+        },
+        {
+          "t": "ananya",
+          "m": "undivided; with a single, steady focus"
+        }
+      ],
+      "action": "Write down one worry, then say \"I will do my part and trust the rest\" and go on with your day."
+    },
+    {
+      "key": "9.29",
+      "devanagari": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः। / ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्",
+      "iast": "samo’haṃ sarvabhūteṣu na me dveṣyo’sti na priyaḥ | / ye bhajanti tu māṃ bhaktyā mayi te teṣu cāpyaham",
+      "plain": "I am the same to all beings; none is hated or specially dear to Me; but those who worship Me with devotion are in Me, and I am in them.",
+      "themes": [
+        "worth",
+        "surrender"
+      ],
+      "use": "Use to say the divine is even-handed and no one is outside the picture.",
+      "simple": "Krishna says he is the same to everyone, with no favourites and no enemies. The warmth you feel is real when your heart turns toward him.",
+      "words": [
+        {
+          "t": "bhakti",
+          "m": "loving devotion; turning your heart toward the divine"
+        },
+        {
+          "t": "sama",
+          "m": "equal; the same toward everyone"
+        }
+      ],
+      "action": "Spend two minutes in quiet thanks, or a prayer in your own words, for what you already have."
+    },
+    {
+      "key": "10.20",
+      "devanagari": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः। / अहमादिश्च मध्यं च भूतानामन्त एव च",
+      "iast": "ahamātmā guḍākeśa sarvabhūtāśayasthitaḥ | / ahamādiśca madhyaṃ ca bhūtānāmanta eva ca",
+      "plain": "I am the Self, Guḍākeśa, seated in the heart of all beings; I am the beginning, middle and end of beings.",
+      "themes": [
+        "worth"
+      ],
+      "use": "Use to remind the reader that the deepest Self sits in their own heart regardless of chart strength.",
+      "simple": "Krishna says he lives in the heart of every being, at the start, middle and end of everything. You carry something sacred inside you, wherever you are.",
+      "words": [
+        {
+          "t": "ātman",
+          "m": "the Self; the deep inner being in everyone"
+        },
+        {
+          "t": "Guḍākeśa",
+          "m": "\"master of sleep\" or \"thick-haired one\", a name for Arjuna"
+        }
+      ],
+      "action": "Put a hand on your chest for a moment today and remember that you are more than your worries."
+    },
+    {
+      "key": "10.24",
+      "devanagari": "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम्। / सेनानीनामहं स्कन्दः सरसामस्मि सागरः",
+      "iast": "purodhasāṃ ca mukhyaṃ māṃ viddhi pārtha bṛhaspatim | / senānīnāmahaṃ skandaḥ sarasāmasmi sāgaraḥ",
+      "plain": "Know Me among priests as the chief, Bṛhaspati; among generals I am Skanda; among bodies of water I am the ocean.",
+      "themes": [
+        "svadharma",
+        "hope"
+      ],
+      "use": "Use where the Gita itself names Brihaspati (Jupiter's priest) and Skanda (the war-leader).",
+      "caution": "Mars-Skanda and Jupiter-Brihaspati links are tradition, not stated planet equivalence in the verse.",
+      "simple": "Krishna names the finest example of each kind: the best priest, the best general, the vast ocean. There is greatness in every role, and yours has its own.",
+      "words": [
+        {
+          "t": "Pārtha",
+          "m": "a name for Arjuna, \"son of Prithā\" (Prithā is another name for his mother, Kunti)"
+        },
+        {
+          "t": "Bṛhaspati",
+          "m": "the teacher and priest of the gods, a symbol of wisdom"
+        },
+        {
+          "t": "Skanda",
+          "m": "the divine commander of armies, also called Kartikeya"
+        },
+        {
+          "t": "purohita",
+          "m": "a priest who guides people in what is right"
+        }
+      ],
+      "action": "Think of how you do your own role (parent, worker, friend) at its best, and do one thing today in that spirit."
+    },
+    {
+      "key": "11.33",
+      "devanagari": "तस्मात्त्वमुत्तिष्ठ यशो लभस्व / जित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्। / मयैवैते निहताः पूर्वमेव / निमित्तमात्रं भव सव्यसाचिन्",
+      "iast": "tasmāttvamuttiṣṭha yaśo labhasva / jitvā śatrūn bhuṅkṣva rājyaṃ samṛddham | / mayaivaite nihatāḥ pūrvameva / nimittamātraṃ bhava savyasācin",
+      "plain": "So rise up and take glory; conquer your enemies and enjoy a prosperous kingdom. By Me alone they have already been struck down; be merely the instrument (nimitta-mātra), left-handed archer.",
+      "themes": [
+        "control",
+        "surrender",
+        "action"
+      ],
+      "use": "Use for people who over-carry responsibility: rise, do your part cleanly, and be the instrument.",
+      "caution": "Never read as \"nothing you do matters\"; pair with \"rise up\" and do not use 11.32 alone.",
+      "simple": "Krishna tells Arjuna to stand up and act, because the outcome is in a larger hand. You are asked only to do your part, as an instrument.",
+      "words": [
+        {
+          "t": "nimitta-mātra",
+          "m": "merely the instrument; the one through whom something happens"
+        },
+        {
+          "t": "Savyasācin",
+          "m": "\"left-handed archer\", a name for Arjuna"
+        },
+        {
+          "t": "yaśas",
+          "m": "honour or good name earned through right action"
+        }
+      ],
+      "action": "Take one step toward a hard thing today, and tell yourself you only need to do your part."
+    },
+    {
+      "key": "12.6-7",
+      "devanagari": "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः। / अनन्येनैव योगेन मां ध्यायन्त उपासते / तेषामहं समुद्धर्ता मृत्युसंसारसागरात्। / भवामि नचिरात्पार्थ मय्यावेशितचेतसाम्",
+      "iast": "ye tu sarvāṇi karmāṇi mayi saṃnyasya matparāḥ | / ananyenaiva yogena māṃ dhyāyanta upāsate / teṣāmahaṃ samuddhartā mṛtyusaṃsārasāgarāt | / bhavāmi nacirātpārtha mayyāveśitacetasām",
+      "plain": "Those who place all their actions in Me, intent on Me, worshipping and meditating with undivided yoga: for them, Pārtha, I soon become the rescuer from the ocean of death and rebirth, since their minds are absorbed in Me.",
+      "themes": [
+        "surrender",
+        "hope"
+      ],
+      "use": "Use at the end of a hard-period section as the promise of being lifted out of repeated trouble.",
+      "caution": "Render \"ocean of samsara\" as the sea of repeated trouble for modern readers.",
+      "simple": "For those who offer their actions to the divine and keep their heart on it, Krishna says he soon lifts them out of the sea of fear and endless change. Offering your effort can make life feel lighter.",
+      "words": [
+        {
+          "t": "Pārtha",
+          "m": "a name for Arjuna, \"son of Prithā\" (Prithā is another name for his mother, Kunti)"
+        },
+        {
+          "t": "saṃsāra / ocean of death and rebirth",
+          "m": "the endless cycle of change, worry and loss in life"
+        },
+        {
+          "t": "saṃnyāsa",
+          "m": "giving up or offering; here, placing all your actions in God's hands"
+        },
+        {
+          "t": "matpara",
+          "m": "one for whom Krishna is the highest goal"
+        }
+      ],
+      "action": "At the end of the day, mentally hand over what you could not finish and rest."
+    },
+    {
+      "key": "15.7",
+      "devanagari": "ममैवांशो जीवलोके जीवभूतः सनातनः। / मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति",
+      "iast": "mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | / manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati",
+      "plain": "A sanātana (eternal) part of Me alone, in the world of living beings, becomes the individual living soul and draws to itself the senses, with the mind as sixth, abiding in nature.",
+      "themes": [
+        "worth"
+      ],
+      "use": "Use to say each person is an eternal part of the divine.",
+      "caution": "Schools differ sharply; quote without choosing a school.",
+      "simple": "A small spark of the divine lives in every living being. Your mind and senses are the tools it uses to experience the world.",
+      "words": [
+        {
+          "t": "jīva",
+          "m": "the individual living soul"
+        },
+        {
+          "t": "sanātana",
+          "m": "eternal; without beginning or end"
+        },
+        {
+          "t": "aṁśa",
+          "m": "a part or portion"
+        },
+        {
+          "t": "manaḥ ṣaṣṭha",
+          "m": "\"mind as the sixth\", the mind counted along with the five senses"
+        }
+      ],
+      "action": "Look at someone you find difficult today and silently remind yourself that they carry the same spark."
+    },
+    {
+      "key": "18.47",
+      "devanagari": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्। / स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्",
+      "iast": "śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | / svabhāvaniyataṃ karma kurvannāpnoti kilbiṣam",
+      "plain": "Better one's own dharma, though flawed, than another's well-performed; doing the work set by one's own nature, one incurs no fault.",
+      "themes": [
+        "svadharma",
+        "action"
+      ],
+      "use": "Use with 3.35 for vocation: work set by your own nature brings no fault.",
+      "caution": "Use the aptitude reading and say so; the surrounding verses are tied to varna in tradition.",
+      "simple": "It is better to do your own work, even imperfectly, than to take someone else's role and do it well. Work that fits your nature does not weigh you down.",
+      "words": [
+        {
+          "t": "svadharma",
+          "m": "your own path or duty, the work and role that truly fit you"
+        },
+        {
+          "t": "svabhāva",
+          "m": "your own inborn nature and tendencies"
+        },
+        {
+          "t": "viguṇa",
+          "m": "imperfect; with flaws"
+        }
+      ],
+      "action": "Name one thing that comes naturally to you and use it to help someone this week."
+    },
+    {
+      "key": "18.61",
+      "devanagari": "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति। / भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया",
+      "iast": "īśvaraḥ sarvabhūtānāṃ hṛddeśe’rjuna tiṣṭhati | / bhrāmayansarvabhūtāni yantrārūḍhāni māyayā",
+      "plain": "The Lord dwells in the heart-region of all beings, Arjuna, turning all beings round, as if mounted on a machine, by His māyā.",
+      "themes": [
+        "control",
+        "surrender"
+      ],
+      "use": "Use to introduce that a guiding presence sits in the heart of every being.",
+      "simple": "Krishna lives in everyone's heart and everything moves under his law, like parts of a machine. There is a larger order, and you are held in it.",
+      "words": [
+        {
+          "t": "Īśvara / the Lord",
+          "m": "God, the supreme Lord who rules everything"
+        },
+        {
+          "t": "māyā",
+          "m": "the divine power that makes the world appear and move"
+        },
+        {
+          "t": "hṛd-deśa",
+          "m": "the heart-region; the inner centre of a being"
+        }
+      ],
+      "action": "When something is out of your control today, say \"this is in a bigger hand\" and put your attention on what you can do."
+    },
+    {
+      "key": "18.62",
+      "devanagari": "तमेव शरणं गच्छ सर्वभावेन भारत। / तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम्",
+      "iast": "tameva śaraṇaṃ gaccha sarvabhāvena bhārata | / tatprasādātparāṃ śāntiṃ sthānaṃ prāpsyasi śāśvatam",
+      "plain": "Take refuge in Him alone with your whole being, Bhārata; by His grace you will reach supreme peace, the eternal abode.",
+      "themes": [
+        "surrender",
+        "hope"
+      ],
+      "use": "Use as the step after 18.61: take refuge with your whole being and reach peace.",
+      "simple": "Turn to the divine with your whole heart. By that grace comes a deep peace.",
+      "words": [
+        {
+          "t": "Bhārata",
+          "m": "\"descendant of King Bharata\", a family title for Arjuna"
+        },
+        {
+          "t": "śaraṇa",
+          "m": "refuge; a safe place to turn to"
+        },
+        {
+          "t": "prasāda",
+          "m": "grace; a gift of peace that comes by itself"
+        },
+        {
+          "t": "śānti",
+          "m": "deep peace"
+        }
+      ],
+      "action": "Sit quietly for a few minutes and say a short prayer, or simply say \"I am here, please help\"."
+    },
+    {
+      "key": "18.65",
+      "devanagari": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु। / मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे",
+      "iast": "manmanā bhava madbhakto madyājī māṃ namaskuru | / māmevaiṣyasi satyaṃ te pratijāne priyo’si me",
+      "plain": "Keep your mind on Me, be devoted to Me, worship Me, bow to Me; you will come to Me. I promise you truly; you are dear to me.",
+      "themes": [
+        "surrender",
+        "worth"
+      ],
+      "use": "Use at the very end for the personal promise: \"you are dear to me\".",
+      "caution": "Render \"Me\" as \"the divine\" for readers outside Krishna devotion.",
+      "simple": "Krishna tells Arjuna to keep his heart turned to him, with love, and promises that Arjuna is dear to him. You are not asked to be perfect, only to turn toward what you love.",
+      "words": [
+        {
+          "t": "bhakta",
+          "m": "a devoted person, one who loves the divine"
+        },
+        {
+          "t": "pratijāne / promise",
+          "m": "Krishna's solemn promise"
+        },
+        {
+          "t": "namaskāra",
+          "m": "bowing in respect"
+        }
+      ],
+      "action": "Do one small act of devotion today, such as lighting a lamp or saying a name of God."
+    },
+    {
+      "key": "18.66",
+      "devanagari": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज। / अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः",
+      "iast": "sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja | / ahaṃ tvāṃ sarvapāpebhyo mokṣayiṣyāmi mā śucaḥ",
+      "plain": "Letting go of all dharmas, come to Me alone for refuge. I will free you from all evils; do not grieve.",
+      "themes": [
+        "surrender",
+        "fear"
+      ],
+      "use": "Use as the closing verse of a hard-period section, always with \"do not grieve\".",
+      "caution": "Most contested verse: traditions read \"all dharmas\" differently; all agree on the promise of \"do not grieve\".",
+      "simple": "After all the teaching, Krishna's final words are gentle: set down your heavy load of \"I have to get everything right\", come to me, and do not grieve.",
+      "words": [
+        {
+          "t": "dharma",
+          "m": "the right way to live and act; your duty and what is right in your situation"
+        },
+        {
+          "t": "śaraṇa",
+          "m": "refuge; a safe place to turn to"
+        },
+        {
+          "t": "mā śucaḥ",
+          "m": "\"do not grieve\" or \"do not worry\"; Krishna's closing comfort"
+        },
+        {
+          "t": "mokṣa",
+          "m": "freedom; being set free from what binds you"
+        }
+      ],
+      "action": "Name one burden you have been carrying alone, and tell someone you trust about it."
+    }
+  ],
+  "themes": {
+    "fear": [
+      "2.3",
+      "2.7",
+      "2.40",
+      "2.56",
+      "18.66"
+    ],
+    "action": [
+      "2.38",
+      "2.47",
+      "2.48",
+      "3.8",
+      "3.19",
+      "5.10",
+      "11.33",
+      "18.47"
+    ],
+    "control": [
+      "2.41",
+      "2.47",
+      "2.62-63",
+      "3.27",
+      "3.34",
+      "3.37",
+      "6.5",
+      "6.6",
+      "6.35",
+      "11.33",
+      "18.61"
+    ],
+    "equanimity": [
+      "2.14",
+      "2.38",
+      "2.48",
+      "2.56"
+    ],
+    "hardship": [
+      "2.14",
+      "3.8",
+      "6.5",
+      "6.6",
+      "6.16-17",
+      "6.35"
+    ],
+    "detachment": [
+      "2.62-63",
+      "3.19",
+      "3.37",
+      "5.10",
+      "6.35"
+    ],
+    "enjoyment": [
+      "2.64",
+      "3.34",
+      "7.11"
+    ],
+    "svadharma": [
+      "3.35",
+      "10.24",
+      "18.47"
+    ],
+    "worth": [
+      "3.35",
+      "6.5",
+      "6.30",
+      "6.40",
+      "9.29",
+      "10.20",
+      "15.7",
+      "18.65"
+    ],
+    "hope": [
+      "2.3",
+      "2.40",
+      "4.34",
+      "6.30",
+      "6.40",
+      "9.22",
+      "10.24",
+      "12.6-7",
+      "18.62"
+    ],
+    "balance": [
+      "2.41",
+      "2.64",
+      "6.16-17",
+      "7.11"
+    ],
+    "surrender": [
+      "2.7",
+      "3.27",
+      "4.34",
+      "9.22",
+      "9.29",
+      "11.33",
+      "12.6-7",
+      "18.61",
+      "18.62",
+      "18.65",
+      "18.66"
+    ]
+  },
+  "planets": {
+    "Sun": {
+      "theme": "Self and duty",
+      "verses": [
+        "2.47",
+        "3.19"
+      ]
+    },
+    "Moon": {
+      "theme": "Mind",
+      "verses": [
+        "6.35",
+        "2.62-63"
+      ]
+    },
+    "Mars": {
+      "theme": "Courage",
+      "verses": [
+        "2.3",
+        "10.24"
+      ]
+    },
+    "Mercury": {
+      "theme": "Discrimination (buddhi)",
+      "verses": [
+        "2.41",
+        "2.62-63"
+      ]
+    },
+    "Jupiter": {
+      "theme": "Dharma and guru",
+      "verses": [
+        "4.34",
+        "10.24"
+      ]
+    },
+    "Venus": {
+      "theme": "Enjoyment within dharma",
+      "verses": [
+        "2.64",
+        "3.34",
+        "7.11"
+      ]
+    },
+    "Saturn": {
+      "theme": "Karma-yoga and endurance",
+      "verses": [
+        "2.14",
+        "3.8",
+        "3.19",
+        "6.5"
+      ]
+    },
+    "Rahu": {
+      "theme": "Desire",
+      "verses": [
+        "3.37",
+        "2.62-63"
+      ]
+    },
+    "Ketu": {
+      "theme": "Vairagya, letting go",
+      "verses": [
+        "2.62-63",
+        "5.10"
+      ]
+    }
+  },
+  "planet_note": "Planet-to-Gita links are modern interpretive teaching, not scripture.",
+  "frame_simple": "Arjuna is a warrior prince. Krishna is his friend and guide, driving his chariot. On the eve of a great family war, Arjuna sees loved ones on both sides, freezes, and wants to give up. Krishna talks with him and teaches how to act well: do your honest part, don't cling to results, stay steady in joy and pain, and trust something larger than your fears. That talk is the Bhagavad Gita."
+}

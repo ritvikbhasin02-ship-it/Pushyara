@@ -1,0 +1,677 @@
+{
+ "stage": 3,
+ "title": "The 27 nakshatras and the dasha clock",
+ "level": "Foundation",
+ "goal": "Done when you can find the nakshatra, pada and D9 sign of any longitude, name each nakshatra’s lord, deity, gana and class from the tables, run tara bala and chandra bala for a given day, and compute a Vimshottari dasha balance by hand and match it to the engine.",
+ "terms": {
+  "gana": [
+   "Gana · गण",
+   "The temperament class of a nakshatra: Deva (gentle, god-like), Manushya (human, mixed), Rakshasa (forceful, strongly driven). Rakshasa does not mean evil. Used in matching and in character reading."
+  ],
+  "yoni": [
+   "Yoni · योनि",
+   "The “animal” assigned to each nakshatra, 14 animals in male and female pairs. It stands for instinct and physical temperament and is used in matching (4 points)."
+  ],
+  "nadi": [
+   "Nadi · नाडी",
+   "A three-way classification of the 27 nakshatras: Adi, Madhya, Antya, linked to the humours Vata, Pitta, Kapha. In matching it carries the most points (8)."
+  ],
+  "shakti": [
+   "Shakti · शक्ति",
+   "The specific power or function given to a nakshatra in the tradition that follows the Taittiriya Brahmana, for example “power to burn” for Krittika."
+  ],
+  "purushartha": [
+   "Purushartha · पुरुषार्थ",
+   "The four aims of life: dharma (duty), artha (wealth and means), kama (desire) and moksha (liberation). Modern tables assign one aim to each nakshatra as its underlying motivation."
+  ],
+  "muhurta": [
+   "Muhurta · मुहूर्त",
+   "Choosing a favourable time for an action. Nakshatra class, tara bala and chandra bala are three of its basic filters."
+  ],
+  "navamsa": [
+   "Navamsa · नवांश",
+   "The ninth division (D9) of a sign: nine slices of 3°20′ each. Every pada of a nakshatra falls in exactly one navamsa. The D9 chart is read for strength and for marriage."
+  ],
+  "abhijit": [
+   "Abhijit · अभिजित्",
+   "A short 28th nakshatra between Uttara Ashadha and Shravana, used in some muhurta traditions. The Vimshottari dasha and this course use 27 equal nakshatras."
+  ],
+  "gandanta": [
+   "Gandanta · गण्डान्त",
+   "“Knot at the end.” The junction where a water sign ends and a fire sign begins, the last part of Ashlesha, Jyeshtha and Revati and the first part of Magha, Mula and Ashwini. Traditionally a sensitive zone for the Moon at birth."
+  ],
+  "tarabala": [
+   "Tara bala · तारा बल",
+   "A daily check. Count from your birth nakshatra to the day’s Moon nakshatra, divide by 9 and read the remainder as one of nine taras, some good and some bad."
+  ],
+  "chandrabala": [
+   "Chandra bala · चन्द्र बल",
+   "A daily check. The Moon’s transit sign counted from your natal Moon sign: houses 1, 3, 6, 7, 10, 11 are favourable, 4, 8, 12 unfavourable."
+  ],
+  "chandrashtama": [
+   "Chandrashtama · चन्द्राष्टम",
+   "The Moon transiting the 8th sign from your natal Moon sign, about two and a quarter days each month. The classic day to avoid new starts."
+  ],
+  "vimshottari": [
+   "Vimshottari · विंशोत्तरी",
+   "The 120-year dasha system. Nine planets share 120 years in a fixed order; the starting point comes from the Moon’s nakshatra at birth."
+  ],
+  "mahadasha": [
+   "Mahadasha · महादशा",
+   "The major period of one planet in the Vimshottari system, from 6 to 20 years."
+  ],
+  "antardasha": [
+   "Antardasha · अन्तर्दशा",
+   "A sub-period inside a mahadasha. Each mahadasha splits among all nine planets in proportion to their years."
+  ],
+  "bhogya": [
+   "Dasha balance · भोग्य",
+   "The part of the first mahadasha that remains at birth. It equals the lord’s years multiplied by the fraction of the Moon’s nakshatra still to be crossed."
+  ],
+  "starlord": [
+   "Star lord · नक्षत्रेश",
+   "The lord of the nakshatra a planet occupies. Many teachers say a planet delivers its results through its star lord as well as its sign lord."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "3-1",
+   "title": "The frame: 27 nakshatras, nine lords, 108 padas",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the ayanamsa, and how do you use it to turn a tropical longitude into a sidereal one?</p>\n<p>Stage 1 gave you the 27 nakshatras as a list. This lesson gives you the machinery: how to find the nakshatra and pada for <em>any</em> longitude, and how to read the attributes in the tables that follow.</p>\n<h2>Why 27, and why 13°20′</h2>\n<p>The Moon takes about 27.3 days to return to the same star. It moves roughly one mansion a day, so the sky was cut into 27 equal stages. 360° ÷ 27 = 13°20′, which is 800 arcminutes. Each {{term:nakshatra|nakshatra}} splits into four {{term:pada|padas}} of 3°20′ (200′). 27 × 4 = 108 padas.</p>\n<div class=\"tbl\"><table><thead><tr><th>Unit</th><th>Size</th><th>Count</th></tr></thead><tbody><tr><td>Zodiac</td><td>360° = 21,600′</td><td>1</td></tr><tr><td>Sign (rashi)</td><td>30° = 1,800′</td><td>12</td></tr><tr><td>Nakshatra</td><td>13°20′ = 800′</td><td>27</td></tr><tr><td>Pada</td><td>3°20′ = 200′</td><td>108</td></tr><tr><td>Navamsa (D9 slice)</td><td>3°20′ = 200′</td><td>108</td></tr></tbody></table></div>\n<p>So a sign holds exactly 2¼ nakshatras, or nine padas. Nine nakshatras (36 padas) fill exactly 120°, which is four signs.</p>\n<h2>Finding the nakshatra and pada from a longitude</h2>\n<p>Use the sidereal (Lahiri) longitude, counted from 0° Aries. Convert to a number of degrees (sign number × 30 + degrees in sign).</p>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Rule</th><th>Your Moon</th></tr></thead><tbody><tr><td>1. Full longitude</td><td>Sign index × 30 + degrees in sign (Aries = 0)</td><td>Cancer is sign 3: 3 × 30 + 8°04′ = 98°04′</td></tr><tr><td>2. Nakshatra number</td><td>Divide by 13°20′ and round <em>up</em></td><td>98°04′ ÷ 13°20′ = 7.35, so the 8th: Pushya</td></tr><tr><td>3. Start of that nakshatra</td><td>(number − 1) × 13°20′</td><td>7 × 13°20′ = 93°20′</td></tr><tr><td>4. Distance elapsed</td><td>Longitude − start</td><td>98°04′ − 93°20′ = 4°44′ (4°43′47″ unrounded)</td></tr><tr><td>5. Pada</td><td>Divide elapsed by 3°20′ and round <em>up</em></td><td>4°44′ ÷ 3°20′ = 1.42, so pada 2</td></tr></tbody></table></div>\n<h2>From pada to navamsa sign</h2>\n<p>The padas are numbered 1 to 108 from the start of Aries and the {{term:navamsa|navamsa}} signs simply run Aries, Taurus, Gemini … Pisces and then repeat. The rule: navamsa sign number = (4 × (nakshatra number − 1) + pada − 1) mod 12, with Aries = 0.</p>\n<div class=\"tbl\"><table><thead><tr><th>Placement</th><th>Calculation</th><th>Navamsa sign</th><th>Engine D9</th></tr></thead><tbody><tr><td>Moon, Pushya pada 2</td><td>4 × 7 + 1 = 29, 29 mod 12 = 5</td><td>Virgo</td><td>Virgo</td></tr><tr><td>Sun, Ardra pada 2</td><td>4 × 5 + 1 = 21, 21 mod 12 = 9</td><td>Capricorn</td><td>Capricorn</td></tr><tr><td>Ketu, Shatabhisha pada 2</td><td>4 × 23 + 1 = 93, 93 mod 12 = 9</td><td>Capricorn</td><td>Capricorn</td></tr></tbody></table></div>\n<p>Twelve padas (three nakshatras) fill one full circuit of the 12 navamsa signs. So every third nakshatra begins on an Aries navamsa: Ashwini, Rohini, Punarvasu, Magha, Hasta, Vishakha, Mula, Shravana and Purva Bhadrapada. This is why each pada gives you its D9 sign without a separate chart calculation.</p>\n<h2>The nine lords, three rounds</h2>\n<p>The lords repeat in the same order three times: Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury. The sequence is the dasha order too.</p>\n<div class=\"tbl\"><table><thead><tr><th>Lord</th><th>Round 1</th><th>Round 2</th><th>Round 3</th></tr></thead><tbody><tr><td>Ketu</td><td>Ashwini</td><td>Magha</td><td>Mula</td></tr><tr><td>Venus</td><td>Bharani</td><td>Purva Phalguni</td><td>Purva Ashadha</td></tr><tr><td>Sun</td><td>Krittika</td><td>Uttara Phalguni</td><td>Uttara Ashadha</td></tr><tr><td>Moon</td><td>Rohini</td><td>Hasta</td><td>Shravana</td></tr><tr><td>Mars</td><td>Mrigashira</td><td>Chitra</td><td>Dhanishta</td></tr><tr><td>Rahu</td><td>Ardra</td><td>Swati</td><td>Shatabhisha</td></tr><tr><td>Jupiter</td><td>Punarvasu</td><td>Vishakha</td><td>Purva Bhadrapada</td></tr><tr><td>Saturn</td><td>Pushya</td><td>Anuradha</td><td>Uttara Bhadrapada</td></tr><tr><td>Mercury</td><td>Ashlesha</td><td>Jyeshtha</td><td>Revati</td></tr></tbody></table></div>\n<h2>The attribute key</h2>\n<p>The next four lessons give each nakshatra a row of attributes. Here is what each one means and where you use it.</p>\n<div class=\"tbl\"><table><thead><tr><th>Attribute</th><th>What it is</th><th>Used for</th></tr></thead><tbody><tr><td>Lord</td><td>The planet that rules the nakshatra</td><td>Dasha order; the “channel” through which a planet placed there delivers</td></tr><tr><td>Deity and myth</td><td>The Vedic god and the story attached</td><td>Theme of the nakshatra; rites and mantras</td></tr><tr><td>Symbol</td><td>The picture in the sky</td><td>A memory image; hints at the nakshatra’s nature</td></tr><tr><td>{{term:shakti|shakti}}</td><td>The specific power listed in the Taittiriya tradition</td><td>Flavour of the nakshatra’s action</td></tr><tr><td>{{term:gana|gana}}</td><td>Deva, Manushya or Rakshasa temperament</td><td>Character; matching (6 points)</td></tr><tr><td>{{term:yoni|yoni}}</td><td>One of 14 animals, in male and female pairs</td><td>Instinct; matching (4 points)</td></tr><tr><td>{{term:nadi|nadi}}</td><td>Adi, Madhya or Antya (Vata, Pitta, Kapha)</td><td>Constitution; matching (8 points)</td></tr><tr><td>{{term:purushartha|purushartha}}</td><td>Dharma, artha, kama or moksha</td><td>The underlying motivation</td></tr><tr><td>Class</td><td>One of seven muhurta classes (below)</td><td>Choosing the right time for a task</td></tr></tbody></table></div>\n<h3>The seven muhurta classes</h3>\n<div class=\"tbl\"><table><thead><tr><th>Class</th><th>Nakshatras</th><th>Suits</th></tr></thead><tbody><tr><td>Fixed · Dhruva</td><td>Rohini, Uttara Phalguni, Uttara Ashadha, Uttara Bhadrapada</td><td>Foundations, planting, building, starting a long-term post</td></tr><tr><td>Movable · Chara</td><td>Punarvasu, Swati, Shravana, Dhanishta, Shatabhisha</td><td>Travel, vehicles, anything that moves</td></tr><tr><td>Fierce · Ugra</td><td>Bharani, Magha, Purva Phalguni, Purva Ashadha, Purva Bhadrapada</td><td>Bold, forceful or destructive acts such as surgery</td></tr><tr><td>Mixed · Mishra</td><td>Krittika, Vishakha</td><td>Fire, metal and ordinary work</td></tr><tr><td>Light · Kshipra</td><td>Ashwini, Pushya, Hasta</td><td>Trade, opening a shop, education, ornaments, arts</td></tr><tr><td>Soft · Mridu</td><td>Mrigashira, Chitra, Anuradha, Revati</td><td>Music, clothing, friendships, gentle works</td></tr><tr><td>Sharp · Tikshna</td><td>Ardra, Ashlesha, Jyeshtha, Mula</td><td>Hard, forceful and tantric work; not for gentle new starts</td></tr></tbody></table></div>\n<p>4 + 5 + 5 + 2 + 3 + 4 + 4 = 27. Every nakshatra is in exactly one class.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>27 or 28 nakshatras.</strong> Some Vedic texts and muhurta traditions add Abhijit, a short 28th mansion between Uttara Ashadha and Shravana. The Brihat Samhita assigns it to Brahma. The Vimshottari dasha, the matching tables and this course use 27 equal nakshatras, so Abhijit is a muhurta-only extra.</p>\n<p><strong>Equal or unequal.</strong> Astronomical texts also describe each nakshatra by a junction star (yogatara) at unequal spacings. Jyotish predictions and the dasha use the equal 13°20′ division.</p>\n<p><strong>Ayanamsa moves the edges.</strong> Raman’s ayanamsa is about 1.4° smaller than Lahiri’s, so every sidereal longitude comes out about 1.4° larger. That is more than a tenth of a nakshatra. A planet within about 1.5° of a nakshatra edge can change nakshatra between systems. This course uses Lahiri throughout.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Do the pada-to-navamsa calculation for your Moon by hand (Virgo), then compare with the D9 column in the engine’s natal output. If they match, you have both the pada boundaries and the D9 rule right. A Moon whose pada is 1 and whose D9 sign comes out differently means you rounded the wrong way in step 5.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your Moon is at Cancer 8°04′, which is 98°04′ from 0° Aries. That is 4°44′ into Pushya (which starts at 93°20′), pada 2, with the Moon’s D9 in Virgo. Your Sun is at Gemini 10°41′ (70°41′): Ardra, pada 2, D9 Capricorn. Your lagna (Virgo 21°52′, which is 171°52′) is in Hasta, pada 4, D9 Cancer. All three agree with the engine.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>360° ÷ 27 = 13°20′ (800′). A pada is 3°20′ (200′). 108 padas in all.</li><li>Nakshatra number = longitude ÷ 13°20′ rounded up; pada = elapsed ÷ 3°20′ rounded up.</li><li>Navamsa sign = (4 × (nak − 1) + pada − 1) mod 12, Aries = 0.</li><li>Lords run Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, three times.</li><li>Every nakshatra belongs to one of seven muhurta classes (4, 5, 5, 2, 3, 4, 4).</li></ul></div><p class=\"muted\"><strong>Practice:</strong> find the nakshatra, pada and navamsa sign by hand for your Mars (Taurus 29°19′) and your Jupiter (Pisces 3°28′). Check both against the engine natal output before you read on.</p>",
+   "listen": "The zodiac is cut into twenty seven nakshatras of thirteen degrees twenty minutes, which is eight hundred arcminutes. Each has four padas of three degrees twenty minutes, so there are one hundred and eight padas. To find a nakshatra, turn the sidereal longitude into degrees from zero Aries, divide by thirteen twenty, and round up. To find the pada, divide the distance elapsed in that nakshatra by three twenty and round up. The pada also gives the navamsa sign: four times the nakshatra number minus one, plus the pada minus one, taken modulo twelve, with Aries as zero. Your Moon at Cancer eight degrees four minutes is Pushya pada two, navamsa Virgo. The lords repeat Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury three times. Each nakshatra also carries a gana, a yoni animal, a nadi and one of seven muhurta classes, which the next lessons teach.",
+   "sources": [
+    "Brihat Samhita (Varahamihira), chapters on the nakshatras and their deities",
+    "Brihat Parashara Hora Shastra, chapter on the nakshatras and the Vimshottari lords",
+    "Muhurta Chintamani, section on the classes of nakshatras",
+    "Drik Panchang, “Seven categories of nakshatra” (modern reference, used to confirm class membership)"
+   ],
+   "quiz": [
+    {
+     "q": "How wide is one pada?",
+     "o": [
+      "1°20′ (80 arcminutes)",
+      "6°40′ (400 arcminutes)",
+      "3°20′ (200 arcminutes)",
+      "13°20′ (800 arcminutes)"
+     ],
+     "a": 2,
+     "w": "800′ ÷ 4 = 200′ = 3°20′. 13°20′ is the whole nakshatra."
+    },
+    {
+     "q": "A planet is at Cancer 8°04′ (98°04′). Which nakshatra and pada?",
+     "o": [
+      "Pushya, pada 2",
+      "Punarvasu, pada 4",
+      "Pushya, pada 1",
+      "Ashlesha, pada 1"
+     ],
+     "a": 0,
+     "w": "98°04′ ÷ 13°20′ = 7.35, so the 8th nakshatra (Pushya). It starts at 93°20′, and 4°44′ ÷ 3°20′ = 1.42 puts it in pada 2."
+    },
+    {
+     "q": "How many nakshatras does one sign hold?",
+     "o": [
+      "2 (eight padas)",
+      "2¼ (nine padas)",
+      "3 (twelve padas)",
+      "4 (sixteen padas)"
+     ],
+     "a": 1,
+     "w": "30° ÷ 13°20′ = 2.25. A sign holds nine padas."
+    },
+    {
+     "q": "Which three nakshatras share the lord Ketu?",
+     "o": [
+      "Ashwini, Bharani, Krittika",
+      "Bharani, Magha, Mula",
+      "Ashlesha, Jyeshtha, Revati",
+      "Ashwini, Magha, Mula"
+     ],
+     "a": 3,
+     "w": "The lord order repeats every 9 nakshatras. Ketu rules Ashwini (1), Magha (10) and Mula (19). Ashlesha, Jyeshtha and Revati are Mercury’s."
+    },
+    {
+     "q": "A nakshatra in the Fixed (Dhruva) class suits which kind of work?",
+     "o": [
+      "Travel, vehicles and quick journeys",
+      "Foundations, planting, long-term starts",
+      "Surgery, fighting and forceful acts",
+      "Tantric rites and harsh, secret acts"
+     ],
+     "a": 1,
+     "w": "Fixed nakshatras (Rohini, Uttara Phalguni, Uttara Ashadha, Uttara Bhadrapada) suit lasting beginnings."
+    }
+   ]
+  },
+  {
+   "id": "3-2",
+   "title": "Nakshatras 1–7: Ashwini to Punarvasu",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the nine nakshatra lords in order, and say how a pada gives you its D9 sign.</p><p>This lesson covers nakshatras 1 to 7 in zodiac order. Read the tables first, then the stories. The stories are there to make the table stick.</p><h2>The reference tables</h2><div class=\"tbl\"><table><thead><tr><th>#</th><th>Nakshatra</th><th>Span (sidereal)</th><th>Lord</th><th>Deity</th><th>Symbol</th></tr></thead><tbody><tr><td>1</td><td><strong>Ashwini</strong><br><span class=\"skt\">अश्विनी</span></td><td>Aries 0°00′ – 13°20′</td><td>Ketu</td><td>Ashwini Kumaras (the Ashvins)</td><td>Horse’s head</td></tr><tr><td>2</td><td><strong>Bharani</strong><br><span class=\"skt\">भरणी</span></td><td>Aries 13°20′ – 26°40′</td><td>Venus</td><td>Yama</td><td>Yoni (the womb)</td></tr><tr><td>3</td><td><strong>Krittika</strong><br><span class=\"skt\">कृत्तिका</span></td><td>Aries 26°40′ – Taurus 10°00′</td><td>Sun</td><td>Agni</td><td>Razor or flame</td></tr><tr><td>4</td><td><strong>Rohini</strong><br><span class=\"skt\">रोहिणी</span></td><td>Taurus 10°00′ – 23°20′</td><td>Moon</td><td>Prajapati (Brahma)</td><td>Chariot, ox-cart</td></tr><tr><td>5</td><td><strong>Mrigashira</strong><br><span class=\"skt\">मृगशिरा</span></td><td>Taurus 23°20′ – Gemini 6°40′</td><td>Mars</td><td>Soma</td><td>Deer’s head</td></tr><tr><td>6</td><td><strong>Ardra</strong><br><span class=\"skt\">आर्द्रा</span></td><td>Gemini 6°40′ – 20°00′</td><td>Rahu</td><td>Rudra</td><td>Teardrop (also given as a diamond or a head)</td></tr><tr><td>7</td><td><strong>Punarvasu</strong><br><span class=\"skt\">पुनर्वसु</span></td><td>Gemini 20°00′ – Cancer 3°20′</td><td>Jupiter</td><td>Aditi</td><td>Quiver of arrows (also a bow or a house)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Gana</th><th>Yoni</th><th>Nadi</th><th>Purpose (purushartha)</th><th>Class for muhurta</th></tr></thead><tbody><tr><td><strong>Ashwini</strong></td><td>Deva</td><td>Horse (male)</td><td>Adi (Vata)</td><td>Dharma</td><td>Light (Kshipra)</td></tr><tr><td><strong>Bharani</strong></td><td>Manushya</td><td>Elephant (male)</td><td>Madhya (Pitta)</td><td>Artha</td><td>Fierce (Ugra)</td></tr><tr><td><strong>Krittika</strong></td><td>Rakshasa</td><td>Sheep (female)</td><td>Antya (Kapha)</td><td>Kama</td><td>Mixed (Mishra)</td></tr><tr><td><strong>Rohini</strong></td><td>Manushya</td><td>Serpent (male)</td><td>Antya (Kapha)</td><td>Moksha</td><td>Fixed (Dhruva)</td></tr><tr><td><strong>Mrigashira</strong></td><td>Deva</td><td>Serpent (female)</td><td>Madhya (Pitta)</td><td>Moksha</td><td>Soft (Mridu)</td></tr><tr><td><strong>Ardra</strong></td><td>Manushya</td><td>Dog (female)</td><td>Adi (Vata)</td><td>Kama</td><td>Sharp (Tikshna)</td></tr><tr><td><strong>Punarvasu</strong></td><td>Deva</td><td>Cat (female)</td><td>Adi (Vata)</td><td>Artha</td><td>Movable (Chara)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Shakti (power)</th><th>Favourable for</th></tr></thead><tbody><tr><td><strong>Ashwini</strong></td><td><em>shidhra-vyapani</em>: power to reach things quickly</td><td>Opening a shop, selling, starting education, ornaments, arts; Light-class works also suit movable tasks such as travel.</td></tr><tr><td><strong>Bharani</strong></td><td><em>apa-bharani</em>: power to take away, to carry off</td><td>Bold, forceful work: surgery, work with fire, buying or selling arms. Not for gentle new starts.</td></tr><tr><td><strong>Krittika</strong></td><td><em>dahana</em>: power to burn</td><td>Work with fire and metal, welding, preparing medicines, agnihotra. Ordinary rather than auspicious for new ventures.</td></tr><tr><td><strong>Rohini</strong></td><td><em>rohana</em>: power of growth</td><td>Foundations, sowing and planting, building, starting a job, marriage, upanayana, coronation.</td></tr><tr><td><strong>Mrigashira</strong></td><td><em>prinana</em>: power to give fulfilment</td><td>Singing and learning music, clothing, friendships, ornaments, marriage. Gentle works.</td></tr><tr><td><strong>Ardra</strong></td><td><em>yatna</em>: power of effort</td><td>Forceful, hard tasks, taming and training animals, hatha yoga and sadhana, tantric work. Poor for gentle new beginnings.</td></tr><tr><td><strong>Punarvasu</strong></td><td><em>vasutva-prapana</em>: power to regain wealth or substance</td><td>Travel, riding vehicles, anything that involves motion.</td></tr></tbody></table></div><p class=\"note\">Shakti names: these are the powers listed under the Taittiriya Brahmana (nakshatra section) with the commentary of Bhatta Bhaskara, as compiled in modern books. This list was compared with one modern compilation. Not verified against the original text: each term in the Sanskrit. Translations of the English meanings vary between authors. Use them as flavour, not as proof.</p><p class=\"note\">The purpose column follows the table printed on two modern nakshatra reference sites that agree with each other. Older and regional tables differ in places, and there is no single classical verse that fixes all 27. Tri-guna (sattva, rajas, tamas) assignments differ even more between teachers, so this course leaves them out rather than pick one table.</p><h2>Padas and their navamsa signs</h2><p>Each pada is 3°20′, counted from the start of the nakshatra. The signs below are the D9 sign of each pada, from the rule in lesson 3-1.</p><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Span</th><th>Pada 1 navamsa</th><th>Pada 2</th><th>Pada 3</th><th>Pada 4</th></tr></thead><tbody><tr><td><strong>Ashwini</strong></td><td>Aries 0°00′ – 13°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Bharani</strong></td><td>Aries 13°20′ – 26°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Krittika</strong></td><td>Aries 26°40′ – Taurus 10°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Rohini</strong></td><td>Taurus 10°00′ – 23°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Mrigashira</strong></td><td>Taurus 23°20′ – Gemini 6°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Ardra</strong></td><td>Gemini 6°40′ – 20°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Punarvasu</strong></td><td>Gemini 20°00′ – Cancer 3°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr></tbody></table></div><h2>The nakshatras one by one</h2><h3>1 · Ashwini <span class=\"skt\">अश्विनी</span></h3><p>The Ashvins are the twin physicians of the gods, riders of a swift chariot who appear at dawn. In the Rig Veda they restore youth to the aged sage Chyavana and rescue the shipwrecked. They are healers first, and they arrive fast.</p><p><strong>Reads as:</strong> Speed, first-mover energy and a healer’s hands. Starts things, often before the plan is ready. The shadow is impatience: many beginnings, fewer finishes.</p><h3>2 · Bharani <span class=\"skt\">भरणी</span></h3><p>Yama, first mortal to die and so lord of the dead, weighs deeds and keeps dharma. In the Katha Upanishad the boy Nachiketa sits three nights at his door and makes him teach what lies beyond death. Bharani is the one who bears the load and carries things across.</p><p><strong>Reads as:</strong> Intensity with restraint: the capacity to carry heavy responsibility, hold desire and discipline together, and see things through to an end. Extremes of appetite and austerity are both common.</p><h3>3 · Krittika <span class=\"skt\">कृत्तिका</span></h3><p>Agni carries the sacrificial offering to the gods. In the Skanda story the six Krittikas, the Pleiades, nurse the infant Kartikeya after Agni bears Shiva’s seed to the Ganga. The fire that purifies and the women who raise a war-god are the same star.</p><p><strong>Reads as:</strong> A cutting, purifying mind: sharp speech, high standards, a talent for editing out what is false. Authority comes from the Sun’s rulership. The shadow is harshness toward others.</p><h3>4 · Rohini <span class=\"skt\">रोहिणी</span></h3><p>Rohini is the favourite of the Moon’s 27 wives, daughters of Daksha. When Chandra lavished his time on her, the others complained and Daksha cursed him to wane. The waning of the Moon is the traditional explanation of that curse.</p><p><strong>Reads as:</strong> Growth, beauty, magnetism and a love of comfort. Things planted here tend to take root. The shadow is attachment, possessiveness and difficulty letting go.</p><h3>5 · Mrigashira <span class=\"skt\">मृगशिरा</span></h3><p>Soma is both the Moon and the sacred plant-drink of the Vedic ritual. In the Aitareya Brahmana story Prajapati takes the form of a stag; the gods make a fierce archer, Rudra, who shoots him. The sky is read as the stag (Mrigashira), the hunter star Mrigavyadha (Sirius) and the arrow.</p><p><strong>Reads as:</strong> A searcher: curious, gentle, always looking for the next thing. Research, travel and enquiry suit it. The shadow is restlessness that never settles on one answer.</p><h3>6 · Ardra <span class=\"skt\">आर्द्रा</span></h3><p>Rudra, “the howler”, is the storm and the hunter, an older form of Shiva whose arrows bring sickness and also healing. Ardra means “moist”: the first rain after a dry spell, tears, the storm that breaks and then clears.</p><p><strong>Reads as:</strong> Emotional storms followed by clarity. Strong intellect with an edge, drawn to technology, research and breaking old structures. The shadow is destructiveness and mood swings.</p><h3>7 · Punarvasu <span class=\"skt\">पुनर्वसु</span></h3><p>Aditi, “the boundless”, is mother of the gods. Punarvasu means “good again”: the arrow returns to the quiver and the traveller returns home. Valmiki places Rama’s birth under Punarvasu.</p><p><strong>Reads as:</strong> Renewal and return. Optimistic, tolerant, a natural teacher and shelterer. Recovers well after setbacks. The shadow is drifting without settling.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Rohini’s deity.</strong> The Vedic name is Prajapati. Later books identify Prajapati with Brahma and list Brahma. The Brihat Samhita’s deity table (ch. 98, as in Iyer’s English translation) lists Prajapati for Rohini and Brahma for Abhijit.</p>\n<p><strong>Ashwini’s class.</strong> Muhurta lists place Ashwini with the Light (Kshipra) nakshatras, as here. Some modern reference tables label it Movable instead. Check which table a panchang uses before comparing.</p>\n<p><strong>Symbols.</strong> Bharani is a yoni (womb) in most lists. Ardra is a teardrop in most lists, a diamond or a head in some. Punarvasu is a quiver in most lists, a bow or a house in some. Krittika is a razor or a flame. None changes the meaning much, but quizzes and software pick one.</p>\n<p><strong>The Moon’s exaltation.</strong> Many books say the Moon is exalted “in Rohini”. The exaltation degree is Taurus 3°, which falls in Krittika, pada 2. Rohini is where the tradition places the Moon’s favourite, not its exact exaltation point.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Pick any date and look up the Moon’s nakshatra in two independent Lahiri-based panchangs. They must agree. If they differ by one nakshatra, one of them uses another ayanamsa or the Moon is within a few arcminutes of the boundary. Do the same with the engine: ask for your own natal chart, then check that the nakshatra of each planet matches a free chart you cast elsewhere.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Five of your planets sit in this group of seven:</p><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Placement</th><th>Star lord</th><th>D9 (from the pada)</th></tr></thead><tbody><tr><td>Saturn</td><td>Aries 7°41′, Ashwini pada 3</td><td>Ketu</td><td>Gemini</td></tr><tr><td>Venus</td><td>Taurus 8°18′, Krittika pada 4</td><td>Sun</td><td>Pisces</td></tr><tr><td>Mars</td><td>Taurus 29°19′, Mrigashira pada 2</td><td>Mars</td><td>Virgo</td></tr><tr><td>Sun</td><td>Gemini 10°41′, Ardra pada 2</td><td>Rahu</td><td>Capricorn</td></tr><tr><td>Mercury</td><td>Gemini 28°10′, Punarvasu pada 3</td><td>Jupiter</td><td>Gemini (vargottama)</td></tr></tbody></table></div>\n<p>Your Saturn is debilitated in Aries but sits in Ashwini, the first nakshatra, with Ketu as its lord. Your Mercury in Punarvasu pada 3 has the same sign in D1 and D9 (Gemini), which is the vargottama condition. Both of these are facts from the engine, not readings.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Ashwini, Magha and Mula share the lord Ketu; Bharani, Purva Phalguni and Purva Ashadha share Venus. Learn the sets of three.</li><li>Ashwini is Deva, Light; Bharani Manushya, Fierce; Krittika Rakshasa, Mixed; Rohini Manushya, Fixed; Mrigashira Deva, Soft; Ardra Manushya, Sharp; Punarvasu Deva, Movable.</li><li>Rohini, Uttara Phalguni, Uttara Ashadha and Uttara Bhadrapada are the four Fixed nakshatras.</li><li>Krittika spans two signs: Aries 26°40′ to Taurus 10°. The Moon’s exaltation degree (Taurus 3°) is in Krittika.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> say the lord, deity and gana of each of your Saturn, Venus, Mars, Sun and Mercury nakshatras from memory, then check against the tables.</p>",
+   "listen": "Seven nakshatras from Ashwini to Punarvasu. Ashwini is ruled by Ketu, deity the Ashvins, the divine physicians, symbol a horse’s head, shakti the power to reach quickly. Bharani, ruled by Venus, deity Yama, symbol the womb, bears and carries. Krittika, ruled by the Sun, deity Agni, is the razor and the flame, and spans Aries and Taurus. Rohini, ruled by the Moon, is the growing, fixed nakshatra and the Moon’s favourite wife in the myth. Mrigashira, ruled by Mars, deity Soma, is the deer’s head, the searcher. Ardra, ruled by Rahu, deity Rudra, is the teardrop and the storm. Punarvasu, ruled by Jupiter, deity Aditi, is the quiver and the return. In your chart your Saturn is in Ashwini, your Venus in Krittika, your Mars in Mrigashira, your Sun in Ardra and your Mercury in Punarvasu.",
+   "sources": [
+    "Brihat Samhita (Varahamihira), chapters on the nakshatras and their deities",
+    "Taittiriya Brahmana, nakshatra section (Nakshatra Suktam)",
+    "Taittiriya Samhita, the nakshatra list",
+    "Muhurta Chintamani, classes of nakshatras",
+    "Jyotirnibandha, as cited for marriage nakshatra quarters",
+    "Ashtakoota tables: gana, yoni and nadi as used in the app's chart engine"
+   ],
+   "quiz": [
+    {
+     "q": "Which nakshatra has Agni as its deity and a razor or flame as its symbol?",
+     "o": [
+      "Bharani",
+      "Krittika",
+      "Ardra",
+      "Mrigashira"
+     ],
+     "a": 1,
+     "w": "Agni is the fire god; Krittika is the razor-or-flame star."
+    },
+    {
+     "q": "Which nakshatra is both Fixed in class and Manushya in gana?",
+     "o": [
+      "Rohini",
+      "Ashwini",
+      "Mrigashira",
+      "Punarvasu"
+     ],
+     "a": 0,
+     "w": "Rohini is Fixed (Dhruva) and Manushya. Ashwini and Punarvasu are Deva; Mrigashira is Deva and Soft."
+    },
+    {
+     "q": "Where does the Moon’s exaltation degree (Taurus 3°) actually fall?",
+     "o": [
+      "Rohini, pada 1",
+      "Ashwini, pada 4",
+      "Krittika, pada 2",
+      "Mrigashira, pada 2"
+     ],
+     "a": 2,
+     "w": "Krittika runs from Aries 26°40′ to Taurus 10°. Taurus 3° is in its second pada. Rohini starts at Taurus 10°."
+    },
+    {
+     "q": "Ardra’s lord is Rahu. Which nakshatra after it has Jupiter as lord?",
+     "o": [
+      "Pushya",
+      "Mrigashira",
+      "Ashlesha",
+      "Punarvasu"
+     ],
+     "a": 3,
+     "w": "Order: Ardra (Rahu), Punarvasu (Jupiter), Pushya (Saturn), Ashlesha (Mercury)."
+    },
+    {
+     "q": "Which is the yoni of Mrigashira and Rohini?",
+     "o": [
+      "Horse",
+      "Serpent",
+      "Sheep",
+      "Cat"
+     ],
+     "a": 1,
+     "w": "Rohini is the male serpent and Mrigashira the female serpent in the Ashtakoota yoni table."
+    }
+   ]
+  },
+  {
+   "id": "3-3",
+   "title": "Nakshatras 8–14: Pushya to Chitra",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> In lesson 3-2 you met Rohini. Where does the Moon’s exaltation degree fall, and in which nakshatra?</p><p>This lesson covers nakshatras 8 to 14 in zodiac order. Read the tables first, then the stories. The stories are there to make the table stick.</p><h2>The reference tables</h2><div class=\"tbl\"><table><thead><tr><th>#</th><th>Nakshatra</th><th>Span (sidereal)</th><th>Lord</th><th>Deity</th><th>Symbol</th></tr></thead><tbody><tr><td>8</td><td><strong>Pushya</strong><br><span class=\"skt\">पुष्य</span></td><td>Cancer 3°20′ – 16°40′</td><td>Saturn</td><td>Brihaspati</td><td>Cow’s udder, lotus or flower</td></tr><tr><td>9</td><td><strong>Ashlesha</strong><br><span class=\"skt\">आश्लेषा</span></td><td>Cancer 16°40′ – 30°00′</td><td>Mercury</td><td>Sarpas (the Nagas)</td><td>Coiled serpent</td></tr><tr><td>10</td><td><strong>Magha</strong><br><span class=\"skt\">मघा</span></td><td>Leo 0°00′ – 13°20′</td><td>Ketu</td><td>Pitris (the ancestors)</td><td>Royal throne, palanquin</td></tr><tr><td>11</td><td><strong>Purva Phalguni</strong><br><span class=\"skt\">पूर्वफल्गुनी</span></td><td>Leo 13°20′ – 26°40′</td><td>Venus</td><td>Bhaga (Aryaman in the Taittiriya Brahmana)</td><td>Front legs of a bed, hammock</td></tr><tr><td>12</td><td><strong>Uttara Phalguni</strong><br><span class=\"skt\">उत्तरफल्गुनी</span></td><td>Leo 26°40′ – Virgo 10°00′</td><td>Sun</td><td>Aryaman (Bhaga in the Taittiriya Brahmana)</td><td>Back legs of a bed</td></tr><tr><td>13</td><td><strong>Hasta</strong><br><span class=\"skt\">हस्त</span></td><td>Virgo 10°00′ – 23°20′</td><td>Moon</td><td>Savitar</td><td>Hand, open palm</td></tr><tr><td>14</td><td><strong>Chitra</strong><br><span class=\"skt\">चित्रा</span></td><td>Virgo 23°20′ – Libra 6°40′</td><td>Mars</td><td>Tvashtar (Vishvakarma)</td><td>Bright jewel, pearl</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Gana</th><th>Yoni</th><th>Nadi</th><th>Purpose (purushartha)</th><th>Class for muhurta</th></tr></thead><tbody><tr><td><strong>Pushya</strong></td><td>Deva</td><td>Sheep (male)</td><td>Madhya (Pitta)</td><td>Dharma</td><td>Light (Kshipra)</td></tr><tr><td><strong>Ashlesha</strong></td><td>Rakshasa</td><td>Cat (male)</td><td>Antya (Kapha)</td><td>Dharma</td><td>Sharp (Tikshna)</td></tr><tr><td><strong>Magha</strong></td><td>Rakshasa</td><td>Rat (male)</td><td>Antya (Kapha)</td><td>Artha</td><td>Fierce (Ugra)</td></tr><tr><td><strong>Purva Phalguni</strong></td><td>Manushya</td><td>Rat (female)</td><td>Madhya (Pitta)</td><td>Kama</td><td>Fierce (Ugra)</td></tr><tr><td><strong>Uttara Phalguni</strong></td><td>Manushya</td><td>Cow (male)</td><td>Adi (Vata)</td><td>Moksha</td><td>Fixed (Dhruva)</td></tr><tr><td><strong>Hasta</strong></td><td>Deva</td><td>Buffalo (female)</td><td>Adi (Vata)</td><td>Moksha</td><td>Light (Kshipra)</td></tr><tr><td><strong>Chitra</strong></td><td>Rakshasa</td><td>Tiger (female)</td><td>Madhya (Pitta)</td><td>Kama</td><td>Soft (Mridu)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Shakti (power)</th><th>Favourable for</th></tr></thead><tbody><tr><td><strong>Pushya</strong></td><td><em>brahmavarchasa</em>: power to create spiritual energy</td><td>Light-class works such as opening a shop, education and ornaments, and most auspicious works. Not for marriage (all the sources consulted agree).</td></tr><tr><td><strong>Ashlesha</strong></td><td><em>visha-sleshana</em>: power to inflict or to bind with poison</td><td>Fierce works only. Avoid auspicious new starts.</td></tr><tr><td><strong>Magha</strong></td><td><em>tyaga-kshepani</em>: power to leave the body, to cast off</td><td>Rites for ancestors, authority and administration, marriage (but the first quarter is rejected by Jyotirnibandha).</td></tr><tr><td><strong>Purva Phalguni</strong></td><td><em>prajanana</em>: power of procreation</td><td>Forceful works: surgery, arms, fire.</td></tr><tr><td><strong>Uttara Phalguni</strong></td><td><em>chayani</em>: power to give prosperity through union</td><td>Foundations, agriculture, starting a service, marriage (though some teachers avoid it for marriage).</td></tr><tr><td><strong>Hasta</strong></td><td><em>hasta-sthapaniya-agama</em>: power to place what is sought into one’s hand</td><td>Opening a shop, selling, education, ornaments, arts, marriage.</td></tr><tr><td><strong>Chitra</strong></td><td><em>punya-chayani</em>: power to accumulate merit</td><td>Fine arts, music, clothing, ornaments, friendships.</td></tr></tbody></table></div><p class=\"note\">Shakti names: these are the powers listed under the Taittiriya Brahmana (nakshatra section) with the commentary of Bhatta Bhaskara, as compiled in modern books. This list was compared with one modern compilation. Not verified against the original text: each term in the Sanskrit. Translations of the English meanings vary between authors. Use them as flavour, not as proof.</p><p class=\"note\">The purpose column follows the table printed on two modern nakshatra reference sites that agree with each other. Older and regional tables differ in places, and there is no single classical verse that fixes all 27. Tri-guna (sattva, rajas, tamas) assignments differ even more between teachers, so this course leaves them out rather than pick one table.</p><h2>Padas and their navamsa signs</h2><p>Each pada is 3°20′, counted from the start of the nakshatra. The signs below are the D9 sign of each pada, from the rule in lesson 3-1.</p><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Span</th><th>Pada 1 navamsa</th><th>Pada 2</th><th>Pada 3</th><th>Pada 4</th></tr></thead><tbody><tr><td><strong>Pushya</strong></td><td>Cancer 3°20′ – 16°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Ashlesha</strong></td><td>Cancer 16°40′ – 30°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Magha</strong></td><td>Leo 0°00′ – 13°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Purva Phalguni</strong></td><td>Leo 13°20′ – 26°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Uttara Phalguni</strong></td><td>Leo 26°40′ – Virgo 10°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Hasta</strong></td><td>Virgo 10°00′ – 23°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Chitra</strong></td><td>Virgo 23°20′ – Libra 6°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr></tbody></table></div><h2>The nakshatras one by one</h2><h3>8 · Pushya <span class=\"skt\">पुष्य</span></h3><p>Brihaspati is teacher and priest of the gods and “lord of prayer”. The Rig Veda calls this star Tishya, the auspicious one. The udder image is a nourishing, steady supply that asks nothing back.</p><p><strong>Reads as:</strong> Nourishing and dutiful. Pushya is the most widely praised nakshatra for constructive work. The Saturn lordship adds discipline; the shadow is conservatism and duty carried as burden.</p><h3>9 · Ashlesha <span class=\"skt\">आश्लेषा</span></h3><p>The Nagas are the serpent beings of the underworld. Vasuki served as the rope when gods and demons churned the ocean, and Shesha holds the world on his hoods. Ashlesha means “the clinging one”, the embrace that is hard to shake off.</p><p><strong>Reads as:</strong> Penetrating, strategic, hypnotic. Reads people and situations at depth. The shadow is clinging, secrecy and manipulation. The last part of Ashlesha is a gandanta zone (see below).</p><h3>10 · Magha <span class=\"skt\">मघा</span></h3><p>The Pitris live in the world of the ancestors and receive the offerings of their descendants in shraddha. Magha is the throne room of that lineage: authority is inherited and must be honoured.</p><p><strong>Reads as:</strong> Dignity, lineage, a sense of rank and a pull to honour ancestors. Natural leaders who can become proud. The shadow is entitlement.</p><h3>11 · Purva Phalguni <span class=\"skt\">पूर्वफल्गुनी</span></h3><p>Bhaga is the Aditya of fortune and of one’s rightful share. At Daksha’s sacrifice Bhaga lost his eyes, so fortune is said to be “blind” and must be earned by right action.</p><p><strong>Reads as:</strong> Enjoyment, creativity, romance, rest after effort. Magnetic and pleasure-loving. The shadow is indulgence and a taste for ease.</p><h3>12 · Uttara Phalguni <span class=\"skt\">उत्तरफल्गुनी</span></h3><p>Aryaman is the Aditya of hospitality, contracts and marriage alliances, and in the Gita Krishna calls him the chief of the Pitris. He is the patron of agreements made in good faith.</p><p><strong>Reads as:</strong> Reliable, helpful, a builder of alliances and long-term service. The shadow is over-obligation.</p><h3>13 · Hasta <span class=\"skt\">हस्त</span></h3><p>Savitar is the sun as the one who “impels”, to whom the Gayatri mantra is addressed. The Rig Veda gives him golden hands, which is why this star is a hand.</p><p><strong>Reads as:</strong> Skill of the hands and a quick, practical wit: craft, healing, trade, handling. The shadow is cunning used for small gains.</p><h3>14 · Chitra <span class=\"skt\">चित्रा</span></h3><p>Tvashtar is the divine craftsman who fashioned Indra’s thunderbolt and the forms of living things. The tradition often fuses him with Vishvakarma, the architect of the gods.</p><p><strong>Reads as:</strong> Design, brilliance and the urge to make something beautiful and exact. Charismatic, image-conscious. The shadow is vanity and perfectionism.</p><h3>Gandanta: the junction after Ashlesha</h3>\n<p>Ashlesha ends where Cancer ends, and Magha begins where Leo begins. This is a water-to-fire junction, and the Moon or lagna there is called {{term:gandanta|gandanta}}. Traditional texts treat birth in this junction as a sensitive start. Commonly it is taken as the last pada of Ashlesha and the first pada of Magha (3°20′ on each side).</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>The two Phalgunis.</strong> The Taittiriya Brahmana’s Nakshatra Suktam gives Aryaman to Purva Phalguni and Bhaga to Uttara Phalguni. The Brihat Samhita and most Jyotish books reverse this: Bhaga for Purva, Aryaman for Uttara. This lesson follows the Jyotish books. Both are classical, so know which one a teacher uses.</p>\n<p><strong>Chitra’s deity.</strong> Most Jyotish tables list Tvashtar. Some reference sites list Vishvakarma. In the tradition the two are often merged as the divine craftsman.</p>\n<p><strong>Uttara Phalguni and marriage.</strong> It is in the standard list of marriage nakshatras, yet some astrologers avoid it for weddings because of the story of Rama and Sita. This is a lineage choice.</p>\n<p><strong>Gandanta width.</strong> Commonly one pada on each side of the junction. Some authorities use a much narrower band at the exact junction. Treat the wider band as the caution zone.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>A Moon in the last pada of Ashlesha (Cancer 26°40′–30°) or the first of Magha (Leo 0°–3°20′) is within the gandanta band. If your birth time is uncertain, move it by ±5 minutes: the Moon travels about 0.05° in that time, so you only need to worry when the Moon is within a few arcminutes of the junction itself. Your Moon is nowhere near one.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your Moon is in Pushya, pada 2, at Cancer 8°04′ (D9 Virgo). Pushya is Light class, Deva gana, Madhya nadi, Saturn’s star with Brihaspati as deity. Your lagna, Virgo 21°52′, is in Hasta pada 4 (D9 Cancer). Your Rahu, Leo 10°33′, is in Magha pada 4 (D9 Cancer), so your lagna and Rahu share a D9 sign.</p>\n<p>That gives you three of your most important points in this one lesson: the Moon (mind), the lagna (body) and Rahu (the hungry node). Their star lords are Saturn (for the Moon), the Moon (for the lagna) and Ketu (for Rahu).</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Pushya is the most widely praised nakshatra for constructive work, but it is not used for marriage (the sources consulted agree).</li><li>Magha, Purva Phalguni: Fierce class. Uttara Phalguni: Fixed. Hasta: Light. Chitra: Soft. Ashlesha: Sharp. Pushya: Light.</li><li>The Phalguni deities are swapped between the Taittiriya Brahmana and the Brihat Samhita. Know which one your source uses.</li><li>Ashlesha to Magha is the first gandanta junction (Cancer to Leo).</li></ul></div><p class=\"muted\"><strong>Practice:</strong> find your Moon, lagna and Rahu in the tables, and write one line for each: nakshatra, lord, deity, gana, class.</p>",
+   "listen": "Seven nakshatras from Pushya to Chitra. Pushya is ruled by Saturn, deity Brihaspati, symbol the cow’s udder, Light class, Deva gana, and is the most praised for constructive work but not used for marriage. Ashlesha, ruled by Mercury, deity the Nagas, is the coiled serpent and a Sharp nakshatra. Magha, ruled by Ketu, deity the Pitris, is the throne. Purva Phalguni, Venus, is Bhaga, the front legs of a bed; Uttara Phalguni, the Sun, is Aryaman, the back legs. In the Taittiriya Brahmana these two deities are swapped. Hasta, ruled by the Moon, deity Savitar, is the hand, a Light nakshatra. Chitra, ruled by Mars, deity Tvashtar, is the bright jewel. Between Ashlesha and Magha lies the first gandanta junction. Your Moon is in Pushya pada two, your lagna in Hasta pada four and your Rahu in Magha pada four.",
+   "sources": [
+    "Brihat Samhita (Varahamihira), chapters on the nakshatras and their deities",
+    "Taittiriya Brahmana, nakshatra section (Nakshatra Suktam)",
+    "Taittiriya Samhita, the nakshatra list",
+    "Muhurta Chintamani, classes of nakshatras",
+    "Jyotirnibandha, as cited for marriage nakshatra quarters",
+    "Ashtakoota tables: gana, yoni and nadi as used in the app's chart engine"
+   ],
+   "quiz": [
+    {
+     "q": "Which of these nakshatras is traditionally not used for marriage?",
+     "o": [
+      "Pushya, in all four padas",
+      "Hasta, in all four padas",
+      "Magha (excluding its first quarter)",
+      "Uttara Phalguni, in all four padas"
+     ],
+     "a": 0,
+     "w": "Pushya is excluded for marriage by the sources consulted. Magha is accepted except its first quarter; Hasta is accepted; Uttara Phalguni is accepted though some avoid it."
+    },
+    {
+     "q": "Hasta’s deity and symbol are:",
+     "o": [
+      "Aryaman, a bed",
+      "Tvashtar, a jewel",
+      "Savitar, a hand",
+      "Indra, a throne"
+     ],
+     "a": 2,
+     "w": "Savitar, the sun as impeller, with golden hands in the Rig Veda; the symbol is the hand."
+    },
+    {
+     "q": "Magha is ruled by which planet?",
+     "o": [
+      "Saturn",
+      "Ketu",
+      "Venus",
+      "Mercury"
+     ],
+     "a": 1,
+     "w": "Round 2 of the lords begins at Magha (Ketu): Magha, Purva Phalguni (Venus), Uttara Phalguni (Sun)."
+    },
+    {
+     "q": "Ashlesha and Magha together form which junction?",
+     "o": [
+      "An exaltation junction",
+      "A kendra (angular) junction",
+      "A vargottama junction",
+      "A gandanta (water-to-fire)"
+     ],
+     "a": 3,
+     "w": "Ashlesha ends at the end of Cancer, Magha starts at the start of Leo."
+    },
+    {
+     "q": "Which is Chitra’s muhurta class?",
+     "o": [
+      "Soft (Mridu)",
+      "Fixed (Dhruva)",
+      "Sharp (Tikshna)",
+      "Movable (Chara)"
+     ],
+     "a": 0,
+     "w": "Soft: Mrigashira, Chitra, Anuradha, Revati."
+    }
+   ]
+  },
+  {
+   "id": "3-4",
+   "title": "Nakshatras 15–21: Swati to Uttara Ashadha",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is a gandanta, and where is the first one you met?</p><p>This lesson covers nakshatras 15 to 21 in zodiac order. Read the tables first, then the stories. The stories are there to make the table stick.</p><h2>The reference tables</h2><div class=\"tbl\"><table><thead><tr><th>#</th><th>Nakshatra</th><th>Span (sidereal)</th><th>Lord</th><th>Deity</th><th>Symbol</th></tr></thead><tbody><tr><td>15</td><td><strong>Swati</strong><br><span class=\"skt\">स्वाति</span></td><td>Libra 6°40′ – 20°00′</td><td>Rahu</td><td>Vayu</td><td>Young shoot swaying in wind (also coral or sword)</td></tr><tr><td>16</td><td><strong>Vishakha</strong><br><span class=\"skt\">विशाखा</span></td><td>Libra 20°00′ – Scorpio 3°20′</td><td>Jupiter</td><td>Indra-Agni (Indragni)</td><td>Triumphal arch (also a potter’s wheel)</td></tr><tr><td>17</td><td><strong>Anuradha</strong><br><span class=\"skt\">अनुराधा</span></td><td>Scorpio 3°20′ – 16°40′</td><td>Saturn</td><td>Mitra</td><td>Lotus (also an archway)</td></tr><tr><td>18</td><td><strong>Jyeshtha</strong><br><span class=\"skt\">ज्येष्ठा</span></td><td>Scorpio 16°40′ – 30°00′</td><td>Mercury</td><td>Indra</td><td>Circular amulet (also an earring or umbrella)</td></tr><tr><td>19</td><td><strong>Mula</strong><br><span class=\"skt\">मूल</span></td><td>Sagittarius 0°00′ – 13°20′</td><td>Ketu</td><td>Nirriti (Prajapati in some lists)</td><td>Bunch of tied roots</td></tr><tr><td>20</td><td><strong>Purva Ashadha</strong><br><span class=\"skt\">पूर्वाषाढा</span></td><td>Sagittarius 13°20′ – 26°40′</td><td>Venus</td><td>Apas (the Waters)</td><td>Fan or winnowing basket (also an elephant tusk)</td></tr><tr><td>21</td><td><strong>Uttara Ashadha</strong><br><span class=\"skt\">उत्तराषाढा</span></td><td>Sagittarius 26°40′ – Capricorn 10°00′</td><td>Sun</td><td>Vishvedevas (the All-gods)</td><td>Elephant tusk (also planks of a bed)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Gana</th><th>Yoni</th><th>Nadi</th><th>Purpose (purushartha)</th><th>Class for muhurta</th></tr></thead><tbody><tr><td><strong>Swati</strong></td><td>Deva</td><td>Buffalo (male)</td><td>Antya (Kapha)</td><td>Artha</td><td>Movable (Chara)</td></tr><tr><td><strong>Vishakha</strong></td><td>Rakshasa</td><td>Tiger (male)</td><td>Antya (Kapha)</td><td>Dharma</td><td>Mixed (Mishra)</td></tr><tr><td><strong>Anuradha</strong></td><td>Deva</td><td>Deer (female)</td><td>Madhya (Pitta)</td><td>Dharma</td><td>Soft (Mridu)</td></tr><tr><td><strong>Jyeshtha</strong></td><td>Rakshasa</td><td>Deer (male)</td><td>Adi (Vata)</td><td>Artha</td><td>Sharp (Tikshna)</td></tr><tr><td><strong>Mula</strong></td><td>Rakshasa</td><td>Dog (male)</td><td>Adi (Vata)</td><td>Kama</td><td>Sharp (Tikshna)</td></tr><tr><td><strong>Purva Ashadha</strong></td><td>Manushya</td><td>Monkey (male)</td><td>Madhya (Pitta)</td><td>Moksha</td><td>Fierce (Ugra)</td></tr><tr><td><strong>Uttara Ashadha</strong></td><td>Manushya</td><td>Mongoose (male)</td><td>Antya (Kapha)</td><td>Moksha</td><td>Fixed (Dhruva)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Shakti (power)</th><th>Favourable for</th></tr></thead><tbody><tr><td><strong>Swati</strong></td><td><em>pradhvamsa</em>: power to scatter like the wind</td><td>Travel, vehicles, trade, marriage.</td></tr><tr><td><strong>Vishakha</strong></td><td><em>vyapana</em>: power to gain many fruits</td><td>Fire and metal work, preparing medicines, ordinary tasks. Not for gentle new starts.</td></tr><tr><td><strong>Anuradha</strong></td><td><em>radhana</em>: power of worship, of success through devotion</td><td>Friendships, music, clothing, marriage.</td></tr><tr><td><strong>Jyeshtha</strong></td><td><em>arohana</em>: power to rise, to ascend</td><td>Fierce works, taming animals, hatha yoga. Avoid gentle new starts.</td></tr><tr><td><strong>Mula</strong></td><td><em>barhana</em>: power to break up, to uproot</td><td>Fierce works. Some lists accept it for marriage, except the first quarter.</td></tr><tr><td><strong>Purva Ashadha</strong></td><td><em>varchograhana</em>: power of invigoration</td><td>Forceful works: surgery, arms, fire.</td></tr><tr><td><strong>Uttara Ashadha</strong></td><td><em>apradhrishya</em>: power of unchallengeable victory</td><td>Foundations, agriculture, upanayana, marriage, starting a service.</td></tr></tbody></table></div><p class=\"note\">Shakti names: these are the powers listed under the Taittiriya Brahmana (nakshatra section) with the commentary of Bhatta Bhaskara, as compiled in modern books. This list was compared with one modern compilation. Not verified against the original text: each term in the Sanskrit. Translations of the English meanings vary between authors. Use them as flavour, not as proof.</p><p class=\"note\">The purpose column follows the table printed on two modern nakshatra reference sites that agree with each other. Older and regional tables differ in places, and there is no single classical verse that fixes all 27. Tri-guna (sattva, rajas, tamas) assignments differ even more between teachers, so this course leaves them out rather than pick one table.</p><h2>Padas and their navamsa signs</h2><p>Each pada is 3°20′, counted from the start of the nakshatra. The signs below are the D9 sign of each pada, from the rule in lesson 3-1.</p><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Span</th><th>Pada 1 navamsa</th><th>Pada 2</th><th>Pada 3</th><th>Pada 4</th></tr></thead><tbody><tr><td><strong>Swati</strong></td><td>Libra 6°40′ – 20°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Vishakha</strong></td><td>Libra 20°00′ – Scorpio 3°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Anuradha</strong></td><td>Scorpio 3°20′ – 16°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Jyeshtha</strong></td><td>Scorpio 16°40′ – 30°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Mula</strong></td><td>Sagittarius 0°00′ – 13°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Purva Ashadha</strong></td><td>Sagittarius 13°20′ – 26°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Uttara Ashadha</strong></td><td>Sagittarius 26°40′ – Capricorn 10°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr></tbody></table></div><h2>The nakshatras one by one</h2><h3>15 · Swati <span class=\"skt\">स्वाति</span></h3><p>Vayu is the wind, father of Hanuman and, by his gift, of Bhima. He is independent, restless and everywhere, as the shoot bends but does not break.</p><p><strong>Reads as:</strong> Independence, flexibility and a talent for trade and diplomacy. The shadow is scattering, being blown by every wind.</p><h3>16 · Vishakha <span class=\"skt\">विशाखा</span></h3><p>Indra and Agni are the king of the gods and the fire, invoked together in the Rig Veda as partners who win battles. Skanda is also called Vishakha in the epics.</p><p><strong>Reads as:</strong> Goal-driven, persistent, ambitious and ready to compete. The shadow is single-minded rivalry and jealousy.</p><h3>17 · Anuradha <span class=\"skt\">अनुराधा</span></h3><p>Mitra is the Aditya of friendship, oaths and agreements, partner of Varuna. Anuradha means “following Radha”, success that comes by devotion and loyalty.</p><p><strong>Reads as:</strong> Friendship, organisation and devotion. Does well far from home. The shadow is over-work and withheld feeling.</p><h3>18 · Jyeshtha <span class=\"skt\">ज्येष्ठा</span></h3><p>Indra, king of the gods, slayer of the serpent Vritra, holds the “eldest” (jyeshtha) rank. The myths show him powerful and insecure about it in equal measure.</p><p><strong>Reads as:</strong> Seniority, protectiveness and a need for status. Capable under pressure. The shadow is rivalry and fear of losing rank.</p><h3>19 · Mula <span class=\"skt\">मूल</span></h3><p>Nirriti is the goddess of dissolution and misfortune, honoured so that she keeps away. Mula means “root”: this star goes to the foundation of things and tears out what is rotten.</p><p><strong>Reads as:</strong> Investigates to the root, philosophical, uncompromising. Life tends to strip away false supports. The shadow is destruction for its own sake.</p><h3>20 · Purva Ashadha <span class=\"skt\">पूर्वाषाढा</span></h3><p>The Waters of the Rig Veda are mothers, healers and purifiers. They carry no army but they wear down stone, which is the idea of invincibility by persistence.</p><p><strong>Reads as:</strong> Persuasive, invigorating, undefeated by opposition. The shadow is stubborn pride.</p><h3>21 · Uttara Ashadha <span class=\"skt\">उत्तराषाढा</span></h3><p>The Vishvedevas are the assembly of all the gods, invited to every shraddha. This star is the final victory that is earned by dharma rather than by a single patron.</p><p><strong>Reads as:</strong> Lasting achievement through integrity. Slow to start, hard to defeat. The shadow is rigidity.</p><h3>Gandanta: Jyeshtha to Mula</h3>\n<p>Jyeshtha ends where Scorpio ends and Mula begins where Sagittarius begins: water to fire again. The same sensitive-junction idea applies, and the last pada of Jyeshtha and first pada of Mula are the usual caution zone. The Jyotirnibandha, as cited on a muhurta reference page, also rejects the first quarter of Mula for marriage, although Mula is otherwise on the marriage list.</p>\n<h3>Abhijit sits after this group</h3>\n<p>{{term:abhijit|abhijit}}, the short 28th nakshatra, belongs between Uttara Ashadha and Shravana. It is a muhurta extra. Its deity is Brahma in the Brihat Samhita.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Mula’s deity.</strong> The Nakshatra Suktam’s verse names Nirriti, the goddess of decay and dissolution. The Brihat Samhita’s deity table (ch. 98, Iyer’s translation) lists Prajapati for Mula, so both names are old. The idea of “root” (mula) fits either, but Nirriti is the more common choice in Jyotish books.</p>\n<p><strong>Symbols.</strong> Vishakha is a triumphal arch in most lists and a potter’s wheel in others. Anuradha is a lotus (some say an archway or a staff). Jyeshtha is a circular amulet, an earring or an umbrella. Purva and Uttara Ashadha both use a tusk in some lists, a fan or planks of a bed in others.</p>\n<p><strong>Vishakha’s name.</strong> Some call it Radha. “Anuradha” literally means “following Radha”, so the two names are linked in the tradition.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>The Moon’s nakshatra on any day is easy to cross-check with a panchang. The Moon at Swati to Uttara Ashadha spans roughly Libra to Sagittarius to early Capricorn. Look at a free panchang for a week in a Libra or Scorpio Moon, note the nakshatras, then check them against these spans. They should match exactly (Lahiri).</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>None of your nine planets or your lagna sits in these seven nakshatras. They matter to you through the Moon’s daily transit. Counted from your birth nakshatra, Pushya, these seven are:</p><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Count from Pushya</th><th>Tara</th></tr></thead><tbody><tr><td>Swati</td><td>8</td><td>Mitra</td></tr><tr><td>Vishakha</td><td>9</td><td>Param Mitra</td></tr><tr><td>Anuradha</td><td>10</td><td>Janma</td></tr><tr><td>Jyeshtha</td><td>11</td><td>Sampat</td></tr><tr><td>Mula</td><td>12</td><td>Vipat</td></tr><tr><td>Purva Ashadha</td><td>13</td><td>Kshema</td></tr><tr><td>Uttara Ashadha</td><td>14</td><td>Pratyak</td></tr></tbody></table></div>\n<p>Swati and Vishakha are the good ones (Mitra, Param Mitra). Anuradha is your second Janma tara (count 10). Jyeshtha is Sampat, Mula is Vipat, Purva Ashadha is Kshema and Uttara Ashadha is Pratyak. Lesson 3-6 explains what the taras mean.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Swati (Rahu, Vayu) and Vishakha (Jupiter, Indra-Agni) are Movable and Mixed; Anuradha (Saturn, Mitra) is Soft and Deva.</li><li>Jyeshtha and Mula are two of the four Sharp nakshatras; they bracket the second gandanta junction.</li><li>Mula’s deity: Nirriti (common) or Prajapati (some lists).</li><li>Purva Ashadha is Fierce, Uttara Ashadha Fixed and marriage-friendly.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> for each of the seven nakshatras, write the tara it has for your Pushya, then find the next date in the engine day table where the Moon is in each one.</p>",
+   "listen": "Seven nakshatras from Swati to Uttara Ashadha. Swati, ruled by Rahu, deity Vayu the wind, is the swaying shoot, a Movable nakshatra and good for trade. Vishakha, ruled by Jupiter, deity Indra and Agni together, is the arch, goal-driven and ambitious. Anuradha, ruled by Saturn, deity Mitra, is the lotus, friendship and devotion. Jyeshtha, ruled by Mercury, deity Indra, is the amulet, seniority and rivalry, a Sharp nakshatra. Mula, ruled by Ketu, deity Nirriti, is the tied roots, the nakshatra that goes to the root, also Sharp. Between Jyeshtha and Mula is the second gandanta junction. Purva Ashadha, ruled by Venus, deity the waters, invigorates. Uttara Ashadha, ruled by the Sun, deity the Vishvedevas, is the final victory, a Fixed nakshatra. None of your planets sits in these seven, but they matter for your daily tara bala.",
+   "sources": [
+    "Brihat Samhita (Varahamihira), chapters on the nakshatras and their deities",
+    "Taittiriya Brahmana, nakshatra section (Nakshatra Suktam)",
+    "Taittiriya Samhita, the nakshatra list",
+    "Muhurta Chintamani, classes of nakshatras",
+    "Jyotirnibandha, as cited for marriage nakshatra quarters",
+    "Ashtakoota tables: gana, yoni and nadi as used in the app's chart engine"
+   ],
+   "quiz": [
+    {
+     "q": "Which nakshatra has Mitra, the god of friendship and oaths, as deity?",
+     "o": [
+      "Vishakha",
+      "Anuradha",
+      "Jyeshtha",
+      "Swati"
+     ],
+     "a": 1,
+     "w": "Mitra is the Aditya of friendship, partner of Varuna. Anuradha’s symbol is the lotus."
+    },
+    {
+     "q": "Which pair of nakshatras are both Sharp (Tikshna)?",
+     "o": [
+      "Swati and Vishakha",
+      "Purva and Uttara Ashadha",
+      "Anuradha and Jyeshtha",
+      "Jyeshtha and Mula"
+     ],
+     "a": 3,
+     "w": "The four Sharp nakshatras are Ardra, Ashlesha, Jyeshtha and Mula."
+    },
+    {
+     "q": "What does the Nakshatra Suktam give as the deity of Mula?",
+     "o": [
+      "Nirriti",
+      "Varuna",
+      "Savitar",
+      "Apas"
+     ],
+     "a": 0,
+     "w": "Nirriti, the goddess of decay. Some lists substitute Prajapati (the Brihat Samhita table in Iyer’s translation does)."
+    },
+    {
+     "q": "Swati’s lord and class are:",
+     "o": [
+      "Jupiter, Mixed",
+      "Saturn, Soft",
+      "Rahu, Movable",
+      "Mars, Fierce"
+     ],
+     "a": 2,
+     "w": "Round 2 of lords: Magha (Ketu) … Chitra (Mars), Swati (Rahu), Vishakha (Jupiter), Anuradha (Saturn). Swati is in the Movable class."
+    },
+    {
+     "q": "For your Pushya, which tara is Anuradha?",
+     "o": [
+      "Mitra (first cycle, count 8)",
+      "Janma (second cycle, count 10)",
+      "Vipat (second cycle, count 12)",
+      "Param Mitra (first cycle, count 9)"
+     ],
+     "a": 1,
+     "w": "Count from Pushya = 1: Ashlesha 2 … Chitra 7, Swati 8, Vishakha 9, Anuradha 10. The tara repeats every 9, so 10 gives Janma again."
+    }
+   ]
+  },
+  {
+   "id": "3-5",
+   "title": "Nakshatras 22–27: Shravana to Revati",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which four nakshatras are Sharp, and which of them end in a gandanta junction?</p><p>This lesson covers nakshatras 22 to 27 in zodiac order. Read the tables first, then the stories. The stories are there to make the table stick.</p><h2>The reference tables</h2><div class=\"tbl\"><table><thead><tr><th>#</th><th>Nakshatra</th><th>Span (sidereal)</th><th>Lord</th><th>Deity</th><th>Symbol</th></tr></thead><tbody><tr><td>22</td><td><strong>Shravana</strong><br><span class=\"skt\">श्रवण</span></td><td>Capricorn 10°00′ – 23°20′</td><td>Moon</td><td>Vishnu</td><td>Ear (also three footprints)</td></tr><tr><td>23</td><td><strong>Dhanishta</strong><br><span class=\"skt\">धनिष्ठा</span></td><td>Capricorn 23°20′ – Aquarius 6°40′</td><td>Mars</td><td>The eight Vasus</td><td>Drum (also a flute)</td></tr><tr><td>24</td><td><strong>Shatabhisha</strong><br><span class=\"skt\">शतभिषा</span></td><td>Aquarius 6°40′ – 20°00′</td><td>Rahu</td><td>Varuna</td><td>Empty circle</td></tr><tr><td>25</td><td><strong>Purva Bhadrapada</strong><br><span class=\"skt\">पूर्वभाद्रपदा</span></td><td>Aquarius 20°00′ – Pisces 3°20′</td><td>Jupiter</td><td>Aja Ekapada</td><td>Front legs of a funeral cot (also a two-faced man, swords)</td></tr><tr><td>26</td><td><strong>Uttara Bhadrapada</strong><br><span class=\"skt\">उत्तरभाद्रपदा</span></td><td>Pisces 3°20′ – 16°40′</td><td>Saturn</td><td>Ahirbudhnya</td><td>Back legs of a funeral cot (also twins)</td></tr><tr><td>27</td><td><strong>Revati</strong><br><span class=\"skt\">रेवती</span></td><td>Pisces 16°40′ – 30°00′</td><td>Mercury</td><td>Pushan</td><td>Fish (also a drum)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Gana</th><th>Yoni</th><th>Nadi</th><th>Purpose (purushartha)</th><th>Class for muhurta</th></tr></thead><tbody><tr><td><strong>Shravana</strong></td><td>Deva</td><td>Monkey (female)</td><td>Antya (Kapha)</td><td>Artha</td><td>Movable (Chara)</td></tr><tr><td><strong>Dhanishta</strong></td><td>Rakshasa</td><td>Lion (female)</td><td>Madhya (Pitta)</td><td>Dharma</td><td>Movable (Chara)</td></tr><tr><td><strong>Shatabhisha</strong></td><td>Rakshasa</td><td>Horse (female)</td><td>Adi (Vata)</td><td>Dharma</td><td>Movable (Chara)</td></tr><tr><td><strong>Purva Bhadrapada</strong></td><td>Manushya</td><td>Lion (male)</td><td>Adi (Vata)</td><td>Artha</td><td>Fierce (Ugra)</td></tr><tr><td><strong>Uttara Bhadrapada</strong></td><td>Manushya</td><td>Cow (female)</td><td>Madhya (Pitta)</td><td>Kama</td><td>Fixed (Dhruva)</td></tr><tr><td><strong>Revati</strong></td><td>Deva</td><td>Elephant (female)</td><td>Antya (Kapha)</td><td>Moksha</td><td>Soft (Mridu)</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Shakti (power)</th><th>Favourable for</th></tr></thead><tbody><tr><td><strong>Shravana</strong></td><td><em>samhanana</em>: power to connect</td><td>Travel and riding vehicles.</td></tr><tr><td><strong>Dhanishta</strong></td><td><em>khyapayitri</em>: power to bring abundance and fame</td><td>Travel and riding vehicles.</td></tr><tr><td><strong>Shatabhisha</strong></td><td><em>bheshaja</em>: power of healing</td><td>Travel and riding vehicles. Healing fits the symbolism, although the classical class list is about movement.</td></tr><tr><td><strong>Purva Bhadrapada</strong></td><td><em>yajamana-udyamana</em>: power to lift the sacrificer</td><td>Forceful works: surgery, arms, fire. Avoid gentle new starts.</td></tr><tr><td><strong>Uttara Bhadrapada</strong></td><td><em>varshodyamana</em>: power to bring rain</td><td>Foundations, agriculture, marriage, starting a service.</td></tr><tr><td><strong>Revati</strong></td><td><em>kshiradyapani</em>: power of nourishment (milk)</td><td>Music, clothing, friendships, marriage (the last quarter is rejected by Jyotirnibandha).</td></tr></tbody></table></div><p class=\"note\">Shakti names: these are the powers listed under the Taittiriya Brahmana (nakshatra section) with the commentary of Bhatta Bhaskara, as compiled in modern books. This list was compared with one modern compilation. Not verified against the original text: each term in the Sanskrit. Translations of the English meanings vary between authors. Use them as flavour, not as proof.</p><p class=\"note\">The purpose column follows the table printed on two modern nakshatra reference sites that agree with each other. Older and regional tables differ in places, and there is no single classical verse that fixes all 27. Tri-guna (sattva, rajas, tamas) assignments differ even more between teachers, so this course leaves them out rather than pick one table.</p><h2>Padas and their navamsa signs</h2><p>Each pada is 3°20′, counted from the start of the nakshatra. The signs below are the D9 sign of each pada, from the rule in lesson 3-1.</p><div class=\"tbl\"><table><thead><tr><th>Nakshatra</th><th>Span</th><th>Pada 1 navamsa</th><th>Pada 2</th><th>Pada 3</th><th>Pada 4</th></tr></thead><tbody><tr><td><strong>Shravana</strong></td><td>Capricorn 10°00′ – 23°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Dhanishta</strong></td><td>Capricorn 23°20′ – Aquarius 6°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Shatabhisha</strong></td><td>Aquarius 6°40′ – 20°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr><tr><td><strong>Purva Bhadrapada</strong></td><td>Aquarius 20°00′ – Pisces 3°20′</td><td>Aries</td><td>Taurus</td><td>Gemini</td><td>Cancer</td></tr><tr><td><strong>Uttara Bhadrapada</strong></td><td>Pisces 3°20′ – 16°40′</td><td>Leo</td><td>Virgo</td><td>Libra</td><td>Scorpio</td></tr><tr><td><strong>Revati</strong></td><td>Pisces 16°40′ – 30°00′</td><td>Sagittarius</td><td>Capricorn</td><td>Aquarius</td><td>Pisces</td></tr></tbody></table></div><h2>The nakshatras one by one</h2><h3>22 · Shravana <span class=\"skt\">श्रवण</span></h3><p>Vishnu took three strides across the cosmos as Vamana, the dwarf, to win it back from Bali. Shravana means “hearing”: the star of listening, learning and the teaching that is passed by ear.</p><p><strong>Reads as:</strong> Learning by listening, connecting people and traditions. Fame can come through speaking or teaching. The shadow is gossip and over-reliance on what others say.</p><h3>23 · Dhanishta <span class=\"skt\">धनिष्ठा</span></h3><p>The Vasus are eight elemental gods of fire, earth, wind, sky and so on. In the Mahabharata one Vasu, cursed to be born as a human, becomes Bhishma, the lifelong vow-keeper. The listed names of the eight vary by text.</p><p><strong>Reads as:</strong> Rhythm, wealth, ambition and group success. Music and timing are strengths. The shadow is a hard, acquisitive streak.</p><h3>24 · Shatabhisha <span class=\"skt\">शतभिषा</span></h3><p>Varuna is lord of the cosmic waters and of rita, the moral order. “Hundred physicians” points to the herbs and rites by which he heals and binds.</p><p><strong>Reads as:</strong> Healing, research, secrecy and solitude. A mind that works alone. The shadow is isolation and hidden pain.</p><h3>25 · Purva Bhadrapada <span class=\"skt\">पूर्वभाद्रपदा</span></h3><p>Aja Ekapada, “the one-footed unborn”, is a Vedic storm and sun god who props up the sky on one foot. He is linked to Rudra and to the fire of sacrifice.</p><p><strong>Reads as:</strong> Intensity, idealism and a fierce drive that can burn through the old. The shadow is extremes and a two-faced life.</p><h3>26 · Uttara Bhadrapada <span class=\"skt\">उत्तरभाद्रपदा</span></h3><p>Ahirbudhnya, “the serpent of the deep”, lives in the cosmic waters, a guardian of what lies at the bottom of the sea. The rain he brings is the slow, soaking kind.</p><p><strong>Reads as:</strong> Depth, calm, endurance and wisdom. Good at long, quiet work. The shadow is withdrawal and over-caution.</p><h3>27 · Revati <span class=\"skt\">रेवती</span></h3><p>Pushan is shepherd of the roads and guide of travellers and herds. At Daksha’s sacrifice his teeth were knocked out, so he is shown eating soft food. The last star of the zodiac guides the journey home.</p><p><strong>Reads as:</strong> Gentle, protective and nourishing, a guide for others’ journeys. The shadow is over-giving and difficulty ending things.</p><h3>Gandanta: Revati to Ashwini</h3>\n<p>Revati ends where Pisces ends and Ashwini begins where Aries begins. This is the third water-to-fire junction and the one that closes the zodiac wheel. The last pada of Revati and the first pada of Ashwini are the caution zone. The Jyotirnibandha, as cited on a muhurta reference page, also rejects the last quarter of Revati for marriage.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>The Vasus.</strong> Dhanishta’s deity is the eight Vasus. Texts do not list the same eight names: the Mahabharata, the Puranas and the Vedic texts differ. The count of eight is stable.</p>\n<p><strong>Bhadrapada deities.</strong> Aja Ekapada and Ahirbudhnya are Vedic names, often treated as forms of Rudra. Some reference sites render them as one-footed and “serpent of the deep” forms of Rudra. Jyotish tables mostly agree on the names themselves.</p>\n<p><strong>Symbols.</strong> Both Bhadrapadas are shown as legs of a funeral cot (front and back), though in some lists Purva Bhadrapada is a two-faced man or swords and Uttara Bhadrapada is twins. Revati is a fish in most lists, a drum in some. Dhanishta is a drum or a flute.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>The last six nakshatras end the zodiac, so they give an arithmetic check: Shravana starts at 280° (Capricorn 10°) and Revati ends at 360°. Compute the start of each of the six as (number − 1) × 13°20′, then compare with the span column. Then re-run your Jupiter with another ayanamsa to see how a planet near an edge changes nakshatra.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Two of your planets sit in this group of six:</p><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Placement</th><th>Star lord</th><th>D9 (from the pada)</th></tr></thead><tbody><tr><td>Jupiter</td><td>Pisces 3°28′, Uttara Bhadrapada pada 1</td><td>Saturn</td><td>Leo</td></tr><tr><td>Ketu</td><td>Aquarius 10°33′, Shatabhisha pada 2</td><td>Rahu</td><td>Capricorn</td></tr></tbody></table></div><p>Jupiter is only 8′ past the start of Uttara Bhadrapada (Pisces 3°20′), the boundary with Purva Bhadrapada. Under Lahiri, KP and Raman ayanamsas it stays in Uttara Bhadrapada (3°28′, 3°34′, 4°55′), but under Fagan-Bradley it falls to Pisces 2°35′, in Purva Bhadrapada. Ketu in Shatabhisha is in Rahu’s nakshatra, and your Rahu is in Ketu’s nakshatra, Magha. The nodes sit in each other’s stars.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Shravana (Moon, Vishnu), Dhanishta (Mars, Vasus) and Shatabhisha (Rahu, Varuna) are all Movable.</li><li>Purva Bhadrapada is Fierce (Jupiter), Uttara Bhadrapada Fixed (Saturn), Revati Soft (Mercury).</li><li>Revati is the last nakshatra and, with Ashwini, forms the third gandanta junction.</li><li>Your Jupiter is only 8′ past the Purva/Uttara Bhadrapada boundary; boundaries depend on the ayanamsa.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> for your Jupiter and Ketu, write the nakshatra, pada, lord and D9 sign from the rules, then list which of the other planets also sit in a nakshatra ruled by Saturn or by the nodes.</p>",
+   "listen": "Six nakshatras from Shravana to Revati, the end of the zodiac. Shravana, ruled by the Moon, deity Vishnu, is the ear and the three footprints, Movable. Dhanishta, ruled by Mars, deity the eight Vasus, is the drum, Movable and Rakshasa gana. Shatabhisha, ruled by Rahu, deity Varuna, is the empty circle and the hundred physicians. Purva Bhadrapada, ruled by Jupiter, deity Aja Ekapada, is Fierce. Uttara Bhadrapada, ruled by Saturn, deity Ahirbudhnya, is Fixed, depth and endurance. Revati, ruled by Mercury, deity Pushan, the guide of travellers, is Soft, the last nakshatra. Between Revati and Ashwini is the third gandanta junction. Your Jupiter is in Uttara Bhadrapada pada one, only eight arcminutes past the boundary, and your Ketu is in Shatabhisha pada two.",
+   "sources": [
+    "Brihat Samhita (Varahamihira), chapters on the nakshatras and their deities",
+    "Taittiriya Brahmana, nakshatra section (Nakshatra Suktam)",
+    "Taittiriya Samhita, the nakshatra list",
+    "Muhurta Chintamani, classes of nakshatras",
+    "Jyotirnibandha, as cited for marriage nakshatra quarters",
+    "Ashtakoota tables: gana, yoni and nadi as used in the app's chart engine"
+   ],
+   "quiz": [
+    {
+     "q": "Which nakshatra has Varuna as deity and an empty circle as symbol?",
+     "o": [
+      "Dhanishta",
+      "Revati",
+      "Shravana",
+      "Shatabhisha"
+     ],
+     "a": 3,
+     "w": "Varuna, lord of the cosmic waters; Shatabhisha means “hundred physicians”."
+    },
+    {
+     "q": "Revati’s lord is:",
+     "o": [
+      "Mercury",
+      "Ketu",
+      "Jupiter",
+      "Venus"
+     ],
+     "a": 0,
+     "w": "Round 3 of the lords: Mula (Ketu) … Shatabhisha (Rahu), Purva Bhadrapada (Jupiter), Uttara Bhadrapada (Saturn), Revati (Mercury)."
+    },
+    {
+     "q": "Which of these nakshatras is in the Fixed class?",
+     "o": [
+      "Shatabhisha",
+      "Purva Bhadrapada",
+      "Uttara Bhadrapada",
+      "Dhanishta"
+     ],
+     "a": 2,
+     "w": "The four Fixed nakshatras are Rohini, Uttara Phalguni, Uttara Ashadha and Uttara Bhadrapada."
+    },
+    {
+     "q": "Dhanishta’s gana is:",
+     "o": [
+      "Deva (the divine class)",
+      "Rakshasa (the demonic class)",
+      "Manushya (the human class)",
+      "Mixed, between two classes"
+     ],
+     "a": 1,
+     "w": "Dhanishta and Shatabhisha are both Rakshasa; Shravana and Revati are Deva."
+    },
+    {
+     "q": "Where is the third gandanta junction?",
+     "o": [
+      "Between Revati and Ashwini",
+      "Between Shravana and Dhanishta",
+      "Between Mula and Purva Ashadha",
+      "Between Hasta and Chitra"
+     ],
+     "a": 0,
+     "w": "Pisces to Aries: water to fire, the end and start of the zodiac."
+    }
+   ]
+  },
+  {
+   "id": "3-6",
+   "title": "Tara bala, Chandra bala and the link to matching",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which nakshatra do you count as 1 for your tara bala, and what tara is the nakshatra that follows it?</p>\n<p>You can now read any nakshatra. This lesson builds {{term:tarabala|tara bala}} and {{term:chandrabala|chandra bala}} from the Moon’s <em>daily</em> nakshatra and sign against your own birth Moon to produce two quick day filters. They belong to {{term:muhurta|muhurta}}, the art of choosing times, not to prediction of events. Treat them as one filter among several, never as a verdict on a day.</p>\n<h2>Tara bala: nine taras</h2>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Rule</th><th>Example (your Pushya, Moon in Chitra)</th></tr></thead><tbody><tr><td>1. Count</td><td>From your birth nakshatra (counted as 1) to the Moon’s nakshatra today, inclusive</td><td>Pushya 1, Ashlesha 2, Magha 3, Purva Phalguni 4, Uttara Phalguni 5, Hasta 6, Chitra 7</td></tr><tr><td>2. Divide</td><td>Divide the count by 9 and keep the remainder (0 counts as 9)</td><td>7 ÷ 9 = 0 remainder 7</td></tr><tr><td>3. Read</td><td>The remainder is the tara</td><td>Remainder 7 is Naidhana, the worst</td></tr></tbody></table></div>\n<div class=\"tbl\"><table><thead><tr><th>Remainder</th><th>Tara</th><th>Meaning</th><th>Verdict</th></tr></thead><tbody><tr><td>1</td><td>Janma (birth)</td><td>The birth star itself</td><td>Mixed: avoid important new starts in the first cycle</td></tr><tr><td>2</td><td>Sampat</td><td>Wealth</td><td>Good</td></tr><tr><td>3</td><td>Vipat</td><td>Danger</td><td>Bad</td></tr><tr><td>4</td><td>Kshema</td><td>Well-being</td><td>Good</td></tr><tr><td>5</td><td>Pratyak (or Pratyari)</td><td>Obstacle</td><td>Bad</td></tr><tr><td>6</td><td>Sadhana (Sadhaka)</td><td>Achievement</td><td>Good</td></tr><tr><td>7</td><td>Naidhana (Vadha)</td><td>Harm, ending</td><td>Worst: avoid</td></tr><tr><td>8</td><td>Mitra</td><td>Friend</td><td>Good</td></tr><tr><td>9 (or 0)</td><td>Param Mitra (Atimitra)</td><td>Great friend</td><td>Best</td></tr></tbody></table></div>\n<p>Because 27 = 3 × 9, the nine taras repeat three times through the 27 nakshatras. Here is the full table for your birth nakshatra Pushya:</p>\n<div class=\"tbl\"><table><thead><tr><th>Tara</th><th>Counts</th><th>Cycle 1</th><th>Cycle 2</th><th>Cycle 3</th></tr></thead><tbody><tr><td>Janma</td><td>1, 10, 19</td><td>Pushya</td><td>Anuradha</td><td>Uttara Bhadrapada</td></tr><tr><td>Sampat</td><td>2, 11, 20</td><td>Ashlesha</td><td>Jyeshtha</td><td>Revati</td></tr><tr><td>Vipat</td><td>3, 12, 21</td><td>Magha</td><td>Mula</td><td>Ashwini</td></tr><tr><td>Kshema</td><td>4, 13, 22</td><td>Purva Phalguni</td><td>Purva Ashadha</td><td>Bharani</td></tr><tr><td>Pratyak</td><td>5, 14, 23</td><td>Uttara Phalguni</td><td>Uttara Ashadha</td><td>Krittika</td></tr><tr><td>Sadhana</td><td>6, 15, 24</td><td>Hasta</td><td>Shravana</td><td>Rohini</td></tr><tr><td>Naidhana</td><td>7, 16, 25</td><td>Chitra</td><td>Dhanishta</td><td>Mrigashira</td></tr><tr><td>Mitra</td><td>8, 17, 26</td><td>Swati</td><td>Shatabhisha</td><td>Ardra</td></tr><tr><td>Param Mitra</td><td>9, 18, 27</td><td>Vishakha</td><td>Purva Bhadrapada</td><td>Punarvasu</td></tr></tbody></table></div>\n<p>Notice the extra Janma stars: Anuradha (10th from Pushya) and Uttara Bhadrapada (19th). Some traditions call these the Anujanma and Trijanma stars and treat them with some caution, though not as strongly as the birth star itself.</p>\n<h2>Chandra bala: the Moon’s sign from your Moon</h2>\n<p>{{term:chandrabala|Chandra bala}} counts the sign of the Moon today from your natal Moon sign (counted as 1). Your Moon sign is Cancer.</p>\n<div class=\"tbl\"><table><thead><tr><th>House from your Moon</th><th>Sign for you</th><th>Verdict</th></tr></thead><tbody><tr><td>1</td><td>Cancer</td><td>Favourable</td></tr><tr><td>2</td><td>Leo</td><td>Caution or neutral (varies)</td></tr><tr><td>3</td><td>Virgo</td><td>Favourable</td></tr><tr><td>4</td><td>Libra</td><td>Unfavourable</td></tr><tr><td>5</td><td>Scorpio</td><td>Caution or neutral (varies)</td></tr><tr><td>6</td><td>Sagittarius</td><td>Favourable</td></tr><tr><td>7</td><td>Capricorn</td><td>Favourable</td></tr><tr><td>8</td><td>Aquarius</td><td>Unfavourable (Chandrashtama)</td></tr><tr><td>9</td><td>Pisces</td><td>Caution or neutral (varies)</td></tr><tr><td>10</td><td>Aries</td><td>Favourable</td></tr><tr><td>11</td><td>Taurus</td><td>Favourable</td></tr><tr><td>12</td><td>Gemini</td><td>Unfavourable</td></tr></tbody></table></div>\n<p>The 8th house, here Aquarius, is {{term:chandrashtama|Chandrashtama}}. The Moon is in it for about two and a quarter days a month. Panchang makers list the Moon’s sign for each day, so you can scan for it.</p>\n<h2>Using both together</h2>\n<p>Run both checks on the Moon’s position at the time you plan to act. The engine’s day table prints both for your chart. Sample lines (9 am and 6 pm, Satna time, Moon sign counted from your Cancer):</p>\n<div class=\"tbl\"><table><thead><tr><th>Date and time</th><th>Moon today</th><th>House from your Moon</th><th>Tara</th><th>Reading</th></tr></thead><tbody><tr><td>Sat 28 Nov, 9 am</td><td>Punarvasu</td><td>1 (Cancer)</td><td>Param Mitra</td><td>Both favourable</td></tr><tr><td>Sun 29 Nov, 6 pm</td><td>Ashlesha</td><td>1 (Cancer)</td><td>Sampat</td><td>Both favourable</td></tr><tr><td>Mon 30 Nov, 6 pm</td><td>Magha</td><td>2 (Leo)</td><td>Vipat</td><td>Tara bad, Chandra caution: wait</td></tr><tr><td>Tue 15 Dec, 9 am</td><td>Dhanishta</td><td>8 (Aquarius)</td><td>Naidhana</td><td>Chandrashtama and worst tara: avoid new starts</td></tr><tr><td>Wed 16 Dec, 6 pm</td><td>Purva Bhadrapada</td><td>8 (Aquarius)</td><td>Param Mitra</td><td>Good tara, but Chandrashtama still applies</td></tr><tr><td>Thu 17 Dec, 6 pm</td><td>Uttara Bhadrapada</td><td>9 (Pisces)</td><td>Janma (3rd cycle)</td><td>Chandra caution; Trijanma star</td></tr></tbody></table></div>\n<h2>Where nakshatras feed matching</h2>\n<p>Four of the eight kootas of the 36-point Ashtakoota method come straight from the Moon’s nakshatra: Tara (3), Yoni (4), Gana (6) and Nadi (8). That is 21 of the 36 points. Tara koota counts both ways between two birth stars, using the same nine taras. The full method, with its tables and its cancellations, is in the matching stage. For now it is enough to know that the attribute columns you met in lessons 3-2 to 3-5 are the data that matching uses.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Janma tara.</strong> Many panchangs list Janma as unfavourable, others as mixed. Regional practice differs, and some count only the first cycle as strongly adverse.</p>\n<p><strong>Tara names.</strong> Pratyak and Pratyari are the same fifth tara; Naidhana and Vadha are the same seventh; Param Mitra and Atimitra the same ninth. Spelling varies, the numbering does not.</p>\n<p><strong>Chandra bala houses.</strong> The common muhurta rule treats the 1st, 3rd, 6th, 7th, 10th and 11th houses from the natal Moon as favourable and the 4th, 8th and 12th as unfavourable. The 2nd, 5th and 9th are treated as caution by some panchangs and as acceptable under certain conditions (such as a bright, waxing Moon) by others. The waxing-Moon condition is not confirmed in a primary text here, so treat it as lineage-dependent.</p>\n<p><strong>Where to count from.</strong> Most muhurta books count Chandra bala from the natal Moon sign. Some also check the Moon’s house from the lagna.</p>\n<p><strong>Remedies.</strong> Some panchang sites list charity items for a bad tara (jaggery, salt, sesame seeds with gold). They are practices from the tradition, not part of the calculation. This course uses the checks for planning only.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Verify the engine’s day table by hand once. Pick a date, find the Moon’s nakshatra from any Lahiri panchang for the time you choose, count from Pushya, take the remainder mod 9 and look up the tara. Then count the Moon’s sign from Cancer. Compare with the engine’s line for the same hour. The Moon moves about half a degree an hour, so near a nakshatra or sign edge the answer can change within the day: check the hour before and after.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your birth nakshatra is Pushya and your Moon sign is Cancer. Your next Chandrashtama run after today is 15 to 17 Dec 2026 (Moon in Aquarius, per the engine). On the morning of 15 Dec the Moon is also in Dhanishta, your Naidhana tara, so both filters flag the day. By the evening of 17 Dec the Moon has moved to Pisces and Uttara Bhadrapada, your third Janma star.</p>\n<p class=\"note\">These filters help you time ordinary choices (signing, travelling, launching). They are not a forecast of what will happen to you. Log what you did on good and bad filter days in your prediction ledger for a month and compare the two lists honestly.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Tara bala: count inclusive from your birth star, remainder mod 9. Bad: 3, 5, 7 (Vipat, Pratyak, Naidhana); Janma is mixed.</li><li>The taras repeat three times through the 27 nakshatras: your Janma stars are Pushya, Anuradha and Uttara Bhadrapada.</li><li>Chandra bala: favourable houses 1, 3, 6, 7, 10, 11 from the natal Moon sign; 4, 8, 12 unfavourable; 2, 5, 9 vary.</li><li>Your Chandrashtama is the Moon in Aquarius.</li><li>Tara, Yoni, Gana and Nadi kootas (3 + 4 + 6 + 8 = 21 of 36 points) come from the Moon’s nakshatra.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> use the engine’s day command for the next ten days with your Moon sign (Cancer) and nakshatra (Pushya). Mark each day as green (both filters good), amber or red. Decide on a small action for a green day and a red day and record the result in your ledger.</p>",
+   "listen": "Two daily filters use the Moon of the day against your birth Moon. Tara bala: count from your birth nakshatra, counted as one, to the Moon’s nakshatra today, divide by nine and read the remainder. The nine taras are Janma, Sampat, Vipat, Kshema, Pratyak, Sadhana, Naidhana, Mitra and Param Mitra. Vipat, Pratyak and Naidhana are the unfavourable ones, and Janma is mixed. For your Pushya, the Janma stars are Pushya, Anuradha and Uttara Bhadrapada. Chandra bala counts the sign of the Moon today from your natal Moon sign. Houses one, three, six, seven, ten and eleven are favourable; four, eight and twelve are not. For your Cancer Moon, Aquarius is your Chandrashtama. Panchang practice varies on the second, fifth and ninth houses and on Janma. These are filters for choosing a time, not predictions. Four of the eight Ashtakoota kootas, worth twenty one of thirty six points, come from the Moon’s nakshatra.",
+   "sources": [
+    "Muhurta Chintamani, section on the nine taras (Navatara) and Chandra bala",
+    "Jyotirnibandha, as cited for muhurta rules",
+    "Hora Ratna, as cited for the Moon’s importance in muhurta",
+    "Ashtakoota tables as used in the app's chart engine (Tara, Yoni, Gana and Nadi rules)"
+   ],
+   "quiz": [
+    {
+     "q": "Your birth star is Pushya. The Moon is in Chitra. Which tara is it?",
+     "o": [
+      "Mitra (count 8)",
+      "Naidhana (count 7)",
+      "Sadhana (count 6)",
+      "Vipat (count 3)"
+     ],
+     "a": 1,
+     "w": "Pushya 1, Ashlesha 2, Magha 3, Purva Phalguni 4, Uttara Phalguni 5, Hasta 6, Chitra 7. Remainder 7 is Naidhana."
+    },
+    {
+     "q": "Which three taras are the unfavourable ones?",
+     "o": [
+      "Vipat, Pratyak, Naidhana",
+      "Janma, Sampat, Kshema",
+      "Sadhana, Mitra, Param Mitra",
+      "Sampat, Vipat, Mitra"
+     ],
+     "a": 0,
+     "w": "The 3rd, 5th and 7th taras. Janma is treated as mixed."
+    },
+    {
+     "q": "Your natal Moon sign is Cancer. Which Moon transit sign is Chandrashtama for you?",
+     "o": [
+      "Capricorn",
+      "Leo",
+      "Aquarius",
+      "Pisces"
+     ],
+     "a": 2,
+     "w": "The 8th sign from Cancer: Leo 2, Virgo 3, Libra 4, Scorpio 5, Sagittarius 6, Capricorn 7, Aquarius 8."
+    },
+    {
+     "q": "How many of the 36 Ashtakoota points come from Tara, Yoni, Gana and Nadi together?",
+     "o": [
+      "21",
+      "18",
+      "24",
+      "36"
+     ],
+     "a": 0,
+     "w": "3 + 4 + 6 + 8 = 21. The rest come from Varna, Vashya, Graha Maitri and Bhakoot."
+    },
+    {
+     "q": "Which of these is also a Janma star for your birth nakshatra, Pushya?",
+     "o": [
+      "Revati (20th from Pushya)",
+      "Ashwini (21st from Pushya)",
+      "Magha (3rd from Pushya)",
+      "Uttara Bhadrapada (19th)"
+     ],
+     "a": 3,
+     "w": "Counts 1, 10 and 19 are all Janma: Pushya, Anuradha, Uttara Bhadrapada."
+    }
+   ]
+  },
+  {
+   "id": "3-7",
+   "title": "The Vimshottari dasha balance at birth",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> How many tara cycles fit in 27 nakshatras, and which tara does count 19 give?</p>\n<p>The nakshatra system’s biggest job is to start the {{term:vimshottari|vimshottari}} {{term:dasha|dasha}} clock. Each {{term:mahadasha|mahadasha}} splits into {{term:antardasha|antardashas}}. This lesson computes it from scratch for your Moon and checks it against the engine.</p>\n<h2>The 120-year system</h2>\n<p>Nine planets share 120 years. They follow the nakshatra-lord order, so the lord of your Moon’s nakshatra rules the first dasha.</p>\n<div class=\"tbl\"><table><thead><tr><th>Lord</th><th>Years</th><th>Nakshatras it rules</th></tr></thead><tbody><tr><td>Ketu</td><td>7</td><td>Ashwini, Magha, Mula</td></tr><tr><td>Venus</td><td>20</td><td>Bharani, Purva Phalguni, Purva Ashadha</td></tr><tr><td>Sun</td><td>6</td><td>Krittika, Uttara Phalguni, Uttara Ashadha</td></tr><tr><td>Moon</td><td>10</td><td>Rohini, Hasta, Shravana</td></tr><tr><td>Mars</td><td>7</td><td>Mrigashira, Chitra, Dhanishta</td></tr><tr><td>Rahu</td><td>18</td><td>Ardra, Swati, Shatabhisha</td></tr><tr><td>Jupiter</td><td>16</td><td>Punarvasu, Vishakha, Purva Bhadrapada</td></tr><tr><td>Saturn</td><td>19</td><td>Pushya, Anuradha, Uttara Bhadrapada</td></tr><tr><td>Mercury</td><td>17</td><td>Ashlesha, Jyeshtha, Revati</td></tr></tbody></table></div>\n<p>7 + 20 + 6 + 10 + 7 + 18 + 16 + 19 + 17 = 120.</p>\n<h2>The idea in one sentence</h2>\n<p>At birth, the fraction of the Moon’s nakshatra already crossed equals the fraction of that lord’s dasha already used. What is left is the {{term:bhogya|dasha balance}}.</p>\n<h2>The computation, step by step, on your Moon</h2>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>1. Moon’s sidereal longitude</td><td>Engine: Cancer 8°04′ (98°03′47″ before rounding)</td><td>98°03′47″</td></tr><tr><td>2. Nakshatra and lord</td><td>98°03′47″ ÷ 13°20′ = 7.35, so the 8th, Pushya. Lord Saturn, 19 years</td><td>Pushya, Saturn</td></tr><tr><td>3. Start of Pushya</td><td>7 × 13°20′</td><td>93°20′00″</td></tr><tr><td>4. Elapsed (bhukta)</td><td>98°03′47″ − 93°20′00″</td><td>4°43′47″ = 283.8′</td></tr><tr><td>5. Fraction elapsed</td><td>283.8′ ÷ 800′</td><td>0.3547 (35.5%)</td></tr><tr><td>6. Years elapsed</td><td>19 × 0.3547</td><td>6.74 years</td></tr><tr><td>7. Balance (bhogya)</td><td>19 − 6.74, or 19 × (1 − 0.3547)</td><td>12.26 years = 12 years 3 months 4 days</td></tr><tr><td>8. Dasha start and end</td><td>Birth 26 Jun 1998 minus 6.74 years; plus 12.26 years</td><td>About 29 Sep 1991 to 29 Sep 2010</td></tr></tbody></table></div>\n<p>The engine’s Saturn mahadasha runs 1991-09-29 to 2010-09-29. Your own calculation agrees to the day.</p>\n<h2>The chain that follows</h2>\n<div class=\"tbl\"><table><thead><tr><th>Mahadasha</th><th>Years</th><th>From</th><th>To</th></tr></thead><tbody><tr><td>Saturn (balance 12.26 years)</td><td>19</td><td>1991-09-29 (before birth)</td><td>2010-09-29</td></tr><tr><td>Mercury</td><td>17</td><td>2010-09-29</td><td>2027-09-29</td></tr><tr><td>Ketu</td><td>7</td><td>2027-09-29</td><td>2034-09-29</td></tr><tr><td>Venus</td><td>20</td><td>2034-09-29</td><td>2054-09-29</td></tr><tr><td>Sun</td><td>6</td><td>2054-09-29</td><td>2060-09-29</td></tr><tr><td>Moon</td><td>10</td><td>2060-09-29</td><td>2070-09-29</td></tr></tbody></table></div>\n<p>Today (27 Nov 2026) you are in the Mercury mahadasha, and the engine’s antardasha is Mercury–Saturn, running 2025-01-19 to 2027-09-29. Your next mahadasha, Ketu, starts on 2027-09-29.</p>\n<h2>The antardasha at birth</h2>\n<p>Each mahadasha divides among all nine planets in proportion to years, beginning with its own lord: antardasha length (years) = MD years × AD years ÷ 120. For Saturn’s 19 years:</p>\n<div class=\"tbl\"><table><thead><tr><th>Saturn antardasha</th><th>Length (years)</th><th>Engine dates</th></tr></thead><tbody><tr><td>Saturn–Saturn</td><td>3.01</td><td>1991-09-29 to 1994-10-02</td></tr><tr><td>Saturn–Mercury</td><td>2.69</td><td>to 1997-06-11</td></tr><tr><td>Saturn–Ketu</td><td>1.11</td><td>to 1998-07-21 (you were born here)</td></tr><tr><td>Saturn–Venus</td><td>3.17</td><td>to 2001-09-20</td></tr><tr><td>Saturn–Sun</td><td>0.95</td><td>to 2002-09-02</td></tr><tr><td>Saturn–Moon</td><td>1.58</td><td>to 2004-04-02</td></tr><tr><td>Saturn–Mars</td><td>1.11</td><td>to 2005-05-12</td></tr><tr><td>Saturn–Rahu</td><td>2.85</td><td>to 2008-03-18</td></tr><tr><td>Saturn–Jupiter</td><td>2.53</td><td>to 2010-09-29</td></tr></tbody></table></div>\n<p>Cumulative: 3.01 + 2.69 = 5.70, then + 1.11 = 6.81. You were 6.74 years into Saturn at birth, which falls inside Saturn–Ketu (5.70 to 6.81). Your birth was about 0.07 years, roughly 25 days, before the end of that sub-period.</p>\n<h2>How sensitive is the balance?</h2>\n<p>Saturn’s 19 years spread over 13°20′, so each degree of the Moon is worth 19 ÷ 13.33 = 1.43 years of balance, and each arcminute about 9 days. Five minutes of birth time moves the Moon about 3′ and the balance by about 24 days.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Length of the year.</strong> The engine and most software count a dasha year as 365.25 days. Some traditional calculators and an option in JHora use a 360-day year (the savana year). For your Saturn balance of 12.26 years, the 360-day year would end the Saturn dasha about 64 days earlier, in late July 2010 instead of late September. The ratios are the same; the calendar dates differ.</p>\n<p><strong>Which dasha system.</strong> Vimshottari is the most widely used dasha in the Parashari tradition (BPHS treats it as the general-purpose dasha and describes other systems with conditions). Other nakshatra-based systems exist: Ashtottari (108 years) and Yogini (36 years) are often used under conditions, and they start from the Moon’s nakshatra in other ways. Compare them only once you know Vimshottari well.</p>\n<p><strong>Accuracy of the Moon.</strong> The method is exact arithmetic on the Moon’s position. Every difference in dates comes from the ayanamsa, the true or mean calendar year, and the birth time.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Three independent tests of your balance:</p><div class=\"tbl\"><table><thead><tr><th>Test</th><th>Moon</th><th>Pada</th><th>Saturn balance</th></tr></thead><tbody><tr><td>Lahiri (this course, engine)</td><td>Cancer 8°04′</td><td>Pushya 2</td><td>12.26 years</td></tr><tr><td>Birth time 12:54 (−5 min)</td><td>Cancer 8°01′</td><td>Pushya 2</td><td>12.33 years</td></tr><tr><td>Birth time 13:04 (+5 min)</td><td>Cancer 8°07′</td><td>Pushya 2</td><td>12.19 years</td></tr><tr><td>Krishnamurti (KP) ayanamsa</td><td>Cancer 8°10′</td><td>Pushya 2</td><td>12.12 years</td></tr><tr><td>Raman ayanamsa</td><td>Cancer 9°31′</td><td>Pushya 2</td><td>10.20 years</td></tr><tr><td>Fagan-Bradley ayanamsa</td><td>Cancer 7°11′</td><td>Pushya 2</td><td>13.52 years</td></tr><tr><td>Yukteshwar ayanamsa</td><td>Cancer 9°26′</td><td>Pushya 2</td><td>10.30 years</td></tr></tbody></table></div>\n<p>All the systems keep your Moon in Pushya pada 2, so the first dasha lord is Saturn everywhere. But the balance ranges from 10.2 to 13.5 years. Under Raman’s ayanamsa your Mercury dasha would begin about two years earlier, around September 2008 instead of September 2010. This is why a stored convention profile matters: every date in a reading depends on the ayanamsa and year length you chose.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your Moon at Cancer 8°04′ is 35.5% through Pushya, so you were born with 12.26 years of Saturn dasha remaining, and the dasha began on 29 Sep 1991. Saturn ended on 29 Sep 2010 and Mercury began. Mercury runs to 29 Sep 2027, then Ketu to 29 Sep 2034, then Venus (the longest, 20 years) to 29 Sep 2054. The engine’s output agrees with each step above.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Fraction of the nakshatra crossed = fraction of the lord’s dasha used.</li><li>Balance = lord’s years × (800′ − elapsed′) ÷ 800′.</li><li>Total 120 years, order Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury.</li><li>Your balance: Saturn, 12.26 years, ending 29 Sep 2010; you were born in Saturn–Ketu.</li><li>Dates move with the ayanamsa (here from −2.1 to +1.3 years across six ayanamsas), the year length (about 64 days over 12 years) and the birth time (about 5 days per minute).</li></ul></div><p class=\"muted\"><strong>Practice:</strong> without looking at the engine, compute the balance for a Moon at Taurus 3°20′ (33°20′, sidereal), then for your own Moon with the ayanamsa set to Raman (Cancer 9°31′). Check your first answer against the quiz, and the second against the cross-check table.</p>",
+   "listen": "The Vimshottari dasha gives the nine planets one hundred and twenty years in the nakshatra lord order: Ketu seven, Venus twenty, Sun six, Moon ten, Mars seven, Rahu eighteen, Jupiter sixteen, Saturn nineteen, Mercury seventeen. The Moon’s nakshatra at birth gives the first lord. The fraction of the nakshatra already crossed is the fraction of that dasha already used. Your Moon at ninety eight degrees three minutes forty seven seconds is four degrees forty three minutes into Pushya, which is thirty five and a half percent. Saturn’s nineteen years times thirty five and a half percent is six point seven four years used, leaving twelve point two six. Your Saturn dasha ran from September 1991 to September 2010, then Mercury to September 2027, then Ketu. At birth you were in Saturn Ketu. Dates shift by up to three years with the ayanamsa, about two months with a three hundred sixty day year, and about five days per minute of birth time.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on the Vimshottari dasha and its balance at birth",
+    "Jagannatha Hora documentation, dasha year options",
+    "Vimshottari dasha computed with the app's chart engine (365.25-day year, Lahiri ayanamsa)"
+   ],
+   "quiz": [
+    {
+     "q": "For a Moon at 33°20′ (Taurus 3°20′, sidereal), what is the first dasha and its balance?",
+     "o": [
+      "Sun, 3 years",
+      "Venus, 10 years",
+      "Sun, 6 years",
+      "Moon, 5 years"
+     ],
+     "a": 0,
+     "w": "33°20′ ÷ 13°20′ = 2.5, so the 3rd nakshatra, Krittika (lord Sun, 6 years), exactly half crossed. Balance = 6 × 0.5 = 3 years."
+    },
+    {
+     "q": "Your Moon is 35.5% through Pushya. What fraction of the Saturn dasha remains?",
+     "o": [
+      "About 35.5%",
+      "About 64.5%",
+      "About 50%",
+      "About 100%"
+     ],
+     "a": 1,
+     "w": "The fraction elapsed in the nakshatra equals the fraction of the dasha elapsed. 100% − 35.5% = 64.5% remains."
+    },
+    {
+     "q": "How many years does the Saturn mahadasha last, and which dasha follows it?",
+     "o": [
+      "16 years, Ketu",
+      "19 years, Ketu",
+      "19 years, Mercury",
+      "17 years, Mercury"
+     ],
+     "a": 2,
+     "w": "Saturn has 19 years. The order is Jupiter, Saturn, Mercury, Ketu, so Mercury follows."
+    },
+    {
+     "q": "A mahadasha of 19 years splits into antardashas. How long is Saturn–Mercury?",
+     "o": [
+      "About 2.69 years",
+      "About 1.11 years",
+      "About 3.17 years",
+      "About 17 years"
+     ],
+     "a": 0,
+     "w": "MD years × AD years ÷ 120 = 19 × 17 ÷ 120 = 2.69."
+    },
+    {
+     "q": "Under the Raman ayanamsa your Moon is still in Pushya, but your Saturn balance is shorter. Why?",
+     "o": [
+      "Raman uses a different dasha order for stars",
+      "The Moon sits further along Pushya, so more is crossed",
+      "Pushya has a different lord under Raman",
+      "Raman adds Abhijit as a 28th nakshatra and shifts the count"
+     ],
+     "a": 1,
+     "w": "Raman puts the Moon at Cancer 9°31′, so 6.2° of Pushya is crossed instead of 4.7°. The balance falls to 10.2 years."
+    }
+   ]
+  },
+  {
+   "id": "3-8",
+   "title": "Your chart’s nakshatras, and the stage test",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> State the recipe for the dasha balance in three lines.</p>\n<p>Time to put the stage together on your own chart. Every row below comes from the engine’s natal output and the nakshatra rules you have learned. Interpretation is labelled as such.</p>\n<h2>Your nakshatra table</h2>\n<div class=\"tbl\"><table><thead><tr><th>Point</th><th>Longitude</th><th>Nakshatra, pada</th><th>Star lord</th><th>D9 sign (from pada)</th><th>Gana</th></tr></thead><tbody><tr><td>Lagna</td><td>Virgo 21°52′</td><td>Hasta 4</td><td>Moon</td><td>Cancer</td><td>Deva</td></tr><tr><td>Sun</td><td>Gemini 10°41′</td><td>Ardra 2</td><td>Rahu</td><td>Capricorn</td><td>Manushya</td></tr><tr><td>Moon</td><td>Cancer 8°04′</td><td>Pushya 2</td><td>Saturn</td><td>Virgo</td><td>Deva</td></tr><tr><td>Mars</td><td>Taurus 29°19′</td><td>Mrigashira 2</td><td>Mars</td><td>Virgo</td><td>Deva</td></tr><tr><td>Mercury</td><td>Gemini 28°10′</td><td>Punarvasu 3</td><td>Jupiter</td><td>Gemini</td><td>Deva</td></tr><tr><td>Jupiter</td><td>Pisces 3°28′</td><td>Uttara Bhadrapada 1</td><td>Saturn</td><td>Leo</td><td>Manushya</td></tr><tr><td>Venus</td><td>Taurus 8°18′</td><td>Krittika 4</td><td>Sun</td><td>Pisces</td><td>Rakshasa</td></tr><tr><td>Saturn</td><td>Aries 7°41′</td><td>Ashwini 3</td><td>Ketu</td><td>Gemini</td><td>Deva</td></tr><tr><td>Rahu</td><td>Leo 10°33′</td><td>Magha 4</td><td>Ketu</td><td>Cancer</td><td>Rakshasa</td></tr><tr><td>Ketu</td><td>Aquarius 10°33′</td><td>Shatabhisha 2</td><td>Rahu</td><td>Capricorn</td><td>Rakshasa</td></tr></tbody></table></div>\n<h2>The star-lord chain</h2>\n<p>Many teachers read a planet through two lords: the lord of its sign and its {{term:starlord|star lord}}, the lord of its nakshatra. Here is where each of your planets’ star lords sits.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Nakshatra, pada</th><th>Star lord</th><th>Where the star lord is</th></tr></thead><tbody><tr><td>Sun</td><td>Ardra 2</td><td>Rahu</td><td>Rahu in H12 Leo, Magha 4</td></tr><tr><td>Moon</td><td>Pushya 2</td><td>Saturn</td><td>Saturn in H8 Aries 7°41′, Ashwini 3, debilitated</td></tr><tr><td>Mars</td><td>Mrigashira 2</td><td>Mars</td><td>Mars itself (own star lord), H9 Taurus, combust</td></tr><tr><td>Mercury</td><td>Punarvasu 3</td><td>Jupiter</td><td>Jupiter in H7 Pisces, Uttara Bhadrapada 1, own sign</td></tr><tr><td>Jupiter</td><td>Uttara Bhadrapada 1</td><td>Saturn</td><td>Saturn in H8 Aries, Ashwini 3</td></tr><tr><td>Venus</td><td>Krittika 4</td><td>Sun</td><td>Sun in H10 Gemini, Ardra 2</td></tr><tr><td>Saturn</td><td>Ashwini 3</td><td>Ketu</td><td>Ketu in H6 Aquarius, Shatabhisha 2</td></tr><tr><td>Rahu</td><td>Magha 4</td><td>Ketu</td><td>Ketu in H6 Aquarius, Shatabhisha 2</td></tr><tr><td>Ketu</td><td>Shatabhisha 2</td><td>Rahu</td><td>Rahu in H12 Leo, Magha 4</td></tr><tr><td>Lagna</td><td>Hasta 4</td><td>Moon</td><td>Moon in H11 Cancer, Pushya 2</td></tr></tbody></table></div>\n<p><strong>Patterns you can verify:</strong></p>\n<ul><li>Your Rahu and Ketu sit in each other’s nakshatras: Rahu in Magha (Ketu’s) and Ketu in Shatabhisha (Rahu’s).</li><li>Your Moon and your Jupiter both have Saturn as star lord, and Saturn is in the 8th house, debilitated in Ashwini.</li><li>Your Mars sits in Mars’s own nakshatra, Mrigashira, although Taurus is Venus’s sign. Mars is also combust (11°22′ from the Sun, inside the 17° orb most texts give for Mars) and rules your 3rd and 8th houses.</li><li>Your Saturn’s star lord is Ketu; your lagna’s star lord is the Moon.</li><li>Your Mercury is vargottama (Gemini in D1 and D9), and its star lord Jupiter is in its own sign in the 7th.</li></ul>\n<h2>The dasha clock, summarised</h2>\n<div class=\"tbl\"><table><thead><tr><th>Dasha</th><th>Period</th><th>Where the dasha lord sits</th></tr></thead><tbody><tr><td>Saturn (balance 12.26 years)</td><td>1991-09-29 to 2010-09-29</td><td>Saturn sits in Ashwini 3</td></tr><tr><td>Mercury</td><td>2010-09-29 to 2027-09-29</td><td>Mercury sits in Punarvasu 3</td></tr><tr><td>Ketu</td><td>2027-09-29 to 2034-09-29</td><td>Ketu sits in Shatabhisha 2</td></tr><tr><td>Venus</td><td>2034-09-29 to 2054-09-29</td><td>Venus sits in Krittika 4</td></tr></tbody></table></div>\n<p><strong>Interpretation, labelled as such.</strong> One way to read this is that the Mercury dasha you are in delivers through Jupiter’s nakshatra (Punarvasu) and the Mercury–Saturn period (2025-01-19 to 2027-09-29) delivers through Saturn’s Ashwini and Ketu. The Ketu dasha beginning on 2027-09-29 will deliver through Rahu’s Shatabhisha. That is a reading to test, not a result.</p>\n<p class=\"note\">A prediction made from this stage should go in your prediction ledger with a date range, the technique and your confidence. The claim should be falsifiable. The nakshatra table itself is fact. The “delivers through the star lord” idea is a teaching convention you can test against your own history.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Star lord as a rule.</strong> Many Parashari teachers use the nakshatra lord as a secondary lens on a planet. KP astrology goes further and makes the star lord (and a sub-lord inside each nakshatra) the decisive factor. Jaimini astrology does not use nakshatras in its core sign-based methods (chara karakas, arudhas, chara dasha). These are different weights on the same data.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run the same reading with two separate systems. Check your nakshatra table against a free chart cast with Lahiri ayanamsa. Then check the dasha chain against a different software’s Vimshottari output with the 365.25-day year. Differences of a few days are normal; differences of a year mean the ayanamsa or the birth time differs.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>This whole lesson is your chart. The key facts: your Moon is Pushya pada 2 (Saturn’s star); you were born in the Saturn mahadasha with 12.26 years left; you are now in Mercury–Saturn until 29 Sep 2027, when Ketu’s seven years begin; and your nodes exchange nakshatras.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Every point in your chart has a nakshatra, pada, star lord and D9 sign. You can derive all four by hand.</li><li>Your Moon’s nakshatra (Pushya, Saturn) gave your Saturn dasha start.</li><li>Your nodes sit in each other’s nakshatras.</li><li>The star lord is a teaching lens. Test it, do not assume it.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> write a one-page card for your own chart listing each planet’s nakshatra, pada, lord, deity and D9 sign. Then take the eight-question stage test without the tables.</p>",
+   "listen": "This lesson puts the stage together on your chart. Your lagna is in Hasta pada four, ruled by the Moon. Your Sun is in Ardra, Rahu’s star. Your Moon is in Pushya, Saturn’s star, and Jupiter in Uttara Bhadrapada is also Saturn’s. Mars is in Mrigashira, its own star. Mercury is in Punarvasu, Jupiter’s star, and vargottama in Gemini. Venus is in Krittika, the Sun’s star. Saturn is in Ashwini, Ketu’s star. Rahu is in Magha, Ketu’s, and Ketu in Shatabhisha, Rahu’s, so the nodes exchange stars. Each pada gives you the navamsa sign by arithmetic. Your Pushya Moon gave you twelve point two six years of Saturn dasha at birth, ending in September 2010; you are now in Mercury Saturn until September 2027, when Ketu begins. The star lord is a lens to test and log in your prediction ledger, not a verdict. Then take the eight question stage test without the tables.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on the nakshatras and the Vimshottari dasha",
+    "Engine natal output for 26 Jun 1998, 12:59, Satna (Lahiri ayanamsa)",
+    "KP Reader, on star lord and sub lord (for the school comparison only)"
+   ],
+   "quiz": [
+    {
+     "q": "The Moon’s sidereal longitude is 98°04′. How far into its nakshatra is it, and which pada?",
+     "o": [
+      "4°44′ into Pushya, pada 2",
+      "8°04′ into Pushya, pada 3",
+      "4°44′ into Punarvasu, pada 4",
+      "1°24′ into Ashlesha, pada 1"
+     ],
+     "a": 0,
+     "w": "Pushya starts at 93°20′. 98°04′ − 93°20′ = 4°44′, and 4°44′ ÷ 3°20′ = 1.42 gives pada 2."
+    },
+    {
+     "q": "Which of these gives the D9 sign for Ardra pada 2?",
+     "o": [
+      "Gemini",
+      "Virgo",
+      "Aries",
+      "Capricorn"
+     ],
+     "a": 3,
+     "w": "(4 × 5 + 1) mod 12 = 21 mod 12 = 9, which is Capricorn (Aries = 0)."
+    },
+    {
+     "q": "Which nakshatras are ruled by Mercury?",
+     "o": [
+      "Mrigashira, Chitra, Dhanishta",
+      "Ashlesha, Jyeshtha, Revati",
+      "Pushya, Anuradha, Uttara Bhadrapada",
+      "Punarvasu, Vishakha, Purva Bhadrapada"
+     ],
+     "a": 1,
+     "w": "Mercury is the last lord of each round: Ashlesha (9), Jyeshtha (18), Revati (27)."
+    },
+    {
+     "q": "Which of the following is a Fixed (Dhruva) nakshatra?",
+     "o": [
+      "Ashwini",
+      "Swati",
+      "Uttara Ashadha",
+      "Mula"
+     ],
+     "a": 2,
+     "w": "Fixed: Rohini, Uttara Phalguni, Uttara Ashadha, Uttara Bhadrapada."
+    },
+    {
+     "q": "The Moon is in Dhanishta today. Your birth nakshatra is Pushya. Which tara is it?",
+     "o": [
+      "Naidhana (count 16, remainder 7)",
+      "Mitra (count 16, remainder 8)",
+      "Sadhana (count 16, remainder 6)",
+      "Param Mitra (count 16, remainder 0)"
+     ],
+     "a": 0,
+     "w": "Pushya 1 … Vishakha 9, Anuradha 10, Jyeshtha 11, Mula 12, Purva Ashadha 13, Uttara Ashadha 14, Shravana 15, Dhanishta 16. 16 mod 9 = 7: Naidhana."
+    },
+    {
+     "q": "A Moon in Aquarius is Chandrashtama for someone whose natal Moon sign is:",
+     "o": [
+      "Leo",
+      "Cancer",
+      "Gemini",
+      "Capricorn"
+     ],
+     "a": 1,
+     "w": "Aquarius is the 8th sign from Cancer."
+    },
+    {
+     "q": "A Moon is 25% through Venus-ruled Bharani. What is the dasha balance?",
+     "o": [
+      "Venus, 5 years",
+      "Venus, 20 years",
+      "Venus, 15 years",
+      "Ketu, 7 years"
+     ],
+     "a": 2,
+     "w": "Bharani’s lord is Venus (20 years). 25% crossed leaves 75% × 20 = 15 years."
+    },
+    {
+     "q": "Which statement about your birth dasha is correct?",
+     "o": [
+      "You were born in Saturn–Ketu with 12.26 years of Saturn dasha left",
+      "You were born in Mercury dasha with 12.26 years left",
+      "Your Saturn balance is exactly 19 years at birth",
+      "Your dasha balance is the same under every ayanamsa"
+     ],
+     "a": 0,
+     "w": "Engine: Saturn mahadasha 1991-09-29 to 2010-09-29, with Saturn–Ketu running 1997-06-11 to 1998-07-21 at your birth. Other ayanamsas change the balance."
+    }
+   ]
+  }
+ ]
+}

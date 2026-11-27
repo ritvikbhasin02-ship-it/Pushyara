@@ -1,0 +1,573 @@
+{
+ "planets": {
+  "Sun": {
+   "karaka": "Soul (atma), vitality, authority, the father, the government, clarity of purpose, the heart and the right eye (BPHS). Sun shows where you want to be seen as yourself.",
+   "life_lesson": "The Sun asks you to shine without needing applause. Learn to act from your own centre and let the result belong to the work, not to your image. Real authority is steadiness, not volume.",
+   "strong": "You tend to carry a quiet confidence, decide cleanly, and others look to you when a decision is needed. Energy is steady and you recover well from setbacks.",
+   "strained": "Confidence can swing between over-proving and withdrawing. You may feel overlooked, clash with authority figures, or tie your worth to recognition. Rest and clear goals bring the steadiness back.",
+   "practice": "Once a week, do one task fully for its own sake and tell no one about it. Optional devotional line: offer water to the morning Sun and watch it for a minute in silence.",
+   "gita_theme": "svadharma"
+  },
+  "Moon": {
+   "karaka": "Mind (manas), emotions, the mother, nourishment, public sense, sleep and the fluid rhythms of the body (BPHS). Moon shows how you feel safe.",
+   "life_lesson": "The Moon asks you to befriend your moods instead of obeying them. Feelings are weather, not verdicts. Learn to feed your mind with routine, rest and honest company.",
+   "strong": "You tend to be emotionally readable, caring and adaptable. Sleep is mostly sound, memory is good, and people find it easy to confide in you.",
+   "strained": "Moods may rise and fall quickly, with worry looping at night. You may absorb other people's feelings or seek comfort in food, scrolling or company. Regular sleep and a steady daily rhythm help a great deal.",
+   "practice": "Keep the same bedtime and wake time on five days this week, and note your mood in one line each evening. Optional devotional line: sit for ten minutes under moonlight on a Monday.",
+   "gita_theme": "equanimity"
+  },
+  "Mars": {
+   "karaka": "Courage, drive, siblings (especially younger), land and property, physical strength, blood, sport and the soldier's discipline (BPHS). Mars shows where you act and defend.",
+   "life_lesson": "Mars asks you to turn raw force into disciplined effort. Anger is energy asking for a worthy task. Learn to start things, finish them, and pause before you strike.",
+   "strong": "You tend to act quickly, protect what matters and hold your ground without drama. Stamina is good, and you enjoy a clear challenge.",
+   "strained": "Impatience, irritability or rushed decisions may show up, and energy can burn out in short bursts. Arguments over property or with siblings can flare. Physical exercise and a pause rule work well.",
+   "practice": "Do one hard physical session this week, such as a fast walk, run or a heavy chore, and take a ten-second pause before replying in any heated exchange. Optional devotional line: recite a short Hanuman prayer on Tuesday.",
+   "gita_theme": "action"
+  },
+  "Mercury": {
+   "karaka": "Intellect (buddhi), speech, trade, writing, accounts, skin, nerves, and the maternal uncle (BPHS). Mercury shows how you think, talk and make deals.",
+   "life_lesson": "Mercury asks you to think clearly and speak plainly. Learn to separate facts from the stories you add to them. Curiosity grows into skill when you finish what you start learning.",
+   "strong": "You tend to learn fast, explain well and see the commercial or practical angle. Humour and adaptability help you in negotiations and study.",
+   "strained": "The mind may scatter, overthink or talk before checking. Nervous restlessness, small errors in paperwork and indecision can appear. Writing things down and doing one task at a time calm it.",
+   "practice": "Spend twenty minutes this week writing the one decision you are stalling on, with two options and one fact for each. Optional devotional line: read a short verse aloud on Wednesday morning.",
+   "gita_theme": "control"
+  },
+  "Jupiter": {
+   "karaka": "Wisdom, teachers, dharma, children, wealth through right means, faith, the liver and fat tissue, and for a woman's chart the husband (BPHS). Jupiter shows where you grow by giving and learning.",
+   "life_lesson": "Jupiter asks you to expand with discernment. Growth that helps others is lasting growth. Learn to stay a student, keep your word, and share what you know without preaching.",
+   "strong": "You tend to attract guidance, good advisers and fair opportunity. Outlook is hopeful, judgement is generous, and trust in the future is well founded on your habits.",
+   "strained": "You may over-promise, grow complacent, or carry more weight, hope or doubt than the facts justify. Teachers or advisers may feel out of reach. Humble study and moderate commitments restore balance.",
+   "practice": "Teach or explain one useful thing to another person this week, and give something small without being asked. Optional devotional line: offer a short prayer to your teacher on Thursday.",
+   "gita_theme": "hope"
+  },
+  "Venus": {
+   "karaka": "Love, marriage, the spouse for a man's chart, beauty, art, comfort, vehicles, refined pleasures and the reproductive system (BPHS). Venus shows what you value and how you bond.",
+   "life_lesson": "Venus asks you to enjoy life without being owned by it. Learn to receive love and pleasure with gratitude and boundaries. Taste and tenderness are skills that grow with attention.",
+   "strong": "You tend to be warm, tasteful and easy to like. Relationships have affection in them, and you find comfort and beauty without too much effort.",
+   "strained": "You may chase comfort, approval or romance beyond what you can sustain. Money can slip into small indulgences, and closeness may feel unsteady. Clear agreements and simple pleasures help.",
+   "practice": "Plan one small, unhurried pleasure this week, such as a meal, a walk or music, and share one honest appreciation with someone close. Optional devotional line: place fresh flowers before an image you love on Friday.",
+   "gita_theme": "enjoyment"
+  },
+  "Saturn": {
+   "karaka": "Time, discipline, work, service, hardship, longevity of effort, servants, the elderly, and the bones and joints (BPHS). Saturn shows where life asks for patience and where you earn lasting results.",
+   "life_lesson": "Saturn asks for endurance, patience and service. Learn to love the discipline rather than fear it. Slow, honest work is the only kind that holds weight over decades.",
+   "strong": "You tend to be dependable, patient and good at long projects. Responsibilities are carried calmly, and you build things that last.",
+   "strained": "You may feel delay, heaviness, self-doubt or a sense of carrying too much alone. Work can feel thankless for a while. Small daily routines and asking for help turn the weight into structure.",
+   "practice": "Pick one boring task you keep postponing and give it twenty minutes on three set days this week. Optional devotional line: light a small lamp on Saturday evening and sit quietly for five minutes.",
+   "gita_theme": "hardship"
+  },
+  "Rahu": {
+   "karaka": "Hunger, ambition, foreign things, innovation, the unconventional, smoke and illusion, and sudden rise or confusion (Parashari tradition; shadow planet acting like Saturn). Rahu shows where you want more, quickly.",
+   "life_lesson": "Rahu asks you to notice what you crave and why. Desire is useful when it is aimed at a craft, not at a feeling of lack. Learn to pursue the new while keeping your feet on solid facts.",
+   "strong": "You tend to be bold, original and comfortable beyond your own background. Unusual opportunities, foreign links and new technology can come to you.",
+   "strained": "Restlessness, obsession or a feeling that nothing is enough may appear. You can be drawn to shortcuts or to appearances. Verifying facts and slowing big decisions keep the ambition clean.",
+   "practice": "Once this week, wait a full day before acting on any strong urge to buy, post or promise. Optional devotional line: recite a short Durga prayer on Saturday.",
+   "gita_theme": "detachment"
+  },
+  "Ketu": {
+   "karaka": "Detachment, past-life skill, spiritual insight, research, cutting away, and sudden endings (Parashari tradition; shadow planet acting like Mars). Ketu shows where you already know a lot and want less.",
+   "life_lesson": "Ketu asks you to hold things lightly. Letting go is a skill, not a loss. Learn to value depth over display, and to be present without needing the outcome to prove anything.",
+   "strong": "You tend to have a natural feel for the subject, intuitive insight and ease being alone. Research, healing or spiritual practice come with little effort.",
+   "strained": "You may feel flat, withdrawn or unsure why familiar things have lost their taste. Focus may drift and results can feel hard to claim. Gentle routine, nature and small commitments rebuild contact.",
+   "practice": "Spend thirty quiet minutes this week with no screen, then write one thing you are ready to release. Optional devotional line: sit with a lit lamp and a short mantra to Ganesha on Tuesday.",
+   "gita_theme": "surrender"
+  }
+ },
+ "houses": {
+  "1": {
+   "area": "Self, body, temperament and how you meet the world (Tanu bhava)",
+   "yours": [
+    "How you look after your sleep, food and movement this week",
+    "The tone and intention you bring into a new room"
+   ],
+   "not_yours": [
+    "How others first judge you",
+    "The body you were born with and its natural limits"
+   ],
+   "questions": [
+    "Which part of yourself do you hide first when meeting new people, and what would change if you did not?"
+   ]
+  },
+  "2": {
+   "area": "Wealth, speech, food and family values (Dhana bhava)",
+   "yours": [
+    "What you say and how you say it",
+    "How you save, spend and record your money"
+   ],
+   "not_yours": [
+    "Family traditions you inherited",
+    "Market swings that touch your income or assets"
+   ],
+   "questions": [
+    "What are three spending habits you would be proud of five years from now?"
+   ]
+  },
+  "3": {
+   "area": "Effort, courage, skills, siblings and short journeys (Sahaja bhava)",
+   "yours": [
+    "The small steps you take daily on a skill",
+    "How often you reach out to siblings and peers"
+   ],
+   "not_yours": [
+    "How siblings and neighbours choose to behave",
+    "Whether your first attempt gets noticed"
+   ],
+   "questions": [
+    "Which skill would you improve if you practised just twenty minutes a day?"
+   ]
+  },
+  "4": {
+   "area": "Home, mother, inner peace, property and vehicles (Sukha bhava)",
+   "yours": [
+    "How you arrange your home and daily calm",
+    "The time you give to your mother and family"
+   ],
+   "not_yours": [
+    "Property prices and neighbourhood changes",
+    "Past events in your childhood home"
+   ],
+   "questions": [
+    "What makes a place feel like home to you, and where in your life is it missing?"
+   ]
+  },
+  "5": {
+   "area": "Intelligence, creativity, children, romance and past merit (Putra bhava)",
+   "yours": [
+    "Your daily practice in study or art",
+    "The patience and time you give to children or students"
+   ],
+   "not_yours": [
+    "Whether a child follows your path",
+    "Another person's feelings in a new romance"
+   ],
+   "questions": [
+    "What would you create if nobody would ever grade it?"
+   ]
+  },
+  "6": {
+   "area": "Daily work, service, health routines, debts and rivals (Ripu bhava)",
+   "yours": [
+    "Your routines for food, exercise and rest",
+    "How promptly you repay debts and finish chores"
+   ],
+   "not_yours": [
+    "Competitors and difficult colleagues",
+    "Sudden illness or accidents"
+   ],
+   "questions": [
+    "Which one daily routine, if kept for a year, would make everything else easier?"
+   ]
+  },
+  "7": {
+   "area": "Marriage, partnerships, contracts and open dealings (Kalatra bhava)",
+   "yours": [
+    "How clearly you state needs and agreements",
+    "How you listen when a partner disagrees"
+   ],
+   "not_yours": [
+    "Whether a partner changes or leaves",
+    "How a business partner's finances behave"
+   ],
+   "questions": [
+    "What do you wish your closest partner understood about you without being told?"
+   ]
+  },
+  "8": {
+   "area": "Transformation, hidden matters, shared resources, research and inheritance (Randhra bhava)",
+   "yours": [
+    "How you prepare for the unexpected with savings and records",
+    "How honestly you face what you avoid"
+   ],
+   "not_yours": [
+    "Sudden events and others' secrets",
+    "When and how an inheritance or insurance claim settles"
+   ],
+   "questions": [
+    "What are you holding on to that has already changed?"
+   ]
+  },
+  "9": {
+   "area": "Dharma, fortune, teachers, higher learning, father and long journeys (Dharma bhava)",
+   "yours": [
+    "The beliefs you test against your own experience",
+    "The time you give to study, pilgrimage or mentors"
+   ],
+   "not_yours": [
+    "Your father's path and health",
+    "Luck arriving through other people"
+   ],
+   "questions": [
+    "Which principle would you keep even if it cost you something?"
+   ]
+  },
+  "10": {
+   "area": "Career, public action, status and what you are known for (Karma bhava)",
+   "yours": [
+    "The quality of your daily work and reputation",
+    "How you ask for responsibility"
+   ],
+   "not_yours": [
+    "Promotions and the decisions of your seniors",
+    "Economic cycles in your field"
+   ],
+   "questions": [
+    "What work would you be glad to be known for in ten years?"
+   ]
+  },
+  "11": {
+   "area": "Gains, networks, friends, elder siblings and fulfilled wishes (Labha bhava)",
+   "yours": [
+    "Whom you keep company with and how you contribute",
+    "The goals you write down and review"
+   ],
+   "not_yours": [
+    "When income or recognition arrives",
+    "How friends grow, drift or change"
+   ],
+   "questions": [
+    "Which relationships feed your goals, and which do you keep from habit?"
+   ]
+  },
+  "12": {
+   "area": "Rest, expenses, solitude, foreign lands, sleep and letting go (Vyaya bhava)",
+   "yours": [
+    "How you protect your sleep and quiet time",
+    "Which expenses you plan and which you drift into"
+   ],
+   "not_yours": [
+    "Losses from outside events",
+    "What happens in places far from home"
+   ],
+   "questions": [
+    "What do you need to release to feel lighter this year?"
+   ]
+  }
+ },
+ "planet_in_house": {
+  "Sun-1": "A strong sense of identity and a visible presence; others notice you before you speak. Growth edge: leading without needing to be the one in charge of everything.",
+  "Sun-2": "Pride in family name, a firm voice and a careful hand with money. Growth edge: speak with warmth so that clarity does not come across as command.",
+  "Sun-3": "Courage that shows through initiative, and a habit of outworking those around you. Growth edge: let siblings and peers have their own say in how things are done.",
+  "Sun-4": "A strong tie to the home, the mother or the land, though inner peace comes only after you steady your restless drive. Growth edge: allow the house to be a place where you are not performing.",
+  "Sun-5": "Clear, authoritative thinking, with a lean toward leadership, teaching or creative display. Growth edge: let children and students find their own answers rather than copy yours.",
+  "Sun-6": "Strength under pressure, success against rivals and a taste for disciplined service. Growth edge: rest is part of the work, so schedule it before the body asks for it.",
+  "Sun-7": "You seek a partner who matches your standing, and partnerships often test your pride. Growth edge: let a partner be an equal rather than an audience.",
+  "Sun-8": "Intensity and curiosity about hidden things, research and what lies beneath the surface. Growth edge: share what you know about yourself, and keep records for shared money.",
+  "Sun-9": "Respect for teachers, principles and the father's example, with a natural pull toward guiding others. Growth edge: stay open to views that differ from the ones you inherited.",
+  "Sun-10": "A classical placement for public standing; you do your best work when responsible for outcomes. Growth edge: separate your worth from your title.",
+  "Sun-11": "Gains come through reputation and through influential or senior contacts. Growth edge: choose friends who tell you the truth, not only those who admire you.",
+  "Sun-12": "Quiet, private strength, with purpose often found away from the spotlight or in distant places. Growth edge: protect sleep and avoid spending to prove something.",
+  "Moon-1": "Your mood shows on your face, and you read rooms with ease. Growth edge: wait for a feeling to settle before you act on it.",
+  "Moon-2": "Soft, soothing speech and an emotional link to food, family and savings. Growth edge: keep spending steady when you feel low.",
+  "Moon-3": "Imagination and creative drive expressed through writing, crafts and short trips, with a close bond to siblings. Growth edge: finish what you start rather than switching when the mood changes.",
+  "Moon-4": "A classical placement for emotional comfort, a close bond with the mother and a deep need for home. Growth edge: build peace from within as well as from your surroundings.",
+  "Moon-5": "A feeling mind that does best through creative work, children or teaching, with strong intuition. Growth edge: check intuition against facts in romance and speculation.",
+  "Moon-6": "You respond with care to daily work, though the mind can worry about health, debts or workplace friction. Growth edge: keep a fixed routine so that worry has less room.",
+  "Moon-7": "You value emotional closeness, and your partner often plays a nurturing or mirror role. Growth edge: state your needs rather than hoping they will be guessed.",
+  "Moon-8": "Deep, private feelings, strong intuition and sensitivity to hidden currents. Growth edge: find a trusted listener so that feelings do not turn into brooding.",
+  "Moon-9": "A trusting, devotional mind that gains from teachers, travel and reflection. Growth edge: test inherited beliefs with your own experience before you adopt them.",
+  "Moon-10": "Public sensitivity, work that involves people or care, and a visible emotional style at work. Growth edge: keep a calm face in a storm without ignoring what you feel.",
+  "Moon-11": "Gains through friends, groups and a wide circle who feel like family. Growth edge: choose a few people for depth instead of many for comfort.",
+  "Moon-12": "A rich inner life, a need for solitude, and vivid dreams. Growth edge: guard your sleep, and keep a plan for spending and rest.",
+  "Mars-1": "Direct, energetic, physically active and quick to take the lead. Growth edge: count to ten before the first reply in a dispute.",
+  "Mars-2": "Blunt speech and an eagerness to earn, with family matters sometimes heated. Growth edge: speak after the heat has passed, and keep savings out of impulse.",
+  "Mars-3": "A classical placement for courage and initiative; you fight your way into a skill and outwork others. Growth edge: choose your battles and let siblings help.",
+  "Mars-4": "A restless home life, and energy invested in property, building or repairs. Growth edge: make the house a place to rest, not a place to settle scores.",
+  "Mars-5": "Competitive, strategic thinking and a drive to excel in sport, mastery or leadership. Growth edge: go gently with children and students, and with a new romance.",
+  "Mars-6": "A classical placement for beating rivals, clearing debts and sustained work. Growth edge: turn the drive toward the task and avoid making colleagues the target.",
+  "Mars-7": "A forceful, passionate approach to partnership, with strong attraction and friction in turns. Growth edge: negotiate as a team and not as an opponent.",
+  "Mars-8": "Intense, investigative energy and an ability to endure hardship. Growth edge: take sensible caution with speed, tools and risk, and keep shared money in order.",
+  "Mars-9": "Active, argumentative faith and a drive to defend principles. Growth edge: stay open to a teacher's correction and avoid fighting for beliefs you have not tested.",
+  "Mars-10": "A strong placement for career drive, and for roles in engineering, defence, sport, surgery or management. Growth edge: lead through example rather than pressure.",
+  "Mars-11": "Gains by effort, and ambitious, active friends. Growth edge: set goals that include rest, and avoid competing with friends for status.",
+  "Mars-12": "Energy that leaks into expenses, late nights or hidden irritation. Growth edge: give the body a daily workout and the temper a quiet outlet.",
+  "Mercury-1": "Quick, curious and talkative, with a youthful manner. Growth edge: slow down enough to listen before answering.",
+  "Mercury-2": "Skilled with words, numbers and trade, and good at explaining. Growth edge: keep promises about money in writing so that cleverness does not become confusion.",
+  "Mercury-3": "Strong ability in writing, sales, media and skilled hand work, with good communication with siblings. Growth edge: choose one craft to deepen rather than five to sample.",
+  "Mercury-4": "Learning at home, a love of books and a mind that likes tidy surroundings. Growth edge: keep the mind quiet at night instead of rehearsing plans.",
+  "Mercury-5": "Sharp, playful intellect, good for teaching, analysis, speculation and puzzles. Growth edge: avoid treating quick cleverness as wisdom.",
+  "Mercury-6": "Good at analysis, checking details and sorting problems at work. Growth edge: watch nerves and digestion, and avoid turning analysis into worry.",
+  "Mercury-7": "Business sense and communicative partnerships; you tend to pick a partner who talks well. Growth edge: read contracts and do not rely on charm.",
+  "Mercury-8": "Interest in research, mysteries, finance, psychology and hidden facts. Growth edge: avoid secretive speech that confuses people close to you.",
+  "Mercury-9": "A mind that enjoys philosophy, comparative study, writing and teaching. Growth edge: connect ideas to practice, not just discussion.",
+  "Mercury-10": "Career in communication, trade, accounts, tech or advice, adapting easily to new roles. Growth edge: commit to one direction long enough to build a name.",
+  "Mercury-11": "Gains through contacts, trade and ideas, with a wide, chatty network. Growth edge: keep records of promises made to friends and clients.",
+  "Mercury-12": "Thoughtful in private, with ideas arriving at quiet hours, and possible work with foreign or distant contacts. Growth edge: limit mental over-activity and spend with a plan.",
+  "Jupiter-1": "Generous, optimistic and respected for fair-minded advice. Growth edge: keep a check on weight, over-promising and the habit of giving others unrequested advice.",
+  "Jupiter-2": "A classical placement for wealth through knowledge, steady speech and a family culture that values learning. Growth edge: avoid sweet talk that promises more than you can deliver.",
+  "Jupiter-3": "Wise in effort and ethical in ambition, with learning through writing and teaching. Growth edge: act on ideas instead of only planning them.",
+  "Jupiter-4": "A calm home life, kindness toward mother and a love of study at home. Growth edge: let comfort support your growth rather than replace it.",
+  "Jupiter-5": "A classical placement for intelligence, teaching, good counsel and blessings through children or students. Growth edge: leave room for others to reach their own conclusions.",
+  "Jupiter-6": "You help others in daily service, though debts, weight or health routines need attention. Growth edge: do not stretch your good nature to people who do not respect it.",
+  "Jupiter-7": "A fair, generous and often educated partner, with growth through cooperation. Growth edge: avoid expecting a partner to carry your ideals.",
+  "Jupiter-8": "Resilience in crisis and interest in philosophy, research and spiritual depth. Growth edge: do not lean on luck, and keep documents for shared assets and insurance in order.",
+  "Jupiter-9": "A classical placement for good fortune, wise teachers and a faith that grows with experience. Growth edge: hold beliefs with humility and keep practising what you preach.",
+  "Jupiter-10": "Respect in public life, often through teaching, law, finance or counsel. Growth edge: keep your standards even when no one is watching.",
+  "Jupiter-11": "Gains through mentors, communities and elders, with many wishes fulfilled over time. Growth edge: pick goals that are your own, not borrowed from your circle.",
+  "Jupiter-12": "Spiritual leanings, generous spending and gains abroad or in retreat. Growth edge: track generosity so that kindness does not drain you.",
+  "Venus-1": "Charming, attractive and at ease with people, with an eye for comfort. Growth edge: care for substance as much as style.",
+  "Venus-2": "Pleasant voice, appreciation of food and beauty, and wealth through art, luxury or hospitality. Growth edge: watch overspending on comfort.",
+  "Venus-3": "Artistic skill and a persuasive, gentle way of working, with close ties to siblings. Growth edge: take effort seriously and avoid waiting for ease.",
+  "Venus-4": "Beautiful home, vehicles and a close, loving link to the mother. Growth edge: do not let comfort turn into complacency.",
+  "Venus-5": "Romantic, creative and artistically inclined, with affection for children. Growth edge: separate infatuation from enduring love and avoid speculative spending.",
+  "Venus-6": "Pleasant in service, but a risk of overindulgence and strain in relationships at work. Growth edge: set a gentle limit to sweets, dining out and routine slackening.",
+  "Venus-7": "A classical placement for a loving, attractive partnership and gains through a partner or trade. Growth edge: speak honestly instead of keeping peace by silence.",
+  "Venus-8": "Intense love, interest in the mysterious and possible gains through a partner or inheritance. Growth edge: avoid secrecy or control in intimacy.",
+  "Venus-9": "A love of culture, beauty and refined belief, with fortune through relationships. Growth edge: let ideals have practice, not only taste.",
+  "Venus-10": "A career in art, fashion, hospitality, luxury or diplomacy, with a pleasant public face. Growth edge: do not let image outrun skill.",
+  "Venus-11": "Gains through friends, women, art and enjoyable ventures, with a wide social circle. Growth edge: choose friends for character, not for status.",
+  "Venus-12": "A classical placement for deep rest, private pleasure and spending on comfort or travel. Growth edge: keep private life honest and expenses planned.",
+  "Saturn-1": "Serious, disciplined and mature early, with a slower and steadier start to life. Growth edge: allow yourself play and warmth without judging it as a waste.",
+  "Saturn-2": "Careful, measured speech, slow but steady accumulation and a frugal bearing. Growth edge: do not let fear of lack tighten your words and your family ties.",
+  "Saturn-3": "Persistent effort, a strong work ethic and a slow but sure build of skill. Growth edge: ask for help sooner, and let siblings carry some load.",
+  "Saturn-4": "A restrained home life and a serious bond with mother, with peace earned late. Growth edge: let the home hold warmth as well as duty.",
+  "Saturn-5": "A methodical, patient mind that learns slowly and thoroughly. Growth edge: allow joy and spontaneity in creative work and with children.",
+  "Saturn-6": "A classical placement for outlasting rivals, clearing debts and handling long work. Growth edge: rest and ask for support, since you may carry too much.",
+  "Saturn-7": "A mature, loyal and often later partnership, with a tendency to take marriage seriously. Growth edge: show feelings instead of just showing up.",
+  "Saturn-8": "Endurance in hardship, interest in occult research and a long view of shared resources. Growth edge: face fear early and arrange insurance and paperwork well.",
+  "Saturn-9": "Grounded, sober faith that deepens with age, and a slower path to higher learning. Growth edge: follow principles because you chose them, not out of duty only.",
+  "Saturn-10": "A classical placement for lasting career success through persistent work and responsibility. Growth edge: protect health and family time while the career builds.",
+  "Saturn-11": "Slow but sure gains, a few loyal friends and steady income from long effort. Growth edge: do not measure your worth by delayed rewards.",
+  "Saturn-12": "A private, frugal nature, comfort with solitude and long stretches of quiet work. Growth edge: keep sleep regular and seek company before loneliness sets in.",
+  "Rahu-1": "A distinctive, ambitious presentation, with a sense of being different. Growth edge: check that the image you project matches who you are.",
+  "Rahu-2": "An appetite for wealth and unusual speech patterns, with a family situation that differs from the norm. Growth edge: tell the plain truth about money and food habits.",
+  "Rahu-3": "Bold, original effort, risk appetite and talent in media, tech or sales. Growth edge: finish what you start and keep promises to siblings and peers.",
+  "Rahu-4": "A restless search for a home, with possible moves or an unusual family setting. Growth edge: build a few daily rituals that give peace without a change of scene.",
+  "Rahu-5": "Unconventional creativity and a strong drive for recognition through ideas or children. Growth edge: separate genuine insight from attention seeking, and avoid speculative gambles.",
+  "Rahu-6": "A classical placement for defeating rivals and thriving in competitive or foreign-linked work. Growth edge: keep health routines regular and avoid quick fixes.",
+  "Rahu-7": "Attraction to a partner who feels different or foreign, and unusual partnerships. Growth edge: confirm facts before committing to a contract or marriage.",
+  "Rahu-8": "Strong interest in the occult, research and hidden systems, with sudden turns in shared money. Growth edge: keep paperwork transparent and stay grounded in routine.",
+  "Rahu-9": "A questioning approach to belief, travel to foreign lands and teachers from outside the usual circle. Growth edge: sort inspiration from borrowed certainty.",
+  "Rahu-10": "A strong drive for status, prominence and unusual career paths, often tech, media, politics or foreign work. Growth edge: build competence before reach, and keep ethics clear.",
+  "Rahu-11": "A classical placement for large networks, gains and ambitious goals. Growth edge: choose quality in friendships and ask how a desire serves you.",
+  "Rahu-12": "Pull toward foreign places, isolation, vivid dreams and hidden spending. Growth edge: plan finances, protect sleep and avoid escapist habits.",
+  "Ketu-1": "A quiet, self-contained presence with an inward look, and doubts about identity. Growth edge: take small steps into the world instead of withdrawing.",
+  "Ketu-2": "A detached attitude to money and a plain or sparse speech. Growth edge: handle family accounts and food habits with simple regular care.",
+  "Ketu-3": "Natural courage in quiet ways, spiritual determination and little need for credit. Growth edge: speak up for yourself and keep in touch with siblings.",
+  "Ketu-4": "A sense of not belonging at home, and a spiritual calm that appears with solitude. Growth edge: build one comfortable corner and one regular ritual.",
+  "Ketu-5": "Intuitive intelligence and a gift for mantra, study or research, with detachment from the outcome of creative work. Growth edge: stay warm with children and in love, without withholding.",
+  "Ketu-6": "Skill against rivals and a gift for healing or technical service, with little interest in office politics. Growth edge: keep routines and medical check-ups regular.",
+  "Ketu-7": "A detached or inward approach to relationships, and a partner who may seem distant. Growth edge: voice needs aloud and show up in daily ways.",
+  "Ketu-8": "A deep natural talent for research, occult knowledge and sudden insight. Growth edge: keep one grounded routine and one practical tie to the material world.",
+  "Ketu-9": "A questioning faith that prefers direct experience to doctrine, and a distant relationship with the father or teacher. Growth edge: keep a regular practice that suits you.",
+  "Ketu-10": "Detachment from status and a talent for specialist, quiet or behind-the-scenes work. Growth edge: take visible responsibility on projects that matter.",
+  "Ketu-11": "Gains come without much seeking, with few close friends and low interest in the crowd. Growth edge: keep a handful of reliable ties alive.",
+  "Ketu-12": "A classical placement for meditation, retreat and release from material needs. Growth edge: balance withdrawal with action so that solitude does not turn to avoidance."
+ },
+ "dasha": {
+  "Sun": {
+   "theme": "A period about identity, authority, the father and how you stand in public life. Clarity of purpose and visibility rise; so do questions about ego and recognition.",
+   "lesson": "To lead from steadiness and let your work speak. Learn what you stand for when nobody is watching.",
+   "years": 6
+  },
+  "Moon": {
+   "theme": "A period about the mind, home, mother, public contact and emotional nourishment. Moods, relationships and daily rhythm take centre stage.",
+   "lesson": "To care for your inner weather and build a stable base. Learn to receive support as well as give it.",
+   "years": 10
+  },
+  "Mars": {
+   "theme": "A period of action, effort, property, siblings and competition. Energy and decisiveness are higher, and so is friction.",
+   "lesson": "To channel force into disciplined effort. Learn to start well, pause when angry and finish what you begin.",
+   "years": 7
+  },
+  "Rahu": {
+   "theme": "A period of ambition, foreign links, new technology and unconventional paths. Appetite for more is strong, and so are rapid change and confusion.",
+   "lesson": "To tell genuine growth from restless craving. Learn to check facts, keep your values and stay grounded while things move quickly.",
+   "years": 18
+  },
+  "Jupiter": {
+   "theme": "A period of learning, guidance, family growth, ethics and widening opportunity. Teachers, advisers and faith matter more.",
+   "lesson": "To grow with humility and share what you gain. Learn that expansion lasts when it comes with discernment.",
+   "years": 16
+  },
+  "Saturn": {
+   "theme": "A period of work, responsibility, structure, service and long-haul results. Pace slows, standards rise, and what you build holds.",
+   "lesson": "To respect time and love the discipline. Learn patience, honest labour and the dignity of consistent effort.",
+   "years": 19
+  },
+  "Mercury": {
+   "theme": "A period of study, trade, communication, skill and quick adaptation. Information, contracts, networks and learning move forward.",
+   "lesson": "To think clearly, speak precisely and finish what you learn. Learn the difference between knowing and doing.",
+   "years": 17
+  },
+  "Ketu": {
+   "theme": "A period of detachment, inner work, research and endings that clear space. Outer ambition may feel less urgent while inner interest deepens.",
+   "lesson": "To let go without bitterness. Learn what is essential and how to be at ease with less.",
+   "years": 7
+  },
+  "Venus": {
+   "theme": "A period of relationships, comfort, art, money and refined pleasure. Love, partnerships, vehicles and enjoyment take a central role.",
+   "lesson": "To enjoy without clinging and love with honesty. Learn to value people and pleasure in measured doses.",
+   "years": 20
+  }
+ },
+ "dasha_by_house": {
+  "1": "When the running dasha lord rules or sits in house 1, the period turns toward you: body, identity, how you present yourself and the choices you make for yourself. Notice the start of new habits and a new self-image. Tend sleep, fitness and your first impression, and ask whether your actions match your own values.",
+  "2": "When the dasha lord rules or sits in house 2, money, speech, food and family values come into focus. Earnings and savings may move, and what you say carries more weight. Keep clear records, speak carefully at family tables, and set one savings rule you can keep.",
+  "3": "With the dasha lord in or ruling house 3, effort, skill, courage, siblings and short travel move forward. You may start projects, write, sell or train. Small daily practice produces more than big bursts, and sibling ties benefit from regular contact.",
+  "4": "With the dasha lord in or ruling house 4, home, mother, property, vehicles and inner peace are active themes. Moves, repairs or purchases may appear, along with a need for rest. Build a steady home rhythm and check paperwork on any property decision.",
+  "5": "With the dasha lord in or ruling house 5, creativity, study, children, romance and merit from earlier effort come forward. Ideas and learning flourish. Give time to practice, treat speculation cautiously, and offer children or students patience.",
+  "6": "With the dasha lord in or ruling house 6, daily work, service, health routines, debts and rivals are active. Effort is tested and also rewarded. Keep a clear routine, clear small debts early and see a doctor for symptoms instead of waiting.",
+  "7": "With the dasha lord in or ruling house 7, partnership, marriage, contracts and public dealings are active. Agreements are made or revised. State needs plainly, read contracts closely and choose partners for character.",
+  "8": "With the dasha lord in or ruling house 8, hidden matters, shared money, research and inner change come up. Some phases feel high-friction, with unplanned expense or delay. Keep savings and insurance in order, face avoided topics, and welcome study or therapy.",
+  "9": "With the dasha lord in or ruling house 9, dharma, teachers, fortune, long journeys and higher learning are active. Guidance may arrive through a mentor or a book. Study, travel with purpose and honour your father's or teacher's good example while forming your own view.",
+  "10": "With the dasha lord in or ruling house 10, career, reputation and responsibilities are in the foreground. Roles shift and visibility grows. Do the work well, take on a role you can sustain and protect your health while ambitions grow.",
+  "11": "With the dasha lord in or ruling house 11, gains, networks and fulfilment of long-held wishes are active. Income can rise through contacts and groups. Write down goals, thank those who help and choose circles that fit your values.",
+  "12": "With the dasha lord in or ruling house 12, rest, expenses, foreign links, solitude and letting go come forward. Spending and sleep need extra attention. Plan expenses, create quiet time, and see a professional if low mood or sleeplessness persists."
+ },
+ "transits": {
+  "Saturn": {
+   "1": "Saturn over your Moon sign is the middle of Sade Sati: a slower, heavier stretch where the mind tends to feel pressure and responsibility. Keep a fixed routine, sleep early, and take one steady commitment at a time.",
+   "2": "Saturn two signs from the Moon is the closing phase of Sade Sati. Money, speech and family duties ask for care and tidy accounts. Speak calmly at home, save a fixed amount monthly and avoid loans you cannot clear.",
+   "3": "Saturn in the third from the Moon is a favourable transit for effort. Courage, discipline and skill-building meet less resistance. Start a regular practice, publish or pitch your work, and reach out to siblings or peers.",
+   "4": "Saturn in the fourth from the Moon (kantaka) can make home life feel heavy, with delays in property or restless peace of mind. Keep the home rhythm simple, handle repairs and paperwork step by step, and give mother or elders regular time.",
+   "5": "Saturn in the fifth from the Moon asks for patience with study, creative work, children and romance. Results arrive slowly. Choose depth over speed, avoid speculative bets and make space for light, joyful practice.",
+   "6": "Saturn in the sixth from the Moon is classically supportive. Rivals weaken, debts get cleared and routine work pays off. Use the period to clear obligations, build health habits and complete long tasks.",
+   "7": "Saturn in the seventh from the Moon (kantaka) tests partnerships and contracts through responsibility and delay. Be clear and kind in agreements, listen more than usual and do not make hasty commitments or exits.",
+   "8": "Saturn in the eighth from the Moon (ashtama) is a high-friction stretch for body and mind, with delays and tiring effort. Slow down, keep savings and insurance current, have regular health check-ups and lean on routine.",
+   "9": "Saturn in the ninth from the Moon slows the flow of fortune and may stretch your connection to teachers or long journeys. Persist with study and good habits, and rely on your own effort while support catches up.",
+   "10": "Saturn in the tenth from the Moon (kantaka) raises workload, responsibility and scrutiny. Career asks for steady, honest effort. Keep your standards, document your work and rest properly between pushes.",
+   "11": "Saturn in the eleventh from the Moon is classically favourable for gains. Long-term goals, income and useful alliances can build. Be patient, work consistently and choose reliable people.",
+   "12": "Saturn in the twelfth from the Moon begins Sade Sati: an opening phase of expense, tiredness and a sense of letting go. Plan spending, keep sleep sacred and begin simplifying commitments."
+  },
+  "Jupiter": {
+   "1": "Jupiter over the Moon sign is a mixed transit, often bringing weight, extra commitments or high expectations. Use the growth for learning and avoid over-promising or overeating.",
+   "2": "Jupiter in the second from the Moon is favourable for money, speech and family harmony. Savings and support can grow. Speak generously, plan finances and use the lift to settle family matters.",
+   "3": "Jupiter in the third from the Moon asks for effort without obvious reward. Opportunities need work to unfold. Keep skills growing, stay in touch with siblings and avoid scattering effort.",
+   "4": "Jupiter in the fourth from the Moon can bring restlessness around home and peace of mind. Keep the home rhythm steady, give time to mother and elders, and delay big property decisions until the facts are checked.",
+   "5": "Jupiter in the fifth from the Moon is favourable for study, creativity, children and good counsel. Ideas, teaching and romance can flourish. Begin a course or creative project and share what you learn.",
+   "6": "Jupiter in the sixth from the Moon is mixed, with some friction around work, health or debts. Keep routines steady, avoid new loans and see a doctor for lingering issues.",
+   "7": "Jupiter in the seventh from the Moon is favourable for partnership, contracts and public dealings. Meetings and agreements tend to go smoothly. Begin collaboration, strengthen a marriage and choose partners well.",
+   "8": "Jupiter in the eighth from the Moon brings uneven results, with delays and hidden matters surfacing. Keep paperwork, insurance and savings in order, and use quiet time for study and reflection.",
+   "9": "Jupiter in the ninth from the Moon is classically excellent for fortune, teachers, study and travel. Seek a mentor, begin higher learning and trust well-earned support.",
+   "10": "Jupiter in the tenth from the Moon asks for focus at work and may bring added responsibility without immediate payoff. Keep your standards, avoid overcommitting and review your direction.",
+   "11": "Jupiter in the eleventh from the Moon is favourable for gains, friendships and long-held wishes. Networking and income can rise. Write goals down, thank those who help and share what you gain.",
+   "12": "Jupiter in the twelfth from the Moon can mean added expense, travel or retreat. Plan spending, welcome rest and use the time for inner work or work abroad."
+  },
+  "Rahu": {
+   "1": "Rahu over the Moon sign can bring a restless mind, strong ambitions and a sense of being pulled in many directions. Slow big decisions, check facts and keep routine and sleep fixed.",
+   "2": "Rahu in the second from the Moon may bring tension around money, speech and family matters. Keep accounts clear, speak calmly and avoid offering or accepting promises that sound too good.",
+   "3": "Rahu in the third from the Moon is classically favourable for courage, initiative and new skills. Try a bold project, learn new technology and reach out to peers.",
+   "4": "Rahu in the fourth from the Moon can disturb inner peace and home matters. Keep a steady home routine, protect sleep and avoid hasty property moves.",
+   "5": "Rahu in the fifth from the Moon can scatter the mind in study, romance and speculation. Pick one creative focus, check advice from outsiders and keep speculation light.",
+   "6": "Rahu in the sixth from the Moon helps with competition, debts and demanding work. Take on challenging tasks, clear obligations and keep health routines.",
+   "7": "Rahu in the seventh from the Moon can bring intense or unusual dealings in partnership and contracts. Be clear about terms, confirm facts and avoid being swept along by charm.",
+   "8": "Rahu in the eighth from the Moon may bring confusion, hidden matters or sudden turns in shared money. Keep records transparent, delay major risks and see a doctor if symptoms persist.",
+   "9": "Rahu in the ninth from the Moon can unsettle belief and the relationship with teachers or father. Question freely but check advice from sources that promise a shortcut.",
+   "10": "Rahu in the tenth from the Moon is favourable for career ambition and visible work, often through technology, media or foreign dealings. Aim high and build competence behind the ambition.",
+   "11": "Rahu in the eleventh from the Moon is classically favourable for gains, networks and desire fulfilment. Expand contacts and goals, and keep your promises to those who help you.",
+   "12": "Rahu in the twelfth from the Moon draws attention to expenses, foreign links and private escape. Plan spending, protect sleep and notice if you are using distraction to avoid something."
+  },
+  "Ketu": {
+   "1": "Ketu over the Moon sign can bring a detached, inward or unsettled feeling about identity. Spend quiet time in nature, and keep one regular commitment so that you stay connected.",
+   "2": "Ketu in the second from the Moon can make you less interested in money or small talk, and family exchanges may feel flat. Keep accounts tidy and speak simply and kindly.",
+   "3": "Ketu in the third from the Moon is classically supportive for courage and quiet effort. Work on a skill with patience and let results come without urgency.",
+   "4": "Ketu in the fourth from the Moon may bring a sense of distance at home or inner restlessness. Create a calm space, hold a daily ritual and spend time with mother or elders.",
+   "5": "Ketu in the fifth from the Moon can quiet creative or romantic interest and deepen study or meditation. Take up research or inner practice, and be patient with children and students.",
+   "6": "Ketu in the sixth from the Moon is classically helpful for defeating rivals and clearing debts quietly. Handle obligations calmly and keep health check-ups regular.",
+   "7": "Ketu in the seventh from the Moon can make partnership feel distant or uncertain. Share what you feel, listen without assuming and avoid withdrawing silently.",
+   "8": "Ketu in the eighth from the Moon brings depth, intuition and a pull toward research and the unseen. Keep a grounded routine, finish financial paperwork and see a doctor for lingering symptoms.",
+   "9": "Ketu in the ninth from the Moon may loosen old beliefs and relationships with teachers. Hold your own view gently and keep one practice that steadies you.",
+   "10": "Ketu in the tenth from the Moon can reduce interest in status or bring a change of direction. Choose meaningful work, take part in the tasks that remain and avoid abrupt exits.",
+   "11": "Ketu in the eleventh from the Moon is classically fine for quiet gains, though the social circle may thin. Keep a few reliable friends and set modest goals.",
+   "12": "Ketu in the twelfth from the Moon supports meditation, retreat and release of old attachments. Welcome solitude, simplify spending and stay in contact with those you trust."
+  }
+ },
+ "sade_sati": {
+  "phase1": "Saturn is in the sign before your Moon sign (about two and a half years). Tendencies: a growing sense of expense, tiredness or responsibility, and a pull toward simplifying. If it fits your life, it may help to protect sleep, plan spending and begin trimming commitments. Mark it 'not me' if it does not match.",
+  "phase2": "Saturn is over your Moon sign (about two and a half years). Tendencies: the most concentrated stretch, with the mind under pressure and a need for patience at home and in work. Keep a fixed routine, share worries with someone you trust, and see a professional if low mood persists.",
+  "phase3": "Saturn is in the sign after your Moon sign (about two and a half years). Tendencies: money, speech and family responsibilities need tidy handling as the weight eases. Keep accounts clear, speak calmly and harvest the habits you built. Many people find steadiness returns towards the end of this phase."
+ },
+ "dignity": {
+  "exalted": "A planet in its sign of exaltation (BPHS: Sun in Aries, Moon in Taurus, Mars in Capricorn, Mercury in Virgo, Jupiter in Cancer, Venus in Pisces, Saturn in Libra) tends to express its qualities at full strength and with ease. Notice where it sits, because that area often gets more natural support. Strong does not mean effortless, so keep using the gift.",
+  "own": "A planet in its own sign is at home and reliable. Its themes tend to be stable, with a clear sense of what it wants. Support the area it rules by steady habits, since the planet already provides the foundation.",
+  "moolatrikona": "A planet in its moolatrikona sign sits in its office, almost as strong as in its own sign (for example Sun in Leo 0-20 degrees, Moon in Taurus 4-30, Mars in Aries 0-12). Its work is done with clarity and a sense of role. Look for the area where you act with natural authority.",
+  "friend": "A planet in a friend's sign is comfortable and supported. Its results tend to come with cooperation and reasonable ease. Acknowledge the help you get and return it.",
+  "neutral": "A planet in a neutral sign works with moderate comfort and depends on the rest of the chart. Its results follow effort and company. Build the area by consistent habit rather than waiting for ease.",
+  "enemy": "A planet in an enemy's sign operates in a less comfortable setting. Its themes may take more patience, and you may need to adapt. Slow, deliberate effort, supportive routines and good company give the planet room to deliver.",
+  "debilitated": "A planet in its sign of fall (BPHS: Sun in Libra, Moon in Scorpio, Mars in Cancer, Mercury in Pisces, Jupiter in Capricorn, Venus in Virgo, Saturn in Aries) tends to meet its themes through effort and lessons. This is a high-friction placement, not a sentence. Practice, support and time often turn it into a hard-won skill.",
+  "neecha_bhanga": "Neecha bhanga means the fall is cancelled or softened by supporting factors, such as the lord of the sign or the sign of exaltation being in a kendra from the lagna or Moon (Phaladeepika, BPHS). The planet often gives results after an early struggle. Treat it as a pattern that tends to improve with time and effort, and confirm with your own history.",
+  "combust": "A planet close to the Sun is combust (classical orbs vary, for example Moon about 12 degrees, Mars 17, Mercury 14, Jupiter 11, Venus 10, Saturn 15). Its voice tends to be overshadowed by the Sun's, so the themes it governs may feel hard to express. Give those themes deliberate attention and ask whether you express them in your own way.",
+  "retro": "A retrograde planet appears to move backward from the Earth's view, and classically gains strength (cheshta bala). Its themes tend to be internal, repeated or revisited, and it often asks for a second look before progress. Review rather than rush, and notice what returns to you for a different decision."
+ },
+ "yogas": {
+  "Ruchaka": "A Mahapurusha yoga formed when Mars is in Aries, Scorpio or Capricorn in a kendra from the lagna (BPHS ch. 75). Classically it gives courage, command and physical strength. In daily life it can show as decisiveness and stamina, and the invitation is to aim the force at worthwhile work.",
+  "Bhadra": "A Mahapurusha yoga formed when Mercury is in Gemini or Virgo in a kendra from the lagna. Classically it gives sharp intellect, eloquence and skill in trade. In daily life it can show as quick learning and clear speech, and the invitation is to turn knowledge into finished work.",
+  "Hamsa": "A Mahapurusha yoga formed when Jupiter is in Sagittarius, Pisces or Cancer in a kendra from the lagna. Classically it gives wisdom, good conduct and respected counsel. In daily life it can show as ethical leaning and generosity, and the invitation is to keep your word when it is inconvenient.",
+  "Malavya": "A Mahapurusha yoga formed when Venus is in Taurus, Libra or Pisces in a kendra from the lagna. Classically it gives refinement, comfort and a loving manner. In daily life it can show as taste and warmth, and the invitation is to enjoy it with moderation and honest relationships.",
+  "Shasha": "A Mahapurusha yoga formed when Saturn is in Capricorn, Aquarius or Libra in a kendra from the lagna. Classically it gives discipline, authority over many people and lasting results. In daily life it can show as patience and reliability, and the invitation is to add warmth to the duty.",
+  "Harsha": "A Viparita Raja yoga in which the lord of the sixth house sits in the 6th, 8th or 12th (Parashari tradition). Classically it turns rivals, debts and illness into strength. In daily life it can show as recovering well from setbacks, and the invitation is to build health routines and clear obligations.",
+  "Sarala": "A Viparita Raja yoga in which the lord of the eighth house sits in the 6th, 8th or 12th. Classically it gives resilience, learning and success after difficulty. In daily life it can show as steadiness in crisis and depth of study, and the invitation is to keep paperwork and savings orderly.",
+  "Vimala": "A Viparita Raja yoga in which the lord of the twelfth house sits in the 6th, 8th or 12th. Classically it gives thrift, independence and a clean conscience about expenses. In daily life it can show as frugality and inner calm, and the invitation is to plan spending.",
+  "Budh-Aditya": "A yoga formed when the Sun and Mercury sit together in the same sign. Classically it gives sharp intellect, skill with words and reputation for learning. Close combustion can mute Mercury, so the invitation is to speak and write in your own voice and finish what you start.",
+  "Gajakesari": "A yoga formed when Jupiter is in a kendra (1st, 4th, 7th or 10th) from the Moon. Classically it gives good name, wisdom and the support of others. In daily life it can show as hopeful steadiness, and the invitation is to keep learning so that the advantage grows.",
+  "Kendradhipati dosha": "A principle (Parashari tradition) that natural benefics owning kendra houses lose some of their kindness, while malefics owning kendras lose some harshness. It may show as mixed results in the houses involved, and it is a tendency rather than a verdict. Other yogas in the chart can soften it.",
+  "Neecha bhanga": "A cancellation of a planet's debilitation when supporting factors are present, such as the sign lord or the exalting planet in a kendra from the lagna or Moon (BPHS, Phaladeepika). It tends to give results that begin with effort and later become strengths. Check your own history to see whether the pattern fits."
+ },
+ "purpose": {
+  "AK": {
+   "Sun": "With the Sun as Atmakaraka (Jaimini), the soul's lesson is dignified leadership. You are learning to hold authority without ego and to know your worth without applause. Your path often includes responsibility for others.",
+   "Moon": "With the Moon as Atmakaraka, the soul's lesson is emotional maturity and nurture. You are learning to feel deeply without being ruled by it and to care for others and yourself. Your path often involves the home and the public's trust.",
+   "Mars": "With Mars as Atmakaraka, the soul's lesson is courage with self-control. You are learning to act, protect and persevere without anger taking charge. Your path often asks for discipline and the brave first step.",
+   "Mercury": "With Mercury as Atmakaraka, the soul's lesson is discernment and honest communication. You are learning to turn knowledge into useful service and to speak what is true and kind. Your path often runs through learning, trade or teaching.",
+   "Jupiter": "With Jupiter as Atmakaraka, the soul's lesson is wisdom lived rather than preached. You are learning to guide others by example and to keep faith through uncertainty. Your path often involves teaching, counsel or care of a community.",
+   "Venus": "With Venus as Atmakaraka, the soul's lesson is love with maturity. You are learning to value people and beauty without possessiveness and to balance giving with receiving. Your path often runs through relationship, art or refined work.",
+   "Saturn": "With Saturn as Atmakaraka, the soul's lesson is service through patient work. You are learning to carry responsibility with grace and to find meaning in effort over time. Your path often brings late but lasting results.",
+   "Rahu": "With Rahu as Atmakaraka (used in eight-karaka schemes), the soul's lesson is mastering desire. You are learning to pursue the new without losing your roots. Your path often crosses borders, technologies or unconventional fields."
+  },
+  "karakamsa": {
+   "Aries": "The Karakamsa in Aries (Jaimini, Upadesha Sutras) points to a soul path of initiative, self-reliance and brave beginnings. Meaning grows when you start things and see them through.",
+   "Taurus": "The Karakamsa in Taurus points to a path of steady building, beauty and secure values. Meaning grows when you create something lasting and share its comfort.",
+   "Gemini": "The Karakamsa in Gemini points to a path of learning, communication and connection. Meaning grows when your curiosity becomes something you teach, write or trade with care.",
+   "Cancer": "The Karakamsa in Cancer points to a path of nurturing, home and emotional belonging. Meaning grows when you create safety for others and tend your own heart.",
+   "Leo": "The Karakamsa in Leo points to a path of creative leadership and heartfelt authority. Meaning grows when you lead with generosity and give credit freely.",
+   "Virgo": "The Karakamsa in Virgo points to a path of skilled service, analysis and refinement. Meaning grows when careful work helps someone else.",
+   "Libra": "The Karakamsa in Libra points to a path of fairness, partnership and balance. Meaning grows when you build cooperative agreements and speak honestly about your needs.",
+   "Scorpio": "The Karakamsa in Scorpio points to a path of depth, transformation and research. Meaning grows when you face what is hidden and turn it into understanding.",
+   "Sagittarius": "The Karakamsa in Sagittarius points to a path of dharma, teaching and exploration. Meaning grows when you follow a principle and share what you learn.",
+   "Capricorn": "The Karakamsa in Capricorn points to a path of responsibility, structure and lasting achievement. Meaning grows when ambition serves something larger than yourself.",
+   "Aquarius": "The Karakamsa in Aquarius points to a path of community, innovation and service to the many. Meaning grows when your ideas improve life for a group.",
+   "Pisces": "The Karakamsa in Pisces points to a path of compassion, imagination and surrender. Meaning grows when you turn sensitivity into care, art or contemplative practice."
+  },
+  "nodes": {
+   "1": "Rahu in the first house, Ketu in the seventh. You hunger to define yourself and be seen as original, while partnership skills are already familiar to you. The growth is to claim identity without needing to win others over.",
+   "2": "Rahu in the second, Ketu in the eighth. You hunger for wealth, voice and security, while hidden and shared matters feel familiar. The growth is to build resources honestly and speak your values plainly.",
+   "3": "Rahu in the third, Ketu in the ninth. You hunger for skill, initiative and visible effort, while belief and teaching already feel known. The growth is to practise daily and let your own experience shape what you believe.",
+   "4": "Rahu in the fourth, Ketu in the tenth. You hunger for home, comfort and belonging, while public status and career feel familiar. The growth is to create inner peace instead of chasing it through place or property.",
+   "5": "Rahu in the fifth, Ketu in the eleventh. You hunger for creative recognition, romance and brilliant ideas, while networks and gains already feel known. The growth is to create for the love of it and keep faith with those closest.",
+   "6": "Rahu in the sixth, Ketu in the twelfth. You hunger to master work, competition and service, while retreat and detachment already feel familiar. The growth is to serve with skill and still rest without guilt.",
+   "7": "Rahu in the seventh, Ketu in the first. You hunger for partnership and an unusual connection, while self-reliance is a long-held habit. The growth is to let others in and let partnership shape you without losing yourself.",
+   "8": "Rahu in the eighth, Ketu in the second. You hunger for depth, secrets and transformation, while family, speech and possessions feel known. The growth is to face your own depths and hold wealth lightly.",
+   "9": "Rahu in the ninth, Ketu in the third. You hunger for meaning, teachers and far horizons, while effort and short-term skills already feel familiar. The growth is to follow a path of study and verify what you learn.",
+   "10": "Rahu in the tenth, Ketu in the fourth. You hunger for status, visible achievement and a place in the world, while home and emotional roots feel known. The growth is to build a career with integrity and keep a home base.",
+   "11": "Rahu in the eleventh, Ketu in the fifth. You hunger for networks, gains and large goals, while creativity and personal intuition already feel familiar. The growth is to aim at gains that serve your gifts and your community.",
+   "12": "Rahu in the twelfth, Ketu in the sixth. You hunger for escape, foreign places and spiritual release, while daily service and problem-solving feel known. The growth is to find freedom within life and rest without avoidance."
+  }
+ },
+ "weekly_day": {
+  "tara": {
+   "Janma": "Your birth star day. Energy is intense and personal, and the body may want rest. Keep plans light, listen to your body and start nothing that needs sharp judgement.",
+   "Sampat": "A day of wealth and supply in the star-cycle. Good for finance, collecting what is due and practical planning. Make a list of what you want to secure, and do one task toward it.",
+   "Vipat": "A day of obstacles or mismatch in the star-cycle. Plans may stumble or take longer. Keep to routine, double-check details and leave big decisions for another day.",
+   "Kshema": "A day of wellbeing and stability. Good for rest, family, health care and steady work. Do the things that keep life running well.",
+   "Pratyak": "A day of obstruction or friction in the star-cycle. Some effort meets resistance. Be patient in discussions, protect your energy and avoid forcing outcomes.",
+   "Sadhana": "A day of achievement in the star-cycle. Good for effort, practice and completing difficult tasks. Choose one important task and work on it with focus.",
+   "Naidhana": "A high-friction day in the star-cycle, linked to endings and rest. Energy may feel low, so finish small tasks, avoid big starts and sleep early.",
+   "Mitra": "A friendly day in the star-cycle. Good for meetings, shared work and reconnecting. Call someone you value and offer help.",
+   "Param Mitra": "A very supportive day in the star-cycle. Good for collaboration, learning and meaningful conversations. Start something you have been planning and ask for advice."
+  },
+  "moon_house": {
+   "1": "The Moon crosses your natal Moon sign today. Feelings are close to the surface, and attention turns to yourself. Give yourself kind routines, and avoid large commitments made in a mood.",
+   "2": "The Moon is in your second house from natal Moon. Food, speech and money matters stand out. Eat on time, speak gently and keep spending measured.",
+   "3": "The Moon is in the third from natal Moon, which is favourable for effort and communication. Good for short trips, messages and starting a small task. Reach out to someone.",
+   "4": "The Moon is in the fourth from natal Moon, which can feel unsettled at home. Seek quiet, keep your space tidy and avoid arguments with family.",
+   "5": "The Moon is in the fifth from natal Moon, favouring study and creativity but sometimes scattering focus. Take a short creative or learning session and avoid risky bets.",
+   "6": "The Moon is in the sixth from natal Moon, classically supportive for work, rivals and routine. Clear tasks and clean up pending items.",
+   "7": "The Moon is in the seventh from natal Moon, favourable for meetings and partnerships. Have the conversation you have been postponing, and listen well.",
+   "8": "The Moon is in the eighth from natal Moon, a day of lower energy and sensitivity. Go slowly, avoid big decisions and keep documents and commitments simple.",
+   "9": "The Moon is in the ninth from natal Moon, mixed for fortune. Good for study and reflection, though plans may be delayed. Take a short walk and read something meaningful.",
+   "10": "The Moon is in the tenth from natal Moon, favourable for work and visibility. Take the lead on an important task and keep your tone calm.",
+   "11": "The Moon is in the eleventh from natal Moon, classically good for gains and social ties. Meet friends, follow up on contacts and note your goals.",
+   "12": "The Moon is in the twelfth from natal Moon, which favours rest and quiet reflection. Cut back on spending and commitments, and sleep well."
+  }
+ }
+}

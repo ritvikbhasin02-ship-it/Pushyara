@@ -1,0 +1,586 @@
+{
+ "stage": 2,
+ "title": "Building the chart and the panchang",
+ "level": "Foundation",
+ "goal": "Done when you can convert a clock time to UT, find a lagna and the panchang limbs by hand to within a minute or two of arc, and say which house system, chart style and ayanamsa a chart uses.",
+ "terms": {
+  "precession": [
+   "Precession · अयनचलन",
+   "The slow wobble of Earth's axis, about 50.3″ a year, which moves the equinox point backwards through the stars. It is the reason the tropical and sidereal zodiacs drift apart."
+  ],
+  "ut": [
+   "Universal Time (UT)",
+   "The time at the Greenwich meridian. Every planetary position is computed for a moment in UT. Clock time becomes UT by subtracting the time-zone offset in force at that place and date."
+  ],
+  "ist": [
+   "Indian Standard Time · भारतीय मानक समय",
+   "UT plus 5 hours 30 minutes, based on the 82.5° E meridian, in force from 1 January 1906. It was advanced by one hour during the Second World War."
+  ],
+  "lmt": [
+   "Local mean time",
+   "Time set by the longitude of a place alone: 4 minutes for each degree east of Greenwich. Satna (80.83° E) is 5 h 23 m 19 s ahead of UT."
+  ],
+  "siderealtime": [
+   "Sidereal time · नक्षत्र काल",
+   "Time measured by the stars rather than the Sun. Local sidereal time is the right ascension of the point crossing the meridian, which fixes which part of the zodiac is rising."
+  ],
+  "ramc": [
+   "RAMC",
+   "Right ascension of the mid-heaven: local sidereal time expressed in degrees (hours × 15). It is the input from which the ascendant is calculated."
+  ],
+  "wholesign": [
+   "Whole-sign houses",
+   "Each house is one complete sign. The lagna sign is house 1, the next sign is house 2, and so on. It is the default in most Parashari teaching, and the sign-based techniques of Jaimini assume it."
+  ],
+  "bhavachalit": [
+   "Bhava Chalit (Sripati)",
+   "A house system in which the middle of each house (bhava madhya) is found by dividing the arc from lagna to the 10th cusp, and house boundaries (sandhi) fall midway between neighbouring middles. Planets near sign edges can move to a neighbouring house."
+  ],
+  "placidus": [
+   "Placidus houses",
+   "A time-based system that divides the arcs the ecliptic travels above and below the horizon into three equal times. Houses are unequal. KP uses it."
+  ],
+  "kp": [
+   "KP system · कृष्णमूर्ति पद्धति",
+   "Krishnamurti Paddhati. A system that uses Placidus houses, its own ayanamsa and a table of 249 star-and-sub divisions, and judges events by the sub-lord of house cusps."
+  ],
+  "panchang": [
+   "Panchang · पञ्चाङ्ग",
+   "The five-limbed almanac: tithi, vara, nakshatra, yoga and karana. It is the calendar part of Jyotish and is pure astronomy."
+  ],
+  "tithi": [
+   "Tithi · तिथि",
+   "A lunar day: each 12° of increase in the Moon's lead over the Sun. There are 30 in a lunar month, 15 in each paksha."
+  ],
+  "vara": [
+   "Vara · वार",
+   "The weekday, from sunrise to the next sunrise, ruled by the planet that gives it its name."
+  ],
+  "pyoga": [
+   "Panchang yoga · योग",
+   "One of 27 divisions made from the sum of the Sun's and the Moon's sidereal longitudes, each 13°20′ wide. Not the same thing as a planetary yoga (combination) in a chart."
+  ],
+  "karana": [
+   "Karana · करण",
+   "Half a tithi (6° of the Moon's lead over the Sun). There are 60 karana slots in a month using 11 names: 7 movable that repeat and 4 fixed."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "2-1",
+   "title": "Sidereal and tropical in practice: the ayanamsa",
+   "mins": 15,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> From Stage 1: which sign is your lagna, and which planet rules it?</p><p>The tropical zodiac starts at the March equinox. The {{term:sidereal|sidereal}} zodiac starts at a point fixed against the stars. Earth's axis wobbles slowly ({{term:precession|precession}}), so the equinox slides backwards through the stars at about 50.3″ a year. The gap between the two starting points is the {{term:ayanamsa|ayanamsa}}. The engine's Lahiri value was 23.836° at your birth and is 24.233° on 27 November 2026. That is 0.397° in 28 years, or about 50.3″ a year. Extrapolated backwards, the two zodiacs coincided roughly in the 3rd century CE.</p>\n<h2>The rule</h2>\n<p class=\"note\"><strong>Sidereal longitude = tropical longitude − ayanamsa.</strong> If the answer is negative, add 360°.</p>\n<p>Longitude runs 0° to 360° from Aries 0°. Divide by 30 to find the sign: 0 to 30 is Aries, 30 to 60 is Taurus, and so on.</p>\n<h2>Worked example: your Sun</h2>\n<p>An ephemeris (the engine, here) gives your tropical Sun at 94.5109°, which is 94°30.7′. That is Cancer 4°30.7′ in the tropical zodiac, your Western Sun sign. The Lahiri ayanamsa at your birth is 23°50.2′.</p>\n<p>94°30.7′ − 23°50.2′ = 70°40.5′. Divide by 30: 70°40.5′ is 2 signs (Aries, Taurus) plus 10°40.5′, so the Sun is in Gemini at 10°40.5′. The engine reports Gemini 10°40.6′. The 0.1′ gap is too small to matter.</p>\n<h2>A shortcut that works for the whole chart</h2>\n<p>The ayanamsa is about 24°. So a planet whose tropical degree inside its sign is less than about 23°50′ drops back one sign. A planet at 23°50′ or more stays in the same sign.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Tropical</th><th>Sidereal (Lahiri)</th><th>Sign shift</th></tr></thead><tbody><tr><td>Sun</td><td>Cancer 4°31′</td><td>Gemini 10°41′</td><td>Back one sign</td></tr><tr><td>Moon</td><td>Leo 1°54′</td><td>Cancer 8°04′</td><td>Back one sign</td></tr><tr><td>Mars</td><td>Gemini 23°09′</td><td>Taurus 29°19′</td><td>Back one sign (41′ short of staying)</td></tr><tr><td>Mercury</td><td>Cancer 22°00′</td><td>Gemini 28°10′</td><td>Back one sign</td></tr><tr><td>Jupiter</td><td>Pisces 27°18′</td><td>Pisces 3°28′</td><td>Stays (27°18′ is above 23°50′)</td></tr><tr><td>Venus</td><td>Gemini 2°08′</td><td>Taurus 8°18′</td><td>Back one sign</td></tr><tr><td>Saturn</td><td>Taurus 1°31′</td><td>Aries 7°41′</td><td>Back one sign</td></tr></tbody></table></div><p>Six of your seven planets drop one sign. Jupiter does not. Notice Mars: tropical 23°09′ means it is exactly 41′ below the 23°50′ threshold, the same 41′ that makes Mars a boundary warning in lesson 0-4.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Lahiri (Chitrapaksha)</strong> is the Indian government standard and the default in most Indian software. The name points to the star Chitra.</li>\n<li><strong>KP</strong> uses its own value about 6′ smaller.</li>\n<li><strong>Raman</strong> and <strong>Yukteshwar</strong> are about 1.4° smaller than Lahiri in the engine.</li>\n<li><strong>True Pushya (Pushyapaksha)</strong> is tied to the star Pushya and is recommended by P. V. R. Narasimha Rao.</li>\n<li><strong>Fagan-Bradley</strong> is common in Western sidereal astrology and is about 0.9° larger.</li>\n</ul>\n<p>Lesson 0-3 shows what these do to your chart. Pick one, state it, and never mix values in one analysis.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Mesha Sankranti, when the Sun enters sidereal Aries, falls about 24 days after the March equinox, because 23.8° at roughly 1° a day is 24 days. The engine puts it on 14 April 2027 at 15:28 IST. Check that date against any printed or online panchang for 2027. If it differs by days, the other source uses another ayanamsa.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Sidereal = tropical − ayanamsa.</li><li>The ayanamsa grows about 50.3″ a year. Lahiri is 24.233° today.</li><li>Most planets move back one sign from the Western sign. Your Jupiter is the exception.</li><li>Name the ayanamsa every time.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Take the tropical longitude of your Moon, 121°53.8′ (Leo 1°53.8′), subtract the ayanamsa 23°50.2′ and name the sign and degree. Compare with the engine's Cancer 8°04′.</p>",
+   "listen": "The tropical zodiac starts at the March equinox. The sidereal zodiac is fixed to the stars. Earth's axis wobbles, which is called precession, so the equinox drifts backwards through the stars at about fifty point three arc seconds a year. The gap is the ayanamsa. The Lahiri ayanamsa was twenty-three point eight three six degrees at your birth and is twenty-four point two three three degrees today. The rule is simple: sidereal longitude equals tropical longitude minus the ayanamsa. Your tropical Sun is ninety-four degrees thirty point seven minutes. Subtract twenty-three degrees fifty point two minutes and you get seventy degrees forty point five minutes, which is Gemini ten forty. As a shortcut, a planet whose tropical degree inside its sign is below about twenty-three fifty drops back one sign. Six of your seven planets do. Jupiter, at tropical Pisces twenty-seven eighteen, stays in Pisces. Lahiri, KP, Raman, Yukteshwar, True Pushya and Fagan-Bradley differ from each other, so always name the one you use.",
+   "sources": [
+    "Swiss Ephemeris documentation on sidereal modes and ayanamsa (reference for values)",
+    "Surya Siddhanta and later treatises on precession (the concept; no chapter given)",
+    "Indian Calendar Reform Committee, 1955, adoption of the Chitrapaksha (Lahiri) ayanamsa (details not verified here)"
+   ],
+   "quiz": [
+    {
+     "q": "Your tropical Sun is 94°30.7′ and the ayanamsa is 23°50.2′. Where is the sidereal Sun?",
+     "o": [
+      "Cancer 4°30′",
+      "Gemini 10°40′",
+      "Taurus 10°40′",
+      "Gemini 28°20′"
+     ],
+     "a": 1,
+     "w": "94°30.7′ − 23°50.2′ = 70°40.5′, which is 10°40′ into the third sign, Gemini."
+    },
+    {
+     "q": "About how fast does the ayanamsa grow?",
+     "o": [
+      "50.3″ a year",
+      "5° a year",
+      "1° a century",
+      "50.3° a year"
+     ],
+     "a": 0,
+     "w": "Precession is about 50.3 arc seconds a year. The engine's Lahiri rose 0.397° in 28 years."
+    },
+    {
+     "q": "A planet at tropical Leo 10° with a 24° ayanamsa is sidereal…",
+     "o": [
+      "Leo 10°",
+      "Cancer 16°",
+      "Virgo 4°",
+      "Cancer 10°"
+     ],
+     "a": 1,
+     "w": "Leo 10° is 130° tropical. 130° − 24° = 106° = Cancer 16°."
+    },
+    {
+     "q": "Which of your planets keeps its Western sign when converted?",
+     "o": [
+      "Mars",
+      "Saturn",
+      "Jupiter",
+      "Moon"
+     ],
+     "a": 2,
+     "w": "Jupiter's tropical degree in Pisces, 27°18′, is above the ayanamsa, so it stays in Pisces."
+    },
+    {
+     "q": "What does 'Chitrapaksha' in the Lahiri ayanamsa point to?",
+     "o": [
+      "The Moon",
+      "The star Chitra",
+      "The March equinox",
+      "The Sun's exaltation"
+     ],
+     "a": 1,
+     "w": "The name refers to the Chitra side of the zodiac, the star Chitra (Spica)."
+    }
+   ]
+  },
+  {
+   "id": "2-2",
+   "title": "Clock time to universal time: zones, local time and war time",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Does the sidereal longitude equal tropical plus ayanamsa, or tropical minus ayanamsa?</p><p>Planets move, so a position belongs to an instant. The engine, and every ephemeris, uses {{term:ut|Universal Time}} (UT), the time at Greenwich. Your clock showed a local time. The first job is to turn one into the other, and the answer depends on the place and the date.</p>\n<h2>The conversion</h2>\n<p class=\"note\"><strong>UT = clock time − time-zone offset.</strong> The offset is the one in force at that place on that date.</p>\n<p>For India today, the offset is +5:30. {{term:ist|Indian Standard Time}} has been UT + 5:30 since 1 January 1906. It is based on the 82.5° E meridian, which lies east of Allahabad.</p><div class=\"tbl\"><table><thead><tr><th>Step</th><th>Your birth</th></tr></thead><tbody><tr><td>Clock time</td><td>26 June 1998, 12:59, Satna</td></tr><tr><td>Offset</td><td>+5:30 (IST)</td></tr><tr><td>UT</td><td>07:29 on 26 June 1998</td></tr><tr><td>Julian day (engine)</td><td>2450990.81181</td></tr><tr><td>{{term:lmt|Local mean time}}</td><td>80.83° E ÷ 15 = 5 h 23 m 19 s ahead of UT, so 12:52:19</td></tr><tr><td>IST minus local mean time</td><td>82.5° − 80.83° = 1.67° = 6 m 41 s</td></tr></tbody></table></div><h2>Why dates matter: the war years</h2>\n<p>Time zones are legal rules, and rules change. For India the tz database (the standard list of historical zone rules, used by the engine) records a one-hour advance, UT + 6:30, from 1 October 1941 to 14 May 1942 and again from 1 September 1942 to 15 October 1945. Some summaries of Indian time mention only the 1942–45 spell; the tz database lists the 1941–42 spell as well.</p>\n<p>Worked example, a baby born on 10 March 1944 at 14:00 by the clock in Satna (an invented case):</p><div class=\"tbl\"><table><thead><tr><th>Method</th><th>UT</th><th>Lagna</th><th>Moon</th></tr></thead><tbody><tr><td>Correct: war-time offset +6:30</td><td>07:30</td><td>Gemini 18°17′</td><td>Leo 29°45′ (Uttara Phalguni)</td></tr><tr><td>Wrong: ordinary IST +5:30</td><td>08:30</td><td>Cancer 1°28′</td><td>Virgo 0°14′ (Uttara Phalguni)</td></tr></tbody></table></div><p>One hour of error changed the lagna sign and the Moon's sign. The dasha balance would move too, because the Moon crossed a sign edge.</p>\n<h2>Other clocks before 1947</h2>\n<p>IST was not the only clock in use. Wikipedia's summary of Indian time lists Calcutta Time (UT + 5:53:20, kept in Calcutta until 1948) and Bombay Time (UT + 4:51, kept in Bombay until 1955). It also mentions short spells of daylight saving during the 1962, 1965 and 1971 conflicts, marked there as needing a citation, and the tz database used by the engine has no such entries. For any birth before about 1960, find out which clock the family or the hospital used before you convert.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your 12:59 is IST, which is normal for 1998. UT is 07:29. The engine's Julian day is 2450990.81181. Because Satna sits 1.67° west of the IST meridian, true local time at your birth was 12:52:19, about 6 minutes 41 seconds before the clock showed. Jyotish software uses the UT instant. It never needs local time, except when you follow a printed worked example that was set by local time.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Practitioners differ on what counts as the moment of birth: the first breath or cry, the emergence of the head, or the cutting of the cord. There is no consensus, and no classical text that settles it is cited here. The effect is usually a few minutes, which matters for the lagna (roughly 3 to 4½ minutes per degree at Satna) and the divisional charts.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Convert the same clock time to UT with a second tool (any time-zone converter) and compare with the engine's Julian day. For a war-years birth, run the chart twice with +5:30 and +6:30 and see what changes. If your lagna sign or Moon sign flips, the clock rule is the first thing to settle.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>UT = clock time − the offset in force at that place and date.</li><li>IST is UT + 5:30 since 1906. War time added one hour in 1941–42 and 1942–45.</li><li>Satna is 6 m 41 s behind the IST meridian in local mean time.</li><li>Before 1960, find out which clock was used.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Convert your own birth time to UT and to local mean time with the table above. Then take a family member born before 1950, find the offset in force on that date, and compute their UT.</p>",
+   "listen": "Every planetary position belongs to an instant measured in Universal Time. To get there from the clock, subtract the time zone offset in force at that place and date. India has used Indian Standard Time, UT plus five thirty, since the first of January 1906. Your birth at 12:59 IST becomes 07:29 UT. Local mean time at Satna was 12:52 and 19 seconds, about six minutes forty-one seconds behind the clock, because Satna lies 1.67 degrees west of the 82.5 degree IST meridian. Time rules change. India advanced clocks by an hour during the war years, 1942 to 1945, and the tz database also records a spell in 1941 to 1942. For a child born on 10 March 1944 at 2 PM in Satna, using the wrong offset changes the lagna from Gemini to Cancer and the Moon from Leo to Virgo. Before 1948 some cities, such as Calcutta, kept their own times, so check which clock a record used. Outside India, use the zone rules of the birth place on that date.",
+   "sources": [
+    "IANA tz database, Asia/Kolkata history (read through the engine's zone data)",
+    "Wikipedia, 'Time in India' (IST adoption, Calcutta Time, Bombay Time, 1942–45 war time); secondary summary only",
+    "Swiss Ephemeris, Julian day and UT conventions"
+   ],
+   "quiz": [
+    {
+     "q": "What is your birth time in UT?",
+     "o": [
+      "06:29",
+      "07:29",
+      "12:59",
+      "18:29"
+     ],
+     "a": 1,
+     "w": "12:59 − 5:30 = 07:29 UT."
+    },
+    {
+     "q": "Satna is 80.83° E. IST is based on 82.5° E. Which is true?",
+     "o": [
+      "Satna's local mean time is 6 m 41 s behind IST",
+      "Satna's local mean time is 6 m 41 s ahead of IST",
+      "Satna's local mean time equals IST exactly",
+      "Satna's local mean time is an hour behind"
+     ],
+     "a": 0,
+     "w": "Satna is 1.67° west of the IST meridian, which is 6 m 41 s of time. It is behind IST."
+    },
+    {
+     "q": "A 1944 clock reading in India followed UT + 6:30. Treating it as UT + 5:30 gives…",
+     "o": [
+      "The right chart, as the zones are nearly the same",
+      "UT one hour too late, so the lagna is too advanced",
+      "UT one hour too early, so the lagna lags behind",
+      "No change to any sign, only the dasha dates shift"
+     ],
+     "a": 1,
+     "w": "UT would come out one hour late (08:30 instead of 07:30), so the lagna runs ahead."
+    },
+    {
+     "q": "Which clock did Calcutta keep until 1948?",
+     "o": [
+      "UT + 5:30",
+      "UT + 5:53:20",
+      "UT + 4:51",
+      "UT + 6:30"
+     ],
+     "a": 1,
+     "w": "Wikipedia's summary lists Calcutta Time as UT + 5:53:20, kept until 1948."
+    },
+    {
+     "q": "Which instant do planetary calculations use?",
+     "o": [
+      "Local mean time",
+      "Clock time",
+      "Universal Time",
+      "Sunrise time"
+     ],
+     "a": 2,
+     "w": "Ephemerides are computed in UT, and the zone offset bridges clock time to it."
+    }
+   ]
+  },
+  {
+   "id": "2-3",
+   "title": "How the lagna is found: sidereal time and the rising sign",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Convert 12:59 IST on 26 June 1998 to UT.</p><p>The {{term:lagna|lagna}} is the point of the zodiac rising on the eastern horizon at the birth place and moment. The Earth turns 360° in a day, so the whole zodiac crosses the horizon in a day. With twelve signs, the average sign takes about two hours to rise, so the lagna changes sign about every two hours.</p>\n<h2>The calculation, step by step</h2><div class=\"tbl\"><table><thead><tr><th>Step</th><th>What</th><th>Your birth</th></tr></thead><tbody><tr><td>1</td><td>UT and Julian day D = JD − 2451545.0</td><td>D = −554.18819</td></tr><tr><td>2</td><td>Greenwich mean sidereal time (hours) = 18.697374558 + 24.06570982441908 × D, reduced to 0–24</td><td>1 h 45 m 54.4 s</td></tr><tr><td>3</td><td>{{term:siderealtime|Local sidereal time}} = GMST + longitude ÷ 15 (east is positive)</td><td>1:45:54.4 + 5:23:19.2 = 7 h 09 m 13.6 s</td></tr><tr><td>4</td><td>{{term:ramc|RAMC}} = local sidereal time × 15</td><td>107.306°</td></tr><tr><td>5</td><td>Ascendant (tropical) = atan2( cos RAMC , −( sin RAMC · cos ε + tan φ · sin ε ) ), with ε = 23.437° and φ = 24.58°</td><td>195.70° = Libra 15°42′</td></tr><tr><td>6</td><td>Subtract the ayanamsa 23°50.2′</td><td>171°52′ = Virgo 21°52′</td></tr></tbody></table></div><p>The engine uses the apparent sidereal time (1 h 45 m 53.9 s), which differs from the mean figure above by about 0.4 s. That is why its ascendant differs from the hand figure by well under an arc minute.</p>\n<h2>Why signs rise in unequal times</h2>\n<p>The ecliptic is tilted against the equator, and Satna is at 24.58° N. The sign durations on 26 June 1998 at Satna, from the engine:</p><div class=\"tbl\"><table><thead><tr><th>Sign</th><th>Rising time</th><th>Sign</th><th>Rising time</th></tr></thead><tbody><tr><td>Aries (sidereal)</td><td>99 min</td><td>Libra</td><td>135 min</td></tr><tr><td>Taurus</td><td>117 min</td><td>Scorpio</td><td>137 min</td></tr><tr><td>Gemini</td><td>134 min</td><td>Sagittarius</td><td>125 min</td></tr><tr><td>Cancer</td><td>137 min</td><td>Capricorn</td><td>106 min</td></tr><tr><td>Leo</td><td>133 min</td><td>Aquarius</td><td>91 min</td></tr><tr><td>Virgo</td><td>133 min</td><td>Pisces</td><td>89 min</td></tr></tbody></table></div><p>The shortest is 89 minutes and the longest is 137. The same sign rises about 4 minutes earlier each day, because a sidereal day is 3 m 56 s shorter than a solar day.</p>\n<h2>A hand method you can trust</h2>\n<p>At sunrise the lagna is close to the Sun's own position. Sunrise at Satna that day was 05:20 IST. The engine puts the lagna at Gemini 9°42′ and the Sun at Gemini 10°22′. From sunrise, step through the sign durations to the birth time.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Gemini began 04:39 and ended 06:53, Cancer ran to 09:10, Leo to 11:23 and Virgo from 11:23 to 13:36 (133 minutes). Your birth at 12:59 is 96 minutes into Virgo. Linear estimate: 96 ÷ 133 × 30° = 21.7°, so Virgo 21°39′. The engine gives Virgo 21°52′. The 13′ error comes from the lagna moving at a varying speed inside a sign. The estimate puts you in the right sign and nearly the right degree.</p>\n<p>The lagna reaches Libra at 13:36, 37 minutes after your birth time.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Other reference points are also called lagna. The Moon (Chandra lagna) and Sun (Surya lagna) serve as alternative first houses. Hora lagna and Ghati lagna are timed from sunrise. Jaimini astrologers use the Arudha lagna. KP's first cusp is the same degree as the ordinary lagna, but the rest of the houses differ (lesson 2-4). Not verified against the original text: chapter numbers for the special lagnas in BPHS.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check any lagna three ways. First, see whether the lagna at sunrise is close to the Sun's sign. Second, compare with another program. Third, recompute at birth time ± 5 minutes: near your birth time (Virgo rising) the lagna moves about 1° per 4½ minutes, so ±5 minutes shifts it by about 1.1°. Other signs rise faster or slower (3 to 4½ minutes per degree at Satna). If a sign or nakshatra edge sits within that distance, flag it.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>The lagna sign changes about every 2 hours, but sign durations vary from about 89 to 137 minutes at Satna.</li><li>Steps: UT, sidereal time at Greenwich, local sidereal time, RAMC, ascendant formula, minus ayanamsa.</li><li>At sunrise the lagna is close to the Sun's position.</li><li>Near your birth time the lagna moves about 1° every 4½ minutes. The rate differs by sign.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Use the sign-duration table to estimate your lagna degree for a birth at 12:30 IST the same day. Then check it with the engine.</p>",
+   "listen": "The lagna is the point of the zodiac rising on the eastern horizon at your birth place and moment. The Earth turns once a day, so each sign takes about two hours to rise, but the durations are unequal. At Satna on your birth date they run from eighty-nine minutes for Pisces to one hundred thirty-seven for Cancer and Scorpio. To find the lagna, convert to UT, compute Greenwich sidereal time, add the longitude divided by fifteen to get local sidereal time, and multiply by fifteen to get the RAMC. A standard formula turns the RAMC, the tilt of the ecliptic and your latitude into the tropical ascendant. Subtract the ayanamsa. For you: sidereal time seven hours nine minutes thirteen seconds, RAMC one hundred seven point three degrees, tropical ascendant Libra fifteen forty-two, sidereal Virgo twenty-one fifty-two. A quick hand method works too: at sunrise the lagna sits near the Sun, then you step through the sign durations. Your lagna reaches Libra at 13:36, thirty-seven minutes after your birth time.",
+   "sources": [
+    "Swiss Ephemeris, houses and sidereal time functions (reference implementation)",
+    "Standard spherical-astronomy formula for the ascendant from RAMC, obliquity and latitude",
+    "BPHS on special lagnas (Hora lagna, Ghati lagna); chapter not verified"
+   ],
+   "quiz": [
+    {
+     "q": "Roughly how long does one sign take to rise?",
+     "o": [
+      "30 minutes",
+      "About 2 hours",
+      "About 6 hours",
+      "12 hours"
+     ],
+     "a": 1,
+     "w": "12 signs in about 24 hours is about 2 hours each, though the durations vary."
+    },
+    {
+     "q": "What do you add to Greenwich sidereal time to get local sidereal time?",
+     "o": [
+      "Latitude ÷ 15 in hours, north positive",
+      "Longitude ÷ 15 in hours, east positive",
+      "The ayanamsa in hours, east positive",
+      "The Sun's longitude ÷ 15 in hours"
+     ],
+     "a": 1,
+     "w": "Each degree of east longitude adds 4 minutes of sidereal time."
+    },
+    {
+     "q": "At sunrise, the lagna is approximately…",
+     "o": [
+      "The Moon's position",
+      "The Sun's position",
+      "The sign opposite the Sun",
+      "Always Aries"
+     ],
+     "a": 1,
+     "w": "At sunrise the Sun is on the eastern horizon, so the lagna is close to its longitude."
+    },
+    {
+     "q": "Why do sign rising times differ?",
+     "o": [
+      "The Sun speeds up and slows down through the year, changing each rise",
+      "The ecliptic is tilted against the equator and the place has a latitude",
+      "Signs are defined with unequal widths in the zodiac",
+      "It is a rounding artefact of the clock-time conversion"
+     ],
+     "a": 1,
+     "w": "The tilt of the ecliptic to the horizon changes how fast each stretch of it rises."
+    },
+    {
+     "q": "From the sign-duration table, your lagna at 12:59 is about…",
+     "o": [
+      "Virgo 6°",
+      "Virgo 21°",
+      "Libra 10°",
+      "Leo 21°"
+     ],
+     "a": 1,
+     "w": "You are 96 of 133 minutes into Virgo, about 21.7° by linear estimate."
+    }
+   ]
+  },
+  {
+   "id": "2-4",
+   "title": "House systems: whole-sign, Sripati and Placidus",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> About how many minutes does the lagna take to move 1° at Satna?</p><p>Once you have the lagna, you must decide which part of the sky counts as the 1st house, the 2nd house and so on. Systems agree on the lagna degree. They disagree on how to divide the circle.</p>\n<h2>Four common systems</h2><div class=\"tbl\"><table><thead><tr><th>System</th><th>How houses are made</th><th>House width</th><th>Typical user</th></tr></thead><tbody><tr><td>{{term:wholesign|Whole-sign}}</td><td>House 1 is the whole lagna sign. Each next sign is the next house</td><td>Always 30°</td><td>Most Parashari teaching; the base for Jaimini sign-based methods</td></tr><tr><td>Equal house</td><td>House 1 starts at the lagna degree. Each house is 30° from there</td><td>Always 30°</td><td>Used by some practitioners; not the usual Parashari default</td></tr><tr><td>{{term:bhavachalit|Sripati / Bhava Chalit}}</td><td>The arc from lagna to the 10th cusp is divided into thirds to find each house middle. The boundary falls midway between neighbouring middles</td><td>Unequal</td><td>Many Parashari astrologers, alongside the whole-sign chart</td></tr><tr><td>{{term:placidus|Placidus}}</td><td>Each cusp divides the time a point takes to travel from horizon to meridian into thirds</td><td>Unequal, can be 25–35° or more</td><td>{{term:kp|KP}} and most Western software</td></tr></tbody></table></div><p>Bhava Chalit takes its name from the Sanskrit for \"moved house\". It is attributed to the medieval author Sripati.</p>\n<h2>Where it makes a difference: your planets</h2>\n<p>Your lagna is Virgo 21°52′ and the 10th cusp (the mid-heaven) is Gemini 22°07′, about 90° apart. So Sripati houses are almost equal. Each house runs from about 7° of one sign to about 7° of the next. The engine gives these boundaries: house 1 starts at Virgo 6°55′, house 2 at Libra 6°55′, house 3 at Scorpio 6°59′, house 4 at Sagittarius 7°05′, and so on.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Position</th><th>Whole-sign</th><th>Sripati</th><th>Placidus</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini 10°41′</td><td>10</td><td>10</td><td>9</td></tr><tr><td>Moon</td><td>Cancer 8°04′</td><td>11</td><td>11</td><td>10</td></tr><tr><td>Mars</td><td>Taurus 29°19′</td><td>9</td><td>9</td><td>9</td></tr><tr><td>Mercury</td><td>Gemini 28°10′</td><td>10</td><td>10</td><td>10</td></tr><tr><td>Jupiter</td><td>Pisces 3°28′</td><td>7</td><td>6</td><td>6</td></tr><tr><td>Venus</td><td>Taurus 8°18′</td><td>9</td><td>9</td><td>8</td></tr><tr><td>Saturn</td><td>Aries 7°41′</td><td>8</td><td>8</td><td>7</td></tr><tr><td>Rahu (mean)</td><td>Leo 10°33′</td><td>12</td><td>12</td><td>11</td></tr><tr><td>Ketu (mean)</td><td>Aquarius 10°33′</td><td>6</td><td>6</td><td>5</td></tr></tbody></table></div><p>Sripati moves one planet: Jupiter, at Pisces 3°28′, is before the house 7 boundary at Pisces 6°55′, so it belongs to house 6. Placidus moves seven of your nine points down one house. Its cusps (sidereal, Lahiri): house 2 at Libra 20°50′, house 3 Scorpio 21°06′, house 4 Sagittarius 22°07′, house 5 Capricorn 23°29′, house 6 Aquarius 23°58′, house 7 Pisces 21°52′, house 8 Aries 20°50′, house 9 Taurus 21°06′, house 10 Gemini 22°07′, house 11 Cancer 23°29′, house 12 Leo 23°58′. With the KP ayanamsa the 1st cusp moves to Virgo 21°58′.</p>\n<p>Only Mars and Mercury keep the same house in all three systems.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Whole-sign</strong> is the default in most modern Parashari teaching, and Jaimini's sign-based techniques assume it. Older practice often read the sign chart for planets' strength and a Bhava Chalit chart for results.</li>\n<li><strong>Bhava Chalit</strong> is used by many Parashari astrologers for the results of planets near house edges. They read both charts. The name is used for two methods: Sripati (the trisection above) and, in many programs, equal houses with the lagna degree as the middle of house 1. Check which one your software means. Not verified against the original text: what BPHS prescribes.</li>\n<li><strong>KP</strong> insists on Placidus cusps with the KP ayanamsa and reads the sub-lord of each cusp.</li>\n<li><strong>Placidus</strong> is undefined at extreme northern and southern latitudes, which is irrelevant for India.</li>\n</ul>\n<p>The course does not call one correct. When a planet changes house between systems, read both and log which you used.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>For each planet, note its house in whole-sign and in Bhava Chalit. If the two agree, the house statement is robust to the house system. If they differ, mark it as fragile, like Jupiter in your 7th or 6th house. Under KP, first switch to the KP ayanamsa and Placidus.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>All systems share the lagna degree. They differ in house boundaries.</li><li>Whole-sign: one sign, one house. Sripati: house middles by trisection, edges at midpoints.</li><li>In your chart Sripati moves only Jupiter (7 to 6). Placidus moves seven points.</li><li>Name the house system with every chart.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Pick one planet that Placidus moves, for example your Venus (house 9 to house 8). Write one sentence for each house reading and note which feels closer to your experience, without deciding that either is correct.</p>",
+   "listen": "The lagna degree is the same in every house system. What differs is how the circle is divided. Whole-sign houses make each sign one house: the lagna sign is house one. Equal houses start at the lagna degree and run thirty degrees each. Sripati, also called Bhava Chalit, finds house middles by dividing the arc from lagna to the tenth cusp, and puts the boundaries midway between neighbouring middles. Placidus divides time instead of space, gives unequal houses and is used by KP. In your chart the lagna is Virgo twenty-one fifty-two and the tenth cusp is Gemini twenty-two zero seven, so Sripati houses run from about seven degrees of one sign to seven degrees of the next. That moves only Jupiter, from the seventh to the sixth house. Placidus moves seven of your nine points down one house. Only Mars and Mercury stay put in all three. Whole-sign is the default in most Parashari teaching, and Jaimini's sign-based techniques assume it. KP uses Placidus. When a planet changes house between systems, read both and say which you used.",
+   "sources": [
+    "BPHS, chapters on bhava and bhava sandhi (topic only; chapter not verified)",
+    "Sripati Paddhati and later bhava-chalit practice (attribution of the method to Sripati as commonly stated)",
+    "Dekho Panchang, KP system page (Placidus, Krishnamurti ayanamsa)"
+   ],
+   "quiz": [
+    {
+     "q": "Which house system makes every house exactly one sign?",
+     "o": [
+      "Placidus",
+      "Whole-sign",
+      "Sripati",
+      "Koch"
+     ],
+     "a": 1,
+     "w": "In whole-sign houses the lagna sign is house 1 in full."
+    },
+    {
+     "q": "Which system does KP use?",
+     "o": [
+      "Whole-sign",
+      "Equal",
+      "Placidus",
+      "Sripati"
+     ],
+     "a": 2,
+     "w": "KP uses Placidus cusps with the Krishnamurti ayanamsa."
+    },
+    {
+     "q": "Under Sripati, which of your planets moves house?",
+     "o": [
+      "Mars",
+      "Jupiter",
+      "Mercury",
+      "Moon"
+     ],
+     "a": 1,
+     "w": "Jupiter at Pisces 3°28′ lies before the Sripati house 7 boundary at Pisces 6°55′, so it falls in house 6."
+    },
+    {
+     "q": "In which houses are your Mars and Mercury under all three systems?",
+     "o": [
+      "Mars 9, Mercury 10",
+      "Mars 8, Mercury 9",
+      "Mars 10, Mercury 9",
+      "Mars 9, Mercury 11"
+     ],
+     "a": 0,
+     "w": "Mars is in house 9 and Mercury in house 10 under whole-sign, Sripati and Placidus."
+    },
+    {
+     "q": "What should you do when a planet changes house between systems?",
+     "o": [
+      "Ignore the change and read only one system",
+      "Read both and say which you used",
+      "Delete the planet from the chart table",
+      "Choose the more favourable house"
+     ],
+     "a": 1,
+     "w": "The honest approach is to read both and log which system a statement used."
+    }
+   ]
+  },
+  {
+   "id": "2-5",
+   "title": "North, South and East Indian chart styles",
+   "mins": 15,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> In which house system is every house exactly one sign?</p><p>A chart is a picture of twelve zones. There are three common drawing styles in India. The same chart in any style holds the same information. Only the layout changes. No classical text prescribing one shape is cited here: the styles are regional habits that software now offers side by side.</p>\n<h2>The three styles</h2><div class=\"tbl\"><table><thead><tr><th></th><th>North Indian</th><th>South Indian</th><th>East Indian</th></tr></thead><tbody><tr><td>Grid</td><td>A square cut by its two diagonals and an inner diamond joining the side midpoints: 12 regions</td><td>A 4×4 grid with the four centre squares empty: 12 outer cells</td><td>A 3×3 grid with the corner squares cut by diagonals: 12 regions (one source; the layout is described differently in different books)</td></tr><tr><td>What is fixed</td><td>Houses. The top kite is always house 1</td><td>Signs. Pisces is always top-left</td><td>Signs (Aries at the top in the common version)</td></tr><tr><td>What moves</td><td>Signs, numbered from the lagna sign in house 1</td><td>The lagna is marked with a slash</td><td>The lagna is marked</td></tr><tr><td>Counting</td><td>House 1 at the top, then anticlockwise</td><td>Signs run clockwise from Pisces; houses count clockwise from the lagna cell</td><td>Counted anticlockwise from the lagna</td></tr><tr><td>Common in</td><td>North and central India, including Madhya Pradesh</td><td>Tamil Nadu, Kerala, Karnataka, Andhra Pradesh</td><td>West Bengal, Odisha, Assam</td></tr></tbody></table></div><p class=\"note\">The region list and the East Indian arrangement come from a web guide and vary between sources. They are not verified against a classical text. Check any East Indian chart against your software's own key before reading it.</p>\n<h2>North Indian layout in words</h2>\n<p>The four kites, which sit in the middle of each side, are houses 1 (top), 4 (left), 7 (bottom) and 10 (right). These are the kendras. Each corner of the square holds two triangles: the top-left corner has houses 2 (upper) and 3 (lower), the bottom-left corner has 5 (upper) and 6 (lower), the bottom-right has 8 (lower) and 9 (upper), and the top-right has 11 (lower) and 12 (upper). The sign number (Aries = 1 to Pisces = 12) is written in each house, and planets sit beside it.</p>\n<h2>South Indian layout in words</h2>\n<p>The top row reads Pisces, Aries, Taurus, Gemini. The right column continues downward with Cancer and Leo. The bottom row, from right to left, reads Virgo, Libra, Scorpio, Sagittarius. The left column, from bottom to top, reads Capricorn and Aquarius. A diagonal line across a cell marks the lagna.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>North Indian form. House 1 is Virgo (sign number 6).</p><div class=\"tbl\"><table><thead><tr><th>House</th><th>Where in the diagram</th><th>Sign (number)</th><th>Planets</th></tr></thead><tbody><tr><td>1</td><td>Top kite</td><td>Virgo (6)</td><td>Lagna</td></tr><tr><td>2</td><td>Top-left corner, upper triangle</td><td>Libra (7)</td><td>None</td></tr><tr><td>3</td><td>Top-left corner, lower triangle</td><td>Scorpio (8)</td><td>None</td></tr><tr><td>4</td><td>Left kite</td><td>Sagittarius (9)</td><td>None</td></tr><tr><td>5</td><td>Bottom-left corner, upper triangle</td><td>Capricorn (10)</td><td>None</td></tr><tr><td>6</td><td>Bottom-left corner, lower triangle</td><td>Aquarius (11)</td><td>Ketu</td></tr><tr><td>7</td><td>Bottom kite</td><td>Pisces (12)</td><td>Jupiter</td></tr><tr><td>8</td><td>Bottom-right corner, lower triangle</td><td>Aries (1)</td><td>Saturn</td></tr><tr><td>9</td><td>Bottom-right corner, upper triangle</td><td>Taurus (2)</td><td>Mars, Venus</td></tr><tr><td>10</td><td>Right kite</td><td>Gemini (3)</td><td>Sun, Mercury</td></tr><tr><td>11</td><td>Top-right corner, lower triangle</td><td>Cancer (4)</td><td>Moon</td></tr><tr><td>12</td><td>Top-right corner, upper triangle</td><td>Leo (5)</td><td>Rahu</td></tr></tbody></table></div><p>South Indian form. The lagna slash goes in the bottom-right cell, Virgo.</p><div class=\"tbl\"><table><thead><tr><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th></tr></thead><tbody><tr><td>Pisces: Jupiter</td><td>Aries: Saturn</td><td>Taurus: Mars, Venus</td><td>Gemini: Sun, Mercury</td></tr><tr><td>Aquarius: Ketu</td><td>(empty)</td><td>(empty)</td><td>Cancer: Moon</td></tr><tr><td>Capricorn: none</td><td>(empty)</td><td>(empty)</td><td>Leo: Rahu</td></tr><tr><td>Sagittarius: none</td><td>Scorpio: none</td><td>Libra: none</td><td>Virgo: Lagna</td></tr></tbody></table></div></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>The picture does not change any rule of reading. Parashari, Jaimini and KP all work from the same data. In practice, the style follows the region, the teacher and the software. Both are reading aids, not different astrology.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Take the same chart in two styles from software and match every planet's sign and house. Count nine planets plus lagna in each. If one is missing or in the wrong cell, you have misread the key. Then compare with your North Indian table above.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>North: houses fixed, signs move. South: signs fixed, houses move.</li><li>North house 1 is the top kite, then count anticlockwise.</li><li>South: Pisces is top-left, Aries next to it, and a slash marks the lagna.</li><li>Style is a picture. The data is the same.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Draw your own chart on paper in the North and South styles from the two tables, and check that each has nine planets and the lagna.</p>",
+   "listen": "There are three common ways to draw the same chart. In the North Indian style the houses are fixed and the signs move. House one is the kite at the top, and you count anticlockwise. The four kites in the middle of each side are the kendras, houses one, four, seven and ten, and each corner holds two triangles. In the South Indian style the signs are fixed. The top row reads Pisces, Aries, Taurus, Gemini, then Cancer and Leo go down the right, Virgo, Libra, Scorpio and Sagittarius run along the bottom, and a slash across a cell marks the lagna. The East Indian style uses a three by three grid with cut corners and fixed signs, but the arrangement differs between sources, so check it against your software's key. For you in the North style, house one is Virgo, Mars and Venus share house nine in Taurus, and the Sun and Mercury are in house ten in Gemini. The style changes the picture only, not the data. No classical text prescribing one shape is cited here.",
+   "sources": [
+    "Regional chart-style conventions as described in modern Jyotish primers and software guides (no classical text found that prescribes the shapes)",
+    "Wikipedia, 'Kundali (astrology)', general description",
+    "kundligpt.com, North, South, East chart styles compared (single web source, used cautiously)"
+   ],
+   "quiz": [
+    {
+     "q": "In a North Indian chart, house 1 is…",
+     "o": [
+      "The top-left square",
+      "The top central kite",
+      "The bottom-right square",
+      "Wherever Aries falls"
+     ],
+     "a": 1,
+     "w": "House 1, the lagna, is always the top kite."
+    },
+    {
+     "q": "Which sign is always in the top-left of a South Indian chart?",
+     "o": [
+      "Aries",
+      "Aquarius",
+      "Pisces",
+      "Gemini"
+     ],
+     "a": 2,
+     "w": "Pisces is top-left, with Aries next to it."
+    },
+    {
+     "q": "In your North Indian chart, which houses hold Mars and Venus?",
+     "o": [
+      "House 7",
+      "House 9",
+      "House 10",
+      "House 11"
+     ],
+     "a": 1,
+     "w": "Taurus is the 9th house from Virgo, so Mars and Venus share house 9."
+    },
+    {
+     "q": "In your South Indian chart, where is the lagna slash?",
+     "o": [
+      "Pisces (top-left)",
+      "Cancer (right side)",
+      "Virgo (bottom-right)",
+      "Leo (right side)"
+     ],
+     "a": 2,
+     "w": "Virgo sits in the bottom-right cell of the South Indian grid."
+    },
+    {
+     "q": "What differs between chart styles?",
+     "o": [
+      "The planetary positions",
+      "The picture only",
+      "The ayanamsa",
+      "The dasha"
+     ],
+     "a": 1,
+     "w": "The data is identical. Only the layout changes."
+    }
+   ]
+  },
+  {
+   "id": "2-6",
+   "title": "The five limbs of the panchang",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which chart style keeps the signs fixed in place, North or South?</p><p>The {{term:panchang|panchang}} (<span class=\"skt\">पञ्चाङ्ग</span>, \"five limbs\") is the Jyotish calendar. It is pure astronomy: it depends only on the Sun's and Moon's longitudes and the weekday. Every limb has a formula you can compute.</p>\n<h2>The five limbs</h2><div class=\"tbl\"><table><thead><tr><th>Limb</th><th>Formula</th><th>Count</th></tr></thead><tbody><tr><td>{{term:tithi|Tithi}}</td><td>Moon − Sun (mod 360°), divided by 12°, rounded up. 1–15 Shukla (waxing), 16–30 Krishna (waning)</td><td>30</td></tr><tr><td>{{term:vara|Vara}}</td><td>The weekday, from sunrise to the next sunrise. Lord of the day: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn from Sunday</td><td>7</td></tr><tr><td>{{term:nakshatra|Nakshatra}}</td><td>Moon longitude divided by 13°20′, rounded up. Pada = each 3°20′</td><td>27 (108 padas)</td></tr><tr><td>{{term:pyoga|Yoga}}</td><td>(Sun + Moon) mod 360° divided by 13°20′, rounded up</td><td>27</td></tr><tr><td>{{term:karana|Karana}}</td><td>Half a tithi: (Moon − Sun) divided by 6°, rounded up</td><td>60 slots, 11 names</td></tr></tbody></table></div><p>The karana cycle: slot 1 is Kimstughna (fixed). Slots 2 to 57 repeat Bava, Balava, Kaulava, Taitila, Gara, Vanija, Vishti (also called Bhadra) eight times. Slots 58, 59 and 60 are Shakuni, Chatushpada and Naga (fixed).</p>\n<p>The 27 yogas, in order: Vishkumbha, Priti, Ayushman, Saubhagya, Shobhana, Atiganda, Sukarma, Dhriti, Shula, Ganda, Vriddhi, Dhruva, Vyaghata, Harshana, Vajra, Siddhi, Vyatipata, Variyan, Parigha, Shiva, Siddha, Sadhya, Shubha, Shukla, Brahma, Indra, Vaidhriti.</p>\n<p>Tithis repeat in five groups by number: Nanda (1, 6, 11), Bhadra (2, 7, 12), Jaya (3, 8, 13), Rikta (4, 9, 14) and Purna (5, 10, 15). Muhurta tradition judges the fitness of each group for tasks. A tithi is not a verdict on a person.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The engine's Moon is at 98°03.8′ and its Sun at 70°40.6′ (both sidereal, Lahiri).</p><div class=\"tbl\"><table><thead><tr><th>Limb</th><th>Working</th><th>Result at 12:59</th><th>Runs from → to (IST)</th></tr></thead><tbody><tr><td>Tithi</td><td>98°03.8′ − 70°40.6′ = 27°23.2′, and 27.39 ÷ 12 = 2.28, so the 3rd</td><td>Shukla Tritiya (3)</td><td>26 Jun 06:25 → 27 Jun 05:56</td></tr><tr><td>Vara</td><td>26 June 1998 was a Friday</td><td>Shukravara, lord Venus</td><td>Sunrise 05:20 → next sunrise</td></tr><tr><td>Nakshatra</td><td>98.06° ÷ 13.333° = 7.355, so the 8th. Fraction 0.355 × 4 = 1.4, so pada 2</td><td>Pushya, pada 2</td><td>26 Jun 04:28 → 27 Jun 04:41</td></tr><tr><td>Yoga</td><td>168°44.4′ ÷ 13°20′ = 12.66, so the 13th</td><td>Vyaghata</td><td>25 Jun 22:21 → 26 Jun 20:45</td></tr><tr><td>Karana</td><td>27.39° ÷ 6° = 4.56, so the 5th half-tithi. Slot 5 is the 4th movable name</td><td>Taitila</td><td>26 Jun 06:25 → 18:05, then Gara</td></tr></tbody></table></div><p>Two side notes. First, tithi 3 started at 06:25, after sunrise at 05:20, so the tithi at sunrise on 26 June was Dwitiya (2). Many almanacs name the day by its sunrise tithi and print the end times. The chart uses the tithi at the birth moment, which is Tritiya. Second, Vyaghata is one of nine yogas that muhurta tradition counts as unsuitable for starting new work (Vishkumbha, Atiganda, Shula, Ganda, Vyaghata, Vajra, Vyatipata, Parigha, Vaidhriti; lists vary slightly). That says something about starting activities in that window and nothing about you.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Day start.</strong> Traditional almanacs run the day from sunrise to sunrise. A birth after midnight and before sunrise therefore has the previous weekday as vara in that convention, while civil calendars use the new date.</li>\n<li><strong>Month.</strong> The lunar month ends at the new moon (amanta) in much of South and West India and at the full moon (purnimanta) in most of North India.</li>\n<li><strong>Method.</strong> Modern drik almanacs use ephemerides. Some regional almanacs still calculate from older Surya-Siddhanta-based rules (for example vakya panchangams). Tithi and yoga end times can differ by minutes or more between the two.</li>\n<li><strong>Nakshatra count.</strong> Birth charts use 27. Some muhurta uses 28 by adding Abhijit.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Tithi and karana depend on the difference of two longitudes, so the ayanamsa cancels out. Nakshatra and yoga use sidereal longitudes themselves, so they depend on the ayanamsa. Your yoga is Vyaghata under all six ayanamsas in lesson 0-3, and your tithi and nakshatra do not change either. Compare the end times with an online panchang for Satna on 26 June 1998. Small differences point to a different ayanamsa or method.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Tithi = (Moon − Sun) ÷ 12°. Karana = half of it.</li><li>Nakshatra = Moon ÷ 13°20′. Yoga = (Sun + Moon) ÷ 13°20′.</li><li>Your birth: Shukla Tritiya, Friday, Pushya 2, Vyaghata, Taitila.</li><li>Almanacs name the day by the sunrise tithi. Charts use the moment of birth.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Work through the five formulas for your Sun and Moon from the table without looking at it, then compare. Then ask the engine for a chart for the present moment and work out today's tithi, nakshatra and yoga yourself.</p>",
+   "listen": "The panchang has five limbs. Tithi is the Moon's lead over the Sun divided by twelve degrees: thirty tithis, fifteen waxing and fifteen waning. Vara is the weekday, from sunrise to sunrise. Nakshatra is the Moon's longitude divided by thirteen degrees twenty minutes, with four padas each. Yoga is the sum of the Sun's and Moon's longitudes divided by thirteen degrees twenty minutes, twenty-seven in all. Karana is half a tithi: sixty slots with eleven names, seven movable that repeat and four fixed. Your birth panchang from the engine: Shukla Tritiya, Friday with Venus as lord, Pushya pada two, Vyaghata yoga and Taitila karana. Tithi three ran from 06:25 on 26 June to 05:56 on 27 June. At sunrise it was still Dwitiya, which is why almanacs and charts can name different tithis for the same day. Tithi and karana do not depend on the ayanamsa. Nakshatra and yoga do. Traditional almanacs run the day from sunrise to sunrise, and months end at new moon in the south and west and at full moon in the north.",
+   "sources": [
+    "Muhurta Chintamani, treatment of tithi, vara, nakshatra, yoga, karana (topic only)",
+    "BPHS and Brihat Samhita on the lunar calendar (topic only; chapter numbers not verified)",
+    "Engine output: panchang at birth and event times, 26–27 June 1998, Satna"
+   ],
+   "quiz": [
+    {
+     "q": "The Moon leads the Sun by 27°23′. Which tithi is it?",
+     "o": [
+      "2",
+      "3",
+      "4",
+      "14"
+     ],
+     "a": 1,
+     "w": "27.39° ÷ 12 = 2.28, so the Moon is in the 3rd tithi, Tritiya."
+    },
+    {
+     "q": "Your yoga is the 13th. Which one is it?",
+     "o": [
+      "Ganda",
+      "Vriddhi",
+      "Vyaghata",
+      "Harshana"
+     ],
+     "a": 2,
+     "w": "The 13th of the 27 yogas is Vyaghata."
+    },
+    {
+     "q": "Which limbs depend on the ayanamsa?",
+     "o": [
+      "Tithi and karana",
+      "Nakshatra and yoga",
+      "Vara only",
+      "All five"
+     ],
+     "a": 1,
+     "w": "Nakshatra and yoga use sidereal longitudes themselves. Tithi and karana use a difference, so the ayanamsa cancels."
+    },
+    {
+     "q": "Why was the tithi at sunrise on your birth date different from your birth tithi?",
+     "o": [
+      "The Moon changed direction before sunrise",
+      "Tritiya began at 06:25, after the 05:20 sunrise",
+      "The almanac was printed in the wrong zone",
+      "Tithis do not change within a single day"
+     ],
+     "a": 1,
+     "w": "Tithi 3 began after sunrise, so the sunrise tithi was Dwitiya."
+    },
+    {
+     "q": "Which weekday is your birth, and who is its lord?",
+     "o": [
+      "Friday, Venus",
+      "Thursday, Jupiter",
+      "Saturday, Saturn",
+      "Friday, Mars"
+     ],
+     "a": 0,
+     "w": "26 June 1998 was a Friday, ruled by Venus."
+    }
+   ]
+  },
+  {
+   "id": "2-7",
+   "title": "Hand calculation against the engine, and the stage test",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the formula for the tithi?</p><p>This lesson is your lab. You will calculate part of your chart by hand and compare it with the engine. Then you will take the stage test.</p>\n<h2>The given data</h2><div class=\"tbl\"><table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Tropical Sun</td><td>94°30.7′</td></tr><tr><td>Tropical Moon</td><td>121°53.8′</td></tr><tr><td>Ayanamsa (Lahiri) at birth</td><td>23°50.2′</td></tr><tr><td>Greenwich sidereal time at birth</td><td>1 h 45 m 54.4 s</td></tr><tr><td>Longitude, latitude of Satna</td><td>80.83° E, 24.58° N</td></tr><tr><td>Obliquity ε</td><td>23.437°</td></tr></tbody></table></div><h2>The tasks</h2>\n<ol>\n<li>Find the sidereal Sun and Moon longitudes, and their signs.</li>\n<li>Find the tithi, the karana, the nakshatra with pada, and the yoga.</li>\n<li>Find local sidereal time and RAMC.</li>\n<li>Use the ascendant formula: Asc = atan2( cos RAMC , −( sin RAMC · cos ε + tan φ · sin ε ) ). Give the tropical ascendant, then the sidereal lagna.</li>\n<li>Compare your results with the engine. Aim for planets within 1′ and the lagna within 2′.</li>\n</ol>\n<p>Hint for step 4: sin RAMC = 0.9547, cos RAMC = −0.2975, cos ε = 0.9175, sin ε = 0.3977, tan φ = 0.4574. A calculator gives the rest.</p>\n<h2>Check your work only after you finish</h2><div class=\"tbl\"><table><thead><tr><th>Quantity</th><th>By hand</th><th>Engine</th></tr></thead><tbody><tr><td>Sidereal Sun</td><td>70°40.5′ (Gemini 10°40.5′)</td><td>70°40.6′ (Gemini 10°40.6′)</td></tr><tr><td>Sidereal Moon</td><td>98°03.7′ (Cancer 8°03.7′)</td><td>98°03.8′ (Cancer 8°03.8′)</td></tr><tr><td>Moon − Sun</td><td>27°23.2′, tithi 3, karana 5 (Taitila)</td><td>Shukla Tritiya, Taitila</td></tr><tr><td>Sun + Moon</td><td>168°44.2′, yoga 13 (Vyaghata)</td><td>Vyaghata</td></tr><tr><td>Moon ÷ 13°20′</td><td>7.355, so Pushya, pada 2</td><td>Pushya 2</td></tr><tr><td>Local sidereal time</td><td>7 h 09 m 13.6 s</td><td>7 h 09 m 13.1 s</td></tr><tr><td>RAMC</td><td>107°18.4′</td><td>107°18.3′</td></tr><tr><td>Tropical ascendant</td><td>195°42.4′ (Libra 15°42′)</td><td>195°42.3′</td></tr><tr><td>Sidereal lagna</td><td>171°52.2′ (Virgo 21°52′)</td><td>171°52.1′ (Virgo 21°52′)</td></tr></tbody></table></div><p>The leftover tenths of an arc minute come from the mean against apparent sidereal time and from small corrections the engine applies. They do not affect any sign, nakshatra or pada.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your foundation sheet from this stage:</p><div class=\"tbl\"><table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Birth moment</td><td>26 June 1998, 12:59 IST = 07:29 UT; Satna 24.58° N, 80.83° E</td></tr><tr><td>Convention profile</td><td>Lahiri 23.836° · mean node · whole-sign · 365.25-day year · 7 karakas</td></tr><tr><td>Lagna</td><td>Virgo 21°52′, Hasta pada 4; reaches Libra at 13:36</td></tr><tr><td>Moon</td><td>Cancer 8°04′, Pushya pada 2, 11th house</td></tr><tr><td>Panchang</td><td>Shukla Tritiya, Friday, Pushya, Vyaghata, Taitila</td></tr><tr><td>House shifts</td><td>Jupiter 7→6 under Sripati; Sun, Moon, Venus, Jupiter, Saturn, Rahu, Ketu one lower under Placidus</td></tr><tr><td>Fragile</td><td>Mars sign (41′), Jupiter nakshatra (8′), lagna pada (D9 holds −8 to +7 min)</td></tr></tbody></table></div><p>On 27 November 2026 the engine shows you in the Mercury dasha, Saturn sub-period, until 29 September 2027, under the Lahiri and 365.25-day profile.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Every choice on the foundation sheet is a convention. The ayanamsa is covered in lesson 2-1 (Lahiri, KP, Raman, Yukteshwar, True Pushya, Fagan-Bradley) and the house system in lesson 2-4 (whole-sign, equal, Sripati, Placidus). Another program may legitimately give different house numbers or nakshatra edges. Name the profile on the sheet.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Re-do the hand calculation with the KP ayanamsa (23°44.3′ at your birth) and check which results change. The lagna moves by 6′, the Moon still falls in Pushya, and the tithi does not change. Which quantities moved and which did not shows you which depend on the ayanamsa.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>You can reproduce sidereal longitudes, panchang limbs and the lagna by hand to within an arc minute or two.</li><li>Rounding, mean against apparent sidereal time and the ayanamsa decide the last tenth of a minute.</li><li>Tithi and karana ignore the ayanamsa. Nakshatra, yoga and lagna do not.</li><li>Keep the foundation sheet. Later lessons build on it.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Complete tasks 1 to 5 with a calculator. Then repeat the hand calculation for one family member's birth data, with a note of the clock and the offset used.</p>",
+   "listen": "This lesson is your lab. From the tropical Sun and Moon and the ayanamsa you subtract to get the sidereal positions: Sun Gemini ten forty, Moon Cancer eight oh four. The Moon's lead over the Sun is twenty-seven degrees twenty-three minutes, so the tithi is three, and the karana slot is five, Taitila. The sum of the two longitudes is one sixty-eight forty-four, which gives the thirteenth yoga, Vyaghata. The Moon divided by thirteen twenty gives Pushya, pada two. For the lagna, local sidereal time is seven hours nine minutes thirteen seconds, so the RAMC is one hundred seven degrees eighteen minutes. The ascendant formula gives Libra fifteen forty-two tropical, and subtracting the ayanamsa gives Virgo twenty-one fifty-two. Your hand figures should match the engine within about one or two arc minutes. The small differences come from mean against apparent sidereal time and from small corrections. The foundation sheet at the end collects your birth moment, convention profile, lagna, panchang, house shifts and fragile points, and then you take the stage test.",
+   "sources": [
+    "Standard ascendant formula (spherical astronomy); Swiss Ephemeris as reference engine",
+    "Engine output for 26 June 1998, 12:59 IST, Satna (natal, panchang, dasha)",
+    "KP Readers (Krishnamurti ayanamsa and Placidus cusp rule)"
+   ],
+   "quiz": [
+    {
+     "q": "Your tropical Sun is 94°30.7′ and the ayanamsa 23°50.2′. Which sign and degree?",
+     "o": [
+      "Gemini 10°40′",
+      "Cancer 4°30′",
+      "Taurus 10°40′",
+      "Gemini 28°20′"
+     ],
+     "a": 0,
+     "w": "94°30.7′ − 23°50.2′ = 70°40.5′, Gemini 10°40′."
+    },
+    {
+     "q": "What is the UT for 12:59 IST?",
+     "o": [
+      "06:29",
+      "07:29",
+      "12:59",
+      "08:29"
+     ],
+     "a": 1,
+     "w": "Subtract 5 h 30 m."
+    },
+    {
+     "q": "Which formula gives the tithi?",
+     "o": [
+      "Sun + Moon ÷ 13°20′",
+      "Moon − Sun ÷ 12°",
+      "Moon ÷ 12°",
+      "Sun ÷ 12°"
+     ],
+     "a": 1,
+     "w": "Tithi = (Moon − Sun) mod 360° ÷ 12°, rounded up."
+    },
+    {
+     "q": "What does the RAMC come from?",
+     "o": [
+      "Local sidereal time × 15",
+      "The Sun's longitude",
+      "The ayanamsa",
+      "The Moon's longitude"
+     ],
+     "a": 0,
+     "w": "Local sidereal time in hours times 15 is the RAMC in degrees."
+    },
+    {
+     "q": "Which house changes for Jupiter between whole-sign and Sripati?",
+     "o": [
+      "7 to 6",
+      "7 to 8",
+      "9 to 10",
+      "No change"
+     ],
+     "a": 0,
+     "w": "Jupiter at Pisces 3°28′ is before the house 7 boundary at 6°55′ and falls in house 6."
+    },
+    {
+     "q": "Which region of a North Indian chart is house 1?",
+     "o": [
+      "Top-left triangle",
+      "The top kite",
+      "The bottom kite",
+      "The right kite"
+     ],
+     "a": 1,
+     "w": "House 1 is the top kite. House 7 is the bottom kite."
+    },
+    {
+     "q": "Which limbs of the panchang are unaffected by the ayanamsa?",
+     "o": [
+      "Tithi and karana",
+      "Nakshatra and yoga",
+      "Vara and yoga",
+      "All five"
+     ],
+     "a": 0,
+     "w": "Tithi and karana depend on the difference of the two longitudes, so the ayanamsa cancels."
+    },
+    {
+     "q": "Why can a sign's rising time at Satna be 89 minutes and another 137?",
+     "o": [
+      "Some formula inputs are rounded differently",
+      "The ecliptic is tilted to the horizon and the place has a latitude",
+      "The Moon speeds up and slows down through the month",
+      "Local time zones differ across the sign boundaries"
+     ],
+     "a": 1,
+     "w": "The tilt of the ecliptic and the latitude change how quickly each stretch of the zodiac rises."
+    }
+   ]
+  }
+ ]
+}

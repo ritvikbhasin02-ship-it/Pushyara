@@ -1,0 +1,453 @@
+{
+ "stage": 11,
+ "title": "KP, Tajika and other dashas",
+ "level": "Specialist",
+ "goal": "Done when you can compute a KP cuspal sub-lord, a Varsha chart with its Muntha, and a Yogini dasha for a chart, and say which of them is stable under a few minutes of birth-time error.",
+ "terms": {
+  "kp": [
+   "KP · कृष्णमूर्ति पद्धति",
+   "The Krishnamurti Paddhati, devised by K.S. Krishnamurti. It uses Placidus houses, its own ayanamsa and a star-lord/sub-lord ladder to give yes/no answers for specific events."
+  ],
+  "sub_lord": [
+   "Sub lord · उप-स्वामी",
+   "In KP, each nakshatra is divided into nine unequal parts in Vimshottari proportion. The planet ruling the part a point falls in is its sub lord, the decider of the result."
+  ],
+  "placidus": [
+   "Placidus houses",
+   "A house system that divides the time a degree takes to rise to the meridian. Houses are unequal in size and cusps are exact degrees, unlike whole-sign houses."
+  ],
+  "csl": [
+   "Cuspal sub lord",
+   "The sub lord of a house cusp. In KP it decides whether the house’s matter will happen, through the houses it signifies."
+  ],
+  "significator": [
+   "Significator",
+   "In KP, a planet “signifies” a house through four levels: planets in the star of an occupant, the occupants, planets in the star of the owner, and the owner."
+  ],
+  "varshaphala": [
+   "Varshaphala · वर्षफल",
+   "The annual chart of the Tajika system, cast for the moment the Sun returns to its natal longitude. It reads one year at a time."
+  ],
+  "muntha": [
+   "Muntha · मुन्था",
+   "A point that starts at the natal lagna sign and moves one sign per year. Its house in the annual chart colours the year."
+  ],
+  "varshesha": [
+   "Varshesha · वर्षेश",
+   "The year lord: the strongest of five office-holders in the annual chart. It sets the tone of the year."
+  ],
+  "saham": [
+   "Saham · सहम",
+   "An Arabic-derived sensitive point of the Tajika system, computed as lagna plus one planet minus another. Each stands for a theme (fortune, marriage, career)."
+  ],
+  "ithasala": [
+   "Ithasala · इत्थशाल",
+   "A Tajika yoga: a faster planet behind a slower one, within orb, in aspect. It shows a matter coming to completion. Its opposite, ishrafa, shows separation."
+  ],
+  "mudda_dasha": [
+   "Mudda dasha · मुद्दा दशा",
+   "The Vimshottari sequence compressed into one year (about 3 days per Vimshottari year) for use inside a Tajika annual chart."
+  ],
+  "yogini_dasha": [
+   "Yogini dasha · योगिनी दशा",
+   "A 36-year cycle of eight periods named for eight yoginis, each tied to a planet. It is found from the Moon’s nakshatra number."
+  ],
+  "kalachakra": [
+   "Kalachakra dasha · कालचक्र दशा",
+   "A sign-period system worked from the Moon’s nakshatra pada, using two zodiac wheels (savya and apasavya) and a “body” and “life” sign for each pada."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "11-1",
+   "title": "KP foundations: Placidus cusps, 249 subs and the KP ayanamsa",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which technique on your Stage 10 sheet uses only the two Moons?</p><h2>What KP changes</h2><p>{{term:kp|KP}} keeps the nakshatras and the Vimshottari dasha but changes four things:</p><div class=\"tbl\"><table><thead><tr><th>Parashari (as taught so far)</th><th>KP</th></tr></thead><tbody><tr><td>Whole-sign houses (the lagna sign is house 1)</td><td>{{term:placidus|Placidus}} houses: the lagna degree is the 1st cusp, houses are unequal</td></tr><tr><td>Lahiri ayanamsa</td><td>Krishnamurti ayanamsa, a few arcminutes behind Lahiri</td></tr><tr><td>Planet, sign, house and aspect judgement</td><td>A ladder: sign lord, star lord, sub lord</td></tr><tr><td>“Strong or weak” verdicts</td><td>Yes/no verdicts for specific events</td></tr></tbody></table></div><h2>The 249 divisions</h2><p>Each nakshatra (13°20′) is divided into nine parts. The first part belongs to the nakshatra’s own lord and the rest follow in the Vimshottari order, each part sized in proportion to the planet’s dasha years (out of 120). A planet at a given degree therefore has a <strong>star lord</strong> (the nakshatra lord) and a {{term:sub_lord|sub lord}} (the lord of the part it falls in).</p><div class=\"tbl\"><table><thead><tr><th>Punarvasu (Jupiter’s star): sub lord</th><th>Width</th><th>Starts at Gemini</th></tr></thead><tbody><tr><td>Jupiter</td><td>1°46′40″</td><td>20°00′</td></tr><tr><td>Saturn</td><td>2°06′40″</td><td>21°46′40″</td></tr><tr><td>Mercury</td><td>1°53′20″</td><td>23°53′20″</td></tr><tr><td>Ketu</td><td>0°46′40″</td><td>25°46′40″</td></tr><tr><td>Venus</td><td>2°13′20″</td><td>26°33′20″</td></tr><tr><td>Sun</td><td>0°40′</td><td>28°46′40″</td></tr><tr><td>Moon</td><td>1°06′40″</td><td>29°26′40″</td></tr><tr><td>Mars</td><td>0°46′40″</td><td>Cancer 0°33′20″</td></tr><tr><td>Rahu</td><td>2°00′</td><td>Cancer 1°20′</td></tr></tbody></table></div><p>27 nakshatras × 9 parts = 243. Six sign boundaries fall inside a part rather than between two, and KP splits those parts at the boundary. That gives <strong>249</strong> (a direct count of the parts confirms it).</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>KP positions for your chart at 12:59 IST (Placidus cusps, Krishnamurti ayanamsa, mean node). Krishnamurti ayanamsa is 5.8′ below Lahiri at your birth date.</p><div class=\"tbl\"><table><thead><tr><th>Cusp</th><th>Sign and degree</th><th>Star lord</th><th>Sub lord</th></tr></thead><tbody><tr><td>1</td><td>Virgo 21°58′</td><td>Moon</td><td>Venus</td></tr><tr><td>2</td><td>Libra 20°56′</td><td>Jupiter</td><td>Jupiter</td></tr><tr><td>3</td><td>Scorpio 21°12′</td><td>Mercury</td><td>Venus</td></tr><tr><td>4</td><td>Sagittarius 22°13′</td><td>Venus</td><td>Saturn</td></tr><tr><td>5</td><td>Capricorn 23°34′</td><td>Mars</td><td>Mars</td></tr><tr><td>6</td><td>Aquarius 24°04′</td><td>Jupiter</td><td>Mercury</td></tr><tr><td>7</td><td>Pisces 21°58′</td><td>Mercury</td><td>Sun</td></tr><tr><td>8</td><td>Aries 20°56′</td><td>Venus</td><td>Jupiter</td></tr><tr><td>9</td><td>Taurus 21°12′</td><td>Moon</td><td>Venus</td></tr><tr><td>10</td><td>Gemini 22°13′</td><td>Jupiter</td><td>Saturn</td></tr><tr><td>11</td><td>Cancer 23°34′</td><td>Mercury</td><td>Mars</td></tr><tr><td>12</td><td>Leo 24°04′</td><td>Venus</td><td>Mercury</td></tr></tbody></table></div><p>Your 10th cusp (Gemini 22°13′) is 2°13′ into Punarvasu, in the Saturn part (1°46′40″ to 3°53′20″), so its sub lord is Saturn. These cusps come from Swiss Ephemeris, not the engine (which has no KP module yet).</p><p>KP houses are not your whole-sign houses. Seven of your nine planets change house number: the Sun (10th to 9th), the Moon (11th to 10th), Jupiter (7th to 6th), Venus (9th to 8th), Saturn (8th to 7th), Rahu (12th to 11th) and Ketu (6th to 5th). That is one reason KP and Parashari readings of the same planet can differ.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Settings that move the answer.</strong></p><ul><li><strong>Ayanamsa.</strong> With Lahiri instead of Krishnamurti ayanamsa, your Moon’s sub lord changes from Venus to Ketu, and your 12th cusp’s sub lord from Mercury to Saturn. Sub lords are narrow, so a few arcminutes matters.</li><li><strong>Node.</strong> With the true node, your Rahu sits at Leo 9°15′ and its sub lord changes from Saturn to Jupiter. Mean and true node are both in use in KP software.</li><li><strong>Houses.</strong> KP uses Placidus. Parashari and Jaimini use whole-sign or equal houses. Neither is “the real one.”</li></ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Time sensitivity.</strong> Cusps move about 1° every 4 minutes. A sub-lord part can be under a degree wide. A birth time recorded only to the minute can therefore flip a cuspal sub lord, which the next lesson tests on your chart. KP practice normally relies on a rectified (corrected) birth time.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>KP = Placidus houses, Krishnamurti ayanamsa, star lord and sub lord.</li><li>Sub lords divide each nakshatra in Vimshottari proportion. 243 parts, 249 after sign splits.</li><li>KP houses differ from whole-sign houses, so planets can change house.</li><li>Sub lords are narrow. Birth time and ayanamsa decide them.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Find the star lord and sub lord of your natal Moon by hand: Cancer 8°10′ (KP ayanamsa) is in Pushya, a Saturn star. Use the Vimshottari proportions to find the sub. Then check it against the ayanamsa note below (Venus under KP, Ketu under Lahiri).</p>",
+   "listen": "KP, the Krishnamurti Paddhati, keeps nakshatras and Vimshottari dasha but changes four things: Placidus houses instead of whole-sign houses, its own ayanamsa about six arcminutes behind Lahiri, a ladder of sign lord, star lord and sub lord, and yes or no verdicts for specific events. Each nakshatra is split into nine parts in Vimshottari proportion, so there are two hundred forty-three parts, and two hundred forty-nine after splitting parts that straddle a sign boundary. The planet ruling the part a point falls in is the sub lord, the decider. Your tenth cusp, Gemini twenty-two degrees thirteen minutes, falls in Punarvasu in Saturn’s part, so its sub lord is Saturn. KP houses differ from whole-sign houses, and seven of your nine planets change house number. Ayanamsa, node type and birth time all move sub lords because the parts are narrow.",
+   "sources": [
+    "K.S. Krishnamurti, KP Readers I–VI: Placidus cusps, 249 sub-divisions, KP ayanamsa (give reader numbers after checking your edition)",
+    "Swiss Ephemeris: Krishnamurti ayanamsa (SIDM_KRISHNAMURTI) and Placidus houses, used to compute the cusps shown here",
+    "Dekho Panchang, KP system page: ayanamsa difference of about 6 arcminutes (cited in the project research notes)"
+   ],
+   "quiz": [
+    {
+     "q": "How many sub-divisions does KP use?",
+     "o": [
+      "27",
+      "249",
+      "108",
+      "360"
+     ],
+     "a": 1,
+     "w": "243 Vimshottari parts, plus 6 splits at sign boundaries."
+    },
+    {
+     "q": "What is a sub lord?",
+     "o": [
+      "The lord of the sign",
+      "The lord of the Vimshottari part a degree falls in",
+      "The lord of the nakshatra",
+      "The lord of the navamsa"
+     ],
+     "a": 1,
+     "w": "It is the lord of the proportional part inside the nakshatra."
+    },
+    {
+     "q": "Which house system does KP use?",
+     "o": [
+      "Whole-sign",
+      "Placidus",
+      "Equal",
+      "Sripati only"
+     ],
+     "a": 1,
+     "w": "KP uses Placidus houses."
+    },
+    {
+     "q": "Which of your planets keeps the same house number in KP and in whole-sign houses?",
+     "o": [
+      "Mars",
+      "Sun",
+      "Jupiter",
+      "Saturn"
+     ],
+     "a": 0,
+     "w": "Mars stays in the 9th. The Sun, Moon, Jupiter, Venus, Saturn, Rahu and Ketu move. Mercury stays too, but it is not among the options."
+    }
+   ]
+  },
+  {
+   "id": "11-2",
+   "title": "KP significators and the cuspal sub-lord yes/no rule",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Why do KP and whole-sign houses give different house numbers for some planets?</p><h2>The four-step significators</h2><p>A planet is a {{term:significator|significator}} of a house at four levels, strongest first:</p><div class=\"tbl\"><table><thead><tr><th>Level</th><th>Rule</th></tr></thead><tbody><tr><td>1</td><td>Planets in the star of an occupant of the house</td></tr><tr><td>2</td><td>Occupants of the house</td></tr><tr><td>3</td><td>Planets in the star of the owner of the house</td></tr><tr><td>4</td><td>The owner of the house</td></tr></tbody></table></div><p>To judge a planet, collect all the houses it signifies. To judge an event, check the house group it needs.</p><div class=\"tbl\"><table><thead><tr><th>Event</th><th>Houses it needs (as commonly taught from the KP Readers)</th></tr></thead><tbody><tr><td>Marriage</td><td>2, 7, 11 (denial-side houses 1, 6 and 10, the 12th from each of 2, 7 and 11; some authors add 12)</td></tr><tr><td>Job or service</td><td>2, 6, 10, 11</td></tr><tr><td>Business</td><td>7, 10, 11 (some add 2)</td></tr><tr><td>Foreign travel</td><td>3, 9, 12</td></tr><tr><td>Education</td><td>4, 9, 11</td></tr></tbody></table></div><p>The groups vary slightly between authors. Confirm them in the edition you follow.</p><h2>The cuspal sub-lord rule</h2><ol><li>Take the cusp of the house that governs the matter (7th for marriage, 10th for work).</li><li>Find its sub lord, the {{term:csl|CSL}}.</li><li>List the houses the CSL signifies, including through its own star lord.</li><li>If the CSL signifies the event’s houses and not the denial houses, the answer is yes. Timing then comes from dasha and transits that signify the same houses.</li></ol><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>From your KP chart (lesson 11-1), the four-step significators:</p><div class=\"tbl\"><table><thead><tr><th>House</th><th>1 star of occupants</th><th>2 occupants</th><th>3 star of owner</th><th>4 owner</th></tr></thead><tbody><tr><td>2</td><td>none</td><td>none</td><td>none</td><td>Venus</td></tr><tr><td>6</td><td>Mercury</td><td>Jupiter</td><td>Moon, Jupiter</td><td>Saturn</td></tr><tr><td>7</td><td>Moon, Jupiter</td><td>Saturn</td><td>Mercury</td><td>Jupiter</td></tr><tr><td>10</td><td>none</td><td>Moon, Mercury</td><td>none</td><td>Mercury</td></tr><tr><td>11</td><td>Sun, Ketu</td><td>Rahu</td><td>none</td><td>Moon</td></tr></tbody></table></div><div class=\"tbl\"><table><thead><tr><th>CSL</th><th>Planet</th><th>Signifies</th><th>Against the event group</th></tr></thead><tbody><tr><td>10th: Saturn</td><td>5, 6, 7</td><td>Job group has 6; business group has 7. Neither has 10 or 11</td></tr><tr><td>11th: Mars</td><td>3, 8, 9</td><td>None of 2, 6, 10, 11</td></tr><tr><td>7th: Sun</td><td>9, 11, 12</td><td>11 supports; 12 counts against it only for authors who add 12 to the denial side. Mixed</td></tr></tbody></table></div><p>So on this setting the 10th CSL gives a partial yes for service or partnership-type work, the 11th CSL gives no support for gains, and the 7th CSL is mixed. These readings are only as stable as the sub lords, and the next table shows how stable they are.</p></div><strong>Birth-time test (minutes from 12:59):</strong><div class=\"tbl\"><table><thead><tr><th>Minutes</th><th>-2</th><th>-1</th><th>0</th><th>+1</th><th>+2</th><th>+3</th><th>+4</th></tr></thead><tbody><tr><td>7th CSL</td><td>Venus</td><td>Sun</td><td>Sun</td><td>Sun</td><td>Moon</td><td>Moon</td><td>Moon</td></tr><tr><td>10th CSL</td><td>Jupiter</td><td>Saturn</td><td>Saturn</td><td>Saturn</td><td>Saturn</td><td>Saturn</td><td>Saturn</td></tr><tr><td>11th CSL</td><td>Moon</td><td>Moon</td><td>Mars</td><td>Mars</td><td>Mars</td><td>Rahu</td><td>Rahu</td></tr><tr><td>2nd CSL</td><td>Jupiter</td><td>Jupiter</td><td>Jupiter</td><td>Jupiter</td><td>Jupiter</td><td>Jupiter</td><td>Saturn</td></tr></tbody></table></div><p>The 11th cusp sub lord changes if the birth was one minute earlier, the 7th two minutes either side, and the 10th two minutes earlier. Only the 2nd CSL holds from −3 to +3 minutes. With a birth time known only to the minute, every KP yes/no used here is fragile. The 10th CSL is the steadiest of the three (Saturn from 12:58 to 13:06). A KP reading of this chart needs a rectified birth time first.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Contested parts of the CSL method.</strong></p><ul><li>Some KP teachers add the sub lord’s <em>sub-sub</em> lord and the “ruling planets” at the moment of judgement to refine timing. Others stay with the CSL alone.</li><li>Rahu and Ketu act as agents: they carry the results of the planet they conjoin or the sign lord they sit under. Practice varies on how far to apply this.</li><li>Event-house groups differ between authors, as noted above.</li><li>Parashari astrologers do not accept sub lords. Treat KP as a different instrument, not an upgrade.</li></ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Use KP as a binary check on a Parashari conclusion. If your Parashari reading says “career growth likely in the Ketu period,” ask the 10th and 11th CSLs the question. Agreement raises confidence only slightly (same birth time, same ephemeris). A disagreement tells you to check the birth time first.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Four levels: star of occupant, occupant, star of owner, owner.</li><li>CSL yes/no: does it signify the event’s houses and avoid the denial houses?</li><li>Event-house groups vary slightly by author.</li><li>Sub lords flip with a few minutes of birth-time error. Rectify first.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Do the four-step significators for your 5th house (children, creativity) using the table in 11-1. Then list which planets signify 5, and check whether the 5th CSL (Mars) is among them.</p>",
+   "listen": "In KP a planet signifies a house at four levels, strongest first: planets in the star of an occupant, the occupants, planets in the star of the owner, and the owner. For an event you need the house group, for example 2, 7 and 11 for marriage or 2, 6, 10 and 11 for a job. The cuspal sub-lord rule says to take the cusp of the house that governs the matter, find its sub lord, and check whether it signifies the event’s houses and avoids the denial houses. On your chart the tenth cusp sub lord is Saturn, signifying 5, 6 and 7, a partial yes. The eleventh is Mars, signifying 3, 8 and 9, which gives no support for gains. The seventh is the Sun, signifying 9, 11 and 12, which is mixed. But the eleventh sub lord changes one minute earlier, and the seventh and tenth two minutes away from your recorded birth time, so a KP reading needs a rectified birth time first.",
+   "sources": [
+    "K.S. Krishnamurti, KP Readers: four-step significators and cuspal sub-lord rule (reader and page numbers to be checked in your edition)",
+    "Event-house groups as commonly taught from the Readers; vary by author",
+    "Swiss Ephemeris computation of Placidus cusps and sub lords (this lesson’s tables)"
+   ],
+   "quiz": [
+    {
+     "q": "Which level of significator is strongest?",
+     "o": [
+      "Owner of the house",
+      "Occupant of the house",
+      "Planets in the star of an occupant",
+      "Aspecting planets"
+     ],
+     "a": 2,
+     "w": "Level 1, planets in the star of an occupant, is strongest."
+    },
+    {
+     "q": "Which houses does the commonly taught KP marriage group use?",
+     "o": [
+      "3, 9, 12",
+      "6, 8, 12",
+      "4, 9, 11",
+      "2, 7, 11"
+     ],
+     "a": 3,
+     "w": "Marriage: 2, 7, 11."
+    },
+    {
+     "q": "In your KP chart, the 10th CSL Saturn signifies:",
+     "o": [
+      "2, 6, 10, 11",
+      "5, 6, 7",
+      "3, 8, 9",
+      "9, 11, 12"
+     ],
+     "a": 1,
+     "w": "Saturn signifies 5, 6 and 7."
+    },
+    {
+     "q": "Of your 7th, 10th and 11th CSLs, which keeps its sub lord for the most minutes in the −2 to +4 window?",
+     "o": [
+      "7th",
+      "11th",
+      "All equally",
+      "10th"
+     ],
+     "a": 3,
+     "w": "The 10th is Saturn from −1 to +4 minutes and flips only at −2; the 7th and 11th each hold for three minutes."
+    },
+    {
+     "q": "What should you do before relying on a KP yes/no?",
+     "o": [
+      "Check the birth time and rectify it",
+      "Pick a different ayanamsa each time",
+      "Remove Rahu",
+      "Ignore the sub lord"
+     ],
+     "a": 0,
+     "w": "Sub lords are narrow, so birth-time accuracy decides."
+    }
+   ]
+  },
+  {
+   "id": "11-3",
+   "title": "Tajika varshaphala I: the solar return, Muntha and the year lord",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the four levels of KP significators.</p><h2>The annual chart</h2><p>{{term:varshaphala|Varshaphala}} reads one year at a time from a chart cast for the moment the Sun returns to its birth longitude. Neelakantha’s Tajika Neelakanthi is the classic text. The steps:</p><ol><li>Find the moment of the Sun’s return (<em>varsha pravesh</em>).</li><li>Cast the chart for that moment and place (the Varsha chart).</li><li>Find the {{term:muntha|Muntha}}: the natal lagna sign plus one sign for each completed year.</li><li>Find the {{term:varshesha|year lord}} from five office-holders.</li><li>Add the {{term:saham|sahams}} and read aspects and the Mudda dasha (next lesson).</li></ol><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Sidereal or tropical return?</strong> Because of precession, the Sun’s return to the same <em>tropical</em> longitude happens about 20 minutes earlier each year than its return to the same <em>sidereal</em> longitude. Over 29 years that adds up to about 10 hours. Indian Tajika practice mostly uses the sidereal return, but some software and teachers use the tropical return. The Varsha chart can differ completely.</p><p><strong>Which place?</strong> Some cast the chart for the birthplace, others for where you live at the return. For you both are Satna.</p></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your 29th birthday year, starting June 2027 (Lahiri, Satna, birth data as in the engine):</p><div class=\"tbl\"><table><thead><tr><th>Method</th><th>Sun return (IST)</th><th>Varsha lagna</th></tr></thead><tbody><tr><td>Sidereal</td><td>26 Jun 2027, 23:30:57</td><td>Aquarius 29°56′</td></tr><tr><td>Tropical</td><td>26 Jun 2027, 13:14:03 (10 h 17 min earlier)</td><td>Virgo 24°51′</td></tr></tbody></table></div><p>The sidereal lagna is 4 arcminutes short of Pisces. The lagna reaches Pisces only about 13 to 16 seconds after the computed return (the ascendant moves roughly 15 arcminutes per minute of time). A birth-time error of one minute shifts the return moment by about one minute, which is enough to cross the sign edge. Your Varsha lagna is therefore undecided between Aquarius and Pisces, and would be Virgo under the tropical method. These figures come from Swiss Ephemeris, not the engine.</p><p><strong>Sidereal Varsha chart, Aquarius lagna:</strong> Sun Gemini 10°41′ (5th), Moon Pisces 5°28′ (2nd), Mars Leo 25°35′ (7th), Mercury Gemini 5°31′ retrograde (5th), Jupiter Leo 0°08′ (7th), Venus Taurus 28°00′ (4th), Saturn Aries 2°01′ (3rd), Rahu Capricorn 19°14′ (12th), Ketu Cancer 19°14′ (6th). The Sun is below the horizon, so it is a night chart.</p></div><h2>Muntha and the year lord</h2><p>Your Muntha at 29 completed years: Virgo plus 29 signs = <strong>Aquarius</strong> (29 mod 12 = 5). Its house depends on the lagna:</p><div class=\"tbl\"><table><thead><tr><th>Varsha lagna</th><th>Muntha house</th><th>Muntha lord</th><th>Varsha lagna lord</th></tr></thead><tbody><tr><td>Aquarius (sidereal)</td><td>1st</td><td>Saturn</td><td>Saturn</td></tr><tr><td>Pisces (if 16 s later)</td><td>12th</td><td>Saturn</td><td>Jupiter</td></tr><tr><td>Virgo (tropical)</td><td>6th</td><td>Saturn</td><td>Mercury</td></tr></tbody></table></div><p>The year lord is the strongest of five office-holders: the lord of the natal lagna, the lord of the Varsha lagna, the lord of the Muntha, and two more taken from separate rules in Tajika Neelakanthi (the Tri-rashi lord and the Dinaratri lord), which this lesson does not work through. Year-lord selection also has further conditions, so treat the three lords below as a partial picture. For you the first three are:</p><div class=\"tbl\"><table><thead><tr><th>Return method</th><th>Natal lagna lord</th><th>Varsha lagna lord</th><th>Muntha lord</th></tr></thead><tbody><tr><td>Sidereal, Aquarius</td><td>Mercury</td><td>Saturn</td><td>Saturn</td></tr><tr><td>Sidereal, Pisces</td><td>Mercury</td><td>Jupiter</td><td>Saturn</td></tr><tr><td>Tropical, Virgo</td><td>Mercury</td><td>Mercury</td><td>Saturn</td></tr></tbody></table></div><p>Saturn holds two of the three offices under the sidereal Aquarius chart and Mercury holds two under the tropical chart. The method decides which planet leads the year.</p><h2>Sahams</h2><p>A saham is lagna plus one planet minus another. Punya saham (fortune) is commonly given as lagna + Moon − Sun by day and lagna + Sun − Moon by night. For your sidereal chart (night) it falls at <strong>Gemini 5°09′, the 5th house</strong>, within 22′ of Mercury. For the tropical chart (day) it falls at Gemini 14°46′, the 10th house. Formulae and day/night reversals vary by source.</p><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>A Varsha reading should agree with the Vimshottari and transits for the same year. Your Vimshottari moves from Mercury to Ketu on 29 Sep 2027 (inside this Varsha year), and Saturn enters Aries on 3 Jun 2027, just before the return. Those are independent of the return convention, so use them to see which Varsha version (Aquarius, Pisces or Virgo) the year seems to support. Compare after the year, never before.</p></div><p class=\"note\">The tiny margin on your Varsha lagna is a real property of this chart. A reading that depends on the lagna sign (the Muntha’s house, the year lord) should be written as three alternatives, or not made.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Return = Sun back to natal longitude; choose sidereal or tropical and say which.</li><li>Muntha = natal lagna sign + completed years.</li><li>Year lord = strongest of five office-holders; this lesson works through only three of them.</li><li>Check how close the Varsha lagna is to a sign edge before reading anything from it.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Compute your Muntha for next year (age 30) and the house it falls in under each lagna possibility. Then compute the Muntha sign at age 12 by hand and confirm it returns to your natal lagna sign.</p>",
+   "listen": "Varshaphala reads one year at a time from a chart cast for the moment the Sun returns to its birth longitude. You find the return moment, cast the chart, find the Muntha, which is the natal lagna sign plus one sign for each completed year, and find the year lord from five office-holders. Sidereal and tropical returns differ. For your twenty-ninth year the sidereal return is on twenty-six June 2027 at eleven thirty at night, with Aquarius rising at twenty-nine degrees fifty-six minutes. That is only about sixteen seconds from Pisces, so your Varsha lagna is undecided. The tropical return is ten hours earlier and gives Virgo rising. Your Muntha is Aquarius, falling in the first, twelfth or sixth house depending on the method. Saturn holds two of the three agreed offices under the sidereal chart and Mercury holds two under the tropical one. Write the reading as alternatives, or do not make it.",
+   "sources": [
+    "Tajika Neelakanthi (Neelakantha Daivajna): varsha pravesh, Muntha, Pancha-adhikari and sahams; sloka numbers to be checked in your edition",
+    "B.V. Raman, Varshaphala: annual horoscopy",
+    "Dekho Panchang, Varshaphal page (secondary description): Muntha and Varshesha rules"
+   ],
+   "quiz": [
+    {
+     "q": "How is the Muntha found at age 29?",
+     "o": [
+      "The Sun’s sign",
+      "Natal Moon sign + 29 signs",
+      "Natal lagna sign + 29 signs",
+      "The 9th house"
+     ],
+     "a": 2,
+     "w": "Muntha starts at the natal lagna sign and moves one sign a year."
+    },
+    {
+     "q": "Why does the tropical Sun return fall earlier than the sidereal return for your 29th year?",
+     "o": [
+      "The Moon moves faster",
+      "Precession shifts the tropical zodiac about 20 minutes a year, so about 10 hours over 29 years",
+      "Satna is at a different longitude",
+      "The ayanamsa is zero"
+     ],
+     "a": 1,
+     "w": "Over 29 years the tropical return comes about 10 hours before the sidereal one."
+    },
+    {
+     "q": "Why is your Varsha lagna “undecided”?",
+     "o": [
+      "It is about 4 arcminutes (16 seconds of time) from the sign edge",
+      "The Sun is combust",
+      "Saturn is retrograde",
+      "Mars is in the 7th"
+     ],
+     "a": 0,
+     "w": "A tiny change in the return moment moves it into Pisces."
+    },
+    {
+     "q": "Which planets hold your Muntha lord and (sidereal Aquarius) Varsha lagna lord offices?",
+     "o": [
+      "Saturn and Saturn",
+      "Mercury and Mercury",
+      "Jupiter and Saturn",
+      "Mars and Saturn"
+     ],
+     "a": 0,
+     "w": "Muntha in Aquarius and lagna Aquarius are both ruled by Saturn."
+    }
+   ]
+  },
+  {
+   "id": "11-4",
+   "title": "Tajika varshaphala II: Tajika aspects, ithasala and Mudda dasha",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the Muntha lord of your 29th year, and what does the return method change about the year lord?</p><h2>Tajika aspects are by sign distance</h2><div class=\"tbl\"><table><thead><tr><th>Distance between the two signs</th><th>Tajika view (as usually taught)</th></tr></thead><tbody><tr><td>Same sign (conjunction)</td><td>Treated as an aspect (closest contact); its quality depends on the planets’ friendship</td></tr><tr><td>3rd and 11th</td><td>Friendly aspect</td></tr><tr><td>5th and 9th</td><td>Friendly aspect (the trines)</td></tr><tr><td>4th, 7th and 10th</td><td>Inimical aspect</td></tr><tr><td>2nd, 6th, 8th, 12th</td><td>No aspect</td></tr></tbody></table></div><p>This differs from Parashari graha drishti and from Jaimini rashi drishti. Orbs (deeptamsha) differ by planet. The values usually quoted from the Tajika texts are Sun 15°, Moon 12°, Mars 8°, Mercury 7°, Jupiter 9°, Venus 7°, Saturn 9°. Two planets are within orb when their degree gap is less than half the sum of their two deeptamshas (secondary source; check the sloka in your edition of Tajika Neelakanthi).</p><h2>Ithasala and ishrafa</h2><p>{{term:ithasala|Ithasala}} (applying) is the main sign of a matter coming to completion: the faster planet is behind the slower one by degree and is within orb. <em>Ishrafa</em> (separating) is the faster planet already past the slower one. There are 16 named Tajika yogas (including Nakta, Yamaya, Kamboola and Khallasara). This lesson uses only these two.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>In the sidereal Aquarius Varsha chart the Moon is in Pisces 5°28′ (2nd house) and Mars is in Leo 25°35′ (7th house). Leo is the 6th sign from Pisces, so the two have no Tajika aspect. Venus (Taurus 28°00′) and Saturn (Aries 2°01′) are 2 signs apart: no aspect either. Moon (Pisces 5°28′) to Saturn (Aries 2°01′): Aries is the 2nd sign from Pisces, so no aspect. Sun (Gemini 10°41′) to Moon (Pisces 5°28′): Pisces is the 10th from Gemini, an inimical aspect, and the Moon (5°28′) is behind the Sun’s degree (10°41′) by 5°13′, so it is applying. That is an ithasala of Sun and Moon with an inimical aspect: 5°13′ is inside the Sun–Moon orb of 13°30′ (half of 15° plus 12°) on the usually quoted values. This is the kind of relationship you would read for the year. It depends on the lagna only for house numbers, not for the aspect itself, so it holds for the Aquarius, Pisces and Virgo versions (in the tropical version the Moon is at Pisces 0°11′ and the gap is about 10°, still inside the orb).</p></div><h2>Mudda dasha</h2><p>{{term:mudda_dasha|Mudda dasha}} compresses the 120-year Vimshottari cycle into one year, so each Vimshottari year is about 3 days. On a 365.25-day basis the periods are:</p><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Days</th><th>Planet</th><th>Days</th><th>Planet</th><th>Days</th></tr></thead><tbody><tr><td>Ketu</td><td>21.3</td><td>Venus</td><td>60.9</td><td>Sun</td><td>18.3</td></tr><tr><td>Moon</td><td>30.4</td><td>Mars</td><td>21.3</td><td>Rahu</td><td>54.8</td></tr><tr><td>Jupiter</td><td>48.7</td><td>Saturn</td><td>57.8</td><td>Mercury</td><td>51.7</td></tr></tbody></table></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>The starting point is disputed.</strong> One secondary source starts the sequence from the lord of the natal Janma nakshatra. Others start from the Moon’s nakshatra in the Varsha chart. Some use 360 days (exactly 3 days per year) and some 365.25. These give different dates. No Mudda dasha is computed for you here, because the starting rule could not be verified from the text, and the Varsha Moon (Pisces 5°28′ in the Aquarius version, Pisces 0°11′ in the tropical one) differs between versions.</p><p><strong>Do the Varsha techniques add anything?</strong> Practitioners use them as a second view for the year’s emphasis. No independent evidence that they add accuracy is known to this course. Treat the output as a prompt.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check the Varsha Moon’s nakshatra and the year’s Vimshottari antardasha for the same dates. If the Mudda dasha lord of a month is also the running Vimshottari antardasha or pratyantar lord, you have an overlap worth logging. If not, say so. Neither is proof.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Tajika aspects: 3/11 and 5/9 friendly, 4/7/10 inimical; none for 2/6/8/12.</li><li>Ithasala (applying) shows completion. Ishrafa (separating) shows it has passed.</li><li>Mudda dasha: Vimshottari compressed to a year; starting point and year length vary.</li><li>Varsha techniques are second views, not independent proofs.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> List the Tajika aspects between the Sun, Moon, Saturn and Jupiter in the sidereal Varsha chart. Mark each applying or separating by degree. Which does the Aquarius chart share with the Virgo chart?</p>",
+   "listen": "Tajika aspects work by sign distance. The third, eleventh, fifth and ninth are friendly, the fourth, seventh and tenth are inimical, and the second, sixth, eighth and twelfth give none. Ithasala means the faster planet is behind the slower one within orb, so a matter is coming to completion. Ishrafa means it has already passed. In your sidereal Varsha chart the Moon is behind the Sun by degree, and Pisces is the tenth sign from Gemini, so that is an applying aspect of inimical type. That relationship does not depend on the lagna, so it holds for all three versions of your chart. Mudda dasha compresses the Vimshottari cycle into a year at about three days per Vimshottari year. The starting point is disputed, so none is computed for you here. Treat these techniques as second views for the year’s emphasis, not as proof.",
+   "sources": [
+    "Tajika Neelakanthi (Neelakantha Daivajna): Tajika aspects, deeptamsha orbs (values as quoted by Astrobix, Ithasala yoga page), the sixteen yogas, Mudda dasha; sloka numbers to be checked in your edition",
+    "Dekho Panchang, Varshaphal page: Mudda dasha day counts and the Janma-nakshatra starting point (secondary source)"
+   ],
+   "quiz": [
+    {
+     "q": "Which sign distances give a friendly Tajika aspect?",
+     "o": [
+      "2 and 12",
+      "6 and 8",
+      "4, 7, 10",
+      "3, 5, 9 and 11"
+     ],
+     "a": 3,
+     "w": "The 3rd, 5th, 9th and 11th are friendly."
+    },
+    {
+     "q": "What does ishrafa signify?",
+     "o": [
+      "A planet applying",
+      "Mutual reception",
+      "A planet combust",
+      "A planet separating: the chance has passed"
+     ],
+     "a": 3,
+     "w": "Ishrafa is separating."
+    },
+    {
+     "q": "How long is the Mudda dasha of Saturn on a 365.25-day basis?",
+     "o": [
+      "18.3 days",
+      "30.4 days",
+      "48.7 days",
+      "57.8 days"
+     ],
+     "a": 3,
+     "w": "Saturn’s 19 years become about 57.8 days."
+    },
+    {
+     "q": "Why was no Mudda dasha calculated for you?",
+     "o": [
+      "It cannot be computed",
+      "You are too young",
+      "Your Moon is combust",
+      "The starting-point rule is disputed and the Varsha Moon differs between versions"
+     ],
+     "a": 3,
+     "w": "The honesty rule is not to compute what you cannot verify."
+    }
+   ]
+  },
+  {
+   "id": "11-5",
+   "title": "Yogini dasha and Kalachakra: second clocks",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> In Tajika, which aspect type means a matter is coming to completion?</p><h2>Why a second clock</h2><p>Vimshottari is a lunar-nakshatra clock with nine planetary periods. A second dasha gives an independent-looking timeline from the same Moon, and you compare where they agree. BPHS ch. 46 (Santhanam translation) lists dozens: Vimshottari, Ashtottari, Shodasottari, Panchottari, Kalachakra, Chara, Sthira, Yogini and more.</p><h2>Yogini dasha</h2><p>{{term:yogini_dasha|Yogini dasha}}: 36 years in eight periods (BPHS ch. 46):</p><div class=\"tbl\"><table><thead><tr><th>No.</th><th>Yogini</th><th>Planet</th><th>Years</th></tr></thead><tbody><tr><td>1</td><td>Mangala</td><td>Moon</td><td>1</td></tr><tr><td>2</td><td>Pingala</td><td>Sun</td><td>2</td></tr><tr><td>3</td><td>Dhanya</td><td>Jupiter</td><td>3</td></tr><tr><td>4</td><td>Bhramari</td><td>Mars</td><td>4</td></tr><tr><td>5</td><td>Bhadrika</td><td>Mercury</td><td>5</td></tr><tr><td>6</td><td>Ulka</td><td>Saturn</td><td>6</td></tr><tr><td>7</td><td>Siddha</td><td>Venus</td><td>7</td></tr><tr><td>8</td><td>Sankata</td><td>Rahu</td><td>8</td></tr></tbody></table></div><ol><li>Take the Moon’s nakshatra number (Ashwini = 1).</li><li>Add 3 and divide by 8. The remainder gives the starting yogini (remainder 0 means number 8).</li><li>Scale the first period by the part of the nakshatra not yet traversed, as in Vimshottari.</li></ol><p>BPHS’s own example: Mrigashira is number 5; 5 + 3 = 8; remainder 0 means number 8, Sankata. The sequence then runs in the list order.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your Moon is in Pushya, number 8. 8 + 3 = 11; 11 mod 8 = 3, so you start in <strong>Dhanya</strong> (Jupiter). About 35% of Pushya has been traversed, so 65% of the 3 years remains. The table below comes from a script (365.25-day years):</p><div class=\"tbl\"><table><thead><tr><th>Period</th><th>Planet</th><th>From</th><th>To</th></tr></thead><tbody><tr><td>Dhanya (balance)</td><td>Jupiter</td><td>26 Jun 1998</td><td>2 Jun 2000</td></tr><tr><td>Bhramari</td><td>Mars</td><td>Jun 2000</td><td>Jun 2004</td></tr><tr><td>Bhadrika</td><td>Mercury</td><td>Jun 2004</td><td>Jun 2009</td></tr><tr><td>Ulka</td><td>Saturn</td><td>Jun 2009</td><td>Jun 2015</td></tr><tr><td>Siddha</td><td>Venus</td><td>Jun 2015</td><td>Jun 2022</td></tr><tr><td><strong>Sankata</strong></td><td><strong>Rahu</strong></td><td><strong>3 Jun 2022</strong></td><td><strong>3 Jun 2030</strong></td></tr><tr><td>Mangala</td><td>Moon</td><td>Jun 2030</td><td>Jun 2031</td></tr><tr><td>Pingala</td><td>Sun</td><td>Jun 2031</td><td>Jun 2033</td></tr></tbody></table></div><p>Yogini changes at your ages 1.9, 5.9, 10.9, 16.9, 23.9 and 31.9. Vimshottari’s major changes are at 12.3 (Saturn to Mercury, 29 Sep 2010) and 29.3 (Mercury to Ketu, 29 Sep 2027). Yogini puts you in Sankata (Rahu, 8 years) from mid-2022 to mid-2030, which covers the Vimshottari change to Ketu in 2027. The two clocks overlap on node themes only from Sep 2027 to Jun 2030 (Rahu in Yogini, Ketu in Vimshottari); from 2022 to 2027 Vimshottari is still in Mercury. They disagree on exact turning points.</p></div><h2>Kalachakra dasha (overview)</h2><p>{{term:kalachakra|Kalachakra dasha}} is worked from the Moon’s nakshatra <em>pada</em>. BPHS ch. 46 says to draw two wheels, the savya and apasavya, and place the nakshatras in them. Each pada gets a <em>Deha</em> (body) sign and a <em>Jeeva</em> (life) sign, and the dasha signs run in a set order from them. The text also describes movement patterns (Mandooki, Markati and Simhavalokana: the frog, the monkey and the lion’s glance; verses 96–98) that colour the results of the signs. It is calculated by software. This course treats it only as a concept.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Which second clock?</strong> Teachers differ. K.N. Rao’s “composite approach” uses several dashas side by side. Jaimini students use Chara or Narayana. KP students use Vimshottari only, with sub-periods. BPHS describes many systems but says little about which suits which chart.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>To test a second clock, do a retrodiction on your own past: list five turning points in your life with their dates, then check which dasha boundaries fall within a few months of each. Count Vimshottari hits, Yogini hits and Chara hits, then compare with how many boundaries each system had in that period (more boundaries make more chance hits). Do this before you read any forecast from them.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Yogini: 8 periods, 36 years; start = (nakshatra number + 3) mod 8.</li><li>Your Yogini now: Sankata (Rahu) 3 Jun 2022 to 3 Jun 2030.</li><li>Kalachakra: pada-based, two wheels, Deha and Jeeva signs. Concept only here.</li><li>Compare dasha boundaries against known events and count chance hits.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write five dated turning points from your life. For each, find the Vimshottari antardasha boundary and the Yogini boundary nearest to it, and note the gap in months. Which system is closer on average?</p>",
+   "listen": "A second dasha gives another timeline from the same Moon, and you compare where the clocks agree. Yogini dasha has eight periods totalling thirty-six years, named for eight yoginis tied to the Moon, Sun, Jupiter, Mars, Mercury, Saturn, Venus and Rahu with one to eight years each. You add three to the Moon’s nakshatra number, divide by eight, and the remainder gives the starting yogini. Your Moon is in Pushya, number eight, so you start in Dhanya, Jupiter. By the script calculation you have been in Sankata, the Rahu period, since third June 2022, and it runs to third June 2030. Vimshottari changes to Ketu in September 2027, so both clocks emphasise the nodes from late 2027 to mid-2030, with different turning points. Kalachakra dasha uses the Moon’s pada, two wheels called savya and apasavya, and body and life signs. It is a concept here. Test any second clock against your own past before trusting it.",
+   "sources": [
+    "BPHS (R. Santhanam translation), ch. 46, verses 195–199: Yogini dasha, yogini names, planets, years and starting rule with the Mrigashira example",
+    "BPHS (Santhanam), ch. 46, from verse 52 (verses 96–98 for the three movements): Kalachakra dasha, savya and apasavya wheels, Deha and Jeeva",
+    "K.N. Rao’s composite approach, as noted in the project research notes (LoVA interview, 2004)"
+   ],
+   "quiz": [
+    {
+     "q": "How many years does the Yogini cycle total?",
+     "o": [
+      "36",
+      "27",
+      "108",
+      "120"
+     ],
+     "a": 0,
+     "w": "1+2+…+8 = 36."
+    },
+    {
+     "q": "How is the starting yogini found?",
+     "o": [
+      "From the lagna sign",
+      "From the Sun",
+      "Moon nakshatra number plus 3, divided by 8, remainder",
+      "From the 9th lord"
+     ],
+     "a": 2,
+     "w": "BPHS ch. 46 gives the rule and the Mrigashira example."
+    },
+    {
+     "q": "Your Yogini dasha now is:",
+     "o": [
+      "Siddha, Venus",
+      "Sankata, Rahu",
+      "Mangala, Moon",
+      "Dhanya, Jupiter"
+     ],
+     "a": 1,
+     "w": "Sankata runs 3 Jun 2022 to 3 Jun 2030."
+    },
+    {
+     "q": "What are the Deha and Jeeva in Kalachakra?",
+     "o": [
+      "Two ayanamsas",
+      "Day and night lords",
+      "Body and life signs for each pada",
+      "Two nodes"
+     ],
+     "a": 2,
+     "w": "Each pada has a body and a life sign."
+    }
+   ]
+  },
+  {
+   "id": "11-6",
+   "title": "Using KP, Tajika and the other dashas as independent checks",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the Yogini period you are in now and how it compares with Vimshottari.</p><h2>What “independent” means</h2><p>A second system is only independent if it uses different inputs or logic. KP, Tajika and the extra dashas all use the same birth time and place as your Parashari chart, and the same or a nearly identical ayanamsa (KP’s is about 6′ lower). Two apps that agree on a wrong birth time agree on the wrong chart. So use the other systems to ask different questions, not to vote.</p><div class=\"tbl\"><table><thead><tr><th>System</th><th>What it adds</th><th>What it cannot add</th></tr></thead><tbody><tr><td>KP CSL</td><td>A yes/no on a named event</td><td>Independence from birth time (it is the most time-sensitive of all)</td></tr><tr><td>Tajika (Varsha)</td><td>Emphasis for one year</td><td>A better answer than Vimshottari plus transits; no such evidence is known to this course</td></tr><tr><td>Yogini, Chara</td><td>A second timeline</td><td>Different data (same Moon, same lagna)</td></tr><tr><td>Kalachakra</td><td>A pada-based timeline and body/life emphasis</td><td>Easy hand computation</td></tr></tbody></table></div><h2>A worked check: “Is a visible career or income step likely in 2027?”</h2><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The question, written before looking at outcomes. The inputs are from the engine and the Swiss Ephemeris scripts used in the earlier lessons.</p><div class=\"tbl\"><table><thead><tr><th>Layer</th><th>Method</th><th>Result</th></tr></thead><tbody><tr><td>Window</td><td>Vimshottari</td><td>Mercury–Saturn to 29 Sep 2027, then Ketu–Ketu, Ketu–Venus from 25 Feb 2028</td></tr><tr><td>Window</td><td>Yogini</td><td>Sankata (Rahu) 3 Jun 2022 to 3 Jun 2030: a long, undifferentiated stretch</td></tr><tr><td>Window</td><td>Chara (draft, BPHS rules)</td><td>Aquarius, Jun 2025 to Jun 2031: a 6th-house sign with Ketu</td></tr><tr><td>Trigger</td><td>Saturn in Pisces (7th) until 3 Jun 2027, then Aries (8th); Jupiter in Cancer (11th) 25 Jan to 26 Jun 2027</td><td>No double transit on your 10th or 11th by simple aspect: Jupiter’s aspects from Cancer fall on Scorpio, Capricorn and Pisces, not Gemini; Saturn’s 3rd aspect from Aries reaches Gemini only from June</td></tr><tr><td>Binary</td><td>KP 10th CSL Saturn: 5, 6, 7</td><td>Partial for service or partnership-type work</td></tr><tr><td>Binary</td><td>KP 11th CSL Mars: 3, 8, 9</td><td>No support, unstable (flips at −1 and +3 min)</td></tr><tr><td>Annual</td><td>Varsha 2027–28</td><td>Lagna undecided (Aquarius/Pisces/Virgo); year lord Saturn or Mercury</td></tr><tr><td>Sensitivity</td><td>Birth time ±3 min</td><td>KP flips; Parashari, Jaimini and Yogini unchanged</td></tr></tbody></table></div><p><strong>Verdict.</strong> The systems do not agree on a clear step in 2027. The Parashari promise is strong (Bhadra yoga, 10th lord in own sign), and the 6th-house emphasis in the dashas points to work and service routine more than to a visible leap. KP is unstable, and the Varsha is undecided. A fair ledger entry is: “No major role or income change before 29 Sep 2027 (window 1 Jan to 29 Sep 2027); confidence low; sensitivity: KP flips, others stable.” That is a testable statement, and it can be wrong.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>How would different schools judge this?</strong></p><ul><li>A Parashari purist reads dasha plus transit, and sees a 6th-lord period (Saturn) as work and effort rather than gain.</li><li>A KP practitioner rectifies the birth time first and then trusts the CSL.</li><li>A Tajika practitioner reads the year first and the dasha second, so the Varsha-lagna problem matters most to them.</li><li>K.N. Rao’s composite approach would weigh Vimshottari, Yogini and Chara together. None of the schools gives a rule for settling a disagreement, so a disagreement is information, not a verdict.</li></ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run the scheme in this order every time: write the question, collect each system’s result with its convention, run the sensitivity pass (±N minutes, other ayanamsa, other node), then write the ledger entry. In Stage 12 this becomes the five-layer protocol.</p></div><h2>Stage test</h2><p>The quiz below covers the whole stage. Take it without looking back.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Systems that share a birth time are not independent. Use them to ask different questions.</li><li>KP is a binary check and the most time-sensitive.</li><li>Tajika gives yearly emphasis. Check the Varsha lagna margin first.</li><li>A disagreement among systems is information. Report it.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Pick a question you care about for 2027. Fill the same table for it: window, trigger, binary check, annual check, sensitivity. Write the verdict as one testable sentence with a date window. Log it.</p>",
+   "listen": "KP, Tajika and the extra dashas all use the same birth time and place as your Parashari chart, and nearly the same ayanamsa, so they are not independent in the statistical sense. Use them to ask different questions: KP for a yes or no on a named event, Tajika for the emphasis of one year, and Yogini and Chara for a second timeline. For the question of a visible career or income step in 2027, your Vimshottari runs Mercury–Saturn to September 2027 and Yogini is in the long Rahu period. By the draft Chara calculation you are in Aquarius, a sixth-house sign. KP gives a partial yes from the tenth and no support from the eleventh, and the eleventh flips within three minutes. The Varsha lagna is undecided. So the systems do not agree on a clear step. A fair entry for the ledger says no major change before late September 2027, with low confidence. Disagreement between systems is information, not a verdict.",
+   "sources": [
+    "K.S. Krishnamurti, KP Readers; Tajika Neelakanthi; BPHS (R. Santhanam translation) ch. 46 for Yogini, Kalachakra and Chara dashas",
+    "K.N. Rao’s composite approach (project research notes, LoVA 2004 interview)",
+    "Engine dasha and events output; scripts in /home/claude/jyotish-path/work for the KP, Varsha and Yogini figures"
+   ],
+   "quiz": [
+    {
+     "q": "Why are KP, Tajika and Yogini not statistically independent of Parashari?",
+     "o": [
+      "They use different planets",
+      "They use only transits",
+      "They use the same birth time and place, and nearly the same ayanamsa",
+      "They ignore the Moon"
+     ],
+     "a": 2,
+     "w": "The same inputs mean the same input errors."
+    },
+    {
+     "q": "Which of your KP results flips within three minutes of birth-time error?",
+     "o": [
+      "10th CSL only",
+      "Only the 2nd CSL",
+      "None",
+      "7th, 10th and 11th CSLs"
+     ],
+     "a": 3,
+     "w": "The 11th flips at −1 minute, the 7th at ±2 and the 10th at −2. Only the 2nd holds from −3 to +3."
+    },
+    {
+     "q": "What is the first thing to check before reading your 2027 Varsha chart?",
+     "o": [
+      "The Moon’s nakshatra",
+      "How close the Varsha lagna is to a sign edge",
+      "The Mudda dasha",
+      "The Muntha lord’s dignity"
+     ],
+     "a": 1,
+     "w": "The lagna is 4 arcminutes from Pisces."
+    },
+    {
+     "q": "Your Yogini dasha from 2022 to 2030 is:",
+     "o": [
+      "Dhanya",
+      "Mangala (Moon)",
+      "Sankata (Rahu)",
+      "Siddha (Venus)"
+     ],
+     "a": 2,
+     "w": "Sankata runs 3 Jun 2022 to 3 Jun 2030."
+    },
+    {
+     "q": "What is the Muntha for your 29th year?",
+     "o": [
+      "Virgo",
+      "Pisces",
+      "Aquarius",
+      "Capricorn"
+     ],
+     "a": 2,
+     "w": "Virgo plus 29 signs is Aquarius."
+    },
+    {
+     "q": "How many divisions does KP use, and why that number?",
+     "o": [
+      "249, because 6 parts straddle sign boundaries",
+      "243, with no splits",
+      "360, one per degree",
+      "108, one per pada"
+     ],
+     "a": 0,
+     "w": "27×9 = 243, plus 6 splits."
+    },
+    {
+     "q": "How should a disagreement among systems be treated?",
+     "o": [
+      "As information to report",
+      "Pick the system that agrees with you",
+      "As proof that astrology works",
+      "By dropping the lowest score"
+     ],
+     "a": 0,
+     "w": "Report it, and write the verdict with its confidence."
+    }
+   ]
+  }
+ ]
+}

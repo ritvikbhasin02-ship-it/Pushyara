@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order your Life Report | Pushyara</title><meta name="description" content="Order your Pushyara Life Report: digital in English or Hindi, or printed as a spiral copy, keepsake book or hardbound gift edition shipped anywhere in India.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://pushyara.com/order.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;600;700&family=Tiro+Devanagari+Hindi&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+.w{width:min(780px,100% - 32px);margin:0 auto;padding:26px 0 70px}
+a.home{display:inline-flex;gap:11px;align-items:center;font:400 1.45rem var(--display);color:var(--moon);text-decoration:none}a.home svg{width:38px;height:38px}
+h1{margin:40px 0 12px}
+fieldset{border:0;border-top:1px solid var(--line);padding:26px 0 8px;margin:30px 0 0}
+legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
+.eds{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line-soft);margin-top:10px}
+.eds label{position:relative;margin:0;padding:16px 14px;cursor:pointer;font-weight:400;color:var(--mist);border-left:1px solid var(--line-soft)}
+.eds label:first-child{border-left:0}
+.eds input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer;min-height:0}
+.eds b{display:block;font:400 1.6rem var(--display);color:var(--moon);margin-top:2px}
+.eds label:has(input:checked){background:linear-gradient(180deg,rgba(242,185,46,.16),rgba(242,185,46,.03));color:var(--gold-hi);box-shadow:inset 0 0 0 1px var(--gold)}
+.eds label:has(input:checked) b{color:var(--gold-hi)}
+.eds label:focus-within{outline:2px solid var(--gold-hi);outline-offset:2px}
+.f{display:grid;gap:6px;margin-top:16px;font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.chk{display:flex;gap:12px;align-items:flex-start;font-weight:400;margin-top:18px}.chk input{width:20px;min-height:20px;height:20px;margin-top:5px;flex:none;accent-color:var(--gold)}
+.err{color:#FF8A7A;font-weight:600;min-height:1.6em;margin:18px 0 6px}
+.note{color:var(--mist);font-size:.98rem;margin-top:16px}
+.done{border-top:1px solid var(--gold);padding-top:24px;margin-top:40px}
+.foot{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:46px;padding-top:20px;border-top:1px solid var(--line-soft);font-size:.95rem}.foot a{color:var(--mist);text-decoration:none}
+@media(max-width:680px){.eds{grid-template-columns:1fr 1fr}.eds label:nth-child(3){border-left:0}.eds label:nth-child(n+3){border-top:1px solid var(--line-soft)}.two{grid-template-columns:1fr}}
+</style></head><body><div class="w">
+<a class="home" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset=".55" stop-color="#F2B92E"/><stop offset="1" stop-color="#C98A12"/></linearGradient><mask id="lg-m"><rect width="64" height="64" fill="#fff"/><circle cx="31.60" cy="32.08" r="18.91" fill="#000"/></mask></defs><circle cx="28.5" cy="36.5" r="19.5" fill="url(#lg-g)" mask="url(#lg-m)"/><path d="M38.69 8.83 L39.84 11.78 L42.79 12.93 L39.84 14.08 L38.69 17.03 L37.54 14.08 L34.59 12.93 L37.54 11.78Z M37.34 21.28 L38.81 25.05 L42.58 26.52 L38.81 27.98 L37.34 31.75 L35.88 27.98 L32.11 26.52 L35.88 25.05Z M49.99 23.77 L50.83 25.92 L52.98 26.76 L50.83 27.60 L49.99 29.76 L49.15 27.60 L46.99 26.76 L49.15 25.92Z" fill="#FFE07A"/></svg>Pushyara</a>
+<h1>Order your Life Report</h1>
+<p class="lead">Your full 29-page reading from your exact birth time. Every edition includes the digital report and prediction tracker. Prices include all taxes, and shipping for printed editions.</p>
+<form id="of" novalidate>
+  <fieldset><legend>Choose your edition</legend>
+  <div class="eds" role="radiogroup" aria-label="Edition">
+    <label><input type="radio" name="ed" value="digital" checked>Digital<b>₹499</b></label>
+    <label><input type="radio" name="ed" value="printed">Printed, spiral<b>₹999</b></label>
+    <label><input type="radio" name="ed" value="keepsake">Keepsake book<b>₹1,499</b></label>
+    <label><input type="radio" name="ed" value="gift">Gift, hardbound<b>₹2,499</b></label>
+  </div></fieldset>
+  <fieldset><legend>Birth details</legend>
+  <label class="f">Name on the report<input id="nm" required maxlength="60" autocomplete="name"></label>
+  <div class="two"><label class="f">Date of birth<input type="date" id="dob" required></label><label class="f">Time of birth<input type="time" id="tob" required></label></div>
+  <label class="f">Place of birth (city, state)<input id="pob" required maxlength="80" placeholder="For example, Satna, Madhya Pradesh"></label>
+  <div class="two"><label class="f">How sure is the time?<select id="conf"><option>Exact</option><option>Within 15 minutes</option><option>Within an hour</option><option>Not known</option></select></label>
+  <label class="f">Report language<select id="lang"><option value="English">English</option><option value="Hindi">हिंदी (Hindi)</option></select></label></div>
+  </fieldset>
+  <fieldset><legend>Your contact</legend>
+  <div class="two"><label class="f">Mobile number<input id="ph" required inputmode="tel" maxlength="13" autocomplete="tel"></label><label class="f">Email<input id="em" type="email" required maxlength="80" autocomplete="email"></label></div>
+  </fieldset>
+  <fieldset id="ship" hidden><legend>Ship to</legend>
+  <label class="f">Recipient’s name<input id="rn" maxlength="60"></label>
+  <label class="f">Address<textarea id="ad" maxlength="240" rows="3" autocomplete="street-address"></textarea></label>
+  <div class="two"><label class="f">City and state<input id="cs" maxlength="60"></label><label class="f">PIN code<input id="pin" inputmode="numeric" maxlength="6" autocomplete="postal-code"></label></div>
+  <label class="chk"><input type="checkbox" id="gift"><span>This is a gift. Leave the price out of the parcel.</span></label>
+  </fieldset>
+  <p class="err" id="err" role="alert"></p>
+  <button class="btn" type="submit">Place my order</button>
+  <p class="note">We reply within 24 hours with a secure payment link for UPI, cards or net banking. Your report is prepared after payment. Read our <a href="/refunds.html">refund policy</a>.</p>
+</form>
+<div id="done" class="done" hidden><h2>Your order is ready to send</h2><p class="lead">Your email app has opened with your order filled in. Press send, and we will reply with your payment link within 24 hours. If it did not open, write to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a> with your birth details and edition.</p></div>
+<nav class="foot" aria-label="Footer"><a href="/">Home</a><a href="/learn/index.html">Learn Jyotish</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refunds.html">Refunds</a><a href="/contact.html">Contact</a></nav>
+</div>
+<script>
+(function(){
+  var qs=new URLSearchParams(location.search),q=qs.get('edition');
+  if(q){var r=document.querySelector('input[name=ed][value="'+q+'"]');if(r)r.checked=true;}
+  if(qs.get('lang')==='hi')document.getElementById('lang').value='Hindi';
+  var P={digital:'Digital (₹499)',printed:'Printed, spiral (₹999)',keepsake:'Keepsake book (₹1,499)',gift:'Gift edition, hardbound (₹2,499)'};
+  var ship=document.getElementById('ship'),f=document.getElementById('of');
+  function ed(){return document.querySelector('input[name=ed]:checked').value;}
+  function sync(){ship.hidden=ed()==='digital';}
+  document.querySelectorAll('input[name=ed]').forEach(function(r){r.addEventListener('change',sync);});sync();
+  f.addEventListener('submit',function(e){e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim();},err=document.getElementById('err');err.textContent='';
+    var need=['nm','dob','tob','pob','ph','em'];if(ed()!=='digital')need=need.concat(['rn','ad','cs','pin']);
+    var miss=need.filter(function(id){return !v(id);});
+    if(miss.length){err.textContent='Fill in every field to place your order.';document.getElementById(miss[0]).focus();return;}
+    if(!/^\S+@\S+\.\S+$/.test(v('em'))){err.textContent='Enter an email address like name@example.com.';document.getElementById('em').focus();return;}
+    if(!/^[+\d][\d\s]{9,12}$/.test(v('ph'))){err.textContent='Enter a 10-digit mobile number.';document.getElementById('ph').focus();return;}
+    if(ed()!=='digital'&&!/^\d{6}$/.test(v('pin'))){err.textContent='Enter a 6-digit PIN code.';document.getElementById('pin').focus();return;}
+    var L=['Edition: '+P[ed()],'','Birth details','Name: '+v('nm'),'Date: '+v('dob'),'Time: '+v('tob')+' ('+v('conf')+')','Place: '+v('pob'),'Language: '+v('lang'),'','Contact','Mobile: '+v('ph'),'Email: '+v('em')];
+    if(ed()!=='digital')L=L.concat(['','Ship to','Name: '+v('rn'),'Address: '+v('ad'),'City and state: '+v('cs'),'PIN: '+v('pin'),'Gift: '+(document.getElementById('gift').checked?'Yes, leave the price out':'No')]);
+    location.href='mailto:hello@pushyara.com?subject='+encodeURIComponent('Life Report order: '+P[ed()])+'&body='+encodeURIComponent(L.join('\n'));
+    f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);
+  });
+})();
+</script></body></html>

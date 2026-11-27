@@ -1,0 +1,623 @@
+{
+ "stage": 6,
+ "title": "Yogas",
+ "level": "Core",
+ "goal": "Done when you can take any yoga in a chart and judge it Strong, Moderate or Weak using formation, planetary strength, cancellation and dasha activation, and can explain your reasoning for your own chart.",
+ "terms": {
+  "yoga": [
+   "Yoga · योग",
+   "A named combination of planets, signs and houses that a text links to a result. A yoga is a promise with conditions: it needs to be formed, strong, uncancelled and activated by a dasha before it shows in life."
+  ],
+  "mahapurusha": [
+   "Pancha Mahapurusha · पञ्च महापुरुष",
+   "Five “great person” yogas made when Mars, Mercury, Jupiter, Venus or Saturn sits in a kendra in its own or exaltation sign: Ruchaka, Bhadra, Hamsa, Malavya, Shasha."
+  ],
+  "rajayoga": [
+   "Raja yoga · राजयोग",
+   "A “royal” yoga: a link between the lord of a kendra and the lord of a trikona, usually by conjunction, mutual aspect or exchange. It signals status, authority and visible achievement in the planets’ periods."
+  ],
+  "yogakaraka": [
+   "Yogakaraka · योगकारक",
+   "A planet that rules both a kendra and a trikona (other than the lagna alone) for a given ascendant, so it produces a raja yoga by itself. Example: Saturn for Taurus and Libra lagnas."
+  ],
+  "kendradhipati": [
+   "Kendradhipati dosha · केन्द्राधिपत्य दोष",
+   "The classical idea that natural benefics (Jupiter, Venus, Mercury, the Moon) lose some of their goodness when they rule kendras, and natural malefics lose some of their harm (they become neutral unless they also rule a trikona). Its strength and exceptions are debated."
+  ],
+  "dhanayoga": [
+   "Dhana yoga · धनयोग",
+   "A wealth combination: a link between the lords of the money houses (2, 5, 9, 11, with the lagna lord) by conjunction, aspect, exchange or placement in each other’s houses."
+  ],
+  "chandrayoga": [
+   "Chandra yogas · चन्द्र योग",
+   "Yogas counted from the Moon: Sunapha (planet in 2nd from Moon), Anapha (12th), Durudhara (both), Kemadruma (neither), Gajakesari (Jupiter in a kendra from the Moon; BPHS also allows the lagna and adds conditions), Adhi (benefics in 6th, 7th, 8th from the Moon). The Sun and the nodes are usually not counted."
+  ],
+  "suryayoga": [
+   "Surya yogas · सूर्य योग",
+   "Yogas counted from the Sun: Vesi (planet in 2nd from Sun), Vosi (12th), Ubhayachari (both). The Moon and the nodes are not counted. Budh-Aditya, Sun with Mercury, is the best-known solar yoga."
+  ],
+  "viparita": [
+   "Viparita Raja yoga · विपरीत राजयोग",
+   "“Reversed” raja yoga: the lord of a dusthana (6, 8 or 12) placed in a dusthana. Harsha is the 6th lord, Sarala the 8th, Vimala the 12th. The idea is that a bad house’s lord sitting in another bad house “destroys” the trouble."
+  ],
+  "parivartana": [
+   "Parivartana · परिवर्तन",
+   "Exchange of signs: two planets each sit in the sign the other rules. Both gain strength. Maha (between lords of good houses), Khala (involving the 3rd lord) and Dainya (involving a 6th, 8th or 12th lord) describe its quality."
+  ],
+  "nabhasa": [
+   "Nabhasa yogas · नाभस योग",
+   "Pattern yogas based on the shape of the whole chart: the type of signs planets occupy (Ashraya), kendra placement (Dala), geometric shapes (Akriti) and the number of signs occupied (Sankhya). Broad in meaning, low in specific weight."
+  ],
+  "arishta": [
+   "Arishta · अरिष्ट",
+   "A classical term for an indication of danger or hardship, especially in infancy (balarishta), together with the conditions that cancel it (arishta bhanga). Not a modern prediction tool for death or disaster."
+  ],
+  "kalasarpa": [
+   "Kala Sarpa · कालसर्प",
+   "A modern, debated pattern where all planets lie on one side of the Rahu-Ketu axis. Definitions, names and results vary widely between authors, and a classical source is not clear."
+  ],
+  "mangaldosha": [
+   "Mangal dosha · मंगल दोष",
+   "Also Kuja dosha: Mars in certain houses (commonly 1, 4, 7, 8, 12, and 2 for some) counted from the lagna, Moon or Venus. Used mainly in marriage matching. Many exceptions and cancellations exist."
+  ],
+  "avastha": [
+   "Avastha · अवस्था",
+   "A state of a planet. Baladi avastha divides each sign into five 6° parts (infant, youth-boy, young, old, dead) and reads the planet’s results as stronger or weaker by that part."
+  ],
+  "drishti": [
+   "Drishti · दृष्टि",
+   "Aspect: the “glance” of a planet on a house. All planets aspect the 7th house from themselves; Mars adds the 4th and 8th, Jupiter the 5th and 9th, Saturn the 3rd and 10th. Many teachers give Rahu and Ketu the 5th, 7th and 9th as well."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "6-1",
+   "title": "How to judge whether a yoga works",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the four kendra houses and the three trikona houses, and say which house is in both lists.</p>\n<p>A <strong>{{term:yoga|yoga}}</strong> is a recipe in a book. Books list dozens. A chart usually matches several recipes by accident, and most of them do nothing you can see. This lesson gives you one method to decide which yogas in a chart are real. You will use it for every lesson in this stage.</p>\n<h2>The five-question test</h2>\n<div class=\"tbl\"><table><thead><tr><th>Question</th><th>What to check</th><th>Strengthens</th><th>Weakens</th></tr></thead><tbody><tr><td>1. Is it really formed?</td><td>Read the exact wording: own sign or exalted? kendra from lagna or from Moon? sign-based or degree-based?</td><td>Every condition met as written</td><td>A near-miss counted as a hit</td></tr><tr><td>2. Are the planets strong?</td><td>Dignity, house, combustion, retrogression, D9 sign, avastha. Later: Shadbala and Ashtakavarga</td><td>Own or exalted, kendra or trikona, vargottama, not combust</td><td>Debilitated, combust, dusthana, enemy sign in D9</td></tr><tr><td>3. Is it spoiled or rescued?</td><td>Conjunction and aspect from malefics, dusthana lordship, cancellation rules</td><td>Benefic aspect, strong cancellation</td><td>Affliction by a strong malefic</td></tr><tr><td>4. Is it activated?</td><td>Vimshottari periods of the yoga planets (and their dispositors); transits over them</td><td>Yoga planet runs a major or sub-period</td><td>Planet’s period is far away or already over</td></tr><tr><td>5. Does the second chart agree?</td><td>The same planets in D9 and in the divisional chart of that life area</td><td>Same planets strong in D9</td><td>Strong in D1, weak in D9</td></tr></tbody></table></div>\n<p>Score each yoga <em>Strong, Moderate, Weak or Not formed</em> and write one line of reasons. Do not give a yoga a number. The numbers would be invented.</p>\n<h2>Why activation matters most</h2>\n<p>A yoga does not work evenly across a life. Classical practice reads a yoga’s results mainly in the {{term:dasha|dasha}} and sub-periods of the planets that form it, and of the lords of the houses involved. A strong Hamsa yoga with Jupiter’s major period 100 years away shows up in smaller windows only. A modest yoga that sits in the middle of a running major period can dominate a decade.</p>\n<h2>One more lens: baladi avastha</h2>\n<p>The {{term:avastha|baladi avastha}} divides each 30° sign into five parts of 6°. In odd signs the order is infant (0°–6°), boy (6°–12°), young (12°–18°), old (18°–24°), dead (24°–30°). In even signs the order is reversed. A planet in the “young” part is read as strongest; in the “dead” (mrita) part as weakest. Many modern astrologers use it only as a tiebreaker, so treat it the same way.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Mercury is at 28°10′ of Gemini (an odd sign), in the last part: <em>mrita</em>. Jupiter is at 3°28′ of Pisces (an even sign, so the order is reversed): also <em>mrita</em>. Your two Mahapurusha planets both sit in the weakest part by this lens, even though both are in their own signs and in kendras. That is the point of the five-question test: signals conflict, and you must weigh them instead of picking the flattering one.</p><p>Worked example, Bhadra yoga (Mercury own sign in the 10th): formed, yes (Gemini is Mercury’s own sign; 10th is a kendra). Strong planet? Mercury is vargottama (Gemini in D1 and D9) and not combust: it is 17°29′ from the Sun, and the engine’s combustion limit for Mercury is 14°. Weakened? Saturn aspects the 10th (3rd aspect from the 8th house), and the avastha lens says <em>mrita</em>. Activated? Mercury’s major period runs from 29 Sep 2010 to 29 Sep 2027, so yes: it has been running since you were twelve. Verdict: Strong formation, good support, one weak lens.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari tradition</strong> (BPHS, Phaladeepika, Saravali): the named-yoga lists are central, and each yoga is read with the rules above.</li>\n<li><strong>Jaimini tradition</strong> (Jaimini Sutras, Upadesha Sutras): relies far less on a long list of named yogas. It judges from karakas, sign aspects (rashi drishti), arudhas and the chara dashas.</li>\n<li><strong>KP</strong> (Krishnamurti Paddhati): judges events from house significators and the sub-lord of the relevant cusp, and rarely uses named yogas.</li>\n</ul><p>None of these is “the correct one”. You will meet all three; this stage is the Parashari one.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Birth time ±5 minutes.</strong> Your lagna stays Virgo from about 11:23 to 13:35 (computed with the engine), so every house-based yoga you will see in this stage is safe against a small time error. <strong>Other dasha:</strong> check whether the yoga planet also shows in a second timing system (for example the Chara dasha) before you lean on it. <strong>D9:</strong> the same planets should not be badly placed there.</p></div><p class=\"note\">Every prediction you make from a yoga should go in your prediction ledger with a date to check. A yoga that cannot be tested is a story, not a technique.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>A yoga is a recipe plus conditions: formation, strength, spoilers, activation, second-chart support.</li><li>Activation by dasha decides when a yoga speaks. Formation alone decides nothing.</li><li>Rate yogas Strong, Moderate, Weak or Not formed. Never invent scores.</li><li>When signals conflict, say so. Do not pick the signal you like.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Take Bhadra or Hamsa and fill the five-question table in your own words, one line per question. Mark which of the five questions you could not answer yet.</p>",
+   "listen": "A yoga is a named combination, but a name is not a result. Judge any yoga with five questions. First, is it really formed as the text says? Second, are the planets strong, by dignity, house, combustion, retrogression, navamsa and avastha? Third, is it spoiled by malefic conjunction or aspect, or rescued by a cancellation rule? Fourth, is it activated, meaning does a Vimshottari period of the yoga planets run now or soon? Fifth, does the navamsa and the relevant divisional chart agree? Rate each yoga strong, moderate, weak or not formed, with one line of reasons. In your chart Mercury makes Bhadra yoga in its own sign in the tenth house. It is vargottama and not combust, so the formation is strong, but it sits in the last six degrees of Gemini, the weakest part by baladi avastha, and Saturn aspects it. Mercury’s major period runs from 2010 to 2027, so the yoga has been active since you were twelve. Signals conflict, and the skill is to weigh them honestly.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on yogas and on planetary states (avasthas); chapter numbers not verified here",
+    "Phaladeepika, chapters on yogas",
+    "Jaimini Sutras and Upadesha Sutras, for the contrasting karaka-based method",
+    "Computed with the app's chart engine: natal chart and dasha for your chart"
+   ],
+   "quiz": [
+    {
+     "q": "A yoga’s results are read mainly when…",
+     "o": [
+      "The yoga is named in a famous classical text such as BPHS",
+      "A dasha or sub-period of the planets that form it is running",
+      "The Moon is full or waxing in the same month",
+      "The chart shows more than ten different yogas at once"
+     ],
+     "a": 1,
+     "w": "Activation by dasha (and transit) is what turns a formed yoga into events."
+    },
+    {
+     "q": "Which of these weakens a yoga?",
+     "o": [
+      "The planet is vargottama and placed in a friendly sign",
+      "The planet is in its own sign in a kendra and aspected by a benefic",
+      "The planet is combust or debilitated with no cancellation",
+      "Its dispositor is strong and well placed in a kendra"
+     ],
+     "a": 2,
+     "w": "Combustion or an uncancelled debilitation weakens the planet and so the yoga."
+    },
+    {
+     "q": "Mercury at 28°10′ Gemini is in which baladi part?",
+     "o": [
+      "Infant, bala (0–6°)",
+      "Young, yuva (12–18°)",
+      "Old, vriddha (18–24°)",
+      "Dead, mrita (24–30°)"
+     ],
+     "a": 3,
+     "w": "Gemini is an odd sign, so the last 6° (24–30°) is the mrita part."
+    },
+    {
+     "q": "Your lagna stays Virgo from about 11:23 to 13:35. What does that tell you?",
+     "o": [
+      "A birth-time error of 5 minutes cannot change your houses",
+      "Your lagna lord changes within a few minutes of noon",
+      "Your Moon sign changes if the time is off by one minute",
+      "Your divisional-chart yogas have no time sensitivity at all"
+     ],
+     "a": 0,
+     "w": "The lagna sign has a wide window, so house-based yogas do not move with a 5-minute error. Divisional lagnas are far more sensitive (Stage 7)."
+    }
+   ]
+  },
+  {
+   "id": "6-2",
+   "title": "Pancha Mahapurusha yogas",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Give the five-question test for a yoga. Which question tells you when it will speak?</p>\n<p>The {{term:mahapurusha|Pancha Mahapurusha}} (“five great persons”) yogas are the clearest yogas in the books. They are formed by one planet, so there is little to argue about in the formation.</p>\n<h2>The rule</h2>\n<p>One of the five non-luminary planets sits in a {{term:kendra|kendra}} from the lagna <em>and</em> in its own sign or its sign of exaltation. (For these five planets the moolatrikona sign is always one of their own signs.)</p>\n<div class=\"tbl\"><table><thead><tr><th>Yoga</th><th>Planet</th><th>Signs that form it</th><th>Classical character</th></tr></thead><tbody><tr><td>Ruchaka</td><td>Mars</td><td>Aries, Scorpio (own); Capricorn (exalted)</td><td>Courage, command, physical drive</td></tr><tr><td>Bhadra</td><td>Mercury</td><td>Gemini, Virgo (own; Virgo also exalted)</td><td>Intellect, speech, trade, skill</td></tr><tr><td>Hamsa</td><td>Jupiter</td><td>Sagittarius, Pisces (own); Cancer (exalted)</td><td>Wisdom, ethics, teaching, respect</td></tr><tr><td>Malavya</td><td>Venus</td><td>Taurus, Libra (own); Pisces (exalted)</td><td>Refinement, comfort, arts, relationships</td></tr><tr><td>Shasha</td><td>Saturn</td><td>Capricorn, Aquarius (own); Libra (exalted)</td><td>Discipline, organisation, authority over many</td></tr></tbody></table></div>\n<h2>Reading which kendra</h2>\n<ul><li><strong>1st:</strong> the result shows in the person and body.</li><li><strong>4th:</strong> home, property, inner life.</li><li><strong>7th:</strong> partnerships, clients, public dealings.</li><li><strong>10th:</strong> career and public standing.</li></ul>\n<h2>What can still go wrong</h2>\n<p>A formed Mahapurusha yoga can be weakened by combustion, a debilitated dispositor, a heavy malefic aspect, or a poor D9 position. A planet right at the edge of a sign can also fall into the neighbouring house in a cusp-based chart. Always run the five-question test.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>Bhadra:</strong> Mercury in Gemini, 10th house, own sign, Punarvasu pada 3, vargottama. <strong>Hamsa:</strong> Jupiter in Pisces, 7th house, own sign, Uttara Bhadrapada pada 1, D9 in Leo. The engine’s scan finds these two and no other. Malavya fails (Venus is in the 9th, not a kendra), Ruchaka fails (Mars in the 9th), Shasha fails (Saturn is debilitated and in the 8th).</p>\n<p><strong>Hamsa, judged:</strong> nothing aspects ({{term:drishti|drishti}}) or joins Jupiter, so it is clean. Against that, Jupiter’s directional strength (dig bala) is lowest in the 7th house, by rule, and its degree is in the mrita part. Activation is the real limit: Jupiter’s own major period does not come until 2095. The yoga speaks through Jupiter’s sub-periods: Mercury–Jupiter (14 Oct 2022 to 19 Jan 2025, already past), the last Mercury–Saturn–Jupiter window (21 May to 29 Sep 2027), Ketu–Jupiter (17 Sep 2031 to 23 Aug 2032) and Venus–Jupiter (28 Nov 2044 to 30 Jul 2047), and through Jupiter’s transits.</p>\n<p><strong>Reference from the Moon:</strong> the kendras from your Moon are Cancer, Libra, Capricorn and Aries. Only Saturn (debilitated, not own) is in one of them, so counting from the Moon adds nothing.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Which reference:</strong> BPHS-style statements use the lagna. Some commentators also count kendras from the Moon. Check what your software does.</li>\n<li><strong>Moolatrikona:</strong> for these five planets every moolatrikona sign is also an own sign (Mars Aries, Mercury Virgo, Jupiter Sagittarius, Venus Libra, Saturn Aquarius), so this choice never changes the yoga at sign level.</li>\n<li><strong>House system:</strong> whole-sign houses (used by the engine) put the whole sign in the house. In cusp-based (Sripati, Placidus-style) houses, a planet near a sign edge may move house. Mercury at 28°10′ is the kind of placement to check in a cusp-based view. The engine does not compute that.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>D9:</strong> Mercury is Gemini in D1 and D9, so it is vargottama and well supported. Jupiter moves to Leo in D9, a friendly sign. <strong>Ashtakavarga (Stage 8):</strong> check the planet’s own bindus in its sign. <strong>Another ayanamsa:</strong> Mercury moves from 28°10′ to 29°37′ Gemini under the Raman ayanamsa and stays in Gemini, so Bhadra survives the choice of ayanamsa.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Five yogas, one planet each: own or exalted, in a kendra from the lagna.</li><li>The kendra tells you where the result shows: self, home, partnership, career.</li><li>Formation is easy to check. Strength and activation take the real work.</li><li>A planet’s own major period may never come in a lifetime, so check its sub-periods.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write the sign and house of Mars, Mercury, Jupiter, Venus and Saturn in your chart and tick which Mahapurusha yoga each fails and why. One fails by house alone; two fail by both house and dignity.</p>",
+   "listen": "The Pancha Mahapurusha yogas are Ruchaka for Mars, Bhadra for Mercury, Hamsa for Jupiter, Malavya for Venus and Shasha for Saturn. Each forms when that planet sits in a kendra from the lagna in its own sign or its exaltation sign. The kendra tells you where the result shows, in the person, the home, partnerships or career. A formed yoga can still be weakened by combustion, affliction or a poor navamsa. In your chart the engine finds two. Bhadra is Mercury in Gemini in the tenth house, own sign and vargottama. Hamsa is Jupiter in Pisces in the seventh house, own sign and clean of any aspect. Jupiter has least directional strength in the seventh house, and its own major period is far away, so Hamsa speaks mainly through Jupiter sub-periods and transits. Venus, Mars and Saturn do not form their yogas, and counting from the Moon adds nothing.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapter on Pancha Mahapurusha yogas (chapter number not verified here)",
+    "Phaladeepika, chapter on yogas",
+    "Saravali, chapters on yogas",
+    "Jyotish engine output: natal chart, dasha table"
+   ],
+   "quiz": [
+    {
+     "q": "Which condition forms a Mahapurusha yoga?",
+     "o": [
+      "Planet in a trikona from the lagna in a friend’s sign",
+      "Planet in a kendra from the lagna in own or exaltation sign",
+      "Planet in the 10th house from the lagna in any sign",
+      "Planet conjunct the Moon in a kendra from the lagna"
+     ],
+     "a": 1,
+     "w": "Kendra from the lagna plus own or exaltation sign is the rule (some authors add moolatrikona)."
+    },
+    {
+     "q": "Which sign forms Hamsa when Jupiter is exalted there?",
+     "o": [
+      "Pisces",
+      "Sagittarius",
+      "Cancer",
+      "Capricorn"
+     ],
+     "a": 2,
+     "w": "Jupiter is exalted in Cancer. Pisces and Sagittarius are its own signs."
+    },
+    {
+     "q": "Why does your Malavya yoga fail?",
+     "o": [
+      "Venus is debilitated in the sign of Virgo",
+      "Venus is combust and too close to the Sun",
+      "Venus is in the 9th house, not a kendra",
+      "Venus is retrograde and in a dusthana"
+     ],
+     "a": 2,
+     "w": "Venus is in Taurus (own sign) but in the 9th house, which is a trikona, not a kendra."
+    },
+    {
+     "q": "Why does Hamsa speak mostly through sub-periods in your chart?",
+     "o": [
+      "Jupiter is debilitated in your chart",
+      "Jupiter’s own major period is in 2095",
+      "Hamsa needs a full Moon to be formed",
+      "Jupiter is combust in your chart, close to the Sun"
+     ],
+     "a": 1,
+     "w": "Jupiter’s major period falls beyond a normal lifespan, so Hamsa shows up in Jupiter sub-periods and transits."
+    }
+   ]
+  },
+  {
+   "id": "6-3",
+   "title": "Raja yogas and Dhana yogas",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which two Mahapurusha yogas are formed in your chart, and in which houses?</p>\n<p>Mahapurusha yogas come from one planet. {{term:rajayoga|Raja yogas}} and {{term:dhanayoga|Dhana yogas}} come from <em>relationships between lords</em>. So you must know the house lords of your chart first.</p>\n<h2>Raja yoga: the core idea</h2>\n<p>{{term:kendra|Kendras}} are the pillars of the chart, {{term:trikona|trikonas}} are houses of merit. The classical idea is that when a kendra lord and a trikona lord join, support meets merit, and status follows. The lagna is both a kendra and a trikona, so the lagna lord joins the game with any kendra or trikona lord.</p>\n<p>The relationship can be:</p>\n<ol><li><strong>Conjunction</strong> (same sign),</li><li><strong>Mutual aspect</strong>,</li><li><strong>Exchange of signs</strong> (parivartana), often ranked strongest,</li><li>For some authors, one lord aspecting the other, or mutual reception.</li></ol>\n<h2>Yogakaraka</h2>\n<p>A {{term:yogakaraka|yogakaraka}} rules a kendra and a trikona itself, so it needs no partner. Classical examples: Saturn for Taurus and Libra lagnas, Mars for Cancer and Leo, Venus for Capricorn and Aquarius. For Virgo lagna no single planet rules a kendra (other than the lagna) and a trikona together, so there is no yogakaraka.</p>\n<h2>Dharma-Karmadhipati</h2>\n<p>The 9th house is dharma and fortune; the 10th is karma and action. A link between the 9th lord and the 10th lord is widely taught as the finest raja yoga, because fortune and work are joined.</p>\n<h2>Kendradhipati dosha</h2>\n<p>The {{term:kendradhipati|kendradhipati dosha}} says that natural benefics lose goodness when they rule kendras, and natural malefics lose some of their harm (they become neutral unless they also rule a trikona). It is why Jupiter and Mercury, ruling two kendras each for some lagnas, are read with caution. It is stated in classical texts but exceptions are many.</p>\n<h2>Dhana yoga</h2>\n<p>Wealth is read from the 2nd (stored wealth), 11th (income), 5th and 9th (fortune and merit), and the lagna lord. A dhana yoga is a conjunction, aspect, exchange, or mutual placement among two or more of these lords. A stronger yoga links the 2nd and 11th lords with a trikona lord. Also read the timing: wealth yogas pay in the periods of their lords.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>House lords for Virgo lagna: 1 Mercury, 2 Venus, 3 Mars, 4 Jupiter, 5 Saturn, 6 Saturn, 7 Jupiter, 8 Mars, 9 Venus, 10 Mercury, 11 Moon, 12 Sun.</p>\n<ul>\n<li><strong>Raja yoga by conjunction or exchange:</strong> none. The engine’s scan finds no kendra–trikona lords in one sign and no exchange.</li>\n<li><strong>Dharma-Karmadhipati:</strong> 9th lord Venus (Taurus, 9th) and 10th lord Mercury (Gemini, 10th) are in adjacent signs with no conjunction, exchange or mutual aspect. Not formed. Both are strong in their own signs, so it is a supportive neighbourhood, not a yoga.</li>\n<li><strong>Weak link by aspect:</strong> Saturn, the 5th lord, aspects the 10th house, where Mercury (1st and 10th lord) sits. A one-way aspect from a debilitated planet: many teachers do not count it, those who do rank it low.</li>\n<li><strong>Kendradhipati:</strong> the scan flags Jupiter (rules 4th and 7th, sits in its own sign in the 7th) and Mercury (rules the 1st and 10th). Mercury rules the lagna, and several authors treat a lagna lord as exempt because the lagna is also a trikona.</li>\n<li><strong>Dhana:</strong> 2nd lord Venus is in the 9th in its own sign. 11th lord Moon is in the 11th in its own sign. Both wealth lords are strong, but there is no formal link between them (no conjunction, aspect or exchange). 5th lord Saturn is debilitated in the 8th. Honest reading: sound, not spectacular, by this method.</li><li><strong>Lakshmi yoga</strong> (BPHS ch. 36 in R. Santhanam’s translation): the 9th lord in a kendra in its own, moolatrikona or exaltation sign, with a strong lagna lord. Your Venus is in its own sign but in the 9th, a trikona, so it fails by that wording. Authors who also accept a trikona would count it, with Mercury as the strong lagna lord. Name the wording you use.</li>\n</ul></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari:</strong> raja yoga means kendra–trikona lord relationships (BPHS and the yoga chapters of Phaladeepika). Which relationships count (conjunction only, or aspect and reception too) varies.</li>\n<li><strong>Jaimini:</strong> reads raja yogas from the Atmakaraka, Amatyakaraka, 5th lord and Putrakaraka, and their sign-aspect links. With a 7-karaka scheme your Atmakaraka is Mars and Amatyakaraka is Mercury.</li>\n<li><strong>Kendradhipati:</strong> applied strictly by some, softened or dropped by others for the lagna lord and for planets in own sign.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>D9:</strong> Saturn (5th lord) and Mercury (1st and 10th lord) both sit in Gemini in your navamsa, a conjunction of a trikona lord and a kendra-trikona lord. That is a support the D1 chart lacks. <strong>Dasha:</strong> check whether the lords in question get periods. Mercury’s major period runs to 29 Sep 2027; the sub-period of Saturn, the 5th lord, runs from 19 Jan 2025 to 29 Sep 2027.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Raja yoga = kendra lord linked to trikona lord. Dharma-Karmadhipati = 9th and 10th lords linked.</li><li>Yogakaraka rules a kendra and a trikona itself. Virgo lagna has none.</li><li>Dhana yoga links the 2nd, 5th, 9th and 11th lords (and the lagna lord).</li><li>Strong lords in their own signs support results even without a formal yoga.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your twelve house lords, then draw the arrows: which lords are in the same sign, in each other’s signs, or aspect each other? Mark any that join a kendra lord with a trikona lord.</p>",
+   "listen": "Raja yogas come from relationships between house lords, not from single planets. The classical idea is that a kendra lord, the pillar of the chart, joined to a trikona lord, the house of merit, gives status and visible success. The relationship can be conjunction, mutual aspect or exchange. A yogakaraka rules both a kendra and a trikona itself. The best-known pairing is the ninth and tenth lords, called Dharma-Karmadhipati. Wealth yogas link the second, fifth, ninth and eleventh lords with the lagna lord. In your chart, Virgo lagna has no yogakaraka, and the engine finds no raja yoga by conjunction or exchange. Your ninth lord Venus and tenth lord Mercury are strong neighbours in their own signs, but they do not connect. Your second lord Venus and eleventh lord Moon are both in their own signs, with no formal link. In the navamsa, Saturn and Mercury share a sign, which is a modest support.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Raja yogas and on Dhana yogas (chapter numbers not verified here)",
+    "Phaladeepika, chapters on yogas",
+    "Jaimini Sutras, chapter on Raja yogas from karakas",
+    "Jyotish engine output: house lords, aspects, D9"
+   ],
+   "quiz": [
+    {
+     "q": "A yogakaraka is a planet that…",
+     "o": [
+      "Sits in the 10th house itself",
+      "Rules a kendra and a trikona",
+      "Is exalted in a kendra house",
+      "Rules the 2nd and 11th houses"
+     ],
+     "a": 1,
+     "w": "Ruling both a kendra and a trikona makes a raja yoga by itself."
+    },
+    {
+     "q": "Dharma-Karmadhipati links which lords?",
+     "o": [
+      "1st and 7th",
+      "5th and 11th",
+      "9th and 10th",
+      "2nd and 8th"
+     ],
+     "a": 2,
+     "w": "Dharma (9th) and karma (10th)."
+    },
+    {
+     "q": "For Virgo lagna, which is true?",
+     "o": [
+      "Saturn is the yogakaraka planet",
+      "Mars is the yogakaraka planet",
+      "Venus alone makes raja yoga with the Moon",
+      "No single planet is a yogakaraka"
+     ],
+     "a": 3,
+     "w": "Mercury (1, 10), Venus (2, 9), Mars (3, 8), Jupiter (4, 7), Saturn (5, 6), Sun (12), Moon (11): none rules a kendra other than the lagna together with a trikona."
+    },
+    {
+     "q": "In your chart, why is Dharma-Karmadhipati not formed?",
+     "o": [
+      "Venus is debilitated and Mercury is weak, so the lords cannot link",
+      "Mercury is combust, so the 10th lord cannot form any link",
+      "The lords are in adjacent signs with no conjunction, exchange or aspect",
+      "The 9th lord is in the 6th house, so the link is cancelled"
+     ],
+     "a": 2,
+     "w": "Venus is in Taurus and Mercury in Gemini. Adjacent signs do not link planets."
+    },
+    {
+     "q": "Where does your navamsa show a link between the 5th and the 1st/10th lords?",
+     "o": [
+      "Mercury and Saturn both in Gemini",
+      "Venus and Jupiter both in the sign Pisces",
+      "Mars and the Moon both in Virgo",
+      "Sun and the Moon both in Cancer"
+     ],
+     "a": 0,
+     "w": "D9 puts Saturn and Mercury in Gemini, a conjunction."
+    }
+   ]
+  },
+  {
+   "id": "6-4",
+   "title": "Lunar and solar yogas",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which house lords form a Dhana yoga, and which is stronger: a formal link or two strong lords with no link?</p>\n<p>These yogas are counted from the Moon or from the Sun, not from the lagna. They are easy to check and widely cited, but they work as small supports, not as life-changing yogas.</p>\n<h2>{{term:chandrayoga|Lunar yogas}} (counted from the Moon)</h2>\n<div class=\"tbl\"><table><thead><tr><th>Yoga</th><th>Condition</th><th>Classical flavour</th></tr></thead><tbody><tr><td>Sunapha</td><td>A planet in the 2nd from the Moon</td><td>Self-made resources and reputation</td></tr><tr><td>Anapha</td><td>A planet in the 12th from the Moon</td><td>Steady health, good conduct, comfort</td></tr><tr><td>Durudhara</td><td>Planets in both the 2nd and 12th</td><td>Wealth, comfort, a supported mind</td></tr><tr><td>Kemadruma</td><td>No planet in the 2nd or 12th, and none with the Moon</td><td>Classically poverty and isolation; read today as a mind without support</td></tr><tr><td>Gajakesari</td><td>Popular form: Jupiter in a kendra (1, 4, 7, 10) from the Moon. BPHS: a kendra from the lagna or the Moon, Jupiter joined or aspected by a benefic, not debilitated, combust or in an enemy sign</td><td>Reputation, wisdom, lasting name</td></tr><tr><td>Adhi</td><td>Benefics in the 6th, 7th, 8th from the Moon</td><td>Leadership, comfort, a strong rise</td></tr></tbody></table></div>\n<p>The Sun, Rahu and Ketu are usually left out of the counts for Sunapha, Anapha, Durudhara and Kemadruma.</p>\n<p><strong>Kemadruma cancellations</strong> (commonly cited; lists vary by author): the Moon in a kendra from the lagna; a planet in a kendra from the Moon or lagna; the Moon aspected or joined by Jupiter or other benefics; the Moon in its own or exaltation sign; a strong lagna lord. Cancellation matters because Kemadruma is a harsh label that many charts carry.</p>\n<h2>{{term:suryayoga|Solar yogas}} (counted from the Sun)</h2>\n<div class=\"tbl\"><table><thead><tr><th>Yoga</th><th>Condition</th></tr></thead><tbody><tr><td>Vesi</td><td>A planet (not Moon, not nodes) in the 2nd from the Sun</td></tr><tr><td>Vosi</td><td>A planet in the 12th from the Sun</td></tr><tr><td>Ubhayachari</td><td>Planets in both the 2nd and 12th from the Sun</td></tr><tr><td>Budh-Aditya</td><td>Sun and Mercury in the same sign</td></tr></tbody></table></div>\n<p>Budh-Aditya has a built-in tension. Mercury is never far from the Sun (at most 28° away), and when within about 14° it is combust. A very close pair is therefore a “yoga” with a weakened Mercury. A wide pair in the same sign is not combust but is a loose link.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><ul>\n<li><strong>Anapha: formed.</strong> Mercury is in Gemini, the 12th from your Moon in Cancer. (The engine’s scan does not list it; this was checked by hand from the engine’s positions.)</li>\n<li><strong>Sunapha: no.</strong> The 2nd from the Moon (Leo) holds only Rahu, and nodes are not counted. <strong>Durudhara: no. Kemadruma: no</strong> (Anapha defeats it).</li>\n<li><strong>Gajakesari: no.</strong> Jupiter is in the 9th from your Moon. BPHS (ch. 36 in R. Santhanam’s translation) also accepts a kendra from the lagna, but adds conditions: Jupiter must be joined or aspected by a benefic and be free of debilitation, combustion and an enemy sign. Your Jupiter is in your 7th house, a kendra from the lagna, but no planet joins or aspects it, so the BPHS version fails too.</li>\n<li><strong>Adhi: no.</strong> The 6th, 7th, 8th from the Moon are Sagittarius, Capricorn and Aquarius. No benefic is there (Ketu is in Aquarius).</li>\n<li><strong>Vosi: formed</strong> by Mars and Venus in Taurus, the 12th from your Sun in Gemini. Mars is combust (11°22′ from the Sun), which spoils half of it. Vesi and Ubhayachari: no.</li>\n<li><strong>Budh-Aditya: formed by sign.</strong> Sun at 10°41′ and Mercury at 28°10′ of Gemini are 17°29′ apart: not combust, but a wide conjunction. Moderate at best.</li>\n</ul></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>What counts as a planet:</strong> the texts leave out the Sun for lunar yogas, the Moon for solar yogas and the nodes. Some software settings differ. Check yours.</li>\n<li><strong>Gajakesari reference:</strong> BPHS counts a kendra from the lagna or the Moon and asks for benefic association. The popular form uses the Moon only and drops the conditions. R. Santhanam notes that Phaladeepika (ch. 6) calls the bare Moon–Jupiter kendra link Kesari yoga.</li>\n<li><strong>Kemadruma cancellations:</strong> the cancelling conditions are listed differently from author to author. Use them as a checklist, not as a single rule.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Another ayanamsa:</strong> your Moon stays in Cancer under Lahiri, Raman, KP and Fagan-Bradley, so lunar yogas are stable. Vosi is not: under the Raman ayanamsa (about 1°27′ less than Lahiri) Mars moves from 29°19′ Taurus to 0°46′ Gemini, joins the Sun’s sign and Vosi disappears. A yoga that depends on a planet 41′ from a sign edge is only as firm as your ayanamsa choice.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Lunar yogas count from the Moon; solar from the Sun. Exclude the luminaries and nodes as stated.</li><li>Kemadruma has many cancellations. Never state it without checking them.</li><li>Gajakesari: Jupiter in a kendra from the Moon (popular form), or from the lagna or Moon with benefic association (BPHS). Check which version your source uses.</li><li>Budh-Aditya is strongest as a sign link; a very close pair means a combust Mercury.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> List the planets in the 2nd and 12th from your Moon and your Sun, remove the excluded ones, and state which of Sunapha, Anapha, Durudhara, Kemadruma, Vesi, Vosi and Ubhayachari you have.</p>",
+   "listen": "Lunar yogas are counted from the Moon. Sunapha is a planet in the second from the Moon, Anapha in the twelfth, Durudhara in both, and Kemadruma in neither, with many cancellations. Gajakesari is Jupiter in a kendra from the Moon. Adhi yoga is benefics in the sixth, seventh and eighth from the Moon. Solar yogas are counted from the Sun: Vesi in the second, Vosi in the twelfth, Ubhayachari in both. Budh-Aditya is the Sun with Mercury in one sign, and a very close pair makes Mercury combust. In your chart, Mercury in Gemini is in the twelfth from your Cancer Moon, so Anapha is formed. Sunapha, Durudhara, Kemadruma, Gajakesari and Adhi are not. Mars and Venus in Taurus, the twelfth from your Gemini Sun, form Vosi, though Mars is combust. Sun and Mercury are seventeen and a half degrees apart, a wide Budh-Aditya. Under the Raman ayanamsa, Mars changes sign and Vosi disappears.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Chandra yogas and on Surya yogas (chapter numbers not verified here)",
+    "Phaladeepika, chapters on yogas",
+    "Saravali, chapters on lunar and solar yogas",
+    "Jyotish engine output: natal positions; ayanamsa comparison computed with the Swiss Ephemeris"
+   ],
+   "quiz": [
+    {
+     "q": "Anapha yoga is formed by a planet in which house from the Moon?",
+     "o": [
+      "2nd",
+      "6th",
+      "12th",
+      "10th"
+     ],
+     "a": 2,
+     "w": "Sunapha is the 2nd; Anapha is the 12th; Durudhara needs both."
+    },
+    {
+     "q": "Which planet alone makes your Anapha yoga?",
+     "o": [
+      "Mars",
+      "Mercury",
+      "Venus",
+      "Jupiter"
+     ],
+     "a": 1,
+     "w": "Mercury is in Gemini, the 12th from your Cancer Moon. The Sun is not counted."
+    },
+    {
+     "q": "Why is Gajakesari not formed from your Moon?",
+     "o": [
+      "Jupiter is debilitated and combust in your chart, so it is weak",
+      "Jupiter is in the 9th from your Moon, not a kendra",
+      "Jupiter is in the 6th from your Moon, a dusthana",
+      "The Moon is debilitated and Jupiter is retrograde"
+     ],
+     "a": 1,
+     "w": "Pisces is the 9th sign from Cancer. Kendras from the Moon are 1, 4, 7, 10."
+    },
+    {
+     "q": "A very close Sun–Mercury conjunction means…",
+     "o": [
+      "The yoga is at its strongest and gives full results",
+      "Mercury is likely combust, which weakens it",
+      "Mercury is exalted, which strengthens the yoga",
+      "The yoga is automatically cancelled by Jupiter"
+     ],
+     "a": 1,
+     "w": "Within about 14° Mercury is combust. Distance and combustion both matter for Budh-Aditya."
+    },
+    {
+     "q": "Which is a commonly cited Kemadruma cancellation?",
+     "o": [
+      "Moon in a kendra from the lagna",
+      "Moon in the 8th house from the lagna",
+      "Moon conjunct Saturn in the 10th",
+      "Moon debilitated in Scorpio"
+     ],
+     "a": 0,
+     "w": "A Moon in a kendra from the lagna is among the cancellations most often cited."
+    }
+   ]
+  },
+  {
+   "id": "6-5",
+   "title": "Viparita Raja yogas and Neecha Bhanga",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which solar yoga do you have, and what is wrong with the planet that helps make it?</p>\n<h2>Viparita Raja yoga: bad times, reversed</h2>\n<p>The lord of a {{term:dusthana|dusthana}} (6th, 8th or 12th) sits in a dusthana. The idea is that a bad house’s lord, placed in another bad house, spends its harm there and frees the rest of life. {{term:viparita|Viparita Raja}} yogas have three names:</p>\n<div class=\"tbl\"><table><thead><tr><th>Yoga</th><th>Lord</th><th>Placed in</th><th>Classical flavour</th></tr></thead><tbody><tr><td>Harsha</td><td>6th lord</td><td>6th, 8th or 12th</td><td>Victory over rivals, good health, contentment</td></tr><tr><td>Sarala</td><td>8th lord</td><td>6th, 8th or 12th</td><td>Courage, learning, resilience in crisis</td></tr><tr><td>Vimala</td><td>12th lord</td><td>6th, 8th or 12th</td><td>Thrift, independence, a clean name</td></tr></tbody></table></div>\n<p>Strict readings add conditions: the lord should be alone or not joined by non-dusthana lords, not aspected by benefics, and some ask that it not be placed in its own house. Phaladeepika (ch. 6, as summarised by R. Santhanam) adds a malefic condition for Harsha (the 6th house occupied or aspected by malefics) and for Vimala (the 12th lord joined or aspected by malefics). A Viparita yoga is a relief that follows pressure, not a gift without cost.</p>\n<h2>Neecha Bhanga: cancelling a debilitation</h2>\n<p>A debilitated planet is weak. The {{term:neechabhanga|neecha bhanga}} rules say when that weakness is cancelled, and when the cancellation is strong enough to produce a raja yoga. Different sources list different rules. Here they are side by side. The Phaladeepika rules are as transcribed on a secondary website; the verse numbers are not verified here.</p>\n<div class=\"tbl\"><table><thead><tr><th>Rule</th><th>Condition</th><th>Source as found</th><th>Your Saturn</th></tr></thead><tbody><tr><td>A</td><td>The lord of the debilitation sign is in a kendra from the lagna or the Moon</td><td>Phaladeepika; widely repeated</td><td>Mars is in the 9th from the lagna, 11th from the Moon: no</td></tr><tr><td>B</td><td>The lord of the exaltation sign of the planet is in a kendra from the lagna or Moon</td><td>Phaladeepika</td><td>Venus, same houses: no</td></tr><tr><td>C</td><td>The planet that is exalted in the debilitation sign is in a kendra from the lagna or Moon</td><td>Listed in Jataka Parijata summaries; widely repeated (verse not verified here)</td><td>Sun is in your 10th from the lagna: <strong>yes</strong>. From the Moon it is the 12th</td></tr><tr><td>D</td><td>The debilitation-sign lord and the exaltation-sign lord are in kendras from each other</td><td>Phaladeepika</td><td>Mars and Venus share Taurus. Counts only if “1st from each other” counts: gray</td></tr><tr><td>E</td><td>The lord of the debilitation sign aspects the debilitated planet</td><td>Phaladeepika</td><td>Mars’s aspects fall on houses 12, 3, 4: no</td></tr><tr><td>F</td><td>The debilitated planet itself is in a kendra from the lagna or Moon</td><td>Phaladeepika</td><td>Aries is your 8th house, but the 10th from the Moon: <strong>yes, from the Moon</strong></td></tr><tr><td>G</td><td>The debilitated planet conjoins an exalted planet, or exchanges signs with another</td><td>Listed on secondary sites; no text named</td><td>No</td></tr><tr><td>H</td><td>Two debilitated planets aspect each other</td><td>Listed on secondary sites; no text named</td><td>No: only Saturn is debilitated</td></tr><tr><td>I</td><td>The debilitated planet is retrograde, or its dispositor is exalted or strong in a kendra</td><td>Attributed to H. R. Seshadri Iyer, a 20th-century author</td><td>Saturn is direct; Mars is not exalted: no</td></tr></tbody></table></div>\n<h2>From cancellation to Raja yoga</h2>\n<p>Cancellation (bhanga) only removes the damage. The full “Neecha Bhanga Raja Yoga” label asks for more: strong cancelling planets, ideally more than one rule met, and a period that activates it. Many modern writers apply the label very freely. A good habit: call it <em>partial</em> unless several rules agree and the cancelling planets are themselves strong.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>Harsha:</strong> your 6th lord Saturn (Aquarius is the 6th sign) is in Aries, the 8th house. Formed, and the Phaladeepika malefic condition is met: Ketu occupies your 6th house. Complications: Saturn is also your 5th lord (a trikona lord in an 8th house is read with caution), it is debilitated, and under the Rahu-with-5-7-9 aspect view Rahu aspects it from the 12th. <strong>Sarala:</strong> no (the 8th lord Mars is in the 9th). <strong>Vimala:</strong> no (the 12th lord Sun is in the 10th).</p>\n<p><strong>Neecha Saturn:</strong> two rules fit: C (the Sun, which is exalted in Aries, is in your 10th, a kendra from the lagna) and F (Saturn is in the 10th from your Moon, a kendra from the Moon). The engine’s scan reports both (“Sun in kendra from lagna” and “Saturn itself in kendra from Moon”). The dispositor rules A, B and E fail. Judgement: <em>partial cancellation</em>. The cancelling planet is the Sun, your 12th lord, in a neutral sign, and in the navamsa it sits in Saturn’s own sign of Capricorn (an enemy’s home for the Sun). That is not a strong rescuer. Positive: Saturn is in Gemini in the navamsa, a friend’s sign, so the weakness does not repeat there.</p>\n<p><strong>Activation:</strong> Saturn’s major period was already running at your birth (it began 29 Sep 1991) and ended on 29 Sep 2010. Saturn’s sub-period inside Mercury’s major period runs 19 Jan 2025 to 29 Sep 2027, so it is live today (inside it, the Mars pratyantar runs 28 Oct to 25 Dec 2026). After that, Ketu’s period begins on 29 Sep 2027, and Ketu sits in Aquarius, a sign Saturn rules. Some authors read a node as acting through its dispositor, so Saturn’s themes continue under Ketu.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Which rules count:</strong> rules A, B, D, E and F trace to Phaladeepika (Mantreswara). Rule C is listed in Jataka Parijata summaries. G to I come from later or secondary lists (verses not verified here). Texts and commentators do not agree on one list, and nobody here is “the correct one”.</li>\n<li><strong>Reference point:</strong> kendra from the lagna only, or from the Moon too? Phaladeepika states both.</li><li><strong>Wider rule sets:</strong> lists attributed to Jataka Parijata (as summarised in secondary sources; verse not verified here) accept the dispositor or the exaltation-sign lord in a kendra <em>or a trikona</em> from the lagna or Moon, and add a navamsa rule (the debilitated planet exalted in D9). Under the trikona wording, Mars and Venus in your 9th would also count for Saturn, which moves the verdict from partial towards fuller cancellation. Saturn is in Gemini in D9, not Libra, so the navamsa rule does not fit.</li>\n<li><strong>Viparita strictness:</strong> a loose reading is “lord of 6, 8 or 12 in 6, 8 or 12”. A strict reading adds no conjunction or aspect from other lords, and some ask the lord to be strong in its own right.</li>\n<li><strong>Rahu’s aspect:</strong> some schools give Rahu and Ketu 5th, 7th and 9th aspects; others give them none. That changes whether Saturn is “touched”.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>D9:</strong> check that the debilitated planet is not also weak in the navamsa. Saturn’s navamsa sign is Gemini (friend). <strong>Another dasha system:</strong> see if the Saturn–Sun link recurs in a Chara dasha. <strong>Birth time:</strong> not an issue here, as Saturn and the Sun are signs, not degrees.</p></div><p class=\"note\">Any prediction you draw from Harsha or from the cancellation of Saturn goes in the prediction ledger with a date, for example “Mercury–Saturn period ends on 29 Sep 2027: did I gain ground against a persistent problem?”.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Viparita Raja: a 6th, 8th or 12th lord in a 6th, 8th or 12th house. Check the strictness your source uses.</li><li>Neecha bhanga rules differ by source. Put them side by side and count how many fit.</li><li>Cancellation is not yet a raja yoga. Strong cancelling planets and activation make it one.</li><li>Mixed lordship (Saturn is both 5th and 6th lord) must be named in your reading.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Take the table of nine rules and mark, for Saturn in your chart, yes, no or gray on each one. Write one sentence that says whether you would call it Neecha Bhanga Raja Yoga, and why.</p>",
+   "listen": "A Viparita Raja yoga forms when the lord of the sixth, eighth or twelfth house sits in another of those houses. Harsha is the sixth lord, Sarala the eighth and Vimala the twelfth. The idea is that trouble spends itself and frees the rest of life. Neecha bhanga is the cancellation of a debilitation. The rules differ between sources. Phaladeepika gives these: the dispositor or the exaltation lord in a kendra from the lagna or Moon, mutual kendras of the two lords, aspect by the dispositor, or the planet itself in a kendra from lagna or Moon. Jataka Parijata summaries add the planet exalted in that sign, in a kendra. In your chart, Saturn is your sixth lord in the eighth house, so Harsha is formed, but Saturn is also your fifth lord and is debilitated. Two cancellation rules fit, the Sun in your tenth and Saturn in the tenth from your Moon, but the dispositor rules fail. That is a partial cancellation. Saturn’s sub-period inside Mercury runs until September 2027.",
+   "sources": [
+    "Phaladeepika, chapter on Raja yogas and the closing verses on cancellation of debilitation (verse numbers not verified here)",
+    "Phaladeepika ch. 6 for the names and conditions of Harsha, Sarala and Vimala (as summarised by R. Santhanam in his BPHS translation, vol. 2); BPHS itself gives only related dusthana-lord raja yogas in its Raja yoga chapter (ch. 39 in Santhanam’s numbering)",
+    "Secondary compilations of neecha bhanga rules (aaps.space, onlinejyotish.com) used to list rules; they do not name a text for several of them",
+    "Jyotish engine output: yoga scan, natal chart, dasha"
+   ],
+   "quiz": [
+    {
+     "q": "Harsha yoga involves which lord?",
+     "o": [
+      "2nd",
+      "6th",
+      "8th",
+      "12th"
+     ],
+     "a": 1,
+     "w": "Harsha is the 6th lord (Sarala the 8th, Vimala the 12th) in a dusthana."
+    },
+    {
+     "q": "A Viparita yoga is best described as…",
+     "o": [
+      "A guaranteed raja yoga without conditions",
+      "Relief after pressure, with conditions",
+      "A planet exalted in a dusthana house",
+      "A debilitation that has been cancelled"
+     ],
+     "a": 1,
+     "w": "The yoga reverses the harm of the dusthana lord; it is relief after trouble, not a free gift."
+    },
+    {
+     "q": "Which neecha bhanga rule fits your Saturn via the Sun?",
+     "o": [
+      "The planet exalted in Aries (the Sun) is in a kendra from the lagna",
+      "Mars, the lord of Aries, aspects Saturn and the Moon from a kendra",
+      "The planet exalted in Libra (Saturn) is in a kendra from the lagna",
+      "Saturn exchanges signs with Mars, the lord of Aries"
+     ],
+     "a": 0,
+     "w": "Saturn is debilitated in Aries, where the Sun is exalted; the Sun is in your 10th house, a kendra from the lagna."
+    },
+    {
+     "q": "Why is your Saturn “partially” cancelled, not fully?",
+     "o": [
+      "The cancelling Sun is weak, and the dispositor rules fail",
+      "Saturn is also in a dusthana, which blocks the cancellation",
+      "Saturn is combust, so no rule can cancel its fall",
+      "The Moon is debilitated, which blocks the cancellation"
+     ],
+     "a": 0,
+     "w": "The cancelling planet is the Sun, your 12th lord, in a neutral sign. Mars and Venus are not in kendras from the lagna or Moon."
+    },
+    {
+     "q": "Saturn’s major period in your chart ran…",
+     "o": [
+      "2010 to 2027",
+      "1991 to 2010",
+      "2027 to 2034",
+      "2034 to 2054"
+     ],
+     "a": 1,
+     "w": "Saturn’s major period was running at your birth (from 29 Sep 1991) and ended on 29 Sep 2010; the sub-period inside Mercury runs to 29 Sep 2027."
+    }
+   ]
+  },
+  {
+   "id": "6-6",
+   "title": "Parivartana and Nabhasa yogas",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name two Neecha Bhanga rules from the table and say which fit your Saturn.</p>\n<h2>{{term:parivartana|Parivartana}}: exchange of signs</h2>\n<p>Two planets sit in each other’s signs, for example Mars in Venus’s sign and Venus in Mars’s sign. Each planet is “at home” through the other, so both strengthen, and the two houses they rule become linked. The quality is read from the houses involved:</p>\n<div class=\"tbl\"><table><thead><tr><th>Type</th><th>Houses involved</th><th>Reading</th></tr></thead><tbody><tr><td>Maha parivartana</td><td>Lords of the 1st, 2nd, 4th, 5th, 7th, 9th, 10th, 11th (the “good” houses)</td><td>Strong, gives the area results of both houses</td></tr><tr><td>Khala parivartana</td><td>The 3rd house lord with another house lord</td><td>Effort, rivalry, courage; mixed results</td></tr><tr><td>Dainya parivartana</td><td>A 6th, 8th or 12th lord with another house lord</td><td>Troubles and sacrifice around both houses; can bring a hidden gain</td></tr></tbody></table></div>\n<p>These names are widely taught; classical texts use them with some variation in which houses fall in which class. Both planets must be placed in each other’s sign, which is a stricter test than mutual aspect.</p>\n<h2>{{term:nabhasa|Nabhasa yogas}}: the shape of the whole chart</h2>\n<p>The Nabhasa yogas ignore which planet is where and look at the pattern of all seven planets (Sun to Saturn). They fall into four groups:</p>\n<ul>\n<li><strong>Ashraya:</strong> all planets in movable, in fixed or in dual signs.</li>\n<li><strong>Dala:</strong> benefics and malefics sitting in the kendras in certain ways.</li>\n<li><strong>Akriti:</strong> shapes made by houses occupied (like a plough, a boat, a bow).</li>\n<li><strong>Sankhya:</strong> how many <em>signs</em> the seven planets occupy: 1 (Gola), 2 (Yuga), 3 (Shoola), 4 (Kedara), 5 (Pasha), 6 (Dama), 7 (Veena).</li>\n</ul>\n<p>Classical results are grand and general. Modern practice treats them as a description of how scattered or concentrated the chart is, and gives them little weight against house and dasha analysis.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>Parivartana: none.</strong> The engine’s scan finds no exchange between house lords, and no two planets sit in each other’s signs: your Sun and Mercury are both in Gemini (Mercury’s sign), but Mercury is not in the Sun’s sign.</p>\n<p><strong>Nabhasa:</strong> the seven planets occupy five signs: Gemini (Sun, Mercury), Cancer (Moon), Taurus (Mars, Venus), Pisces (Jupiter) and Aries (Saturn). That makes <strong>Pasha</strong> (5 signs) by the plain count. BPHS adds that a Sankhya yoga does not operate if another Nabhasa yoga forms. The engine does not scan Dala or Akriti, so check by hand: your planets sit in houses 7 to 11, a run of consecutive houses starting at the 7th, and BPHS defines Chhatra (like Nauka, Koota and Chapa) as planets within seven continuous houses from a starting house. An Akriti yoga may therefore form, and readers differ on how strictly to apply that wording. If one does, Pasha would not count. If your source counts Rahu and Ketu too, Leo and Aquarius are added, giving seven signs and <strong>Veena</strong>. Do not let Pasha, Veena or Chhatra decide anything; they are descriptions.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>House classes for parivartana:</strong> the split into Maha, Khala and Dainya is common in modern teaching and in many commentaries. Some authors also call an exchange between a 3rd lord and a 6th, 8th or 12th lord “dainya”. Confirm in the text you use.</li>\n<li><strong>Nodes in Nabhasa:</strong> texts count the seven planets. Some tools count Rahu and Ketu too, which can change the Sankhya yoga, as in your chart.</li>\n<li><strong>Weight:</strong> many Parashari authors read Nabhasa yogas lightly; Jaimini and KP do not use them.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Another convention check:</strong> re-run the Sankhya count with and without the nodes, and under the Raman ayanamsa, where Mars changes sign (to Gemini). The count stays at five, because Venus keeps Taurus. Yogas that depend on counting signs are fragile near sign edges, so check each one for planets close to an edge.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Parivartana needs both planets in each other’s sign. The houses involved set its quality.</li><li>Maha: good houses; Khala: involves the 3rd; Dainya: involves a 6th, 8th or 12th lord.</li><li>Nabhasa yogas describe the chart’s overall shape: sign type, kendra pattern, geometry, number of signs.</li><li>They are low-weight descriptions. Do not build a reading on them.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Count the signs occupied by the seven planets in your chart, with and without the nodes, and write which Sankhya yoga each count gives. Then check whether any two of your planets sit in each other’s signs.</p>",
+   "listen": "Parivartana means two planets are in each other’s signs. It strengthens both and links the houses they rule. Maha parivartana joins lords of the good houses, Khala involves the third lord, and Dainya involves a sixth, eighth or twelfth lord. Nabhasa yogas look at the shape of the whole chart. Ashraya is about the type of signs, Dala about kendra placements, Akriti about geometric shapes, and Sankhya about how many signs the seven planets occupy, from Gola for one sign up to Veena for seven. Classical results are broad, and modern practice gives them little weight. In your chart there is no parivartana. The seven planets occupy five signs, Gemini, Cancer, Taurus, Pisces and Aries, so Pasha is formed by the usual count. If Rahu and Ketu are counted, the total is seven signs and Veena. Treat these as descriptions, not as predictions.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Nabhasa yogas and on yogas of exchange (chapter numbers not verified here)",
+    "Phaladeepika, chapter on Nabhasa yogas",
+    "Saravali, chapters on yogas",
+    "Jyotish engine output: natal positions"
+   ],
+   "quiz": [
+    {
+     "q": "A parivartana requires…",
+     "o": [
+      "Two planets together in the same sign or house",
+      "Two planets aspecting each other from opposite signs",
+      "Each planet in the sign ruled by the other",
+      "One planet placed in its own exaltation sign"
+     ],
+     "a": 2,
+     "w": "Exchange means each planet occupies the other’s sign."
+    },
+    {
+     "q": "A Dainya parivartana involves…",
+     "o": [
+      "The 1st and 5th lords",
+      "A 6th, 8th or 12th lord",
+      "Only Jupiter and Venus together",
+      "Two exalted planets"
+     ],
+     "a": 1,
+     "w": "Dainya involves a dusthana lord; Khala involves the 3rd lord; Maha involves lords of good houses."
+    },
+    {
+     "q": "Sankhya yogas depend on…",
+     "o": [
+      "The number of signs occupied by the seven planets",
+      "The nakshatra occupied by the Moon at birth",
+      "The number of aspects between the seven planets",
+      "The degree of the lagna within its own sign"
+     ],
+     "a": 0,
+     "w": "Gola to Veena run from one sign to seven signs occupied."
+    },
+    {
+     "q": "In your chart, the seven planets occupy…",
+     "o": [
+      "Three signs",
+      "Five signs",
+      "Six signs",
+      "Seven signs"
+     ],
+     "a": 1,
+     "w": "Gemini, Cancer, Taurus, Pisces and Aries: five signs, which gives Pasha by the plain count. (Seven if the nodes are counted; BPHS also says a Sankhya yoga does not operate if another Nabhasa yoga forms.)"
+    }
+   ]
+  },
+  {
+   "id": "6-7",
+   "title": "Arishta and dosha: Kala Sarpa and Mangal dosha",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which chart pattern did you count with and without the nodes in the last lesson, and why did the count change?</p>\n<p>A <strong>yoga</strong> says “this combination helps”. A <strong>dosha</strong> says “this combination hinders”. The same five-question test applies: formation, strength, rescue, activation, second-chart support. Doshas are also where fear is sold most easily, so be strict with yourself.</p>\n<h2>{{term:arishta|Arishta}}</h2>\n<p>Classical texts, especially on childhood, list <em>arishta</em> (indications of danger) such as a weak Moon with malefics, and then list the factors that cancel them (arishta bhanga). These texts belong to a time of high child mortality. Do not use arishta to predict death or disaster today. Use the concept for its method: every danger sign has conditions and cancellations.</p>\n<h2>{{term:kalasarpa|Kala Sarpa}}</h2>\n<p>Kala Sarpa (“time-serpent”) means all planets lie on one side of the Rahu–Ketu axis. Popular writers give it twelve types, named by the house of Rahu, and describe delays, struggle and anxiety. Not verified against the original text: a description of this exact yoga in the principal classical texts; the “Sarpa yoga” of classical lists is a different combination. Treat Kala Sarpa as a modern, debated concept.</p>\n<h2>{{term:mangaldosha|Mangal dosha}}</h2>\n<p>Mars in the 1st, 4th, 7th, 8th or 12th house (some add the 2nd) counted from the lagna, and from the Moon (and, for some, Venus), is read as a strain on marriage. It is used in marriage matching. Commonly cited exceptions (lists vary by author):</p>\n<ul><li>Mars in its own or exaltation sign, or in certain signs for certain houses.</li><li>Jupiter or a benefic aspecting or joining Mars.</li><li>The partner has a matching dosha.</li><li>The dosha is read as weaker, or void, after a certain age (a folk rule, not a classical one).</li></ul>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>Kala Sarpa:</strong> Rahu is at 10°33′ Leo, Ketu at 10°33′ Aquarius. All seven planets lie in the half-circle running <em>from Ketu to Rahu</em> (Jupiter is 23° past Ketu, the Moon 32° before Rahu). So by the broad definition “all planets on one side of the axis” you qualify. Writers who insist that the planets must run from Rahu to Ketu call your pattern the reverse form (sometimes “Kala Amrita”); under that stricter rule you do not qualify. Because the two readings differ, the label means nothing without the author. Also, the nodes here are mean nodes; true nodes shift them by under 2°, which changes nothing for you.</p>\n<p><strong>Mangal dosha:</strong> Mars is in the 9th from your lagna (no). From your Moon (Cancer) Mars in Taurus is the 11th (no). In your navamsa Mars is in Virgo, the 3rd from the D9 lagna Cancer (no). Only the minority Venus reference flags it: Mars shares Taurus with Venus, which counts as the “1st” from Venus. A Mars at 29°19′, combust and 21° from Venus, is also a very loose link. Judgement: no Mangal dosha by the two common references.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Kala Sarpa definition:</strong> Rahu to Ketu (the form most popular writers use), or either direction (others), or also partial forms with one planet outside the axis. Names and results differ.</li>\n<li><strong>Classical status:</strong> modern writers present it as ancient. A few classical lists contain a “Sarpa” yoga that means malefics in the kendras, not this. Treat any claim of an exact classical source with care.</li>\n<li><strong>Mangal dosha houses:</strong> 1, 4, 7, 8, 12 (north Indian practice); the 2nd is added in several southern and some northern traditions. Reference points: lagna and Moon almost everywhere; Venus in some.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Ayanamsa:</strong> under the Raman ayanamsa your Mars moves to 0°46′ Gemini, the 12th from your Moon, so the Moon reference <em>would</em> flag Mangal dosha. Your “no dosha” verdict holds under Lahiri, KP and Fagan-Bradley, not under Raman. <strong>Node type:</strong> recompute with true nodes. Your answer must not change if a planet is more than a couple of degrees from the nodes. <strong>D9:</strong> Mars from the D9 lagna and D9 Moon. <strong>Partner’s chart:</strong> Mangal dosha is a matching question, so you cannot judge it from one chart alone.</p></div><p class=\"note\">Do not buy a ritual for any dosha. A dosha is something to check and test in your own life records, not a reason for expense. Optional devotional practice is a personal choice, not a remedy.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Yoga helps, dosha hinders. Both need formation, strength, cancellation and activation checked.</li><li>Arishta is a classical idea with cancellations. It is not a modern death-or-disaster tool.</li><li>Kala Sarpa is a modern, debated concept. Say which definition you use.</li><li>Mangal dosha depends on the reference (lagna, Moon, Venus) and the list of exceptions.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> For Mangal dosha, write the house of Mars from your lagna, from your Moon and from your D9 lagna, and mark each yes or no. Then write one sentence that states exactly which Kala Sarpa definition you are using.</p>",
+   "listen": "A dosha is a combination read as a hindrance, and it needs the same checks as a yoga: formation, strength, cancellation and activation. Arishta is a classical idea of danger indications, especially in childhood, with conditions that cancel them; it is not a tool for predicting death today. Kala Sarpa means all planets lie on one side of the Rahu-Ketu axis. It is a modern, debated concept, and authors differ on the direction and the types, so state your definition. In your chart all seven planets lie between Ketu in Aquarius and Rahu in Leo. By the broad definition you qualify; by the strict Rahu-to-Ketu definition you do not. Mangal dosha counts Mars in the first, fourth, seventh, eighth or twelfth house from the lagna, the Moon, and for some, Venus. Your Mars is in the ninth from the lagna and the eleventh from the Moon, so there is no Mangal dosha by the two common references. Do not buy rituals for either.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Arishta (balarishta) and on Arishta bhanga (chapter numbers not verified here)",
+    "Marriage-matching texts and later compilations on Kuja dosha (a precise classical source was not verified here)",
+    "Modern popular texts on Kala Sarpa (no exact classical source verified)",
+    "Jyotish engine output: natal positions, nodes, D9"
+   ],
+   "quiz": [
+    {
+     "q": "Kala Sarpa means…",
+     "o": [
+      "Rahu in conjunction with the Moon at birth",
+      "All planets on one side of the Rahu-Ketu axis",
+      "Saturn in the 8th house and Rahu in the 2nd house",
+      "Mars and Rahu together in one sign or house"
+     ],
+     "a": 1,
+     "w": "It is a modern pattern: all planets hemmed to one side of the nodal axis (definitions vary)."
+    },
+    {
+     "q": "Why is your chart’s Kala Sarpa status “depends on the author”?",
+     "o": [
+      "The nodes are too close to the Moon to judge",
+      "All planets lie from Ketu to Rahu, not from Rahu to Ketu",
+      "Mars is combust, which breaks the pattern for some authors",
+      "Saturn is retrograde, which breaks the pattern for most"
+     ],
+     "a": 1,
+     "w": "Planets run from Ketu to Rahu. Writers who require Rahu to Ketu exclude it; the broad definition includes it."
+    },
+    {
+     "q": "From which reference does the common Mangal dosha test count Mars?",
+     "o": [
+      "Lagna and Moon",
+      "Sun and Mercury",
+      "Jupiter only",
+      "Rahu and Ketu"
+     ],
+     "a": 0,
+     "w": "Lagna and Moon are the near-universal references; Venus is a minority addition."
+    },
+    {
+     "q": "In your chart Mars is which house from the Moon?",
+     "o": [
+      "4th",
+      "8th",
+      "11th",
+      "12th"
+     ],
+     "a": 2,
+     "w": "Mars in Taurus is the 11th sign from Cancer. Not a dosha house."
+    },
+    {
+     "q": "Arishta in classical texts is best used today as…",
+     "o": [
+      "A prediction of death or disaster for the native, as in old texts",
+      "A method idea: signs have conditions and cancellations",
+      "A reason to buy an expensive remedy straight away",
+      "A rule for choosing the best muhurta for travel"
+     ],
+     "a": 1,
+     "w": "The method of listing signs and cancellations is useful. Fear predictions are not."
+    }
+   ]
+  },
+  {
+   "id": "6-8",
+   "title": "Synthesis: your yoga scan, judged — and stage test",
+   "mins": 40,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> State the five questions that decide whether a yoga is real, in your own words.</p>\n<p>This lesson runs the engine’s yoga scan on your chart and judges each result with the five-question test. Then you take the stage test.</p>\n<h2>The engine’s scan, plus four checks by hand</h2>\n<div class=\"tbl\"><table><thead><tr><th>Yoga</th><th>Formed?</th><th>Real strength</th><th>Why</th><th>Activation</th></tr></thead><tbody><tr><td>Bhadra (Mercury, 10th, own sign)</td><td>Yes</td><td>Strong</td><td>Own sign, kendra, vargottama, not combust. Weak lenses: mrita degree; Saturn’s aspect on the 10th</td><td>Mercury major period 29 Sep 2010 to 29 Sep 2027: running</td></tr><tr><td>Hamsa (Jupiter, 7th, own sign)</td><td>Yes</td><td>Strong in formation, intermittent in activation</td><td>Clean of aspects and conjunctions; least directional strength in the 7th; mrita degree</td><td>Sub-periods and transits; own major period in 2095</td></tr><tr><td>Harsha (Saturn, 6th lord in the 8th)</td><td>Yes</td><td>Moderate</td><td>Saturn is also the 5th lord, debilitated, and Rahu may aspect it</td><td>Saturn sub-period 19 Jan 2025 to 29 Sep 2027: running; then through Ketu</td></tr><tr><td>Budh-Aditya (Sun + Mercury, Gemini)</td><td>Yes, by sign</td><td>Weak to moderate</td><td>Wide conjunction (17°29′); Mercury’s strength is its real support</td><td>Mercury major period: running</td></tr><tr><td>Kendradhipati (Jupiter; Mercury)</td><td>Flagged</td><td>Mild, contested</td><td>Jupiter is in own sign; Mercury is the lagna lord, exempt in several views</td><td>n/a (a dosha label)</td></tr><tr><td>Neecha Bhanga (Saturn)</td><td>Partial</td><td>Moderate-low</td><td>Sun in a kendra, and Saturn is in a kendra from the Moon; dispositor rules fail</td><td>Same as Saturn sub-period</td></tr><tr><td>Anapha (Mercury, 12th from the Moon)</td><td>Yes (by hand)</td><td>Mild support</td><td>Mercury is strong; the yoga is a small one</td><td>Mercury major period</td></tr><tr><td>Vosi (Mars, Venus, 12th from the Sun)</td><td>Yes (by hand)</td><td>Weak</td><td>Mars is combust; Mars flips sign under the Raman ayanamsa</td><td>Venus major period 2034 to 2054; Mars major period 2070</td></tr><tr><td>Saraswati (Jupiter, Venus, Mercury)</td><td>Yes (by hand), by the later compiled definition</td><td>Moderate</td><td>Jupiter (7th, own sign), Venus (9th) and Mercury (10th) all sit in kendras or trikonas, with Jupiter in its own sign. The definition is from later compilations (B. V. Raman, Three Hundred Important Combinations); no classical verse verified here</td><td>Mercury major period now; Venus major period 2034 to 2054</td></tr><tr><td>Kala Sarpa, reverse form</td><td>Depends on the author</td><td>Unverified concept</td><td>Definitions disagree</td><td>No</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The cluster that matters is the one on Mercury: your lagna lord and 10th lord, in its own sign, vargottama, with the Sun, in the 10th house, running its own major period until 29 Sep 2027. In the same stretch the Saturn sub-period supplies Harsha and a partial Neecha Bhanga. The honest summary is not “you have many powerful yogas”. It is “one strong planet, one clean but under-activated Jupiter yoga, one mixed Saturn setup, a Saraswati combination by a later definition, and a few small supports”.</p>\n<p><strong>Engine scope to remember:</strong> the engine’s Neecha scan checks the dispositor, the exaltation-sign lord and the planet exalted in that sign for a kendra from the lagna or Moon, and the debilitated planet itself in a kendra from the Moon. For Saturn it reports two: the Sun in a kendra from the lagna and Saturn in a kendra from the Moon. It does not check the aspect rule (E), the mutual-kendra rule (D) or the trikona and navamsa variants. Read engine output as a first pass, not as the verdict.</p>\n<p>Next period: Ketu’s major period starts on 29 Sep 2027 and runs to 29 Sep 2034, with Ketu in your 6th house in Aquarius. None of your scanned yogas is carried by Ketu itself. Save a ledger entry now: <em>“Mercury–Saturn ends on 29 Sep 2027. By then, what has Harsha and the Saturn partial cancellation visibly delivered?”</em> Record the answer at that date, not before.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>A Jaimini reader would not use this table at all. They would start from your Atmakaraka (Mars) and Karakamsa (Virgo), your arudhas and the chara dasha. A KP reader would ask for the cusps and sub-lords. If you want to know whether the Parashari reading above is robust, ask whether those readers would say something very different about the same planets. Where they do, write that disagreement in your notes.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Three checks to run before trusting this table:</strong> (1) re-run the chart with the Raman ayanamsa: Vosi disappears and Mars moves into your 10th house. That puts Saturn’s dispositor in a kendra from the lagna (neecha bhanga rule A then fits) and Mars in the 12th from your Moon (Mangal dosha by the Moon reference). Bhadra and Hamsa survive. (2) Read D9: Mercury is vargottama, Jupiter is in Leo, Saturn is in Gemini with Mercury. (3) Shift your birth time ±5 minutes: no house-based yoga changes.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Judge yogas by the five questions, not by the count of yogas the software shows.</li><li>Your strongest, active yoga cluster sits on Mercury; Jupiter’s Hamsa is clean but rarely activated.</li><li>Doshas are checked the same way. Kala Sarpa and Mangal dosha depend on definitions.</li><li>Log dated predictions in the ledger and check them at the date.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Rewrite the table in your own words for two yogas of your choice, add one ledger entry with a date at which you will judge it, then take the seven-question stage test below (aim for at least six correct).</p>",
+   "listen": "In this synthesis, you run the yoga scan on your chart and judge each result. Bhadra is strong: Mercury in its own sign in the tenth house, vargottama, not combust, and its major period runs until September 2027. Hamsa is clean but speaks only in Jupiter sub-periods and transits, since Jupiter’s own major period is in 2095. Harsha is moderate, because Saturn is also the fifth lord and debilitated. The neecha bhanga for Saturn is partial: the Sun is in a kendra, and Saturn is in a kendra from the Moon, but the dispositor rules fail. Budh-Aditya is a wide conjunction, so weak. Anapha is a small support. Vosi is weak, because Mars is combust and changes sign under another ayanamsa. Kala Sarpa depends on which definition you use. The skill is to weigh all signals, not to list every yoga. Save a ledger entry to check at the end of the Saturn sub-period.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, R. Santhanam’s translation: Nabhasa ch. 35, other yogas incl. Gajakesari and Lakshmi ch. 36, lunar ch. 37, solar ch. 38, Raja ch. 39, Pancha Mahapurusha ch. 75 (numbering differs between editions); Viparita names from Phaladeepika ch. 6",
+    "Phaladeepika, chapters on yogas and on cancellation of debilitation",
+    "Jaimini Sutras, for the contrasting karaka-based method",
+    "Jyotish engine output: yoga scan, natal chart, dasha table"
+   ],
+   "quiz": [
+    {
+     "q": "Which yoga cluster of your chart is currently running its major period?",
+     "o": [
+      "Hamsa and Gajakesari through Jupiter",
+      "Bhadra and Budh-Aditya through Mercury",
+      "Malavya and Dhana yoga through Venus",
+      "Gajakesari and Anapha through the Moon"
+     ],
+     "a": 1,
+     "w": "Mercury’s major period runs 29 Sep 2010 to 29 Sep 2027."
+    },
+    {
+     "q": "Why is Hamsa “intermittent in activation”?",
+     "o": [
+      "Jupiter is debilitated, so it speaks only in other planets' periods",
+      "Jupiter’s own major period is in 2095, so it speaks in sub-periods",
+      "Jupiter is combust, so it works only in its own period",
+      "Jupiter is retrograde, so its results arrive only in transits"
+     ],
+     "a": 1,
+     "w": "Jupiter’s major period starts 29 Sep 2095; until then it speaks through sub-periods and transits."
+    },
+    {
+     "q": "Which of these is NOT formed in your chart?",
+     "o": [
+      "Anapha yoga from the Moon",
+      "Harsha yoga via the 6th lord",
+      "Gajakesari from the Moon",
+      "Bhadra yoga from Mercury"
+     ],
+     "a": 2,
+     "w": "Jupiter is in the 9th from your Moon, not a kendra."
+    },
+    {
+     "q": "Neecha Bhanga for your Saturn is best called…",
+     "o": [
+      "Full Neecha Bhanga Raja yoga with all rules met and no flaws",
+      "Partial: some rules fit, the dispositor rules fail",
+      "Not debilitated, so no cancellation is needed",
+      "Fully cancelled by the aspect of Jupiter alone"
+     ],
+     "a": 1,
+     "w": "The Sun in a kendra and Saturn in a kendra from the Moon fit, but Mars and Venus are not in kendras."
+    },
+    {
+     "q": "Which statement about Kala Sarpa is the most accurate?",
+     "o": [
+      "It is a firmly classical yoga with a single agreed definition",
+      "It is a modern, debated concept with differing definitions",
+      "It needs Saturn in the 8th house and Rahu in the 2nd",
+      "It is always cancelled when Jupiter aspects the nodes"
+     ],
+     "a": 1,
+     "w": "Authors differ and a classical source for the modern form could not be verified."
+    },
+    {
+     "q": "A planet 41′ from a sign edge matters because…",
+     "o": [
+      "Within 1° of a sign edge a planet is always combust and weak",
+      "A different ayanamsa can move it to the next sign and change yogas",
+      "Near a sign edge a planet is automatically exalted in the D9",
+      "It changes the nakshatra lord but never the sign or the house"
+     ],
+     "a": 1,
+     "w": "Your Mars at 29°19′ Taurus moves to Gemini under the Raman ayanamsa, removing Vosi."
+    },
+    {
+     "q": "Which question in the five-question test decides when a yoga will speak?",
+     "o": [
+      "Is it formed from the lagna or Moon?",
+      "Are the planets strong enough in D1 and D9?",
+      "Is it activated by a period or transit?",
+      "Does the navamsa agree with the D1 chart?"
+     ],
+     "a": 2,
+     "w": "Activation by dasha and transit decides timing; the other questions decide whether and how strongly."
+    }
+   ]
+  }
+ ]
+}

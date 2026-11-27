@@ -1,0 +1,447 @@
+{
+ "stage": 1,
+ "title": "The alphabet",
+ "level": "Foundation",
+ "goal": "Name every planet, sign, house and nakshatra with its meaning, and read your own chart in the four-part model.",
+ "terms": {
+  "graha": [
+   "Graha · ग्रह",
+   "“That which seizes.” The nine moving influences: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu. They are the actors of the chart."
+  ],
+  "rashi": [
+   "Rashi · राशि",
+   "A sign: one of 12 equal 30° slices of the sidereal zodiac. A planet in a sign takes on that sign’s style."
+  ],
+  "bhava": [
+   "Bhava · भाव",
+   "A house: an area of life. In whole-sign houses the lagna sign is house 1, the next sign house 2, and so on."
+  ],
+  "nakshatra": [
+   "Nakshatra · नक्षत्र",
+   "A lunar mansion: one of 27 slices of 13°20′. The Moon spends about a day in each. Your Moon’s nakshatra starts your dasha clock."
+  ],
+  "pada": [
+   "Pada · पाद",
+   "A quarter of a nakshatra, 3°20′ wide. 108 padas in all; each pada equals one navamsa (D9) sign."
+  ],
+  "lagna": [
+   "Lagna · लग्न",
+   "The ascendant: the sign rising on the eastern horizon at birth. It changes about every 2 hours, which is why the exact birth time matters."
+  ],
+  "ayanamsa": [
+   "Ayanamsa · अयनांश",
+   "The gap between the tropical and sidereal zodiacs, about 24° today and growing by about 50″ a year. Lahiri (Chitrapaksha) is the Indian government standard."
+  ],
+  "sidereal": [
+   "Sidereal zodiac",
+   "A zodiac fixed to the stars. Jyotish uses it. It sits about 24° behind the tropical zodiac."
+  ],
+  "tropical": [
+   "Tropical zodiac",
+   "A zodiac fixed to the seasons (0° Aries = the March equinox). Western astrology uses it."
+  ],
+  "kendra": [
+   "Kendra · केन्द्र",
+   "Angular houses 1, 4, 7, 10: the pillars of the chart. Planets here act strongly and visibly."
+  ],
+  "trikona": [
+   "Trikona · त्रिकोण",
+   "Trine houses 1, 5, 9: houses of merit and fortune. Their lords are counted auspicious, though a second lordship (for example of a dusthana) can mix the result."
+  ],
+  "dusthana": [
+   "Dusthana · दुःस्थान",
+   "Difficult houses 6, 8, 12: disease and debt, sudden change, loss. Their lords placed in each other can give Viparita Raja Yoga, success through adversity."
+  ],
+  "upachaya": [
+   "Upachaya · उपचय",
+   "Growing houses 3, 6, 10, 11: results improve with time and effort. Malefics do well here."
+  ],
+  "karaka": [
+   "Karaka · कारक",
+   "Significator. A planet that naturally stands for something, whatever the chart: Sun = father, Moon = mother, Venus = wife, Jupiter = children and husband."
+  ],
+  "dasha": [
+   "Dasha · दशा",
+   "A planetary period. In the Vimshottari system a 120-year cycle is shared by the nine planets; the running dasha lord decides which promises open now."
+  ],
+  "gochar": [
+   "Gochar · गोचर",
+   "Transit: where the planets are moving now, read against the birth chart."
+  ],
+  "dignity": [
+   "Dignity",
+   "How comfortable a planet is in a sign: exalted (best), moolatrikona, own sign, friend’s, neutral, enemy’s, debilitated (weakest)."
+  ],
+  "vargottama": [
+   "Vargottama · वर्गोत्तम",
+   "A planet in the same sign in D1 and D9. Treated as strong and reliable. Your Mercury is vargottama in Gemini."
+  ],
+  "retrograde": [
+   "Vakri · वक्री (retrograde)",
+   "A planet that appears to move backward from Earth. Classically it gains strength but delivers in an unusual or delayed way."
+  ],
+  "combust": [
+   "Asta · अस्त (combust)",
+   "A planet too close to the Sun, its light swallowed. It loses some independence. Your Mars is about 11° from the Sun, inside the 17° orb given for Mars in the Surya Siddhanta and BPHS tables. Some teachers use smaller orbs or ignore combustion across a sign edge (your Mars is in Taurus, the Sun in Gemini)."
+  ],
+  "neechabhanga": [
+   "Neecha bhanga · नीचभंग",
+   "Cancellation of debilitation. Rule sets differ by text: Phaladeepika and BPHS-style rules look at the lord of the debilitation or exaltation sign in a kendra from the lagna or Moon; another rule uses the planet that exalts in the debilitation sign; a later rule uses the debilitated planet itself in a kendra from the Moon. Your Saturn (debilitated in Aries) is a cancellation candidate under two of the later rules: the Sun, exalted in Aries, is in your 10th, and Saturn is in a kendra (10th) from your Moon. The lords of Aries and Libra (Mars, Venus) are not in a kendra, so the first rule set does not apply. A later stage tests each rule set."
+  ],
+  "ida": [
+   "Ida nadi · इडा",
+   "The lunar channel, felt as breath flowing through the left nostril. Cooling, receptive, steady."
+  ],
+  "pingala": [
+   "Pingala nadi · पिङ्गला",
+   "The solar channel, felt as breath flowing through the right nostril. Heating, active, forceful."
+  ],
+  "sushumna": [
+   "Sushumna · सुषुम्ना",
+   "The central channel, when both nostrils flow equally. Classically unsuited for worldly action, suited for meditation."
+  ],
+  "tattva": [
+   "Tattva · तत्त्व",
+   "The five elements in Swara Shastra: earth, water, fire, air, ether. Each is said to predominate in turn within each nostril’s flow of about an hour."
+  ],
+  "swara": [
+   "Swara · स्वर",
+   "In Swara Shastra, the breath and which nostril it flows through at a given moment."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "1-1",
+   "title": "What Jyotish is, and the four-part model",
+   "mins": 15,
+   "body": "\n<p><span class=\"skt\">ज्योतिष</span> means “the science of light”. It is one of the six Vedangas, the limbs that support the Vedas, and is traditionally called <em>the eye of the Veda</em>: it was first used to time rituals.</p>\n<h2>The three branches</h2>\n<div class=\"tbl\"><table><thead><tr><th>Branch</th><th>Covers</th><th>Example</th></tr></thead><tbody><tr><td>Siddhanta</td><td>Astronomy and maths: where the planets are</td><td>The engine that computes your chart</td></tr><tr><td>Hora</td><td>The individual birth chart and its timing</td><td>Your kundli, dashas, transits</td></tr><tr><td>Samhita</td><td>The world: nations, weather, omens, auspicious times, buildings</td><td>Muhurta, Vastu, mundane astrology</td></tr></tbody></table></div>\n<h2>Sidereal, not tropical</h2>\n<p>Western astrology uses the {{term:tropical|tropical zodiac}}, tied to the seasons. Jyotish uses the {{term:sidereal|sidereal zodiac}}, tied to the stars. Because Earth’s axis wobbles, the two drift apart by about 50″ a year. The gap, the {{term:ayanamsa|ayanamsa}}, is about 24° now. That is why most people’s Vedic Sun sign is one sign behind their Western one: born 26 June, you are a Western Cancer but a Vedic Gemini Sun.</p>\n<h2>The four-part model</h2>\n<div class=\"tbl\"><table><thead><tr><th>Part</th><th>Think of it as</th><th>Count</th><th>Answers</th></tr></thead><tbody><tr><td>{{term:graha|graha}}</td><td>The actor</td><td>9</td><td><em>Who</em> acts</td></tr><tr><td>{{term:rashi|rashi}}</td><td>The costume, the style</td><td>12</td><td><em>How</em> it acts</td></tr><tr><td>{{term:bhava|bhava}}</td><td>The stage, the area of life</td><td>12</td><td><em>Where</em> in life it acts</td></tr><tr><td>{{term:nakshatra|nakshatra}}</td><td>The script underneath</td><td>27</td><td><em>Why</em>, the deeper story, and <em>when</em> (dashas)</td></tr></tbody></table></div>\n<p>Every sentence in a reading is these four joined: <strong>planet + sign + house + nakshatra</strong>. The rest of Jyotish (aspects, yogas, dashas, divisional charts) refines those four.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Moon (mind) in Cancer (its own sign: caring, protective) in the 11th house (gains, friends, networks) in Pushya (nourishing, dutiful, ruled by Saturn, deity Brihaspati the guru). Read together: a mind that feels deeply, protects its people, and finds fulfilment through networks and steady, dutiful work.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Jyotish = Vedanga, the eye of the Veda; three branches.</li><li>Sidereal zodiac; Lahiri ayanamsa ≈ 24°.</li><li>Graha → rashi → bhava → nakshatra: who, how, where, why.</li></ul></div>\n<p class=\"muted\"><strong>Practice (10 min):</strong> write your Sun and Moon in the four-part form, the way the Moon is written above.</p>",
+   "listen": "Jyotish is one of the six Vedangas, called the eye of the Veda. It has three branches: Siddhanta, the astronomy; Hora, the birth chart; and Samhita, the world, omens and auspicious times. Jyotish uses the sidereal zodiac, fixed to the stars, about twenty four degrees behind the Western tropical zodiac. Every reading uses four parts: the graha is the actor, the rashi is its costume or style, the bhava is the stage or area of life, and the nakshatra is the script beneath it. Your Moon is in Cancer, in the eleventh house, in Pushya: an emotional, nurturing mind that works through friends, networks and gains, with a dutiful, guru-like undertone.",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "Which branch of Jyotish deals with the individual birth chart?",
+     "o": [
+      "Siddhanta",
+      "Hora",
+      "Samhita",
+      "Vastu"
+     ],
+     "a": 1,
+     "w": "Hora is the natal branch; Siddhanta is astronomy; Samhita covers the world, omens and muhurta."
+    },
+    {
+     "q": "Why is a Western Cancer often a Vedic Gemini?",
+     "o": [
+      "Different house systems",
+      "The ~24° ayanamsa between tropical and sidereal zodiacs",
+      "Jyotish uses the Moon sign",
+      "A calendar error"
+     ],
+     "a": 1,
+     "w": "The sidereal zodiac sits about 24° behind the tropical one, so most placements slip back one sign."
+    },
+    {
+     "q": "In the four-part model, the bhava is…",
+     "o": [
+      "The actor",
+      "The style",
+      "The area of life",
+      "The script"
+     ],
+     "a": 2,
+     "w": "Bhava = house = the area of life where the planet acts."
+    }
+   ]
+  },
+  {
+   "id": "1-2",
+   "title": "The nine grahas",
+   "mins": 20,
+   "body": "\n<p>A {{term:graha|graha}} is not just a planet: it means “that which seizes”, an influence that takes hold of a part of life. Seven are visible bodies; Rahu and Ketu are the two points where the Moon’s path crosses the Sun’s, the eclipse points.</p>\n<div class=\"tbl\"><table><thead><tr><th>Graha</th><th>Sanskrit</th><th>Nature</th><th>Signifies (karaka)</th><th>Owns</th><th>Exalted</th><th>Debilitated</th><th>Day</th></tr></thead><tbody><tr><td><strong>Sun</strong></td><td>Surya <span class=\"skt\">सूर्य</span></td><td>Mild malefic</td><td>Soul, father, authority, government, vitality</td><td>Leo</td><td>Aries 10°</td><td>Libra</td><td>Sunday</td></tr><tr><td><strong>Moon</strong></td><td>Chandra <span class=\"skt\">चन्द्र</span></td><td>Benefic when bright</td><td>Mind, mother, emotions, the public</td><td>Cancer</td><td>Taurus 3°</td><td>Scorpio</td><td>Monday</td></tr><tr><td><strong>Mars</strong></td><td>Mangala <span class=\"skt\">मङ्गल</span></td><td>Malefic</td><td>Courage, siblings, land, energy, conflict</td><td>Aries, Scorpio</td><td>Capricorn 28°</td><td>Cancer</td><td>Tuesday</td></tr><tr><td><strong>Mercury</strong></td><td>Budha <span class=\"skt\">बुध</span></td><td>Benefic (takes colour of company)</td><td>Intellect, speech, trade, skills, youth</td><td>Gemini, Virgo</td><td>Virgo 15°</td><td>Pisces</td><td>Wednesday</td></tr><tr><td><strong>Jupiter</strong></td><td>Guru <span class=\"skt\">गुरु</span></td><td>Greatest benefic</td><td>Wisdom, children, wealth, teacher, dharma, husband</td><td>Sagittarius, Pisces</td><td>Cancer 5°</td><td>Capricorn</td><td>Thursday</td></tr><tr><td><strong>Venus</strong></td><td>Shukra <span class=\"skt\">शुक्र</span></td><td>Benefic</td><td>Love, wife, luxury, art, vehicles, beauty</td><td>Taurus, Libra</td><td>Pisces 27°</td><td>Virgo</td><td>Friday</td></tr><tr><td><strong>Saturn</strong></td><td>Shani <span class=\"skt\">शनि</span></td><td>Greatest malefic</td><td>Discipline, delay, labour, longevity, service</td><td>Capricorn, Aquarius</td><td>Libra 20°</td><td>Aries</td><td>Saturday</td></tr><tr><td><strong>Rahu</strong></td><td>Rahu <span class=\"skt\">राहु</span></td><td>Shadow malefic</td><td>Obsession, foreign lands, illusion, ambition (modern readings add technology)</td><td>— (shadow)</td><td>Taurus* </td><td>Scorpio*</td><td>—</td></tr><tr><td><strong>Ketu</strong></td><td>Ketu <span class=\"skt\">केतु</span></td><td>Shadow malefic</td><td>Detachment, past life, moksha, intuition</td><td>— (shadow)</td><td>Scorpio*</td><td>Taurus*</td><td>—</td></tr></tbody></table></div>\n<p class=\"muted\">*Rahu’s and Ketu’s exaltation signs differ between texts; Taurus/Scorpio is the most common view.</p>\n<h2>Benefics and malefics</h2>\n<p><strong>Natural benefics</strong>: Jupiter, Venus, a bright Moon, and Mercury when not joined by malefics. <strong>Natural malefics</strong>: Saturn, Mars, Rahu, Ketu, and mildly the Sun. This is the planet’s raw nature. Stage 4 adds the second layer, <em>functional</em> nature, which depends on which houses a planet rules for your lagna. That is why Jupiter is a natural benefic yet carries kendradhipati dosha for you.</p>\n<h2>Each planet is also a {{term:karaka|karaka}}</h2>\n<p>Whatever the chart, the Sun speaks for the father, the Moon for the mother, Mars for brothers and property, Mercury for education and trade, Jupiter for children and the guru, Venus for the wife and comforts, Saturn for servants, labour and longevity.</p>\n<h2>Strength in a sign: {{term:dignity|dignity}}</h2>\n<p>Best to worst: exalted → moolatrikona → own sign → friend’s sign → neutral → enemy’s sign → debilitated. Exaltation and debilitation are always opposite signs (Sun exalted in Aries, debilitated in Libra).</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Sign</th><th>Degree</th><th>House</th><th>Nakshatra</th><th>Dignity</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini</td><td><span class=\"mono\">10°41′</span></td><td>10</td><td>Ardra-2</td><td>neutral</td></tr><tr><td>Moon</td><td>Cancer</td><td><span class=\"mono\">8°04′</span></td><td>11</td><td>Pushya-2</td><td>own sign</td></tr><tr><td>Mars</td><td>Taurus</td><td><span class=\"mono\">29°19′</span></td><td>9</td><td>Mrigashira-2</td><td>neutral, combust</td></tr><tr><td>Mercury</td><td>Gemini</td><td><span class=\"mono\">28°10′</span></td><td>10</td><td>Punarvasu-3</td><td>own sign, vargottama</td></tr><tr><td>Jupiter</td><td>Pisces</td><td><span class=\"mono\">3°28′</span></td><td>7</td><td>Uttara Bhadrapada-1</td><td>own sign</td></tr><tr><td>Venus</td><td>Taurus</td><td><span class=\"mono\">8°18′</span></td><td>9</td><td>Krittika-4</td><td>own sign</td></tr><tr><td>Saturn</td><td>Aries</td><td><span class=\"mono\">7°41′</span></td><td>8</td><td>Ashwini-3</td><td>debilitated (cancellation candidate)</td></tr><tr><td>Rahu</td><td>Leo</td><td><span class=\"mono\">10°33′</span></td><td>12</td><td>Magha-4</td><td>—</td></tr><tr><td>Ketu</td><td>Aquarius</td><td><span class=\"mono\">10°33′</span></td><td>6</td><td>Shatabhisha-2</td><td>—</td></tr></tbody></table></div><p>Four planets in their own signs (Moon, Mercury, Jupiter, Venus) is a strong base. Saturn is debilitated, but it is a {{term:neechabhanga|cancellation candidate}}: the rule sets differ, and a later stage tests them.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>9 grahas; Rahu–Ketu are the lunar nodes, always 180° apart.</li><li>Natural nature ≠ functional nature (Stage 4).</li><li>Exaltation and debilitation are opposite signs.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> for each of your planets, say its karaka meaning and its dignity in one line.</p>",
+   "listen": "There are nine grahas. The Sun is the soul, father and authority. The Moon is the mind and mother. Mars is courage, siblings, land and conflict. Mercury is intellect, speech and trade. Jupiter is wisdom, children, wealth and the teacher. Venus is love, the wife, luxury and art. Saturn is discipline, delay, labour and service. Rahu and Ketu are the lunar nodes: Rahu is hunger, obsession and the foreign; Ketu is detachment, the past life and moksha. Jupiter and Venus are natural benefics, Saturn, Mars, Rahu and Ketu natural malefics, the Sun a mild malefic, and the Moon and Mercury depend on condition. Each planet has an exaltation sign where it is strongest and a debilitation sign opposite it where it is weakest.",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "Where is Saturn exalted?",
+     "o": [
+      "Aries",
+      "Capricorn",
+      "Libra",
+      "Aquarius"
+     ],
+     "a": 2,
+     "w": "Saturn is exalted in Libra (peak 20°) and debilitated in Aries, where yours sits."
+    },
+    {
+     "q": "Which planet is the natural karaka of the wife in a man’s chart?",
+     "o": [
+      "Moon",
+      "Venus",
+      "Jupiter",
+      "Mars"
+     ],
+     "a": 1,
+     "w": "Venus signifies the wife; Jupiter signifies the husband in a woman’s chart."
+    },
+    {
+     "q": "Rahu and Ketu are…",
+     "o": [
+      "Asteroids",
+      "The Moon’s nodes, 180° apart",
+      "Two hidden planets",
+      "Fixed stars"
+     ],
+     "a": 1,
+     "w": "They are the points where the Moon’s orbit crosses the ecliptic: the eclipse points."
+    },
+    {
+     "q": "How many of your planets are in their own sign?",
+     "o": [
+      "One",
+      "Two",
+      "Four",
+      "Six"
+     ],
+     "a": 2,
+     "w": "Moon in Cancer, Mercury in Gemini, Jupiter in Pisces and Venus in Taurus."
+    }
+   ]
+  },
+  {
+   "id": "1-3",
+   "title": "The twelve rashis",
+   "mins": 20,
+   "body": "\n<p>Each {{term:rashi|rashi}} is a 30° slice of the sidereal zodiac, starting from 0° Aries. A planet in a sign behaves in that sign’s manner and answers to the sign’s lord.</p>\n<div class=\"tbl\"><table><thead><tr><th>#</th><th>Sign</th><th>Sanskrit</th><th>Lord</th><th>Element</th><th>Modality</th><th>Body</th></tr></thead><tbody><tr><td><span class=\"mono\">1</span></td><td><strong>Aries</strong></td><td>Mesha <span class=\"skt\">मेष</span></td><td>Mars</td><td>Fire</td><td>Movable</td><td>Head</td></tr><tr><td><span class=\"mono\">2</span></td><td><strong>Taurus</strong></td><td>Vrishabha <span class=\"skt\">वृषभ</span></td><td>Venus</td><td>Earth</td><td>Fixed</td><td>Face, throat</td></tr><tr><td><span class=\"mono\">3</span></td><td><strong>Gemini</strong></td><td>Mithuna <span class=\"skt\">मिथुन</span></td><td>Mercury</td><td>Air</td><td>Dual</td><td>Arms, shoulders, lungs</td></tr><tr><td><span class=\"mono\">4</span></td><td><strong>Cancer</strong></td><td>Karka <span class=\"skt\">कर्क</span></td><td>Moon</td><td>Water</td><td>Movable</td><td>Chest, heart</td></tr><tr><td><span class=\"mono\">5</span></td><td><strong>Leo</strong></td><td>Simha <span class=\"skt\">सिंह</span></td><td>Sun</td><td>Fire</td><td>Fixed</td><td>Upper belly, spine</td></tr><tr class=\"mine\"><td><span class=\"mono\">6</span></td><td><strong>Virgo</strong></td><td>Kanya <span class=\"skt\">कन्या</span></td><td>Mercury</td><td>Earth</td><td>Dual</td><td>Intestines, waist</td></tr><tr><td><span class=\"mono\">7</span></td><td><strong>Libra</strong></td><td>Tula <span class=\"skt\">तुला</span></td><td>Venus</td><td>Air</td><td>Movable</td><td>Lower belly, kidneys</td></tr><tr><td><span class=\"mono\">8</span></td><td><strong>Scorpio</strong></td><td>Vrishchika <span class=\"skt\">वृश्चिक</span></td><td>Mars</td><td>Water</td><td>Fixed</td><td>Reproductive organs</td></tr><tr><td><span class=\"mono\">9</span></td><td><strong>Sagittarius</strong></td><td>Dhanu <span class=\"skt\">धनु</span></td><td>Jupiter</td><td>Fire</td><td>Dual</td><td>Thighs, hips</td></tr><tr><td><span class=\"mono\">10</span></td><td><strong>Capricorn</strong></td><td>Makara <span class=\"skt\">मकर</span></td><td>Saturn</td><td>Earth</td><td>Movable</td><td>Knees</td></tr><tr><td><span class=\"mono\">11</span></td><td><strong>Aquarius</strong></td><td>Kumbha <span class=\"skt\">कुम्भ</span></td><td>Saturn</td><td>Air</td><td>Fixed</td><td>Calves, ankles</td></tr><tr><td><span class=\"mono\">12</span></td><td><strong>Pisces</strong></td><td>Meena <span class=\"skt\">मीन</span></td><td>Jupiter</td><td>Water</td><td>Dual</td><td>Feet</td></tr></tbody></table></div>\n<h2>Three ways to group the signs</h2>\n<div class=\"tbl\"><table><thead><tr><th>Grouping</th><th>Types</th><th>What it tells you</th></tr></thead><tbody><tr><td>Element</td><td>Fire (1, 5, 9) · Earth (2, 6, 10) · Air (3, 7, 11) · Water (4, 8, 12)</td><td>Temperament: drive, practicality, ideas, feeling</td></tr><tr><td>Modality</td><td>Movable (1, 4, 7, 10) · Fixed (2, 5, 8, 11) · Dual (3, 6, 9, 12)</td><td>Starting, holding or adapting. Also used in the navamsa formula and Jaimini.</td></tr><tr><td>Gender</td><td>Odd = masculine, outgoing · Even = feminine, receptive</td><td>Style of expression; used in divisional charts</td></tr></tbody></table></div>\n<p>Notice the pattern: the elements repeat every 4 signs, the modalities every 3. Fire–earth–air–water, movable–fixed–dual. Learn that and you never need to memorise the table.</p>\n<h2>Sign lords</h2>\n<p>The Sun owns Leo, the Moon owns Cancer, and each other planet owns two signs, mirrored around the Cancer–Leo line: Mercury (Gemini, Virgo), Venus (Taurus, Libra), Mars (Aries, Scorpio), Jupiter (Pisces, Sagittarius), Saturn (Aquarius, Capricorn).</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Lagna <strong>Virgo</strong>: earth, dual, even, ruled by Mercury. Analytical, detail-driven, service-minded, adaptable, self-critical. Your lagna lord Mercury sits in its own sign Gemini in the 10th, so your sense of self runs through your work.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Elements repeat every 4 signs; modalities every 3.</li><li>Lords mirror around Cancer–Leo.</li><li>Your lagna Virgo → Mercury is your chart’s ruler.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> close the table and write the 12 signs with lord, element and modality from the patterns alone.</p>",
+   "listen": "The twelve rashis are equal thirty degree signs. Each has an element: fire, earth, air or water. Each has a modality: movable signs start things, fixed signs hold things, dual signs adapt. Odd signs are masculine and outgoing, even signs feminine and receptive. Each sign has a planetary lord, and each rules a part of the body from head to feet. Your lagna is Virgo: an earth, dual, feminine sign ruled by Mercury. That makes you analytical, detailed, service minded and adaptable, and it makes Mercury your most important planet.",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "Which modality is Virgo?",
+     "o": [
+      "Movable",
+      "Fixed",
+      "Dual"
+     ],
+     "a": 2,
+     "w": "Signs 3, 6, 9, 12 are dual; Virgo is sign 6."
+    },
+    {
+     "q": "Who rules Capricorn?",
+     "o": [
+      "Mars",
+      "Saturn",
+      "Jupiter",
+      "Venus"
+     ],
+     "a": 1,
+     "w": "Saturn rules Capricorn and Aquarius."
+    },
+    {
+     "q": "Which signs are water signs?",
+     "o": [
+      "1, 5, 9",
+      "2, 6, 10",
+      "3, 7, 11",
+      "4, 8, 12"
+     ],
+     "a": 3,
+     "w": "Cancer, Scorpio and Pisces."
+    }
+   ]
+  },
+  {
+   "id": "1-4",
+   "title": "The twelve bhavas",
+   "mins": 20,
+   "body": "\n<p>A {{term:bhava|bhava}} is an area of life. Jyotish here uses whole-sign houses: the {{term:lagna|lagna}} sign is the 1st house, the next sign the 2nd, and so on round the zodiac.</p>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Name</th><th>Areas of life</th><th>Group</th><th>Yours</th></tr></thead><tbody><tr><td><span class=\"mono\">1</span></td><td>Tanu</td><td>Self, body, personality, health</td><td>Kendra + trikona</td><td>Virgo — Lagna</td></tr><tr><td><span class=\"mono\">2</span></td><td>Dhana</td><td>Wealth, family, speech, food</td><td>Maraka</td><td>Libra</td></tr><tr><td><span class=\"mono\">3</span></td><td>Sahaja</td><td>Courage, siblings, effort, communication</td><td>Upachaya</td><td>Scorpio</td></tr><tr><td><span class=\"mono\">4</span></td><td>Sukha</td><td>Mother, home, vehicles, inner peace, property</td><td>Kendra</td><td>Sagittarius</td></tr><tr><td><span class=\"mono\">5</span></td><td>Putra</td><td>Children, intelligence, romance, past merit</td><td>Trikona</td><td>Capricorn</td></tr><tr><td><span class=\"mono\">6</span></td><td>Ari</td><td>Enemies, debt, disease, service, competition</td><td>Dusthana + upachaya</td><td>Aquarius — Ketu</td></tr><tr><td><span class=\"mono\">7</span></td><td>Kalatra</td><td>Spouse, partnership, business deals</td><td>Kendra + maraka</td><td>Pisces — Jupiter</td></tr><tr><td><span class=\"mono\">8</span></td><td>Ayu</td><td>Longevity, sudden events, secrets, inheritance, occult</td><td>Dusthana</td><td>Aries — Saturn</td></tr><tr><td><span class=\"mono\">9</span></td><td>Bhagya</td><td>Fortune, father, guru, dharma, long journeys</td><td>Trikona</td><td>Taurus — Venus, Mars</td></tr><tr><td><span class=\"mono\">10</span></td><td>Karma</td><td>Career, status, action, authority</td><td>Kendra + upachaya</td><td>Gemini — Sun, Mercury</td></tr><tr><td><span class=\"mono\">11</span></td><td>Labha</td><td>Gains, income, network, elder siblings, wishes</td><td>Upachaya</td><td>Cancer — Moon</td></tr><tr><td><span class=\"mono\">12</span></td><td>Vyaya</td><td>Losses, expenses, foreign lands, sleep, moksha</td><td>Dusthana</td><td>Leo — Rahu</td></tr></tbody></table></div>\n<h2>The four house groups</h2>\n<div class=\"tbl\"><table><thead><tr><th>Group</th><th>Houses</th><th>Meaning</th></tr></thead><tbody><tr><td>{{term:kendra|kendra}}</td><td>1, 4, 7, 10</td><td>Pillars: strength, visibility, action</td></tr><tr><td>{{term:trikona|trikona}}</td><td>1, 5, 9</td><td>Fortune and merit: lords counted auspicious (a second lordship can mix the result)</td></tr><tr><td>{{term:dusthana|dusthana}}</td><td>6, 8, 12</td><td>Difficulty: disease, upheaval, loss</td></tr><tr><td>{{term:upachaya|upachaya}}</td><td>3, 6, 10, 11</td><td>Grow with time and effort; malefics do well</td></tr></tbody></table></div>\n<p>A house is read from three things: the sign on it, any planets in it, and where its lord sits. Example: your 10th (career) holds Gemini, contains the Sun and Mercury, and its lord Mercury is in the 10th itself — a career house that is strongly self-owned.</p>\n<p class=\"note\">The 2nd and 7th are also called maraka houses (they “spend” from the longevity houses 3 and 8). Maraka literally means \"killer\" and classically relates to longevity late in life. This course never predicts death. In everyday reading, treat these houses as expenses and strain.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Kendras: Jupiter in the 7th (Hamsa yoga), Mercury in the 10th in its own sign (Bhadra yoga), with the Sun alongside (Budha-Aditya). Dusthanas: Ketu in the 6th, Saturn in the 8th (Harsha yoga, success through adversity), Rahu in the 12th. Trikona: Venus and Mars in the 9th, fortune via father and dharma.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>House = sign + occupants + lord’s placement.</li><li>Kendra 1-4-7-10, trikona 1-5-9, dusthana 6-8-12, upachaya 3-6-10-11.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> pick your 7th house and read it the three ways: sign (Pisces), occupant (Jupiter), lord (Jupiter, in the 7th).</p>",
+   "listen": "The twelve bhavas are the areas of life. In the whole sign system your lagna sign is the first house and the signs follow in order. House one is the self, two wealth and family, three courage and siblings, four mother and home, five children and intelligence, six enemies, debt and service, seven the spouse, eight longevity and sudden events, nine fortune and father, ten career, eleven gains, and twelve losses, foreign lands and moksha. Kendras one, four, seven and ten are the pillars. Trikonas one, five and nine bring fortune. Dusthanas six, eight and twelve bring difficulty. Upachayas three, six, ten and eleven grow with effort.",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "Which houses are dusthanas?",
+     "o": [
+      "1, 5, 9",
+      "6, 8, 12",
+      "3, 6, 10, 11",
+      "2, 7"
+     ],
+     "a": 1,
+     "w": "6, 8 and 12 are the difficult houses."
+    },
+    {
+     "q": "Your 10th house holds which sign?",
+     "o": [
+      "Gemini",
+      "Virgo",
+      "Pisces",
+      "Sagittarius"
+     ],
+     "a": 0,
+     "w": "Virgo is 1st, so Gemini is the 10th."
+    },
+    {
+     "q": "A house is read from…",
+     "o": [
+      "Only its sign",
+      "Only its planets",
+      "Its sign, its occupants and where its lord sits",
+      "The Moon only"
+     ],
+     "a": 2,
+     "w": "All three together."
+    }
+   ]
+  },
+  {
+   "id": "1-5",
+   "title": "The twenty-seven nakshatras",
+   "mins": 25,
+   "body": "\n<p>Thirteen-degree slices, one for each day of the Moon’s month: these are the {{term:nakshatra|nakshatras}}. Each is split into four {{term:pada|padas}}. Tradition holds that they are older than the 12 signs in Indian texts. They carry the finer story of a placement.</p>\n<h2>The lord sequence (learn this by heart)</h2>\n<p class=\"mono\" style=\"white-space:normal\">Ketu → Venus → Sun → Moon → Mars → Rahu → Jupiter → Saturn → Mercury</p>\n<p>It repeats three times (9 × 3 = 27). It is also the order of the Vimshottari {{term:dasha|dasha}}: your first dasha is the lord of your Moon’s nakshatra, and the dashas follow in this order.</p>\n<div class=\"tbl\"><table><thead><tr><th>#</th><th>Nakshatra</th><th>Span (sidereal)</th><th>Lord</th><th>Deity</th><th>Symbol</th><th>Gana</th><th>Yours</th></tr></thead><tbody><tr class=\"mine\"><td><span class=\"mono\">1</span></td><td><strong>Ashwini</strong></td><td><span class=\"mono\">Ari 0°00′ – Ari 13°20′</span></td><td>Ketu</td><td>Ashwini Kumaras</td><td>Horse’s head</td><td>Deva</td><td>Your Saturn</td></tr><tr><td><span class=\"mono\">2</span></td><td><strong>Bharani</strong></td><td><span class=\"mono\">Ari 13°20′ – Ari 26°40′</span></td><td>Venus</td><td>Yama</td><td>Yoni</td><td>Manushya</td><td></td></tr><tr class=\"mine\"><td><span class=\"mono\">3</span></td><td><strong>Krittika</strong></td><td><span class=\"mono\">Ari 26°40′ – Tau 10°00′</span></td><td>Sun</td><td>Agni</td><td>Razor, flame</td><td>Rakshasa</td><td>Your Venus</td></tr><tr><td><span class=\"mono\">4</span></td><td><strong>Rohini</strong></td><td><span class=\"mono\">Tau 10°00′ – Tau 23°20′</span></td><td>Moon</td><td>Prajapati</td><td>Chariot</td><td>Manushya</td><td></td></tr><tr class=\"mine\"><td><span class=\"mono\">5</span></td><td><strong>Mrigashira</strong></td><td><span class=\"mono\">Tau 23°20′ – Gem 6°40′</span></td><td>Mars</td><td>Soma</td><td>Deer’s head</td><td>Deva</td><td>Your Mars</td></tr><tr class=\"mine\"><td><span class=\"mono\">6</span></td><td><strong>Ardra</strong></td><td><span class=\"mono\">Gem 6°40′ – Gem 20°00′</span></td><td>Rahu</td><td>Rudra</td><td>Teardrop</td><td>Manushya</td><td>Your Sun</td></tr><tr class=\"mine\"><td><span class=\"mono\">7</span></td><td><strong>Punarvasu</strong></td><td><span class=\"mono\">Gem 20°00′ – Can 3°20′</span></td><td>Jupiter</td><td>Aditi</td><td>Quiver of arrows</td><td>Deva</td><td>Your Mercury</td></tr><tr class=\"mine\"><td><span class=\"mono\">8</span></td><td><strong>Pushya</strong></td><td><span class=\"mono\">Can 3°20′ – Can 16°40′</span></td><td>Saturn</td><td>Brihaspati</td><td>Cow’s udder, flower</td><td>Deva</td><td>Your Moon</td></tr><tr><td><span class=\"mono\">9</span></td><td><strong>Ashlesha</strong></td><td><span class=\"mono\">Can 16°40′ – Can 30°00′</span></td><td>Mercury</td><td>Nagas</td><td>Coiled serpent</td><td>Rakshasa</td><td></td></tr><tr class=\"mine\"><td><span class=\"mono\">10</span></td><td><strong>Magha</strong></td><td><span class=\"mono\">Leo 0°00′ – Leo 13°20′</span></td><td>Ketu</td><td>Pitris (ancestors)</td><td>Throne</td><td>Rakshasa</td><td>Your Rahu</td></tr><tr><td><span class=\"mono\">11</span></td><td><strong>Purva Phalguni</strong></td><td><span class=\"mono\">Leo 13°20′ – Leo 26°40′</span></td><td>Venus</td><td>Bhaga</td><td>Front legs of a bed</td><td>Manushya</td><td></td></tr><tr><td><span class=\"mono\">12</span></td><td><strong>Uttara Phalguni</strong></td><td><span class=\"mono\">Leo 26°40′ – Vir 10°00′</span></td><td>Sun</td><td>Aryaman</td><td>Back legs of a bed</td><td>Manushya</td><td></td></tr><tr><td><span class=\"mono\">13</span></td><td><strong>Hasta</strong></td><td><span class=\"mono\">Vir 10°00′ – Vir 23°20′</span></td><td>Moon</td><td>Savitar</td><td>Hand</td><td>Deva</td><td></td></tr><tr><td><span class=\"mono\">14</span></td><td><strong>Chitra</strong></td><td><span class=\"mono\">Vir 23°20′ – Lib 6°40′</span></td><td>Mars</td><td>Tvashtar</td><td>Bright jewel</td><td>Rakshasa</td><td></td></tr><tr><td><span class=\"mono\">15</span></td><td><strong>Swati</strong></td><td><span class=\"mono\">Lib 6°40′ – Lib 20°00′</span></td><td>Rahu</td><td>Vayu</td><td>Young shoot in wind</td><td>Deva</td><td></td></tr><tr><td><span class=\"mono\">16</span></td><td><strong>Vishakha</strong></td><td><span class=\"mono\">Lib 20°00′ – Sco 3°20′</span></td><td>Jupiter</td><td>Indra-Agni</td><td>Triumphal arch</td><td>Rakshasa</td><td></td></tr><tr><td><span class=\"mono\">17</span></td><td><strong>Anuradha</strong></td><td><span class=\"mono\">Sco 3°20′ – Sco 16°40′</span></td><td>Saturn</td><td>Mitra</td><td>Lotus</td><td>Deva</td><td></td></tr><tr><td><span class=\"mono\">18</span></td><td><strong>Jyeshtha</strong></td><td><span class=\"mono\">Sco 16°40′ – Sco 30°00′</span></td><td>Mercury</td><td>Indra</td><td>Earring, umbrella</td><td>Rakshasa</td><td></td></tr><tr><td><span class=\"mono\">19</span></td><td><strong>Mula</strong></td><td><span class=\"mono\">Sag 0°00′ – Sag 13°20′</span></td><td>Ketu</td><td>Nirriti</td><td>Bunch of roots</td><td>Rakshasa</td><td></td></tr><tr><td><span class=\"mono\">20</span></td><td><strong>Purva Ashadha</strong></td><td><span class=\"mono\">Sag 13°20′ – Sag 26°40′</span></td><td>Venus</td><td>Apas (waters)</td><td>Fan, tusk</td><td>Manushya</td><td></td></tr><tr><td><span class=\"mono\">21</span></td><td><strong>Uttara Ashadha</strong></td><td><span class=\"mono\">Sag 26°40′ – Cap 10°00′</span></td><td>Sun</td><td>Vishvedevas</td><td>Elephant tusk</td><td>Manushya</td><td></td></tr><tr><td><span class=\"mono\">22</span></td><td><strong>Shravana</strong></td><td><span class=\"mono\">Cap 10°00′ – Cap 23°20′</span></td><td>Moon</td><td>Vishnu</td><td>Ear, three footprints</td><td>Deva</td><td></td></tr><tr><td><span class=\"mono\">23</span></td><td><strong>Dhanishta</strong></td><td><span class=\"mono\">Cap 23°20′ – Aqu 6°40′</span></td><td>Mars</td><td>Eight Vasus</td><td>Drum</td><td>Rakshasa</td><td></td></tr><tr class=\"mine\"><td><span class=\"mono\">24</span></td><td><strong>Shatabhisha</strong></td><td><span class=\"mono\">Aqu 6°40′ – Aqu 20°00′</span></td><td>Rahu</td><td>Varuna</td><td>Empty circle</td><td>Rakshasa</td><td>Your Ketu</td></tr><tr><td><span class=\"mono\">25</span></td><td><strong>Purva Bhadrapada</strong></td><td><span class=\"mono\">Aqu 20°00′ – Pis 3°20′</span></td><td>Jupiter</td><td>Aja Ekapada</td><td>Front of a funeral cot</td><td>Manushya</td><td></td></tr><tr class=\"mine\"><td><span class=\"mono\">26</span></td><td><strong>Uttara Bhadrapada</strong></td><td><span class=\"mono\">Pis 3°20′ – Pis 16°40′</span></td><td>Saturn</td><td>Ahirbudhnya</td><td>Back of a funeral cot</td><td>Manushya</td><td>Your Jupiter</td></tr><tr><td><span class=\"mono\">27</span></td><td><strong>Revati</strong></td><td><span class=\"mono\">Pis 16°40′ – Pis 30°00′</span></td><td>Mercury</td><td>Pushan</td><td>Fish</td><td>Deva</td><td></td></tr></tbody></table></div>\n<h2>How a nakshatra changes a reading</h2>\n<p>The nakshatra lord is the channel a planet delivers through. Your Mercury in Punarvasu (Jupiter’s) carries Jupiter’s teaching quality into your 10th-house work. Your Ketu in Shatabhisha (“hundred physicians”, deity Varuna) gives a healer–researcher undertone to your 6th-house service.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Moon in <strong>Pushya pada 2</strong> (Cancer 8°04′). Pushya’s lord is Saturn, so you were born in Saturn’s dasha. Its deity Brihaspati, the guru of the gods, colours your mind with duty and a pull toward teaching and right conduct. Pushya is Deva gana.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>27 × 13°20′; each has 4 padas of 3°20′.</li><li>Lord order Ketu–Venus–Sun–Moon–Mars–Rahu–Jupiter–Saturn–Mercury = dasha order.</li><li>Moon’s nakshatra lord = your first dasha.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> recite the 9-lord sequence ten times; then name the nakshatra of each of your planets from memory.</p>",
+   "listen": "The zodiac is also divided into twenty seven nakshatras of thirteen degrees twenty minutes each, the lunar mansions. Each has four padas of three degrees twenty minutes. Their lords repeat in a fixed order: Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, three times round. This same order and these lords run the Vimshottari dasha. Each nakshatra also has a deity, a symbol and a gana. Your Moon is in Pushya, ruled by Saturn with Brihaspati as deity: a nakshatra traditionally regarded as highly auspicious, tied to nourishment and steady growth. That is why your life began in a Saturn dasha.",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "How wide is one nakshatra?",
+     "o": [
+      "10°",
+      "12°",
+      "13°20′",
+      "15°"
+     ],
+     "a": 2,
+     "w": "360° ÷ 27 = 13°20′."
+    },
+    {
+     "q": "Which lord comes after Rahu in the sequence?",
+     "o": [
+      "Saturn",
+      "Jupiter",
+      "Mercury",
+      "Ketu"
+     ],
+     "a": 1,
+     "w": "…Mars, Rahu, Jupiter, Saturn, Mercury."
+    },
+    {
+     "q": "Your birth dasha lord is Saturn because…",
+     "o": [
+      "Saturn is debilitated",
+      "Your Moon is in Pushya, ruled by Saturn",
+      "Saturn is in the 8th",
+      "You were born on a Saturday"
+     ],
+     "a": 1,
+     "w": "The Moon’s nakshatra lord starts the Vimshottari clock."
+    }
+   ]
+  },
+  {
+   "id": "1-6",
+   "title": "Reading one placement in four steps",
+   "mins": 20,
+   "body": "\n<h2>The four steps</h2>\n<ol><li><strong>Planet</strong>: what it signifies (karaka).</li><li><strong>Sign</strong>: dignity and style. Strong or weak? Fiery or earthy?</li><li><strong>House</strong>: where in life — plus the houses it <em>rules</em> for your lagna.</li><li><strong>Nakshatra lord</strong>: the channel it delivers through.</li></ol>\n<h2>Then add aspects (drishti)</h2>\n<p>Every graha aspects the 7th house from itself. Three have extra aspects: <strong>Mars</strong> the 4th and 8th, <strong>Jupiter</strong> the 5th and 9th, <strong>Saturn</strong> the 3rd and 10th. Many teachers give Rahu and Ketu the 5th and 9th too; others give them only the 7th, and Jaimini uses sign-based aspects instead. Texts differ.</p>\n<h2>Worked example 1 — your Mercury</h2>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Finding</th><th>Meaning</th></tr></thead><tbody><tr><td>Planet</td><td>Mercury</td><td>Intellect, speech, trade</td></tr><tr><td>Sign</td><td>Gemini, own sign, {{term:vargottama|vargottama}}</td><td>Strong, reliable, quick and verbal</td></tr><tr><td>House</td><td>10th; rules the 1st and 10th</td><td>Identity and career fused: Bhadra yoga</td></tr><tr><td>Nakshatra</td><td>Punarvasu (Jupiter)</td><td>Delivers through teaching, advising, renewal</td></tr></tbody></table></div>\n<p><strong>Read together:</strong> a sharp business and communication mind whose work <em>is</em> his identity, with an advisory, teaching tone.</p>\n<h2>Worked example 2 — your Saturn</h2>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Finding</th><th>Meaning</th></tr></thead><tbody><tr><td>Planet</td><td>Saturn</td><td>Discipline, delay, labour, longevity</td></tr><tr><td>Sign</td><td>Aries, debilitated — {{term:neechabhanga|cancellation candidate}}</td><td>Weak start, strength gained later</td></tr><tr><td>House</td><td>8th; rules the 5th and 6th</td><td>Upheaval and hidden matters; 6th lord in 8th = Harsha (Viparita Raja) yoga</td></tr><tr><td>Nakshatra</td><td>Ashwini (Ketu)</td><td>Sudden, detached, healing quality</td></tr><tr><td>Aspects</td><td>3rd → Gemini (10th), 7th → Libra (2nd), 10th → Capricorn (5th)</td><td>Career, family wealth and children feel Saturn’s slow discipline</td></tr></tbody></table></div>\n<p><strong>Read together:</strong> tradition reads success that comes through crises, debts and delays, not around them. That is Harsha yoga: the adversity is the ladder.</p>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Planet → sign → house (+ rulership) → nakshatra lord → aspects.</li><li>Special aspects: Mars 4/8, Jupiter 5/9, Saturn 3/10.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> do the four steps for your Venus (Taurus, 9th, Krittika). Check your answer in Lesson 1-7.</p>",
+   "listen": "To read any placement, follow four steps. First, what the planet signifies. Second, its sign and dignity: how strong and in what style. Third, its house and the houses it rules: where in life. Fourth, its nakshatra lord: the channel it delivers through. Then add aspects. Every planet aspects the seventh house from itself; Mars also the fourth and eighth, Jupiter the fifth and ninth, Saturn the third and tenth. For example, your Saturn: discipline and delay, debilitated in Aries with a cancellation candidate, in the eighth house of upheaval while ruling the fifth and sixth, in Ashwini ruled by Ketu. Tradition reads this as hard-won success through crises, a Viparita Raja Yoga (Harsha).",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "Which houses does Jupiter aspect from itself?",
+     "o": [
+      "3, 7, 10",
+      "4, 7, 8",
+      "5, 7, 9",
+      "7 only"
+     ],
+     "a": 2,
+     "w": "Jupiter: 5th, 7th, 9th."
+    },
+    {
+     "q": "Your Saturn aspects your 10th house via its…",
+     "o": [
+      "3rd aspect",
+      "7th aspect",
+      "10th aspect",
+      "4th aspect"
+     ],
+     "a": 0,
+     "w": "From Aries, the 3rd sign is Gemini, your 10th."
+    },
+    {
+     "q": "Harsha yoga forms when…",
+     "o": [
+      "Jupiter is in a kendra",
+      "The 6th lord sits in 6, 8 or 12",
+      "Sun and Mercury join",
+      "Venus is exalted"
+     ],
+     "a": 1,
+     "w": "A Viparita Raja yoga: your 6th lord Saturn in the 8th."
+    }
+   ]
+  },
+  {
+   "id": "1-7",
+   "title": "Your chart, start to finish + stage test",
+   "mins": 25,
+   "body": "\n<h2>Answer to Lesson 1-6 practice — Venus</h2>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>Finding</th><th>Meaning</th></tr></thead><tbody><tr><td>Planet</td><td>Venus</td><td>Love, wife, comfort, art, beauty</td></tr><tr><td>Sign</td><td>Taurus, own sign</td><td>Steady, sensual, values quality</td></tr><tr><td>House</td><td>9th; rules the 2nd and 9th</td><td>Fortune, father, dharma; also wealth and family — one of your best planets</td></tr><tr><td>Nakshatra</td><td>Krittika (Sun)</td><td>Refined by fire: sharp taste, standards</td></tr><tr><td>With</td><td>Mars (8th lord, combust)</td><td>Passion and sudden events around the father’s house</td></tr></tbody></table></div>\n<h2>Your chart in nine lines</h2>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Line</th></tr></thead><tbody><tr><td>Lagna Virgo</td><td>Analytical, service-minded builder; Mercury rules the chart</td></tr><tr><td>Mercury</td><td>Own sign in the 10th, vargottama: identity = work (Bhadra yoga)</td></tr><tr><td>Sun</td><td>10th with Mercury (Budha-Aditya): authority in career; rules the 12th (withdrawal, loss, moksha)</td></tr><tr><td>Moon</td><td>Own sign in the 11th, Pushya: protective, dutiful, gains via people</td></tr><tr><td>Venus</td><td>Own sign in the 9th: fortune through father and values</td></tr><tr><td>Mars</td><td>9th, combust, your Atmakaraka (Lahiri, 7 karakas; Mars is 41′ from Gemini, so this is a fragile point, see lesson 0-3): tradition reads the soul’s lesson as courage without anger</td></tr><tr><td>Jupiter</td><td>Own sign in the 7th: Hamsa yoga (tradition reads a wise, ethical spouse; log it and test it); kendradhipati dosha in its periods</td></tr><tr><td>Saturn</td><td>Debilitated (cancellation candidate), 8th: Harsha yoga, which tradition reads as success through adversity</td></tr><tr><td>Rahu / Ketu</td><td>12th / 6th: hunger for recognition vs past-life mastery in service</td></tr></tbody></table></div>\n<p>Next stages: how strong is each of these really? Dignity is only the start — combustion, retrogression, friendships and cancellations change the verdict.</p>\n<div class=\"keypts\"><div class=\"eyebrow\">Stage 1 done when you can…</div><ul><li>Name all 9 grahas with karakas, own and exaltation signs.</li><li>Name 12 signs with lord, element, modality.</li><li>Name 12 houses with meaning and group.</li><li>Recite the nakshatra lord order and place your own planets.</li></ul></div>",
+   "listen": "Put everything together. Your lagna is Virgo, ruled by Mercury in its own sign in the tenth: a builder whose identity is his work. Your Moon in Cancer in the eleventh, in Pushya: a protective, dutiful mind that gains through people. Venus in its own sign in the ninth with Mars: fortune through father and values, with a love of beauty. Jupiter in its own sign in the seventh: tradition reads a wise, ethical spouse, a statement to log and test, not a fact. Saturn debilitated in the eighth, a cancellation candidate: tradition reads success through adversity. Rahu in the twelfth: hunger for recognition and the spiritual. Ketu in the sixth: past life mastery in service and healing. Stages 4 and 8 teach how strong each of these really is.",
+   "sources": [],
+   "quiz": [
+    {
+     "q": "Which planet rules your chart?",
+     "o": [
+      "Sun",
+      "Mercury",
+      "Jupiter",
+      "Saturn"
+     ],
+     "a": 1,
+     "w": "Virgo lagna → Mercury."
+    },
+    {
+     "q": "Your Atmakaraka (highest-degree planet) is…",
+     "o": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Moon"
+     ],
+     "a": 2,
+     "w": "Mars at 29°19′ Taurus."
+    },
+    {
+     "q": "Which yoga does Jupiter in its own sign in your 7th form?",
+     "o": [
+      "Bhadra",
+      "Hamsa",
+      "Malavya",
+      "Harsha"
+     ],
+     "a": 1,
+     "w": "Jupiter in own sign or exalted in a kendra = Hamsa."
+    },
+    {
+     "q": "Your Sun rules which house?",
+     "o": [
+      "10th",
+      "12th",
+      "1st",
+      "9th"
+     ],
+     "a": 1,
+     "w": "Leo is your 12th, so the Sun is your 12th lord, placed in the 10th."
+    },
+    {
+     "q": "Which planet is combust in your chart?",
+     "o": [
+      "Mercury",
+      "Mars",
+      "Venus",
+      "Saturn"
+     ],
+     "a": 1,
+     "w": "Mars is about 11° from the Sun, inside the 17° orb (a Surya Siddhanta/BPHS value; some teachers use smaller orbs)."
+    }
+   ]
+  }
+ ]
+}

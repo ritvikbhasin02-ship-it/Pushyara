@@ -1,0 +1,428 @@
+{
+ "stage": 12,
+ "title": "Synthesis and mastery",
+ "level": "Mastery",
+ "goal": "Done when you can run the five-layer protocol with a sensitivity rerun on one question, write a falsifiable ledger entry with a confidence and scoring rule, and explain which parts of your own chart survive a change of convention.",
+ "terms": {
+  "convention_profile": [
+   "Convention profile",
+   "The full list of settings that produced a chart: ayanamsa, node type, house system, dasha year length, karaka scheme and matching table set. Every result should be quoted with its profile."
+  ],
+  "double_transit": [
+   "Double transit · dwi-gochar",
+   "A timing filter: a house is activated in a year when both Jupiter and Saturn, by occupation or aspect, reach it by transit. Attribution varies by source; the rule is a teaching framework, not a verified law."
+  ],
+  "ledger": [
+   "Prediction ledger",
+   "A dated, locked record of predictions: window, house, falsifiable outcome, confidence, convention profile and sensitivity result. Outcomes are scored later against criteria written in advance."
+  ],
+  "brier": [
+   "Brier score",
+   "The average of (confidence minus outcome) squared, where the outcome is 1 if the event happened and 0 if not. Lower is better. Always saying 50% scores 0.25."
+  ],
+  "base_rate": [
+   "Base rate",
+   "How often an event happens anyway, for anyone of that age in a window of that length. A prediction is only informative if it beats this."
+  ],
+  "hindsight": [
+   "Hindsight bias",
+   "After an outcome is known, people remember having expected it. Locked, timestamped entries are the remedy."
+  ],
+  "sensitivity": [
+   "Sensitivity rerun",
+   "Repeating a reading under a second ayanamsa, the other node type, another dasha year length and a birth time a few minutes either side, then reporting whether the answer holds."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "12-1",
+   "title": "The five-layer cross-check protocol",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Why does agreement between KP, Tajika and Yogini prove less than it seems to, on your chart?</p><h2>One question, five layers</h2><p>Never answer a life question from one technique. Run it through five layers in order and show each result separately. The layers are a design built from documented practice. No school publishes a rule for settling a disagreement between them.</p><div class=\"tbl\"><table><thead><tr><th>Layer</th><th>Question</th><th>Checks</th></tr></thead><tbody><tr><td>1 Promise</td><td>Can this happen in this life?</td><td>House, lord and varga for the matter; yogas; Ashtakavarga bindus</td></tr><tr><td>2 Window</td><td>When is it activated?</td><td>Vimshottari mahadasha and antardasha; a second dasha (Chara or Yogini)</td></tr><tr><td>3 Trigger</td><td>Which year or months?</td><td>{{term:double_transit|Double transit}} of Jupiter and Saturn; optional Tajika annual chart</td></tr><tr><td>4 Binary check</td><td>Yes or no?</td><td>KP cuspal sub lord signification</td></tr><tr><td>5 Sensitivity</td><td>Does the answer survive uncertainty?</td><td>Second ayanamsa, other node, dasha year, birth time ±N minutes</td></tr></tbody></table></div><p class=\"note\">All five layers use the same birth time and mostly the same ephemeris. “Four of five agree” overstates confidence if the input is wrong. That is why layer 5 is compulsory.</p><h2>Worked example</h2><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Question, written before looking: <em>Is a visible step in work or business likely, and in which window?</em> Houses: 10th (work), 7th (partners, clients), 2nd and 11th (income, gains). Profile: Lahiri, mean node, whole-sign houses, 365.25-day years, Satna.</p><div class=\"tbl\"><table><thead><tr><th>Layer</th><th>What was checked</th><th>Result</th></tr></thead><tbody><tr><td>1 Promise</td><td>10th lord Mercury in own sign in the 10th (Bhadra) with the Sun (Budh-Aditya); 7th lord Jupiter in own sign in the 7th (Hamsa); 11th lord Moon in own sign in the 11th</td><td>For. Bindus are near average: H10 27, H11 26, H7 29 against a mean of 28.1 (337 ÷ 12). D10 has Jupiter in its lagna in its own sign, but Mercury sits in Pisces, its fall sign. The engine also lists Kendradhipati dosha for Mercury and Jupiter. Mixed</td></tr><tr><td>2 Window</td><td>Mercury–Saturn to 29 Sep 2027, Ketu–Ketu to 25 Feb 2028, Ketu–Venus 25 Feb 2028 to 27 Apr 2029. Venus rules the 2nd and 9th and sits in the 9th in its own sign</td><td>Ketu–Venus is the best fit. Yogini (Sankata, 2022 to 2030) and Chara (Aquarius, 2025 to 2031) are too long to discriminate</td></tr><tr><td>3 Trigger</td><td>Jupiter and Saturn both occupying or aspecting Gemini (10th), by sign, from the dates computed with Swiss Ephemeris</td><td>10th: 27 Dec 2028 to 29 Mar 2029, and 6 Oct 2029 to 24 Jan 2030. The first falls inside Ketu–Venus. The 7th (Pisces): 25 Jan to 2 Jun 2027 and 27 Nov 2027 to 23 Feb 2028, the second inside Ketu–Ketu</td></tr><tr><td>4 Binary</td><td>KP 10th cusp sub lord Saturn signifies 5, 6, 7; 11th Mars signifies 3, 8, 9; 7th Sun signifies 9, 11, 12</td><td>Partial for the 10th, none for the 11th, mixed for the 7th. KP tests the promise here, not the date</td></tr><tr><td>5 Sensitivity</td><td>Reruns in lesson 12-2</td><td>Window flips under Raman ayanamsa and shifts by months under a 360-day year. KP 10th sub lord holds for birth times 12:58 to 13:06</td></tr></tbody></table></div><p><strong>Agreement count:</strong> promise mostly for; window, trigger and binary each partial or yes; sensitivity fails under two conventions. The honest entry is therefore “possible step in the 10th house, 27 Dec 2028 to 29 Mar 2029, low-to-moderate confidence, flips under Raman.” The transit windows were not rerun under other ayanamsas, so their stability is untested.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Double transit.</strong> Attribution varies: K.N. Rao is the name most often given, and some sources credit B.V. Raman. It is a modern teaching framework, not a rule stated in BPHS. Teaching pages list Jupiter aspects differently, and some count only aspect, not occupation. This lesson counts Jupiter on its 5th, 7th and 9th and Saturn on its 3rd, 7th and 10th, and counts occupation for both.</p><p><strong>Varga choice.</strong> P.V.R. Narasimha Rao advises using the divisional chart specific to the matter (D10 for work, D4 for property). K.N. Rao’s composite approach runs several dashas side by side.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run a <em>negative control</em>: apply the same five layers to a question where your chart gives no promise, and see how often they still return “yes.” If the protocol says yes to everything, it is not discriminating.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Order: promise, window, trigger, binary check, sensitivity.</li><li>Show each layer’s result and its convention. Never blend them into one verdict.</li><li>Agreement among layers is limited by shared inputs, so sensitivity is mandatory.</li><li>The output is a dated, falsifiable entry with a confidence, not a prophecy.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Pick one question about 2027 or 2028 that matters to you. Fill the five-layer table for it in your notes. State the agreement count and one sensitivity flip. Do not write a verdict stronger than the table supports.</p>",
+   "listen": "The five-layer protocol runs one question through promise, window, trigger, a binary check and a sensitivity rerun, and shows each result separately. Promise asks whether the chart can support the event at all. Window uses the dasha. Trigger uses the double transit of Jupiter and Saturn. The binary check uses the KP cuspal sub lord. Sensitivity reruns the answer under other settings. All of these share your birth time, so agreement overstates confidence. On your chart, asking about a visible step in work gives a mostly favourable promise, with Mercury, Jupiter and the Moon in their own signs. Ketu–Venus from February 2028 is the best dasha fit, and the tenth house gets a double transit from 27 December 2028 to 29 March 2029. KP gives a partial yes. The window flips under the Raman ayanamsa. So the honest entry is a possible step, with low to moderate confidence.",
+   "sources": [
+    "Project research notes, “Jyotish learning app gaps”: five-layer table and the statement that it is a design from documented practice, not a standard",
+    "B.V. Raman, double transit, as credited by the source consulted (unconfirmed attribution to K.N. Rao)",
+    "P.V.R. Narasimha Rao, 2014 article on dasha and transit, as cited in the research notes",
+    "Engine output and Swiss Ephemeris scripts in /home/claude/jyotish-path/work for the chart facts"
+   ],
+   "quiz": [
+    {
+     "q": "What is the correct order of the five layers?",
+     "o": [
+      "Trigger, promise, window, binary, sensitivity",
+      "Promise, window, trigger, binary check, sensitivity",
+      "Window, promise, sensitivity, trigger, binary",
+      "Binary, trigger, window, promise, sensitivity"
+     ],
+     "a": 1,
+     "w": "The chart must hold the promise first, then the dasha opens the window, then transits pick the time."
+    },
+    {
+     "q": "Why is the sensitivity layer compulsory?",
+     "o": [
+      "It adds a fifth vote",
+      "It lengthens the window",
+      "It is required by Parashara",
+      "The other layers share the same inputs, so agreement can hide a wrong birth time or setting"
+     ],
+     "a": 3,
+     "w": "Shared inputs mean shared errors."
+    },
+    {
+     "q": "In your worked example, which dasha period overlaps the 10th-house double transit of 27 Dec 2028 to 29 Mar 2029?",
+     "o": [
+      "Ketu–Ketu",
+      "Mercury–Saturn",
+      "Ketu–Sun",
+      "Ketu–Venus"
+     ],
+     "a": 3,
+     "w": "Ketu–Venus runs 25 Feb 2028 to 27 Apr 2029."
+    },
+    {
+     "q": "What does a negative control test?",
+     "o": [
+      "Whether the Moon is combust",
+      "Whether Rahu is retrograde",
+      "Whether the protocol says yes even where the chart gives no promise",
+      "Whether the dasha is balanced"
+     ],
+     "a": 2,
+     "w": "A protocol that always says yes is not discriminating."
+    }
+   ]
+  },
+  {
+   "id": "12-2",
+   "title": "Convention profiles and sensitivity reruns",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the five layers and say which one is never optional.</p><h2>The profile is part of the answer</h2><p>A {{term:convention_profile|convention profile}} lists every setting behind a result: ayanamsa, node type, house system, dasha year length, karaka scheme. A reading without its profile cannot be checked. A {{term:sensitivity|sensitivity rerun}} changes one setting at a time and reports what moves.</p><div class=\"tbl\"><table><thead><tr><th>Setting</th><th>Common choices</th><th>Moves</th></tr></thead><tbody><tr><td>Ayanamsa</td><td>Lahiri; Krishnamurti (about 6′ lower); Raman (about 1.4° lower); Yukteshwar (about 1.4° lower)</td><td>Planet signs, nakshatras, every dasha date</td></tr><tr><td>Node</td><td>Mean or true</td><td>Rahu and Ketu by up to about 1.7°</td></tr><tr><td>Dasha year</td><td>365.25 days (most software) or 360</td><td>Every dasha date; a Saturn mahadasha by about 100 days</td></tr><tr><td>Birth time</td><td>Recorded time ±N minutes</td><td>Lagna, KP cusps, navamsa, dasha dates slightly</td></tr><tr><td>Houses</td><td>Whole-sign, equal, Placidus (KP)</td><td>House numbers, not signs</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your chart (12:59 IST, Satna) rerun one setting at a time. Lahiri values are from the engine; the other rows are from a Swiss Ephemeris script.</p><div class=\"tbl\"><table><thead><tr><th>Run</th><th>Lagna</th><th>Moon</th><th>Mars</th><th>Mercury to Ketu mahadasha</th></tr></thead><tbody><tr><td>Lahiri, 365.25-day</td><td>Virgo 21°52′</td><td>Cancer 8°04′ Pushya</td><td>Taurus 29°19′</td><td>29 Sep 2027</td></tr><tr><td>Krishnamurti ayanamsa</td><td>Virgo 21°58′</td><td>Cancer 8°10′ Pushya</td><td>Taurus 29°25′</td><td>10 Aug 2027</td></tr><tr><td>Raman ayanamsa</td><td>Virgo 23°19′</td><td>Cancer 9°31′ Pushya</td><td><strong>Gemini 0°46′</strong></td><td>about Sep 2025</td></tr><tr><td>Yukteshwar ayanamsa</td><td>Virgo 23°15′</td><td>Cancer 9°26′ Pushya</td><td><strong>Gemini 0°42′</strong></td><td>about Oct 2025</td></tr><tr><td>Lahiri, 360-day year</td><td>Virgo 21°52′</td><td>Cancer 8°04′ Pushya</td><td>Taurus 29°19′</td><td>28 Apr 2027</td></tr><tr><td>Birth time −5 min</td><td>Virgo 20°44′</td><td>Cancer 8°01′ Pushya</td><td></td><td>23 Oct 2027</td></tr><tr><td>Birth time +5 min</td><td>Virgo 23°00′</td><td>Cancer 8°07′ Pushya</td><td></td><td>5 Sep 2027</td></tr></tbody></table></div><p><strong>Stable:</strong> Virgo lagna and the Moon in Cancer in Pushya hold across all runs.</p><p><strong>Flips:</strong> under Raman or Yukteshwar, Mars moves from Taurus (9th) to Gemini (10th), and the Ketu mahadasha would already have started in late 2025. By the same rule you used in Stage 9, ranking by degree within the sign, Mercury at 29°37′ would then top the list and Mars at 0°46′ would fall to the bottom, so the Atmakaraka changes from Mars to Mercury. Your Jaimini reading is therefore tied to Lahiri.</p><p><strong>Shifts:</strong> ±5 minutes moves the Ketu mahadasha by about three to four weeks; a 360-day year moves it by five months.</p><p><strong>Node:</strong> mean Rahu is Leo 10°33′ and true Rahu is Leo 9°09′. Both stay in Leo.</p></div><h2>Boundary warnings</h2><div class=\"tbl\"><table><thead><tr><th>Item</th><th>Margin</th><th>Why it matters</th></tr></thead><tbody><tr><td>Mars, Taurus 29°19′</td><td>41′ from Gemini</td><td>A sign change under other ayanamsas; Mars is also combust</td></tr><tr><td>Mercury, Gemini 28°10′</td><td>1°50′ from Cancer</td><td>Close, but no sign change under the ayanamsas tested</td></tr><tr><td>Jupiter, Pisces 3°28′</td><td>8′ past the Purva Bhadrapada edge</td><td>An ayanamsa about 8′ larger than Lahiri puts Jupiter in a different nakshatra and a different nakshatra lord</td></tr><tr><td>Venus, Taurus 8°18′</td><td>1°42′ from the end of Krittika</td><td>Safe under the ayanamsas tested</td></tr></tbody></table></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Which profile is “right”?</strong> Lahiri is the Indian government standard and the default in most software. Raman and Yukteshwar have their own followers. The Krishnamurti ayanamsa is used with KP. No test settles it, so report your profile every time and prefer conclusions that survive several.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Check any reading you plan to log by rerunning it under Krishnamurti ayanamsa (small shift), a 360-day year (dasha shift) and ±5 minutes (birth time). If it flips under a small shift, write it as low confidence. If it flips only under a far-off ayanamsa, say so and keep the main profile.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Always quote the profile.</li><li>Change one setting at a time and note what moves.</li><li>Your Virgo lagna and Pushya Moon are stable. Mars sign, AK and the dasha clock are not.</li><li>Boundary warnings come first: Mars (41′ from a sign edge) and Jupiter (8′ past a nakshatra edge).</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Take your own 2027 question from the last lesson and rerun the window layer under Krishnamurti ayanamsa and a 360-day year. Which dates move and by how much?</p>",
+   "listen": "A convention profile lists every setting that produced a result: ayanamsa, node type, house system, dasha year length and karaka scheme. A sensitivity rerun changes one setting at a time and reports what moves. On your chart the Virgo lagna and the Moon in Pushya in Cancer hold under all runs. Mars does not. At twenty-nine degrees nineteen minutes of Taurus it sits forty-one minutes from Gemini, and under the Raman or Yukteshwar ayanamsa it moves into Gemini, which changes the house, and by the degree rule changes your Atmakaraka from Mars to Mercury. The Mercury to Ketu change is twenty-ninth September 2027 under Lahiri, about three to four weeks either side for five minutes of birth-time error, tenth August 2027 under the Krishnamurti ayanamsa, and twenty-eighth April 2027 with a 360-day year. Prefer conclusions that survive several profiles.",
+   "sources": [
+    "Project research notes: ayanamsa offsets, dasha year length, node differences and the boundary-warning design",
+    "Engine natal and dasha output for the Lahiri rows; Swiss Ephemeris script calc17.py and calc20.py in /home/claude/jyotish-path/work for the other rows"
+   ],
+   "quiz": [
+    {
+     "q": "Under which setting does your Mars change sign?",
+     "o": [
+      "Raman ayanamsa",
+      "Krishnamurti ayanamsa",
+      "360-day dasha year",
+      "Birth time −5 minutes"
+     ],
+     "a": 0,
+     "w": "Under Raman (and Yukteshwar) Mars moves to Gemini 0°46′."
+    },
+    {
+     "q": "What happens to the Atmakaraka under Raman ayanamsa by the degree-ranking rule?",
+     "o": [
+      "It changes to Mercury",
+      "It stays Mars",
+      "It changes to the Moon",
+      "It becomes Rahu"
+     ],
+     "a": 0,
+     "w": "Mercury at 29°37′ ranks highest."
+    },
+    {
+     "q": "Which of these is stable across every run in the table?",
+     "o": [
+      "Virgo lagna and the Moon in Pushya",
+      "Mars sign",
+      "Mercury to Ketu date",
+      "Atmakaraka"
+     ],
+     "a": 0,
+     "w": "Lagna sign and the Moon’s nakshatra do not change."
+    },
+    {
+     "q": "By how much does a 360-day year move your Mercury to Ketu change, compared with Lahiri 365.25?",
+     "o": [
+      "About 5 days earlier",
+      "About 5 months earlier",
+      "About 2 years earlier",
+      "It does not move"
+     ],
+     "a": 1,
+     "w": "It moves from 29 Sep 2027 to 28 Apr 2027."
+    }
+   ]
+  },
+  {
+   "id": "12-3",
+   "title": "Writing and scoring predictions: the ledger, base rates and hindsight",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which of your chart facts changes under the Raman ayanamsa, and which does not?</p><h2>What a good prediction looks like</h2><p>A prediction you cannot be wrong about teaches nothing. Each {{term:ledger|ledger}} entry needs these fields, and they are locked before the event.</p><div class=\"tbl\"><table><thead><tr><th>Field</th><th>Rule</th></tr></thead><tbody><tr><td>Date written and profile</td><td>Timestamp it; store the convention profile</td></tr><tr><td>Window</td><td>Start and end dates. Windows over about two years, or spread across many houses, are low-falsifiability</td></tr><tr><td>House and area</td><td>One primary house; list secondary ones</td></tr><tr><td>Outcome statement</td><td>Observable and dated: “I sign X”, not “I feel more stable”</td></tr><tr><td>Confidence</td><td>A number from 0 to 100%, chosen before the event</td></tr><tr><td>Layers agreeing and sensitivity</td><td>From the five-layer table</td></tr><tr><td>Base rate</td><td>How often it happens anyway in a window this long</td></tr><tr><td>Scoring rule</td><td>Written in advance: what counts as a hit</td></tr></tbody></table></div><h2>Scoring honestly</h2><ul><li><strong>Base rate.</strong> {{term:base_rate|Base rate}} is how often the event happens anyway. If a job change happens in about one year in five for people of your age, a prediction of “job change in 2028” has to beat that, and the 20% figure here is only an example, not a statistic.</li><li><strong>Brier score.</strong> The {{term:brier|Brier score}} averages (confidence − outcome)². Illustration: confidences 0.8 (hit), 0.6 (miss), 0.7 (hit) give (0.04 + 0.36 + 0.09) ÷ 3 = 0.163. Always saying 0.5 gives 0.25. Lower than 0.25 over many entries means your confidence has information in it.</li><li><strong>Hindsight.</strong> {{term:hindsight|Hindsight bias}} (described by Baruch Fischhoff in 1975) makes people remember they expected what happened. Lock entries and never edit them.</li><li><strong>Vague statements.</strong> Statements that fit almost anyone feel personal (the Forer effect, 1949). Ask: would this sentence fit a random person of my age?</li></ul><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>A base rate you can compute from your own dasha dates. Between 1 Jan 2013 and 27 Nov 2026 (about 167 months) your engine shows 8 antardasha boundaries: 25 Feb 2013, 22 Feb 2014, 23 Dec 2016, 29 Oct 2017, 31 Mar 2019, 27 Mar 2020, 14 Oct 2022 and 19 Jan 2025. A “within three months of a boundary” window covers 6 months around each, so 8 × 6 = 48 of 167 months, about 28 to 29% (the first window starts before 1 Jan 2013). A random life event therefore falls near an antardasha change about three times in ten without any astrology. Hitting that window is weak evidence.</p><div class=\"tbl\"><table><thead><tr><th>Field</th><th>Entry 1 (format example; you set the confidence)</th></tr></thead><tbody><tr><td>Written</td><td>27 Nov 2026; Lahiri, mean node, whole-sign, 365.25-day, Satna</td></tr><tr><td>Window</td><td>27 Dec 2028 to 29 Mar 2029 (3 months)</td></tr><tr><td>House and area</td><td>10th (work); 2nd (income) shares the same double transit</td></tr><tr><td>Outcome</td><td>A new role, venture or formal responsibility in my main work begins, with a dated start I can show</td></tr><tr><td>Layers</td><td>Promise mostly for; window partial (Ketu–Venus); trigger yes; binary partial; sensitivity flips under Raman and 360-day year</td></tr><tr><td>Base rate</td><td>Estimate for a 3-month window; if you do not know it, say so</td></tr><tr><td>Scoring</td><td>Hit only if the start date falls inside the window</td></tr></tbody></table></div></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Ask a sceptical friend for the same question without showing your chart. If they can produce an equally specific window by guessing, the chart has added nothing for that question.</p></div><p class=\"note\">Blind tests of astrologers (Carlson 1985; Narlikar et al. 2009) are why this stage measures outcomes instead of trusting confidence.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Write before the event; lock it; score only by pre-set rules.</li><li>A window over two years or across many houses is low-falsifiability.</li><li>Compare every hit with the base rate.</li><li>The Brier score rewards honest confidence: 0.25 is the always-50% baseline.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your first three ledger entries, each with a window of under a year, a measurable outcome, a confidence and a scoring rule. Email them to yourself so they carry a timestamp.</p>",
+   "listen": "A useful prediction is dated, observable and locked before the event. Each ledger entry records the convention profile, a window, one primary house, an outcome you could show to a stranger, a confidence number, which layers agreed, how it behaved under sensitivity reruns, and the base rate. The base rate is how often the event happens anyway. On your own dasha dates, eight antardasha boundaries between 2013 and late 2026 mean that about twenty-eight to twenty-nine per cent of random dates fall within three months of a boundary, so hitting such a window proves little. The Brier score averages the squared gap between your confidence and the outcome, and always saying fifty per cent scores a quarter. Hindsight bias makes you remember expecting what happened, so lock every entry, and ask whether a sentence would fit a random person of your age.",
+   "sources": [
+    "Project research notes: prediction ledger design (entries locked before events, windows over about two years flagged, hit rate shown beside a base rate); the notes did not source forecasting-calibration literature",
+    "Brier score as a standard scoring rule; Fischhoff (1975) on hindsight bias; Forer (1949) on subjective validation, cited from general knowledge, not from the project notes",
+    "Engine dasha output for the boundary count"
+   ],
+   "quiz": [
+    {
+     "q": "Which entry is falsifiable?",
+     "o": [
+      "“2028 will bring growth”",
+      "“A new role starts between 27 Dec 2028 and 29 Mar 2029, with a dated start”",
+      "“I will feel stable”",
+      "“Good times ahead”"
+     ],
+     "a": 1,
+     "w": "It has a window, an observable outcome and a scoring rule."
+    },
+    {
+     "q": "What does a Brier score of 0.25 from always answering 50% tell you?",
+     "o": [
+      "It is the best possible",
+      "It is the baseline to beat",
+      "It means the prediction was wrong",
+      "It is the base rate"
+     ],
+     "a": 1,
+     "w": "Lower than 0.25 over many entries shows your confidence carries information."
+    },
+    {
+     "q": "What fraction of random dates falls within 3 months of one of your recent antardasha boundaries?",
+     "o": [
+      "About 3%",
+      "All of them",
+      "About 70%",
+      "About 29%"
+     ],
+     "a": 3,
+     "w": "8 boundaries × 6 months ÷ about 167 months."
+    },
+    {
+     "q": "Why lock entries?",
+     "o": [
+      "To raise confidence",
+      "To make the window longer",
+      "To avoid hindsight bias",
+      "To hide mistakes"
+     ],
+     "a": 2,
+     "w": "Locking prevents you from remembering you expected what happened."
+    }
+   ]
+  },
+  {
+   "id": "12-4",
+   "title": "Client communication and ethics",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which two fields in a ledger entry guard against vague and flattering statements?</p><h2>How to speak</h2><p>You may read charts for family or friends or, later, for clients. These rules apply from the first reading.</p><div class=\"tbl\"><table><thead><tr><th>Situation</th><th>Say</th><th>Do not say</th></tr></thead><tbody><tr><td>Stating a prediction</td><td>“Traditional Jyotish indicates … in this window; I give it 40% and will log it.”</td><td>“This will happen.” “100% accurate.”</td></tr><tr><td>A hard placement</td><td>What the house signifies, what helps, what schools disagree on</td><td>“You are cursed.” “Danger.” “Doomed.”</td></tr><tr><td>Timing</td><td>A window with a start and end, and its sensitivity</td><td>A single exact date, unless the birth time is verified</td></tr><tr><td>Asked for remedies</td><td>Practical actions: sleep, savings, written contracts, documented decisions. Devotional practice only as an optional, labelled choice</td><td>Gemstones or rituals sold as fixes</td></tr><tr><td>Asked “should I?”</td><td>Show the chart view, then say the decision needs facts and a professional where relevant</td><td>Making a decision for them</td></tr></tbody></table></div><h2>Consent and privacy</h2><ul><li>Birth details tied to a named person are personal data. India’s Digital Personal Data Protection Act, 2023 applies to such data. Its Rules were notified in November 2025, with obligations phased in over about 18 months, so check the current position and take legal advice before running this as a service.</li><li>Read another person’s chart only with their consent. Never read a partner’s, employee’s or rival’s chart in secret.</li><li>For a minor, involve a parent or guardian. Do not make predictions about a child’s health, marriage or fate.</li><li>Store birth data only as long as needed. Do not share a chart or reading without permission.</li><li>Do not tie fees to outcomes.</li></ul><h2>When to refer</h2><div class=\"tbl\"><table><thead><tr><th>Signal</th><th>Refer to</th></tr></thead><tbody><tr><td>Symptoms, pain, medication, a diagnosis</td><td>A doctor. Wellness timing is not diagnosis</td></tr><tr><td>Hopelessness, self-harm talk, abuse</td><td>Emergency or crisis services, immediately (in India, the Tele-MANAS helpline is 14416). Stop the reading</td></tr><tr><td>Contracts, disputes, property or family law</td><td>A lawyer</td></tr><tr><td>Investments, loans, insurance, tax</td><td>A licensed financial or tax professional</td></tr><tr><td>Anxiety that the chart is causing</td><td>Stop reading. Offer a calmer, practical frame, and suggest a counsellor if it persists</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your chart has real-looking “bad” placements, and the engine output lets you practise rewriting them. Saturn is in Aries, its fall sign, in the 8th house.</p><div class=\"tbl\"><table><thead><tr><th>Fear version</th><th>Honest version</th></tr></thead><tbody><tr><td>“Debilitated Saturn in the 8th brings sudden losses.”</td><td>“Saturn is in its fall sign in the 8th house. The engine lists two cancellation candidates (Saturn in a kendra from the Moon; the Sun in a kendra from the lagna) and a Harsha viparita yoga (6th lord in the 8th). Schools differ on how much cancellation counts. The 8th concerns shared resources, risk and hidden matters. Practical: keep cash reserves, put agreements in writing, review insurance with a licensed professional.”</td></tr></tbody></table></div><p>The honest version states the fact, names the variants, then gives actions. It contains no fear and no promise.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Where practice differs.</strong> Many traditional practitioners prescribe gemstones and rituals as standard. This course’s rule is stricter: no selling of remedies, only labelled optional practices. No controlled test known to this course shows that traditional remedies work. Do not claim they do.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Test any sentence you plan to say: remove the astrology words and see if you would still say it to this person. If the only effect would be fear, drop it. If it names a concrete action, keep it.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Say “traditional Jyotish indicates”, give a window and confidence, and log it.</li><li>No fear, no guarantees, no remedy selling.</li><li>Consent first; minors through a parent; data kept minimal.</li><li>Refer out for medical, legal, financial and mental-health matters.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Take one placement from your chart that worries you. Write the fear version, then rewrite it in the three parts above: the fact, the variants, and the actions.</p>",
+   "listen": "Ethics starts with how you speak. Say that traditional Jyotish indicates something, give a window and a confidence, and log it. Avoid guarantees, fear language and exact dates unless the birth time is verified. Do not sell gemstones or rituals. Offer practical actions, and label any devotional practice as optional. Get consent before reading anyone’s chart, involve a parent or guardian for a minor, keep data minimal, and do not link fees to outcomes. Refer to a doctor for symptoms, to emergency or crisis services for hopelessness or abuse, to a lawyer for legal matters and to a licensed professional for money. Practise on your own chart: Saturn in its fall sign in the eighth house becomes a fact, a note on cancellation variants, and practical steps such as reserves, written agreements and reviewed insurance. Never a curse.",
+   "sources": [
+    "Project instructions and spec: honesty rules (no guarantees, no fear language, no remedy selling) and the ledger design",
+    "Digital Personal Data Protection Act, 2023 (India) and DPDP Rules, 2025 (notified November 2025, phased over about 18 months; PIB release and law-firm summaries)",
+    "Engine natal output for Saturn’s dignity, bhanga candidates and yoga list"
+   ],
+   "quiz": [
+    {
+     "q": "A client mentions chest pain and asks if Saturn is the cause. What do you do?",
+     "o": [
+      "Name a remedy",
+      "Tell them to see a doctor and keep the astrology out of the diagnosis",
+      "Predict recovery",
+      "Ignore it"
+     ],
+     "a": 1,
+     "w": "Wellness timing is not diagnosis; refer."
+    },
+    {
+     "q": "Which wording follows the course rules?",
+     "o": [
+      "“Traditional Jyotish indicates a window of Jan to Mar 2029 for X; I give it 40% and I will log it.”",
+      "“You will definitely marry in 2028.”",
+      "“Wear this stone and it will pass.”",
+      "“You are cursed.”"
+     ],
+     "a": 0,
+     "w": "Window, confidence, ledger."
+    },
+    {
+     "q": "When may you read someone else’s chart?",
+     "o": [
+      "Whenever you have the data",
+      "If they are your employee",
+      "With their consent",
+      "If it helps your business"
+     ],
+     "a": 2,
+     "w": "Consent comes first."
+    },
+    {
+     "q": "What are the three parts of an honest rewrite of a hard placement?",
+     "o": [
+      "Fear, remedy, price",
+      "Fact, variants, actions",
+      "Prediction, date, stone",
+      "Question, answer, fee"
+     ],
+     "a": 1,
+     "w": "State the fact, show where schools differ, give actions."
+    }
+   ]
+  },
+  {
+   "id": "12-5",
+   "title": "A blind case exercise",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the Brier score of someone who always answers 50%?</p><h2>Why you need a blind test</h2><p>Reading a chart when you already know the life is not a test. You will find the fit. A blind exercise removes what you know and counts hits against chance. It is the only way to learn whether your reading adds anything.</p><h2>The protocol</h2><ol><li><strong>Sealer.</strong> A second person picks a consenting subject with a reliably recorded birth time. The sealer writes down 4 to 6 dated life events from the past and two things that did <em>not</em> happen in the period, and seals them.</li><li><strong>Questions.</strong> The sealer gives you only the birth data and the questions, for example “in which year between 2015 and 2024 did the first major job change happen?”.</li><li><strong>Reader (you).</strong> Fix the convention profile. Use the five layers for each question. Write a window of a year or less and a confidence, then lock the entry.</li><li><strong>Unseal.</strong> Score each question against the window, using the scoring rule written first.</li><li><strong>Compare with chance.</strong> A one-year window in a ten-year span has a 10% chance of hitting by luck.</li></ol><div class=\"tbl\"><table><thead><tr><th>Illustration only (invented numbers)</th><th>Value</th></tr></thead><tbody><tr><td>Span</td><td>10 years</td></tr><tr><td>Window per question</td><td>1 year, so chance = 10%</td></tr><tr><td>Questions</td><td>5</td></tr><tr><td>Hits</td><td>2</td></tr><tr><td>Chance of 2 or more hits by luck</td><td>about 8% (1 − 0.9⁵ − 5 × 0.1 × 0.9⁴ = 0.081)</td></tr></tbody></table></div><p>Even 2 hits in 5 is not strong evidence. A real test needs dozens of entries, and the result should be reported whatever it shows.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your own chart is a poor blind subject for the past, because you know the answers. Use it as a forward test instead: write entries now and let outcomes arrive. The engine gives dated checkpoints in 2027 to anchor the entries.</p><div class=\"tbl\"><table><thead><tr><th>Date</th><th>Event (engine)</th><th>Entry to write before it</th></tr></thead><tbody><tr><td>3 Jun 2027</td><td>Saturn enters Aries</td><td>Trigger entry for the 7th house window (25 Jan to 2 Jun 2027 ends here)</td></tr><tr><td>26 Jun 2027</td><td>Jupiter enters Leo</td><td>Entry for 12th-house themes (expenses, distance, rest)</td></tr><tr><td>29 Sep 2027</td><td>Mercury–Saturn ends, Ketu begins</td><td>Dasha-change entry (range 10 Aug to 23 Oct 2027 across the reruns)</td></tr></tbody></table></div><p>Entries about 2028 and 2029 are also fine; they simply take longer to score. Ask a sealer for a second set from a family member’s chart if you want past events.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>What astrologers say.</strong> After blind tests, astrologers have argued that the testers were not competent or the tasks did not fit the tradition. Critics of the Pune test (Narlikar et al. 2009) made these arguments, and the test has been criticised in turn. The remaining problem is that the tradition has no agreed success criterion set before outcomes. In this exercise you fix that criterion yourself, in advance.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Include a negative control question in every set (one thing that did not happen). If you predict that too, your method is saying yes to everything.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Blind means the reader sees no events until the entries are locked.</li><li>Compare hits with chance from the window length.</li><li>Small samples mislead; log everything and report all results.</li><li>On your own chart use forward entries, since you know your past.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Ask someone you trust to be a sealer for a family member who consents. Agree the questions, the span and the scoring rule in writing before you see any events.</p>",
+   "listen": "A blind exercise removes what you already know. A sealer picks a consenting subject with a recorded birth time, writes four to six dated past events and two that did not happen, and seals them. You get only the birth data and the questions, use the five layers under a fixed convention profile, write windows of a year or less with a confidence, and lock them. Then you unseal and score against the rule written first, and compare with chance. In a ten-year span a one-year window hits by luck ten per cent of the time, so two hits in five questions still happens by luck about eight per cent of the time. You cannot be blind on your own past, so use your chart as a forward test with entries before Saturn enters Aries on third June 2027, Jupiter enters Leo on twenty-sixth June, and the Ketu dasha starts on twenty-ninth September 2027.",
+   "sources": [
+    "Project research notes: description of the Carlson and Narlikar tests, their limits, and the point that the tradition lacks a pre-set success criterion",
+    "Engine events output for 2027 ingress dates and dasha output for the Ketu change"
+   ],
+   "quiz": [
+    {
+     "q": "Why is your own past a poor blind subject?",
+     "o": [
+      "The chart is too complex",
+      "The dasha is unknown",
+      "The ephemeris is wrong",
+      "You know the events, so fit is guaranteed"
+     ],
+     "a": 3,
+     "w": "Knowledge of the events contaminates the reading."
+    },
+    {
+     "q": "A one-year window in a ten-year span hits by chance how often?",
+     "o": [
+      "1%",
+      "50%",
+      "10%",
+      "90%"
+     ],
+     "a": 2,
+     "w": "One year out of ten."
+    },
+    {
+     "q": "What does a negative control do?",
+     "o": [
+      "Lengthens the window",
+      "Removes the sealer",
+      "Shows if the method says yes to everything",
+      "Raises confidence"
+     ],
+     "a": 2,
+     "w": "It exposes a method that never says no."
+    },
+    {
+     "q": "Which comes first?",
+     "o": [
+      "No rule is needed",
+      "Unsealing, then deciding the scoring rule",
+      "Predicting after unsealing",
+      "Scoring rule written, then unsealing"
+     ],
+     "a": 3,
+     "w": "The scoring rule must be set before the outcome is known."
+    }
+   ]
+  },
+  {
+   "id": "12-6",
+   "title": "Capstone: your complete reading, as hypotheses to log",
+   "mins": 35,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the first step of the blind protocol, and who does it?</p><h2>Everything in one place</h2><p>This reading uses every stage. It is a set of <em>hypotheses</em>, each written so it can be logged and scored. The chart facts come from the engine and from Swiss Ephemeris scripts. Anything not computed is left out.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><strong>1. Foundation (Stages 1 to 3).</strong><div class=\"tbl\"><table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Lagna</td><td>Virgo 21°52′; lagna lord Mercury in the 10th in its own sign</td></tr><tr><td>Moon</td><td>Cancer 8°04′, Pushya-2, own sign, 11th house</td></tr><tr><td>Sun</td><td>Gemini 10°41′, 10th, with Mercury</td></tr><tr><td>Mars</td><td>Taurus 29°19′, 9th, combust</td></tr><tr><td>Jupiter</td><td>Pisces 3°28′, 7th, own sign, Uttara Bhadrapada-1</td></tr><tr><td>Venus</td><td>Taurus 8°18′, 9th, own sign, Krittika-4</td></tr><tr><td>Saturn</td><td>Aries 7°41′, 8th, debilitated, Ashwini-3</td></tr><tr><td>Rahu / Ketu</td><td>Leo 10°33′ (12th, Magha-4) / Aquarius 10°33′ (6th, Shatabhisha-2)</td></tr></tbody></table></div><p><strong>2. Strength and yogas (Stages 4 to 6).</strong> Engine yogas: Bhadra, Budh-Aditya, Hamsa, Harsha (Viparita Raja); Kendradhipati dosha for Mercury and Jupiter; neecha bhanga candidates for Saturn. SAV by house from the lagna: 27, 27, 28, 30, 30, <strong>35</strong>, 29, 28, <strong>23</strong>, 27, 26, 27 (total 337). The 6th house has the most bindus and the 9th the fewest. Mercury is vargottama (Gemini in D1 and D9).</p><p><strong>3. Timing (Stages 7 and 8).</strong> Vimshottari: Mercury–Saturn to 29 Sep 2027, then Ketu–Ketu to 25 Feb 2028, Ketu–Venus to 27 Apr 2029, Ketu–Sun to 1 Sep 2029, Ketu–Moon to 2 Apr 2030. Yogini: Sankata (Rahu) 3 Jun 2022 to 3 Jun 2030. Chara (draft, BPHS rules): Aquarius Jun 2025 to Jun 2031.</p><p><strong>4. Jaimini (Stage 9).</strong> Atmakaraka Mars, Karakamsa Virgo; Arudha Lagna and A7 in Sagittarius, A10 in Pisces, Upapada in Aries.</p><p><strong>5. Applied (Stage 10).</strong> A launch muhurta candidate computed for Satna: Fri 4 Dec 2026, 07:40 to 09:40 IST, the best window in the 30 Nov to 15 Dec scan (3 Dec has only a short gap; Mercury combust from about 7 Dec; Kharmas from 16 Dec). It passes only with the mean node: under the true node Ketu is already in the 8th from that lagna.</p><p><strong>6. KP and Tajika (Stage 11).</strong> KP cusp sub lords: 10th Saturn, 11th Mars, 7th Sun; the 11th flips at 1 minute and the 7th and 10th at 2 minutes of birth-time error. The 2027 sidereal solar return is 26 Jun 2027 23:30:57 IST with the Varsha lagna at Aquarius 29°56′, 16 seconds from Pisces, so it is undecided.</p><p><strong>7. Sensitivity (Stage 12).</strong> Virgo lagna and Pushya Moon stable. Mars sign, Atmakaraka and the Ketu start move under Raman or Yukteshwar; the Ketu start moves by months under a 360-day year and by weeks under ±5 minutes.</p></div><h2>Hypotheses to log</h2><div class=\"tbl\"><table><thead><tr><th>No.</th><th>Area</th><th>Window</th><th>Statement</th><th>Flips under</th></tr></thead><tbody><tr><td>H1</td><td>10th, 2nd (work, income)</td><td>27 Dec 2028 to 29 Mar 2029</td><td>A new role, venture or formal responsibility begins with a dated start</td><td>Raman, 360-day year</td></tr><tr><td>H2</td><td>Dasha change to Ketu (6th-house Ketu: routines, service, competition)</td><td>10 Aug to 23 Oct 2027</td><td>I drop, hand over or start one major recurring commitment</td><td>Raman, 360-day year</td></tr><tr><td>H3</td><td>7th (partners, clients, contracts)</td><td>25 Jan to 2 Jun 2027 and 27 Nov 2027 to 23 Feb 2028</td><td>At least one signed, ended or restructured partnership or major client agreement</td><td>Not rerun</td></tr><tr><td>H4</td><td>9th (SAV 23, the lowest)</td><td>Calendar 2027</td><td>Count opportunities that came through mentors or luck against self-initiated ones. A low-bindu house is a tendency, not a verdict</td><td>Not rerun</td></tr><tr><td>H5</td><td>Muhurta test (not a prediction)</td><td>Launch Fri 4 Dec 2026, review at 3, 6, 12 months</td><td>Log outcomes against metrics set in advance. One launch proves nothing; start a series</td><td>Not a chart reading; the panchang is place-dependent</td></tr></tbody></table></div><p>Set a confidence for each before the window opens. The base rate for H2 is the antardasha figure from lesson 12-3 (about 28 to 29% for a random event). Under Raman or Yukteshwar the Ketu mahadasha would have started in late 2025: ask yourself whether that period felt like a break. One case cannot decide, but write it down.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p><strong>Where the schools part on this chart.</strong> Parashari reads Saturn’s fall in the 8th with its cancellation candidates and Harsha yoga. Jaimini reads Mars as Atmakaraka (7 or 8 karaka schemes agree here at Lahiri). KP reads the cusp sub lords and may call the 7th and 11th unstable. Tajika reads the year, which is undecided. None of them settles the others, and each should be read as its own check.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Before you log, run the five-layer table for each hypothesis, state the agreement count, and write one sensitivity flip per entry. If two entries conflict, report both.</p></div><p class=\"note\">Everything here is a hypothesis to log, not a prediction to rely on. No decision about health, money, contracts or relationships should rest on it.</p><h2>Stage test</h2><p>The quiz below covers the whole stage. Take it without looking back.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>A complete reading is a list of dated, falsifiable hypotheses with their layers and sensitivity.</li><li>Your stable facts: Virgo lagna, Pushya Moon. Fragile facts: Mars sign, Atmakaraka and dasha dates under other profiles.</li><li>Log first, then act on facts and professional advice, not on the hypotheses.</li><li>Re-read your ledger each quarter and update your confidence from what happened.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your confidence for H1 to H5 now, with the scoring rule for each, and email the list to yourself. Then set a reminder for 3 Jun 2027 to review H3 and H5.</p>",
+   "listen": "The capstone gathers every stage on your chart as hypotheses to log. The stable facts are a Virgo lagna at twenty-one degrees fifty-two minutes and a Pushya Moon in Cancer. The yogas are Bhadra, Budh-Aditya, Hamsa and Harsha, with Saturn debilitated in the eighth house. The sixth house has the most Ashtakavarga bindus and the ninth the fewest. Vimshottari moves to Ketu on twenty-ninth September 2027. Jaimini gives Mars as Atmakaraka and Karakamsa in Virgo. KP cusp sub lords for the seventh and eleventh flip within minutes. The Varsha lagna for 2027 is undecided. Five hypotheses are logged: work in the tenth house from December 2028 to March 2029, the Ketu change in late 2027, partnership windows, the ninth-house count and a launch muhurta test. Several flip under the Raman ayanamsa, so confidence stays low.",
+   "sources": [
+    "All Stage 1 to 11 lessons in this course; project research notes for the ledger and the five-layer design",
+    "Engine natal, dasha and events output; Swiss Ephemeris scripts calc3, calc4, calc16, calc17, calc18, calc19 and calc20 in /home/claude/jyotish-path/work"
+   ],
+   "quiz": [
+    {
+     "q": "Which pair is stable across every convention rerun in 12-2?",
+     "o": [
+      "Virgo lagna and the Moon in Pushya",
+      "Mars sign and Atmakaraka",
+      "Ketu start date and Mars sign",
+      "Atmakaraka and Karakamsa"
+     ],
+     "a": 0,
+     "w": "Lagna sign and the Moon’s nakshatra did not move."
+    },
+    {
+     "q": "Which window is the 10th-house double transit that overlaps Ketu–Venus?",
+     "o": [
+      "27 Dec 2028 to 29 Mar 2029",
+      "27 Nov 2027 to 23 Feb 2028",
+      "25 Jan to 2 Jun 2027",
+      "6 Oct 2029 to 24 Jan 2030"
+     ],
+     "a": 0,
+     "w": "It lies inside Ketu–Venus, which ends 27 Apr 2029."
+    },
+    {
+     "q": "What does your Atmakaraka become by the degree rule under Raman ayanamsa?",
+     "o": [
+      "Mercury",
+      "Mars",
+      "Sun",
+      "Saturn"
+     ],
+     "a": 0,
+     "w": "Mercury at 29°37′ ranks highest; Mars falls to 0°46′."
+    },
+    {
+     "q": "Which house has the fewest SAV bindus on your chart, and how many?",
+     "o": [
+      "6th, 35",
+      "11th, 26",
+      "10th, 27",
+      "9th, 23"
+     ],
+     "a": 3,
+     "w": "The 9th has 23, the lowest; the 6th has 35, the highest."
+    },
+    {
+     "q": "What is the Brier score for always answering 50%?",
+     "o": [
+      "0",
+      "1",
+      "0.5",
+      "0.25"
+     ],
+     "a": 3,
+     "w": "(0.5)² = 0.25 whatever the outcome."
+    },
+    {
+     "q": "Why is the 2027 Varsha reading described as undecided?",
+     "o": [
+      "The Sun is combust",
+      "Saturn is retrograde",
+      "The Varsha lagna is about 16 seconds of time from a sign edge",
+      "The Moon is waning"
+     ],
+     "a": 2,
+     "w": "Aquarius 29°56′ is 4′ from Pisces."
+    },
+    {
+     "q": "A client reports persistent chest pain after you read their health. What do you do?",
+     "o": [
+      "Prescribe a remedy",
+      "Predict recovery in 40 days",
+      "Refer them to a doctor",
+      "Ignore it"
+     ],
+     "a": 2,
+     "w": "Medical matters are referred out."
+    },
+    {
+     "q": "What should you write before an event occurs?",
+     "o": [
+      "The explanation of why it happened",
+      "A confidence and the scoring rule",
+      "Nothing",
+      "A new window"
+     ],
+     "a": 1,
+     "w": "Confidence and scoring rule must be fixed first."
+    }
+   ]
+  }
+ ]
+}

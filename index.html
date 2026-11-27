@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kundli Life Report in English & Hindi — ₹499 | Pushyara</title>
+<meta name="description" content="A complete Vedic kundli reading from your exact birth time: who you are, the chapters of your life with dates, this year month by month, and this week's good and heavy days. In English or Hindi. ₹499, once.">
+<link rel="canonical" href="https://pushyara.com/">
+<meta property="og:title" content="Your kundli, read from life purpose down to this week — ₹499">
+<meta property="og:description" content="Exact Vedic chart, dasha timeline, year and month forecast, weekly day grades, and a tracker that scores what came true. English or Hindi.">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://pushyara.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Product","name":"Pushyara Life Report","description":"Personal Vedic astrology (Jyotish) life report from exact birth date, time and place. Sidereal Lahiri chart, Vimshottari dasha timeline, 12-month forecast, weekly day grades, Gita guidance and a prediction tracker. English or Hindi.","brand":{"@type":"Brand","name":"Pushyara"},"offers":{"@type":"AggregateOffer","lowPrice":"499","highPrice":"2499","priceCurrency":"INR","offerCount":"4","availability":"https://schema.org/InStock","url":"https://pushyara.com/#editions"}},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"What do I need to get my kundli report?","acceptedAnswer":{"@type":"Answer","text":"Your date of birth, time of birth and place of birth. If you are not sure of the time, the report tells you which parts depend on it."}},
+  {"@type":"Question","name":"Is the report available in Hindi?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can read the full report in English or Hindi and switch between them at any time."}},
+  {"@type":"Question","name":"Which astrology system is used?","acceptedAnswer":{"@type":"Answer","text":"Vedic (sidereal) astrology with Lahiri ayanamsa, whole-sign houses and Vimshottari dasha, the most widely used system in India. Planet positions are checked against Swiss Ephemeris."}},
+  {"@type":"Question","name":"Does the report recommend gemstones or pujas?","acceptedAnswer":{"@type":"Answer","text":"No. It gives practical steps that are in your hands, and is clear about what is not. Nothing to buy after the report."}},
+  {"@type":"Question","name":"How is this different from a free kundli?","acceptedAnswer":{"@type":"Answer","text":"A free kundli gives tables. This report explains your chart in plain language, dates every chapter of your life, grades the days of your week, and keeps a tracker where you mark what actually happened, so you can see how often it is right."}}
+ ]}
+]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;600;700&family=Tiro+Devanagari+Hindi&display=swap">
+<style>
+:root{
+  --night:#0B0922;--indigo:#140F36;--indigo-2:#1E1750;
+  --gold:#F2B92E;--gold-hi:#FFE08A;--gold-lo:#C98A12;
+  --moon:#ECE8FB;--mist:#A9A3D0;--line:rgba(242,185,46,.26);--line-soft:rgba(236,232,251,.12);
+  --display:'Marcellus','Tiro Devanagari Hindi',Georgia,serif;--body:'Mukta',system-ui,sans-serif;--deva:'Tiro Devanagari Hindi',serif;
+}
+*{box-sizing:border-box}
+html{background:var(--night)}
+body{margin:0;color:var(--moon);font:300 1.125rem/1.7 var(--body);
+  background:
+    radial-gradient(1px 1px at 12% 18%,rgba(236,232,251,.55),transparent 60%),
+    radial-gradient(1px 1px at 63% 9%,rgba(236,232,251,.4),transparent 60%),
+    radial-gradient(1.5px 1.5px at 81% 44%,rgba(255,224,138,.45),transparent 60%),
+    radial-gradient(1px 1px at 33% 71%,rgba(236,232,251,.35),transparent 60%),
+    radial-gradient(1px 1px at 92% 86%,rgba(236,232,251,.4),transparent 60%),
+    radial-gradient(1px 1px at 4% 93%,rgba(236,232,251,.3),transparent 60%),
+    var(--night);
+  background-size:640px 760px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+p{margin:0 0 1em}
+b,strong{font-weight:600}
+.w{width:min(1160px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;letter-spacing:.005em;text-wrap:balance}
+h1{font-size:clamp(2.5rem,5.6vw,4.4rem);line-height:1.06}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1}
+h3{font-size:1.4rem;line-height:1.25;color:var(--gold-hi)}
+.lede{font-size:clamp(1.15rem,1.6vw,1.3rem);color:var(--mist);max-width:56ch}
+.mist{color:var(--mist)}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:4px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;z-index:50;background:var(--gold);color:var(--night);padding:8px 14px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:14px 30px;border-radius:3px;
+  font:600 1.06rem var(--body);letter-spacing:.01em;text-decoration:none;cursor:pointer;border:0;color:#1A1203;
+  background:linear-gradient(180deg,var(--gold-hi) 0%,var(--gold) 46%,#D9A01E 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,240,190,.55),0 14px 34px -16px rgba(242,185,46,.75);transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:inset 0 0 0 1px rgba(255,240,190,.7),0 18px 40px -14px rgba(242,185,46,.9)}
+.link{font-weight:600;color:var(--gold-hi);text-decoration:underline;text-decoration-color:var(--line);text-decoration-thickness:1px;text-underline-offset:6px}
+.link:hover{text-decoration-color:var(--gold)}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:5}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0}
+.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;font:400 1.55rem var(--display);letter-spacing:.02em}
+.brand svg{width:40px;height:40px}
+.brand span{font:400 1rem var(--deva);color:var(--mist);margin-left:2px}
+.tnav{display:flex;gap:26px;font-weight:400}
+.tnav a{text-decoration:none;color:var(--mist)}.tnav a:hover{color:var(--moon)}
+.tnav .hi{font-family:var(--deva);color:var(--gold-hi)}
+@media(max-width:820px){.tnav a:not(.hi){display:none}}
+
+/* hero sky */
+.sky{position:relative;min-height:min(100svh,920px);display:grid;align-items:center;overflow:hidden;
+  background:radial-gradient(120% 90% at 78% 30%,#2A1F6B 0%,#17113F 38%,var(--night) 78%)}
+.sky svg.stars{position:absolute;inset:0;width:100%;height:100%}
+.sky .w{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:130px 0 150px}
+.sky h1{margin:14px 0 22px}
+.note{display:inline-block;font-size:.95rem;color:var(--gold-hi);border-bottom:1px solid var(--line);padding-bottom:4px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:30px}
+.price{font:400 2rem var(--display);line-height:1}
+.price small{display:block;font:300 .95rem var(--body);color:var(--mist);margin-top:6px}
+.moonbox{position:relative;justify-self:center;width:min(440px,100%)}
+.moonbox svg{width:100%;height:auto;display:block;overflow:visible}
+.tonight{text-align:center;color:var(--mist);font-size:1rem;margin-top:8px;min-height:1.7em}
+.tonight b{color:var(--moon);font-weight:600}
+.ruler{position:absolute;left:0;right:0;bottom:22px;z-index:2}
+.rlab{position:relative;display:flex;justify-content:space-between;font-size:.85rem;color:var(--mist);margin-top:2px}.rlab #rnow{position:absolute;top:0;transform:translateX(-50%);color:var(--gold-hi);white-space:nowrap}
+.ruler .rw{width:min(1160px,100% - 32px);margin-inline:auto}.ruler svg{width:100%;height:46px;display:block}
+@media(max-width:900px){.sky .w{grid-template-columns:1fr;padding:110px 0 130px;gap:10px}.moonbox{order:-1;width:min(190px,52%)}.tonight{font-size:.9rem}}
+@media(prefers-reduced-motion:no-preference){
+  .stars circle{animation:rise 2.4s ease both}
+  .moonbox{animation:moonrise 2.2s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0}}
+  @keyframes moonrise{from{opacity:0;transform:translateY(24px)}}
+}
+
+section{padding:clamp(72px,10vw,130px) 0}
+.sec-head{max-width:760px;margin-bottom:clamp(34px,5vw,56px)}
+.sec-head h2{margin-bottom:16px}
+
+/* Pushya */
+.pushya{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.asterism{width:100%;max-width:420px;height:auto;justify-self:center}
+.promises{display:grid;gap:34px;margin-top:34px}
+.promise{display:grid;grid-template-columns:28px 1fr;gap:16px}
+.promise svg{margin-top:6px}
+.promise .star-name{font-size:.92rem;color:var(--mist);margin:2px 0 6px}
+.promise p{margin:0;color:var(--moon)}
+@media(max-width:860px){.pushya{grid-template-columns:1fr}.asterism{max-width:280px}}
+
+/* kundli */
+.inside{display:grid;grid-template-columns:minmax(0,440px) 1fr;gap:clamp(30px,5vw,80px);align-items:start}
+.kundli{width:100%;height:auto;position:sticky;top:30px}
+.kundli .h{fill:transparent;transition:fill .2s}
+.kundli .h.on{fill:rgba(242,185,46,.16)}
+.kundli text{font:400 22px var(--display);fill:var(--gold-hi);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.chap{list-style:none;margin:0;padding:0;counter-reset:c;columns:2;column-gap:44px}
+.chap li{break-inside:avoid;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:13px 0;border-top:1px solid var(--line-soft);cursor:default}
+.chap li b{font:400 1.25rem var(--display);color:var(--gold)}
+.chap li div{font:400 1.12rem var(--display);color:var(--moon);line-height:1.3}
+.chap li span{display:block;font:300 .98rem/1.5 var(--body);color:var(--mist);margin-top:3px}
+.chap li.on div{color:var(--gold-hi)}
+@media(max-width:1000px){.chap{columns:1}}
+@media(max-width:860px){.inside{grid-template-columns:1fr}.kundli{position:static;max-width:340px;justify-self:center}}
+
+/* honest */
+.honest{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.honest>div{padding:34px 0}
+.honest>div+div{border-left:1px solid var(--line);padding-left:clamp(24px,5vw,60px)}
+.honest>div:first-child{padding-right:clamp(24px,5vw,60px)}
+.honest ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.honest li{display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:baseline}
+.honest li::before{content:"";width:11px;height:11px;border-radius:50%;transform:translateY(1px)}
+.yes li::before{background:radial-gradient(circle at 35% 35%,var(--gold-hi),var(--gold) 60%,var(--gold-lo));box-shadow:0 0 12px rgba(242,185,46,.6)}
+.no li::before{border:1.5px solid var(--mist);opacity:.7}
+.no li{color:var(--mist)}
+@media(max-width:760px){.honest{grid-template-columns:1fr}.honest>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}.honest>div:first-child{padding-right:0}}
+
+/* editions */
+.eds{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ed{position:relative;display:flex;flex-direction:column;padding:34px clamp(16px,2.2vw,30px) 32px}
+.ed+.ed{border-left:1px solid var(--line-soft)}
+.ed .m{width:88px;height:88px;margin-bottom:22px}
+.ed h3{font-size:1.5rem;color:var(--moon)}
+.ed .pr{font:400 2.3rem var(--display);color:var(--gold-hi);margin:8px 0 12px}
+.ed p{color:var(--mist);font-size:1rem;flex:1}
+.ed .btn{width:100%;min-height:48px;padding:11px 18px;font-size:1rem}
+.ed .btn.quiet{background:transparent;color:var(--gold-hi);box-shadow:inset 0 0 0 1px var(--line)}
+.ed .btn.quiet:hover{box-shadow:inset 0 0 0 1px var(--gold)}
+.ed.pick{background:linear-gradient(180deg,rgba(242,185,46,.10),rgba(242,185,46,0) 70%)}
+.ed .tag{position:absolute;top:34px;right:clamp(16px,2.2vw,30px);font-size:.92rem;color:var(--gold)}
+.fine{font-size:.98rem;color:var(--mist);margin-top:20px}
+@media(max-width:980px){.eds{grid-template-columns:1fr 1fr}.ed:nth-child(3){border-left:0}.ed:nth-child(n+3){border-top:1px solid var(--line-soft)}}
+@media(max-width:560px){.eds{grid-template-columns:1fr}.ed+.ed{border-left:0;border-top:1px solid var(--line-soft)}.ed{display:grid;grid-template-columns:72px 1fr;column-gap:18px}.ed .m{width:64px;height:64px;grid-row:span 4}.ed .btn{grid-column:2}.ed .tag{position:static;grid-column:2;order:-1}}
+
+/* steps */
+.orbit{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);padding-top:44px}
+.orbit::before{content:"";position:absolute;top:13px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--line) 8%,var(--line) 92%,transparent)}
+.orbit li{position:relative;list-style:none}
+.orbit li::before{content:"";position:absolute;top:-38px;left:0;width:15px;height:15px;border-radius:50%;background:var(--night);border:1.5px solid var(--gold)}
+.orbit li:last-child::before{background:var(--gold);box-shadow:0 0 18px rgba(242,185,46,.7)}
+.orbit h3{margin-bottom:10px}
+.orbit p{color:var(--mist);margin:0}
+ol.orbit{margin:0;padding-left:0}
+@media(max-width:760px){.orbit{grid-template-columns:1fr;padding:0 0 0 38px;gap:34px}.orbit::before{top:0;bottom:0;left:7px;right:auto;width:1px;height:auto;background:var(--line)}.orbit li::before{top:6px;left:-38px}}
+
+/* tracker */
+.track{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.track .m{width:clamp(150px,22vw,240px);height:auto}
+.track .big{font:400 clamp(3.4rem,8vw,5.6rem) var(--display);color:var(--gold-hi);line-height:1}
+@media(max-width:700px){.track{grid-template-columns:1fr}.track .m{width:160px}}
+
+/* guides */
+.guides{display:grid;grid-template-columns:repeat(3,1fr);gap:0 44px}
+.guides a{display:block;text-decoration:none;padding:20px 0 22px;border-top:1px solid var(--line-soft)}
+.guides a strong{display:flex;gap:12px;align-items:center;font:400 1.3rem var(--display);color:var(--moon);font-weight:400}
+.guides a strong::before{content:"";width:9px;height:9px;flex:none;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.guides a span{display:block;color:var(--mist);font-size:1rem;margin-top:4px;padding-left:21px}
+.guides a:hover strong{color:var(--gold-hi)}
+@media(max-width:900px){.guides{grid-template-columns:1fr 1fr}}@media(max-width:600px){.guides{grid-template-columns:1fr}}
+
+/* faq */
+.faq .sec-head,.faq details{max-width:820px}
+details{border-top:1px solid var(--line-soft)}
+details:last-child{border-bottom:1px solid var(--line-soft)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font:400 1.25rem/1.35 var(--display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:14px;height:14px;margin-top:6px;border-radius:50%;border:1.5px solid var(--gold);transition:background .2s}
+details[open] summary::after{background:var(--gold);box-shadow:0 0 12px rgba(242,185,46,.6)}
+details p{color:var(--mist);margin:0 0 22px;max-width:68ch}
+
+/* closing */
+.close{position:relative;text-align:center;padding:clamp(40px,6vw,70px) 0 0;overflow:hidden}
+.close h2{max-width:16ch;margin:0 auto 30px}
+.close .rise{height:clamp(170px,24vw,320px);overflow:hidden;margin-top:56px;display:flex;justify-content:center}.close .full{flex:none;width:min(820px,150vw);height:auto}
+footer{position:relative;z-index:2;background:var(--night);border-top:1px solid var(--line);padding:40px 0 60px;color:var(--mist);font-size:.95rem}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:14px}
+footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="litg" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#FFFBF0"/><stop offset=".5" stop-color="#F6EACB"/><stop offset=".85" stop-color="#E2C98A"/><stop offset="1" stop-color="#C9A55A"/></radialGradient>
+    <radialGradient id="halo" r=".5"><stop offset=".55" stop-color="#FFF1C8" stop-opacity=".2"/><stop offset="1" stop-color="#FFE08A" stop-opacity="0"/></radialGradient>
+    <filter id="maria" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".022" numOctaves="3" seed="7"/><feColorMatrix values="0 0 0 0 .52  0 0 0 0 .46  0 0 0 0 .38  0 0 0 -2.6 1.38"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+    <linearGradient id="mk-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset=".55" stop-color="#F2B92E"/><stop offset="1" stop-color="#C98A12"/></linearGradient>
+    <mask id="mk-m"><rect width="64" height="64" fill="#fff"/><circle cx="31.60" cy="32.08" r="18.91" fill="#000"/></mask>
+  </defs>
+</svg>
+
+<header class="top"><div class="w">
+  <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="28.5" cy="36.5" r="19.5" fill="url(#mk-g)" mask="url(#mk-m)"/><path d="M38.69 8.83 L39.84 11.78 L42.79 12.93 L39.84 14.08 L38.69 17.03 L37.54 14.08 L34.59 12.93 L37.54 11.78Z M37.34 21.28 L38.81 25.05 L42.58 26.52 L38.81 27.98 L37.34 31.75 L35.88 27.98 L32.11 26.52 L35.88 25.05Z M49.99 23.77 L50.83 25.92 L52.98 26.76 L50.83 27.60 L49.99 29.76 L49.15 27.60 L46.99 26.76 L49.15 25.92Z" fill="#FFE07A"/></svg>Pushyara<span lang="hi">पुष्यारा</span></a>
+  <nav class="tnav" aria-label="Main"><a href="/learn/index.html">Learn</a><a href="/questions/index.html">Questions</a><a href="/rashifal-2027/index.html">Rashifal 2027</a><a class="hi" href="/order.html?edition=digital&amp;lang=hi" lang="hi">हिंदी में रिपोर्ट</a></nav>
+</div></header>
+
+<main id="main">
+<div class="sky">
+  <svg class="stars" id="stars" aria-hidden="true" preserveAspectRatio="xMidYMid slice"></svg>
+  <div class="w">
+    <div>
+      <h1 style="margin-top:0">The sky you were born under, read for the life you are living.</h1>
+      <p class="lede">A complete Vedic reading from your exact birth time: who you are, the chapters of your life with dates, this year month by month, and which days this week are easy or heavy. In plain English or simple Hindi.</p>
+      <div class="cta-row">
+        <a class="btn" href="/order.html?edition=digital">Get my Life Report</a>
+        <div class="price">₹499<small>Printed editions from ₹999. <a class="link" href="#editions">See editions</a></small></div>
+      </div>
+    </div>
+    <div class="moonbox">
+      <svg viewBox="-20 -20 340 340" role="img" aria-labelledby="tonight"><circle cx="150" cy="150" r="190" fill="url(#halo)"/><g id="moon-now"></g></svg>
+      <p class="tonight" id="tonight" aria-live="polite"></p>
+    </div>
+  </div>
+  <div class="ruler" aria-hidden="true"><div class="rw"><svg id="ruler" viewBox="0 0 1000 46" preserveAspectRatio="none"></svg><div class="rlab"><span>Ashwini</span><span id="rnow"></span><span>Revati</span></div></div></div>
+</div>
+
+<section aria-labelledby="why"><div class="w pushya">
+  <svg class="asterism" viewBox="0 0 360 380" role="img" aria-label="The three stars of Pushya nakshatra, in their real positions in the sky">
+    <g stroke="rgba(255,224,138,.35)" stroke-width="1" fill="none"><path d="M70 40 L40 339 L320 345 Z" stroke-dasharray="2 7"/></g>
+    <circle cx="70" cy="40" r="36" fill="url(#halo)"/><circle cx="40" cy="339" r="48" fill="url(#halo)"/><circle cx="320" cy="345" r="28" fill="url(#halo)"/>
+    <path transform="translate(70 40) scale(1.6)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2Z" fill="#FFE07A"/>
+    <path transform="translate(40 339) scale(2)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2Z" fill="#FFE07A"/>
+    <path transform="translate(320 345) scale(1.25)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2Z" fill="#FFE07A"/>
+  </svg>
+  <div>
+    <h2 id="why">Why Pushyara</h2>
+    <p class="lede" style="margin-top:16px">Pushya is the most auspicious of the 27 nakshatras, the star of nourishment, guided by Brihaspati, teacher of the gods. Our mark is the Moon holding Pushya’s three stars: the mind, held steady by wisdom. Each star stands for one promise.</p>
+    <div class="promises">
+      <div class="promise"><svg width="22" height="22" viewBox="-11 -11 22 22" aria-hidden="true"><path d="M0 -10 L2.4 -2.4 L10 0 L2.4 2.4 L0 10 L-2.4 2.4 L-10 0 L-2.4 -2.4Z" fill="#FFE07A"/></svg><div><h3>Exact sky</h3><p class="star-name">δ Cancri, the brightest of the three</p><p>Planet positions use the Lahiri system and are checked against Swiss Ephemeris, the standard astronomers use.</p></div></div>
+      <div class="promise"><svg width="22" height="22" viewBox="-11 -11 22 22" aria-hidden="true"><path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2Z" fill="#FFE07A"/></svg><div><h3>Dates, not vague moods</h3><p class="star-name">γ Cancri, the northern star</p><p>Every life chapter, this year’s big turns and each month carry dates. Every day this week gets a grade: A, B or C.</p></div></div>
+      <div class="promise"><svg width="22" height="22" viewBox="-11 -11 22 22" aria-hidden="true"><path d="M0 -6.5 L1.6 -1.6 L6.5 0 L1.6 1.6 L0 6.5 L-1.6 1.6 L-6.5 0 L-1.6 -1.6Z" fill="#FFE07A"/></svg><div><h3>Scored against your life</h3><p class="star-name">θ Cancri, the faintest, and the most honest</p><p>A built-in tracker lists each timed statement. Mark what happened and see your hit rate. Nobody else shows you this.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section aria-labelledby="inside" style="background:linear-gradient(180deg,transparent,rgba(30,23,80,.55) 20%,rgba(30,23,80,.55) 80%,transparent)"><div class="w">
+  <div class="sec-head"><h2 id="inside">Twelve chapters, laid out like your kundli</h2><p class="lede">A kundli has twelve houses, one for each part of life. Your report has twelve chapters, read in order, from who you are to what came true.</p></div>
+  <div class="inside">
+    <svg class="kundli" id="kundli" viewBox="0 0 400 400" aria-hidden="true">
+      <g id="houses"></g>
+      <g fill="none" stroke="rgba(242,185,46,.55)" stroke-width="1.2"><rect x="1" y="1" width="398" height="398"/><path d="M1 1 L399 399 M399 1 L1 399 M200 1 L399 200 L200 399 L1 200 Z"/></g>
+      <g id="hnum"></g>
+    </svg>
+    <ol class="chap" id="chap">
+      <li><b>1</b><div>How to read it<span>What your birth-time accuracy changes, in plain words</span></div></li>
+      <li><b>2</b><div>Who you are<span>Lagna, Moon, strong planets and yogas, each one you can mark “this is me”</span></div></li>
+      <li><b>3</b><div>What you are here to learn<span>Atmakaraka, Rahu–Ketu and your work house</span></div></li>
+      <li><b>4</b><div>Your nine teachers<span>Each planet’s lesson and one practice</span></div></li>
+      <li><b>5</b><div>The chapters of your life<span>Every dasha with age and dates</span></div></li>
+      <li><b>6</b><div>This year<span>Sub-period, Sade Sati and the big transits</span></div></li>
+      <li><b>7</b><div>Month by month<span>Where doors open and where effort pays</span></div></li>
+      <li><b>8</b><div>This week<span>A, B or C grades for each day, and Rahu Kaal for your city</span></div></li>
+      <li><b>9</b><div>Yours and not yours<span>What to work on and what to let go, area by area</span></div></li>
+      <li><b>10</b><div>The Gita for your road<span>Verses chosen for the period you are in, explained simply</span></div></li>
+      <li><b>11</b><div>Your weekly practice<span>Three if–then plans you write yourself</span></div></li>
+      <li><b>12</b><div>Prediction tracker<span>Mark what came true and watch your score</span></div></li>
+    </ol>
+  </div>
+</div></section>
+
+<section aria-labelledby="honest"><div class="w">
+  <div class="sec-head"><h2 id="honest">Honest about what astrology can and can’t do</h2></div>
+  <div class="honest">
+    <div class="yes"><h3>What you get</h3><ul><li>Clear timing windows for each area of life</li><li>Practical steps that are in your hands</li><li>Calm language, no fear and no threats</li><li>Hindi or English, switch any time</li></ul></div>
+    <div class="no"><h3 style="color:var(--moon)">What you won’t get</h3><ul><li>Gemstones, pujas or remedies to buy</li><li>“Guaranteed” outcomes or exact-day promises</li><li>Medical, legal or money decisions made for you</li><li>Your data sold to anyone</li></ul></div>
+  </div>
+</div></section>
+
+<section aria-labelledby="editions-h" id="editions"><div class="w">
+  <div class="sec-head"><h2 id="editions-h">Choose your edition</h2><p class="lede">29 pages, every one about you. Each edition includes your digital report and prediction tracker. The fuller the Moon, the more there is to hold.</p></div>
+  <div class="eds">
+    <div class="ed"><svg class="m" data-ill=".22" viewBox="-20 -20 340 340" aria-hidden="true"></svg><h3>Digital</h3><div class="pr">₹499</div><p>Read online in English or Hindi, on any phone. Ready within 24 hours of payment.</p><a class="btn quiet" href="/order.html?edition=digital">Get digital</a></div>
+    <div class="ed"><svg class="m" data-ill=".5" viewBox="-20 -20 340 340" aria-hidden="true"></svg><h3>Printed</h3><div class="pr">₹999</div><p>Full-colour printed report, spiral bound.</p><a class="btn quiet" href="/order.html?edition=printed">Order printed</a></div>
+    <div class="ed pick"><svg class="m" data-ill=".8" viewBox="-20 -20 340 340" aria-hidden="true"></svg><span class="tag">Most chosen</span><h3>Keepsake book</h3><div class="pr">₹1,499</div><p>Soft-cover bound book in full colour, made to keep.</p><a class="btn" href="/order.html?edition=keepsake">Order keepsake</a></div>
+    <div class="ed"><svg class="m" data-ill="1" viewBox="-20 -20 340 340" aria-hidden="true"></svg><h3>Gift edition</h3><div class="pr">₹2,499</div><p>Hardbound with a gold-printed title. For weddings, birthdays and a newborn’s first kundli.</p><a class="btn quiet" href="/order.html?edition=gift">Order gift edition</a></div>
+  </div>
+  <p class="fine">Printed editions ship anywhere in India in 5–8 days. Prices include all taxes and shipping.</p>
+</div></section>
+
+<section aria-labelledby="how" style="padding-top:0"><div class="w">
+  <div class="sec-head"><h2 id="how">How it works</h2></div>
+  <ol class="orbit">
+    <li><h3>Enter your birth details</h3><p>Date, time and city. Not sure of the time? Say so, and the report marks which parts depend on it.</p></li>
+    <li><h3>Pay once</h3><p>We send you a secure payment link for UPI, cards or net banking. Your report is ready within 24 hours of payment.</p></li>
+    <li><h3>Come back each month</h3><p>Check the month ahead, see this week’s good days, and mark in your tracker what came true.</p></li>
+  </ol>
+</div></section>
+
+<section aria-labelledby="track" style="background:linear-gradient(180deg,transparent,rgba(30,23,80,.55) 25%,rgba(30,23,80,.55) 75%,transparent)"><div class="w track">
+  <svg class="m" data-ill=".72" viewBox="-20 -20 340 340" aria-hidden="true"></svg>
+  <div><div class="big">72%</div><h2 id="track" style="margin:10px 0 16px">See how often your chart is right</h2><p class="lede">An example score. Yours starts empty and fills, like the Moon, as you mark each prediction “happened”, “partly” or “didn’t”. After three months you know exactly which parts of your reading to trust.</p></div>
+</div></section>
+
+<section aria-labelledby="free"><div class="w">
+  <div class="sec-head"><h2 id="free">Free guides to your chart</h2><p class="lede">Hundreds of plain-English pages on every part of a kundli. Start with yours.</p></div>
+  <div class="guides">
+    <a href="/learn/nakshatras.html"><strong>27 nakshatras</strong><span>Your birth star: its lord, deity, nature and name syllables.</span></a>
+    <a href="/learn/ascendants.html"><strong>12 ascendants</strong><span>How all twelve houses work for your rising sign.</span></a>
+    <a href="/learn/planets-in-houses.html"><strong>Planets in houses</strong><span>All 108 placements, from Sun in the 1st to Ketu in the 12th.</span></a>
+    <a href="/learn/mahadashas.html"><strong>Mahadashas</strong><span>Every major and sub-period, and what each chapter of life brings.</span></a>
+    <a href="/questions/index.html"><strong>Life questions</strong><span>Marriage, job, money, abroad, children: what the chart looks at.</span></a>
+    <a href="/rashifal-2027/index.html"><strong>Rashifal 2027</strong><span>The year ahead for all 12 Moon signs, with dates.</span></a>
+  </div>
+</div></section>
+
+<section aria-labelledby="faq" style="padding-top:0"><div class="w faq">
+  <div class="sec-head"><h2 id="faq">Questions</h2></div>
+  <details><summary>What do I need to get my kundli report?</summary><p>Your date of birth, time of birth and place of birth. If you are not sure of the time, the report tells you which parts depend on it.</p></details>
+  <details><summary>Is the report available in Hindi?</summary><p>Yes. Read the whole report in English or Hindi and switch between them any time.</p></details>
+  <details><summary>Which astrology system is used?</summary><p>Vedic (sidereal) astrology with Lahiri ayanamsa, whole-sign houses and Vimshottari dasha, the most widely used system in India.</p></details>
+  <details><summary>Does it recommend gemstones or pujas?</summary><p>No. It gives practical steps that are in your hands, and is clear about what is not. There is nothing to buy after the report.</p></details>
+  <details><summary>How is this different from a free kundli?</summary><p>A free kundli gives tables. This explains your chart in plain language, dates every chapter of your life, grades the days of your week, and keeps a tracker of what came true.</p></details>
+  <details><summary>Can I get a printed copy?</summary><p>Yes. Choose Printed (₹999, spiral bound), Keepsake book (₹1,499, soft cover) or Gift edition (₹2,499, hardbound with a gold title). Each includes the digital report, and ships anywhere in India in 5–8 days.</p></details>
+  <details><summary>Can I make a report for my husband, wife or child?</summary><p>Yes. Each report is ₹499 and is saved on your device.</p></details>
+</div></section>
+
+<div class="close">
+  <div class="w"><h2>Read your chart properly, once.</h2><a class="btn" href="/order.html?edition=digital">Get my Life Report for ₹499</a></div>
+  <div class="rise"><svg class="full m" data-ill="1" viewBox="-20 -20 340 340" aria-hidden="true"></svg></div>
+</div>
+</main>
+
+<footer><div class="w">
+  Pushyara, a proprietorship of Ritvik Bhasin, Satna, Madhya Pradesh. Vedic astrology guidance, not a substitute for medical, legal or financial advice.
+  <nav aria-label="Footer"><a href="/learn/index.html">Learn Jyotish</a><a href="/questions/index.html">Life questions</a><a href="/rashifal-2027/index.html">Rashifal 2027</a><a href="/about.html">About</a><a href="/method.html">How we calculate</a><a href="/disclaimer.html">Disclaimer</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refunds.html">Refunds</a><a href="/contact.html">Contact</a></nav>
+</div></footer>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+  /* Moon drawn at any phase angle (0 new, 180 full). Lit limb on the right while waxing. */
+  function drawMoon(g,phase,id){
+    var r=150,c=150,rad=phase*Math.PI/180,k=Math.cos(rad),waxing=phase<180,cres=k>0,rx=Math.abs(k)*r;
+    el('circle',{cx:c,cy:c,r:r,fill:'#1B1546'},g);
+    el('circle',{cx:c,cy:c,r:r,fill:'none',stroke:'rgba(255,224,138,.16)','stroke-width':1.5},g);
+    var o=waxing?1:0,i=waxing?(cres?0:1):(cres?1:0);
+    var d='M'+c+' '+(c-r)+' A'+r+' '+r+' 0 0 '+o+' '+c+' '+(c+r)+' A'+rx+' '+r+' 0 0 '+i+' '+c+' '+(c-r)+'Z';
+    if(phase>=179.5&&phase<=180.5)d='M'+c+' '+(c-r)+' A'+r+' '+r+' 0 1 1 '+c+' '+(c+r)+' A'+r+' '+r+' 0 1 1 '+c+' '+(c-r)+'Z';
+    var cp=el('clipPath',{id:id},g);el('path',{d:d},cp);
+    var lit=el('g',{'clip-path':'url(#'+id+')'},g);
+    el('circle',{cx:c,cy:c,r:r,fill:'url(#litg)'},lit);
+    el('rect',{x:0,y:0,width:300,height:300,fill:'#fff',filter:'url(#maria)',opacity:.5},lit);
+  }
+  function phaseFromIll(f){return Math.acos(1-2*f)*180/Math.PI;}
+  document.querySelectorAll('svg.m').forEach(function(s,n){
+    var f=parseFloat(s.dataset.ill);if(f>=1){f=1;}
+    el('circle',{cx:150,cy:150,r:185,fill:'url(#halo)',opacity:f},s);
+    drawMoon(el('g',{},s),f>=1?180:phaseFromIll(f),'mc'+n);
+  });
+
+  /* Tonight's Moon: compact lunar theory (checked to within 0.4 degrees) and Lahiri ayanamsa */
+  var NAK=['Ashwini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu','Pushya','Ashlesha','Magha','Purva Phalguni','Uttara Phalguni','Hasta','Chitra','Swati','Vishakha','Anuradha','Jyeshtha','Mula','Purva Ashadha','Uttara Ashadha','Shravana','Dhanishta','Shatabhisha','Purva Bhadrapada','Uttara Bhadrapada','Revati'];
+  var t=Date.now(),d=(t-Date.UTC(2000,0,1,12))/864e5,r=Math.PI/180;
+  var g=357.529+0.98560028*d,q=280.459+0.98564736*d,sun=q+1.915*Math.sin(g*r)+0.020*Math.sin(2*g*r);
+  var L=218.316+13.176396*d,M=134.963+13.064993*d,D=297.850+12.190749*d,F=93.272+13.229350*d;
+  var lon=L+6.289*Math.sin(M*r)+1.274*Math.sin((2*D-M)*r)+0.658*Math.sin(2*D*r)+0.214*Math.sin(2*M*r)-0.186*Math.sin(g*r)-0.114*Math.sin(2*F*r);
+  var phase=(((lon-sun)%360)+360)%360,aya=23.853+d/365.25*0.013969,sid=(((lon-aya)%360)+360)%360;
+  var ni=Math.floor(sid/(360/27)),ill=Math.round((1-Math.cos(phase*r))/2*100);
+  drawMoon(document.getElementById('moon-now'),phase,'mnow');
+  document.getElementById('tonight').innerHTML='Right now the Moon is in <b>'+NAK[ni]+'</b> nakshatra, '+ill+'% lit.';
+
+  /* nakshatra ruler: 27 lunar mansions, today's one lit */
+  var ru=document.getElementById('ruler'),w=1000/27;
+  el('line',{x1:0,y1:30,x2:1000,y2:30,stroke:'rgba(242,185,46,.35)','stroke-width':1,'vector-effect':'non-scaling-stroke'},ru);
+  for(var j=0;j<=27;j++)el('line',{x1:j*w,y1:j%9?24:18,x2:j*w,y2:36,stroke:'rgba(242,185,46,'+(j%9?.35:.7)+')','stroke-width':1,'vector-effect':'non-scaling-stroke'},ru);
+  el('rect',{x:ni*w,y:24,width:w,height:12,fill:'rgba(242,185,46,.28)'},ru);
+  var mx=sid/360*1000;var rn=document.getElementById('rnow');rn.textContent='Moon in '+NAK[ni];rn.style.left=Math.min(88,Math.max(12,sid/3.6))+'%';el('line',{x1:mx,y1:8,x2:mx,y2:36,stroke:'#FFE08A','stroke-width':2,'vector-effect':'non-scaling-stroke'},ru);
+
+  /* starfield, same every visit */
+  var st=document.getElementById('stars'),W=1600,H=1000,seed=27;st.setAttribute('viewBox','0 0 '+W+' '+H);
+  function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647;}
+  for(var s=0;s<260;s++){var b=rnd(),rr=b>.97?1.9:b>.85?1.2:.7;
+    var c=el('circle',{cx:(rnd()*W).toFixed(1),cy:(rnd()*H).toFixed(1),r:rr,fill:b>.9?'#FFE8B0':'#E6E2FF',opacity:(.25+rnd()*.7).toFixed(2)},st);
+    c.style.animationDelay=(rnd()*1.6).toFixed(2)+'s';}
+
+  /* kundli: twelve houses of the North Indian chart */
+  var P={1:'200,1 299.5,100.5 200,200 100.5,100.5',2:'1,1 200,1 100.5,100.5',3:'1,1 100.5,100.5 1,200',4:'1,200 100.5,100.5 200,200 100.5,299.5',5:'1,200 100.5,299.5 1,399',6:'1,399 100.5,299.5 200,399',7:'200,399 100.5,299.5 200,200 299.5,299.5',8:'200,399 299.5,299.5 399,399',9:'399,399 299.5,299.5 399,200',10:'399,200 299.5,299.5 200,200 299.5,100.5',11:'399,200 299.5,100.5 399,1',12:'399,1 299.5,100.5 200,1'};
+  var C={1:[200,100],2:[100,38],3:[38,100],4:[100,200],5:[38,300],6:[100,362],7:[200,300],8:[300,362],9:[362,300],10:[300,200],11:[362,100],12:[300,38]};
+  var hs=document.getElementById('houses'),hn=document.getElementById('hnum'),items=document.querySelectorAll('#chap li'),polys={};
+  function on(h,v){polys[h].classList.toggle('on',v);items[h-1].classList.toggle('on',v);}
+  for(var h=1;h<=12;h++){polys[h]=el('polygon',{points:P[h],'class':'h'},hs);var tx=el('text',{x:C[h][0],y:C[h][1]},hn);tx.textContent=h;
+    (function(h){polys[h].addEventListener('mouseenter',function(){on(h,true)});polys[h].addEventListener('mouseleave',function(){on(h,false)});
+      items[h-1].addEventListener('mouseenter',function(){on(h,true)});items[h-1].addEventListener('mouseleave',function(){on(h,false)});})(h);}
+})();
+</script>
+</body>
+</html>

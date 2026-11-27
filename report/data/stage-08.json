@@ -1,0 +1,506 @@
+{
+ "stage": 8,
+ "title": "Strength: Shadbala and Ashtakavarga",
+ "level": "Intermediate",
+ "goal": "Done when you can name the six Shadbala components and minimums, build a planet’s BAV bindus by hand, read your SAV by house, and score a transit by bindus and kakshya.",
+ "terms": {
+  "shadbala": [
+   "Shadbala · षड्बल",
+   "“Six strengths”: the classical method for measuring a planet’s power with six components: positional, directional, temporal, motional, natural and aspectual strength. The result is stated in rupas."
+  ],
+  "rupa": [
+   "Rupa and virupa · रूप / विरुप",
+   "The units of Shadbala. One rupa equals 60 virupas. Each planet has a required minimum in rupas (for example 6.5 for the Sun)."
+  ],
+  "sthanabala": [
+   "Sthana bala · स्थान बल",
+   "Positional strength: how well the planet is placed in its sign, in the divisional charts, in odd or even signs, in kendras and in its decanate."
+  ],
+  "digbala": [
+   "Dik bala · दिग्बल",
+   "Directional strength: each planet is strongest in one particular house (Jupiter and Mercury in the 1st, Sun and Mars in the 10th, Saturn in the 7th, Moon and Venus in the 4th) and weakest in the opposite house."
+  ],
+  "kalabala": [
+   "Kala bala · कालबल",
+   "Temporal strength: strength from the time of birth, such as day or night, bright or dark half of the month, the weekday, the hour and the planet’s declination."
+  ],
+  "cheshtabala": [
+   "Cheshta bala · चेष्टाबल",
+   "Motional strength: strength from the planet’s motion, mainly its speed and retrogression. The Sun and Moon use different measures in place of it."
+  ],
+  "naisargika": [
+   "Naisargika bala · नैसर्गिक बल",
+   "Natural strength: a fixed ranking, the same for everyone. The Sun is naturally strongest, then Moon, Venus, Jupiter, Mercury, Mars and Saturn."
+  ],
+  "drikbala": [
+   "Drik bala · दृग्बल",
+   "Aspectual strength: strength added or subtracted by the aspects of benefic and malefic planets."
+  ],
+  "bhavabala": [
+   "Bhava bala · भावबल",
+   "The strength of a house, built from its lord’s strength, the house’s own directional strength, and the aspects falling on it."
+  ],
+  "ashtakavarga": [
+   "Ashtakavarga · अष्टकवर्ग",
+   "A scoring system in which seven planets and the lagna each contribute benefic points (bindus) to signs, counted from their own positions. The result is a table of points per sign for each planet and a combined table."
+  ],
+  "bindu": [
+   "Bindu · बिन्दु",
+   "A benefic point in Ashtakavarga. A planet’s score in a sign can run from 0 to 8, because eight contributors can each give one bindu."
+  ],
+  "bav": [
+   "Bhinnashtakavarga (BAV) · भिन्नाष्टकवर्ग",
+   "The individual chart of one planet: its bindus in each of the twelve signs. There are seven (Sun to Saturn); their totals are 48, 49, 39, 54, 56, 52 and 39."
+  ],
+  "sav": [
+   "Sarvashtakavarga (SAV) · सर्वाष्टकवर्ग",
+   "The combined chart: the sum of the seven BAVs in each sign. It totals 337 points over the twelve signs, an average of about 28 per sign."
+  ],
+  "kakshya": [
+   "Kakshya · कक्ष्या",
+   "A subdivision of a sign into eight parts of 3°45′. Each is ruled by one of Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon, Lagna, in that order, and used to refine transit timing with Ashtakavarga."
+  ],
+  "shodhana": [
+   "Shodhana · शोधन",
+   "Reduction: classical arithmetic that “purifies” the Ashtakavarga totals (trikona shodhana, then ekadhipatya shodhana) before computing further figures. Described here only in outline."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "8-1",
+   "title": "What “strength” means, and the six Shadbalas",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What does Vimshopaka bala measure, and does the engine compute it?</p>\n<p>Until now you have judged strength by <strong>dignity</strong>: exalted, own sign, friend’s sign, enemy’s sign, debilitated. That is one ingredient. Two planets in own signs can still differ greatly: one is placed in a strong house, born in the right time of day and moving fast; the other is not. The classical answer is {{term:shadbala|Shadbala}}, “six strengths”, which adds up six different kinds of strength for each of the seven planets (Sun to Saturn).</p>\n<h2>The six components</h2>\n<div class=\"tbl\"><table><thead><tr><th>Component</th><th>It asks</th><th>Main ingredients</th></tr></thead><tbody><tr><td>{{term:sthanabala|Sthana bala}}<br>positional</td><td>Where is the planet placed?</td><td>Closeness to exaltation; dignity in the seven vargas (D1, D2, D3, D7, D9, D12, D30); odd or even sign and navamsa; kendra, succedent or cadent house; decanate</td></tr><tr><td>{{term:digbala|Dik bala}}<br>directional</td><td>Is it in its preferred direction (house)?</td><td>Jupiter, Mercury: 1st. Sun, Mars: 10th. Saturn: 7th. Moon, Venus: 4th. Zero in the opposite house</td></tr><tr><td>{{term:kalabala|Kala bala}}<br>temporal</td><td>Is the time of birth good for it?</td><td>Day or night birth; bright or dark half; the year, month, weekday and hour lords; each planet’s declination (ayana bala); planetary war</td></tr><tr><td>{{term:cheshtabala|Cheshta bala}}<br>motional</td><td>Is it moving in a strong way?</td><td>Speed and retrogression. The Sun and Moon use other measures here</td></tr><tr><td>{{term:naisargika|Naisargika bala}}<br>natural</td><td>How strong is it by nature?</td><td>A fixed order: Sun, Moon, Venus, Jupiter, Mercury, Mars, Saturn</td></tr><tr><td>{{term:drikbala|Drik bala}}<br>aspectual</td><td>Who is looking at it?</td><td>Benefic aspects add, malefic aspects subtract</td></tr></tbody></table></div>\n<p>Each component is computed in <strong>virupas</strong>, a measure where 60 virupas equal one {{term:rupa|rupa}}. The six totals are added and compared with a classical minimum for each planet (lesson 8-2).</p>\n<h2>What this does that dignity does not</h2>\n<ul>\n<li>It ranks planets against each other on one scale.</li>\n<li>It brings in time-of-birth strength, which dignity ignores.</li>\n<li>It brings in aspects as numbers instead of as words.</li>\n</ul>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>The engine does not compute Shadbala yet.</strong> This lesson gives no Shadbala numbers for your planets, because the app does not compute them yet. What the engine does give is the raw positions, so here are only the <em>qualitative</em> facts that feed each component:</p><ul>\n<li><strong>Sthana:</strong> Moon, Mercury, Jupiter and Venus are in their own signs (Cancer, Gemini, Pisces, Taurus). Saturn is debilitated in Aries. No planet is exalted.</li>\n<li><strong>Dik:</strong> Jupiter sits in the 7th house, close to the point where its directional strength is lowest. Mercury is in the 10th, Saturn in the 8th (next to its best house, the 7th).</li>\n<li><strong>Kala:</strong> you were born at 12:59 on a Friday, just after midday and on the third tithi of the bright half. The day-strong planets (Sun, Jupiter, Venus) gain from the day birth; Mercury gains at any hour; the night-strong planets (Moon, Mars, Saturn) do not. Venus rules Friday. The Moon is a young crescent, so benefics gain little from the bright half yet.</li>\n<li><strong>Cheshta:</strong> no planet is retrograde at your birth (engine output). Speeds are not printed by the engine.</li>\n<li><strong>Naisargika:</strong> fixed, the same for everyone.</li>\n<li><strong>Drik:</strong> read from your aspects: Saturn aspects the Sun and Mercury in the 10th (and, in the view that gives the nodes 5th, 7th and 9th aspects, Ketu does too); Jupiter aspects the lagna and the Moon’s house; in the same node view Rahu aspects Saturn. Classical Drik bala counts only the seven planets, so node aspects do not enter it.</li>\n</ul></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari:</strong> Shadbala as described in BPHS is the standard. Jaimini astrology does not use Shadbala; it judges by karakas and sign aspects.</li>\n<li><strong>Software:</strong> programs implement the BPHS rules with different choices (for example how to treat the Moon’s phase, local time and declination). Two programs rarely agree to the last virupa. Compare ratios and rank order, not exact figures.</li>\n<li><strong>KP:</strong> strength is judged through the star lord and sub-lord links, not Shadbala.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>When your own program shows Shadbala numbers, check them against what you already know: do the planets that are strong by dignity and D9 (your Venus, Mercury, Jupiter) appear near the top? Differences are interesting; write them down rather than smoothing them over.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Dignity is one ingredient. Shadbala adds position, direction, time, motion, nature and aspects.</li><li>Units: 60 virupas = 1 rupa.</li><li>The engine does not compute Shadbala yet. Numbers are coming; none are given here.</li><li>Jaimini does not use Shadbala; do not mix their readings blindly.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> For each of the six components, write one sentence about how it applies to your Jupiter, using only the facts in the box above.</p>",
+   "listen": "Dignity is one measure of a planet’s strength, but the classical method, Shadbala, adds six kinds of strength. Sthana bala is positional strength, including dignity in the divisional charts. Dik bala is directional: Jupiter and Mercury are strongest in the first house, the Sun and Mars in the tenth, Saturn in the seventh, the Moon and Venus in the fourth. Kala bala is temporal: day or night birth, the bright or dark half, the weekday and the hour. Cheshta bala is motional, from speed and retrogression. Naisargika bala is a fixed natural ranking. Drik bala comes from aspects. The units are virupas, sixty to a rupa. The engine does not compute Shadbala yet, so no numbers are given for your planets. Qualitatively, your Moon, Mercury, Jupiter and Venus are in their own signs, Saturn is debilitated, and Jupiter sits in the seventh, near its weakest directional point.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Shadbala and its components (chapter numbers not verified here)",
+    "Phaladeepika, chapter on the strengths of planets",
+    "Jyotish engine output: natal positions, dignity, aspects (the engine does not compute Shadbala)"
+   ],
+   "quiz": [
+    {
+     "q": "How many virupas make one rupa?",
+     "o": [
+      "10",
+      "30",
+      "60",
+      "100"
+     ],
+     "a": 2,
+     "w": "Sixty virupas make one rupa."
+    },
+    {
+     "q": "Which house gives Jupiter its best directional strength?",
+     "o": [
+      "1st",
+      "4th",
+      "7th",
+      "10th"
+     ],
+     "a": 0,
+     "w": "Jupiter and Mercury are strongest in the 1st house, weakest in the 7th."
+    },
+    {
+     "q": "Which component does the weekday lord belong to?",
+     "o": [
+      "Sthana bala",
+      "Kala bala",
+      "Drik bala",
+      "Naisargika bala"
+     ],
+     "a": 1,
+     "w": "The weekday (vara) lord is part of temporal strength."
+    },
+    {
+     "q": "Does the engine compute your Shadbala numbers today?",
+     "o": [
+      "Yes, in rupas for every planet",
+      "Yes, but only in virupas for each planet",
+      "No, the app does not compute it yet",
+      "Only for the Sun, the Moon and the lagna lord"
+     ],
+     "a": 2,
+     "w": "Shadbala is not computed yet. This course gives no numbers for it."
+    },
+    {
+     "q": "Which tradition does NOT use Shadbala?",
+     "o": [
+      "Parashari",
+      "Jaimini",
+      "Both",
+      "Neither"
+     ],
+     "a": 1,
+     "w": "Jaimini works with karakas and sign aspects instead."
+    }
+   ]
+  },
+  {
+   "id": "8-2",
+   "title": "Required minimums, Bhava bala, and what Shadbala can and cannot tell you",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name the six components of Shadbala and the house of Saturn’s best directional strength.</p>\n<h2>The required minimums</h2>\n<p>The classical texts give each planet a required Shadbala total. The commonly quoted BPHS values are:</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Required minimum (rupas)</th><th>In virupas</th></tr></thead><tbody><tr><td>Sun</td><td>6.5</td><td>390</td></tr><tr><td>Moon</td><td>6.0</td><td>360</td></tr><tr><td>Mars</td><td>5.0</td><td>300</td></tr><tr><td>Mercury</td><td>7.0</td><td>420</td></tr><tr><td>Jupiter</td><td>6.5</td><td>390</td></tr><tr><td>Venus</td><td>5.5</td><td>330</td></tr><tr><td>Saturn</td><td>5.0</td><td>300</td></tr></tbody></table></div>\n<p>You then divide the planet’s total by its minimum. A ratio above 1 means the planet meets its requirement. A ratio below 1 means it falls short. The ratio is better than the raw total, because Mercury needs 7 rupas and Saturn needs 5.</p>\n<h2>What a ratio can tell you</h2>\n<ul>\n<li><strong>Who is strongest in the chart:</strong> rank planets by ratio. The strongest planet often carries the chart’s main story, the weakest is where support is thin.</li>\n<li><strong>Whether a dasha has power:</strong> a dasha lord with a high ratio can usually deliver what it promises; one with a low ratio delivers with effort or delay. This is a reading tendency, not a law.</li>\n<li><strong>Which side of a yoga to trust:</strong> a yoga’s planets with high ratios make the yoga more reliable (lesson 6-1, question 2).</li>\n</ul>\n<h2>Ishta and Kashta phala</h2>\n<p>Two more figures are built from Shadbala’s parts: <strong>Ishta phala</strong> (the planet’s capacity to give good results) and <strong>Kashta phala</strong> (its capacity to give difficult ones). They use the planet’s exaltation strength and motional strength. A planet with high Ishta and low Kashta is a reliable helper.</p>\n<h2>{{term:bhavabala|Bhava bala}}: strength of a house</h2>\n<p>House strength combines three ideas: the strength of the house’s lord (<em>bhavadhipati bala</em>), the house’s own directional strength, which depends on the type of sign on the house (<em>bhava dik bala</em>), and the aspects falling on the house (<em>bhava drishti bala</em>). A house whose lord is strong and whose aspects are benefic is strong. A house whose lord is weak or afflicted gives its themes with more effort.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p><strong>No Shadbala numbers yet.</strong> The engine does not compute them, so this lesson cannot say which of your planets meet their minimum. Here is what dignity alone says about the lords of your houses, to be checked against the numbers when they arrive:</p><div class=\"tbl\"><table><thead><tr><th>House</th><th>Lord</th><th>Dignity (engine)</th></tr></thead><tbody><tr><td>1st, 10th</td><td>Mercury</td><td>Own sign (Gemini), vargottama</td></tr><tr><td>2nd, 9th</td><td>Venus</td><td>Own sign (Taurus), exalted in D9</td></tr><tr><td>4th, 7th</td><td>Jupiter</td><td>Own sign (Pisces)</td></tr><tr><td>11th</td><td>Moon</td><td>Own sign (Cancer)</td></tr><tr><td>5th, 6th</td><td>Saturn</td><td>Debilitated (Aries)</td></tr><tr><td>3rd, 8th</td><td>Mars</td><td>Neutral sign, combust</td></tr><tr><td>12th</td><td>Sun</td><td>Neutral sign (Gemini)</td></tr></tbody></table></div><p>On dignity, your 1st, 2nd, 4th, 7th, 9th, 10th and 11th houses have strong lords; the 3rd, 5th, 6th, 8th and 12th have weaker ones. Make a prediction in your ledger: which of the seven planets will have the lowest ratio? Check it the day the numbers arrive.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Minimums:</strong> the values above are the classical ones as commonly quoted from BPHS. Some modern works and software use adjusted values.</li>\n<li><strong>Weight of the ratio:</strong> some astrologers treat Shadbala as the final word on strength, others treat it as one input beside dignity, D9 and Ashtakavarga.</li>\n<li><strong>Which planets:</strong> BPHS measures the seven visible planets. The nodes are not measured in the classical method.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Cross-check method:</strong> compare the Shadbala rank order with (1) dignity in D1 and D9, (2) the planet’s own bindus in its BAV (lesson 8-3), and (3) how the planet’s dasha has actually felt in your life records. If the three agree, trust the reading. If they conflict, write the conflict in your notes.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Each planet has a required minimum in rupas: Sun 6.5, Moon 6, Mars 5, Mercury 7, Jupiter 6.5, Venus 5.5, Saturn 5.</li><li>Use the ratio (total ÷ minimum), not the raw total.</li><li>Bhava bala = lord’s strength + house direction + aspects.</li><li>No Shadbala numbers for your chart yet; the engine does not compute them.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your prediction: which planet will have the lowest ratio, which the highest, and why. Put it in your ledger with today’s date.</p>",
+   "listen": "Each planet has a required Shadbala minimum in rupas: Sun six and a half, Moon six, Mars five, Mercury seven, Jupiter six and a half, Venus five and a half, Saturn five. Divide the planet’s total by its minimum. Above one means it meets the requirement. The ratio tells you who is strongest in the chart, whether a dasha lord can deliver, and which planets make a yoga reliable. Ishta and Kashta phala show a planet’s capacity for good and difficult results. Bhava bala measures a house from its lord’s strength, the house’s own direction and the aspects on it. The engine does not compute Shadbala, so this lesson gives no numbers for you. By dignity alone, the lords of your first, second, fourth, seventh, ninth, tenth and eleventh houses are strong, and those of the third, fifth, sixth, eighth and twelfth are weaker. Log a prediction of your lowest-ratio planet so you can check it when the numbers arrive.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Shadbala, Ishta and Kashta phala, and Bhava bala (chapter numbers not verified here)",
+    "Phaladeepika, chapter on planetary strengths",
+    "Jyotish engine output: dignity, house lords (Shadbala not computed)"
+   ],
+   "quiz": [
+    {
+     "q": "What is the required Shadbala minimum for Mercury?",
+     "o": [
+      "5.0 rupas",
+      "6.0 rupas",
+      "6.5 rupas",
+      "7.0 rupas"
+     ],
+     "a": 3,
+     "w": "Mercury needs 7.0 rupas (420 virupas); Mars and Saturn need 5.0."
+    },
+    {
+     "q": "A planet with a Shadbala ratio of 0.8 is…",
+     "o": [
+      "Comfortably meeting its requirement",
+      "Falling short of its requirement",
+      "Fully exalted and above requirement",
+      "Retrograde and above the minimum"
+     ],
+     "a": 1,
+     "w": "A ratio below 1 means the total is less than the minimum."
+    },
+    {
+     "q": "Which is a component of Bhava bala?",
+     "o": [
+      "The lord’s strength",
+      "The Moon’s phase only",
+      "The nakshatra of the house",
+      "The number of bindus"
+     ],
+     "a": 0,
+     "w": "Bhavadhipati bala, the lord’s strength, is one of three components."
+    },
+    {
+     "q": "Why use the ratio instead of the raw total?",
+     "o": [
+      "Planets have different required minimums",
+      "It is easier to state in one number",
+      "Rupas are not comparable to virupas",
+      "The Sun’s total is never available"
+     ],
+     "a": 0,
+     "w": "Mercury needs 7 rupas, Saturn only 5; the ratio puts them on one scale."
+    },
+    {
+     "q": "By dignity alone, which house lord in your chart is weak?",
+     "o": [
+      "Jupiter (4th, 7th)",
+      "Saturn (5th, 6th)",
+      "Venus (2nd, 9th)",
+      "Moon (11th)"
+     ],
+     "a": 1,
+     "w": "Saturn is debilitated in Aries."
+    }
+   ]
+  },
+  {
+   "id": "8-3",
+   "title": "Ashtakavarga: building the BAV and the SAV",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is the required minimum for Saturn, and what is a ratio below 1?</p>\n<p>{{term:ashtakavarga|Ashtakavarga}} (“eight-fold division”) is a completely different way to score strength. Instead of adding six kinds of strength to a planet, it asks eight contributors, one question each: <em>from my own position, which signs do I favour for your planet?</em></p>\n<h2>The eight contributors</h2>\n<p>For each of the seven planets (Sun to Saturn) the eight contributors are the Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn and the lagna. The nodes are not used. Each contributor gives a {{term:bindu|bindu}} (a benefic point) to certain signs, counted from the contributor’s own sign. The lists of favoured houses are fixed by the texts (BPHS). Adding the contributors for one planet gives its {{term:bav|BAV}} (Bhinnashtakavarga), a table of 0 to 8 bindus in each of the twelve signs.</p>\n<p>The totals of the seven BAVs are fixed regardless of the chart: Sun 48, Moon 49, Mars 39, Mercury 54, Jupiter 56, Venus 52, Saturn 39. Adding all seven BAVs sign by sign gives the {{term:sav|SAV}} (Sarvashtakavarga), whose total is always 337.</p>\n<h2>A worked example: Saturn’s BAV for the sign Aries</h2>\n<p>Saturn’s own table: Sun gives to the 1st, 2nd, 4th, 7th, 8th, 10th, 11th from itself; Moon 3, 6, 11; Mars 3, 5, 6, 10, 11, 12; Mercury 6, 8, 9, 10, 11, 12; Jupiter 5, 6, 11, 12; Venus 6, 11, 12; Saturn 3, 5, 6, 11; lagna 1, 3, 4, 6, 10, 11. For each contributor count from its sign to Aries and check if that count is in its list.</p>\n<div class=\"tbl\"><table><thead><tr><th>Contributor</th><th>Its sign (your chart)</th><th>Aries counted from it</th><th>In its list?</th><th>Bindu</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini</td><td>11th</td><td>Yes (1, 2, 4, 7, 8, 10, 11)</td><td>1</td></tr><tr><td>Moon</td><td>Cancer</td><td>10th</td><td>No (3, 6, 11)</td><td>0</td></tr><tr><td>Mars</td><td>Taurus</td><td>12th</td><td>Yes (3, 5, 6, 10, 11, 12)</td><td>1</td></tr><tr><td>Mercury</td><td>Gemini</td><td>11th</td><td>Yes (6, 8, 9, 10, 11, 12)</td><td>1</td></tr><tr><td>Jupiter</td><td>Pisces</td><td>2nd</td><td>No (5, 6, 11, 12)</td><td>0</td></tr><tr><td>Venus</td><td>Taurus</td><td>12th</td><td>Yes (6, 11, 12)</td><td>1</td></tr><tr><td>Saturn</td><td>Aries</td><td>1st</td><td>No (3, 5, 6, 11)</td><td>0</td></tr><tr><td>Lagna</td><td>Virgo</td><td>8th</td><td>No (1, 3, 4, 6, 10, 11)</td><td>0</td></tr></tbody></table></div>\n<p>Total: <strong>4 bindus</strong>. The engine’s table agrees: Saturn’s BAV in Aries is 4.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your seven BAVs, counted by house from the lagna (Virgo = 1st), from the engine:</p><div class=\"tbl\"><table><thead><tr><th>Planet</th><th>H1</th><th>H2</th><th>H3</th><th>H4</th><th>H5</th><th>H6</th><th>H7</th><th>H8</th><th>H9</th><th>H10</th><th>H11</th><th>H12</th><th>Total</th></tr></thead><tbody><tr><td>Sun</td><td>2</td><td>3</td><td>6</td><td>5</td><td>4</td><td>5</td><td>3</td><td>5</td><td>4</td><td>3</td><td>4</td><td>4</td><td>48</td></tr><tr><td>Moon</td><td>6</td><td>3</td><td>3</td><td>4</td><td>6</td><td>5</td><td>5</td><td>3</td><td>1</td><td>5</td><td>4</td><td>4</td><td>49</td></tr><tr><td>Mars</td><td>2</td><td>4</td><td>5</td><td>5</td><td>2</td><td>4</td><td>3</td><td>4</td><td>2</td><td>2</td><td>2</td><td>4</td><td>39</td></tr><tr><td>Mercury</td><td>2</td><td>6</td><td>4</td><td>5</td><td>4</td><td>7</td><td>3</td><td>5</td><td>6</td><td>4</td><td>3</td><td>5</td><td>54</td></tr><tr><td>Jupiter</td><td>6</td><td>4</td><td>3</td><td>4</td><td>5</td><td>5</td><td>8</td><td>3</td><td>4</td><td>7</td><td>3</td><td>4</td><td>56</td></tr><tr><td>Venus</td><td>4</td><td>5</td><td>5</td><td>4</td><td>6</td><td>4</td><td>3</td><td>4</td><td>4</td><td>3</td><td>6</td><td>4</td><td>52</td></tr><tr><td>Saturn</td><td>5</td><td>2</td><td>2</td><td>3</td><td>3</td><td>5</td><td>4</td><td>4</td><td>2</td><td>3</td><td>4</td><td>2</td><td>39</td></tr><tr><td><strong>SAV</strong></td><td>27</td><td>27</td><td>28</td><td>30</td><td>30</td><td>35</td><td>29</td><td>28</td><td>23</td><td>27</td><td>26</td><td>27</td><td>337</td></tr></tbody></table></div><p><strong>Verification of the SAV:</strong> the engine’s SAV by house from the lagna, <strong>[27, 27, 28, 30, 30, 35, 29, 28, 23, 27, 26, 27]</strong>, is confirmed. Three checks agree: (1) the engine’s built-in consistency check (each BAV total matches 48/49/39/54/56/52/39 and the SAV total is 337); (2) an independent recomputation from your planet positions and the stored contributor lists gives the same twelve numbers; (3) the 12 house values add up to 337. One limit: the checks confirm the arithmetic and the totals, not each stored cell against the original Sanskrit tables. A mistaken cell that preserved the totals would not show. Re-check with a second program.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari:</strong> the BPHS tables for the seven planets plus the lagna are the standard. The nodes are not contributors.</li>\n<li><strong>Software:</strong> some programs also offer variants that include Rahu and Ketu, or compute Ashtakavarga from the Moon or from D9. These are not the classical method; check which one your tool uses.</li>\n<li><strong>Jaimini and KP:</strong> neither relies on Ashtakavarga as a core method.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Cross-check the arithmetic by the fixed totals: every correct set of BAVs sums to 48, 49, 39, 54, 56, 52 and 39, and every correct SAV sums to 337. If your software gives anything else, it has an error or uses a variant. Also compare your own hand count of one cell, as in the Saturn example, against the program’s.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>BAV: for one planet, the bindus in each sign from eight contributors (seven planets and the lagna).</li><li>SAV: the seven BAVs added; the total is always 337.</li><li>Fixed BAV totals: 48, 49, 39, 54, 56, 52, 39.</li><li>Your SAV by house from lagna is [27, 27, 28, 30, 30, 35, 29, 28, 23, 27, 26, 27].</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Compute by hand the Saturn BAV for Pisces using the same method (contributors counted from their signs to Pisces). You should get 4. Then compute Taurus and check the engine’s table above (Saturn H9 = 2).</p>",
+   "listen": "Ashtakavarga scores strength differently from Shadbala. Each of the seven planets has a table, called the Bhinnashtakavarga or BAV, built from eight contributors: the seven planets and the lagna. Each contributor gives a benefic point, a bindu, to certain signs counted from its own sign, using fixed lists from the texts. The BAV totals are fixed: Sun forty-eight, Moon forty-nine, Mars thirty-nine, Mercury fifty-four, Jupiter fifty-six, Venus fifty-two, Saturn thirty-nine. Adding all seven BAVs gives the Sarvashtakavarga, or SAV, which always totals three hundred and thirty-seven. Your SAV by house from the lagna is twenty-seven, twenty-seven, twenty-eight, thirty, thirty, thirty-five, twenty-nine, twenty-eight, twenty-three, twenty-seven, twenty-six, twenty-seven. This was verified by three checks, though the checks confirm the arithmetic, not each stored cell against the original text.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Ashtakavarga (BAV and SAV construction; chapter numbers not verified here)",
+    "Phaladeepika, chapter on Ashtakavarga",
+    "Computed with the app's chart engine: BAV and SAV, consistency-check totals"
+   ],
+   "quiz": [
+    {
+     "q": "How many contributors does each planet’s BAV have?",
+     "o": [
+      "5",
+      "7",
+      "8",
+      "12"
+     ],
+     "a": 2,
+     "w": "Seven planets plus the lagna."
+    },
+    {
+     "q": "What is the total of the SAV in any chart?",
+     "o": [
+      "108",
+      "337",
+      "360",
+      "12"
+     ],
+     "a": 1,
+     "w": "The SAV always totals 337 (48+49+39+54+56+52+39)."
+    },
+    {
+     "q": "How many bindus does your Saturn BAV give to Aries?",
+     "o": [
+      "2",
+      "3",
+      "4",
+      "6"
+     ],
+     "a": 2,
+     "w": "Sun, Mars, Mercury and Venus each give a bindu: 4."
+    },
+    {
+     "q": "What is the highest number of bindus a planet can have in one sign?",
+     "o": [
+      "4",
+      "7",
+      "8",
+      "12"
+     ],
+     "a": 2,
+     "w": "Eight contributors, one bindu each at most."
+    },
+    {
+     "q": "Your SAV for the 6th house (Aquarius) is…",
+     "o": [
+      "23",
+      "27",
+      "30",
+      "35"
+     ],
+     "a": 3,
+     "w": "It is the highest in your chart at 35."
+    }
+   ]
+  },
+  {
+   "id": "8-4",
+   "title": "Reading house strength with the SAV, and the reductions",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> How many bindus does each of the eight contributors give at most, and what is the SAV total?</p>\n<p>The SAV gives a score to each sign, and so to each house. The average is 337 ÷ 12 ≈ 28. The usual way to read it is by comparison: houses well above 28 support the themes of that house, houses well below struggle for support.</p>\n<h2>A rule of thumb for houses</h2>\n<div class=\"tbl\"><table><thead><tr><th>SAV in a house</th><th>Reading (rule of thumb)</th></tr></thead><tbody><tr><td>About 30 or more</td><td>Strong support; the house’s themes tend to flow</td></tr><tr><td>About 25 to 29</td><td>Average to moderate</td></tr><tr><td>Below about 25</td><td>Thin support; matters need more effort and may come later</td></tr></tbody></table></div>\n<p>These cut-offs are common teaching values. Authors vary, and no single cut-off set is traced here to a specific verse, so use them as a guide. A house of average SAV is not a weak house; it can still be rescued by a strong lord or by Jupiter’s aspect.</p>\n<h2>Planets reading their own BAV</h2>\n<p>A planet’s results in a sign are read from <em>its own</em> BAV there. Compare the planet’s bindus in its own sign with that planet’s average (BAV total ÷ 12): Sun 4.0, Moon 4.1, Mars 3.3, Mercury 4.5, Jupiter 4.7, Venus 4.3, Saturn 3.3. Above the average is good; well below is weak.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your SAV by house, with occupants:</p><div class=\"tbl\"><table><thead><tr><th>House</th><th>Sign</th><th>SAV</th><th>Planets</th></tr></thead><tbody><tr><td>1</td><td>Virgo</td><td>27</td><td>—</td></tr><tr><td>2</td><td>Libra</td><td>27</td><td>—</td></tr><tr><td>3</td><td>Scorpio</td><td>28</td><td>—</td></tr><tr><td>4</td><td>Sagittarius</td><td>30</td><td>—</td></tr><tr><td>5</td><td>Capricorn</td><td>30</td><td>—</td></tr><tr><td>6</td><td>Aquarius</td><td><strong>35</strong></td><td>Ketu</td></tr><tr><td>7</td><td>Pisces</td><td>29</td><td>Jupiter</td></tr><tr><td>8</td><td>Aries</td><td>28</td><td>Saturn</td></tr><tr><td>9</td><td>Taurus</td><td><strong>23</strong></td><td>Mars, Venus</td></tr><tr><td>10</td><td>Gemini</td><td>27</td><td>Sun, Mercury</td></tr><tr><td>11</td><td>Cancer</td><td>26</td><td>Moon</td></tr><tr><td>12</td><td>Leo</td><td>27</td><td>Rahu</td></tr></tbody></table></div><ul>\n<li><strong>Highest: the 6th house (35).</strong> Work, service, health habits, competition and debts. A strong 6th is often read as an ability to outwork and outlast difficulty.</li>\n<li><strong>Lowest: the 9th house (23).</strong> Fortune, father, mentors, dharma. It holds your Venus and Mars. Venus in its own sign has 4 bindus in its own BAV there, Mars only 2 (Mars’s average is 3.3). A thin house with one of your best planets in it is a pattern worth tracking.</li>\n<li><strong>The 10th (27) and 11th (26)</strong> are close to average. Your 4th and 5th (30 each) support home and creativity.</li>\n<li><strong>Your planets in their own BAV:</strong> Jupiter 8 in Pisces (the highest possible, against an average of 4.7); Moon 4 and Mercury 4 (about average); Venus 4 and Saturn 4 in Aries (Saturn is above its average of 3.3); Sun 3 in Gemini (a little below its 4.0); Mars 2 in Taurus (clearly below 3.3).</li>\n</ul></div>\n<h2>The reductions, in outline</h2>\n<p>The classical texts add a step called {{term:shodhana|shodhana}} (“purification”) before using Ashtakavarga for finer work such as the length of life or the timing of events. There are two stages: <strong>trikona shodhana</strong>, in which, within each group of three signs forming a trine (for example Aries, Leo, Sagittarius), the smallest value is subtracted from each (with special cases when one value is zero or all three are equal); and <strong>ekadhipatya shodhana</strong>, which removes duplicated points for signs ruled by the same planet. The reduced totals are then multiplied by sign and planet factors to give figures called <em>Rashi pinda</em> and <em>Graha pinda</em>. This lesson does not teach the arithmetic; it needs a classical reference and a program that implements it. What matters for now is knowing that these reductions exist, that the plain SAV is <em>before</em> reduction, and that some interpretive rules in books use the reduced numbers.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Cut-offs:</strong> authors use different numbers for “strong” and “weak” SAV. Some read the difference between houses (for example the 11th against the 10th and the 12th), others read absolute levels. Such comparison rules are not traced here to a specific verse.</li>\n<li><strong>From which point:</strong> read the SAV by house from the lagna, and also from the Moon sign. The Moon-based view is a second perspective.</li>\n<li><strong>Reduced or raw:</strong> some texts base specific predictions on the reduced figures, others use the raw SAV.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>D9 and Shadbala:</strong> compare each planet’s own BAV score with its D9 dignity. Your Venus is strong by D9 (exalted) but only average in its own BAV (4 against 4.3); your Mars is weak in both (enemy sign in D9, 2 bindus in D1); your Jupiter is strong in the BAV (8) and only friendly in D9. Where methods agree, the reading is firm. <strong>Moon view:</strong> from your Moon the SAV runs [26, 27, 27, 27, 28, 30, 30, 35, 29, 28, 23, 27]: the strongest house is the 8th from the Moon (Aquarius) and the weakest is the 11th (Taurus).</p></div><p class=\"note\">If you use the SAV to predict, log the prediction and its date in your ledger. Ashtakavarga results are easy to rationalise afterwards.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>SAV average is about 28 per sign. Compare each house to the average.</li><li>Your strongest house is the 6th (35), your weakest the 9th (23).</li><li>A planet’s own BAV in its sign is the measure for that planet.</li><li>Shodhana (reductions) exist; the plain SAV is the unreduced one.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Rank your twelve houses by SAV and write one sentence about the highest and the lowest, then add a prediction to the ledger that you can check against life events.</p>",
+   "listen": "The Sarvashtakavarga gives each sign and so each house a score, and the average is about twenty-eight. Rule of thumb: around thirty or more is strong support, below twenty-five is thin. Your highest house is the sixth at thirty-five: work, service, competition and health habits. Your lowest is the ninth at twenty-three, holding your Venus and Mars: fortune, father, mentors and dharma. The tenth is twenty-seven and the eleventh twenty-six, both near average. A planet’s results in a sign should also be read from its own BAV there. Your Jupiter has eight bindus in Pisces, the highest possible. Your Mars has only two in Taurus, clearly below its average. The classical reductions, trikona and ekadhipatya shodhana, are outlined here but not taught; the plain SAV is the unreduced figure. Cut-offs vary between authors, so treat these ranges as guidance.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Ashtakavarga and on shodhana (reductions) (chapter numbers not verified here)",
+    "Phaladeepika, chapter on Ashtakavarga",
+    "Jyotish engine output: BAV, SAV by house from lagna and from Moon"
+   ],
+   "quiz": [
+    {
+     "q": "Your lowest SAV house is…",
+     "o": [
+      "The 6th",
+      "The 9th",
+      "The 11th",
+      "The 12th"
+     ],
+     "a": 1,
+     "w": "The 9th house (Taurus) has 23."
+    },
+    {
+     "q": "Which of your planets has the highest possible bindus in its own BAV sign?",
+     "o": [
+      "Jupiter in Pisces (8)",
+      "Venus in Taurus (4)",
+      "Mercury in Gemini (4)",
+      "Saturn in Aries (4)"
+     ],
+     "a": 0,
+     "w": "Jupiter has 8 bindus in Pisces."
+    },
+    {
+     "q": "Shodhana means…",
+     "o": [
+      "Combining the BAVs into one table",
+      "Reduction (purification) of the points",
+      "Adding the lagna to each BAV table",
+      "Counting aspects between the planets"
+     ],
+     "a": 1,
+     "w": "Trikona and ekadhipatya shodhana reduce the totals before further figures are computed."
+    },
+    {
+     "q": "The average SAV per sign is about…",
+     "o": [
+      "12",
+      "28",
+      "48",
+      "56"
+     ],
+     "a": 1,
+     "w": "337 ÷ 12 ≈ 28."
+    },
+    {
+     "q": "Which statement matches your chart?",
+     "o": [
+      "The 10th house is the strongest",
+      "The 6th house is the strongest",
+      "The 1st house is the weakest",
+      "The 12th house is the strongest"
+     ],
+     "a": 1,
+     "w": "The 6th (Aquarius) has 35, the highest."
+    }
+   ]
+  },
+  {
+   "id": "8-5",
+   "title": "Transit scoring and Kakshya",
+   "mins": 30,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> What is your SAV for the 9th house, and which two planets are in it?</p>\n<p>The most practical use of Ashtakavarga is in {{term:gochar|gochar}} (transits). The classical question for a transiting planet is: <em>does the sign it is entering carry bindus for it in your chart?</em></p>\n<h2>Step 1: sign-level scoring</h2>\n<ol>\n<li>Take the transiting planet (Sun to Saturn) and the sign it is in.</li>\n<li>Read that planet’s <strong>own BAV</strong> bindus in that sign (from your birth chart).</li>\n<li>Read the sign’s SAV as the background.</li>\n</ol>\n<p>Rule of thumb: 4 or more bindus in the planet’s own BAV tends to a smoother passage; 3 or fewer tends to a harder one. Teachers vary (some say 5 or more is strong and 2 or fewer poor), so treat the line as a guide.</p>\n<h2>Step 2: {{term:kakshya|Kakshya}}, the finer clock</h2>\n<p>Each sign is split into eight kakshyas of 3°45′, ruled in order by Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon and the lagna. When a transiting planet is in a kakshya whose lord gave a bindu in its BAV for that sign, the stretch is read as supportive; when the lord gave no bindu, it is read as a flatter or more difficult stretch.</p>\n<div class=\"tbl\"><table><thead><tr><th>Kakshya</th><th>Degrees in the sign</th><th>Lord</th></tr></thead><tbody><tr><td>1</td><td>0°00′ to 3°45′</td><td>Saturn</td></tr><tr><td>2</td><td>3°45′ to 7°30′</td><td>Jupiter</td></tr><tr><td>3</td><td>7°30′ to 11°15′</td><td>Mars</td></tr><tr><td>4</td><td>11°15′ to 15°00′</td><td>Sun</td></tr><tr><td>5</td><td>15°00′ to 18°45′</td><td>Venus</td></tr><tr><td>6</td><td>18°45′ to 22°30′</td><td>Mercury</td></tr><tr><td>7</td><td>22°30′ to 26°15′</td><td>Moon</td></tr><tr><td>8</td><td>26°15′ to 30°00′</td><td>Lagna</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Worked transit examples from the engine and your Ashtakavarga (the date of writing is 27 Nov 2026; positions at noon IST).</p><div class=\"tbl\"><table><thead><tr><th>Date</th><th>Planet</th><th>Sign, house from lagna</th><th>SAV</th><th>Own BAV</th><th>Kakshya (lord gave a bindu?)</th></tr></thead><tbody><tr><td>27 Nov 2026</td><td>Saturn</td><td>Pisces 13°52′, 7th</td><td>29</td><td>4</td><td>4th, Sun: yes</td></tr><tr><td>27 Nov 2026</td><td>Jupiter</td><td>Leo 2°23′, 12th</td><td>27</td><td>4</td><td>1st, Saturn: yes</td></tr><tr><td>26 Jan 2027</td><td>Saturn</td><td>Pisces 15°34′, 7th</td><td>29</td><td>4</td><td>5th, Venus: yes</td></tr><tr><td>26 Jan 2027</td><td>Jupiter</td><td>Cancer 29°50′, 11th</td><td>26</td><td>3</td><td>8th, Lagna: yes</td></tr></tbody></table></div><p>Saturn’s passage through Pisces gives bindus from the Sun, Mars, Mercury and Venus kakshyas (7°30′ to 22°30′), and none from the first two or last two stretches. Saturn turns direct on 11 Dec 2026 at Pisces 13°42′. Jupiter turns retrograde on 13 Dec 2026 at Leo 2°47′, moves back into Cancer on 25 Jan 2027 and turns direct on 13 Apr 2027 at Cancer 22°45′.</p>\n<p><strong>Reading, as hypotheses:</strong> Saturn in your 7th house has an average, supportive score (4 bindus, SAV 29). Jupiter’s move back into Cancer, your Moon’s sign and the 11th house, lands in a sign with lower numbers (Jupiter’s own BAV 3, SAV 26) than Leo. Write what you expect these transits to mean for your partnerships (Saturn, 7th) and your income and network (Jupiter, 11th), with the date, in your prediction ledger. Do not treat the numbers as a forecast.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Classical gochar from the Moon:</strong> a separate method that judges a transit by the house from the Moon. Jupiter in the 2nd from the Moon and Saturn in the 9th from the Moon are examples. Your Moon is in Cancer, so Jupiter in Leo is the 2nd (a favourable house for Jupiter in the commonly stated rule) and Saturn in Pisces is the 9th (not on Saturn’s favourable list of 3rd, 6th and 11th). This differs from the Ashtakavarga reading. The classical method also checks vedha (an obstructing planet); that check is not done here. Neither is “the correct one”.</li>\n<li><strong>From the lagna or from the Moon:</strong> Ashtakavarga transit scoring can be done from the birth chart signs (as here) or counted from the Moon.</li>\n<li><strong>Thresholds:</strong> the bindu cut-offs for transits vary by teacher.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run the same transit in three views (Ashtakavarga bindus, house from the Moon, house from the lagna) and note where they agree. Re-check how a similar transit felt in the past, using your life records. Saturn’s previous passage through Pisces (1995 to April 1998) ended before your birth, so use Jupiter instead: it was in Cancer from about 2 Jun to 31 Oct 2026 (and 18 Oct to 5 Dec 2025), and before that from about 19 Jun 2014 to 14 Jul 2015. Kakshya boundaries are 3°45′ wide, so an error of a few arcminutes in a planet’s position will rarely flip them, but a slow planet takes many weeks to cross one.</p></div><p class=\"note\">Transit scoring is a hypothesis generator. Put each interpretation in your prediction ledger with the date, and mark the outcome later.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Sign-level: the planet’s own BAV bindus in the sign it enters, with the SAV as background.</li><li>Kakshya: eight 3°45′ slices per sign, lords Saturn to Lagna in that order.</li><li>Gochar from the Moon is another method and may disagree.</li><li>Log each transit reading as a dated hypothesis.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Find the transit position of Mars today (use the engine’s events or your program), look up Mars’s BAV in that sign for your chart, and note the kakshya and its lord. Write whether that lord gave a bindu.</p>",
+   "listen": "Ashtakavarga is most practical for transits. Take the transiting planet and the sign it is entering, read that planet’s own bindus in that sign from your birth chart, and use the sign’s total score as background. Four or more bindus is generally smoother, three or fewer harder, though teachers vary. Kakshya refines this: each sign has eight slices of three degrees forty-five minutes, ruled in order by Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon and the lagna, and a lord that gave a bindu makes the stretch supportive. Saturn is in Pisces at thirteen degrees fifty-two minutes, in the Sun’s kakshya, with four bindus and a sign score of twenty-nine. Jupiter is in Leo with four bindus, and it moves back into Cancer in January with three. The classical Moon-based gochar method can disagree, so log each reading as a dated hypothesis rather than a forecast.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Ashtakavarga and the transit use of bindus, and on gochar (chapter numbers not verified here)",
+    "Phaladeepika, chapters on gochar and Ashtakavarga",
+    "Jyotish engine output: events (transits), BAV and SAV"
+   ],
+   "quiz": [
+    {
+     "q": "Each sign is divided into how many kakshyas?",
+     "o": [
+      "4",
+      "8",
+      "9",
+      "12"
+     ],
+     "a": 1,
+     "w": "Eight kakshyas of 3°45′."
+    },
+    {
+     "q": "In what order do the kakshya lords run?",
+     "o": [
+      "Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Lagna",
+      "Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon, Lagna",
+      "Moon, Sun, Mars, Venus, Mercury, Jupiter, Saturn, Lagna",
+      "Jupiter, Venus, Saturn, Mars, Sun, Mercury, Moon, Lagna"
+     ],
+     "a": 1,
+     "w": "The order is Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon, Lagna."
+    },
+    {
+     "q": "Saturn at Pisces 13°52′ is in which kakshya?",
+     "o": [
+      "The 3rd, Mars",
+      "The 4th, Sun",
+      "The 5th, Venus",
+      "The 6th, Mercury"
+     ],
+     "a": 1,
+     "w": "11°15′ to 15°00′ is the 4th kakshya, ruled by the Sun."
+    },
+    {
+     "q": "For transit scoring, which BAV do you read?",
+     "o": [
+      "The Sun’s BAV for every transiting planet",
+      "The SAV total of the sign, without any BAV",
+      "The transiting planet’s own BAV in that sign",
+      "The lagna’s BAV for any transiting planet"
+     ],
+     "a": 2,
+     "w": "Read the transiting planet’s own BAV in that sign, with the SAV as background."
+    },
+    {
+     "q": "Jupiter in Leo is which house from your Moon?",
+     "o": [
+      "1st",
+      "2nd",
+      "5th",
+      "9th"
+     ],
+     "a": 1,
+     "w": "Cancer to Leo is the 2nd sign."
+    }
+   ]
+  },
+  {
+   "id": "8-6",
+   "title": "Synthesis: your strengths together — and stage test",
+   "mins": 40,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name three components of Shadbala and the three checks that verified your SAV.</p>\n<p>This lesson brings together the three views of strength you now have for your chart: dignity and D9 (Stages 4 and 7), Ashtakavarga (this stage), and the Shadbala <em>concept</em> (no numbers yet). It then tests whether they agree and what that means for the yogas of Stage 6.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>D1 dignity</th><th>D9 sign (dignity)</th><th>Own BAV bindus (avg)</th><th>Reading</th></tr></thead><tbody><tr><td>Sun</td><td>Neutral (Gemini)</td><td>Capricorn (enemy)</td><td>3 (4.0)</td><td>Mildly weak across views</td></tr><tr><td>Moon</td><td>Own (Cancer)</td><td>Virgo (friend)</td><td>4 (4.1)</td><td>Steady</td></tr><tr><td>Mars</td><td>Neutral, combust (Taurus)</td><td>Virgo (enemy)</td><td>2 (3.3)</td><td>Weakest across views</td></tr><tr><td>Mercury</td><td>Own (Gemini)</td><td>Gemini (own, vargottama)</td><td>4 (4.5)</td><td>Strong, a little below its average in bindus</td></tr><tr><td>Jupiter</td><td>Own (Pisces)</td><td>Leo (friend)</td><td>8 (4.7)</td><td>Very strong in D1 and BAV</td></tr><tr><td>Venus</td><td>Own (Taurus)</td><td>Pisces (exalted)</td><td>4 (4.3)</td><td>Strong in D1 and D9</td></tr><tr><td>Saturn</td><td>Debilitated (Aries)</td><td>Gemini (friend)</td><td>4 (3.3)</td><td>Weak in D1, supported elsewhere</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><ul>\n<li><strong>Where the methods agree:</strong> Mars is weak and the Sun is mildly weak in every view. Venus and Mercury are strong by dignity and D9 but only average in their own BAV (4 each, a little below their averages of 4.3 and 4.5); Jupiter is strong by dignity and BAV but only friendly in D9. Saturn’s D1 debilitation is softened by a friendly D9 sign and an above-average BAV (4 against 3.3). That supports the partial cancellation judged in Stage 6.</li>\n<li><strong>The Stage 6 yogas, re-read with Ashtakavarga:</strong> Hamsa (Jupiter, 8 bindus in Pisces) gets the strongest support; Bhadra (Mercury, 4 bindus, 27 SAV in the 10th house) is sound but not exceptional; Harsha sits in a house of 28 bindus. This leaves the Stage 6 ranking intact: Bhadra and Hamsa strong in formation, Harsha moderate.</li>\n<li><strong>Where it is thin:</strong> the 9th house (SAV 23) holds Venus and Mars: strong Venus, weak Mars, low house total.</li>\n<li><strong>Shadbala:</strong> not computed. When the numbers arrive, test your ledger prediction from lesson 8-2 and compare the rank order with this table.</li>\n<li><strong>Transits now:</strong> Saturn in Pisces (7th house) has 4 bindus and is direct from 11 Dec 2026. Jupiter moves back into Cancer (11th house) on 25 Jan 2027 with 3 bindus. Write both as dated hypotheses in the ledger.</li>\n</ul></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>A reader trained in Jaimini would not use Shadbala or Ashtakavarga at all. A KP reader would judge strength by star lords and sub-lords. This is a Parashari-only synthesis. If you want a check that does not depend on Parashari, compare your reading with the Jaimini karakas (your Atmakaraka is Mars, which is the weakest planet here, a tension worth examining).</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p><strong>Stability tests:</strong> the Ashtakavarga bindus depend on the lagna as a contributor, so a birth time outside 11:23 to 13:35 would change the lagna sign, and the lagna is a contributor, so every BAV would change. Inside that window the BAVs, the SAV by sign and the SAV by house do not change. A shift of ayanamsa (for example Raman) that moves Mars into Gemini would change the contributor positions for Mars and every table that uses them. Re-run the SAV with another ayanamsa to see how much it moves.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Dignity, D9, BAV and (later) Shadbala are four views of strength. Look for agreement and name disagreements.</li><li>Venus, Jupiter and Mercury are your strong planets; Mars is the weakest across views.</li><li>SAV by house from lagna: [27, 27, 28, 30, 30, 35, 29, 28, 23, 27, 26, 27].</li><li>Shadbala numbers are not available yet; do not guess them.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write a five-line “strength card” for your chart: strongest planet, weakest planet, strongest house, weakest house, and one disagreement between methods. Then take the seven-question stage test below (aim for at least six correct).</p>",
+   "listen": "This synthesis puts your strength views together. By dignity and the navamsa, Venus, Jupiter and Mercury are strong, though Venus and Mercury are only average in their own Ashtakavarga scores. Mars is the weakest in every view, with the Sun mildly weak. Saturn’s debilitation in D1 is softened by a friendly navamsa sign and an above-average four bindus. Jupiter has eight bindus in Pisces, which supports Hamsa yoga from Stage 6. Mercury has four, which makes Bhadra sound but not exceptional. Your SAV by house is twenty-seven, twenty-seven, twenty-eight, thirty, thirty, thirty-five, twenty-nine, twenty-eight, twenty-three, twenty-seven, twenty-six, twenty-seven, with the sixth house highest and the ninth lowest. Shadbala numbers are not available yet, so none are given. The skill is to compare the methods, name where they disagree and log dated hypotheses rather than treat any number as a forecast.",
+   "sources": [
+    "Brihat Parashara Hora Shastra, chapters on Shadbala and Ashtakavarga (chapter numbers not verified here)",
+    "Jaimini Sutras, for the contrasting karaka-based method",
+    "Jyotish engine output: natal chart, BAV, SAV, D9, events"
+   ],
+   "quiz": [
+    {
+     "q": "What is the required Shadbala minimum for the Sun?",
+     "o": [
+      "5.0 rupas",
+      "6.0 rupas",
+      "6.5 rupas",
+      "7.0 rupas"
+     ],
+     "a": 2,
+     "w": "Sun 6.5, Moon 6, Mars 5, Mercury 7, Jupiter 6.5, Venus 5.5, Saturn 5."
+    },
+    {
+     "q": "Which Shadbala component gives Jupiter and Mercury their best house?",
+     "o": [
+      "Kala bala",
+      "Dik bala",
+      "Cheshta bala",
+      "Drik bala"
+     ],
+     "a": 1,
+     "w": "Directional strength: the 1st house for both."
+    },
+    {
+     "q": "The SAV of any chart totals…",
+     "o": [
+      "108",
+      "337",
+      "360",
+      "500"
+     ],
+     "a": 1,
+     "w": "The seven BAV totals sum to 337."
+    },
+    {
+     "q": "Which of your planets has 8 bindus in its own sign?",
+     "o": [
+      "Venus",
+      "Saturn",
+      "Jupiter",
+      "Mercury"
+     ],
+     "a": 2,
+     "w": "Jupiter has 8 in Pisces."
+    },
+    {
+     "q": "Your SAV-strongest house is…",
+     "o": [
+      "The 6th (35)",
+      "The 10th (27)",
+      "The 9th (23)",
+      "The 1st (27)"
+     ],
+     "a": 0,
+     "w": "The 6th (Aquarius) at 35."
+    },
+    {
+     "q": "A transiting planet is at Pisces 13°52′. Its kakshya lord is…",
+     "o": [
+      "Mars",
+      "Sun",
+      "Venus",
+      "Saturn"
+     ],
+     "a": 1,
+     "w": "The 4th kakshya, 11°15′ to 15°00′, belongs to the Sun."
+    },
+    {
+     "q": "What does the engine NOT yet give you?",
+     "o": [
+      "BAV and SAV",
+      "Shadbala numbers",
+      "Divisional charts",
+      "Transit positions"
+     ],
+     "a": 1,
+     "w": "Shadbala is not computed yet; this course gives no Shadbala numbers."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,651 @@
+{
+ "stage": 4,
+ "title": "Lordship, dignity and aspects",
+ "level": "Core",
+ "goal": "Done when you can judge the dignity, relationships, functional nature, aspects and house placement of each of your 12 house lords, and justify each verdict with a source and one cross-check.",
+ "terms": {
+  "exaltation": [
+   "Uccha · उच्च (exaltation)",
+   "The sign where a planet is strongest. BPHS gives the deepest point inside it: Sun 10° Aries, Moon 3° Taurus, Mars 28° Capricorn, Mercury 15° Virgo, Jupiter 5° Cancer, Venus 27° Pisces, Saturn 20° Libra."
+  ],
+  "debilitation": [
+   "Neecha · नीच (debilitation)",
+   "The sign opposite a planet’s exaltation, where it is weakest. The deepest fall point is the same degree as the deepest exaltation point, in the opposite sign."
+  ],
+  "moolatrikona": [
+   "Moolatrikona · मूलत्रिकोण",
+   "A stretch of one sign where a planet is treated as a little stronger than in the rest of its own sign. For the Sun it is Leo 0°–20°."
+  ],
+  "swakshetra": [
+   "Swakshetra · स्वक्षेत्र (own sign)",
+   "A sign ruled by the planet. The Sun and Moon own one sign each; the other five planets own two."
+  ],
+  "ucchabala": [
+   "Uccha bala · उच्चबल",
+   "Exaltation strength: the planet’s angular distance from its deepest fall point, divided by 3, giving 0 to 60 virupas. It is the first part of Sthana bala in Shadbala (BPHS ch. 27)."
+  ],
+  "maitri": [
+   "Maitri · मैत्री (friendship)",
+   "The relationship between two planets: friend, neutral or enemy. It decides how comfortable a planet is in the other’s sign."
+  ],
+  "tatkalika": [
+   "Tatkalika maitri · तात्कालिक मैत्री",
+   "Temporary friendship, read from one chart: planets in the 2nd, 3rd, 4th, 10th, 11th or 12th from each other are friends; in the 1st, 5th, 6th, 7th, 8th or 9th they are enemies."
+  ],
+  "panchadha": [
+   "Panchadha maitri · पञ्चधा मैत्री",
+   "The five-fold relationship: natural and temporary friendship combined into great friend, friend, neutral, enemy or great enemy."
+  ],
+  "grahayuddha": [
+   "Graha yuddha · ग्रहयुद्ध (planetary war)",
+   "Two of Mars, Mercury, Jupiter, Venus or Saturn within 1° of longitude. One planet is judged the winner and the other the loser; the loser is said to lose strength."
+  ],
+  "cheshta": [
+   "Cheshta bala · चेष्टाबल",
+   "Motional strength in Shadbala. A retrograde (vakra) planet gets the maximum, 60 virupas, in the BPHS scheme."
+  ],
+  "functional": [
+   "Functional benefic or malefic",
+   "A planet’s nature for one particular lagna, decided by the houses it rules, not by its natural nature. Jupiter is a natural benefic but can be a functional malefic."
+  ],
+  "yogakaraka": [
+   "Yogakaraka · योगकारक",
+   "A planet that rules both a kendra and a trikona for a given lagna (for example Saturn for Libra lagna). The Parashari texts treat it as the most helpful planet for that lagna."
+  ],
+  "maraka": [
+   "Maraka · मारक",
+   "A planet tied to the 2nd and 7th houses, the houses that stand twelfth from the longevity houses 3 and 8. In practice it signals strain on vitality in its periods; it is not a death sentence."
+  ],
+  "kendradhipati": [
+   "Kendradhipati dosha · केन्द्राधिपत्य दोष",
+   "The blemish a natural benefic is said to take when it rules a kendra (1st, 4th, 7th or 10th). The lagna lord is excused."
+  ],
+  "drishti": [
+   "Graha drishti · ग्रहदृष्टि",
+   "Planetary aspect, the Parashari kind: every planet sees the 7th house; Mars also sees the 4th and 8th, Jupiter the 5th and 9th, Saturn the 3rd and 10th."
+  ],
+  "rashidrishti": [
+   "Rashi drishti · राशिदृष्टि",
+   "Sign aspect, the Jaimini kind: movable signs see the fixed signs except the adjacent one, fixed signs see the movable signs except the adjacent one, dual signs see the other dual signs."
+  ],
+  "bhavesha": [
+   "Bhavesha · भावेश (house lord)",
+   "The planet that rules the sign on a house. Its own sign, house, dignity and company decide how that house delivers."
+  ],
+  "viparita": [
+   "Viparita Raja Yoga · विपरीत राजयोग",
+   "Success through reversal: the lord of the 6th, 8th or 12th sits in another of those three houses. Your Saturn, 6th lord in the 8th, forms the Harsha variety."
+  ],
+  "asta": [
+   "Asta · अस्त",
+   "Combustion. See also the Stage 1 term “combust”. The Sun’s closeness weakens a planet; the orb differs by planet."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "4-1",
+   "title": "Dignity in degrees: exaltation, moolatrikona, own sign",
+   "mins": 20,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Your Moon is in Pushya. Which planet’s mahadasha was running when you were born, and which sign is the Moon in?</p>\n<p>In Stage 1 you graded a planet by its sign. Classical dignity is finer than that: it is measured in <strong>degrees</strong>. The same sign can hold a planet at its peak, at a good level, or merely at home, depending on how far into the sign it has travelled. This lesson gives you the degree map from BPHS chapter 3 and shows how to turn it into a number.</p>\n<h2>The degree map</h2>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Deepest exaltation</th><th>Deepest fall (debilitation)</th><th>Moolatrikona</th><th>Rest of own sign</th></tr></thead><tbody><tr><td>Sun</td><td>Aries 10°</td><td>Libra 10°</td><td>Leo 0°–20°</td><td>Leo 20°–30°</td></tr><tr><td>Moon</td><td>Taurus 3°</td><td>Scorpio 3°</td><td>Taurus 3°–30°</td><td>Cancer, all 30°</td></tr><tr><td>Mars</td><td>Capricorn 28°</td><td>Cancer 28°</td><td>Aries 0°–12°</td><td>Aries 12°–30°; Scorpio</td></tr><tr><td>Mercury</td><td>Virgo 15°</td><td>Pisces 15°</td><td>Virgo 15°–20°</td><td>Virgo 20°–30°; Gemini</td></tr><tr><td>Jupiter</td><td>Cancer 5°</td><td>Capricorn 5°</td><td>Sagittarius 0°–10°</td><td>Sagittarius 10°–30°; Pisces</td></tr><tr><td>Venus</td><td>Pisces 27°</td><td>Virgo 27°</td><td>Libra 0°–15°</td><td>Libra 15°–30°; Taurus</td></tr><tr><td>Saturn</td><td>Libra 20°</td><td>Aries 20°</td><td>Aquarius 0°–20°</td><td>Aquarius 20°–30°; Capricorn</td></tr></tbody></table></div>\n<p>The rules behind the table, as BPHS ch. 3 (verses 49 to 54, in R. Santhanam’s translation) states them:</p>\n<ul><li>Each planet is {{term:exaltation|exalted}} in one sign and {{term:debilitation|debilitated}} in the sign opposite. The deepest point of each is the same degree.</li><li>Inside its own sign a planet may have a {{term:moolatrikona|moolatrikona}} stretch. Mercury is the clearest case: in Virgo the first 15° are the exaltation zone, the next 5° moolatrikona, the last 10° plain own sign.</li><li>Sun and Moon each own one sign. Mars, Mercury, Jupiter, Venus and Saturn each own two; only one of the two carries a moolatrikona stretch (Mars Aries, Mercury Virgo, Jupiter Sagittarius, Venus Libra, Saturn Aquarius).</li><li>The Moon’s exaltation zone (0°–3° Taurus) comes first and its moolatrikona is the rest of Taurus. Tables that count the first degree as “1°” print this as 4°–30°; it is the same stretch. The same convention prints Mercury’s Virgo stretch as 16°–20°.</li></ul>\n<p class=\"note\">Check your software. The engine behind this app labels “moolatrikona” by sign only, without testing the degree. A planet at 18° Virgo for Mercury is moolatrikona; at 25° Virgo it is only in its own sign. You apply the degree test yourself. None of your planets sits in a moolatrikona sign, so this does not change your chart.</p>\n<h2>The ladder, and what it is worth</h2>\n<p>BPHS ch. 3 verses 59 and 60 give the share of its good effects a planet can deliver. Translations word the verse slightly differently (the neutral-sign share is “very little” in some), but the ladder is conventionally taught like this:</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet is in</th><th>Share of full good effect</th></tr></thead><tbody><tr><td>Exaltation</td><td>Full</td></tr><tr><td>Moolatrikona</td><td>Three-quarters</td></tr><tr><td>Own sign</td><td>One-half</td></tr><tr><td>Friend’s sign</td><td>One-quarter</td></tr><tr><td>Neutral’s sign</td><td>One-eighth</td></tr><tr><td>Enemy’s sign or debilitation</td><td>Nil (the inauspicious effects are the reverse of the above)</td></tr></tbody></table></div>\n<p>Shadbala later turns the same ladder into virupas: moolatrikona 45, own sign 30, great friend 20, friend 15, neutral 10, enemy 4, great enemy 2 (BPHS ch. 27 verses 2 to 4, as Santhanam renders them). Other Shadbala texts and most software use 22.5, 15, 7.5, 3.75 and 1.875 for the five friendship grades, so check which scale a printout uses. You will meet that in Stage 8.</p>\n<h2>A number for every degree: uccha bala</h2>\n<p>Exaltation is not an on/off switch. The closer a planet is to its deepest exaltation point, the stronger it is, and the closer to its deepest fall point, the weaker. BPHS ch. 27 verse 1 gives the formula:</p>\n<ol><li>Take the planet’s longitude and subtract the longitude of its deepest fall point.</li><li>If the answer is over 180°, subtract it from 360°.</li><li>Divide by 3. The result is the strength in virupas, from 0 to 60.</li></ol>\n<p><strong>Worked example, your Saturn.</strong> Deepest fall point: Aries 20°, which is longitude 20°. Saturn is at Aries 7°41′, longitude 7.69°. Distance 12.31°. Divide by 3: <strong>4.1 virupas out of 60</strong>. Saturn is nearly at the bottom of its range.</p>\n<p><strong>Try the Moon.</strong> Deepest fall: Scorpio 3°, longitude 213°. The Moon is at Cancer 8°04′, longitude 98.07°. Distance 114.93°, under 180°, so divide by 3: 38.3 virupas. Check your own arithmetic against the table below.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your seven planets, with the dignity zone and the uccha bala from the engine’s longitudes:</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Position</th><th>Zone</th><th>Uccha bala (of 60)</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini 10°41′</td><td>Gemini, Mercury’s sign (neutral by the natural table)</td><td>39.8</td></tr><tr><td>Moon</td><td>Cancer 8°04′</td><td>Cancer, own sign</td><td>38.3</td></tr><tr><td>Mars</td><td>Taurus 29°19′</td><td>Taurus, Venus’s sign (neutral by the natural table)</td><td>19.6</td></tr><tr><td>Mercury</td><td>Gemini 28°10′</td><td>Gemini, own sign</td><td>34.4</td></tr><tr><td>Jupiter</td><td>Pisces 3°28′</td><td>Pisces, own sign</td><td>19.5</td></tr><tr><td>Venus</td><td>Taurus 8°18′</td><td>Taurus, own sign</td><td>46.2</td></tr><tr><td>Saturn</td><td>Aries 7°41′</td><td>Aries, debilitated; 12°19′ short of the deepest fall point</td><td>4.1</td></tr></tbody></table></div>\n<p>Venus (46.2) is your strongest planet by this one measure and Saturn (4.1) your weakest. Notice what the number does not say: Saturn’s weakness is partly offset because its debilitation is cancelled ({{term:neechabhanga|neechabhanga}}), and Venus’s strength is only one component of Shadbala. Uccha bala is a first filter, not a verdict.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>BPHS ranges (Santhanam’s translation):</strong> the table above. This is the standard Parashari reference.</li>\n<li><strong>Narrower moolatrikona ranges:</strong> some modern tables list shorter stretches (Sun 1°–10° and Moon 4°–20°). No verse source for them has been traced, so use the BPHS ranges unless your teacher says otherwise.</li>\n<li><strong>Rahu and Ketu:</strong> Santhanam notes that the texts hold different views on their exaltation. The most common pairs are Taurus and Scorpio, or Gemini and Sagittarius. Do not grade a node’s dignity until you know which your teacher uses.</li>\n<li><strong>Jaimini and KP:</strong> Jaimini uses exaltation and debilitation (for example in its raja yogas) but not this virupa ladder; it judges mainly through karakas and rashi aspects. KP does not use the ladder and judges through star lord and sub-lord.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Test a dignity call against the navamsa (D9): a planet strong in D1 and in D9 is more reliable. Your Mercury is vargottama (Gemini in both). Then test the ayanamsa. Under the Raman ayanamsa your Mars moves from Taurus 29°19′ to Gemini 0°46′, a change of sign and of dignity; under the KP ayanamsa it stays in Taurus (29°25′). A call that survives both is safer than one that flips.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Dignity is measured in degrees: exaltation point, moolatrikona stretch, plain own sign.</li><li>Uccha bala = (distance from the deepest fall point ÷ 3) virupas, maximum 60.</li><li>Check the degree yourself; some software labels moolatrikona by sign alone.</li><li>Your Saturn: 4.1 of 60. Your Venus: 46.2 of 60.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Compute the uccha bala for your Sun and your Mars by hand, using the deepest fall points in the table. Compare with 39.8 and 19.6. Then write one sentence on why Mars scoring 19.6 and being combust are two separate facts.</p>\n",
+   "listen": "Classical dignity is measured in degrees. Each planet has a deepest exaltation point: Sun ten degrees Aries, Moon three Taurus, Mars twenty eight Capricorn, Mercury fifteen Virgo, Jupiter five Cancer, Venus twenty seven Pisces and Saturn twenty Libra. The deepest fall point is the same degree in the opposite sign. Inside a planet’s own sign there may be a moolatrikona stretch: Sun Leo zero to twenty, Mars Aries zero to twelve, Mercury Virgo fifteen to twenty, Jupiter Sagittarius zero to ten, Venus Libra zero to fifteen, Saturn Aquarius zero to twenty, and the Moon in Taurus after its first three degrees. Uccha bala turns this into a number: take the distance from the deepest fall point and divide by three. Your Saturn, debilitated at seven degrees forty one minutes of Aries, scores only four point one virupas out of sixty. Your Venus scores forty six point two. Check the degree yourself, because some software labels moolatrikona by sign alone.",
+   "sources": [
+    "BPHS ch. 3 (planetary characters and description), verses 49 to 54 on exaltation, debilitation and moolatrikona, and 59 to 60 on the share of effects; R. Santhanam’s translation numbering",
+    "BPHS ch. 27 (evaluation of strengths), verse 1 on uccha bala and verses 2 to 4 on saptavargaja values",
+    "Moon’s moolatrikona start and the narrower modern ranges: cross-checked against secondary tables only"
+   ],
+   "quiz": [
+    {
+     "q": "Where is Jupiter’s deepest exaltation point?",
+     "o": [
+      "Cancer 15°",
+      "Cancer 5°",
+      "Capricorn 5°",
+      "Sagittarius 10°"
+     ],
+     "a": 1,
+     "w": "BPHS ch. 3: Jupiter exalts in Cancer, deepest at 5°. Capricorn 5° is the deepest fall."
+    },
+    {
+     "q": "Mercury stands at 17° Virgo. Which zone is it in?",
+     "o": [
+      "Exaltation zone (0°–15°)",
+      "Plain own sign (20°–30°)",
+      "Moolatrikona (15°–20°)",
+      "Debilitation"
+     ],
+     "a": 2,
+     "w": "In Virgo Mercury has 15° of exaltation zone, then 5° of moolatrikona, then 10° of plain own sign."
+    },
+    {
+     "q": "Your Saturn is at Aries 7°41′ and its deepest fall point is Aries 20°. Its uccha bala is about…",
+     "o": [
+      "4 virupas",
+      "12 virupas",
+      "40 virupas",
+      "56 virupas"
+     ],
+     "a": 0,
+     "w": "(20° − 7.69°) ÷ 3 = 4.1. A planet near its deepest fall point scores close to zero."
+    },
+    {
+     "q": "In the BPHS ladder, a planet in its plain own sign gives about what share of its full good effect?",
+     "o": [
+      "All of it",
+      "None",
+      "One-quarter",
+      "One-half"
+     ],
+     "a": 3,
+     "w": "Exaltation full, moolatrikona three-quarters, own sign one-half, friend one-quarter."
+    }
+   ]
+  },
+  {
+   "id": "4-2",
+   "title": "Friends and enemies: natural, temporary and five-fold",
+   "mins": 20,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> In which part of Virgo does Mercury have its moolatrikona, and how many degrees is that stretch?</p>\n<p>A planet sitting in another planet’s sign is a guest in someone else’s house. Whether it is welcomed depends on {{term:maitri|friendship}}. Jyotish measures that friendship twice and then combines the two results. That is the five-fold relationship, taught in BPHS ch. 3.</p>\n<h2>Step 1: natural friendship (permanent)</h2>\n<p>The natural relationships do not depend on any chart. BPHS ch. 3 verse 55 supplies a rule that regenerates the whole table:</p>\n<ol><li>Start from the planet’s moolatrikona sign.</li><li>The lords of the 2nd, 4th, 5th, 8th, 9th and 12th signs from it are its friends.</li><li>The lords of the 3rd, 6th, 7th, 10th and 11th signs are its enemies.</li><li>The lord of its exaltation sign is always counted a friend.</li><li>A planet counted as both friend and enemy becomes neutral. A planet not counted at all is neutral.</li></ol>\n<p><strong>Worked example, Mars.</strong> Moolatrikona Aries. Signs 2, 4, 5, 8, 9, 12 from Aries are Taurus, Cancer, Leo, Scorpio, Sagittarius, Pisces, lords Venus, Moon, Sun, Mars, Jupiter, Jupiter. Signs 3, 6, 7, 10, 11 are Gemini, Virgo, Libra, Capricorn, Aquarius, lords Mercury, Mercury, Venus, Saturn, Saturn. The exaltation sign Capricorn adds Saturn as a friend. Result: Sun, Moon, Jupiter are friends; Mercury is an enemy; Venus (friend and enemy) and Saturn (friend and enemy) cancel to neutral. That is exactly the table below. Run for all seven planets, the rule reproduces every row.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Friends</th><th>Neutrals</th><th>Enemies</th></tr></thead><tbody><tr><td>Sun</td><td>Moon, Mars, Jupiter</td><td>Mercury</td><td>Venus, Saturn</td></tr><tr><td>Moon</td><td>Sun, Mercury</td><td>Mars, Jupiter, Venus, Saturn</td><td>—</td></tr><tr><td>Mars</td><td>Sun, Moon, Jupiter</td><td>Venus, Saturn</td><td>Mercury</td></tr><tr><td>Mercury</td><td>Sun, Venus</td><td>Mars, Jupiter, Saturn</td><td>Moon</td></tr><tr><td>Jupiter</td><td>Sun, Moon, Mars</td><td>Saturn</td><td>Mercury, Venus</td></tr><tr><td>Venus</td><td>Mercury, Saturn</td><td>Mars, Jupiter</td><td>Sun, Moon</td></tr><tr><td>Saturn</td><td>Mercury, Venus</td><td>Jupiter</td><td>Sun, Moon, Mars</td></tr></tbody></table></div>\n<p class=\"note\">Santhanam’s note on this verse adds that the Moon has no enemies, as in the Chaukhamba edition and in Saravali, and lists the nodes: Rahu friends Jupiter, Venus, Saturn, enemies Sun, Moon, Mars, neutral Mercury; Ketu friends Mars, Venus, Saturn, enemies the Sun and Moon, neutral Mercury and Jupiter. Treat the node rows as one author’s note, not a settled table.</p>\n<h2>Step 2: temporary friendship (this chart only)</h2>\n<p>BPHS ch. 3 verse 56: count from one planet to the other. If the other lies in the <strong>2nd, 3rd, 4th, 10th, 11th or 12th</strong>, it is a temporary friend. In the 1st (same house), 5th, 6th, 7th, 8th or 9th, it is a temporary enemy. The rule is mutual: 2nd and 12th, 3rd and 11th, 4th and 10th pair up.</p>\n<p>Notice that planets in the <em>same house</em> are temporary enemies, which surprises most beginners.</p>\n<h2>Step 3: combine into five grades</h2>\n<div class=\"tbl\"><table><thead><tr><th>Natural</th><th>Temporary</th><th>Result (BPHS ch. 3 verses 57 to 58)</th></tr></thead><tbody><tr><td>Friend</td><td>Friend</td><td>Great friend (adhi mitra)</td></tr><tr><td>Neutral</td><td>Friend</td><td>Friend (mitra)</td></tr><tr><td>Enemy</td><td>Friend</td><td>Neutral (sama)</td></tr><tr><td>Friend</td><td>Enemy</td><td>Neutral (sama)</td></tr><tr><td>Neutral</td><td>Enemy</td><td>Enemy (shatru)</td></tr><tr><td>Enemy</td><td>Enemy</td><td>Great enemy (adhi shatru)</td></tr></tbody></table></div>\n<p>The five grades are what Shadbala later scores as 20, 15, 10, 4 and 2 virupas for the planet’s sign in Santhanam’s rendering (lesson 4-1 gives the other common scale). Relationships are not always symmetric: A can be a friend of B while B is only neutral to A.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The pairs below come from your own houses. Each row is read “first planet looks at the second”.</p>\n<div class=\"tbl\"><table><thead><tr><th>Pair</th><th>Houses</th><th>Natural</th><th>Temporary</th><th>Five-fold</th></tr></thead><tbody><tr><td>Mars sees Venus</td><td>9 → 9 (the 1st)</td><td>neutral</td><td>enemy</td><td><strong>enemy</strong></td></tr><tr><td>Venus sees Mars</td><td>9 → 9 (the 1st)</td><td>neutral</td><td>enemy</td><td><strong>enemy</strong></td></tr><tr><td>Mercury sees Jupiter</td><td>10 → 7 (the 10th)</td><td>neutral</td><td>friend</td><td><strong>friend</strong></td></tr><tr><td>Jupiter sees Mercury</td><td>7 → 10 (the 4th)</td><td>enemy</td><td>friend</td><td><strong>neutral</strong></td></tr><tr><td>Sun sees Mercury</td><td>10 → 10 (the 1st)</td><td>neutral</td><td>enemy</td><td><strong>enemy</strong></td></tr><tr><td>Mercury sees Sun</td><td>10 → 10 (the 1st)</td><td>friend</td><td>enemy</td><td><strong>neutral</strong></td></tr><tr><td>Saturn sees Mercury</td><td>8 → 10 (the 3rd)</td><td>friend</td><td>friend</td><td><strong>great friend</strong></td></tr><tr><td>Mercury sees Saturn</td><td>10 → 8 (the 11th)</td><td>neutral</td><td>friend</td><td><strong>friend</strong></td></tr><tr><td>Mars sees Sun</td><td>9 → 10 (the 2nd)</td><td>friend</td><td>friend</td><td><strong>great friend</strong></td></tr></tbody></table></div>\n<p><strong>Three things to see.</strong> First, Mars and Venus share your 9th house, so each counts the other a temporary enemy, and the natural neutrality becomes enmity in both directions. Second, Mercury (lagna lord) treats Jupiter (7th lord) as a friend, but Jupiter treats Mercury as only neutral; the relationship is lopsided. Third, Saturn sees Mercury as a great friend (natural friend plus temporary friend), while Mercury sees Saturn only as a friend (natural neutral plus temporary friend). That matters because Saturn is the running antardasha lord in Mercury’s mahadasha (Stage 5).</p>\n<p>Now the sign each planet occupies:</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Sign</th><th>Natural view of the sign lord</th><th>Five-fold view</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini (Mercury’s sign)</td><td>neutral</td><td><strong>enemy</strong></td></tr><tr><td>Moon</td><td>Cancer (own)</td><td>—</td><td>—</td></tr><tr><td>Mars</td><td>Taurus (Venus’s sign)</td><td>neutral</td><td><strong>enemy</strong></td></tr><tr><td>Mercury</td><td>Gemini (own)</td><td>—</td><td>—</td></tr><tr><td>Jupiter</td><td>Pisces (own)</td><td>—</td><td>—</td></tr><tr><td>Venus</td><td>Taurus (own)</td><td>—</td><td>—</td></tr><tr><td>Saturn</td><td>Aries (Mars’s sign)</td><td>enemy</td><td><strong>neutral</strong></td></tr></tbody></table></div>\n<p>Compare Sun and Mars. By the natural table alone, both sit in a “neutral” sign. By the five-fold view, both sit in an <strong>enemy’s</strong> sign, because each shares a house with its host (Sun with Mercury, Mars with Venus), which makes them temporary enemies. The five-fold reading is the harsher and, per BPHS, the more complete one.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Parashari (BPHS):</strong> natural plus temporary, combined into five grades. Shadbala uses the combined grade.</li>\n<li><strong>Simple software labels:</strong> many programs, including this engine, label a planet’s sign friend, neutral or enemy using the natural table alone. That is faster but ignores your chart’s own geometry. Know which one a printout used before you compare two readings.</li>\n<li><strong>Edition differences:</strong> Santhanam notes that the Chaukhamba edition and Saravali agree the Moon has no enemy; some derived tables in circulation do not. Check the source of a table before trusting a Moon verdict.</li>\n<li><strong>Jaimini and KP:</strong> neither works from a friendship grid. Jaimini uses rashi aspects and karakas; KP uses the star lord and sub-lord.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Pick any planet and re-derive its row of the natural table with the verse-55 rule, as shown for Mars. If your derived row differs from a book’s row, the book is using a variant. Then count the temporary relationship from the houses, not from the signs: the signs can differ while the houses are the same.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Natural friendship is fixed; derive it with the verse-55 rule from the moolatrikona sign.</li><li>Temporary friendship: 2, 3, 4, 10, 11, 12 from each other = friend; 1, 5, 6, 7, 8, 9 = enemy.</li><li>Combine: friend+friend = great friend, enemy+enemy = great enemy, friend with enemy = neutral.</li><li>Many software labels use the natural table only; the five-fold reading can be harsher.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Work out the five-fold relationship between your Moon and your Saturn, in both directions, and then between your Sun and your Moon. Note any asymmetry.</p>\n",
+   "listen": "Planetary friendship is measured twice. The natural friendship is fixed. Brihat Parashara Hora Shastra gives a rule that rebuilds the whole table: from a planet’s moolatrikona sign, the lords of the second, fourth, fifth, eighth, ninth and twelfth signs are friends, and the lords of the third, sixth, seventh, tenth and eleventh are enemies. The lord of its exaltation sign is always a friend, and anything counted both ways is neutral. The temporary friendship belongs to one chart: planets in the second, third, fourth, tenth, eleventh or twelfth from each other are friends, and in the first, fifth, sixth, seventh, eighth or ninth they are enemies. Planets in the same house are temporary enemies. Combine the two into five grades, from great friend to great enemy. In your chart Mars and Venus, together in the ninth house, become enemies of each other. Mercury treats Jupiter as a friend, but Jupiter treats Mercury only as neutral. Many software labels use the natural table only, so know which one you are reading.",
+   "sources": [
+    "BPHS ch. 3 (planetary characters and description), verse 55 on natural relationships, verse 56 on temporary relationships, verses 57 to 58 on the five-fold relationship; R. Santhanam’s translation and notes",
+    "BPHS ch. 27 (evaluation of strengths), verses 2 to 4 on the virupa values for friendship grades"
+   ],
+   "quiz": [
+    {
+     "q": "Planets in the same house are, in temporary friendship, …",
+     "o": [
+      "Enemies",
+      "Friends",
+      "Neutral",
+      "Friends only if both are benefics"
+     ],
+     "a": 0,
+     "w": "The 1st (same house), 5th, 6th, 7th, 8th and 9th from each other are temporary enemy positions."
+    },
+    {
+     "q": "Natural friend + temporary enemy gives…",
+     "o": [
+      "Great friend",
+      "Neutral",
+      "Friend",
+      "Great enemy"
+     ],
+     "a": 1,
+     "w": "A friendship and an enmity cancel to neutral."
+    },
+    {
+     "q": "Which planet, by the natural table, has no enemies?",
+     "o": [
+      "Sun",
+      "Jupiter",
+      "Moon",
+      "Venus"
+     ],
+     "a": 2,
+     "w": "The Moon has friends Sun and Mercury and neutral for the rest; BPHS lists no enemy for her."
+    },
+    {
+     "q": "In your chart, Mars and Venus together in the 9th house are, in the five-fold relationship, …",
+     "o": [
+      "Great friends",
+      "Friends",
+      "Neutral",
+      "Enemies"
+     ],
+     "a": 3,
+     "w": "Natural neutral plus temporary enemy (same house) gives enemy, in both directions."
+    },
+    {
+     "q": "In the verse-55 rule, how is the lord of a planet’s exaltation sign counted?",
+     "o": [
+      "As one friend-count, which cancels to neutral if it also rules an enemy-position sign",
+      "Always as an enemy",
+      "Always as a great friend, whatever else it rules",
+      "It is left out of the count"
+     ],
+     "a": 0,
+     "w": "Verse 55 adds the exaltation lord as a friend. If that planet also rules a 3rd, 6th, 7th, 10th or 11th sign from the moolatrikona, the two counts cancel: Jupiter, lord of Venus’s exaltation sign Pisces, ends up neutral to Venus."
+    }
+   ]
+  },
+  {
+   "id": "4-3",
+   "title": "Combustion, planetary war and retrogression",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Mars and Venus share your 9th house. What is their five-fold relationship, and why?</p>\n<p>A planet can be well placed by dignity and still be hindered by what is happening around it in the sky. Three conditions are classical: it can be burnt by the Sun ({{term:combust|combustion}}), it can lose a fight with another planet ({{term:grahayuddha|planetary war}}), or it can be moving backward ({{term:retrograde|retrograde}}). Each is a separate test.</p>\n<h2>1. Combustion (asta)</h2>\n<p>A planet within a set number of degrees of the Sun, measured along the zodiac, is called combust. Its light is “swallowed” and it loses independence. The conventional orbs, printed by Santhanam in his notes to BPHS ch. 7 (verses 28 and 29 speak of a planet at the same longitude as the Sun losing its strength):</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Orb when direct</th><th>Orb when retrograde</th></tr></thead><tbody><tr><td>Moon</td><td>12°</td><td>same</td></tr><tr><td>Mars</td><td>17°</td><td>same</td></tr><tr><td>Mercury</td><td>14°</td><td>12°</td></tr><tr><td>Jupiter</td><td>11°</td><td>same</td></tr><tr><td>Venus</td><td>10°</td><td>8°</td></tr><tr><td>Saturn</td><td>15°</td><td>same</td></tr></tbody></table></div>\n<ul>\n<li>Rahu and Ketu are never combust. They are points, not bodies, and in fact they eclipse the Sun.</li>\n<li>Combustion lowers strength; it does not erase a planet. A combust planet in its own sign, exalted, or vargottama is usually judged less affected than a combust planet in an enemy’s sign.</li>\n<li>The depth matters: 2° from the Sun is a very different condition from 16° from the Sun in Mars’s 17° orb.</li>\n</ul>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your separations from the Sun, from the engine’s longitudes:</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Distance from Sun</th><th>Orb</th><th>Verdict</th></tr></thead><tbody><tr><td>Moon</td><td>27°23′</td><td>12°</td><td>free of the Sun</td></tr><tr><td>Mars</td><td>11°22′</td><td>17°</td><td><strong>combust</strong></td></tr><tr><td>Mercury</td><td>17°29′</td><td>14°</td><td>free of the Sun</td></tr><tr><td>Jupiter</td><td>97°12′</td><td>11°</td><td>free of the Sun</td></tr><tr><td>Venus</td><td>32°23′</td><td>10°</td><td>free of the Sun</td></tr><tr><td>Saturn</td><td>62°59′</td><td>15°</td><td>free of the Sun</td></tr></tbody></table></div>\n<p><strong>Mars is your one combust planet.</strong> It is 11°22′ from the Sun inside a 17° orb, which is 5°38′ inside the edge, about one-third of the way to exact conjunction. This is moderate, not extreme. Mars is also your Atmakaraka, the ruler of your 3rd and 8th houses, and it sits in Venus’s sign in the 9th. So three separate facts about Mars (combust, enemy’s sign by the five-fold test, functional malefic) all point the same way. That does not make Mars useless; it means its results arrive with the Sun’s themes mixed in, such as authority, father and ego.</p>\n<p>Mercury is 17°29′ from the Sun, outside its 14° orb, so it is not combust even though it shares a sign with the Sun.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Do Venus and Saturn burn?</strong> Santhanam’s note under BPHS ch. 7 says yes: they lose their rays like the others, against the common belief that they are exempt. His notes on the longevity calculation in ch. 43 say the halving for combustion does not apply to Venus and Saturn. The same translator, two chapters, two answers. A teacher’s view on this is a convention, not a settled verse.</li>\n<li><strong>Orb sizes:</strong> software and almanacs differ a little in the orbs they use, particularly for Mercury and Venus when retrograde. Check the orb before you compare two printouts.</li></ul></div>\n<h2>2. Planetary war (graha yuddha)</h2>\n<p>When two of the five star-planets (Mars, Mercury, Jupiter, Venus, Saturn) stand within 1° of longitude, they are said to be at war. The Sun and Moon are not part of it (a close Moon is a mere meeting) and the nodes do not take part. BPHS ch. 79 verse 9 (Santhanam’s numbering) states it: planetary war arises if Mars, Mercury, Jupiter, Venus or Saturn are within one degree; Venus is the winner whether north or south, and among the other four the planet in the north wins. The loser’s house suffers: BPHS ch. 11 (Santhanam’s notes) say a bhava’s potency is void if its planet is defeated in war, and BPHS ch. 27 verse 20 adds the difference of the two Shadbalas to the winner and subtracts it from the loser.</p>\n<p>The texts disagree about who wins:</p>\n<div class=\"tbl\"><table><thead><tr><th>Rule</th><th>Who holds it</th><th>Winner</th></tr></thead><tbody><tr><td>Northern planet wins; Venus always wins</td><td>BPHS ch. 79 verse 9, as translated by Santhanam</td><td>More northerly planet; Venus regardless</td></tr><tr><td>Higher latitude (north) wins</td><td>Surya Siddhanta tradition; also one modern author quoted by Santhanam, C. G. Rajan</td><td>Planet with the higher northern celestial latitude</td></tr><tr><td>Brighter, larger-looking planet wins; Venus usually wins</td><td>Brihat Samhita ch. 17, with commentary</td><td>Judged by size, brightness and shine</td></tr><tr><td>Smaller longitude wins</td><td>Santhanam notes this is “normally taught” (BPHS ch. 11 note)</td><td>Planet with the lesser longitude</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>No two of your five star-planets are within 1° of each other, so you have no natal planetary war. The closest pair is Venus and Mars, about 21° apart. A <strong>transit</strong> example shows how the rules behave. Venus and Saturn meet in Pisces on 8 May 2027; the exact conjunction falls at about 00:20 IST, at Pisces 27°08′, and the two stay within 1° for roughly two days around it. Venus’s celestial latitude is −1.65° and Saturn’s −2.26°, so Venus is the more northerly. By the BPHS rule, the northern rule and the brightness rule, Venus wins. The smaller-longitude rule flips at the exact conjunction: before it Venus has the smaller longitude, after it Saturn does (at 06:00 IST Venus is at 27°26′ and Saturn at 27°10′, 0.26° apart), so that rule picks Saturn only after about 00:20. Because the rules split, treat any war verdict as one voice among several, and use it mainly in the natal chart.</p></div>\n<p class=\"note\">Planetary war is a natal-chart and mundane idea. Do not build personal predictions on a transit war; use it only to explain why a particular planet may behave weakly in a natal chart.</p>\n<h2>3. Retrogression (vakri)</h2>\n<p>Retrograde motion is an apparent backward drift seen from Earth. The Sun and Moon never turn retrograde; the five star-planets do; the mean nodes always move backward. BPHS ch. 27 verses 21 to 23 list eight kinds of planetary motion and the cheshta bala (motional strength, in virupas) each earns:</p>\n<div class=\"tbl\"><table><thead><tr><th>Motion</th><th>Cheshta bala (virupas)</th></tr></thead><tbody><tr><td>Vakra (retrograde)</td><td>60</td></tr><tr><td>Anuvakra (entering the previous sign while retrograde)</td><td>30</td></tr><tr><td>Vikala (stationary)</td><td>15</td></tr><tr><td>Manda (slower than usual)</td><td>30</td></tr><tr><td>Mandatara (slower still)</td><td>15</td></tr><tr><td>Sama (a little faster than manda)</td><td>7.5</td></tr><tr><td>Chara (fast)</td><td>45</td></tr><tr><td>Atichara (entering the next sign at speed)</td><td>30</td></tr></tbody></table></div>\n<p>The maximum, 60, goes to a retrograde planet. In the BPHS Shadbala scheme a retrograde planet is therefore <em>strong</em>. The same author, in the longevity chapter, exempts a retrograde planet from the one-third reduction that applies to a planet in an enemy’s sign, using the word “vakrachara”.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>BPHS (Shadbala, ch. 27 and ch. 43):</strong> retrograde means strong; maximum motional strength; no enemy-sign reduction.</li>\n<li><strong>Exaltation reversal:</strong> secondary sources attribute to Phaladeepika and Uttara Kalamrita the view that a retrograde planet in a debilitation sign acts as if exalted, and a retrograde planet in an exaltation sign acts as if debilitated. These are reported in secondary summaries; the verses have not been checked for this course, so treat this as reported, not verified.</li>\n<li><strong>Saravali:</strong> reported to say that retrograde benefics bring good and retrograde malefics bring trouble. Same caveat.</li>\n<li><strong>Modern practice:</strong> retrograde planets are often described as delayed, inward or “revisiting” in their results. This is a modern gloss, not a classical rule.</li>\n<li><strong>Timing inside a dasha (BPHS ch. 47):</strong> a retrograde planet’s results come in the reverse order of the decanate rule you will meet in Stage 5.</li></ul></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>At birth all seven of your planets were direct. Jupiter turned retrograde about 22 days after you were born (18 July 1998, at Pisces 4°13′) and Saturn about 51 days after (16 August 1998 IST, at Aries 9°48′). So neither was retrograde in your chart; the dates are useful only as a reminder that both were still moving forward. Rahu and Ketu are always shown moving backward; the engine uses mean nodes.</p></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Re-run your combustion list with a wider and a narrower orb, for example 10° and 17° for Mars. Your Mars is combust at 17° but not at 10°. A call that depends on the orb is a soft call. Then note what the Sun-Mars separation is under another ayanamsa: it does not change, because both planets shift together. Combustion is therefore stable across ayanamsas; only the choice of orb can alter it.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Combustion orbs: Moon 12°, Mars 17°, Mercury 14° (12° retrograde), Jupiter 11°, Venus 10° (8° retrograde), Saturn 15°.</li><li>Planetary war needs two of Mars, Mercury, Jupiter, Venus, Saturn within 1°; the rules for the winner differ by text.</li><li>In BPHS Shadbala, a retrograde planet is strong, 60 virupas of cheshta bala.</li><li>Your only combust planet is Mars, about 11°22′ from the Sun.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> List the angular distance of Mars from the Sun under three orb choices (10°, 14°, 17°). Then write a two-line statement of what “combust Mars” does and does not change about your 3rd and 8th houses.</p>\n",
+   "listen": "Three conditions can weaken a planet that looks well placed. First, combustion: a planet too close to the Sun loses independence. The orbs are Moon twelve degrees, Mars seventeen, Mercury fourteen or twelve when retrograde, Jupiter eleven, Venus ten or eight when retrograde, and Saturn fifteen. Rahu and Ketu are never combust. In your chart only Mars is combust, about eleven degrees from the Sun. Mercury is seventeen and a half degrees away and is free. Second, planetary war: when two of Mars, Mercury, Jupiter, Venus and Saturn stand within one degree, one is judged the winner. Brihat Parashara says the northern planet wins, and Venus wins whichever side it stands. Other texts use brightness, and some teachers use the smaller longitude. You have no planetary war at birth. Third, retrogression: in the Shadbala scheme of Parashara a retrograde planet earns the maximum sixty virupas of motional strength, so it counts as strong. Other texts, reported in secondary sources, reverse exaltation and fall for retrograde planets. All seven of your planets were direct at birth.",
+   "sources": [
+    "BPHS ch. 7 (divisional consideration), verses 28 to 29 on planets at the Sun’s longitude, with the combustion-orb table in R. Santhanam’s notes",
+    "BPHS ch. 43 (longevity), the Astangata Harana and Shatru Kshetra Harana rules in the Pindayu method",
+    "BPHS ch. 79 (yogas leading to asceticism), verse 9 on planetary war; ch. 11 notes on bhava annihilation; ch. 27 verse 20 on war in Shadbala",
+    "BPHS ch. 27 verses 21 to 23 on the eight planetary motions and cheshta bala",
+    "Brihat Samhita ch. 17 (graha yuddha), Chidambaram Iyer’s translation as summarised on wisdomlib",
+    "Retrograde exaltation reversal (Phaladeepika, Uttara Kalamrita) and Saravali’s view: reported in secondary summaries, not opened"
+   ],
+   "quiz": [
+    {
+     "q": "What is Mars’s combustion orb in the conventional table?",
+     "o": [
+      "8°",
+      "12°",
+      "17°",
+      "24°"
+     ],
+     "a": 2,
+     "w": "Moon 12°, Mars 17°, Mercury 14°, Jupiter 11°, Venus 10°, Saturn 15°."
+    },
+    {
+     "q": "Which planets take part in graha yuddha?",
+     "o": [
+      "All nine",
+      "Mars, Mercury, Jupiter, Venus, Saturn",
+      "The seven visible planets",
+      "Only Venus and Saturn"
+     ],
+     "a": 1,
+     "w": "The Sun is handled by combustion, the Moon is a mere meeting, and the nodes do not fight."
+    },
+    {
+     "q": "In BPHS Shadbala a retrograde planet earns how many virupas of cheshta bala?",
+     "o": [
+      "0",
+      "15",
+      "45",
+      "60"
+     ],
+     "a": 3,
+     "w": "Vakra is the maximum: 60, the full motional strength."
+    },
+    {
+     "q": "Your Mars is 11°22′ from the Sun. Which statement is correct?",
+     "o": [
+      "Combust only if retrograde",
+      "Free of the Sun because it is in another sign",
+      "Combust, about 5°38′ inside its 17° orb",
+      "Combust at every orb in use"
+     ],
+     "a": 2,
+     "w": "11°22′ is inside 17° but outside a 10° or 11° orb, so the call depends on the orb used; at 17° it is combust."
+    },
+    {
+     "q": "At 06:00 IST on 8 May 2027 Venus is at Pisces 27°26′ and Saturn at 27°10′, inside 1° of each other. Which rule would pick Saturn as the winner?",
+     "o": [
+      "The BPHS ch. 79 rule",
+      "The northern-latitude rule",
+      "The brightness rule",
+      "The smaller-longitude rule"
+     ],
+     "a": 3,
+     "w": "At that moment Saturn has the smaller longitude; Venus is the more northerly, brighter planet and wins by the BPHS, northern-latitude and brightness rules."
+    }
+   ]
+  },
+  {
+   "id": "4-4",
+   "title": "Functional benefics and malefics for each lagna",
+   "mins": 25,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Which of your planets is combust, and by roughly how many degrees is it inside its orb?</p>\n<p>Stage 1 gave you the natural nature of the planets: Jupiter and Venus benefic, Saturn and Mars malefic. Natural nature is the planet’s habit. {{term:functional|Functional nature}} is its job in <em>your</em> chart, and it depends on which houses the planet rules for your lagna. A natural benefic can be a functional malefic, and the reverse. Parashari astrology judges a planet by its functional role first.</p>\n<h2>The principles (BPHS ch. 34, verses 2 to 7, with Santhanam’s notes)</h2>\n<ul><li>The lords of the trikonas (5th and 9th) are auspicious. They are the main givers of wealth and fortune. The lagna lord is specially auspicious, since the lagna is both kendra and trikona.</li><li>The lords of the 3rd, 6th and 11th are inauspicious. The lords of the 2nd, 8th and 12th act according to their company and their other house. The 8th lordship of the Sun and Moon is not evil.</li><li>A natural benefic ruling a kendra takes the blemish called {{term:kendradhipati|kendradhipati}}. Santhanam’s note ranks the blemish in ascending order Moon, Mercury, Jupiter, Venus. The lagna lord is excused.</li><li>A natural malefic ruling a kendra is not harmful but not helpful either, unless it also rules a trikona. Then it is a {{term:yogakaraka|yogakaraka}}.</li><li>A moolatrikona lordship outweighs a plain own-sign lordship. When a planet rules one good and one evil house, the stronger of the two prevails.</li><li>The 9th and 10th lords are the best planets for any lagna; the 11th and 8th lords the most adverse in their groups.</li></ul>\n<p>BPHS then goes lagna by lagna (ch. 34 verses 19 to 44) and names the auspicious planets, the malefics and the marakas. Santhanam notes that the sage often skips a planet whose role is mixed.</p>\n<h2>All twelve lagnas</h2>\n<div class=\"tbl\"><table><thead><tr><th>Lagna</th><th>Yogakaraka (kendra + trikona lord)</th><th>BPHS ch. 34: auspicious</th><th>BPHS ch. 34: malefic</th><th>2nd and 7th lords (maraka)</th></tr></thead><tbody><tr><td>Aries</td><td>none</td><td>Jupiter, Sun</td><td>Saturn, Mercury, Venus</td><td>Venus</td></tr><tr><td>Taurus</td><td>Saturn (9, 10)</td><td>Saturn, Sun; Mercury moderate</td><td>Jupiter, Venus, Moon</td><td>Mercury (2nd), Mars (7th)</td></tr><tr><td>Gemini</td><td>none</td><td>Venus only</td><td>Mars, Jupiter, Sun</td><td>Moon (2nd), Jupiter (7th)</td></tr><tr><td>Cancer</td><td>Mars (5, 10)</td><td>Mars, Jupiter, Moon</td><td>Venus, Mercury</td><td>Sun (2nd), Saturn (7th)</td></tr><tr><td>Leo</td><td>Mars (4, 9)</td><td>Mars, Jupiter, Sun</td><td>Mercury, Venus, Saturn</td><td>Mercury (2nd), Saturn (7th)</td></tr><tr class=\"mine\"><td>Virgo</td><td>none</td><td>Mercury, Venus</td><td>Mars, Jupiter, Moon</td><td>Venus (2nd), Jupiter (7th)</td></tr><tr><td>Libra</td><td>Saturn (4, 5)</td><td>Saturn, Mercury (Moon with Mercury gives a raja yoga)</td><td>Jupiter, Sun, Mars</td><td>Mars</td></tr><tr><td>Scorpio</td><td>none</td><td>Jupiter, Moon, Sun</td><td>Venus, Mercury, Saturn</td><td>Jupiter (2nd), Venus (7th)</td></tr><tr><td>Sagittarius</td><td>none</td><td>Mars, Sun (Mercury also favoured in the notes)</td><td>Venus; Saturn is named a maraka</td><td>Saturn (2nd), Mercury (7th)</td></tr><tr><td>Capricorn</td><td>Venus (5, 10)</td><td>Venus, Mercury</td><td>Mars, Jupiter, Moon</td><td>Saturn (2nd), Moon (7th)</td></tr><tr><td>Aquarius</td><td>Venus (4, 9)</td><td>Venus, Saturn</td><td>Jupiter, Moon, Mars</td><td>Jupiter (2nd), Sun (7th)</td></tr><tr><td>Pisces</td><td>none</td><td>Mars, Moon</td><td>Saturn, Venus, Sun, Mercury</td><td>Mars (2nd), Mercury (7th)</td></tr></tbody></table></div>\n<p>The yogakaraka and maraka columns are derived from the lordships; the two BPHS columns follow verses 19 to 44 as Santhanam renders them. A planet missing from both BPHS columns is one the verse leaves unmentioned (for example the Moon for Aries, Saturn for Gemini and Virgo). Where your lagna’s row says “none”, no single planet rules both a kendra and a trikona; the texts then name pairs, such as Mercury with Venus for Virgo, Sun with Moon for Scorpio, Mars with Jupiter for Pisces.</p>\n<h2>Maraka: a careful word</h2>\n<p>BPHS ch. 44 verses 2 to 5: the 3rd and 8th are the houses of longevity; the 12th from each, the 2nd and 7th, are the maraka houses, and their lords (and malefics in them) are marakas. Santhanam’s own note on the chapter warns that saying “the 2nd lord’s dasha will bring death” is a misnomer; lifespan must be judged through the longevity methods. Read maraka as “strain on vitality and energy in that planet’s periods”, not as a prediction of danger.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your lagna is Virgo (highlighted row). The BPHS verdict for each of your planets:</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Rules</th><th>Functional role (Virgo)</th><th>Where it sits</th></tr></thead><tbody><tr><td>Mercury</td><td>1, 10</td><td>Auspicious: lagna lord, excused from kendradhipati</td><td>Gemini 28°10′, 10th</td></tr><tr><td>Venus</td><td>2, 9</td><td>Auspicious (9th trikona); BPHS also lists Venus as a maraka for Virgo through the 2nd</td><td>Taurus 8°18′, 9th</td></tr><tr><td>Mars</td><td>3, 8</td><td>Malefic: both houses are “evil” houses</td><td>Taurus 29°19′, 9th, combust</td></tr><tr><td>Jupiter</td><td>4, 7</td><td>Malefic by BPHS: natural benefic ruling two kendras (kendradhipati)</td><td>Pisces 3°28′, 7th</td></tr><tr><td>Saturn</td><td>5, 6</td><td>Not named by BPHS for Virgo; mixed: 5th trikona and friend of the lagna lord, but its moolatrikona sign Aquarius is your 6th</td><td>Aries 7°41′, 8th, debilitated</td></tr><tr><td>Moon</td><td>11</td><td>Malefic by BPHS (11th lord)</td><td>Cancer 8°04′, 11th</td></tr><tr><td>Sun</td><td>12</td><td>Depends on association (BPHS)</td><td>Gemini 10°41′, 10th, with Mercury</td></tr><tr><td>Rahu</td><td>—</td><td>Acts through its dispositor (the Sun) and any conjunction</td><td>Leo 10°33′, 12th</td></tr><tr><td>Ketu</td><td>—</td><td>Acts through its dispositor (Saturn)</td><td>Aquarius 10°33′, 6th</td></tr></tbody></table></div>\n<p><strong>What this means.</strong> Two of your own-sign planets, Jupiter (own sign, kendra, Hamsa yoga) and the Moon (own sign), are both functional malefics for Virgo. A strong functional malefic is strong, but what it brings has a demanding or mixed character. Your two functional benefics, Mercury and Venus, are both in own sign and in houses of strength (10th and 9th). That is a good foundation. Note also that the engine lists “kendradhipati dosha” for Jupiter (ruler of the 4th and 7th), which matches BPHS naming Jupiter a malefic for Virgo. It does not flag Mercury, and Mercury, as lagna lord, would be excused anyway.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>BPHS verse list:</strong> the table above, as translated by Santhanam. Santhanam notes the Susloka Sataka disagrees with BPHS about Venus for Taurus (the 6th lordship), and that Parasara’s word carries more weight for him.</li>\n<li><strong>Rule-based derivations:</strong> many textbooks and popular tables derive benefic and malefic lists purely from lordship rules (trikona lords good, 3rd 6th 11th lords bad). They agree with BPHS in most cells but differ where BPHS is silent or mixed. One popular online table, for example, lists Mercury as a benefic for Gemini, which BPHS does not state.</li>\n<li><strong>Jaimini:</strong> works from karakas and rashi aspects, not from lagna-wise benefic lists.</li>\n<li><strong>KP:</strong> judges a planet by the houses its star lord and sub-lord signify; it does not use the Parashari lagna-wise list.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Pick any planet in your chart and ask it three questions: what does BPHS ch. 34 say for my lagna; what do the lordship rules alone say; what does its dignity say? If the first two agree and the third is strong, the planet’s role is clear. If they disagree (Jupiter for Virgo: natural benefic, functional malefic, strong dignity), write the disagreement down rather than forcing a verdict.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Functional nature comes from lordship for your lagna; natural nature is only the habit.</li><li>Yogakaraka = one planet ruling a kendra and a trikona: Saturn for Taurus and Libra, Mars for Cancer and Leo, Venus for Capricorn and Aquarius.</li><li>Natural benefics ruling kendras take the kendradhipati blemish; the lagna lord is excused.</li><li>For Virgo: Mercury and Venus auspicious; Mars, Jupiter, Moon malefic; Venus doubles as a maraka lord.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Make a one-line card for each of your nine planets: natural nature, functional role for Virgo, house and dignity. Mark the two that disagree most between natural and functional nature.</p>\n",
+   "listen": "Natural nature is a planet’s habit. Functional nature is its job in your own chart, decided by the houses it rules for your lagna. Brihat Parashara Hora Shastra, chapter thirty four, gives the principles. Lords of the fifth and ninth are auspicious, and the lagna lord is special. Lords of the third, sixth and eleventh are inauspicious. Natural benefics ruling a kendra take the kendradhipati blemish, but the lagna lord is excused. A planet that rules both a kendra and a trikona is a yogakaraka: Saturn for Taurus and Libra, Mars for Cancer and Leo, Venus for Capricorn and Aquarius. The second and seventh lords are the marakas, but that word means strain on vitality in their periods, not a prediction of danger. For your Virgo lagna, Mercury and Venus are the auspicious planets, and Mars, Jupiter and the Moon are malefic. Your Jupiter and Moon are strong in own sign yet functionally malefic, so they are strong but demanding. The engine flags kendradhipati dosha for Jupiter, the ruler of your fourth and seventh, not for Mercury, which as lagna lord is excused.",
+   "sources": [
+    "BPHS ch. 34 (yogakarakas), verses 2 to 7 on lordship principles and verses 19 to 44 on the planets for each lagna; R. Santhanam’s translation and notes",
+    "BPHS ch. 44 (maraka planets), verses 2 to 5 on the 2nd and 7th lords",
+    "A popular online benefic-malefic table (secondary) used only to confirm which cells agree with BPHS"
+   ],
+   "quiz": [
+    {
+     "q": "Which planet is the yogakaraka for both Taurus and Libra lagna?",
+     "o": [
+      "Saturn",
+      "Venus",
+      "Mars",
+      "Jupiter"
+     ],
+     "a": 0,
+     "w": "Saturn rules 9th and 10th for Taurus, and 4th and 5th for Libra."
+    },
+    {
+     "q": "For Virgo lagna, which pair does BPHS call auspicious?",
+     "o": [
+      "Mars and Jupiter",
+      "Mercury and Venus",
+      "Sun and Moon",
+      "Saturn and Jupiter"
+     ],
+     "a": 1,
+     "w": "BPHS ch. 34: Mars, Jupiter and the Moon are malefic; Mercury and Venus are auspicious."
+    },
+    {
+     "q": "Kendradhipati dosha chiefly applies to…",
+     "o": [
+      "Natural malefics owning a trikona",
+      "Any planet owning the 6th",
+      "Natural benefics owning a kendra, except the lagna lord",
+      "The yogakaraka"
+     ],
+     "a": 2,
+     "w": "Natural benefics ruling a kendra are blemished; the lagna lord is excused."
+    },
+    {
+     "q": "The maraka lords for your Virgo lagna are…",
+     "o": [
+      "Mars and Saturn",
+      "Mercury only",
+      "Sun and Moon",
+      "Venus (2nd) and Jupiter (7th)"
+     ],
+     "a": 3,
+     "w": "The 2nd is Libra (Venus) and the 7th is Pisces (Jupiter)."
+    },
+    {
+     "q": "Which planet is the single yogakaraka for both Cancer and Leo lagna?",
+     "o": [
+      "Mars",
+      "Jupiter",
+      "Venus",
+      "Saturn"
+     ],
+     "a": 0,
+     "w": "Mars rules 5th and 10th for Cancer, and 4th and 9th for Leo."
+    }
+   ]
+  },
+  {
+   "id": "4-5",
+   "title": "Aspects: graha drishti and Jaimini rashi drishti",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Your Mercury is the lagna lord and also the 10th lord. Is it excused from kendradhipati dosha, and why?</p>\n<p>A planet influences more than the house it sits in. It also looks at other houses, and that look carries its nature there. Two systems of looking are used, and they give different answers for the same chart. Learn both, and note which one a writer is using.</p>\n<h2>1. Parashari graha drishti</h2>\n<p>This aspect is counted in houses, from the planet’s own house as the 1st. BPHS ch. 26 verses 1 to 5 (Santhanam’s numbering): the aspects on the 3rd and 10th, the 5th and 9th, the 4th and 8th, and lastly the 7th rise “in slabs of quarters”, a quarter, a half, three-quarters and full. All planets see the 7th house fully. Saturn, Jupiter and Mars have special aspects.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Houses aspected (counting itself as 1st)</th><th>Classical strength (BPHS ch. 26)</th></tr></thead><tbody><tr><td>Sun, Moon, Mercury, Venus</td><td>7th</td><td>Full</td></tr><tr><td>Mars</td><td>4th, 7th, 8th</td><td>BPHS 26.2–5 grades the 4th and 8th at three-quarters in its slab scheme, yet names them Mars’s special aspects; most teachers today count them as full</td></tr><tr><td>Jupiter</td><td>5th, 7th, 9th</td><td>BPHS grades the 5th and 9th at one-half in its slab scheme, yet names them Jupiter’s special aspects; most teachers today count them as full</td></tr><tr><td>Saturn</td><td>3rd, 7th, 10th</td><td>BPHS grades the 3rd and 10th at one-quarter in its slab scheme, yet names them Saturn’s special aspects; most teachers today count them as full</td></tr><tr><td>Rahu, Ketu</td><td>Engine: 5th, 7th, 9th</td><td>Disputed (see below)</td></tr></tbody></table></div>\n<p>The same chapter, right after these verses, gives a degree-based method: the aspect value depends on the angular distance, so an aspect can be partial even if the sign positions line up. In everyday work most people count houses only.</p>\n<h2>2. Jaimini rashi drishti</h2>\n<p>BPHS ch. 8 verses 1 to 3 gives the sign aspects, and Santhanam’s note says the same system came to be called Jaimini’s although Parashara taught it first. A planet casts the aspect of the sign it stands in. Degrees do not matter.</p>\n<div class=\"tbl\"><table><thead><tr><th>Sign type</th><th>Signs</th><th>Aspects</th></tr></thead><tbody><tr><td>Movable (chara)</td><td>Aries, Cancer, Libra, Capricorn</td><td>The three fixed signs, except the fixed sign next to it</td></tr><tr><td>Fixed (sthira)</td><td>Taurus, Leo, Scorpio, Aquarius</td><td>The three movable signs, except the movable sign next to it</td></tr><tr><td>Dual (dwiswabhava)</td><td>Gemini, Virgo, Sagittarius, Pisces</td><td>The other three dual signs</td></tr></tbody></table></div>\n<p>Check by hand: Aries (movable) does not look at Taurus, the adjacent fixed sign, but looks at Leo, Scorpio and Aquarius. Taurus (fixed) looks at Cancer, Libra and Capricorn, not Aries. Gemini (dual) looks at Virgo, Sagittarius and Pisces. This is exactly the BPHS example.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Both systems for your nine planets, from the engine’s positions. Occupants are in brackets.</p>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Sign (house)</th><th>Parashari: houses aspected</th><th>Jaimini: signs aspected</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini (10th)</td><td>4th</td><td>Virgo (1st), Sagittarius (4th), Pisces (7th) [Jupiter]</td></tr><tr><td>Moon</td><td>Cancer (11th)</td><td>5th</td><td>Taurus (9th) [Mars, Venus], Scorpio (3rd), Aquarius (6th) [Ketu]</td></tr><tr><td>Mars</td><td>Taurus (9th)</td><td>12th (Rahu), 3rd, 4th</td><td>Cancer (11th) [Moon], Libra (2nd), Capricorn (5th)</td></tr><tr><td>Mercury</td><td>Gemini (10th)</td><td>4th</td><td>Virgo (1st), Sagittarius (4th), Pisces (7th) [Jupiter]</td></tr><tr><td>Jupiter</td><td>Pisces (7th)</td><td>11th (Moon), 1st, 3rd</td><td>Gemini (10th) [Sun, Mercury], Virgo (1st), Sagittarius (4th)</td></tr><tr><td>Venus</td><td>Taurus (9th)</td><td>3rd</td><td>Cancer (11th) [Moon], Libra (2nd), Capricorn (5th)</td></tr><tr><td>Saturn</td><td>Aries (8th)</td><td>10th (Sun, Mercury), 2nd, 5th</td><td>Leo (12th) [Rahu], Scorpio (3rd), Aquarius (6th) [Ketu]</td></tr><tr><td>Rahu</td><td>Leo (12th)</td><td>4th, 6th (Ketu), 8th (Saturn)</td><td>Aries (8th) [Saturn], Libra (2nd), Capricorn (5th)</td></tr><tr><td>Ketu</td><td>Aquarius (6th)</td><td>10th (Sun, Mercury), 12th (Rahu), 2nd</td><td>Aries (8th) [Saturn], Cancer (11th) [Moon], Libra (2nd)</td></tr></tbody></table></div>\n<p><strong>Where they disagree on your chart:</strong></p>\n<ul>\n<li>Jupiter in Pisces looks at your Moon in the 11th by Parashari rules (its 5th aspect). By Jaimini rules Pisces is dual and looks at Gemini, Virgo and Sagittarius, so Jupiter looks at your Sun and Mercury in the 10th instead, and at the lagna. Both systems agree Jupiter looks at your lagna.</li>\n<li>Saturn in Aries looks at your Sun and Mercury in the 10th in the Parashari system (its 3rd aspect: Gemini is the 3rd sign from Aries). Jaimini’s Aries looks at Leo, Scorpio and Aquarius, which holds Rahu and Ketu, not the 10th.</li>\n<li>Mars and Venus in Taurus look at the Moon in Cancer only in the Jaimini system. Mars’s Parashari aspects (12th, 3rd, 4th) miss the Moon in the 11th.</li>\n<li>Your Moon looks at Mars and Venus in the 9th by Jaimini rules (Cancer sees Taurus), and the Parashari 7th aspect of the Moon falls on an empty 5th house.</li></ul>\n<p>So your 10th house is looked at by Saturn in one system and by Jupiter in the other. That is a real difference in reading, not a detail.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Rahu and Ketu:</strong> BPHS as translated by Santhanam does not list the nodes among the planets with special aspects in ch. 26, though a note in ch. 3 argues that Rahu clearly has aspects. In practice some teachers give the nodes only the 7th, others the 5th, 7th and 9th (as the engine does), and some say nodes aspect nothing. Test each version on your own chart before trusting any.</li>\n<li><strong>Jaimini:</strong> sign aspects only, by sign; a planet’s aspect is the sign’s aspect. Parashari authors use both systems side by side, with graha drishti as the main one.</li>\n<li><strong>KP:</strong> works through star lord and sub lord significators and uses aspects very little.</li>\n<li><strong>Tajika:</strong> has its own orb-based aspects for the annual chart. They belong to the Varshaphala stage and are not taught here.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>For any aspect you want to rely on, check it in three ways. First, count in houses (Parashari). Second, check the signs (Jaimini). Third, ask whether the aspecting planet is strong in the D9. An aspect that appears in only one system should be written as a note, not a conclusion. Also try birth time minus five minutes: aspects by house do not change, but a lagna at a sign edge can shift every house count.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Parashari aspects are counted by houses: all see the 7th; Mars 4/8, Jupiter 5/9, Saturn 3/10.</li><li>Jaimini aspects are by sign type: movable sees fixed, fixed sees movable (except the adjacent), dual sees dual.</li><li>The two systems give different answers on your chart for the 10th house and the Moon.</li><li>Aspects of Rahu and Ketu are disputed, so list them as optional.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Pick your 10th house. Write which planets look at it in the Parashari system and which in the Jaimini system. Then write one sentence on how you would phrase a reading that survives both.</p>\n",
+   "listen": "A planet affects the houses it looks at as well as the one it sits in. Parashari aspect, or graha drishti, is counted in houses. Every planet sees the seventh house. Mars also sees the fourth and eighth, Jupiter the fifth and ninth, Saturn the third and tenth. In chapter twenty six Parashara grades these in quarters, a quarter, a half, three quarters and full. Jaimini sign aspect, or rashi drishti, is also in Brihat Parashara chapter eight. Movable signs see the fixed signs except the adjacent one. Fixed signs see the movable signs except the adjacent one. Dual signs see the other dual signs. Degrees do not matter. On your chart the two systems disagree. Jupiter looks at your Moon by Parashari rules but at your Sun and Mercury in the tenth by Jaimini rules. Saturn looks at your tenth by Parashari rules only. Mars and Venus look at your Moon only by Jaimini rules. The aspects of Rahu and Ketu are disputed, so treat them as optional. When two systems disagree, write the point as a note and test it against real events in your ledger.",
+   "sources": [
+    "BPHS ch. 8 (sign aspects), verses 1 to 3 with R. Santhanam’s notes and table",
+    "BPHS ch. 26 (evaluation of planetary aspects), verses 1 to 5 on graded aspects and the verses that follow on the degree method",
+    "BPHS ch. 3 note on Rahu having aspects (Santhanam)",
+    "Jaimini Upadesa Sutras on rashi drishti (taught here through BPHS ch. 8; Jaimini’s own verse numbers not checked)"
+   ],
+   "quiz": [
+    {
+     "q": "Which houses does Saturn aspect, counting its own house as 1st?",
+     "o": [
+      "4th, 7th, 8th",
+      "3rd, 7th, 10th",
+      "5th, 7th, 9th",
+      "2nd, 7th, 12th"
+     ],
+     "a": 1,
+     "w": "Saturn’s special aspects are on the 3rd and 10th, besides the 7th."
+    },
+    {
+     "q": "In Jaimini rashi drishti, which signs does Taurus aspect?",
+     "o": [
+      "Aries, Cancer and Libra",
+      "Gemini, Virgo and Pisces",
+      "Cancer, Libra and Capricorn",
+      "Leo, Scorpio and Aquarius"
+     ],
+     "a": 2,
+     "w": "Fixed Taurus aspects the three movable signs except the adjacent one (Aries)."
+    },
+    {
+     "q": "In your chart, which planet looks at the 10th house by Parashari aspect but not by Jaimini aspect?",
+     "o": [
+      "Moon",
+      "Jupiter",
+      "Mars",
+      "Saturn"
+     ],
+     "a": 3,
+     "w": "Saturn in the 8th looks at the 10th by its 3rd/10th-type aspect; Jaimini’s Aries looks at Leo, Scorpio and Aquarius."
+    },
+    {
+     "q": "BPHS ch. 26 grades the aspect on the 5th and 9th as…",
+     "o": [
+      "A half",
+      "A quarter",
+      "Three-quarters",
+      "Full only for Jupiter"
+     ],
+     "a": 0,
+     "w": "The 3rd/10th are a quarter, 5th/9th a half, 4th/8th three-quarters, 7th full."
+    },
+    {
+     "q": "What does Jaimini rashi drishti ignore?",
+     "o": [
+      "The sign of the planet",
+      "The degrees of the aspecting and aspected planet",
+      "The sign type",
+      "The house numbers"
+     ],
+     "a": 1,
+     "w": "Sign aspects depend on sign types alone; longitudes are ignored."
+    }
+   ]
+  },
+  {
+   "id": "4-6",
+   "title": "House lords in houses: the principles",
+   "mins": 22,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Which planet rules your 4th and 7th houses, and where does it sit?</p>\n<p>Every house has a lord ({{term:bhavesha|bhavesha}}), the planet ruling the sign on that house. The lord carries the house’s subject to wherever it sits. If your 10th lord is in the 12th, the career themes go to the 12th. The question is always: what does the lord bring, where does it take it, and in what condition?</p>\n<h2>A four-question routine</h2>\n<ol><li><strong>What does the house stand for?</strong> The 10th is career and public work; the 12th is loss, expense, seclusion and foreign lands.</li><li><strong>Where is its lord?</strong> The house the lord is in becomes the place where the first house’s matters play out.</li><li><strong>How strong is the lord?</strong> Look at dignity, combustion, the navamsa, and who joins or looks at it.</li><li><strong>What else does the lord rule?</strong> A planet with two houses mixes two results.</li></ol>\n<p>BPHS ch. 24 verses 145 to 148 (Santhanam’s numbering) states the same ideas: the effects of house lords are to be deduced by considering strengths and weaknesses; a planet owning two houses gives results for both lordships; contrary results neutralise, different results are both seen; and the planet yields full, half or a quarter of its effect according to being strong, medium or negligible. Chapter 24 gives a verse for each lord in each house, 144 in all, and Santhanam’s notes keep adding qualifiers.</p>\n<h2>Where the lord falls from its own house</h2>\n<p>A common working method counts the distance from the house to the lord’s position. It is a modern synthesis of classical ideas, so treat it as a guide, not a verse.</p>\n<div class=\"tbl\"><table><thead><tr><th>Lord sits in the … from its own house</th><th>Usual reading</th></tr></thead><tbody><tr><td>1st (the same house)</td><td>Strong; the house’s matters are self-supported</td></tr><tr><td>2nd, 3rd, 11th</td><td>Supportive; good effort and gain</td></tr><tr><td>4th, 7th, 10th</td><td>Active; the house gets drive and visibility</td></tr><tr><td>5th, 9th</td><td>Fortunate, protected by merit</td></tr><tr><td>6th, 8th, 12th</td><td>Strained; the matters of the house meet obstacles, delay or loss. When the lord is itself the lord of the 6th, 8th or 12th, the viparita rules may reverse this.</td></tr></tbody></table></div>\n<h2>Worked examples: the 12th lord and the 10th house</h2>\n<p>The table follows BPHS ch. 24 as Santhanam renders it, in short paraphrase. The verses are stark, so treat each as one tendency whose strength depends on the planet’s condition. They are not a prediction for any one person.</p>\n<div class=\"tbl\"><table><thead><tr><th>Placement</th><th>BPHS ch. 24</th><th>How to carry it</th></tr></thead><tbody><tr><td>Lagna lord in the 10th</td><td>Verse 10: paternal happiness, royal honour, fame and self-earned wealth</td><td>Self and career fuse. The person works in the public eye and builds through his own effort.</td></tr><tr><td>10th lord in the 10th</td><td>Verse 118: skilful in all jobs, valorous, truthful and devoted to elders</td><td>The strongest case for a career house: the lord is at home.</td></tr><tr><td>10th lord in the 12th</td><td>Verse 120: expense through royal abodes (authority, government), fear of enemies, anxiety despite skill</td><td>Santhanam reads it as cost through taxes, fines and political spending. Career can run abroad or behind the scenes. Modern readers add foreign work and institutions.</td></tr><tr><td>12th lord in the 10th</td><td>Verse 142: expense through royal persons, only moderate paternal happiness</td><td>Expense and loss themes attach to career and authority. Can also mean working in hospitals, ashrams, foreign firms or behind-the-scenes roles.</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Three of these are on your chart at the same time:</p>\n<ul>\n<li><strong>Lagna lord in the 10th (verse 10).</strong> Mercury, lord of Virgo, sits in Gemini 28°10′ in the 10th. It is in its own sign and vargottama, so this placement is as strong as Mercury can make it.</li>\n<li><strong>10th lord in the 10th (verse 118).</strong> The same Mercury, as 10th lord. It is both lagna lord and 10th lord, so your self and your career run through one planet.</li>\n<li><strong>12th lord in the 10th (verse 142).</strong> The Sun, lord of Leo (12th), also sits in Gemini, 10°41′, in the 10th, 17°29′ from Mercury, outside Mercury’s combustion orb. Verse 142 reads it as expense through authority and moderate paternal happiness. The Sun in the 10th also has directional strength (dig bala), so the Sun is not weak here.</li></ul>\n<p>Putting them together: your career house has two lords of different kinds in it, an excellent one (Mercury) and one that brings the “spend, give away, work behind” colour (the Sun). Do not choose one verse and ignore the others. Read the whole bundle, and log specific predictions in your ledger so you can see over time which part shows up.</p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>BPHS ch. 24:</strong> a verse for each lord in each house, with the principles in verses 145 to 148. Santhanam’s notes add that some results hold only for particular lagnas.</li>\n<li><strong>Phaladeepika and Saravali:</strong> give house-lord results in a similar scheme; the details differ in places. Their chapter numbers have not been verified, so the lesson does not cite them.</li>\n<li><strong>Jaimini:</strong> reads the lord by its sign and its aspects, not by distance from the house.</li>\n<li><strong>KP:</strong> reads the house through the star lord and sub lord of its cusp, not the sign lord alone.</li></ul></div>\n<p class=\"note\">The classical verses use words like “bereft”, “sinful” and “poverty”. Read them as the text’s way of marking an unsupported placement, not as a verdict on a person. A placement describes a pull. The lord’s dignity, aspects, the dasha running and your own choices decide what happens. Log any prediction you draw in your prediction ledger with a window and a result.</p>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Pick one house lord and test it three ways: the verse (BPHS ch. 24), the distance method above, and the D9 position of the lord. If the three agree, state the result firmly. If they split, call it mixed and say which part you trust more and why.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Four questions: what the house stands for; where its lord sits; how strong the lord is; what else it rules.</li><li>BPHS ch. 24 verses 145 to 148: judge by strength; two lordships give two sets of results; the planet gives full, half or a quarter.</li><li>Lord in own house is strongest; 6th, 8th and 12th from its own house is strained.</li><li>On your chart the 10th has two lords of different kinds: Mercury (strong) and the Sun (12th lord).</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Write the BPHS ch. 24 verse number and a one-line paraphrase for your 2nd lord, 4th lord and 7th lord. Then write whether the lord’s dignity raises or lowers each reading.</p>\n",
+   "listen": "Every house has a lord, and the lord carries the house’s subject to wherever it sits. Ask four questions. What does the house stand for? Where is its lord? How strong is the lord? What else does the lord rule? Brihat Parashara chapter twenty four gives a verse for each house lord in each house. Verses one hundred forty five to one hundred forty eight give the principles. Judge by strength and weakness. A planet with two houses gives the results of both. A planet gives full, half or a quarter of its effect according to its strength. Take two examples. The lagna lord in the tenth, in verse ten, gives honour and self earned wealth. The twelfth lord in the tenth, in verse one forty two, gives expense through authority and moderate paternal happiness. On your chart Mercury is both lagna lord and tenth lord, sits in its own sign Gemini in the tenth, and is vargottama. The Sun, your twelfth lord, sits in the same house. So your career house holds one very strong lord and one that adds a spending, behind the scenes colour. Read the whole bundle, and log your predictions in the ledger.",
+   "sources": [
+    "BPHS ch. 24 (effects of the bhava lords): verse 10 (lagna lord in 10th), verse 118 (10th lord in 10th), verse 120 (10th lord in 12th), verse 142 (12th lord in 10th), verses 145 to 148 (principles), in R. Santhanam’s translation",
+    "Phaladeepika and Saravali house-lord chapters: not opened for this lesson",
+    "Distance-from-own-house method: a common modern synthesis, not a single classical verse"
+   ],
+   "quiz": [
+    {
+     "q": "BPHS ch. 24 verses 145 to 148 say a planet owning two houses…",
+     "o": [
+      "Gives only the result of its stronger house",
+      "Gives no result at all",
+      "Gives results for both lordships, and contrary results cancel",
+      "Gives the result of its moolatrikona only"
+     ],
+     "a": 2,
+     "w": "Results for both lordships are deduced; if they are contrary they nullify, if different both come to pass."
+    },
+    {
+     "q": "In your chart, which planet is the 12th lord and where is it?",
+     "o": [
+      "Venus in the 9th",
+      "Moon in the 11th",
+      "Mercury in the 10th",
+      "Sun in the 10th"
+     ],
+     "a": 3,
+     "w": "The 12th is Leo, ruled by the Sun, which sits in Gemini in your 10th."
+    },
+    {
+     "q": "A lord sitting in its own house is usually read as…",
+     "o": [
+      "Strong and self-supported",
+      "Strained",
+      "Combust",
+      "Retrograde"
+     ],
+     "a": 0,
+     "w": "The house’s matters have their own lord at home."
+    },
+    {
+     "q": "Mercury is both lagna lord and 10th lord in your chart. What does this imply?",
+     "o": [
+      "The career house has no lord",
+      "Self and career run through one planet",
+      "Mercury cannot be strong",
+      "The 10th is empty"
+     ],
+     "a": 1,
+     "w": "The same planet rules both, so the strength of Mercury lifts both themes together."
+    },
+    {
+     "q": "What should you do with a harsh classical verse about a placement?",
+     "o": [
+      "Predict it as certain",
+      "Ignore all verses",
+      "Treat it as a tendency and weigh the planet’s dignity and aspects",
+      "Apply it to every lagna"
+     ],
+     "a": 2,
+     "w": "The verses describe a pull. Strength, aspects and dasha decide the outcome."
+    }
+   ]
+  },
+  {
+   "id": "4-7",
+   "title": "Judge your 12 house lords",
+   "mins": 25,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Name the BPHS ch. 24 verse you would use for the 12th lord in the 10th, and what it says in one line.</p>\n<p>You now have the tools for each step: dignity (4-1), friendship (4-2), combustion (4-3), functional nature (4-4), aspects (4-5) and house-lord principles (4-6). This lesson puts them together on all twelve of your lords. The help is removed in three stages.</p>\n<h2>The five steps</h2>\n<ol><li>Name the house’s themes.</li><li>Locate its lord and say what the placement means.</li><li>Judge the lord’s condition: dignity, five-fold friendship, combustion, D9.</li><li>Note who joins or looks at the lord.</li><li>Write a verdict: strong, mixed or strained, with one line on why.</li></ol>\n<h2>Stage A: fully worked (houses 1 to 4)</h2>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Lord</th><th>1. Themes</th><th>2. Placement</th><th>3. Condition</th><th>4. Company</th><th>5. Verdict</th></tr></thead><tbody><tr><td>1. Virgo</td><td>Mercury</td><td>Self, body, temperament, the whole chart’s direction</td><td>Mercury in the 10th (a kendra, and its own 10th house)</td><td>Own sign Gemini, 28°10′; vargottama (D9 Gemini); not combust (17°29′ from the Sun, outside a 14° orb); Bhadra yoga</td><td>Joined by the Sun (12th lord). Looked at by Saturn (Parashari). Ketu adds an optional aspect.</td><td>Strong. Self and work fuse. Watch the Sun’s “spend and give” colour and Saturn’s pressure. BPHS ch. 24 verse 10.</td></tr><tr><td>2. Libra</td><td>Venus</td><td>Money, speech, food, family</td><td>Venus in the 9th (a trikona)</td><td>Own sign Taurus, 8°18′; D9 Pisces, exalted in the navamsa; shares the sign with a combust Mars</td><td>Joined by Mars (5-fold enemy). No Parashari aspect.</td><td>Strong. Wealth and speech lean on merit, teachers and travel. Mars’s company adds friction. BPHS ch. 24 verse 21 (2nd lord in 9th).</td></tr><tr><td>3. Scorpio</td><td>Mars</td><td>Effort, courage, siblings, skills</td><td>Mars in the 9th</td><td>Taurus 29°19′, Venus’s sign (five-fold enemy); combust, 11°22′ from the Sun; D9 Virgo</td><td>Joined by Venus. No planet aspects it (Parashari). Jaimini: the Moon looks at it.</td><td>Strained. The 3rd and 8th lord is combust in an enemy sign. Effort runs through fortune and the father’s themes. BPHS ch. 24 verse 33 (3rd lord in 9th).</td></tr><tr><td>4. Sagittarius</td><td>Jupiter</td><td>Home, mother, property, peace of mind</td><td>Jupiter in the 7th (a kendra)</td><td>Own sign Pisces, 3°28′; Hamsa yoga; D9 Leo; a natural benefic ruling two kendras, so the engine flags kendradhipati</td><td>Alone in the sign. Jaimini: the Sun and Mercury look at it.</td><td>Strong. Home life links with partnership and the public. BPHS ch. 24 verse 43 reads the 4th lord in the 7th as good education with a loss of inheritance.</td></tr></tbody></table></div>\n<h2>Stage B: steps 1 to 3 given (houses 5 to 8)</h2>\n<p>For each row, write steps 4 and 5 yourself before you open the answer key.</p>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Lord</th><th>1. Themes</th><th>2. Placement</th><th>3. Condition</th></tr></thead><tbody><tr><td>5. Capricorn</td><td>Saturn</td><td>Intellect, children, creative skill, past merit</td><td>Saturn in the 8th (a dusthana)</td><td>Debilitated in Aries, 7°41′; D9 Gemini; two cancellation candidates (the Sun in a kendra, Saturn in a kendra from the Moon)</td></tr><tr><td>6. Aquarius</td><td>Saturn</td><td>Enemies, debts, disease, service, daily work</td><td>Saturn in the 8th</td><td>Same Saturn: debilitated with cancellation candidates</td></tr><tr><td>7. Pisces</td><td>Jupiter</td><td>Partner, contracts, open dealings</td><td>Jupiter in the 7th</td><td>Own sign Pisces, 3°28′; Hamsa; D9 Leo</td></tr><tr><td>8. Aries</td><td>Mars</td><td>Transformation, hidden things, longevity, inheritance</td><td>Mars in the 9th</td><td>Same Mars: combust, enemy’s sign</td></tr></tbody></table></div>\n<h2>Stage C: you do it all (houses 9 to 12)</h2>\n<p>All you get is the house and its lord. Use the engine to find the placement, the dignity and the aspects, then apply the five steps.</p>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Lord</th></tr></thead><tbody><tr><td>9. Taurus</td><td>Venus</td></tr><tr><td>10. Gemini</td><td>Mercury</td></tr><tr><td>11. Cancer</td><td>Moon</td></tr><tr><td>12. Leo</td><td>Sun</td></tr></tbody></table></div>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Before you check the key, write your own verdict on the three houses you are least sure about. Also note which lords you rated differently from the table. The planets that rule two houses (Mars, Saturn, Jupiter, Venus, Mercury) show up twice. Judge each planet once, as a planet, and then read both houses.</p></div>\n<h2>Answer key</h2>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Lord</th><th>4. Company</th><th>5. Verdict</th></tr></thead><tbody><tr><td>5. Capricorn</td><td>Saturn</td><td>Looked at by Rahu (an optional aspect). Jaimini: Aries sees Rahu and Ketu.</td><td>Mixed. A weak placement softened by cancellation and by Saturn’s Harsha status. BPHS ch. 24 verse 56 (5th lord in 8th) reads reduced ease for 5th matters.</td></tr><tr><td>6. Aquarius</td><td>Saturn</td><td>Same as above</td><td>Favourable by the viparita rule: the 6th lord in the 8th forms Harsha. Because the lord is debilitated the result is a softened version. BPHS ch. 24 verse 68 reads the placement harshly; the viparita view is a different rule set.</td></tr><tr><td>7. Pisces</td><td>Jupiter</td><td>Jupiter’s 7th aspect falls on your lagna</td><td>Strong. The partnership house has a strong, kind lord at home. Remember the 7th lord is also a maraka for Virgo.</td></tr><tr><td>8. Aries</td><td>Mars</td><td>Joined by Venus</td><td>Strained. The 8th lord in the 9th is combust. BPHS ch. 24 verse 93 reads the 8th lord in the 9th as strain on belief and father; modern readers speak of a changed belief system. Mars is also your Atmakaraka.</td></tr></tbody></table></div>\n<div class=\"tbl\"><table><thead><tr><th>House</th><th>Lord</th><th>2. Placement</th><th>3. Condition</th><th>4. Company</th><th>5. Verdict</th></tr></thead><tbody><tr><td>9. Taurus</td><td>Venus</td><td>Venus in the 9th (its own house)</td><td>Own sign Taurus; D9 Pisces exalted</td><td>Mars shares the sign</td><td>Strong. The 9th lord at home with an exalted navamsa. BPHS ch. 24 has a verse for the 9th lord in the 9th; it is not quoted here, so this reading comes from the principle.</td></tr><tr><td>10. Gemini</td><td>Mercury</td><td>Mercury in the 10th (its own house)</td><td>Own sign, vargottama, Bhadra yoga</td><td>Sun joins; Saturn looks at it</td><td>Very strong. BPHS ch. 24 verse 118: skilful, valorous, truthful, devoted to elders.</td></tr><tr><td>11. Cancer</td><td>Moon</td><td>Moon in the 11th (an upachaya)</td><td>Own sign Cancer, 8°04′; D9 Virgo; about 27° ahead of the Sun, a young waxing Moon</td><td>Looked at by Jupiter (Parashari 5th aspect)</td><td>Strong by dignity, house and Jupiter’s look. A young Moon is less bright in schemes that weigh the phase.</td></tr><tr><td>12. Leo</td><td>Sun</td><td>Sun in the 10th</td><td>Gemini, 10°41′; five-fold enemy sign (the Sun shares the sign with Mercury); digbala in the 10th</td><td>Joined by Mercury; Saturn looks at it</td><td>Mixed. Expense and withdrawal themes attach to work and authority. BPHS ch. 24 verse 142.</td></tr></tbody></table></div>\n<p class=\"note\">Several rows carry two readings of the same planet, for example Saturn as 5th and 6th lord. This is correct: the planet is one, the houses are two. Judge the planet’s condition once and then say what each house gets from it. Verdicts here are tendencies to be tested in your ledger, not facts about outcomes.</p>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Debilitated Saturn:</strong> the engine lists two cancellation candidates; other rule sets accept or reject each. Hold the Saturn verdict as “mixed, with support”, not settled.</li>\n<li><strong>Combust Mars:</strong> if you use a smaller orb, Mars is not combust and the verdict for houses 3 and 8 moves up a step.</li>\n<li><strong>Dignity labels:</strong> the engine marks Mars “neutral” in Taurus by natural friendship only. The five-fold test makes it an enemy sign, which is what the verdict uses.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Redo the full table under a different assumption: swap the orb for Mars to 10° and treat Saturn’s cancellation as invalid. Note which verdicts change. Verdicts that do not change under such tests are the ones to trust most.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Judge a planet once, then read each house it rules.</li><li>Stronger lords on your chart: Mercury, Venus, Jupiter, Moon.</li><li>Strained lords: Mars (combust, enemy sign) and Saturn (debilitated, with cancellation candidates).</li><li>Verdicts are tendencies. Log them and check against what happens.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Write three dated, testable lines in your ledger from this table, one for a strong lord and one for a strained lord, each with a window of at least six months. Do not look at them again until the window ends.</p>\n",
+   "listen": "This lesson puts together everything from the stage on all twelve of your house lords. Use five steps. Name the house’s themes. Locate the lord. Judge its condition by dignity, five fold friendship, combustion and the navamsa. Note who joins or aspects it. Write a verdict of strong, mixed or strained. The first four houses are worked for you, the next four give steps one to three, and the last four give only the lord. On your chart Mercury, Venus, Jupiter and the Moon are strong, each in its own sign. Mars is combust in an enemy sign and rules the third and eighth houses, so those two houses are strained. Saturn is debilitated in Aries in the eighth, with cancellation candidates and the Harsha yoga, so the fifth and sixth houses are mixed. The Sun, your twelfth lord, sits in the tenth with Mercury. Remember that one planet is judged once and then read for each of its two houses. Treat the verdicts as tendencies, and log dated predictions in your ledger.",
+   "sources": [
+    "BPHS ch. 24 (verses 21, 33, 43, 56, 68, 93, 118, 142; principles in 145 to 148), R. Santhanam’s translation",
+    "BPHS ch. 27 (Shadbala) on directional strength, for the Sun in the 10th",
+    "Engine output for positions, dignity, aspects, yogas and cancellation candidates; navamsa signs from the engine"
+   ],
+   "quiz": [
+    {
+     "q": "Which of your house lords is combust?",
+     "o": [
+      "Mercury",
+      "Jupiter",
+      "Venus",
+      "Mars"
+     ],
+     "a": 3,
+     "w": "Mars is 11°22′ from the Sun, inside its 17° orb. Mercury is 17°29′ away, outside 14°."
+    },
+    {
+     "q": "Saturn rules your 5th and 6th. How many times should you judge Saturn’s condition?",
+     "o": [
+      "Once, then read both houses",
+      "Twice, with separate dignity",
+      "Not at all",
+      "Only for the 6th"
+     ],
+     "a": 0,
+     "w": "The planet’s dignity, aspects and company are the same for both houses."
+    },
+    {
+     "q": "Which lord is exalted in the navamsa in your chart?",
+     "o": [
+      "Moon",
+      "Venus",
+      "Jupiter",
+      "Mercury"
+     ],
+     "a": 1,
+     "w": "Venus is in Pisces in D9, its exaltation sign."
+    },
+    {
+     "q": "Your Jupiter (4th and 7th lord) sits in…",
+     "o": [
+      "The 11th, Cancer",
+      "The 4th, Sagittarius",
+      "The 7th, own sign Pisces",
+      "The 9th, Taurus"
+     ],
+     "a": 2,
+     "w": "Jupiter is in Pisces in the 7th, its own sign, forming Hamsa."
+    },
+    {
+     "q": "Which pair of your house lords share the 9th house sign?",
+     "o": [
+      "Saturn and Mars",
+      "Mercury and the Sun",
+      "Moon and Jupiter",
+      "Venus and Mars"
+     ],
+     "a": 3,
+     "w": "Venus (2nd, 9th lord) and Mars (3rd, 8th lord) both sit in Taurus."
+    }
+   ]
+  },
+  {
+   "id": "4-8",
+   "title": "Synthesis: your planetary dossier and stage test",
+   "mins": 25,
+   "body": "\n<p class=\"muted\"><strong>Recall:</strong> Which two of your planets are weakest by dignity and condition, and what rule set makes one of them better?</p>\n<p>This lesson turns the stage into a single page about your chart, then tests you. The page is your <strong>planetary dossier</strong>: for every planet, its dignity, condition, functional nature and the houses it rules. It is the reference you will use in the timing lessons that follow.</p>\n<h2>Your seven-planet dossier</h2>\n<div class=\"tbl\"><table><thead><tr><th>Planet</th><th>Sign, house</th><th>Dignity and condition</th><th>Combust?</th><th>Rules</th><th>Grade</th></tr></thead><tbody><tr><td>Sun</td><td>Gemini, 10th</td><td>neutral by nature, enemy by five-fold (shares the sign with Mercury)</td><td>no</td><td>12th</td><td>Mixed</td></tr><tr><td>Moon</td><td>Cancer, 11th</td><td>own sign</td><td>no</td><td>11th</td><td>Strong; young Moon</td></tr><tr><td>Mars</td><td>Taurus, 9th</td><td>five-fold enemy sign</td><td>yes (11°22′)</td><td>3rd, 8th</td><td>Strained</td></tr><tr><td>Mercury</td><td>Gemini, 10th</td><td>own sign, vargottama</td><td>no (17°29′)</td><td>1st, 10th</td><td>Very strong</td></tr><tr><td>Jupiter</td><td>Pisces, 7th</td><td>own sign, Hamsa</td><td>no</td><td>4th, 7th</td><td>Strong; functionally demanding</td></tr><tr><td>Venus</td><td>Taurus, 9th</td><td>own sign, exalted in D9</td><td>no</td><td>2nd, 9th</td><td>Strong</td></tr><tr><td>Saturn</td><td>Aries, 8th</td><td>debilitated, cancellation candidates</td><td>no</td><td>5th, 6th</td><td>Mixed, with support</td></tr></tbody></table></div>\n<p>Rahu is in Leo in the 12th and Ketu in Aquarius in the 6th. The nodes take the results of their sign lord (the Sun and Saturn) and of any planet joined to them, which is why a dossier lists them last.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Read the table as a chart story.</p>\n<ul>\n<li><strong>Strongest planets:</strong> Mercury (lagna and 10th lord, own sign, vargottama, in the 10th), then Venus and Jupiter, each in own sign, and the Moon. All four are on the functional side of the ledger in different ways: Mercury and Venus are functional benefics for Virgo, while Jupiter and the Moon are functional malefics, so Jupiter and the Moon are strong yet demanding.</li>\n<li><strong>Weak links:</strong> Mars (combust, enemy’s sign, rules 3rd and 8th) and Saturn (debilitated, rules 5th and 6th, lifted by cancellation candidates and Harsha).</li>\n<li><strong>The big picture:</strong> your 10th house carries Mercury and the Sun, your 9th carries Venus and Mars, and your 7th carries Jupiter. Four planets in the 9th and 10th houses mean your life energy is weighted towards fortune, work and public life.</li>\n<li><strong>Dasha link:</strong> you are in the Mercury major period, which is the planet with the highest grade in your dossier. You will use that in Stage 5.</li></ul></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Grades are this course’s summary, not a classical scale.</strong> The grades summarise this stage’s tests. BPHS uses Shadbala and Ashtavarga numbers for strength; a Shadbala scale would reorder some planets.</li>\n<li><strong>If your teacher uses a different orb, a different cancellation rule set, or treats Rahu and Ketu differently,</strong> the grades for Mars, Saturn and the nodes may shift.</li></ul></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Compare this table with the strength figures from a Shadbala printout, and with the Ashtakavarga tables in the engine. Differences are not errors. They show which strength you are measuring. Where all three agree on a planet, trust it most.</p></div>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Strong and weak planets by dignity: Mercury, Venus, Jupiter, Moon strong; Mars and Saturn weak.</li><li>Judge a planet by dignity, condition, functional nature and houses, in that order.</li><li>Rahu and Ketu act through their sign lords and companions.</li><li>A dossier is a reference, not a forecast. Predictions go into your ledger with dates.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Copy the dossier into your own notebook. Add a column “what I will test” for each planet, with one observable fact from your life that would support or contradict its grade.</p>\n<h2>Stage test</h2>\n<p>Take the seven questions below at the end of the page. Use the dossier above, and the earlier lessons if you need to, but answer each from reasoning before you check.</p>\n",
+   "listen": "This lesson turns the whole stage into a dossier of your seven planets. Mercury is very strong: it is lagna and tenth lord, in its own sign, vargottama, in the tenth. Venus, Jupiter and the Moon are strong, each in its own sign. Mars is the weak link: combust about eleven degrees from the Sun, in an enemy sign, ruling the third and eighth. Saturn is debilitated in Aries in the eighth, but has cancellation candidates and the Harsha yoga, so it is mixed. The Sun, your twelfth lord, sits in the tenth with Mercury. Mercury and Venus are your functional benefics. Jupiter and the Moon are strong but functionally demanding. Rahu and Ketu take the results of their sign lords. These grades are a summary of this stage, not a classical scale and not a forecast. Copy the dossier, add what you will test, and then take the stage test.",
+   "sources": [
+    "BPHS ch. 3 (planetary characters and friendship), ch. 24, ch. 26, ch. 27, ch. 34 as cited in lessons 4-1 to 4-7",
+    "Engine output: natal positions, dignity, aspects, yogas"
+   ],
+   "quiz": [
+    {
+     "q": "At what degree of Libra is Saturn deepest exalted, and where is its deepest fall?",
+     "o": [
+      "20° Libra; 20° Aries",
+      "10° Libra; 10° Aries",
+      "28° Libra; 28° Aries",
+      "5° Libra; 5° Aries"
+     ],
+     "a": 0,
+     "w": "BPHS: Saturn’s deepest exaltation is 20° Libra and its deepest fall 20° Aries. Your Saturn is at about 7°41′ Aries, so it is in its fall sign but not at the deepest point."
+    },
+    {
+     "q": "Mars is a natural neutral to Venus. In your chart they share a sign. What is their five-fold relationship?",
+     "o": [
+      "Great friend",
+      "Enemy",
+      "Neutral",
+      "Great enemy"
+     ],
+     "a": 1,
+     "w": "Natural neutral plus temporary enemy (the same house counts as the 1st) gives an enemy."
+    },
+    {
+     "q": "Your Mercury is 17°29′ from the Sun. Using a 14° orb, it is…",
+     "o": [
+      "Combust",
+      "In planetary war",
+      "Free of the Sun",
+      "Retrograde"
+     ],
+     "a": 2,
+     "w": "It is outside the orb, so it is not combust."
+    },
+    {
+     "q": "Which pair are the functionally benefic planets for Virgo lagna in BPHS ch. 34?",
+     "o": [
+      "Mars and Jupiter",
+      "Moon and Saturn",
+      "Sun and Moon",
+      "Mercury and Venus"
+     ],
+     "a": 3,
+     "w": "BPHS ch. 34 calls Mercury and Venus auspicious for Virgo; Mars, Jupiter and the Moon are malefic."
+    },
+    {
+     "q": "Which planet in your chart receives a Jaimini aspect from Mars (Taurus) and Venus (Taurus) but no Parashari aspect from them?",
+     "o": [
+      "Moon",
+      "Sun",
+      "Saturn",
+      "Jupiter"
+     ],
+     "a": 0,
+     "w": "Taurus looks at Cancer, where your Moon is. Mars’s Parashari aspects (12th, 3rd, 4th) and Venus’s 7th (the 3rd house) miss the 11th."
+    },
+    {
+     "q": "Which verse of BPHS ch. 24 would you use first for your Sun, the 12th lord in the 10th?",
+     "o": [
+      "Verse 10",
+      "Verse 142",
+      "Verse 120",
+      "Verse 118"
+     ],
+     "a": 1,
+     "w": "Verse 142 covers the 12th lord in the 10th. Verse 10 is the lagna lord in the 10th, 118 the 10th lord in the 10th, and 120 the 10th lord in the 12th."
+    },
+    {
+     "q": "Which statement about your dossier grades is correct?",
+     "o": [
+      "They are a classical Shadbala scale",
+      "They guarantee results in the Mercury period",
+      "They are a summary of this stage’s tests and not a forecast",
+      "They replace the engine"
+     ],
+     "a": 2,
+     "w": "The grades are a teaching summary. A Shadbala scale would use different measures."
+    }
+   ]
+  }
+ ]
+}

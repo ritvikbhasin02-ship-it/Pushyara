@@ -1,0 +1,423 @@
+{
+ "stage": 0,
+ "title": "Orientation",
+ "level": "Orientation",
+ "goal": "Done when you can state your chart's convention profile, list which of your placements flip under another ayanamsa or a 5-minute change in birth time, and write one ledger entry with a testable statement.",
+ "terms": {
+  "vedanga": [
+   "Vedanga · वेदाङ्ग",
+   "One of the six limbs that support the Vedas: shiksha (sound), kalpa (ritual), vyakarana (grammar), nirukta (word origins), chandas (metre) and jyotisha (time and the heavens). Jyotisha is called the eye of the Veda."
+  ],
+  "siddhanta": [
+   "Siddhanta · सिद्धान्त",
+   "The astronomy and calculation branch of Jyotish: planetary positions, eclipses, the calendar. It is the exact, checkable part."
+  ],
+  "hora": [
+   "Hora · होरा",
+   "The branch that reads the individual birth chart and its timing. Also called Jataka. The word hora also names a planetary hour in muhurta."
+  ],
+  "samhita": [
+   "Samhita · संहिता",
+   "The branch that covers the wider world: omens, weather, nations, buildings and auspicious times."
+  ],
+  "convention": [
+   "Convention profile",
+   "The set of calculation choices behind a chart: ayanamsa, node type, house system, dasha year length, karaka scheme and matching tables. Two charts for the same birth can differ if the profile differs, so every chart and prediction should name its profile."
+  ],
+  "kp": [
+   "KP system · कृष्णमूर्ति पद्धति",
+   "Krishnamurti Paddhati. A system that uses Placidus houses, its own ayanamsa and a table of 249 star-and-sub divisions, and judges events by the sub-lord of house cusps."
+  ],
+  "meannode": [
+   "Mean and true node",
+   "Rahu and Ketu can be placed at the mean lunar node (a smooth average) or the true node (the actual momentary crossing of the Moon's orbit). The two can differ by more than a degree."
+  ],
+  "karakascheme": [
+   "Chara karaka scheme · चर कारक",
+   "The Jaimini method that ranks planets by degree within their sign. The highest degree is the Atmakaraka. Texts allow seven planets or eight (adding Rahu), so the ranking can change."
+  ],
+  "ashtakoota": [
+   "Ashtakoota · अष्टकूट",
+   "The eight-part, 36-point method of matching two charts by Moon nakshatra. Point tables differ slightly between almanacs."
+  ],
+  "savana": [
+   "Savana year · सावन",
+   "A year of exactly 360 days. Some dasha systems use it. A Vimshottari dasha counted in savana years runs about 100 days shorter per Saturn period than one counted in 365.25-day years."
+  ],
+  "ledger": [
+   "Prediction ledger",
+   "A written log of predictions made before the outcome is known: window, area of life, a testable statement, convention profile, base rate and confidence. It is locked when written and scored later by the criteria written at the time."
+  ],
+  "boundary": [
+   "Boundary warning",
+   "A flag on any point (planet, lagna) lying within about 2° of a sign or nakshatra edge, because a small change in ayanamsa or birth time can move it across the edge."
+  ],
+  "retrieval": [
+   "Retrieval practice · पुनःस्मरण अभ्यास",
+   "Studying by pulling an answer from memory, such as a quiz or a recall question, instead of rereading the material."
+  ],
+  "mastery": [
+   "Mastery · निपुणता",
+   "In this course, a score of 70% or more on a stage test, which unlocks the next stage."
+  ]
+ },
+ "lessons": [
+  {
+   "id": "0-1",
+   "title": "What Jyotish is, and what it is not",
+   "mins": 15,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Before you start: write one sentence on why you are learning Jyotish. You will read it again at the end of this stage.</p><p>{{term:vedanga|Jyotisha}} (<span class=\"skt\">ज्योतिष</span>) is one of the six Vedangas, the limbs that support the Vedas. Tradition calls it the eye of the Veda, because it was first used to fix the right times for rituals. Over the centuries it grew into three strands.</p>\n<h2>The three branches</h2><div class=\"tbl\"><table><thead><tr><th>Branch</th><th>Sanskrit</th><th>Covers</th><th>Where you meet it here</th></tr></thead><tbody><tr><td>{{term:siddhanta|Siddhanta}}</td><td><span class=\"skt\">सिद्धान्त</span></td><td>Astronomy and calculation: where the planets are, eclipses, the calendar</td><td>Stage 2 (lagna, panchang) and the engine behind every chart</td></tr><tr><td>{{term:hora|Hora}} (Jataka)</td><td><span class=\"skt\">होरा</span></td><td>The individual birth chart and its timing</td><td>Most of the course: houses, dashas, yogas</td></tr><tr><td>{{term:samhita|Samhita}}</td><td><span class=\"skt\">संहिता</span></td><td>The wider world: omens, weather, nations, buildings, auspicious times</td><td>Muhurta and Vastu, later</td></tr></tbody></table></div><p class=\"note\">Some authors list more divisions (for example Prashna, the question chart, and Shakuna, omens). The three-fold split above is the classical frame and the one this course uses.</p>\n<h2>What Jyotish is</h2>\n<ul>\n<li>A traditional vocabulary for describing a life: actors (planets), styles (signs), stages (houses), scripts (nakshatras) and a clock (dashas).</li>\n<li>A calendar, the panchang, that rests on real astronomy. Positions of the Sun and Moon on a given minute are not opinion. They can be computed and checked.</li>\n<li>A family of schools with their own rules and their own tools. Later stages show where they disagree.</li>\n</ul>\n<h2>What it is not</h2>\n<ul>\n<li>It is not proven prediction. Lesson 0-2 shows what controlled tests found.</li>\n<li>It is not a guarantee. This course never promises an outcome, and it does not claim \"100% accuracy\".</li>\n<li>It is not a substitute for a doctor, a lawyer or a financial adviser.</li>\n<li>It is not one rulebook. The same question can get different answers from different schools, and from different calculation settings.</li>\n</ul>\n<h2>The four habits of this course</h2><div class=\"tbl\"><table><thead><tr><th>Habit</th><th>What it means</th></tr></thead><tbody><tr><td>Compute</td><td>Every position about you comes from the engine, never from memory.</td></tr><tr><td>Cite</td><td>Rules are tied to a named text. Chapter numbers are given only when checked.</td></tr><tr><td>Compare</td><td>Where schools or settings differ, you see each view and who holds it.</td></tr><tr><td>Log</td><td>Predictions go into a ledger before the outcome is known (lesson 0-4).</td></tr></tbody></table></div><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Your chart is computed for 26 June 1998, 12:59 IST, Satna (24.58° N, 80.83° E). The engine reports lagna Virgo 21°52′, Moon in Cancer 8°04′ (Pushya, pada 2) in the 11th house, and a Lahiri ayanamsa of 23.8359° at your birth. Those numbers are the Siddhanta part: calculation. What the course says about Virgo rising or a Pushya Moon is the Hora part: tradition, to be tested, not assumed.</p>\n<p>The app's chart engine is checked against known planetary events and reference charts.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Five toolkits are in common use. Each is a different way to ask the same chart a question.</p>\n<ul>\n<li><strong>Parashari</strong> (from Brihat Parashara Hora Shastra): whole-sign houses, Vimshottari dasha, yogas, divisional charts.</li>\n<li><strong>Jaimini</strong> (Jaimini Sutras): sign-based aspects, chara karakas, chara dasha.</li>\n<li><strong>KP</strong> (Krishnamurti): Placidus houses, star and sub-lords, strong focus on yes/no timing.</li>\n<li><strong>Nadi</strong>: a palm-leaf manuscript tradition that reads planet linkages.</li>\n<li><strong>Tajika</strong>: annual-chart (varshaphala) techniques with Perso-Arabic influence.</li>\n</ul>\n<p>None of them is declared \"the correct one\" in this course.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Run your birth data through a second, independent Jyotish program and compare the position table. With the same ayanamsa and node setting, the lagna, Moon sign and nakshatra should match closely. If they do not, the settings differ (lesson 0-3), the birth time differs, or one of the programs has an error. Finding out which is the first skill of the course.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Jyotisha is a Vedanga with three branches: Siddhanta, Hora, Samhita.</li><li>The calendar and positions are astronomy. The readings are tradition.</li><li>No guarantees, no 100% claims, no replacement for professional advice.</li><li>Compute, cite, compare, log.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Open your chart in this app and in one second program. Compare lagna, Moon sign and Moon nakshatra, and write down any difference.</p>",
+   "listen": "Jyotisha is one of the six Vedangas, the limbs that support the Vedas. Tradition calls it the eye of the Veda, because it was first used to time rituals. It has three classical branches. Siddhanta is the astronomy and calculation: where the planets are, eclipses, the calendar. Hora, also called Jataka, reads the individual birth chart and its timing. Samhita covers the wider world: omens, weather, buildings and auspicious times. The calendar part rests on real astronomy and can be checked. The interpretive part is tradition. Jyotish is not proven prediction, not a guarantee, and not a replacement for a doctor, a lawyer or a financial adviser. It is also not one rulebook: Parashari, Jaimini, KP, Nadi and Tajika are different toolkits. This course follows four habits. Compute every position with the engine. Cite the text for every rule. Compare schools where they differ. And log predictions before the outcome is known. Your own chart is computed for 26 June 1998, 12:59, Satna.",
+   "sources": [
+    "Brihat Samhita (Varahamihira), opening discussion of the scope of Jyotisha",
+    "Brihat Parashara Hora Shastra, general framework of Hora",
+    "Jaimini Sutras, Uttara Kalamrita, KP Readers, Tajika Neelakanthi (school overviews only; no chapter numbers given)"
+   ],
+   "quiz": [
+    {
+     "q": "Which branch of Jyotish reads the individual birth chart?",
+     "o": [
+      "Siddhanta",
+      "Samhita",
+      "Hora",
+      "Vastu"
+     ],
+     "a": 2,
+     "w": "Hora (Jataka) is the natal branch. Siddhanta is astronomy and Samhita covers the wider world."
+    },
+    {
+     "q": "Which part of Jyotish is exact astronomy that anyone can recompute?",
+     "o": [
+      "Interpreting which yogas are strong",
+      "Planetary positions and the panchang",
+      "Predicting life events from the running dasha",
+      "Choosing remedies for a weak planet"
+     ],
+     "a": 1,
+     "w": "Positions and the calendar are calculation. Interpretation is tradition."
+    },
+    {
+     "q": "Which school is built around Placidus houses and sub-lords?",
+     "o": [
+      "Jaimini",
+      "Tajika",
+      "Parashari",
+      "KP"
+     ],
+     "a": 3,
+     "w": "KP uses Placidus houses and star-and-sub divisions."
+    },
+    {
+     "q": "Which statement fits this course?",
+     "o": [
+      "Every chart statement is a guaranteed outcome",
+      "One school is correct and all others are wrong",
+      "Where schools or settings differ, you see each view",
+      "Remedies can safely replace medical advice"
+     ],
+     "a": 2,
+     "w": "The course shows each view and who holds it, and makes no guarantees."
+    }
+   ]
+  },
+  {
+   "id": "0-2",
+   "title": "What controlled tests found",
+   "mins": 15,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Which of the three branches does the birth chart belong to, and which does the panchang's astronomy belong to?</p><p>Two serious blind tests have been run on whether astrologers can read charts. You should know both before you invest years in this subject, and you should know what they did and did not test.</p>\n<h2>The two tests</h2><div class=\"tbl\"><table><thead><tr><th></th><th>Carlson, Nature 1985</th><th>Narlikar and colleagues, Pune 2008</th></tr></thead><tbody><tr><td>Published</td><td>Nature 318:419, December 1985</td><td>Current Science 96(5):641–643, 2009</td></tr><tr><td>Astrologers</td><td>28, nominated through the National Council for Geocosmic Research (Western astrology)</td><td>51 asked for data, 27 returned judgements (Vedic astrologers)</td></tr><tr><td>Protocol</td><td>Agreed in advance with the astrologers. They chose the California Psychological Inventory (CPI) as the best-matched test</td><td>Charts coded and held by a statistician. Double-blind</td></tr><tr><td>Task</td><td>Match more than 100 natal charts to CPI personality profiles</td><td>Each astrologer judged 40 charts of teenagers: 100 rated bright, 100 from special schools</td></tr><tr><td>Result</td><td>No better than chance. Charts picked with high confidence were no more accurate than the rest</td><td>Best score 24/40, two scored 22, the rest 20 or below. Mean 17.25 against 20 expected by chance. One team scored 102/200 on all charts</td></tr></tbody></table></div><p>Carlson concluded that the result \"clearly refutes the astrological hypothesis\". Narlikar's group concluded firmly against Indian astrology being considered a science.</p>\n<h2>Reading the numbers yourself</h2>\n<p>Forty yes/no guesses by coin flip give 20 correct on average. The spread (standard deviation) is the square root of 40 × 0.5 × 0.5, which is 3.16. The Pune report quotes a margin of ±3.16 around 20. Your own arithmetic: the mean of 17.25 sits about one standard deviation below 20, and even the best score of 24 is only about 1.3 standard deviations above it. Among 27 people guessing, a best score near 24 is not surprising.</p>\n<h2>Limits of these studies</h2>\n<ul>\n<li>Pune: about half the special-school children were older, which could be a cue. Only 27 of 51 astrologers took part. The Maharashtra Astrological Society urged a boycott. The statistician, S. Kunte, held the coded charts, and access to the raw data is limited. J. V. Narlikar is a known critic of astrology.</li>\n<li>One magazine report gives the Pune mean as 17.5 rather than 17.25. The primary account gives 17.25.</li>\n<li>Some leading astrologers called the Pune test inconclusive because the participants were not skilled enough. That objection shows the tradition has no agreed success test. Setting one in advance is what the ledger in lesson 0-4 does.</li>\n</ul>\n<h2>What these tests did not test</h2>\n<ul>\n<li>Both asked astrologers to read a natal chart and match it to a personality or intelligence profile, blind.</li>\n<li>Neither tested dasha timing, transits, or any single technique. They are not evidence for those techniques, and they are not evidence against them.</li>\n<li>Carlson: a reanalysis by Suitbert Ertel (Journal of Scientific Exploration 23(2), 2009) argued that the astrologers matched CPI profiles slightly better than chance (p = .054 on the three-way choice, p = .04 on the 10-point ratings). Ertel did not claim this verifies astrology, only that Carlson's verdict was too strong. Read both before you quote either.</li><li>This course has not reviewed other studies, so it does not lean on any of them in either direction.</li>\n</ul><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>One chart cannot test Jyotish, so your chart is not a test case. The engine can tell you your Moon is in Pushya, pada 2, at 8°04′ Cancer. That is astronomy. Whether a Pushya Moon \"means\" what the books say about you is the kind of statement the tests above looked at. The honest way to check is to log many predictions and score them against criteria written first.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Practitioners respond to the tests in different ways, and the sources listed below give these views.</p>\n<ul>\n<li><strong>Critics</strong> (Carlson, Narlikar) treat the chance-level results as a refutation of the hypothesis tested.</li>\n<li><strong>Some leading Indian astrologers</strong> called the Pune test inconclusive because they judged the participants incompetent.</li>\n<li><strong>P. V. R. Narasimha Rao</strong> reports finding no compelling correlation when he used only the natal Moon, and argues that many factors come together to bring an event, so several techniques should be combined.</li>\n</ul>\n<p>The course does not pick a side. It asks you to build your own evidence.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>To check a study claim, look for four things: Was the protocol agreed before results? Was the judging blind? What score would chance give? How many judges and charts were there? You can apply the same four questions to any astrologer's claim, including your own.</p></div><p class=\"note\">Facts here come from secondary summaries and reprints, not from the journal pages. Check Nature 318:419 (DOI 10.1038/318419a0) and Current Science 96(5) before you quote them.</p><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Carlson 1985 and Pune 2008 both reported chance-level results on natal-chart matching. Ertel's 2009 reanalysis disputes how strong Carlson's verdict is.</li><li>In Carlson, high-confidence matches were no better. Feeling sure is not evidence.</li><li>Chance on 40 yes/no questions is 20 ± 3.16 (one standard deviation).</li><li>Neither study tested dasha timing or transits.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Work out the chance score and standard deviation for 25 yes/no predictions at a 50% base rate. You will need it for your ledger.</p>",
+   "listen": "Two blind tests are worth knowing. In 1985, Shawn Carlson published a double-blind test in Nature. Twenty-eight astrologers, nominated through the National Council for Geocosmic Research, agreed the protocol in advance and chose the California Psychological Inventory as the best-matched test. They matched more than a hundred natal charts to personality profiles and did no better than chance. High-confidence matches were no more accurate than the rest. In 2008, Jayant Narlikar and colleagues ran a test in Pune with Vedic astrologers. Twenty-seven astrologers returned judgements on forty charts each of bright teenagers and special-school children. The best scored twenty-four of forty, and the average was seventeen point two five, against twenty expected by chance. Both tests asked astrologers to match natal charts to a profile. Neither tested dasha timing or transits. A 2009 reanalysis of Carlson's data by Suitbert Ertel found marginal, not chance-level, matching, and argued Carlson's verdict was too strong. This course has not reviewed other studies. So treat Jyotish as a traditional framework to test yourself, with a written ledger, and never as the sole basis for medical, financial or legal decisions.",
+   "sources": [
+    "Carlson, S., 'A double-blind test of astrology', Nature 318:419 (1985), DOI 10.1038/318419a0",
+    "Narlikar, J. V., Kunte, S., Dabholkar, N., Ghatpande, P., Current Science 96(5):641–643 (2009), read via a reprint of Narlikar's account",
+    "Open Magazine account of the Pune test; accuracy and cross-systems literature"
+   ],
+   "quiz": [
+    {
+     "q": "Which personality instrument did the astrologers choose in Carlson's test?",
+     "o": [
+      "Myers-Briggs Type Indicator",
+      "California Psychological Inventory",
+      "Eysenck Personality Questionnaire",
+      "Minnesota Multiphasic Personality Inventory"
+     ],
+     "a": 1,
+     "w": "The astrologers nominated the CPI as the best-matched instrument."
+    },
+    {
+     "q": "What score would chance give on 40 yes/no questions?",
+     "o": [
+      "10",
+      "20",
+      "30",
+      "24"
+     ],
+     "a": 1,
+     "w": "A coin flip gets 20 of 40 on average, with a standard deviation of about 3.16."
+    },
+    {
+     "q": "What did Carlson find about confident matches?",
+     "o": [
+      "They were far more accurate",
+      "They were somewhat more accurate",
+      "They were no more accurate",
+      "They were clearly less accurate"
+     ],
+     "a": 2,
+     "w": "High-confidence matches did no better than the rest, which shows that feeling sure is not evidence."
+    },
+    {
+     "q": "Which technique did these two tests directly examine?",
+     "o": [
+      "Vimshottari dasha timing",
+      "Double transit of Jupiter and Saturn",
+      "Matching natal charts to profiles",
+      "Varshaphala annual charts"
+     ],
+     "a": 2,
+     "w": "Both studies asked astrologers to match natal charts to personality or intelligence profiles."
+    },
+    {
+     "q": "Why does the 'participants were not experts' objection matter for your own practice?",
+     "o": [
+      "It proves the tests were badly designed",
+      "It shows the need to fix success criteria before outcomes",
+      "It shows every expert would have passed",
+      "It means success criteria can be chosen afterwards"
+     ],
+     "a": 1,
+     "w": "Without agreed criteria set in advance, any result can be explained away, which is why you log predictions with written criteria."
+    }
+   ]
+  },
+  {
+   "id": "0-3",
+   "title": "The convention profile: six choices behind every chart",
+   "mins": 20,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> In the Pune test, what score did chance predict, and what was the astrologers' mean?</p><p>Two careful astrologers can start from the same birth data and print different charts. Nobody has made an error. Each has made six calculation choices. Together they form the {{term:convention|convention profile}}. A chart, a lesson or a prediction that does not name its profile cannot be checked.</p>\n<h2>The six choices</h2><div class=\"tbl\"><table><thead><tr><th>Choice</th><th>Options</th><th>What it changes</th><th>Size of effect</th><th>Used here</th></tr></thead><tbody><tr><td>{{term:ayanamsa|Ayanamsa}}</td><td>Lahiri, KP, Raman, Yukteshwar, True Pushya, Fagan-Bradley</td><td>Every sidereal longitude, so signs, nakshatras, padas and dasha dates</td><td>Up to about 2° between mainstream choices</td><td>Lahiri</td></tr><tr><td>Node</td><td>{{term:meannode|Mean or true}} node</td><td>Where Rahu and Ketu sit</td><td>Up to about 1.5°</td><td>Mean node (the engine uses it)</td></tr><tr><td>House system</td><td>Whole-sign, equal, Sripati, Placidus</td><td>Which house a planet falls in</td><td>Planets near house edges change house (lesson 2-4)</td><td>Whole-sign</td></tr><tr><td>Dasha year</td><td>365.25 days, other solar years, 360-day {{term:savana|savana}} year</td><td>Every dasha date</td><td>Hours for solar years, about 100 days per Saturn period for savana</td><td>365.25 days</td></tr><tr><td>{{term:karakascheme|Karaka scheme}}</td><td>7 or 8 chara karakas</td><td>Who is Atmakaraka, Amatyakaraka and so on</td><td>Atmakaraka changes in about 12% of charts (one website's estimate)</td><td>7 karakas</td></tr><tr><td>Matching tables</td><td>{{term:ashtakoota|Ashtakoota}} table sets, or the South Indian ten poruthams</td><td>The matching score</td><td>e.g. 22 against 23 for the same couple</td><td>Engine table set (named when matching is taught)</td></tr></tbody></table></div><h2>Ayanamsa: the biggest lever</h2>\n<p>Sidereal longitude is tropical longitude minus the ayanamsa. A smaller ayanamsa pushes every planet forward. The table shows your own chart under six ayanamsas, computed by the engine at your birth moment.</p><div class=\"tbl\"><table><thead><tr><th>Ayanamsa</th><th>Value at your birth</th><th>Against Lahiri</th><th>Your Mars</th><th>Moon dasha balance</th><th>Mercury dasha ends</th><th>Atmakaraka</th></tr></thead><tbody><tr><td>Lahiri</td><td>23.836°</td><td>0</td><td>Taurus 29°19′</td><td>Saturn 12.26 y</td><td>29 Sep 2027</td><td>Mars</td></tr><tr><td>KP</td><td>23.739°</td><td>−0.097° (−5.8′)</td><td>Taurus 29°25′</td><td>Saturn 12.12 y</td><td>10 Aug 2027</td><td>Mars</td></tr><tr><td>Raman</td><td>22.390°</td><td>−1.446°</td><td>Gemini 0°46′</td><td>Saturn 10.20 y</td><td>7 Sep 2025</td><td>Mercury</td></tr><tr><td>Yukteshwar</td><td>22.458°</td><td>−1.378°</td><td>Gemini 0°42′</td><td>Saturn 10.30 y</td><td>12 Oct 2025</td><td>Mercury</td></tr><tr><td>True Pushya</td><td>22.696°</td><td>−1.140°</td><td>Gemini 0°27′</td><td>Saturn 10.64 y</td><td>13 Feb 2026</td><td>Mercury</td></tr><tr><td>Fagan-Bradley</td><td>24.719°</td><td>+0.883°</td><td>Taurus 28°26′</td><td>Saturn 13.52 y</td><td>1 Jan 2029</td><td>Mars</td></tr></tbody></table></div><p>Read the table slowly. Under Raman, Yukteshwar or True Pushya, Mars is no longer in Taurus. It is in Gemini, a different sign and (from your lagna) a different house. The Atmakaraka changes from Mars to Mercury. And your Mercury dasha, which Lahiri says runs until September 2027, would have ended in 2025 or early 2026. Same person, same minute.</p>\n<p class=\"note\">Some popular tables quote other offsets. One blog gives Yukteshwar as −2.09° and Fagan-Bradley as +0.19° against Lahiri. The Swiss Ephemeris in your engine gives −1.38° and +0.88°, probably because the sources quote different epochs. A table without a stated epoch and software is not reliable. In this course the engine's numbers rule.</p>\n<h2>Dasha year length</h2>\n<p>The Vimshottari dasha counts years of a fixed length. Using the engine on your Moon, the Mercury period ends (and the Ketu period begins) on:</p><div class=\"tbl\"><table><thead><tr><th>Year length</th><th>Saturn period length</th><th>Ketu period starts</th></tr></thead><tbody><tr><td>Julian, 365.25 days (default)</td><td>6939.75 days</td><td>29 Sep 2027</td></tr><tr><td>Gregorian, 365.2425 days</td><td>6939.61 days</td><td>29 Sep 2027</td></tr><tr><td>Sidereal, 365.25636 days</td><td>6939.87 days</td><td>29 Sep 2027</td></tr><tr><td>Savana, 360 days</td><td>6840 days</td><td>29 Apr 2027</td></tr></tbody></table></div><p>The solar-year variants differ by hours, so the dates agree to the day. The 360-day year pulls the same transition about five months earlier.</p>\n<h2>Node and karaka scheme</h2>\n<p>The engine places Rahu at the mean node. The true node is the actual crossing point and wobbles around the mean.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>Mean Rahu: Leo 10°33′, Magha pada 4. True Rahu: Leo 9°09′, which is Magha pada 3. That is 1°24′ apart, and it changes the navamsa sign of Rahu (Cancer against Gemini). Ketu moves with it.</p>\n<p>Karaka scheme: with 7 karakas your Atmakaraka is Mars at 29°19′ and the Amatyakaraka is Mercury at 28°10′. Adding Rahu (counted as 30° minus its degree, 19°27′) does not change either under Lahiri. Under Raman, the Atmakaraka becomes Mercury and the 8-karaka Amatyakaraka becomes Rahu.</p>\n<p>Your convention profile for this course: Lahiri · mean node · whole-sign houses · Vimshottari, 365.25-day year · 7 karakas · matching tables named when used.</p></div><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><ul>\n<li><strong>Ayanamsa.</strong> Lahiri (Chitrapaksha) is the reference most Indian software and the Indian government calendar use. KP uses its own, about 6′ away. P. V. R. Narasimha Rao recommends True Pushya (Pushyapaksha) in Jagannatha Hora. B. V. Raman and Yukteshwar had their own values.</li>\n<li><strong>Karakas.</strong> K. N. Rao and Iranganti Rangacharya use 7. P. V. R. Narasimha Rao uses 8 karakas, always including Rahu (Vedic Astrology: An Integrated Approach, chapter on karakas). Some others teach a conditional 8, adding Rahu only when two of the seven planets share the same degree, from their reading of BPHS on chara karakas. Jaimini Sutra 1.1.10, \"saptanam astanam va\", leaves it open (7 or 8), as cited by one source; not verified against the original text. Rahu's degree is counted backwards (30° minus its longitude).</li>\n<li><strong>Dasha year.</strong> 365.25 days is the default in Jagannatha Hora, Parashara's Light and KP Astro, and in published tables of Sanjay Rath and K. N. Rao, according to one source. The same source says BPHS chapters 46–51 do not state the year length.</li>\n<li><strong>Matching.</strong> Yoni, Vashya and Gana tables vary between almanacs. Nadi-dosha exceptions differ by tradition. The 18-point pass mark is a convention. South India mostly uses ten poruthams.</li>\n</ul></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>For any statement about yourself, run the chart under at least Lahiri, KP and one far ayanamsa (Raman). Mark the statement as robust if it survives all three and fragile if it flips. Your Mars sign, Atmakaraka and current dasha are fragile. Your lagna (Virgo under all six), Moon sign (Cancer) and Moon nakshatra (Pushya) are robust.</p>\n<p class=\"note\">The percentages for how often the karaka choice changes charts (12% for the Atmakaraka, about 25% for the Amatyakaraka) come from one website's own calculations and are not independently verified.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Name the six choices: ayanamsa, node, house system, dasha year, karaka scheme, matching tables.</li><li>Ayanamsa moves everything. It can change signs, the Atmakaraka and dasha dates.</li><li>Solar year lengths differ by hours. The 360-day year differs by months.</li><li>Every chart and ledger entry carries its convention profile.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your convention profile in one line. Then list two placements in your chart that would change under Raman and two that would not.</p>",
+   "listen": "Two careful astrologers can print different charts from the same birth data, because each makes six calculation choices. Together they are the convention profile: ayanamsa, node type, house system, dasha year length, karaka scheme and matching tables. Ayanamsa is the biggest lever. Using the engine on your birth, Lahiri puts Mars at twenty-nine nineteen Taurus. Raman, Yukteshwar and True Pushya put it in Gemini, which makes Mercury your Atmakaraka and moves the end of your Mercury dasha from September 2027 to late 2025 or early 2026. Solar dasha year lengths differ by hours, but the 360-day savana year moves the Ketu start from September to April 2027. The engine uses the mean node. The true node differs by one degree twenty-four minutes in your chart. Karaka schemes can be seven or eight. Matching tables differ between almanacs. In this course your profile is Lahiri, mean node, whole-sign houses, a 365.25-day year and seven karakas. Name the profile in every chart and prediction.",
+   "sources": [
+    "Swiss Ephemeris documentation, sidereal modes and node types",
+    "Jaimini Sutras 1.1.10 and BPHS 32 on chara karakas, as cited by AstroMedha (not checked against the texts)",
+    "Dekho Panchang, dasha year length and KP system pages; Hindutone on Ashtakoota variants; PVR Narasimha Rao on Pushyapaksha ayanamsa"
+   ],
+   "quiz": [
+    {
+     "q": "Which ayanamsa values move your Mars from Taurus into Gemini?",
+     "o": [
+      "Lahiri, KP and Fagan-Bradley",
+      "KP and Fagan-Bradley only",
+      "Raman, Yukteshwar and True Pushya",
+      "None of the six values move it into Gemini"
+     ],
+     "a": 2,
+     "w": "A smaller ayanamsa pushes planets forward. Mars at 29°19′ Taurus crosses into Gemini under those three."
+    },
+    {
+     "q": "What is the main difference between solar dasha year lengths such as 365.25 and 365.2425?",
+     "o": [
+      "Months over a long period",
+      "Hours over a long period",
+      "Years over a long period",
+      "Days within each period"
+     ],
+     "a": 1,
+     "w": "They differ by hours per period, so dates agree to the day in your chart. The 360-day savana year differs by months."
+    },
+    {
+     "q": "Which node does the engine use?",
+     "o": [
+      "True node",
+      "Mean node",
+      "Both averaged",
+      "Ketu's node only"
+     ],
+     "a": 1,
+     "w": "The engine's Rahu is the Swiss Ephemeris mean node."
+    },
+    {
+     "q": "Why is your Mars sign called fragile?",
+     "o": [
+      "It sits too close to the Sun, so its position cannot be measured",
+      "It lies 41′ from a sign edge, so another ayanamsa moves it",
+      "Mars moves too fast for any ayanamsa",
+      "Its sign depends on the house system"
+     ],
+     "a": 1,
+     "w": "At Taurus 29°19′, a shift of 41′ or more changes the sign."
+    },
+    {
+     "q": "What does the conditional-8 karaka rule do?",
+     "o": [
+      "Always includes Rahu as the eighth karaka",
+      "Never includes Rahu and uses seven planets only",
+      "Includes Rahu only when two planets share the same degree",
+      "Drops Ketu and counts Rahu by raw degree"
+     ],
+     "a": 2,
+     "w": "Under the conditional rule, Rahu is added only if two planets share the same degree. The result depends on how precisely 'same degree' is measured. P. V. R. Narasimha Rao does not use this rule: he always uses 8."
+    }
+   ]
+  },
+  {
+   "id": "0-4",
+   "title": "Birth-time confidence, boundary warnings and the ledger",
+   "mins": 25,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name three of the six convention choices and say which one changed your Atmakaraka.</p><p>You now know that conventions move your chart. This lesson adds the other source of drift, the birth time, and the habit that keeps you honest.</p>\n<h2>How good is your birth time?</h2><div class=\"tbl\"><table><thead><tr><th>Grade</th><th>Source of the time</th><th>What you can trust</th></tr></thead><tbody><tr><td>A</td><td>Hospital or birth-certificate record, to the minute</td><td>Lagna, D9 lagna, nakshatra pada</td></tr><tr><td>B</td><td>Recorded but rounded (nearest 5 or 15 minutes), or a reliable family note</td><td>Lagna sign, Moon, most placements. Treat D9 and finer charts with care</td></tr><tr><td>C</td><td>Remembered as \"about noon\" or \"afternoon\"</td><td>Planets and Moon. The lagna may be wrong by a sign</td></tr><tr><td>D</td><td>Unknown</td><td>Use a Moon chart and the panchang only</td></tr></tbody></table></div><p>Around your birth time (Virgo rising) the lagna moves about 1° every 4½ minutes; at Satna the rate runs from about 3 to 4½ minutes per degree, depending on the sign. Finer divisional charts divide each sign into small parts. The 60-part chart (D60) changes its part every 0.5°, about every two minutes. So grade the time before you trust any chart built on it.</p>\n<h2>Boundary warnings</h2>\n<p>A {{term:boundary|boundary warning}} marks any planet or the lagna that lies within about 2° of a sign or nakshatra edge, and any lagna or cusp feature that would change if the birth time moved by 5 minutes. The arithmetic shows why flags are normal: 2° either side of a sign edge is 4° out of every 30°, which is about 13% for one point, and with ten points most charts carry at least one flag. The skill is to know what hinges on each flag.</p><div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The engine's points within 2° of an edge in your chart:</p><div class=\"tbl\"><table><thead><tr><th>Point</th><th>Position</th><th>Distance to edge</th><th>What could flip</th></tr></thead><tbody><tr><td>Mars</td><td>Taurus 29°19′</td><td>41′ to Gemini</td><td>Sign and house under Raman, Yukteshwar, True Pushya; the Atmakaraka</td></tr><tr><td>Mercury</td><td>Gemini 28°10′</td><td>1°50′ to Cancer</td><td>No tested ayanamsa flips it (Raman: 29°36′)</td></tr><tr><td>Jupiter</td><td>Pisces 3°28′</td><td>8′ past the Purva Bhadrapada / Uttara Bhadrapada edge</td><td>Nakshatra and its lord under Fagan-Bradley (Purva Bhadrapada, pada 4)</td></tr><tr><td>Venus</td><td>Taurus 8°18′</td><td>1°42′ to Rohini</td><td>No tested ayanamsa flips it (Raman: 9°44′)</td></tr><tr><td>Lagna</td><td>Virgo 21°52′</td><td>1°28′ to Chitra</td><td>Birth time +7 min (13:06) gives Chitra; under Raman the lagna sits 1′ short of the edge</td></tr></tbody></table></div><p>Every point lies within 1°40′ of a pada edge, so pada edges are always close. They matter only for the navamsa. Jupiter (8′), Rahu and Ketu (33′), Sun (41′) and Mars (41′) are the closest.</p>\n<p>Birth-time sensitivity at 12:59, from the engine:</p><div class=\"tbl\"><table><thead><tr><th>Feature</th><th>Current value</th><th>Changes at</th><th>Margin</th></tr></thead><tbody><tr><td>Lagna sign</td><td>Virgo</td><td>13:36 (Libra)</td><td>+37 min; Virgo began 11:23 (−96 min)</td></tr><tr><td>Lagna nakshatra</td><td>Hasta pada 4</td><td>13:06 (Chitra)</td><td>+7 min</td></tr><tr><td>D9 lagna</td><td>Cancer</td><td>12:51 and 13:06</td><td>−8 min, +7 min</td></tr><tr><td>Mars house</td><td>9</td><td>13:36 (becomes 8)</td><td>+37 min</td></tr><tr><td>Moon pada, Atmakaraka, karakamsa</td><td>Pushya 2, Mars, Virgo</td><td>No change within ±90 min</td><td>Safe</td></tr></tbody></table></div><p>A birth time off by 5 minutes keeps your D9 lagna. Off by 8 minutes earlier or 7 minutes later, it flips. The source of your 12:59 is not recorded in this app. Write it down and give it a grade.</p></div><h2>The prediction ledger</h2>\n<p>Carlson's astrologers were confident and no more accurate. The Pune objections came after the scores were in. A {{term:ledger|prediction ledger}} fixes both problems. You write the prediction and its success test before the outcome exists, and you never edit it.</p><div class=\"tbl\"><table><thead><tr><th>Field</th><th>What to write</th></tr></thead><tbody><tr><td>Made on</td><td>Date and time of writing</td></tr><tr><td>Convention profile</td><td>Ayanamsa, node, houses, dasha year, karakas, birth-time grade</td></tr><tr><td>Window</td><td>Start and end dates (keep under about 2 years)</td></tr><tr><td>Area and house</td><td>One main house or area of life</td></tr><tr><td>Statement</td><td>One testable sentence a stranger could mark true or false</td></tr><tr><td>Base rate</td><td>How often this happens to anyone in such a window. Estimate from your own past years</td></tr><tr><td>Confidence</td><td>Number of techniques that agree, and what flips it (another ayanamsa, birth time ±5 min)</td></tr><tr><td>Outcome</td><td>Filled in later: hit, miss or unclear, using only the statement above</td></tr></tbody></table></div><p><strong>Format example (not a forecast).</strong> The engine shows Jupiter entering Cancer, your 11th house and the sign of your Moon, on 25 January 2027, and entering Leo on 26 June 2027. Entry: <em>Window 25 Jan–26 Jun 2027. House 11. Statement: a person or business with no relationship to you on 1 Jan 2027 gives you repeat business worth at least a figure you write now. Base rate: how many such relationships started in each of the last four years. Profile: Lahiri, mean node, whole-sign, 365.25 days, 7 karakas, birth time grade filled in.</em></p>\n<p>Rules: never edit an entry, count misses as carefully as hits, compare your hit rate with the base rate, and make no conclusion from a handful of entries. With 40 yes/no entries at a 50% base rate, chance alone gives 20 ± 3. A score of 26 would be about two standard deviations above chance, which is interesting but not proof.</p><div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>KP divides the zodiac into 249 small sub-divisions, so its cusp sub-lords can change over a few minutes of birth time. No published tolerance figure was found for that. Parashari methods lean more on signs and nakshatras, which are wider, but the divisional charts are as sensitive as the table above shows. Rectification methods differ by school. The course covers them with the divisional charts.</p></div><div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Re-run your chart at 12:54 and 13:04. Compare lagna degree, D9 lagna and lagna nakshatra pada. Then re-run under Lahiri, KP and Raman. Any claim that survives all five runs is robust. Any claim that flips goes into the ledger with the flip noted as its sensitivity.</p></div><div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Grade your birth time and write its source down.</li><li>Boundary warnings are normal. What matters is what hinges on each one.</li><li>Your fragile points: Mars sign, Jupiter nakshatra, lagna pada. Your robust ones: lagna sign, Moon sign, Moon nakshatra.</li><li>Ledger: write first, lock, score by the stated test, compare with the base rate.</li></ul></div><p class=\"muted\"><strong>Practice:</strong> Write your birth-time source and grade. Then write one ledger entry using the fields above, with a window, a one-sentence statement and a base rate.</p>",
+   "listen": "Your chart depends on two things you cannot see: the calculation conventions and the birth time. Grade your birth time from A to D by its source. Around your birth time the lagna moves about one degree every four and a half minutes (three to four and a half across the signs at Satna), and the sixty-part chart changes every two minutes. Boundary warnings flag any planet or the lagna within two degrees of a sign or nakshatra edge. In your chart these are Mars at twenty-nine nineteen Taurus, Mercury, Jupiter eight minutes inside Uttara Bhadrapada, Venus and the lagna. Mars is the fragile one: three ayanamsas put it in Gemini. Your D9 lagna holds for minus eight to plus seven minutes around 12:59. The prediction ledger is the habit that keeps you honest. Write the prediction, its window, its single testable statement, the base rate and the convention profile before the outcome exists. Never edit it, count misses as carefully as hits, and compare your hit rate with chance. Then this stage ends with a test.",
+   "sources": [
+    "Boundary warning and ledger design recommendations (inferences, not sourced facts)",
+    "Engine output: natal chart, timescan and ayanamsa variants for 26 June 1998, 12:59 IST, Satna",
+    "KP Readers (sub-division system, general description)"
+   ],
+   "quiz": [
+    {
+     "q": "Which of your placements is flagged because it lies 41′ from a sign edge?",
+     "o": [
+      "Mercury",
+      "Mars",
+      "Venus",
+      "Saturn"
+     ],
+     "a": 1,
+     "w": "Mars at Taurus 29°19′ is 41′ from Gemini."
+    },
+    {
+     "q": "Your birth time is recorded as 12:59. For how many minutes later does your D9 lagna stay Cancer?",
+     "o": [
+      "About 7",
+      "About 37",
+      "About 60",
+      "It never changes"
+     ],
+     "a": 0,
+     "w": "The D9 lagna is Cancer from 12:51 to 13:06, so about 7 minutes after 12:59."
+    },
+    {
+     "q": "What is the first rule of a ledger entry?",
+     "o": [
+      "Revise it as you learn the outcome",
+      "Write it before the outcome is known and never edit it",
+      "Keep the wording broad so it fits more outcomes",
+      "Cover as many houses and windows as you can"
+     ],
+     "a": 1,
+     "w": "Entries are locked when written and scored against the criteria written at the time."
+    },
+    {
+     "q": "What does a base rate tell you?",
+     "o": [
+      "How confident the astrologer feels about it",
+      "How often the event happens to anyone in such a window",
+      "Which dasha period the event falls inside",
+      "Which ayanamsa gives the best fit to the recorded events"
+     ],
+     "a": 1,
+     "w": "Comparing a hit rate with the base rate shows whether the predictions beat chance."
+    },
+    {
+     "q": "Why do boundary warnings appear in most charts?",
+     "o": [
+      "Birth times are almost always recorded wrongly",
+      "Edges span about 13% of each sign, and a chart has ten points",
+      "Ayanamsa values are always wrong, so all points flag",
+      "The warning is added to every chart whatever its planet positions are"
+     ],
+     "a": 1,
+     "w": "4° of 30° is about 13% per point, so across ten points at least one flag is common."
+    },
+    {
+     "q": "Under which ayanamsa from the lesson is your Atmakaraka Mercury?",
+     "o": [
+      "KP",
+      "Lahiri",
+      "Raman",
+      "Fagan-Bradley"
+     ],
+     "a": 2,
+     "w": "Raman moves Mars into Gemini 0°46′, leaving Mercury at 29°36′ as the highest degree."
+    },
+    {
+     "q": "Which three features are robust under all six ayanamsas?",
+     "o": [
+      "Mars sign, Atmakaraka, dasha end",
+      "Lagna sign, Moon sign, Moon nakshatra",
+      "Jupiter nakshatra, Mars sign, lagna pada",
+      "No features, every one of them shifts"
+     ],
+     "a": 1,
+     "w": "Lagna Virgo, Moon in Cancer and Pushya are unchanged across the six ayanamsas tested."
+    },
+    {
+     "q": "A prediction window of five years covering three houses is best described as…",
+     "o": [
+      "Strong evidence of skill",
+      "Low in falsifiability",
+      "Required by the texts",
+      "Impossible to log"
+     ],
+     "a": 1,
+     "w": "Long, multi-house windows are almost always 'right', so they cannot show skill."
+    }
+   ]
+  },
+  {
+   "id": "0-5",
+   "title": "How to study here: the nightly method",
+   "mins": 15,
+   "body": "<p class=\"muted\"><strong>Recall:</strong> Name two fields of a ledger entry and say why an entry is never edited.</p>\n<p>Stage 0 ends with a method. Every later lesson assumes you study this way, so it is worth fifteen minutes now.</p>\n<h2>The 11 PM routine</h2>\n<div class=\"tbl\"><table><thead><tr><th>Step</th><th>What you do</th><th>Why</th></tr></thead><tbody><tr><td>1. Brief</td><td>Read the short brief. Before reading, try to recall last lesson's key points from memory</td><td>Starting with a recall attempt strengthens what you already learned</td></tr><tr><td>2. Lesson</td><td>Read the lesson, then do the practice task on your own chart</td><td>Applying a rule once teaches more than reading it three times</td></tr><tr><td>3. Quiz</td><td>Answer every question before you look at the explanation</td><td>The effort of retrieving an answer is what builds memory</td></tr><tr><td>4. Ledger</td><td>Log any prediction you made today, or score one that has matured</td><td>It turns study into a record that can be checked</td></tr></tbody></table></div>\n<h2>Why this works</h2>\n<p>{{term:retrieval|Retrieval practice}} means pulling an answer out of memory instead of looking at it again. Roediger and Karpicke (2006) had students study a passage once and take recall tests, or study it several times. On a test five minutes later, rereading did slightly better. On a test one week later, the students who had practised recall remembered more. Rereading feels productive because the text looks familiar, but familiarity is not recall.</p>\n<p>Dunlosky and colleagues (2013) reviewed ten common study techniques. They rated two as high utility: practice testing and distributed practice, which means spreading study over several days instead of one long session. They rated rereading and highlighting as low utility. This is why each lesson opens with a recall question from the previous one, and why a short nightly session beats a long weekly one.</p>\n<h2>What mastery means</h2>\n<p>A stage counts as {{term:mastery|mastered}} when you score 70% or more on its test. The threshold is a working rule of this course. It is not a figure taken from the research above. At 70% you can still miss about one answer in three, so the next stage revisits earlier material as recall questions. Stages unlock in order because each one uses the vocabulary of the last. Houses, lordship and aspects make little sense before signs and nakshatras are secure. Skipping ahead leaves gaps that show up later as confusion.</p>\n<h2>The two boxes</h2>\n<p><strong>Where the schools differ</strong> appears whenever texts or traditions give different rules. Read each view, note who holds it, and do not pick a winner unless the texts agree. <strong>Cross-check</strong> appears whenever a technique can be tested against another method, such as a second ayanamsa, a divisional chart or a shift in birth time. Do the cross-check once yourself. A claim that survives it is more robust than one that does not.</p>\n<h2>Writing a ledger prediction</h2>\n<div class=\"tbl\"><table><thead><tr><th>Part</th><th>Weak</th><th>Strong</th></tr></thead><tbody><tr><td>Window</td><td>\"This year\"</td><td>Two exact dates, under about two years apart</td></tr><tr><td>Basis</td><td>\"The stars favour me\"</td><td>Named planet, house and event from the engine</td></tr><tr><td>Statement</td><td>\"Good things happen in business\"</td><td>A sentence a stranger could mark true or false</td></tr><tr><td>Confidence</td><td>\"Quite sure\"</td><td>A number, plus what would flip it</td></tr></tbody></table></div>\n<p>A prediction is specific enough to be wrong when some plausible outcome would count as a miss. If every outcome counts as a hit, the entry teaches nothing.</p>\n<div class=\"you\"><div class=\"eyebrow\">In your chart</div><p>The engine lists two events for December 2026. Your lagna is Virgo, so Pisces is the 7th house and Capricorn is the 5th.</p><p><strong>Example 1: Saturn, 7th house.</strong> Saturn turns direct on 11 December 2026 at 05:59 IST at Pisces 13°42′. Entry: <em>Window 11 Dec 2026 to 11 Jun 2027. House 7, partnerships and formal agreements. Basis: Saturn stationing direct in the 7th. Statement: a written agreement with a supplier, buyer or partner that was under discussion on 1 Dec 2026 is signed, or formally ended, in this window. Base rate: how many such agreements you signed or ended in each of the last four years. Confidence: 1 technique, so low. It flips if you use houses that begin the 7th at the lagna degree, 21°52′ Pisces, because 13°42′ then falls in the 6th.</em></p><p><strong>Example 2: Rahu, 5th house.</strong> Rahu enters Capricorn on 5 December 2026 at 22:32 IST. Entry: <em>Window 5 Dec 2026 to 5 Jun 2027. House 5, learning and initiative. Basis: node ingress into the 5th. Statement: you start a course, product line or project that was not planned on 1 Dec 2026, and you work on it for at least a total of 20 hours you can document. Base rate: how many such starts you made in each of the last four years. Confidence: 1 technique, so low. Re-check the date with the other node type, as mean and true nodes enter signs on different days.</em></p></div>\n<div class=\"schools\"><div class=\"eyebrow\">Where the schools differ</div><p>Parashari texts read transits from the Moon sign (gochara) and from the lagna, and modern practice often does both. Many teachers weigh transits less than dashas, and some weigh them more. No published test in this course settles that. This is a reason to log the basis of every entry, so that your own record can later show which basis held up.</p></div>\n<div class=\"cross\"><div class=\"eyebrow\">Cross-check</div><p>Before logging either example, run the engine's events command and confirm the date. Then look at your current dasha for the same window. If the dasha and the transit point to the same house, note it as a second technique. If they point elsewhere, note that too.</p></div>\n<h2>The honesty rule</h2>\n<p><strong>Log before. Score after. Never edit.</strong> Write the entry before the outcome is known. Score it only against the statement as written. If the statement was badly worded, record the miss and write a better one next time. A ledger that is edited after the fact only records what you wish had happened.</p>\n<div class=\"keypts\"><div class=\"eyebrow\">Remember</div><ul><li>Nightly order: brief, lesson, quiz, ledger.</li><li>Recall beats rereading after a week, and spaced sessions beat one long session.</li><li>70% unlocks the next stage. Stages build on each other in order.</li><li>A good entry has a window, a named basis, a testable statement and a confidence number.</li><li>Log before, score after, never edit.</li></ul></div>\n<p class=\"muted\"><strong>Practice:</strong> Write one ledger entry from the Saturn or Rahu example above, using your own base rate from the last four years. Fill every field, lock it, and set a reminder for the window end date.</p>",
+   "listen": "Each night follows the same order: brief, lesson, quiz, ledger. Start by trying to recall last lesson from memory. Research supports this. Roediger and Karpicke in 2006 found that after one week, students who practised recall remembered more than students who reread. Dunlosky and colleagues in 2013 rated practice testing and distributed practice as high utility, and rereading as low. A stage is mastered at seventy percent, a working rule of this course, and stages unlock in order because each builds on the last. Use the Where the schools differ box to see competing views, and the Cross-check box to test a technique another way. A good ledger prediction has an exact window, a named planet and house, a statement a stranger could mark true or false, and a confidence number. Your December examples are Saturn turning direct in your seventh house on 11 December, and Rahu entering your fifth house on 5 December. The honesty rule is simple. Log before, score after, never edit.",
+   "sources": [
+    "Roediger & Karpicke (2006), Test-enhanced learning, Psychological Science",
+    "Dunlosky et al. (2013), Improving students' learning with effective learning techniques, Psychological Science in the Public Interest",
+    "Engine output: events 2026-12-01 to 2026-12-31, and natal chart for 26 June 1998, 12:59 IST, Satna",
+    "70% mastery threshold: working rule of this course, not a research figure"
+   ],
+   "quiz": [
+    {
+     "q": "In the 2006 Roediger and Karpicke study, which group remembered more one week later?",
+     "o": [
+      "Students who reread the passage several times",
+      "Students who highlighted key sentences as they read",
+      "Students who practised recalling the passage",
+      "Students who studied for the longest single session"
+     ],
+     "a": 2,
+     "w": "After a week, recall practice beat repeated rereading, although rereading did better on a test five minutes later."
+    },
+    {
+     "q": "Which two techniques did Dunlosky and colleagues (2013) rate as high utility?",
+     "o": [
+      "Practice testing and distributed practice",
+      "Rereading and highlighting",
+      "Summarising and keyword mnemonics",
+      "Highlighting and distributed practice"
+     ],
+     "a": 0,
+     "w": "Practice testing and distributed practice were the two high-utility techniques; rereading and highlighting were rated low."
+    },
+    {
+     "q": "Which ledger statement is specific enough to be wrong?",
+     "o": [
+      "Business will go well for me this year",
+      "A partner will probably appear at some point",
+      "Saturn's station will bring a change in my agreements",
+      "A written supplier agreement under discussion on 1 Dec is signed or ended by 11 Jun"
+     ],
+     "a": 3,
+     "w": "It has a window, a checkable event and a clear miss condition. The others fit almost any outcome."
+    },
+    {
+     "q": "A ledger entry was badly worded and scored a miss. What is the right step?",
+     "o": [
+      "Rewrite it so that it counts as a hit",
+      "Delete it and keep only the entries that worked",
+      "Record the miss and write a better entry next time",
+      "Change the window until the outcome fits inside it"
+     ],
+     "a": 2,
+     "w": "Entries are never edited after the fact. A misworded entry is scored as written and corrected only in future entries."
+    }
+   ]
+  }
+ ]
+}
