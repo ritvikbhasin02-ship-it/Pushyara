@@ -65,6 +65,7 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
   var qs=new URLSearchParams(location.search),q=qs.get('edition');
   if(q){var r=document.querySelector('input[name=ed][value="'+q+'"]');if(r)r.checked=true;}
   if(qs.get('lang')==='hi')document.getElementById('lang').value='Hindi';
+  [['nm','nm'],['dob','dob'],['tob','tob'],['pob','pob']].forEach(function(k){var x=qs.get(k[0]);if(x&&/^[\w\s,.:'()-]{1,80}$/.test(x))document.getElementById(k[1]).value=x;});
   var P={digital:'Digital (₹499)',printed:'Printed, spiral (₹999)',keepsake:'Keepsake book (₹1,499)',gift:'Gift edition, hardbound (₹2,499)'};
   var ship=document.getElementById('ship'),f=document.getElementById('of');
   function ed(){return document.querySelector('input[name=ed]:checked').value;}
