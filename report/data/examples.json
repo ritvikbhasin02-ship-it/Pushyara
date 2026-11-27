@@ -1,0 +1,533 @@
+{
+ "basics": {
+  "lagna": {
+   "term": "Lagna (ascendant)",
+   "what": "The sign that was rising on the eastern horizon at the exact minute and place you were born.",
+   "like": "Like the front door of a house: everything else in the chart is arranged around where you enter.",
+   "example": "For example, two friends born the same day in Satna but three hours apart can have different lagnas, so one tends to be cautious and the other bold in the same situation."
+  },
+  "moon_sign": {
+   "term": "Moon sign (rashi)",
+   "what": "The sign the Moon was in when you were born. Vedic astrology uses it to read your mind and mood.",
+   "like": "Like your phone's home screen: it shows how you feel day to day, not what is under the hood.",
+   "example": "For example, Neha with Moon in Cancer may feel calm only when her home is tidy and her family has eaten, whatever else is going on at work."
+  },
+  "sun_sign_vs_vedic": {
+   "term": "Sun sign: Western vs Vedic",
+   "what": "Vedic astrology uses the sidereal sky, which sits about 24 degrees behind the Western tropical sign. Many people find their Sun sign is the one before what magazines told them.",
+   "like": "Like two maps drawn from slightly different starting lines: both are neat, but they name the same spot differently.",
+   "example": "For example, Arjun was told all his life he was a Leo, but in the Vedic chart his Sun sits in Cancer, which explains why he is more family-minded than showy."
+  },
+  "nakshatra": {
+   "term": "Nakshatra (lunar mansion)",
+   "what": "One of 27 equal slices of the sky, each about 13 degrees 20 minutes wide. The nakshatra your Moon was in adds finer detail to your nature.",
+   "like": "Like the street name inside a city: the sign is the city, the nakshatra is the colony you live in.",
+   "example": "For example, two people with Moon in Aries can differ: one in Ashwini is quick and restless like a runner, another in Bharani carries things patiently like a person who never drops a duty."
+  },
+  "pada": {
+   "term": "Pada (quarter)",
+   "what": "Each nakshatra is split into 4 padas, each about 3 degrees 20 minutes wide. The pada places the planet in a particular navamsa sign.",
+   "like": "Like the house number inside a colony: it narrows things down further.",
+   "example": "For example, Farhan and his cousin share a nakshatra, yet their padas differ, so one prefers steady shop work and the other likes talking to customers all day."
+  },
+  "degree": {
+   "term": "Degree",
+   "what": "Each sign is a 30-degree slice of the sky. A planet at 2 degrees has just entered the sign, and at 28 degrees is about to leave it. Near either edge, a few minutes of birth time can change the sign or house.",
+   "like": "Like a train just pulling into a station versus one about to depart: the same station, a very different feel.",
+   "example": "For example, Priya's Moon is at 29 degrees of a sign. If her birth time is off by twenty minutes, her Moon may fall in the next sign, so her chart reading would change."
+  },
+  "sign": {
+   "term": "Sign (rashi)",
+   "what": "One of 12 equal 30-degree parts of the zodiac, such as Aries or Taurus. A sign gives a planet its style.",
+   "like": "Like the dress code of a place: the planet is the person, the sign tells how they turn up.",
+   "example": "For example, Mars in Capricorn acts like a planner who works through the quarter quietly, while Mars in Aries acts like someone who jumps in the moment a task appears."
+  },
+  "house": {
+   "term": "House (bhava)",
+   "what": "One of 12 areas of life, counted from your lagna: self, money, siblings, home, children, work routine, partnership and so on.",
+   "like": "Like the rooms of a flat: each room has a purpose, and what happens in it affects the whole home.",
+   "example": "For example, when planets visit your 4th house, the topic is usually home: a repair, a family shift, or a longing for a calmer evening."
+  },
+  "house_lord": {
+   "term": "House lord",
+   "what": "The planet that owns the sign sitting on a house. Where that planet is placed shows where the house's matters get attention.",
+   "like": "Like the manager of a department: you check where he sits and what he is busy with to see how the department runs.",
+   "example": "For example, if the lord of your work house sits in your home house, work may happen from home or be closely tied to family, like a family shop."
+  },
+  "planet": {
+   "term": "Planet (graha)",
+   "what": "In Vedic astrology, a graha is any of the 9 forces: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu. Rahu and Ketu are not physical bodies.",
+   "like": "Like the nine key people in a family business, each with a different job and temperament.",
+   "example": "For example, in a joint family, one person handles money, one handles guests, one keeps discipline. The nine grahas are like that, each handling a different department of your life."
+  },
+  "karaka": {
+   "term": "Karaka (significator)",
+   "what": "A planet that naturally stands for something, such as Sun for father or Venus for comfort, whatever the house or chart.",
+   "like": "Like a permanent specialist: the electrician is always called for wires, regardless of whose home it is.",
+   "example": "For example, Jupiter is the karaka of teachers, so when Arjun finds a good mentor at a bad time in his career, astrologers look at Jupiter first."
+  },
+  "dasha": {
+   "term": "Dasha (planetary period)",
+   "what": "A long chapter of life, from a few years to twenty, ruled by one planet. The planet colours what gets your attention. The usual system is Vimshottari, which runs 120 years in total.",
+   "like": "Like a season: summer is not good or bad, it just changes what you wear and do.",
+   "example": "For example, in a Saturn dasha, Ravi finds that his job gives him more duties and slower rewards, and by the end he has real skills and a steady name."
+  },
+  "antardasha": {
+   "term": "Antardasha (sub-period)",
+   "what": "A smaller chapter inside a dasha, ruled by another planet. It adds that planet's flavour for months to a couple of years.",
+   "like": "Like a chapter inside a book: the book has its story, and each chapter adds its own scene.",
+   "example": "For example, during Ravi's Saturn dasha, a Mercury sub-period brings more paperwork, accounts and talking to clients, while the bigger theme of steady work stays the same."
+  },
+  "transit": {
+   "term": "Transit (gochar)",
+   "what": "The planets keep moving in the sky today. Transit means where they are right now compared with your birth chart.",
+   "like": "Like the weather today compared with the climate where you live: climate is your chart, weather is the transit.",
+   "example": "For example, when Saturn passes over a sensitive point in your chart, Priya may feel more responsibility at work for a couple of years, then it passes as Saturn moves on."
+  },
+  "sade_sati": {
+   "term": "Sade sati",
+   "what": "The roughly seven and a half years when Saturn passes through the sign before, the sign of, and the sign after your Moon sign.",
+   "like": "Like a long exam season: more study hours, less leisure, and by the end you know your subject better.",
+   "example": "For example, Farhan in his sade sati finds that spending, family duties and tiredness all rise, so he sets a fixed routine and tracks expenses, and feels steadier by the end."
+  },
+  "yoga": {
+   "term": "Yoga (planetary combination)",
+   "what": "A particular arrangement of planets in the chart that is said to produce a particular pattern, such as the Gajakesari or Budh-Aditya yoga.",
+   "like": "Like a recipe: the ingredients are planets and houses, and the dish is the pattern you may notice in your life.",
+   "example": "For example, a person with a Hamsa yoga may be the one friends call for honest advice, because wise, fair counsel is the pattern that yoga describes."
+  },
+  "exalted": {
+   "term": "Exalted (uchcha)",
+   "what": "A planet in the sign where it is said to be strongest, such as Sun in Aries or Moon in Taurus.",
+   "like": "Like a cricketer playing on his home ground with his own crowd: comfortable and at his best.",
+   "example": "For example, Venus exalted in Pisces may show up as someone with a natural gift for warmth, taste and art, even with no training."
+  },
+  "own_sign": {
+   "term": "Own sign (swakshetra)",
+   "what": "A planet sitting in a sign it rules, such as Mars in Aries or Venus in Libra. It tends to be steady and reliable.",
+   "like": "Like a shopkeeper in his own shop: he knows every shelf and does not need to ask anyone.",
+   "example": "For example, Mercury in its own sign Gemini may show up as someone who picks up new apps, languages and forms easily without fuss."
+  },
+  "debilitated": {
+   "term": "Debilitated (neecha)",
+   "what": "A planet in the sign where it is said to be weakest, such as Sun in Libra or Moon in Scorpio. It tends to ask for more effort.",
+   "like": "Like a fast bowler on a slow pitch: he can still win matches, but needs extra effort and a different plan.",
+   "example": "For example, Neha has a debilitated Jupiter, so she does not take advice or luck for granted. She studies hard, checks facts, and ends up a more careful adviser than most."
+  },
+  "neecha_bhanga": {
+   "term": "Neecha bhanga (cancelled fall)",
+   "what": "When other factors in the chart support a debilitated planet, the weakness is said to ease. Results often come after effort.",
+   "like": "Like a student who failed the first test but got extra coaching and finally topped the class.",
+   "example": "For example, Arjun's early business struggles taught him to manage money well. Years later, the same planet that looked weak on paper is the reason he runs a steady, trusted firm."
+  },
+  "retrograde": {
+   "term": "Retrograde (vakri)",
+   "what": "A planet that appears to move backward from Earth's view. Classically it gains inward strength and asks for a second look.",
+   "like": "Like re-reading an exam paper before submitting: slower, but it catches the mistakes.",
+   "example": "For example, with Mercury retrograde in his chart, Ravi re-checks every invoice and contract, and he is known for fewer mistakes than his more hurried colleagues."
+  },
+  "combust": {
+   "term": "Combust (asta)",
+   "what": "A planet that sits very close to the Sun in the sky. Its own voice is said to be overshadowed by the Sun's.",
+   "like": "Like a quiet teammate standing next to a very loud captain: his ideas exist, but they are hard to hear.",
+   "example": "For example, with Venus combust, Priya may feel her need for affection is hidden behind her duties, so she has to say what she wants out loud."
+  },
+  "atmakaraka": {
+   "term": "Atmakaraka",
+   "what": "The planet at the highest degree in your chart, regardless of sign. It stands for the deepest lesson of your soul in the Jaimini system.",
+   "like": "Like the main character of a film: every scene eventually comes back to him.",
+   "example": "For example, someone whose atmakaraka is Saturn keeps meeting situations that ask for patience, hard work and fairness, and slowly becomes the dependable one in the family."
+  },
+  "karakamsa": {
+   "term": "Karakamsa",
+   "what": "The navamsa sign where your atmakaraka sits. It shows what kind of work and purpose feels most natural to your soul.",
+   "like": "Like the hidden talent your teacher noticed in you when you were twelve.",
+   "example": "For example, if the karakamsa is in a sign of teaching and speech, Farhan may find that explaining things to younger cousins feels more meaningful than any title at work."
+  },
+  "navamsa": {
+   "term": "Navamsa (D9)",
+   "what": "A 9th-part chart made by dividing each sign into 9 parts. It shows the deeper strength of planets and the nature of marriage and dharma.",
+   "like": "Like a medical report beyond the first check-up: it shows what is under the surface.",
+   "example": "For example, a planet that looks ordinary in the birth chart but strong in the navamsa, like Arjun's Venus, may bring its best results in marriage and mid-life, not early on."
+  },
+  "rahu_ketu": {
+   "term": "Rahu and Ketu",
+   "what": "Two points where the Moon's path crosses the Sun's path. They are shadow points, always opposite each other. Rahu is hunger for more, Ketu is detachment.",
+   "like": "Like two sides of one coin: one pulls you to chase, the other asks you to let go.",
+   "example": "For example, Rahu in Priya's work house makes her chase bigger roles and new tech, while Ketu in her home house makes her feel oddly detached from her own living room."
+  },
+  "tara": {
+   "term": "Tara (star strength)",
+   "what": "A count from your birth nakshatra to the day's nakshatra, grouped into nine kinds. Some days are called supportive and some need care.",
+   "like": "Like checking if the road ahead is clear before starting a drive.",
+   "example": "For example, Ravi notices that on days with a supportive tara he finishes tasks smoothly, and on a rough tara day he waits and reviews rather than signing important papers."
+  },
+  "chandra_bala": {
+   "term": "Chandra bala (Moon strength)",
+   "what": "The strength of the day's Moon position counted from your own Moon sign. Some positions are said to be comfortable and some are tense.",
+   "like": "Like checking your own mood before a big conversation.",
+   "example": "For example, on a day of low chandra bala, Neha feels everything is slightly heavier, so she saves hard calls and decisions for another day."
+  },
+  "rahu_kaal": {
+   "term": "Rahu kaal",
+   "what": "A daily window of about 90 minutes, which changes by weekday and sunrise time, traditionally avoided for starting something new.",
+   "like": "Like a red light on a road: not a disaster, just a signal to wait a moment.",
+   "example": "For example, many Indian shopkeepers open the shutter as usual but wait until Rahu kaal ends before making the first big deal or signing the day's papers."
+  },
+  "ayanamsa": {
+   "term": "Ayanamsa",
+   "what": "The gap, about 24 degrees at present, between the tropical zodiac used in the West and the sidereal zodiac used in Vedic astrology. Lahiri is the standard in India.",
+   "like": "Like the difference between a printed calendar and the actual day in the fields: both exist, but farmers follow the second.",
+   "example": "For example, because of the ayanamsa, a person born on 10 April may be Aries in a Western horoscope and Pisces in a Vedic chart."
+  },
+  "birth_time_accuracy": {
+   "term": "Birth time accuracy",
+   "what": "How precisely your time of birth is known. A few minutes can change lagna, house placements and dasha timing, so accuracy matters.",
+   "like": "Like a photo that is slightly out of focus: you can see the shapes but not the fine print.",
+   "example": "For example, Farhan's mother says he was born around 6 am. If it was truly 6:25, his lagna sign changes, so his chart is read from a different starting point."
+  }
+ },
+ "planets": {
+  "Sun": {
+   "example": "For example, Arjun is the person at work who is naturally asked to speak for the team, because people sense he knows what he stands for.",
+   "strong_example": "Like a manager who leads from the front, takes responsibility, and gives credit to the team, so people follow without being pushed.",
+   "strained_example": "Think of someone who needs every meeting to end with his idea chosen, and feels hurt when a junior gets the applause."
+  },
+  "Moon": {
+   "example": "For example, Neha notices her mood shifts with her home: a messy room or an unanswered message from her mother can colour her whole afternoon.",
+   "strong_example": "Like someone who stays calm in a noisy family function and makes everyone feel looked after without saying much.",
+   "strained_example": "Think of a person who lies awake replaying one remark from the WhatsApp group, and feels low until someone replies kindly."
+  },
+  "Mars": {
+   "example": "For example, Ravi is the one who volunteers to fix the leaking tap, argue with the landlord, or run the Sunday cricket match.",
+   "strong_example": "Like a young shop owner who starts early, takes a risk on a new line, and finishes the job before the festival rush.",
+   "strained_example": "Think of a person who snaps at a sibling over a small thing at dinner, and spends the next day regretting it."
+  },
+  "Mercury": {
+   "example": "For example, Priya reads the fine print on her phone plan, replies fast in group chats, and can explain a tricky topic to her cousin in two lines.",
+   "strong_example": "Like a young accountant who explains the GST return clearly to a worried shopkeeper and learns new software in a weekend.",
+   "strained_example": "Think of someone with ten browser tabs open who answers emails quickly but forgets the one that mattered."
+  },
+  "Jupiter": {
+   "example": "For example, Farhan is the person relatives call before a big decision, because he listens, thinks it through, and rarely gossips.",
+   "strong_example": "Like a school teacher whose old students still visit her, because she gave time and honest guidance without asking for anything.",
+   "strained_example": "Think of someone who gives advice freely but spends more than he can afford on a big family function, thinking it will all work out."
+  },
+  "Venus": {
+   "example": "For example, Neha picks the nicest cafe for a meeting, keeps her desk pleasant, and notices when a friend feels left out.",
+   "strong_example": "Like a couple who plan a simple anniversary dinner with care, and both feel valued without any show.",
+   "strained_example": "Think of a person who keeps buying things for comfort, then feels low about the EMI and avoids talking about it."
+  },
+  "Saturn": {
+   "example": "For example, Ravi takes the early train every day for years, keeps his files in order, and slowly becomes the person the boss trusts with the audit.",
+   "strong_example": "Like a clerk who stays steady through a slow decade, then is made the head of the section because everyone knows his work is solid.",
+   "strained_example": "Think of someone who carries every family duty alone, feels tired and unseen, and begins to think nothing will ever move."
+  },
+  "Rahu": {
+   "example": "For example, Arjun suddenly gets interested in crypto, a foreign course and a new app startup all in the same year.",
+   "strong_example": "Like a small-town youngster who uses a new tool early, builds an online audience, and opens doors an older route never would.",
+   "strained_example": "Think of a person who chases a trending side hustle, spends savings on it, and feels uneasy when the excitement fades."
+  },
+  "Ketu": {
+   "example": "For example, Priya finds she no longer cares for the office party or the promotion race, and prefers a quiet evening with a book or a project she loves.",
+   "strong_example": "Like a researcher who spends years on a quiet subject, ends up with rare insight, and feels at peace without needing applause.",
+   "strained_example": "Think of someone who drops a course, a friendship and a hobby in one month, then wonders what he wants next."
+  }
+ },
+ "houses": {
+  "1": {
+   "example": "For example, this week you decide whether to wake early for a walk, how you carry yourself into Monday's meeting, and what you wear for a family function."
+  },
+  "2": {
+   "example": "For example, this week you track the grocery bill, tell your mother what you will chip in for Diwali, and choose your words in an argument over the family dinner table."
+  },
+  "3": {
+   "example": "For example, this week you practise a skill for twenty minutes daily, call your younger brother, and take a short train trip to a nearby town for a work meeting."
+  },
+  "4": {
+   "example": "For example, this week you rearrange the living room, fix the water leak, give your mother time after dinner, and decide if the old scooter needs replacing."
+  },
+  "5": {
+   "example": "For example, this week you help your child with homework, write a poem or a script, prepare for an exam, or go on a first date with someone new."
+  },
+  "6": {
+   "example": "For example, this week you handle a tough colleague, clear a small credit card bill, follow a gym or diet routine, and go through a stack of pending office tasks."
+  },
+  "7": {
+   "example": "For example, this week you discuss household plans with your spouse, meet a client to sign an agreement, or talk through a shaadi proposal with your family."
+  },
+  "8": {
+   "example": "For example, this week you go through the insurance papers, sort out a joint account with your sibling, or sit up late reading about something nobody else around you cares about."
+  },
+  "9": {
+   "example": "For example, this week you call your father for advice, go to a lecture or a temple visit, plan a long trip, or think about whether to study further."
+  },
+  "10": {
+   "example": "For example, this week you finish a project report, attend a review with your boss, answer customers at the shop, and think about whether your role is right for you."
+  },
+  "11": {
+   "example": "For example, this week you catch up with college friends, ask a senior contact about a lead, join a professional group chat, and check progress on a goal you wrote down."
+  },
+  "12": {
+   "example": "For example, this week you try to sleep earlier, notice small unplanned expenses, plan a weekend trip, or spend quiet time alone after a loud day."
+  }
+ },
+ "dasha": {
+  "Sun": {
+   "example": "Think of Ravi in his thirties: his boss gives him a role with his name on it, he feels more clear about what he stands for, and he also notices his pride flaring when someone ignores him."
+  },
+  "Moon": {
+   "example": "For example, in this period Neha cares more about home, her mother and daily rhythm. Work goes on, but she feels moods more sharply, and she is happiest when evenings are calm and her people are close."
+  },
+  "Mars": {
+   "example": "Like a young man who suddenly gets energy to start a gym, argue for a raise, buy a plot and fix the old house. Things move fast, so he also has to watch his temper at home."
+  },
+  "Rahu": {
+   "example": "For example, Arjun starts working with foreign clients, tries new tools, and keeps changing plans. Things feel exciting and a bit unclear, and he needs a trusted person to check the details with him."
+  },
+  "Jupiter": {
+   "example": "Think of Farhan during these years: a mentor appears, family grows or becomes closer, and he picks up a course. Opportunities widen, so he has to remember to stay humble and keep his budget sensible."
+  },
+  "Saturn": {
+   "example": "For example, Ravi works longer hours with more responsibility and less praise. Results come slowly, but by the end he has a solid skill, a steady name and a habit of finishing what he starts."
+  },
+  "Mercury": {
+   "example": "Like a time when Priya studies new things, signs more contracts, writes more messages and builds a wider network. Her mind runs fast, and she learns to finish one thing before starting three more."
+  },
+  "Ketu": {
+   "example": "For example, Neha loses interest in the usual race. She drops a few commitments, spends time on research or inner work, and feels both lonely and relieved. She starts to see clearly what she really needs."
+  },
+  "Venus": {
+   "example": "Think of a stretch when Arjun's focus turns to partner, home comfort, vehicles and style. He spends more on enjoyment, and learns that real closeness needs honest talk, not only nice things."
+  }
+ },
+ "dasha_by_house": {
+  "1": {
+   "example": "For example, Priya in this period joins a gym, changes her look, takes a decision for herself without asking the whole family, and finds people see her differently at work."
+  },
+  "2": {
+   "example": "Think of Arjun in this period: he starts saving seriously, argues with relatives about family money, and finds that how he speaks at the dinner table matters more than he thought."
+  },
+  "3": {
+   "example": "For example, Ravi in this period starts a side project, writes a few articles, calls his brother more, and makes several short trips for work. His small daily effort builds up."
+  },
+  "4": {
+   "example": "Like a year when Neha shifts to a new flat, repairs the old one, or spends more time with her mother. She craves a calm home and feels restless if it is not there."
+  },
+  "5": {
+   "example": "For example, Farhan in this period helps his daughter prepare for exams, takes up painting again, and comes up with a business idea he enjoys. Study and creative work feel lively."
+  },
+  "6": {
+   "example": "Think of a time when Ravi has more office pressure, a loan to repay and a tough colleague. He stays on a fixed routine, and by the end he is fitter and has fewer debts."
+  },
+  "7": {
+   "example": "For example, Priya in this period signs a partnership deal, or her family finalises a shaadi. She learns to say clearly what she needs, and to listen when her partner disagrees."
+  },
+  "8": {
+   "example": "Like a time when Arjun sorts out insurance, an inheritance matter and a joint account, and also reads deeply on a hidden subject. It feels slow, but his money papers end up in order."
+  },
+  "9": {
+   "example": "For example, Neha in this period finds a mentor, plans a pilgrimage with her father, or applies for a higher course. Old beliefs get tested, and she gains a broader view of life."
+  },
+  "10": {
+   "example": "Think of Farhan in this period: a bigger role at work, more people looking to him, and long hours. His name grows, so he has to protect his sleep and not let the job swallow family time."
+  },
+  "11": {
+   "example": "For example, Ravi in this period gets a lead through an old college friend, joins a useful group and sees a long-held goal move forward. Income and contacts grow together."
+  },
+  "12": {
+   "example": "Like a year when Priya spends more on travel and medical bills, sleeps badly, and wants more time alone. She plans expenses in advance and keeps a quiet hour each evening."
+  }
+ },
+ "dignity": {
+  "exalted": {
+   "example": "For example, Farhan has a planet in its strongest sign, and in that area he does things with ease: people say he has a natural gift, though he still has to practise to keep it sharp."
+  },
+  "own": {
+   "example": "Like a shopkeeper in his own shop: Neha has a planet in its own sign and her handling of that area is steady and confident. She knows what she wants and does not need approval."
+  },
+  "moolatrikona": {
+   "example": "Think of an officer sitting in his own office with his own desk: Ravi's planet in its moolatrikona does its job clearly and with a sense of role, almost as strong as in its own sign."
+  },
+  "friend": {
+   "example": "For example, Priya has a planet in a friend's sign, so that part of life gets help from others: a helpful senior, a supportive cousin, or a friend who opens a door when needed."
+  },
+  "neutral": {
+   "example": "Like a new employee in an average office: Arjun's planet in a neutral sign works fine, but the results depend on the effort he puts in and the company he keeps."
+  },
+  "enemy": {
+   "example": "Think of Farhan working in a team where nobody quite likes his style. His planet in an enemy's sign still delivers, but he has to adapt, be patient and choose his people with care."
+  },
+  "debilitated": {
+   "example": "For example, Neha has a planet in its weakest sign, so that area of life feels like starting at the bottom: she has to try harder, learn each step, and often ends up wiser than those who found it easy."
+  },
+  "neecha_bhanga": {
+   "example": "Like a student who failed an early test, got good support and later topped the class: Ravi's weak planet has a cancelling factor, so results come late but they come with strength."
+  },
+  "combust": {
+   "example": "Think of a quiet colleague standing next to a loud boss: Priya's planet, close to the Sun, is easy to miss. She has to make an effort to speak up about what that planet governs."
+  },
+  "retro": {
+   "example": "For example, Arjun has a retrograde planet and tends to re-open old topics: he revisits an old plan, re-reads a contract or reconnects with an old friend, and the second look usually proves useful."
+  }
+ },
+ "yogas": {
+  "Ruchaka": {
+   "example": "For example, Ravi with Ruchaka yoga is the one who steps up when the team is stuck, handles tough situations calmly and keeps his stamina on long days. He learns to rest as hard as he works."
+  },
+  "Bhadra": {
+   "example": "Like Priya, who learns new subjects fast, explains tricky ideas simply and trades well in a bargain. People trust her words, and the invitation is to keep her facts honest."
+  },
+  "Hamsa": {
+   "example": "Think of Farhan, the person family members seek when they want fair advice. He is gentle and ethical, and his invitation is to keep learning so that his counsel stays fresh."
+  },
+  "Malavya": {
+   "example": "For example, Neha with Malavya yoga has a good eye for taste, enjoys a comfortable home and is warm with people. She learns that comfort feels best when it is shared with honesty."
+  },
+  "Shasha": {
+   "example": "Like Ravi, the steady manager whom everyone relies on. He works long, takes responsibility for many people and builds results slowly. His invitation is to be kind as well as firm."
+  },
+  "Harsha": {
+   "example": "Think of Arjun, who bounces back from a debt, an illness or a workplace rival with more strength than before. Setbacks seem to make him sharper, and he learns to ask for help early."
+  },
+  "Sarala": {
+   "example": "For example, Priya stays calm during a family crisis, reads deeply, and comes out of hard times with real insight. People turn to her when things fall apart, and she must also look after herself."
+  },
+  "Vimala": {
+   "example": "Like Farhan, who keeps his expenses in check, prefers independence and sleeps with a clear conscience about money. His invitation is to enjoy life a little, not only save."
+  },
+  "Budh-Aditya": {
+   "example": "For example, Neha has Sun and Mercury together, so she is quick with words and known for knowing her subject. If the two are too close, she has to speak and write more to be heard."
+  },
+  "Gajakesari": {
+   "example": "Think of Ravi, who stays hopeful through setbacks and is liked by seniors and neighbours alike. People support him in tough times, and his invitation is to keep learning and giving back."
+  },
+  "Kendradhipati dosha": {
+   "example": "For example, a gentle planet like Jupiter owning a house of home and work may give Arjun mixed results there: some help, some delays, so he plans for both and does not assume easy results."
+  },
+  "Neecha bhanga": {
+   "example": "Like a cricketer who struggled in the first season and then became the star of the team: Priya's weak planet is supported, so she gets her results after effort and tends to value them more."
+  }
+ },
+ "sade_sati": {
+  "phase1": {
+   "example": "For example, Neha in the first phase notices small things: more expenses, a longer to-do list and an urge to simplify. She goes to bed earlier, plans her budget and finds this makes the stretch easier."
+  },
+  "phase2": {
+   "example": "Think of Ravi in the middle phase: work feels heavy, family duties pile up and his mind is busier at night. He keeps a fixed routine, talks to a friend about worries, and slowly finds his footing."
+  },
+  "phase3": {
+   "example": "Like Priya in the last phase: the weight is easing, but money, speech and family matters still need tidy handling. She keeps accounts clear, speaks calmly and sees her earlier habits start to pay off."
+  }
+ },
+ "planet_in_house": {
+  "Sun-1": "Think of Neha, 26, who joins a new office in Pune and within a week colleagues start asking her to speak for the team, though she never volunteered. She is learning to hand some of the lead to others.",
+  "Sun-2": "For example, Arjun, 41, from a Jaipur jeweller family, guards the family name and watches every rupee. At dinner his clear, firm tone sometimes lands like an order on his brothers.",
+  "Sun-3": "Like Farhan, 24, in Lucknow, who starts a delivery side-hustle on his own and outworks everyone, but forgets to ask his younger brother how he wants to share the work.",
+  "Sun-4": "For example, Priya, 33, in Indore, works hard to renovate her mother's house, yet feels restless sitting in that same living room, already planning her next target.",
+  "Sun-5": "Think of Ravi, 38, a maths teacher in Nagpur. His students love his clear explanations, but his son rolls his eyes when Ravi gives the answer instead of letting him struggle first.",
+  "Sun-6": "Like Meera, 29, a bank recovery officer in Kolkata. She handles tough accounts calmly and tops the quarter, then catches a fever because she skipped every weekend off.",
+  "Sun-7": "For example, Kabir, 31, in Delhi, wants a wife who is as accomplished as he is. Their fights turn out to be about who is right, not about the actual issue.",
+  "Sun-8": "Think of Anita, 45, an insurance claims investigator in Bhopal, who loves digging through old files for hidden details, yet never explained to her husband how the joint FD was set up.",
+  "Sun-9": "Like Sandeep, 27, in Chandigarh, who quotes his father's advice on honesty before every office decision, and is slowly learning to listen when a colleague works differently.",
+  "Sun-10": "For example, Rohit, 36, a shift manager at a plant in Aurangabad, does his best work when he is given full charge, but feels lost the week a restructure changes his title.",
+  "Sun-11": "Think of Shalini, 34, in Hyderabad, whose biggest client came through a senior alumnus who admired her work. She now keeps one friend who will say when her pitch is weak.",
+  "Sun-12": "Like Tarun, 30, who works nights for a Singapore firm from his quiet home in Dehradun and feels calm there, yet buys costly gadgets to show people he is doing well.",
+  "Moon-1": "For example, Divya, 22, in a Mumbai local train: her face shows exactly how she feels, and friends spot her mood first. She now waits till evening before replying to an angry message.",
+  "Moon-2": "Think of Harpreet, 35, in Ludhiana, whose gentle voice calms upset customers at his shop. On low days he orders extra sweets and spends more than he planned.",
+  "Moon-3": "Like Zoya, 19, in Bhopal, who writes short poems on the bus and texts her sister every day, but has three half-finished craft projects waiting at home.",
+  "Moon-4": "For example, Kunal, 40, in Kochi, works long hours but feels truly settled only in his mother's kitchen. His own rented flat still feels like a hotel.",
+  "Moon-5": "Think of Isha, 28, a primary teacher in Surat. Her gut feeling about a child in trouble is usually right, yet the same gut once made her trust a friend's stock tip.",
+  "Moon-6": "Like Mohan, 37, a clerk in a Chennai government office. He files carefully, then lies awake over a colleague's remark and the EMI. A fixed 10 pm bedtime helps him.",
+  "Moon-7": "For example, Pooja, 32, in Ahmedabad, leans on her husband as her emotional anchor. She expects him to sense she is upset, and gets hurt when he does not.",
+  "Moon-8": "Think of Aman, 29, in Patna. After a family argument he goes silent for days, feeling everything inside, until he finally calls an old friend and talks it out.",
+  "Moon-9": "Like Lata, 52, in Varanasi, who trusts her guru and loves her yearly pilgrimage, and is now trying a fasting rule on her own experience before she accepts it.",
+  "Moon-10": "For example, Nisha, 31, a ward supervisor in a Pune hospital. Her staff read her mood daily, so she keeps a steady face on hard shifts and cries later in the car.",
+  "Moon-11": "Think of Gaurav, 27, in Gurgaon, whose college WhatsApp group feels like family and sends him job leads. He is trying to pick two friends for real, deeper talk.",
+  "Moon-12": "Like Rekha, 43, in Thrissur, who loves quiet mornings and vivid dreams, but orders things online late at night when lonely. A small monthly budget now keeps it in check.",
+  "Mars-1": "For example, Vikram, 25, in Jaipur, hits the gym at six. When a neighbour parks in his spot he is at the door before thinking. Counting to ten changes the whole talk.",
+  "Mars-2": "Think of Sunita, 39, who runs a textile stall in Kanpur and earns fast, but snaps at her in-laws over money at meals. She now raises such matters after dinner.",
+  "Mars-3": "Like Imran, 28, in Hyderabad, who taught himself video editing at night through sheer effort and beat trained peers. He now lets his brother handle the invoicing.",
+  "Mars-4": "For example, Deepa, 46, in Coimbatore, always has some repair running at home. The house is never quiet, and arguments over the bathroom tiles take more energy than the work.",
+  "Mars-5": "Think of Rahul, 21, a state-level chess player in Nashik who loves beating strong opponents. He turns gentler and more patient once he starts coaching younger kids.",
+  "Mars-6": "Like Lakshmi, 35, a hospital accounts officer in Bengaluru, who cleared a big loan in four years with extra shifts, and is learning not to treat a rival colleague as an enemy.",
+  "Mars-7": "For example, Siddharth, 30, in Mumbai, and his wife share strong attraction and loud fights. They now treat a flat-loan decision as a joint task, not a contest.",
+  "Mars-8": "Think of Mukesh, 44, a lineman in Raipur who stays calm through long storms and grid failures, and who keeps his papers in one folder after a close call on a pole.",
+  "Mars-9": "Like Anand, 34, in Pune, who argues fiercely at a temple trust meeting for a custom he has never read about, until a visiting teacher gently asks him to look it up.",
+  "Mars-10": "For example, Poonam, 37, a site engineer in Gandhinagar, delivers on time, but her crew works better once she joins them on site instead of shouting from the office.",
+  "Mars-11": "Think of Karthik, 26, in Chennai, whose small business grows through hard work and an equally driven friend group. He feels uneasy when a friend buys a bigger car.",
+  "Mars-12": "Like Rashmi, 33, who scrolls and shops online till 2 am and wakes with a short temper. A 6 pm run clears her head far better than another coffee.",
+  "Mercury-1": "For example, Tanvi, 24, a fresh graduate in Delhi, talks fast and asks a hundred questions in her first interview. She still looks sixteen and is learning to pause for the answer.",
+  "Mercury-2": "Think of Bhavesh, 42, a Rajkot trader who explains rates so well that customers agree at once. He now writes each credit promise on a ledger page so nobody misreads him.",
+  "Mercury-3": "Like Aarav, 25, in Kolkata, who writes ad copy, sells on Instagram and fixes watches as a hobby. A mentor tells him to pick copywriting and go deep.",
+  "Mercury-4": "For example, Shobha, 50, in Mysuru, keeps her study neat with books stacked by size. At night her mind rehearses tomorrow's meeting until she writes it down.",
+  "Mercury-5": "Think of Yash, 20, a coaching student in Kota who loves puzzles and cracking mock tests, but needs reminding that a clever shortcut is not the same as knowing the chapter.",
+  "Mercury-6": "Like Smita, 36, a quality inspector in Pune, who spots a wrong digit in a vendor invoice instantly, but feels her stomach tighten when checking turns into worry.",
+  "Mercury-7": "For example, Rohan, 33, in Indore, starts a business with a friend who talks beautifully. The deal looks great until Rohan reads the profit-split clause himself.",
+  "Mercury-8": "Think of Vandana, 48, a forensic accountant in Mumbai, who enjoys tracing hidden entries. At home her short, cryptic answers about her day leave the family puzzled.",
+  "Mercury-9": "Like Naveen, 55, a college lecturer in Dharwad, who compares the Gita with other texts and writes essays, and now starts a weekend class so the ideas reach real people.",
+  "Mercury-10": "For example, Sneha, 30, in Bengaluru, moved from content writing to analytics to product in four years. Recruiters love her range, but she has not stayed anywhere long enough to be promoted.",
+  "Mercury-11": "Think of Jatin, 29, a Surat dealer whose phone book brings orders from everywhere. After forgetting a promised discount, he now notes every promise in a diary.",
+  "Mercury-12": "Like Pallavi, 38, in Thane, whose best ideas arrive at 5 am in silence while she works by email for a Dubai client. She sets a midnight cut-off for her racing mind.",
+  "Jupiter-1": "For example, Ramesh, 47, a school principal in Ujjain, is trusted for fair advice and neighbours queue at his gate. His waistline has grown, and he promises more help than he has time for.",
+  "Jupiter-2": "Think of Kavita, 40, in Jaipur, from a family that values degrees. She earns through tutoring and speaks softly, but once promised a student a rank she could not guarantee.",
+  "Jupiter-3": "Like Dev, 27, in Ranchi, who writes a weekly column and teaches coding on weekends with honest ambition, yet has a notebook full of plans still waiting to be started.",
+  "Jupiter-4": "For example, Anjali, 35, in Pune, comes home to her mother's evening tea and reads in the quiet. That comfort sometimes keeps her from applying for the bigger job.",
+  "Jupiter-5": "Think of Suresh, 44, a cricket coach in Meerut whose students often win. His daughter blossomed once he stopped giving answers and let her find the reason herself.",
+  "Jupiter-6": "Like Fatima, 39, a community health worker in Hyderabad, who helps neighbours with forms and small loans. After one relative never repaid, she now sets kind but clear limits.",
+  "Jupiter-7": "For example, Manoj, 31, in Bhubaneswar, marries a kind, cooperative teacher. He assumed she shared his big charity ideals, and learns to say them aloud instead.",
+  "Jupiter-8": "Think of Geeta, 53, in Kanpur, whose shop was flooded. She stayed calm, rebuilt, read the Upanishads for strength, and has now put her insurance papers in one file.",
+  "Jupiter-9": "Like Harish, 58, in Thanjavur, who learnt from a gurukul teacher and now guides young men. He tries to practise daily what he tells them.",
+  "Jupiter-10": "For example, advocate Reena, 42, in Lucknow, is trusted by clients because she turns away cases she does not believe in, even when no one would ever know.",
+  "Jupiter-11": "Think of Tushar, 32, in Nagpur, whose mentor from a seniors' club helped land his first big order. He now asks if buying a flat is really his goal or just his circle's.",
+  "Jupiter-12": "Like Padma, 49, in Kochi, who gives freely to a children's home and spends a month each year in a quiet hill ashram. She keeps a small list of what she gives.",
+  "Venus-1": "For example, Aisha, 23, in Mumbai, whose easy smile carries her through interviews. She dresses neatly, keeps a pretty desk, and is now learning to read the fine print too.",
+  "Venus-2": "Think of Gopal, 45, who runs a sweet shop in Amritsar and loves good food. His voice wins customers, but bills for fancy crockery grow bigger than the shop needs.",
+  "Venus-3": "Like Ritu, 26, in Jaipur, who designs block-print patterns with a soft, persuasive manner and calls her brother daily. She needs to push on even when inspiration is late.",
+  "Venus-4": "For example, Sameer, 38, in Nagpur, has a pretty home, a good car and a loving bond with his mother. He skipped a course because life already felt comfortable.",
+  "Venus-5": "Think of Tanya, 22, in Delhi, who paints, falls in love quickly and adores her little cousin. She learns to keep her savings out of a friend's quick scheme.",
+  "Venus-6": "Like Ajay, 34, a bank employee in Kolkata, who enjoys office lunches a little too much, and feels tense when a colleague passes remarks. He limits outside meals to twice a week.",
+  "Venus-7": "For example, Mansi, 29, in Vadodara, runs a shop with her husband and they are close. She keeps quiet about a small dispute to keep peace, and it slowly builds.",
+  "Venus-8": "Think of Nikhil, 36, in Bhopal, whose love runs deep and private. When his wife inherits a flat from her aunt, he learns to ask about plans instead of quietly controlling them.",
+  "Venus-9": "Like Sapna, 41, in Pune, moved by classical concerts and temple art, who met her husband through an arts society. She now volunteers there instead of only enjoying it.",
+  "Venus-10": "For example, Zara, 28, a fashion stylist in Delhi with a glowing public image. When a client asks about technique, she sees she must sharpen her skill, not only her Instagram.",
+  "Venus-11": "Think of Hitesh, 31, in Ahmedabad, who earns from a friend's wedding decor venture and has a wide circle of artists and cousins. He now picks partners for honesty over status.",
+  "Venus-12": "Like Mahesh, 56, in Goa, who loves sleeping well, quiet evenings and a yearly trip. His private life is calm, and a monthly travel budget keeps it that way.",
+  "Saturn-1": "For example, Rajat, 30, was the serious boy at school, took on family duties at 19 and looked older in photos. He now fixes a Sunday cricket match with friends.",
+  "Saturn-2": "Think of Usha, 48, in Coimbatore, who speaks little and saves monthly in a small steel box. Her fear of lack makes her tight about her daughter-in-law's small expenses.",
+  "Saturn-3": "Like Pradeep, 36, a mechanic in Ludhiana, who built his skill year by year with no shortcuts. He is learning to ask his younger brother to share the workshop load.",
+  "Saturn-4": "For example, Madhavi, 44, in Hyderabad, looks after her mother dutifully. The house is orderly and quiet, and only lately have they started laughing together at dinner.",
+  "Saturn-5": "Think of Chetan, 25, a CA student in Indore, who studies slowly but never forgets what he learns. He is trying a weekend painting class just for enjoyment.",
+  "Saturn-6": "Like Joseph, 51, in Kottayam, who cleared a long loan and outlasted a difficult manager by working double shifts. His wife asks him to rest and let the team help.",
+  "Saturn-7": "For example, Ananya, 33, in Bengaluru, marries after 30 a steady, loyal man who shows love by fixing things. She asks him to say it aloud once in a while.",
+  "Saturn-8": "Think of Prakash, 57, in Nashik, who stayed steady through a long illness in the family. He has now put his will and insurance papers in order before anything is urgent.",
+  "Saturn-9": "Like Vimala, 62, in Madurai, whose faith grew quieter each decade, and who finished her degree late. She now keeps her fasts because she finds them meaningful, not from habit.",
+  "Saturn-10": "For example, Sanjay, 49, in Faridabad, started as a clerk and became a general manager through steady work. He has now started attending his daughter's school events.",
+  "Saturn-11": "Think of Latika, 40, in Raipur, whose steady income comes from a tuition centre built over ten years. She has two loyal friends, and compares herself to cousins who earned faster.",
+  "Saturn-12": "Like Hemant, 35, who does quiet backend coding at home in Dehradun and enjoys the silence. He keeps a set bedtime and calls a friend before a Sunday turns lonely.",
+  "Rahu-1": "For example, Kiran, 27, in Mumbai, has a bold style and big ambition, and says he always felt different from his family. He asks whether his Instagram persona is really him.",
+  "Rahu-2": "Think of Dhruv, 32, in Delhi, dreams of big money and speaks in an unusual mix of languages. He finds it easier now to tell his parents his actual savings figure.",
+  "Rahu-3": "Like Naina, 26, in Pune, who makes bold reels, takes risks and sells as an affiliate. She dropped three launches halfway, and her cousins still wait for a promised video edit.",
+  "Rahu-4": "For example, Rishi, 39, has moved house five times in ten years, from Gurgaon to Pune to Bengaluru. A simple morning chai ritual helps him feel settled wherever he lives.",
+  "Rahu-5": "Think of Mehul, 28, in Surat, who has an unusual app idea and craves likes. A friend asks if it is real insight or attention, and Mehul skips a quick-profit tip.",
+  "Rahu-6": "Like Seema, 34, in Noida, who thrives in a cut-throat sales team at a foreign firm and tops the charts, but lives on energy drinks. She is trying regular meals now.",
+  "Rahu-7": "For example, Aditi, 29, in Jaipur, falls for a man from another country she met online. The family worries, so she checks his job and papers before they decide.",
+  "Rahu-8": "Think of Vishal, 43, in Kolkata, who is hooked on old records and hidden histories. After his brother's business loan changes suddenly, he keeps every bank statement in order.",
+  "Rahu-9": "Like Tarannum, 31, in Lucknow, who questions old customs, follows an online teacher from abroad and plans a study trip. She is sorting which ideas are truly her own.",
+  "Rahu-10": "For example, Varun, 35, in Hyderabad, leaves an MNC for a startup and wants a big title. His manager suggests he build deeper skill first so the title fits.",
+  "Rahu-11": "Think of Sonal, 37, in Mumbai, whose phone has 3,000 contacts and a huge sales target. She asks herself which friends she would actually call at midnight.",
+  "Rahu-12": "Like Ishaan, 26, in Chandigarh, who dreams of settling in Canada, studies late and spends heavily on visa agents. He now makes a budget and sleeps before midnight.",
+  "Ketu-1": "For example, Neel, 28, is quiet in his Bhopal office and people find him hard to read. He doubts who he really is, and this month joins a small book club.",
+  "Ketu-2": "Think of Sarla, 54, in Nashik, who speaks few words and cares little for gold. Her family wonders about her silence, so she keeps the household accounts in a simple weekly register.",
+  "Ketu-3": "Like Bhaskar, 33, in Vijayawada, who finishes a marathon without telling anyone. His brother only heard from a neighbour, and Bhaskar now sends him a quick text.",
+  "Ketu-4": "For example, Shweta, 36, feels like a guest in her parents' house in Kanpur but is calm at a small corner by her window. She adds a short morning ritual there.",
+  "Ketu-5": "Think of Prasad, 41, in Pune, who enjoys chanting and studying algorithms and cares little about credit for his work. He now makes a point of hugging his children more.",
+  "Ketu-6": "Like Kamini, 38, a physiotherapist in Chennai, who is brilliant with stubborn injuries and avoids office gossip. She has not had her own check-up for two years.",
+  "Ketu-7": "For example, Raghav, 34, in Gwalior, is a decent husband who seems far away. His wife says he is present but silent, so he starts saying aloud, \"I need quiet tonight.\"",
+  "Ketu-8": "Think of Alok, 46, in Varanasi, who gets sudden flashes of insight on market patterns and reads old manuscripts. He keeps a fixed gym time and an FD to stay grounded.",
+  "Ketu-9": "Like Sohail, 29, in Hyderabad, who skips rituals and prefers sitting quietly. He talks rarely with his father, and keeps a ten-minute morning practice that suits him.",
+  "Ketu-10": "For example, Pankaj, 44, a data engineer in Jamshedpur, is unknown to most, though his fix saved a launch. His manager asks him to present it to the whole team.",
+  "Ketu-11": "Think of Mamta, 50, in Jodhpur, who gets steady rent income without chasing it and is not a social person. She calls her two old friends every Sunday.",
+  "Ketu-12": "Like Dinesh, 60, retired in Haridwar, who spends mornings in meditation and lets bills and pension forms lapse. His son now sits with him once a month to sort them."
+ }
+}

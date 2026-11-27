@@ -203,17 +203,26 @@ details.card>summary::after{content:"+";float:right;font:700 1.3rem/1 var(--disp
 .pdfbtn{font:700 .9rem var(--body);border:1.5px solid rgba(243,241,255,.4);border-radius:99px;padding:6px 14px;background:transparent;color:#F3F1FF;cursor:pointer;min-height:36px;margin-left:8px}
 .pdfbtn:focus-visible{outline:3px solid var(--marigold);outline-offset:2px}
 @media print{header.bar,nav.tabs,.jump,.langswitch,.pdfbtn,.chapters button{box-shadow:none}header.bar,nav.tabs,.jump,.langswitch,.pdfbtn{display:none!important}
-html,body{background:#0B0922!important}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.card,.pred,table,figure{break-inside:avoid}.rsec{break-after:avoid}@page{size:A4;margin:12mm}}
+html,body{background:#FFF8EE!important}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.card,.pred,table,figure{break-inside:avoid}.rsec{break-after:avoid}@page{size:A4;margin:12mm}}
 
-/* Pushyara night theme (matches pushyara.com) */
+/* Pushyara Ksheer Sagar theme (matches pushyara.com) */
 :root,:root[data-theme="dark"],:root:not([data-theme="light"]){
-  --bg:#0B0922;--surface:#140F36;--raised:#1A1446;--sunk:#08061A;--ink:#ECE8FB;--muted:#A9A3D0;--line:rgba(236,232,251,.13);--strong:#ECE8FB;
-  --marigold:#F2B92E;--marigold-soft:rgba(242,185,46,.14);--rani:#FF7AA8;--rani-soft:rgba(255,122,168,.12);--peacock:#5ED6CC;--peacock-soft:rgba(94,214,204,.12);
-  --sindoor:#FF8A7A;--sindoor-soft:rgba(255,138,122,.12);--neel:#B9B5FF;--neel-soft:rgba(185,181,255,.12);--haldi:#F2B92E;--on-strong:#0B0922;
+  --bg:#FFF8EE;--surface:#FFFFFF;--raised:#FFFFFF;--sunk:#F3EBDD;--ink:#1D2856;--muted:#5A6283;--line:rgba(29,40,86,.13);--strong:#1D2856;
+  --marigold:#F4B63F;--marigold-soft:#FFF0D2;--rani:#D2486B;--rani-soft:#FCE9EC;--peacock:#2C8A8C;--peacock-soft:#E3F3F1;
+  --sindoor:#C0392B;--sindoor-soft:#FCE4E1;--neel:#2C4E9B;--neel-soft:#E6ECFA;--haldi:#A3611B;--on-strong:#FFFFFF;--night:#1C2F6E;
   --display:'Marcellus','Tiro Devanagari Hindi',Georgia,serif;--logo:var(--display);
-  --r-lg:6px;--r:4px;--r-sm:3px;--lift:0 14px 34px -18px rgba(0,0,0,.8);color-scheme:dark}
+  --r-lg:8px;--r:6px;--r-sm:4px;--lift:0 14px 30px -20px rgba(29,40,86,.45);color-scheme:light}
 html{font-synthesis:none}
-body{background:#0B0922}
+body{background:linear-gradient(170deg,#FFF0D2 0%,#FDE9EC 18%,#FFF8EE 40%,#FFF8EE 75%,#E3F3F1 100%)}
+.hero{background:linear-gradient(135deg,#1C2F6E 0%,#2C4E9B 58%,#2C8A8C 100%)!important;border-radius:14px!important}
+
+.eg{background:linear-gradient(90deg,#E3F3F1,#FFF8EE);border-left:3px solid #2C8A8C;border-radius:4px;padding:10px 14px;margin:10px 0 12px;font-size:.98rem;line-height:1.55;color:#1D2856}
+.eg span{display:block;font:600 .8rem var(--body);color:#2C8A8C;letter-spacing:.02em;margin-bottom:2px}
+.basics{background:#FFF3DA;border:1px solid rgba(232,162,58,.45);border-radius:8px;margin:14px 0 20px;padding:0 16px}
+.basics>summary{cursor:pointer;padding:12px 0;font-weight:600;color:#7A4A10}
+.basics dl{margin:0 0 12px}.basics dt{font:400 1.15rem var(--display);color:#2C4E9B;margin-top:14px}
+.basics dd{margin:4px 0 0}.basics dd p{margin:0 0 6px}.basics .like{font-style:italic;color:#5A6283}
+.basics .eg{background:#fff}
 </style>
 
 <div class="readbar" id="readbar" hidden><i></i></div>

@@ -7,9 +7,11 @@ const A = window.APP, esc = A.esc, J = window.JyotishCore;
 const AB = { Sun: 'Su', Moon: 'Mo', Mars: 'Ma', Mercury: 'Me', Jupiter: 'Ju', Venus: 'Ve', Saturn: 'Sa', Rahu: 'Ra', Ketu: 'Ke' };
 const AB_HI = { Sun: 'सू', Moon: 'चं', Mars: 'मं', Mercury: 'बु', Jupiter: 'गु', Venus: 'शु', Saturn: 'श', Rahu: 'रा', Ketu: 'के' };
 const NAK_LORD = ['Ketu','Venus','Sun','Moon','Mars','Rahu','Jupiter','Saturn','Mercury'];
-let LIB = null, GITA = null, LIB_HI = null, GITA_HI = null, CITIES = null;
+let LIB = null, GITA = null, LIB_HI = null, GITA_HI = null, CITIES = null, EXM = null, EXM_HI = null;
 async function libs(lang) {
   if (!LIB) [LIB, GITA] = await Promise.all([A.getJSON('data/library.json'), A.getJSON('data/gita.json')]);
+  if (!EXM) { try { EXM = await A.getJSON('data/examples.json'); } catch (e) { EXM = {}; } }
+  if (lang === 'hi' && !EXM_HI) { try { EXM_HI = await A.getJSON('data/examples.hi.json'); } catch (e) { EXM_HI = null; } }
   if (lang === 'hi' && !LIB_HI) { try { [LIB_HI, GITA_HI] = await Promise.all([A.getJSON('data/library.hi.json'), A.getJSON('data/gita.hi.json')]); } catch (e) { LIB_HI = null; GITA_HI = null; } }
 }
 async function cities() { if (!CITIES) CITIES = await A.getJSON('data/cities.json'); return CITIES; }
@@ -214,6 +216,11 @@ async function renderReport(id) {
   const lang = r.lang === 'hi' ? 'hi' : 'en'; await libs(lang);
   const T = lang === 'hi' && LIB_HI ? HI : EN, L = T === HI ? LIB_HI : LIB, G = T === HI ? GITA_HI : GITA, THEME = T === HI ? THEME_HI : THEME_PLAIN;
   const PN = p => T.planet(p), S = i => T.signs[i];
+  const X = (T === HI && EXM_HI) ? EXM_HI : (EXM || {});
+  const EGL = T === HI ? 'असल ज़िंदगी में' : 'In real life';
+  const eg = (sec, key, field) => { const o = X[sec] && X[sec][key]; const t = typeof o === 'string' ? o : (o && o[field || 'example']); return t ? `<p class="eg"><span>${EGL}</span> ${esc(t)}</p>` : ''; };
+  const BX = ids => { const B = X.basics || {}; const items = ids.filter(i => B[i]); if (!items.length) return '';
+    return `<details class="basics"><summary>${T === HI ? 'बुनियादी बातें समझें' : 'Learn the basics'}: ${items.map(i => esc(B[i].term)).join(', ')}</summary><dl>${items.map(i => `<dt>${esc(B[i].term)}</dt><dd><p>${esc(B[i].what)}</p><p class="like">${esc(B[i].like)}</p><p class="eg"><span>${EGL}</span> ${esc(B[i].example)}</p></dd>`).join('')}</dl></details>`; };
   const [y, mo, d] = r.input.date.split('-').map(Number), [hh, mi] = r.input.time.split(':').map(Number);
   let f; try { f = window.LifeFacts.facts({ name: r.input.name, y, mo, d, h: hh, mi, tz: r.input.tz, lat: r.input.lat, lon: r.input.lon, place: r.input.place, timeConfidence: r.input.conf }); }
   catch (e) { v.innerHTML = `<h1>${T.calcErr}</h1><p>${T.calcErrP}</p><a class="btn" href="#report">${T.back}</a>`; return; }
@@ -237,45 +244,45 @@ async function renderReport(id) {
     ${kundli(c, T)}
     <p><strong>${T.lagna}</strong> ${S(c.lagna)} ${c.ascDeg.toFixed(1)}° · <strong>${T.moon}</strong> ${S(moon.sign)}, ${T.naks[moon.nak]} ${T === HI ? 'चरण' : 'pada'} ${moon.pada} · <strong>${T.running}</strong> ${esc(PN(f.current.md))}–${esc(PN(f.current.ad))} ${T === HI ? esc(fm(f.current.adEnd)) + ' ' + T.until : T.until + ' ' + esc(fm(f.current.adEnd))}</p></section>`);
   sec.push(`<nav class="card" id="r-index" aria-label="${T.inThis}" style="margin-top:18px"><div class="eyebrow">${T.inThis}</div><ol class="chapters">${chapterTitles.map((t, i) => `<li><button type="button" data-go="${ids[i]}"><b>${i + 1}</b><span>${esc(t)}</span></button></li>`).join('')}</ol></nav>`);
-  sec.push(`${head(0)}<p>${T.how}</p>
+  sec.push(`${head(0)}${BX(['lagna', 'moon_sign', 'sun_sign_vs_vedic', 'sign', 'degree', 'house', 'planet', 'nakshatra', 'pada', 'birth_time_accuracy', 'ayanamsa'])}<p>${T.how}</p>
     <ul><li>${esc(T.timeNote[r.input.conf] || '')} ${esc(T.stable(S(c.lagna), f.lagnaStable.before, f.lagnaStable.after))}</li>${T === EN ? f.warn.map(w => `<li>${esc(w)}</li>`).join('') : ''}
     <li>${T.markIt}</li><li>${T.pro}</li></ul>`);
-  const who = [claim('lagna', `<p><strong>${esc(T.rising(S(c.lagna), PN(lagLord), H(P[lagLord].house), T.area[P[lagLord].house]))}</strong> ${esc(lib(L.planet_in_house, `${lagLord}-${P[lagLord].house}`))}</p>`),
-               claim('moon', `<p><strong>${esc(T.moonLine(S(moon.sign), H(moon.house), T.naks[moon.nak], PN(NAK_LORD[moon.nak % 9])))}</strong> ${esc(lib(L.planet_in_house, `Moon-${moon.house}`))}</p>`)];
-  for (const p of strong.filter(p => p !== lagLord && p !== 'Moon').slice(0, 3)) who.push(claim('s-' + p, `<p><strong>${esc(T.strongLine(PN(p), T.dig[P[p].dignity], H(P[p].house)))}</strong> ${esc(lib(L.planet_in_house, `${p}-${P[p].house}`))} ${esc(lib(L.dignity, P[p].dignity))}</p>`));
-  for (const yg of f.yogas) { const t = lib(L.yogas, yg.name) || lib(L.yogas, yg.name.replace('Debilitated ', '')); who.push(`<div class="claim"><p><strong>${esc(T === HI ? yg.name.replace('Debilitated ', 'नीच ') + ' योग' : yg.name)}</strong>${T === EN ? ' — ' + esc(yg.why.replace(/\.$/, '')) + '.' : ''} ${esc(t)}</p></div>`); }
-  sec.push(`${head(1)}${who.join('')}`);
+  const who = [claim('lagna', `<p><strong>${esc(T.rising(S(c.lagna), PN(lagLord), H(P[lagLord].house), T.area[P[lagLord].house]))}</strong> ${esc(lib(L.planet_in_house, `${lagLord}-${P[lagLord].house}`))}</p>${eg('planet_in_house', `${lagLord}-${P[lagLord].house}`)}<p></p>`),
+               claim('moon', `<p><strong>${esc(T.moonLine(S(moon.sign), H(moon.house), T.naks[moon.nak], PN(NAK_LORD[moon.nak % 9])))}</strong> ${esc(lib(L.planet_in_house, `Moon-${moon.house}`))}</p>${eg('planet_in_house', `Moon-${moon.house}`)}<p></p>`)];
+  for (const p of strong.filter(p => p !== lagLord && p !== 'Moon').slice(0, 3)) who.push(claim('s-' + p, `<p><strong>${esc(T.strongLine(PN(p), T.dig[P[p].dignity], H(P[p].house)))}</strong> ${esc(lib(L.planet_in_house, `${p}-${P[p].house}`))} ${esc(lib(L.dignity, P[p].dignity))}</p>${eg('planet_in_house', `${p}-${P[p].house}`)}`));
+  for (const yg of f.yogas) { const t = lib(L.yogas, yg.name) || lib(L.yogas, yg.name.replace('Debilitated ', '')); who.push(`<div class="claim"><p><strong>${esc(T === HI ? yg.name.replace('Debilitated ', 'नीच ') + ' योग' : yg.name)}</strong>${T === EN ? ' — ' + esc(yg.why.replace(/\.$/, '')) + '.' : ''} ${esc(t)}</p>${eg('yogas', yg.name) || eg('yogas', yg.name.replace('Debilitated ', ''))}</div>`); }
+  sec.push(`${head(1)}${BX(['house_lord', 'exalted', 'own_sign', 'debilitated', 'neecha_bhanga', 'yoga', 'retrograde', 'combust'])}${who.join('')}`);
   const ak = f.ak, ten = c.lords[10];
   const akVerse = G.planets[ak] && G.planets[ak].verses[0] && G.verses.find(x => x.key === G.planets[ak].verses[0]);
-  sec.push(`${head(2)}
+  sec.push(`${head(2)}${BX(['atmakaraka', 'karakamsa', 'navamsa', 'rahu_ketu'])}
     ${claim('ak', `<p><strong>${esc(T.ak(PN(ak)))}</strong> ${esc(lib(L.purpose.AK, ak))}</p>`)}
     ${claim('kl', `<p><strong>${esc(T.kl(S(f.karakamsa)))}</strong> ${esc(lib(L.purpose.karakamsa, J.SIGNS[f.karakamsa]))}</p>`)}
     ${claim('nodes', `<p><strong>${esc(T.nodes(H(f.rahuHouse), H(f.ketuHouse)))}</strong> ${esc(lib(L.purpose.nodes, String(f.rahuHouse)))}</p>`)}
-    ${claim('ten', `<p><strong>${esc(T.ten(PN(ten), H(P[ten].house)))}</strong> ${esc(lib(L.planet_in_house, `${ten}-${P[ten].house}`))}</p>`)}
+    ${claim('ten', `<p><strong>${esc(T.ten(PN(ten), H(P[ten].house)))}</strong> ${esc(lib(L.planet_in_house, `${ten}-${P[ten].house}`))}</p>${eg('planet_in_house', `${ten}-${P[ten].house}`)}<p></p>`)}
     ${akVerse ? verseHTML(akVerse, T === HI ? `${PN(ak)} आपकी आत्मा के गुरु हैं, और उनकी सीख है ${THEME[ak]}।` : `${ak} is your soul's teacher, and its lesson is ${THEME[ak]}.`, T) : ''}`);
-  sec.push(`${head(3)}<p class="muted">${T.teachersIntro}</p>` +
+  sec.push(`${head(3)}${BX(['karaka'])}<p class="muted">${T.teachersIntro}</p>` +
     Object.keys(P).map(p => { const q = P[p], PL = L.planets[p] || {}; return `<details class="card" style="margin:10px 0"><summary><strong>${esc(PN(p))}</strong> <span class="muted small">· ${S(q.sign)} · ${H(q.house)}${q.dignity ? ' · ' + T.dig[q.dignity] : ''}${q.retro ? ' · ' + T.retro : ''}${q.combust ? ' · ' + T.combust : ''}</span></summary>
-      <p>${esc(lib(PL, 'life_lesson'))}</p><p>${esc(lib(L.planet_in_house, `${p}-${q.house}`))}</p>${q.dignity ? `<p class="small">${esc(lib(L.dignity, q.dignity))}</p>` : ''}${q.retro ? `<p class="small">${esc(lib(L.dignity, 'retro'))}</p>` : ''}${q.combust ? `<p class="small">${esc(lib(L.dignity, 'combust'))}</p>` : ''}
+      <p>${esc(lib(PL, 'life_lesson'))}</p>${eg('planets', p)}<p>${esc(lib(L.planet_in_house, `${p}-${q.house}`))}</p>${eg('planet_in_house', `${p}-${q.house}`)}${q.dignity ? `<p class="small">${esc(lib(L.dignity, q.dignity))}</p>` : ''}${q.retro ? `<p class="small">${esc(lib(L.dignity, 'retro'))}</p>` : ''}${q.combust ? `<p class="small">${esc(lib(L.dignity, 'combust'))}</p>` : ''}
       <p class="small"><strong>${T.practice}:</strong> ${esc(lib(PL, 'practice'))}</p></details>`; }).join(''));
   const C = T.cols;
-  sec.push(`${head(4)}<p class="muted">${T.lifeIntro}</p>
+  sec.push(`${head(4)}${BX(['dasha', 'antardasha'])}<p class="muted">${T.lifeIntro}</p>
     <div class="tbl"><table><thead><tr><th>${C.chapter}</th><th>${C.age}</th><th>${C.dates}</th><th>${C.about}</th></tr></thead><tbody>${f.lifeArc.filter(m => m.ageTo > 0).map(m => `<tr class="${m.current ? 'now' : ''}"><td><strong>${esc(PN(m.lord))}</strong>${m.current ? ' · ' + T.now : ''}</td><td class="mono">${m.ageFrom.toFixed(0)}–${m.ageTo.toFixed(0)}</td><td class="mono">${esc(fm(m.start, { month: 'short', year: 'numeric' }))} – ${esc(fm(m.end, { month: 'short', year: 'numeric' }))}</td><td>${esc(lib(L.dasha[m.lord], 'theme'))}</td></tr>`).join('')}</tbody></table></div>
-    ${md ? `<h3>${esc(T.nowCh(PN(md.lord), fm(md.end)))}</h3><p><strong>${T.lesson}:</strong> ${esc(lib(L.dasha[md.lord], 'lesson'))}</p>${md.rules.map(hn => `<p>${esc(T.rules(PN(md.lord), H(hn), T.area[hn]))} ${esc(lib(L.dasha_by_house, String(hn)))}</p>`).join('')}` : ''}
+    ${md ? `<h3>${esc(T.nowCh(PN(md.lord), fm(md.end)))}</h3><p><strong>${T.lesson}:</strong> ${esc(lib(L.dasha[md.lord], 'lesson'))}</p>${eg('dasha', md.lord)}${md.rules.map(hn => `<p>${esc(T.rules(PN(md.lord), H(hn), T.area[hn]))} ${esc(lib(L.dasha_by_house, String(hn)))}</p>`).join('')}` : ''}
     ${nextMd ? `<h3>${esc(T.nextCh(PN(nextMd.lord), fm(nextMd.start, { month: 'long', year: 'numeric' })))}</h3><p>${esc(lib(L.dasha[nextMd.lord], 'theme'))} <strong>${T.lesson}:</strong> ${esc(lib(L.dasha[nextMd.lord], 'lesson'))}</p>` : ''}`);
   const evs = f.events.filter(e => e.body !== 'Ketu');
   const evText = e => e.turns ? T.turns(PN(e.body), e.turns) : T.enters(PN(e.body), S(e.to));
   const evRows = evs.map(e => `<tr><td class="mono">${esc(fm(e.date))}</td><td>${esc(evText(e))}</td><td>${esc(T.fromMoon(T === HI ? e.fromMoon : e.fromMoon))}<br><span class="small muted">${esc(T.fromLagna(e.fromLagna))}</span></td><td>${e.turns ? T.pause : esc(lib(L.transits[e.body], String(e.fromMoon)))}</td></tr>`).join('');
-  sec.push(`${head(5)}${ad ? `<p><strong>${esc(T.inAd(PN(ad.md), PN(ad.ad), fm(ad.end)))}</strong> ${esc(lib(L.dasha[ad.ad], 'theme'))}</p>${ad.adRules.map(hn => `<p>${esc(T.rules(PN(ad.ad), H(hn), T.area[hn]))} ${esc(lib(L.dasha_by_house, String(hn)))}</p>`).join('')}` : ''}
+  sec.push(`${head(5)}${BX(['transit', 'sade_sati'])}${ad ? `<p><strong>${esc(T.inAd(PN(ad.md), PN(ad.ad), fm(ad.end)))}</strong> ${esc(lib(L.dasha[ad.ad], 'theme'))}</p>${eg('dasha', ad.ad)}${ad.adRules.map(hn => `<p>${esc(T.rules(PN(ad.ad), H(hn), T.area[hn]))} ${esc(lib(L.dasha_by_house, String(hn)))}</p>`).join('')}` : ''}
     ${nextAds.length ? `<p class="muted">${T.then}: ${nextAds.map(a => `${esc(PN(a.md))}–${esc(PN(a.ad))} ${T === HI ? esc(fm(a.start, { month: 'short', year: 'numeric' })) + ' ' + T.from : T.from + ' ' + esc(fm(a.start, { month: 'short', year: 'numeric' }))}`).join(' · ')}</p>` : ''}
-    ${f.sadeSati ? `<div class="schools"><div class="eyebrow">${T.satTitle}</div><p>${esc(f.sadeSati === 'dhaiya' ? T.dhaiya : lib(L.sade_sati, f.sadeSati))}</p></div>` : ''}
+    ${f.sadeSati ? `<div class="schools"><div class="eyebrow">${T.satTitle}</div><p>${esc(f.sadeSati === 'dhaiya' ? T.dhaiya : lib(L.sade_sati, f.sadeSati))}</p>${f.sadeSati === 'dhaiya' ? '' : eg('sade_sati', f.sadeSati)}</div>` : ''}
     ${evRows ? `<h3>${T.bigTurns}</h3><div class="tbl"><table><thead><tr><th>${C.date}</th><th>${C.event}</th><th>${C.house}</th><th>${C.brings}</th></tr></thead><tbody>${evRows}</tbody></table></div>` : ''}`);
   const goodJ = [2, 5, 7, 9, 11], goodS = [3, 6, 11];
   const focusOf = m => { const j = m.planets.Jupiter.fromMoon, s = m.planets.Saturn.fromMoon; return goodJ.includes(j) ? T.focusJ(T.area[j]) : goodS.includes(s) ? T.focusS(T.area[s]) : [12, 1, 2].includes(s) ? T.slow : T.cons; };
   const dashaPN = s => String(s || '').split('–').map(x => PN(x)).join('–');
   sec.push(`${head(6)}<p class="muted">${T.monthsIntro}</p><div class="tbl"><table><thead><tr><th>${C.month}</th><th>${C.period}</th><th>${T === HI ? 'गुरु' : 'Jupiter'}</th><th>${T === HI ? 'शनि' : 'Saturn'}</th><th>${C.focus}</th></tr></thead><tbody>${f.months.map(m => `<tr><td class="mono">${esc(fm(m.month, { month: 'short', year: 'numeric' }))}</td><td>${esc(dashaPN(m.dasha))}</td><td>${m.planets.Jupiter.fromMoon}</td><td>${m.planets.Saturn.fromMoon}</td><td>${esc(focusOf(m))}</td></tr>`).join('')}</tbody></table></div>`);
-  sec.push(`${head(7)}<p class="muted">${T.weekIntro}</p><div class="tbl"><table><thead><tr><th>${C.day}</th><th>${C.grade}</th><th>${T.moon}</th><th>${C.tara}</th><th>${C.rk}</th></tr></thead><tbody>${f.week.map(w => `<tr><td class="mono">${esc(fm(w.date, { weekday: 'short', day: 'numeric', month: 'short' }))}</td><td><span class="grade ${w.grade}">${w.grade}</span></td><td>${esc(T.fromMoon(w.moonHouse))}${w.chandrashtama ? ' (' + T.chandrashtama + ')' : ''}<br><span class="small muted">${esc(lib(L.weekly_day.moon_house, String(w.moonHouse)))}</span></td><td>${esc(T.tara(w.tara))}<br><span class="small muted">${esc(lib(L.weekly_day.tara, w.tara))}</span></td><td class="mono">${w.rahuKaal ? esc(fm(w.rahuKaal[0], { hour: '2-digit', minute: '2-digit' })) + '–' + esc(fm(w.rahuKaal[1], { hour: '2-digit', minute: '2-digit' })) : '—'}</td></tr>`).join('')}</tbody></table></div>`);
+  sec.push(`${head(7)}${BX(['tara', 'chandra_bala', 'rahu_kaal'])}<p class="muted">${T.weekIntro}</p><div class="tbl"><table><thead><tr><th>${C.day}</th><th>${C.grade}</th><th>${T.moon}</th><th>${C.tara}</th><th>${C.rk}</th></tr></thead><tbody>${f.week.map(w => `<tr><td class="mono">${esc(fm(w.date, { weekday: 'short', day: 'numeric', month: 'short' }))}</td><td><span class="grade ${w.grade}">${w.grade}</span></td><td>${esc(T.fromMoon(w.moonHouse))}${w.chandrashtama ? ' (' + T.chandrashtama + ')' : ''}<br><span class="small muted">${esc(lib(L.weekly_day.moon_house, String(w.moonHouse)))}</span></td><td>${esc(T.tara(w.tara))}<br><span class="small muted">${esc(lib(L.weekly_day.tara, w.tara))}</span></td><td class="mono">${w.rahuKaal ? esc(fm(w.rahuKaal[0], { hour: '2-digit', minute: '2-digit' })) + '–' + esc(fm(w.rahuKaal[1], { hour: '2-digit', minute: '2-digit' })) : '—'}</td></tr>`).join('')}</tbody></table></div>`);
   sec.push(`${head(8)}<p class="muted">${T.yoursIntro}</p>` +
-    [1, 2, 4, 7, 10, 11].map(hn => { const HH = L.houses[String(hn)] || {}, lord = c.lords[hn]; return `<div class="card" style="margin:12px 0"><div class="eyebrow">${esc(H(hn))} · ${esc(lib(HH, 'area', T.area[hn]))}</div><p class="small muted">${esc(T.ruledBy(PN(lord), H(P[lord].house)))}</p>
+    [1, 2, 4, 7, 10, 11].map(hn => { const HH = L.houses[String(hn)] || {}, lord = c.lords[hn]; return `<div class="card" style="margin:12px 0"><div class="eyebrow">${esc(H(hn))} · ${esc(lib(HH, 'area', T.area[hn]))}</div><p class="small muted">${esc(T.ruledBy(PN(lord), H(P[lord].house)))}</p>${eg('houses', String(hn))}
       <div class="grid2"><div><strong>${T.yours}</strong><ul>${(HH.yours || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div><div><strong>${T.notYours}</strong><ul>${(HH.not_yours || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div></div>${(HH.questions || []).length ? `<p class="small"><em>${esc(HH.questions[0])}</em></p>` : ''}</div>`; }).join(''));
   sec.push(`${head(9)}<p>${esc(G.frame_simple || (G.frame && G.frame.long) || '')}</p><p>${T.gitaIntro}</p>${pickVerses(f, fm, T, G, THEME).map(x => verseHTML(x.v, x.why, T)).join('')}<p class="status">${T.gitaNote}</p>`);
   const pm = L.planets[f.current.md] || {}, pa = L.planets[f.current.ad] || {};
@@ -298,7 +305,7 @@ async function renderReport(id) {
   const jump = v.querySelector('#jump'), idx = v.querySelector('#r-index');
   jump.onclick = () => scrollToId('r-index');
   if ('IntersectionObserver' in window) new IntersectionObserver(es => { for (const x of es) jump.hidden = x.isIntersecting || x.boundingClientRect.top > 0; }).observe(idx);
-  v.querySelectorAll('[data-print]').forEach(b => b.onclick = () => window.print());
+  v.querySelectorAll('[data-print]').forEach(b => b.onclick = () => { v.querySelectorAll('details').forEach(d => d.open = true); window.print(); });
   v.querySelectorAll('[data-lang]').forEach(b => b.onclick = async () => { if ((r.lang || 'en') === b.dataset.lang) return; r.lang = b.dataset.lang; await saveReport(r); renderReport(id); });
   v.querySelectorAll('.claim[data-key] .chip').forEach(b => b.onclick = async () => { const key = b.closest('.claim').dataset.key, val = b.dataset.c; r.confirms[key] = r.confirms[key] === val ? null : val;
     b.parentElement.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(r.confirms[key] === x.dataset.c))); await saveReport(r); });

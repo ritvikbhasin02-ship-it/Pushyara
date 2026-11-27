@@ -14,21 +14,24 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
 .eds label:first-child{border-left:0}
 .eds input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer;min-height:0}
 .eds b{display:block;font:400 1.6rem var(--display);color:var(--moon);margin-top:2px}
-.eds label:has(input:checked){background:linear-gradient(180deg,rgba(242,185,46,.16),rgba(242,185,46,.03));color:var(--gold-hi);box-shadow:inset 0 0 0 1px var(--gold)}
-.eds label:has(input:checked) b{color:var(--gold-hi)}
+.eds label:has(input:checked){background:linear-gradient(180deg,#FFE9BC,#FFF6E2);color:#7A4A10;box-shadow:inset 0 0 0 2px var(--gold)}
+.eds label:has(input:checked) b{color:#7A4A10}
 .eds label:focus-within{outline:2px solid var(--gold-hi);outline-offset:2px}
 .f{display:grid;gap:6px;margin-top:16px;font-weight:600}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
 .chk{display:flex;gap:12px;align-items:flex-start;font-weight:400;margin-top:18px}.chk input{width:20px;min-height:20px;height:20px;margin-top:5px;flex:none;accent-color:var(--gold)}
-.err{color:#FF8A7A;font-weight:600;min-height:1.6em;margin:18px 0 6px}
+.err{color:#C0392B;font-weight:600;min-height:1.6em;margin:18px 0 6px}
 .note{color:var(--mist);font-size:.98rem;margin-top:16px}
 .done{border-top:1px solid var(--gold);padding-top:24px;margin-top:40px}
 .foot{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:46px;padding-top:20px;border-top:1px solid var(--line-soft);font-size:.95rem}.foot a{color:var(--mist);text-decoration:none}
 @media(max-width:680px){.eds{grid-template-columns:1fr 1fr}.eds label:nth-child(3){border-left:0}.eds label:nth-child(n+3){border-top:1px solid var(--line-soft)}.two{grid-template-columns:1fr}}
-</style></head><body><div class="w">
+.paybox{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:center;border:1px solid rgba(232,162,58,.45);background:#fff;padding:20px;margin:18px 0}
+#qr svg{width:100%;height:auto;display:block}.amt{font:400 2.4rem var(--display);color:var(--moon)}
+@media(max-width:600px){.paybox{grid-template-columns:1fr}#qr{max-width:240px}}
+</style></head><body style="background:linear-gradient(170deg,#FFF0D2 0%,#FDE9EC 30%,#FFF8EE 60%,#E3F3F1 100%)"><div class="w">
 <a class="home" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset=".55" stop-color="#F2B92E"/><stop offset="1" stop-color="#C98A12"/></linearGradient><mask id="lg-m"><rect width="64" height="64" fill="#fff"/><circle cx="31.60" cy="32.08" r="18.91" fill="#000"/></mask></defs><circle cx="28.5" cy="36.5" r="19.5" fill="url(#lg-g)" mask="url(#lg-m)"/><path d="M38.69 8.83 L39.84 11.78 L42.79 12.93 L39.84 14.08 L38.69 17.03 L37.54 14.08 L34.59 12.93 L37.54 11.78Z M37.34 21.28 L38.81 25.05 L42.58 26.52 L38.81 27.98 L37.34 31.75 L35.88 27.98 L32.11 26.52 L35.88 25.05Z M49.99 23.77 L50.83 25.92 L52.98 26.76 L50.83 27.60 L49.99 29.76 L49.15 27.60 L46.99 26.76 L49.15 25.92Z" fill="#FFE07A"/></svg>Pushyara</a>
 <h1>Order your Life Report</h1>
-<p class="lead">Your full 29-page reading from your exact birth time. Every edition includes the digital report and prediction tracker. Prices include all taxes, and shipping for printed editions.</p>
+<p class="lead">Your full 40-page reading from your exact birth time. Every edition includes the digital report and prediction tracker. Prices include all taxes, and shipping for printed editions.</p>
 <form id="of" novalidate>
   <fieldset><legend>Choose your edition</legend>
   <div class="eds" role="radiogroup" aria-label="Edition">
@@ -57,15 +60,31 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
   <button class="btn" type="submit">Place my order</button>
   <p class="note">We reply within 24 hours with a secure payment link for UPI, cards or net banking. Your report is prepared after payment. Read our <a href="/refunds.html">refund policy</a>.</p>
 </form>
-<div id="done" class="done" hidden><h2>Order placed</h2><p class="lead">Thank you. We have your order and will send a secure payment link to your email and mobile within 24 hours. For any change, write to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a>.</p></div>
+<div id="done" class="done" hidden>
+  <h2>Order placed. Now complete your payment</h2>
+  <div id="pay" hidden>
+    <p class="lead">Scan with any UPI app (Paytm, PhonePe, Google Pay, BHIM). The amount is filled in for you.</p>
+    <div class="paybox"><div id="qr" aria-label="UPI QR code"></div><div><div class="amt" id="amt"></div><p class="muted" id="payee"></p><a class="btn" id="upilink" href="#">Pay with a UPI app</a><p class="small muted" style="margin-top:8px">The button opens your UPI app on a phone.</p></div></div>
+    <form id="utrf" novalidate><label class="f">UPI transaction ID (12-digit UTR, shown after you pay)<input id="utr" inputmode="numeric" maxlength="22" autocomplete="off"></label>
+    <p class="err" id="uerr" role="alert"></p><button class="btn" type="submit">I have paid</button></form>
+    <p class="note">We check your payment and send your report within 24 hours. Your order number is <b id="oid"></b>.</p>
+  </div>
+  <div id="paid" hidden><p class="lead">Thank you. We have your payment details and will send your report to your email within 24 hours. For any change, write to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a>.</p></div>
+  <p id="nopay" class="lead" hidden>Thank you. We have your order and will send a secure payment link to your email and mobile within 24 hours. For any change, write to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a>.</p>
+</div>
 <nav class="foot" aria-label="Footer"><a href="/">Home</a><a href="/learn/index.html">Learn Jyotish</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/refunds.html">Refunds</a><a href="/contact.html">Contact</a></nav>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <script>
 (function(){
   var qs=new URLSearchParams(location.search),q=qs.get('edition');
   if(q){var r=document.querySelector('input[name=ed][value="'+q+'"]');if(r)r.checked=true;}
   if(qs.get('lang')==='hi')document.getElementById('lang').value='Hindi';
   [['nm','nm'],['dob','dob'],['tob','tob'],['pob','pob']].forEach(function(k){var x=qs.get(k[0]);if(x&&/^[\w\s,.:'()-]{1,80}$/.test(x))document.getElementById(k[1]).value=x;});
+  /* Set your UPI ID here to switch on instant UPI payment. Empty = we send a payment link by email. */
+  var FS='https://formsubmit.co/ajax/28cee976f24a2645d13462831bcfe48d';
+  var UPI_ID='', UPI_NAME='Pushyara';
+  var AMT={digital:499,printed:999,keepsake:1499,gift:2499};
   var P={digital:'Digital (₹499)',printed:'Printed, spiral (₹999)',keepsake:'Keepsake book (₹1,499)',gift:'Gift edition, hardbound (₹2,499)'};
   var ship=document.getElementById('ship'),f=document.getElementById('of');
   function ed(){return document.querySelector('input[name=ed]:checked').value;}
@@ -84,8 +103,21 @@ legend{font:400 1.5rem var(--display);color:var(--gold-hi);padding:0 14px 0 0}
     var data={_subject:'New Pushyara order: '+P[ed()],_template:'table',_captcha:'false',Edition:P[ed()],Name:v('nm'),'Date of birth':v('dob'),'Time of birth':v('tob'),'Time accuracy':v('conf'),'Place of birth':v('pob'),Language:v('lang'),Mobile:v('ph'),Email:v('em'),_replyto:v('em')};
     if(ed()!=='digital'){data['Ship to']=v('rn');data.Address=v('ad');data['City and state']=v('cs');data.PIN=v('pin');data.Gift=document.getElementById('gift').checked?'Yes, leave the price out':'No';}
     var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Placing your order…';
-    function done(){f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);}
-    fetch('https://formsubmit.co/ajax/28cee976f24a2645d13462831bcfe48d',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+    var oid='PY'+Date.now().toString(36).toUpperCase().slice(-6);data['Order ID']=oid;data._subject='New Pushyara order '+oid+': '+P[ed()];
+    function done(){f.hidden=true;document.getElementById('done').hidden=false;window.scrollTo(0,0);
+      if(!UPI_ID){document.getElementById('nopay').hidden=false;return;}
+      var a=AMT[ed()],uri='upi://pay?pa='+encodeURIComponent(UPI_ID)+'&pn='+encodeURIComponent(UPI_NAME)+'&am='+a+'.00&cu=INR&tn='+encodeURIComponent('Pushyara '+oid);
+      document.getElementById('pay').hidden=false;document.getElementById('amt').textContent='₹'+a.toLocaleString('en-IN');
+      document.getElementById('payee').textContent='To '+UPI_NAME+' ('+UPI_ID+')';document.getElementById('upilink').href=uri;document.getElementById('oid').textContent=oid;
+      try{var q=qrcode(0,'M');q.addData(uri);q.make();document.getElementById('qr').innerHTML=q.createSvgTag({cellSize:5,margin:2,scalable:true});}catch(e){}
+      document.getElementById('utrf').addEventListener('submit',function(ev){ev.preventDefault();var u=document.getElementById('utr').value.replace(/\s/g,''),ue=document.getElementById('uerr');
+        if(!/^[A-Za-z0-9]{10,22}$/.test(u)){ue.textContent='Enter the transaction ID shown in your UPI app after paying.';return;}
+        var b=this.querySelector('button');b.disabled=true;b.textContent='Sending…';
+        fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:'Payment for Pushyara order '+oid,_template:'table',_captcha:'false','Order ID':oid,Edition:P[ed()],Amount:'₹'+a,'UPI transaction ID':u,Name:v('nm'),Mobile:v('ph'),Email:v('em'),_replyto:v('em')})})
+          .then(function(r){return r.json();}).then(function(j){if(String(j.success)!=='true')throw 0;document.getElementById('pay').hidden=true;document.getElementById('paid').hidden=false;})
+          .catch(function(){b.disabled=false;b.textContent='I have paid';ue.innerHTML='Could not send. Email your transaction ID and order number '+oid+' to <a href="mailto:hello@pushyara.com">hello@pushyara.com</a>.';});});
+    }
+    fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
       .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){if(String(j&&j.success)!=='true')throw 0;done();})
       .catch(function(){btn.disabled=false;btn.textContent='Place my order';
         err.innerHTML='Your order could not be sent. Check your internet connection and try again, or <a href="mailto:hello@pushyara.com?subject='+encodeURIComponent('Life Report order: '+P[ed()])+'&body='+encodeURIComponent(L.join('\n'))+'">email your order to us</a>.';});

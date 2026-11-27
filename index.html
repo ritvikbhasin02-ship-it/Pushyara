@@ -210,6 +210,56 @@ details p{color:var(--mist);margin:0 0 22px;max-width:68ch}
 footer{position:relative;z-index:2;background:var(--night);border-top:1px solid var(--line);padding:40px 0 60px;color:var(--mist);font-size:.95rem}
 footer nav{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:14px}
 footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
+
+/* ===== Ksheer Sagar theme: colours of the Sheshashayi print ===== */
+:root{--night:#FFF8EE;--moon:#1D2856;--mist:#5A6283;--gold-hi:#A3611B;--gold:#E8A23A;--gold-lo:#B97716;
+ --line:rgba(185,119,22,.35);--line-soft:rgba(29,40,86,.12);--vishnu:#2C4E9B;--ocean:#2C8A8C;--lotus:#D2486B;--saffron:#F4B63F;--blush:#FCE9EC;--aqua:#E3F3F1}
+html{background:var(--night)}
+body{background:var(--night);color:var(--moon);font-weight:400}
+.btn{color:#2A1A05;background:linear-gradient(180deg,#FFD884 0%,#F4B63F 50%,#E39A22 100%);box-shadow:inset 0 0 0 1px rgba(255,236,190,.8),0 14px 30px -16px rgba(200,120,20,.8)}
+.btn.quiet{background:rgba(255,255,255,.55);color:var(--vishnu);box-shadow:inset 0 0 0 1px rgba(44,78,155,.35)}.btn.quiet:hover{box-shadow:inset 0 0 0 1px var(--vishnu)}
+.link{color:var(--vishnu);text-decoration-color:rgba(44,78,155,.35)}
+h3{color:var(--vishnu)}
+.top .w{padding:18px 0}
+.tnav a{color:#3B4570}.tnav a:hover{color:var(--moon)}.tnav .hi{color:var(--lotus)}.brand span{color:var(--lotus)}
+.sky{min-height:auto;background:linear-gradient(168deg,#FFF0D2 0%,#FDE3E6 38%,#E1F1EF 72%,#C4E5E4 100%)}
+.sky .w{padding:120px 0 90px;grid-template-columns:1.1fr .9fr}
+.sky::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(180deg,transparent,rgba(44,138,140,.10))}
+.deva{margin:0;justify-self:center;width:min(440px,100%)}
+.deva .arch{border-radius:220px 220px 10px 10px;overflow:hidden;padding:10px;background:linear-gradient(180deg,#F9D58A,#D59A2E);box-shadow:0 30px 60px -30px rgba(29,40,86,.55)}
+.deva img{display:block;width:100%;height:auto;border-radius:210px 210px 4px 4px}
+.deva figcaption,.guru figcaption{font-size:.82rem;color:var(--mist);text-align:center;margin-top:10px}
+.price{color:var(--moon)}
+@media(max-width:900px){.sky .w{grid-template-columns:1fr;padding:92px 0 56px;gap:22px}.deva{order:-1;width:min(280px,76%)}}
+.tonight-band{padding:46px 0;background:linear-gradient(120deg,#1C2F6E 0%,#2C4E9B 55%,#2C8A8C 100%);color:#F3F0FF}
+.tb{display:grid;grid-template-columns:150px 1fr;gap:34px;align-items:center}
+.tb-moon svg{width:150px;height:150px;display:block;overflow:visible}
+.tb-h{font-size:1.5rem;color:#FFE9B8;margin-bottom:4px}
+.tonight-band .tonight{text-align:left;color:#D8E4FF;margin:0 0 8px}.tonight-band .tonight b{color:#fff}
+.tonight-band .ruler{position:static}.tonight-band .ruler .rw{width:100%}.tonight-band .rlab{color:#C9D6FA}.tonight-band .rlab #rnow{color:#FFE29A}
+@media(max-width:700px){.tb{grid-template-columns:90px 1fr;gap:18px}.tb-moon svg{width:90px;height:90px}}
+.diffsec{background:linear-gradient(180deg,var(--night),var(--aqua))}
+.cmp td:last-child{color:var(--moon);font-weight:500}.cmp thead th:last-child{color:var(--vishnu)}
+section[aria-labelledby="why"]{background:linear-gradient(180deg,var(--aqua),var(--blush))}
+.pv{display:grid;gap:18px;justify-items:center}
+.guru{margin:0;width:min(330px,100%)}.guru img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 24px 50px -28px rgba(29,40,86,.6)}
+.asterism{max-width:230px}
+.asterism path[fill="#FFE07A"]{fill:#E39A22}
+section[aria-labelledby="inside"]{background:linear-gradient(180deg,var(--blush),var(--night))!important}
+.kundli .h.on{fill:rgba(244,182,63,.25)}
+#editions{background:linear-gradient(180deg,var(--night),#FFF1DA)}
+.ed.pick{background:linear-gradient(180deg,rgba(244,182,63,.22),rgba(244,182,63,0) 75%)}
+.ed .tag{color:var(--lotus);font-weight:600}
+section[aria-labelledby="track"]{background:linear-gradient(135deg,#1C2F6E,#2C4E9B 60%,#2C8A8C)!important;color:#F3F0FF}
+section[aria-labelledby="track"] .big{color:#FFE29A}section[aria-labelledby="track"] h2{color:#fff}section[aria-labelledby="track"] .lede{color:#D8E4FF}
+section[aria-labelledby="free"]{background:linear-gradient(180deg,var(--night),var(--aqua))}
+section[aria-labelledby="faq"]{background:var(--aqua)}
+.close{background:linear-gradient(180deg,var(--aqua) 0%,#BFE0E2 40%,#2C8A8C 100%)}
+.close h2{color:var(--moon)}
+footer{background:linear-gradient(120deg,#1C2F6E,#22406F);color:#C9D3F2;border-top:0}footer nav a:hover{color:#fff}
+.orbit li::before{background:#FFF8EE}
+summary::after{border-color:var(--lotus)}details[open] summary::after{background:var(--lotus);box-shadow:none}
+.chap li.on div{color:var(--lotus)}
 </style>
 </head>
 <body>
@@ -231,7 +281,7 @@ footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
 
 <main id="main">
 <div class="sky">
-  <svg class="stars" id="stars" aria-hidden="true" preserveAspectRatio="xMidYMid slice"></svg>
+  
   <div class="w">
     <div>
       <h1 style="margin-top:0">Your kundli, read with dates you can check.</h1>
@@ -242,20 +292,26 @@ footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
         <div class="price">₹499<small>Printed from ₹999. <a class="link" href="/sample/pushyara-sample-report-english.pdf">See a sample report</a></small></div>
       </div>
     </div>
-    <div class="moonbox">
-      <svg viewBox="-20 -20 340 340" role="img" aria-labelledby="tonight"><circle cx="150" cy="150" r="190" fill="url(#halo)"/><g id="moon-now"></g></svg>
-      <p class="tonight" id="tonight" aria-live="polite"></p>
-    </div>
+    <figure class="deva">
+      <div class="arch"><img src="/assets/img/vishnu-sheshashayi-900.jpg" srcset="/assets/img/vishnu-sheshashayi-560.jpg 560w, /assets/img/vishnu-sheshashayi-900.jpg 900w" sizes="(max-width:900px) 70vw, 440px" width="900" height="1191" alt="Lord Vishnu resting on Sheshnag in the cosmic ocean, with Lakshmi and Brahma on the lotus" fetchpriority="high"></div>
+      <figcaption>Sheshashayi Vishnu, Kolkata, c. 1880–85. The Met, public domain.</figcaption>
+    </figure>
   </div>
-  <div class="ruler" aria-hidden="true"><div class="rw"><svg id="ruler" viewBox="0 0 1000 46" preserveAspectRatio="none"></svg><div class="rlab"><span>Ashwini</span><span id="rnow"></span><span>Revati</span></div></div></div>
 </div>
+
+<section class="tonight-band" aria-label="Tonight's sky"><div class="w tb">
+  <div class="tb-moon"><svg viewBox="-20 -20 340 340" role="img" aria-labelledby="tonight"><circle cx="150" cy="150" r="190" fill="url(#halo)"/><g id="moon-now"></g></svg></div>
+  <div class="tb-text"><h2 class="tb-h">Tonight’s sky</h2><p class="tonight" id="tonight" aria-live="polite"></p>
+  <div class="ruler" aria-hidden="true"><div class="rw"><svg id="ruler" viewBox="0 0 1000 46" preserveAspectRatio="none"></svg><div class="rlab"><span>Ashwini</span><span id="rnow"></span><span>Revati</span></div></div></div>
+  </div>
+</div></section>
 
 <section aria-labelledby="diff" class="diffsec"><div class="w">
   <div class="sec-head"><h2 id="diff">A reading you can hold to account</h2><p class="lede">Most kundli reports are long, vague and end with something to buy. Ours is built the other way round.</p></div>
   <div class="tablewrap"><table class="cmp"><thead><tr><th scope="col"></th><th scope="col">A typical kundli report</th><th scope="col">Pushyara Life Report</th></tr></thead><tbody>
   <tr><th scope="row">Predictions</th><td>“A favourable period ahead”</td><td>Every life chapter, month and day of this week with its dates</td></tr>
   <tr><th scope="row">Checking it</th><td>No way to tell if it was right</td><td>A tracker: mark each prediction “happened”, “partly” or “didn’t” and see your hit rate</td></tr>
-  <tr><th scope="row">Length</th><td>Hundreds of pages of tables and repeated text</td><td>29 pages, every one about you</td></tr>
+  <tr><th scope="row">Length</th><td>Hundreds of pages of tables and repeated text</td><td>About 40 pages about you, every term explained with a real-life example</td></tr>
   <tr><th scope="row">After you pay</th><td>Gemstones, pujas and follow-up sales calls</td><td>Nothing more to buy, and no calls, ever</td></tr>
   <tr><th scope="row">Language</th><td>English, or Hindi as a separate purchase</td><td>English and Hindi in the same report, switch any time</td></tr>
   <tr><th scope="row">To keep</th><td>A PDF</td><td>Digital, or a printed keepsake or hardbound gift edition</td></tr>
@@ -263,18 +319,13 @@ footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
   <div class="promises-row">
     <div><h3>Fixed or refunded</h3><p>If your report has a mistake or was made with wrong birth details, write within 7 days and we correct it or refund you in full.</p></div>
     <div><h3>Exact sky</h3><p>Positions are calculated with the Lahiri system and checked against Swiss Ephemeris. <a class="link" href="/method.html">See the method</a>.</p></div>
-    <div><h3>See it first</h3><p>Read 10 real pages before you pay, in <a class="link" href="/sample/pushyara-sample-report-english.pdf">English</a> or <a class="link" href="/sample/pushyara-sample-report-hindi.pdf">Hindi</a>.</p></div>
+    <div><h3>See it first</h3><p>Read 13 real pages before you pay, in <a class="link" href="/sample/pushyara-sample-report-english.pdf">English</a> or <a class="link" href="/sample/pushyara-sample-report-hindi.pdf">Hindi</a>.</p></div>
   </div>
 </div></section>
 
 <section aria-labelledby="why"><div class="w pushya">
-  <svg class="asterism" viewBox="0 0 360 380" role="img" aria-label="The three stars of Pushya nakshatra, in their real positions in the sky">
-    <g stroke="rgba(255,224,138,.35)" stroke-width="1" fill="none"><path d="M70 40 L40 339 L320 345 Z" stroke-dasharray="2 7"/></g>
-    <circle cx="70" cy="40" r="36" fill="url(#halo)"/><circle cx="40" cy="339" r="48" fill="url(#halo)"/><circle cx="320" cy="345" r="28" fill="url(#halo)"/>
-    <path transform="translate(70 40) scale(1.6)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2Z" fill="#FFE07A"/>
-    <path transform="translate(40 339) scale(2)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2Z" fill="#FFE07A"/>
-    <path transform="translate(320 345) scale(1.25)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2Z" fill="#FFE07A"/>
-  </svg>
+  <div class="pv"><figure class="guru"><img src="/assets/img/brihaspati-640.jpg" width="640" height="747" loading="lazy" alt="Brihaspati, teacher of the gods and deity of Pushya nakshatra, stone sculpture"><figcaption>Brihaspati, deity of Pushya. Stone, 12th century, eastern India. The Met, public domain.</figcaption></figure>
+  </div>
   <div>
     <h2 id="why">Why Pushyara</h2>
     <p class="lede" style="margin-top:16px">Pushya is the most auspicious of the 27 nakshatras, the star of nourishment, guided by Brihaspati, teacher of the gods. Our mark is the Moon holding Pushya’s three stars: the mind, held steady by wisdom. Each star stands for one promise.</p>
@@ -314,14 +365,14 @@ footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
 
 
 <section aria-labelledby="editions-h" id="editions"><div class="w">
-  <div class="sec-head"><h2 id="editions-h">Choose your edition</h2><p class="lede">29 pages, every one about you. Each edition includes your digital report and prediction tracker. The fuller the Moon, the more there is to hold.</p></div>
+  <div class="sec-head"><h2 id="editions-h">Choose your edition</h2><p class="lede">About 40 pages, every one about you, with every term explained. Each edition includes your digital report and prediction tracker. The fuller the Moon, the more there is to hold.</p></div>
   <div class="eds">
     <div class="ed"><svg class="m" data-ill=".22" viewBox="-20 -20 340 340" aria-hidden="true"></svg><h3>Digital</h3><div class="pr">₹499</div><p>Read online in English or Hindi, on any phone. Ready within 24 hours of payment.</p><a class="btn quiet" href="/order.html?edition=digital">Get digital</a></div>
     <div class="ed"><svg class="m" data-ill=".5" viewBox="-20 -20 340 340" aria-hidden="true"></svg><h3>Printed</h3><div class="pr">₹999</div><p>Full-colour printed report, spiral bound.</p><a class="btn quiet" href="/order.html?edition=printed">Order printed</a></div>
     <div class="ed pick"><svg class="m" data-ill=".8" viewBox="-20 -20 340 340" aria-hidden="true"></svg><span class="tag">Most chosen</span><h3>Keepsake book</h3><div class="pr">₹1,499</div><p>Soft-cover bound book in full colour, made to keep.</p><a class="btn" href="/order.html?edition=keepsake">Order keepsake</a></div>
     <div class="ed"><svg class="m" data-ill="1" viewBox="-20 -20 340 340" aria-hidden="true"></svg><h3>Gift edition</h3><div class="pr">₹2,499</div><p>Hardbound with a gold-printed title. For weddings, birthdays and a newborn’s first kundli.</p><a class="btn quiet" href="/order.html?edition=gift">Order gift edition</a></div>
   </div>
-  <p class="fine">Printed editions ship anywhere in India in 5–8 days. Prices include all taxes and shipping. Not sure yet? <a class="link" href="/sample/pushyara-sample-report-english.pdf">Read 10 sample pages</a> (<a class="link" href="/sample/pushyara-sample-report-hindi.pdf">हिंदी</a>).</p>
+  <p class="fine">Printed editions ship anywhere in India in 5–8 days. Prices include all taxes and shipping. Not sure yet? <a class="link" href="/sample/pushyara-sample-report-english.pdf">Read 13 sample pages</a> (<a class="link" href="/sample/pushyara-sample-report-hindi.pdf">हिंदी</a>).</p>
 </div></section>
 
 <section aria-labelledby="how" style="padding-top:0"><div class="w">
@@ -358,7 +409,7 @@ footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
   <details><summary>Which astrology system is used?</summary><p>Vedic (sidereal) astrology with Lahiri ayanamsa, whole-sign houses and Vimshottari dasha, the most widely used system in India.</p></details>
   <details><summary>Does it recommend gemstones or pujas?</summary><p>No. It gives practical steps that are in your hands, and is clear about what is not. There is nothing to buy after the report.</p></details>
   <details><summary>How is this different from a free kundli?</summary><p>A free kundli gives tables. This explains your chart in plain language, dates every chapter of your life, grades the days of your week, and keeps a tracker of what came true.</p></details>
-  <details><summary>Can I see a sample before I buy?</summary><p>Yes. Download 10 real pages of a sample reading in <a class="link" href="/sample/pushyara-sample-report-english.pdf">English</a> or <a class="link" href="/sample/pushyara-sample-report-hindi.pdf">Hindi</a>. You can also make your <a class="link" href="/free-kundli/">free kundli</a> to see your lagna, Moon sign, nakshatra and current dasha.</p></details>
+  <details><summary>Can I see a sample before I buy?</summary><p>Yes. Download 13 real pages of a sample reading in <a class="link" href="/sample/pushyara-sample-report-english.pdf">English</a> or <a class="link" href="/sample/pushyara-sample-report-hindi.pdf">Hindi</a>. You can also make your <a class="link" href="/free-kundli/">free kundli</a> to see your lagna, Moon sign, nakshatra and current dasha.</p></details>
   <details><summary>Can I get a printed copy?</summary><p>Yes. Choose Printed (₹999, spiral bound), Keepsake book (₹1,499, soft cover) or Gift edition (₹2,499, hardbound with a gold title). Each includes the digital report, and ships anywhere in India in 5–8 days.</p></details>
   <details><summary>Can I make a report for my husband, wife or child?</summary><p>Yes. Each report is ₹499 and is saved on your device.</p></details>
 </div></section>
@@ -417,7 +468,7 @@ footer nav a{text-decoration:none}footer nav a:hover{color:var(--moon)}
   var mx=sid/360*1000;var rn=document.getElementById('rnow');rn.textContent='Moon in '+NAK[ni];rn.style.left=Math.min(88,Math.max(12,sid/3.6))+'%';el('line',{x1:mx,y1:8,x2:mx,y2:36,stroke:'#FFE08A','stroke-width':2,'vector-effect':'non-scaling-stroke'},ru);
 
   /* starfield, same every visit */
-  var st=document.getElementById('stars'),W=1600,H=1000,seed=27;st.setAttribute('viewBox','0 0 '+W+' '+H);
+  var st=document.getElementById('stars')||document.createElementNS(NS,'svg'),W=1600,H=1000,seed=27;st.setAttribute('viewBox','0 0 '+W+' '+H);
   function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647;}
   for(var s=0;s<260;s++){var b=rnd(),rr=b>.97?1.9:b>.85?1.2:.7;
     var c=el('circle',{cx:(rnd()*W).toFixed(1),cy:(rnd()*H).toFixed(1),r:rr,fill:b>.9?'#FFE8B0':'#E6E2FF',opacity:(.25+rnd()*.7).toFixed(2)},st);
